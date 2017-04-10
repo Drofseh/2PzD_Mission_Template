@@ -4,7 +4,7 @@
     <img src="https://c2.staticflickr.com/6/5524/30201576222_3b9546362d_o.png" width="480">
 </p>
 
-#### A customized version of the [Olsen Framework](https://github.com/dklollol/Olsen-Framework-Arma-3) for use by [2. Panzer Division](http://2panzer.wixsite.com/home) ARMA mission makers as a mission template. 
+#### A customized version of the [Olsen Framework](https://github.com/dklollol/Olsen-Framework-Arma-3) for use by [2. Panzer Division ARMA Community](http://2panzer.wixsite.com/home) mission makers as a mission template. 
 
 #### Required dependencies:
 * ARMA 3
