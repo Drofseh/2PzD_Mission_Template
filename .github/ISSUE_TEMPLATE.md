@@ -11,7 +11,6 @@
 **Mods:**
 ```
 - List all running mods
-- Add a dash (-) at the front of each mod to make the list
 ```
 
 **Description:**
