@@ -14,6 +14,9 @@
 * Extract the composition and mission folders to your ARMA 3 profile folder.
 * Follow the mission making guide located [here](http://2panzer.forumpro.eu/t437-haas-s-mission-making-guide-for-the-olsen-framework) on the 2.PzD forum.
 
+#### Feature Requests, Issues, Pull Requests
+Please check the [here](https://github.com/Drofseh/2PzD_Mission_Template/blob/master/.github/CONTRIBUTING.md) for information on these topics.
+
 #### Acknowlegements:
 
 Olsen for making the [Olsen Framework](https://github.com/dklollol/Olsen-Framework-Arma-3).
