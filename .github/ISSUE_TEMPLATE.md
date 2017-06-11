@@ -10,9 +10,8 @@
 
 **Mods:**
 ```
-- IFA
-- FOW
-- Haas WWII Rebalance
+- List all running mods
+- Add a dash (-) at the front of each mod to make the list
 ```
 
 **Description:**
