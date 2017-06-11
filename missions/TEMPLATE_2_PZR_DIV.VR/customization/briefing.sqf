@@ -123,7 +123,7 @@ ENDTAB;
 
 
 NEWTAB("IV. Durchführung (Execution):")
-<font color='#FF8C00'>A. Concept of the Operation</font>
+<br/><font color='#FF8C00'>A. Concept of the Operation</font>
 // A description of the way the operation should unfold.
 // Example:
 // USMC Forces will rapidly launch from the USS Thorne to secure the area surrounding the derailed train before the VDV Company arrives. Upon securing the area, USMC Pilots callsign VADER-1 and VADER-2 will
@@ -165,7 +165,7 @@ NEWTAB("IV. Durchführung (Execution):")
 ENDTAB;
 
 NEWTAB("V. Logistik (Sustainment):")
-<font color='#FF8C00'>A. Equipment Variations</font>
+<br/><font color='#FF8C00'>A. Equipment Variations</font>
 // Any changes from standard to any of the following.
 <br/>Dress: None
 <br/>Equipment: None
@@ -184,7 +184,7 @@ NEWTAB("V. Logistik (Sustainment):")
 ENDTAB;
 
 NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
-<font color='#FF8C00'>A. Command</font>
+<br/><font color='#FF8C00'>A. Command</font>
 <br/>
 <br/><font color='#70db70'>1. Succession of Command:</font>
 //Who will take over when casualties occur among leadership elements

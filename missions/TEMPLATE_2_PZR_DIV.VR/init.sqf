@@ -28,3 +28,5 @@ if (isServer) then {
 
 #include "modules\modules.sqf" //DO NOT REMOVE
 #include "core\postChecks.sqf" //DO NOT REMOVE
+
+LIB_GLOBAL_ENABLE_RADIO_IN_VEHICLE = false;
