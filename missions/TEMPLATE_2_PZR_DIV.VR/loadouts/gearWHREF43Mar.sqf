@@ -69,7 +69,7 @@
 		[Rus_Mag_PPSH_S,1],
 		[Rus_Weap_PPSH_S],
 		[Rus_Mag_PPSH_S,3,"vest"]
-		],[18],
+		],[28],
 		[//PPD-40
 		[Rus_Mag_PPD40,1],
 		[Rus_Weap_PPD40],
@@ -137,7 +137,7 @@
 		[Rus_Mag_PPSH_S,1],
 		[Rus_Weap_PPSH_S],
 		[Rus_Mag_PPSH_S,3,"vest"]
-		],[18],
+		],[28],
 		[//PPD-40
 		[Rus_Mag_PPD40,1],
 		[Rus_Weap_PPD40],
@@ -202,7 +202,7 @@
 		[Rus_Mag_PPSH_S,1],
 		[Rus_Weap_PPSH_S],
 		[Rus_Mag_PPSH_S,3,"vest"]
-		],[18],
+		],[28],
 		[//PPD-40
 		[Rus_Mag_PPD40,1],
 		[Rus_Weap_PPD40],
@@ -271,7 +271,7 @@
 		[Rus_Mag_PPSH_S,1],
 		[Rus_Weap_PPSH_S],
 		[Rus_Mag_PPSH_S,3,"vest"]
-		],[18],
+		],[28],
 		[//PPD-40
 		[Rus_Mag_PPD40,1],
 		[Rus_Weap_PPD40],
@@ -446,8 +446,8 @@
 		[//PPSh-41, Stick
 		[Rus_Mag_PPSH_S,1],
 		[Rus_Weap_PPSH_S],
-		[Rus_Mag_PPSH_S,6,"vest"]
-		],[18],
+		[Rus_Mag_PPSH_S,3,"vest"]
+		],[28],
 		[//PPD-40
 		[Rus_Mag_PPD40,1],
 		[Rus_Weap_PPD40],
@@ -540,8 +540,8 @@
 		[//PPSh-41, Stick
 		[Rus_Mag_PPSH_S,1],
 		[Rus_Weap_PPSH_S],
-		[Rus_Mag_PPSH_S,6,"vest"]
-		],[18],
+		[Rus_Mag_PPSH_S,3,"vest"]
+		],[28],
 		[//PPD-40
 		[Rus_Mag_PPD40,1],
 		[Rus_Weap_PPD40],
@@ -1131,7 +1131,7 @@
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
-		[Ger_Mag_MG_250,3] call FNC_AddItem;
+		[Ger_Mag_MG_250,2] call FNC_AddItem;
 		[Ger_Mag_MG_150,1] call FNC_AddItem;
 	};
 
@@ -1158,8 +1158,8 @@
 		[//PPSh-41, Stick
 		[Rus_Mag_PPSH_S,1],
 		[Rus_Weap_PPSH_S],
-		[Rus_Mag_PPSH_S,6,"vest"]
-		],[18],
+		[Rus_Mag_PPSH_S,3,"vest"]
+		],[28],
 		[//PPD-40
 		[Rus_Mag_PPD40,1],
 		[Rus_Weap_PPD40],

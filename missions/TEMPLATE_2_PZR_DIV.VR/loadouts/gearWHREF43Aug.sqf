@@ -161,16 +161,16 @@
 		[Ger_Weap_P38],
 		[Ger_Mag_P38,2]
 		],[54],
+		[//P08
+		[Ger_Mag_P08,1],
+		[Ger_Weap_P08],
+		[Ger_Mag_P08,2]
+		],[22],
 		[//TT-33
 		[Rus_Mag_TT33,1],
 		[Rus_Weap_TT33],
 		[Rus_Mag_TT33,1]
 		],[16],
-		[//P08
-		[Ger_Mag_P08,1],
-		[Ger_Weap_P08],
-		[Ger_Mag_P08,2]
-		],[12],
 		[//M1895
 		[Rus_Mag_M1895,1],
 		[Rus_Weap_M1895],
@@ -610,16 +610,16 @@
 		[Ger_Weap_P38],
 		[Ger_Mag_P38,2]
 		],[54],
+		[//P08
+		[Ger_Mag_P08,1],
+		[Ger_Weap_P08],
+		[Ger_Mag_P08,2]
+		],[22],
 		[//TT-33
 		[Rus_Mag_TT33,1],
 		[Rus_Weap_TT33],
 		[Rus_Mag_TT33,1]
 		],[16],
-		[//P08
-		[Ger_Mag_P08,1],
-		[Ger_Weap_P08],
-		[Ger_Mag_P08,2]
-		],[12],
 		[//M1895
 		[Rus_Mag_M1895,1],
 		[Rus_Weap_M1895],
@@ -883,16 +883,16 @@
 		[Ger_Weap_P38],
 		[Ger_Mag_P38,2]
 		],[54],
+		[//P08
+		[Ger_Mag_P08,1],
+		[Ger_Weap_P08],
+		[Ger_Mag_P08,2]
+		],[22],
 		[//TT-33
 		[Rus_Mag_TT33,1],
 		[Rus_Weap_TT33],
 		[Rus_Mag_TT33,1]
 		],[16],
-		[//P08
-		[Ger_Mag_P08,1],
-		[Ger_Weap_P08],
-		[Ger_Mag_P08,2]
-		],[12],
 		[//M1895
 		[Rus_Mag_M1895,1],
 		[Rus_Weap_M1895],
@@ -937,16 +937,16 @@
 		[Ger_Weap_P38],
 		[Ger_Mag_P38,2]
 		],[54],
+		[//P08
+		[Ger_Mag_P08,1],
+		[Ger_Weap_P08],
+		[Ger_Mag_P08,2]
+		],[22],
 		[//TT-33
 		[Rus_Mag_TT33,1],
 		[Rus_Weap_TT33],
 		[Rus_Mag_TT33,1]
 		],[16],
-		[//P08
-		[Ger_Mag_P08,1],
-		[Ger_Weap_P08],
-		[Ger_Mag_P08,2]
-		],[12],
 		[//M1895
 		[Rus_Mag_M1895,1],
 		[Rus_Weap_M1895],
@@ -1078,16 +1078,16 @@
 		[Ger_Weap_P38],
 		[Ger_Mag_P38,2]
 		],[54],
+		[//P08
+		[Ger_Mag_P08,1],
+		[Ger_Weap_P08],
+		[Ger_Mag_P08,2]
+		],[22],
 		[//TT-33
 		[Rus_Mag_TT33,1],
 		[Rus_Weap_TT33],
 		[Rus_Mag_TT33,1]
 		],[16],
-		[//P08
-		[Ger_Mag_P08,1],
-		[Ger_Weap_P08],
-		[Ger_Mag_P08,2]
-		],[12],
 		[//M1895
 		[Rus_Mag_M1895,1],
 		[Rus_Weap_M1895],
@@ -1161,7 +1161,7 @@
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
-		[Ger_Mag_MG_250,3] call FNC_AddItem;
+		[Ger_Mag_MG_250,2] call FNC_AddItem;
 		[Ger_Mag_MG_150,1] call FNC_AddItem;
 	};
 
@@ -1258,16 +1258,16 @@
 		[Ger_Weap_P38],
 		[Ger_Mag_P38,2]
 		],[54],
+		[//P08
+		[Ger_Mag_P08,1],
+		[Ger_Weap_P08],
+		[Ger_Mag_P08,2]
+		],[22],
 		[//TT-33
 		[Rus_Mag_TT33,1],
 		[Rus_Weap_TT33],
 		[Rus_Mag_TT33,1]
 		],[16],
-		[//P08
-		[Ger_Mag_P08,1],
-		[Ger_Weap_P08],
-		[Ger_Mag_P08,2]
-		],[12],
 		[//M1895
 		[Rus_Mag_M1895,1],
 		[Rus_Weap_M1895],

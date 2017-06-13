@@ -650,7 +650,7 @@
 		[Ger_Mag_K98,12,"vest"] call FNC_AddItem;
 		
 		//Extra
-		[Ger_Mag_MG_250,3] call FNC_AddItem;
+		[Ger_Mag_MG_250,2] call FNC_AddItem;
 		[Ger_Mag_MG_150,1] call FNC_AddItem;
 	};
 

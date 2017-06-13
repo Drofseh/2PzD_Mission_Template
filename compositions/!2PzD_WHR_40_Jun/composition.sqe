@@ -7013,7 +7013,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Jun_Med""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""WHR40Jun_MedP""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1614";
 					description="1.Zug | Zugtrupp | Krankenträger";
 					isPlayable=1;
@@ -19301,7 +19301,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Jun_Med""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""WHR40Jun_MedP""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2614";
 					description="2.Zug | Zugtrupp | Krankenträger";
 					isPlayable=1;
