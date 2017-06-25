@@ -55,7 +55,8 @@
 #define Parti_leader_equipment \
 ["ACE_Flashlight_KSF1"]call FNC_AddItem; \
 ["LIB_Binocular_GER"] call FNC_AddItem; \
-["ACE_MapTools"] call FNC_AddItem;
+["ACE_MapTools"] call FNC_AddItem; \
+["fow_i_whistle"] call FNC_AddItem;
 
 #define Parti_medic_equipment \
 ["ACE_fieldDressing",16,"backpack"] call FNC_AddItem; \

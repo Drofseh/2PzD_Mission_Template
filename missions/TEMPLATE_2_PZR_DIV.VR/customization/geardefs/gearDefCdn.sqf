@@ -3,14 +3,14 @@
 //=== Clothes ===
 
 //Uniform
-#define CDN_UniBC_Lt			"fow_u_uk_bd40_can_02_lieutenant"
-#define CDN_UniBC_Sgt			"fow_u_uk_bd40_can_02_sergeant"
-#define CDN_UniBC_Cpl			"fow_u_uk_bd40_can_02_corporal"
-#define CDN_UniBC_LCpl			"fow_u_uk_bd40_can_02_lance_corporal"
-#define CDN_UniBC_Pte			"fow_u_uk_bd40_can_02_private"
+#define CDN_UniBCR_Lt			"fow_u_uk_bd40_can_02_lieutenant"
+#define CDN_UniBCR_Sgt			"fow_u_uk_bd40_can_02_sergeant"
+#define CDN_UniBCR_Cpl			"fow_u_uk_bd40_can_02_corporal"
+#define CDN_UniBCR_LCpl			"fow_u_uk_bd40_can_02_lance_corporal"
+#define CDN_UniBCR_Pte			"fow_u_uk_bd40_can_02_private"
 
-#define CDN_UniWin_Lt			"fow_u_uk_bd40_can_01_lieutenant"
-#define CDN_UniWin_Sgt			"fow_u_uk_bd40_can_01_sergeant"
-#define CDN_UniWin_Cpl			"fow_u_uk_bd40_can_01_corporal"
-#define CDN_UniWin_LCpl			"fow_u_uk_bd40_can_01_lance_corporal"
-#define CDN_UniWin_Pte			"fow_u_uk_bd40_can_01_private"
+#define CDN_UniRWR_Lt			"fow_u_uk_bd40_can_01_lieutenant"
+#define CDN_UniRWR_Sgt			"fow_u_uk_bd40_can_01_sergeant"
+#define CDN_UniRWR_Cpl			"fow_u_uk_bd40_can_01_corporal"
+#define CDN_UniRWR_LCpl			"fow_u_uk_bd40_can_01_lance_corporal"
+#define CDN_UniRWR_Pte			"fow_u_uk_bd40_can_01_private"

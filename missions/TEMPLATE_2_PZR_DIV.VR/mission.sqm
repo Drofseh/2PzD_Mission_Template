@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=521;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=15693;
+		nextID=22419;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={452.78992,196.95786,1016.8184};
-		dir[]={-0.031101143,-0.41431564,-0.90961063};
-		up[]={-0.014157861,0.91012925,-0.41407919};
-		aside[]={-0.99942321,-3.6524216e-007,0.034171421};
+		pos[]={460.95102,97.704018,787.06268};
+		dir[]={0.020626454,-0.76528251,0.64355081};
+		up[]={0.024520764,0.64358264,0.76497805};
+		aside[]={0.99958849,-4.4052285e-008,-0.032044441};
 	};
 };
 binarizationWanted=0;
@@ -71,13 +71,14 @@ addons[]=
 	"WW2_Assets_c_Vehicles_Wheeled_c_GazM1",
 	"WW2_Assets_c_Vehicles_Wheeled_c_Willys_MB",
 	"WW2_Assets_c_Vehicles_Wheeled_c_Zis5v",
-	"WW2_Assets_c_Vehicles_Wheeled_c_GMC"
+	"WW2_Assets_c_Vehicles_Wheeled_c_GMC",
+	"fow_statics_c"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=47;
+		items=48;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -325,6 +326,11 @@ class AddonsMetaData
 			className="WW2_Assets_c_Vehicles_Wheeled_c_GMC";
 			name="WW2_Assets_c_Vehicles_Wheeled_c_GMC";
 		};
+		class Item47
+		{
+			className="fow_statics_c";
+			name="fow_statics_c";
+		};
 	};
 };
 randomSeed=13547937;
@@ -428,7 +434,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=107;
+		items=108;
 		class Item0
 		{
 			dataType="Marker";
@@ -5679,6 +5685,21 @@ class Mission
 			id=9741;
 			type="LIB_M1919_M2";
 			atlOffset=-3.528595e-005;
+		};
+		class Item107
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={147.62589,5.0015254,144.34746};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=21686;
+			type="fow_w_uk_vickers";
 		};
 	};
 };

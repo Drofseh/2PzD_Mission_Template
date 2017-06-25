@@ -93,7 +93,7 @@
 #define Rus_Vest_Mosin			"V_LIB_SOV_RA_MosinBelt"
 #define Rus_Vest_SVT			"V_LIB_SOV_RA_SVTBelt"
 #define Rus_Vest_MG				["V_LIB_SOV_RA_MGBelt"],["V_LIB_SOV_RAZV_MGBelt"]
-#define Rus_Vest_HGun			"V_LIB_SOV_RA_MGBelt",
+#define Rus_Vest_HGun			"V_LIB_SOV_RA_MGBelt"
 
 #define Rus_Vest_VCrew			"V_LIB_GER_TankPrivateBelt"
 
@@ -133,7 +133,8 @@
 
 #define Rus_leader_equipment \
 ["LIB_Binocular_SU"] call FNC_AddItem; \
-["ACE_MapTools"] call FNC_AddItem;
+["ACE_MapTools"] call FNC_AddItem; \
+["fow_i_whistle"] call FNC_AddItem;
 
 #define Rus_medic_equipment \
 ["ACE_fieldDressing",16,"backpack"] call FNC_AddItem; \
@@ -161,7 +162,8 @@
 
 #define VDV_leader_equipment \
 ["LIB_Binocular_SU"] call FNC_AddItem; \
-["ACE_MapTools"] call FNC_AddItem;
+["ACE_MapTools"] call FNC_AddItem; \
+["fow_i_whistle"] call FNC_AddItem;
 
 #define VDV_medic_equipment \
 ["ACE_fieldDressing",16,"backpack"] call FNC_AddItem; \

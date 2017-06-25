@@ -1,5 +1,5 @@
 version=53;
-center[]={652.04449,5,438.16797};
+center[]={7600.1191,5,6206.8574};
 class items
 {
 	items=4;
@@ -15,7 +15,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.9475098,0.0014390945,-0.10797119};
+					position[]={5.9462891,0.0014390945,-0.109375};
 					angles[]={0,4.7123713,0};
 				};
 				side="East";
@@ -35,7 +35,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4731;
+				id=1;
 				type="LIB_SOV_lieutenant";
 				class CustomAttributes
 				{
@@ -351,7 +351,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.9494019,0.0014390945,1.8929443};
+					position[]={5.9482422,0.0014390945,1.8916016};
 					angles[]={0,4.7123713,0};
 				};
 				side="East";
@@ -371,7 +371,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4732;
+				id=2;
 				type="LIB_SOV_staff_sergeant";
 				class CustomAttributes
 				{
@@ -687,7 +687,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.9464111,0.0014390945,-2.1130676};
+					position[]={5.9453125,0.0014390945,-2.1142578};
 					angles[]={0,4.7123713,0};
 				};
 				side="East";
@@ -708,7 +708,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4733;
+				id=3;
 				type="LIB_SOV_operator";
 				class CustomAttributes
 				{
@@ -1024,7 +1024,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.9194946,0.0014390945,-0.11398315};
+					position[]={7.918457,0.0014390945,-0.11523438};
 					angles[]={0,4.7123713,0};
 				};
 				side="East";
@@ -1045,7 +1045,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=5441;
+				id=4;
 				type="LIB_SOV_medic";
 				class CustomAttributes
 				{
@@ -1364,7 +1364,7 @@ class items
 			speedMode="LIMITED";
 			formation="FILE";
 		};
-		id=4730;
+		id=0;
 	};
 	class Item1
 	{
@@ -1378,7 +1378,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.06060791,0.0014390945,-6.1000671};
+					position[]={-0.061523438,0.0014390945,-6.1015625};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -1400,7 +1400,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4736;
+				id=6;
 				type="LIB_SOV_LC_rifleman";
 				class CustomAttributes
 				{
@@ -1716,7 +1716,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.043579102,0.0014390945,-7.1420593};
+					position[]={-0.044433594,0.0014390945,-7.1435547};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -1737,7 +1737,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4738;
+				id=7;
 				type="LIB_SOV_mgunner";
 				class CustomAttributes
 				{
@@ -2053,7 +2053,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.072631836,0.0014390945,-8.1120605};
+					position[]={-0.073730469,0.0014390945,-8.1132813};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -2074,7 +2074,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4740;
+				id=8;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -2390,7 +2390,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.057617188,0.0014390945,-9.098053};
+					position[]={-0.05859375,0.0014390945,-9.0996094};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -2411,7 +2411,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4742;
+				id=9;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -2727,7 +2727,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.043579102,0.0014390945,-10.104065};
+					position[]={-0.044433594,0.0014390945,-10.105469};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -2748,7 +2748,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4744;
+				id=10;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -3064,7 +3064,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.0686035,0.0014390945,-6.0870667};
+					position[]={-2.0693359,0.0014390945,-6.0883789};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -3085,7 +3085,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4737;
+				id=11;
 				type="LIB_SOV_LC_rifleman";
 				class CustomAttributes
 				{
@@ -3401,7 +3401,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.0505981,0.0014390945,-7.1280518};
+					position[]={-2.0517578,0.0014390945,-7.1293945};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -3409,8 +3409,8 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD44Oct_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1st Squad | 2nd Team | Machine Gunner";
+					init="[this,""NKVD44Oct_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					description="1st Squad | 2nd Team | Strelok";
 					isPlayable=1;
 					class Inventory
 					{
@@ -3422,7 +3422,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4739;
+				id=12;
 				type="LIB_SOV_mgunner";
 				class CustomAttributes
 				{
@@ -3466,6 +3466,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="acex_headless_blacklist";
+						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="Enh_taskPatrol_formation";
 						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
 						class Value
@@ -3483,7 +3502,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_onDamagedEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
@@ -3502,7 +3521,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute5
 					{
 						property="Enh_taskPatrol_speed";
 						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
@@ -3521,7 +3540,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
+					class Attribute6
 					{
 						property="Enh_animCombType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
@@ -3540,7 +3559,7 @@ class items
 							};
 						};
 					};
-					class Attribute6
+					class Attribute7
 					{
 						property="Enh_animEquipment";
 						expression="_this setVariable ['Enh_animEquipment',_value];";
@@ -3559,7 +3578,7 @@ class items
 							};
 						};
 					};
-					class Attribute7
+					class Attribute8
 					{
 						property="Enh_onKilledEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
@@ -3578,7 +3597,7 @@ class items
 							};
 						};
 					};
-					class Attribute8
+					class Attribute9
 					{
 						property="pitch";
 						expression="_this setpitch _value;";
@@ -3597,7 +3616,7 @@ class items
 							};
 						};
 					};
-					class Attribute9
+					class Attribute10
 					{
 						property="Enh_taskPatrol_behaviour";
 						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
@@ -3616,7 +3635,7 @@ class items
 							};
 						};
 					};
-					class Attribute10
+					class Attribute11
 					{
 						property="Enh_removeFAK";
 						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
@@ -3635,7 +3654,7 @@ class items
 							};
 						};
 					};
-					class Attribute11
+					class Attribute12
 					{
 						property="Enh_taskPatrol_combatMode";
 						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
@@ -3654,7 +3673,7 @@ class items
 							};
 						};
 					};
-					class Attribute12
+					class Attribute13
 					{
 						property="Enh_removeMap";
 						expression="_this unlinkItem 'ItemMap'";
@@ -3673,7 +3692,7 @@ class items
 							};
 						};
 					};
-					class Attribute13
+					class Attribute14
 					{
 						property="Enh_animType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
@@ -3692,7 +3711,7 @@ class items
 							};
 						};
 					};
-					class Attribute14
+					class Attribute15
 					{
 						property="Enh_removeNVG";
 						expression="_this unlinkItem (hmd _this)";
@@ -3711,7 +3730,7 @@ class items
 							};
 						};
 					};
-					class Attribute15
+					class Attribute16
 					{
 						property="Enh_removeGPS";
 						expression="_this unlinkItem 'ItemGPS'";
@@ -3730,7 +3749,7 @@ class items
 							};
 						};
 					};
-					nAttributes=16;
+					nAttributes=17;
 				};
 			};
 			class Item7
@@ -3738,344 +3757,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.0786133,0.0014390945,-8.098053};
-					angles[]={0,1.6168381,0};
-				};
-				side="East";
-				flags=4;
-				class Attributes
-				{
-					skill=0.40000001;
-					init="[this,""NKVD44Oct_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1st Squad | 2nd Team | Machine Gun Assistant";
-					isPlayable=1;
-					class Inventory
-					{
-						class uniform
-						{
-							typeName="U_C_Driver_1_orange";
-							isBackpack=0;
-						};
-						radio="tf_anprc148jem_1";
-					};
-				};
-				id=4741;
-				type="LIB_SOV_rifleman";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_animCombEquipment";
-						expression="_this setVariable ['Enh_animCombEquipment',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="ASIS";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="Enh_onRespawnEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="Enh_taskPatrol_formation";
-						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
-						class Value
-						{
-							class data
-							{
-								nil=1;
-								class type
-								{
-									type[]=
-									{
-										"ANY"
-									};
-								};
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_onDamagedEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="Enh_taskPatrol_speed";
-						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="LIMITED";
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="Enh_animCombType";
-						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="Enh_animEquipment";
-						expression="_this setVariable ['Enh_animEquipment',_value];";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="ASIS";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="Enh_onKilledEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute8
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute9
-					{
-						property="Enh_taskPatrol_behaviour";
-						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="SAFE";
-							};
-						};
-					};
-					class Attribute10
-					{
-						property="Enh_removeFAK";
-						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute11
-					{
-						property="Enh_taskPatrol_combatMode";
-						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					class Attribute12
-					{
-						property="Enh_removeMap";
-						expression="_this unlinkItem 'ItemMap'";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute13
-					{
-						property="Enh_animType";
-						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					class Attribute14
-					{
-						property="Enh_removeNVG";
-						expression="_this unlinkItem (hmd _this)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute15
-					{
-						property="Enh_removeGPS";
-						expression="_this unlinkItem 'ItemGPS'";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=16;
-				};
-			};
-			class Item8
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-2.0645752,0.0014390945,-9.0850525};
+					position[]={-2.0795898,0.0014390945,-8.0996094};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -4096,7 +3778,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4743;
+				id=13;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -4140,6 +3822,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="acex_headless_blacklist";
+						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="Enh_taskPatrol_formation";
 						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
 						class Value
@@ -4157,7 +3858,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_onDamagedEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
@@ -4176,7 +3877,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute5
 					{
 						property="Enh_taskPatrol_speed";
 						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
@@ -4195,7 +3896,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
+					class Attribute6
 					{
 						property="Enh_animCombType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
@@ -4214,7 +3915,7 @@ class items
 							};
 						};
 					};
-					class Attribute6
+					class Attribute7
 					{
 						property="Enh_animEquipment";
 						expression="_this setVariable ['Enh_animEquipment',_value];";
@@ -4233,7 +3934,7 @@ class items
 							};
 						};
 					};
-					class Attribute7
+					class Attribute8
 					{
 						property="Enh_onKilledEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
@@ -4252,7 +3953,382 @@ class items
 							};
 						};
 					};
+					class Attribute9
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute10
+					{
+						property="Enh_taskPatrol_behaviour";
+						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="SAFE";
+							};
+						};
+					};
+					class Attribute11
+					{
+						property="Enh_removeFAK";
+						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute12
+					{
+						property="Enh_taskPatrol_combatMode";
+						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="YELLOW";
+							};
+						};
+					};
+					class Attribute13
+					{
+						property="Enh_removeMap";
+						expression="_this unlinkItem 'ItemMap'";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute14
+					{
+						property="Enh_animType";
+						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="";
+							};
+						};
+					};
+					class Attribute15
+					{
+						property="Enh_removeNVG";
+						expression="_this unlinkItem (hmd _this)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute16
+					{
+						property="Enh_removeGPS";
+						expression="_this unlinkItem 'ItemGPS'";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=17;
+				};
+			};
+			class Item8
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-2.0649414,0.0014390945,-9.0864258};
+					angles[]={0,1.6168381,0};
+				};
+				side="East";
+				flags=4;
+				class Attributes
+				{
+					skill=0.40000001;
+					init="[this,""NKVD44Oct_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					description="1st Squad | 2nd Team | Strelok";
+					isPlayable=1;
+					class Inventory
+					{
+						class uniform
+						{
+							typeName="U_C_Driver_1_orange";
+							isBackpack=0;
+						};
+						radio="tf_anprc148jem_1";
+					};
+				};
+				id=14;
+				type="LIB_SOV_rifleman";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_animCombEquipment";
+						expression="_this setVariable ['Enh_animCombEquipment',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ASIS";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="Enh_onRespawnEvent";
+						expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="acex_headless_blacklist";
+						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_taskPatrol_formation";
+						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
+						class Value
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"ANY"
+									};
+								};
+							};
+						};
+					};
+					class Attribute4
+					{
+						property="Enh_onDamagedEvent";
+						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false";
+							};
+						};
+					};
+					class Attribute5
+					{
+						property="Enh_taskPatrol_speed";
+						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="LIMITED";
+							};
+						};
+					};
+					class Attribute6
+					{
+						property="Enh_animCombType";
+						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="";
+							};
+						};
+					};
+					class Attribute7
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02SU";
+							};
+						};
+					};
 					class Attribute8
+					{
+						property="Enh_animEquipment";
+						expression="_this setVariable ['Enh_animEquipment',_value];";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ASIS";
+							};
+						};
+					};
+					class Attribute9
+					{
+						property="Enh_onKilledEvent";
+						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false";
+							};
+						};
+					};
+					class Attribute10
 					{
 						property="pitch";
 						expression="_this setpitch _value;";
@@ -4271,7 +4347,7 @@ class items
 							};
 						};
 					};
-					class Attribute9
+					class Attribute11
 					{
 						property="Enh_taskPatrol_behaviour";
 						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
@@ -4290,7 +4366,7 @@ class items
 							};
 						};
 					};
-					class Attribute10
+					class Attribute12
 					{
 						property="Enh_removeFAK";
 						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
@@ -4309,7 +4385,7 @@ class items
 							};
 						};
 					};
-					class Attribute11
+					class Attribute13
 					{
 						property="Enh_taskPatrol_combatMode";
 						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
@@ -4328,7 +4404,7 @@ class items
 							};
 						};
 					};
-					class Attribute12
+					class Attribute14
 					{
 						property="Enh_removeMap";
 						expression="_this unlinkItem 'ItemMap'";
@@ -4347,7 +4423,7 @@ class items
 							};
 						};
 					};
-					class Attribute13
+					class Attribute15
 					{
 						property="Enh_animType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
@@ -4366,7 +4442,7 @@ class items
 							};
 						};
 					};
-					class Attribute14
+					class Attribute16
 					{
 						property="Enh_removeNVG";
 						expression="_this unlinkItem (hmd _this)";
@@ -4385,7 +4461,7 @@ class items
 							};
 						};
 					};
-					class Attribute15
+					class Attribute17
 					{
 						property="Enh_removeGPS";
 						expression="_this unlinkItem 'ItemGPS'";
@@ -4404,7 +4480,7 @@ class items
 							};
 						};
 					};
-					nAttributes=16;
+					nAttributes=18;
 				};
 			};
 			class Item9
@@ -4412,7 +4488,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.0505981,0.0014390945,-10.090057};
+					position[]={-2.0517578,0.0014390945,-10.091309};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -4433,7 +4509,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4745;
+				id=15;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -4477,6 +4553,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="acex_headless_blacklist";
+						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="Enh_taskPatrol_formation";
 						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
 						class Value
@@ -4494,7 +4589,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_onDamagedEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
@@ -4513,7 +4608,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute5
 					{
 						property="Enh_taskPatrol_speed";
 						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
@@ -4532,7 +4627,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
+					class Attribute6
 					{
 						property="Enh_animCombType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
@@ -4551,7 +4646,7 @@ class items
 							};
 						};
 					};
-					class Attribute6
+					class Attribute7
 					{
 						property="Enh_animEquipment";
 						expression="_this setVariable ['Enh_animEquipment',_value];";
@@ -4570,7 +4665,7 @@ class items
 							};
 						};
 					};
-					class Attribute7
+					class Attribute8
 					{
 						property="Enh_onKilledEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
@@ -4589,7 +4684,7 @@ class items
 							};
 						};
 					};
-					class Attribute8
+					class Attribute9
 					{
 						property="pitch";
 						expression="_this setpitch _value;";
@@ -4608,7 +4703,7 @@ class items
 							};
 						};
 					};
-					class Attribute9
+					class Attribute10
 					{
 						property="Enh_taskPatrol_behaviour";
 						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
@@ -4627,7 +4722,7 @@ class items
 							};
 						};
 					};
-					class Attribute10
+					class Attribute11
 					{
 						property="Enh_removeFAK";
 						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
@@ -4646,7 +4741,7 @@ class items
 							};
 						};
 					};
-					class Attribute11
+					class Attribute12
 					{
 						property="Enh_taskPatrol_combatMode";
 						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
@@ -4665,7 +4760,7 @@ class items
 							};
 						};
 					};
-					class Attribute12
+					class Attribute13
 					{
 						property="Enh_removeMap";
 						expression="_this unlinkItem 'ItemMap'";
@@ -4684,7 +4779,7 @@ class items
 							};
 						};
 					};
-					class Attribute13
+					class Attribute14
 					{
 						property="Enh_animType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
@@ -4703,7 +4798,7 @@ class items
 							};
 						};
 					};
-					class Attribute14
+					class Attribute15
 					{
 						property="Enh_removeNVG";
 						expression="_this unlinkItem (hmd _this)";
@@ -4722,7 +4817,7 @@ class items
 							};
 						};
 					};
-					class Attribute15
+					class Attribute16
 					{
 						property="Enh_removeGPS";
 						expression="_this unlinkItem 'ItemGPS'";
@@ -4741,7 +4836,7 @@ class items
 							};
 						};
 					};
-					nAttributes=16;
+					nAttributes=17;
 				};
 			};
 		};
@@ -4752,7 +4847,7 @@ class items
 			speedMode="LIMITED";
 			formation="FILE";
 		};
-		id=4735;
+		id=5;
 	};
 	class Item2
 	{
@@ -4766,7 +4861,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.051574707,0.0014390945,1.8959351};
+					position[]={-0.052734375,0.0014390945,1.8945313};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -4788,7 +4883,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4747;
+				id=17;
 				type="LIB_SOV_LC_rifleman";
 				class CustomAttributes
 				{
@@ -5104,7 +5199,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.034606934,0.0014390945,0.85394287};
+					position[]={-0.035644531,0.0014390945,0.85253906};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -5125,7 +5220,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4749;
+				id=18;
 				type="LIB_SOV_mgunner";
 				class CustomAttributes
 				{
@@ -5441,7 +5536,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.06262207,0.0014390945,-0.11605835};
+					position[]={-0.063476563,0.0014390945,-0.11767578};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -5462,7 +5557,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4751;
+				id=19;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -5778,7 +5873,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.048583984,0.0014390945,-1.1020508};
+					position[]={-0.049804688,0.0014390945,-1.1035156};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -5799,7 +5894,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4753;
+				id=20;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -6115,7 +6210,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.034606934,0.0014390945,-2.1080627};
+					position[]={-0.035644531,0.0014390945,-2.109375};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -6136,7 +6231,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4755;
+				id=21;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -6452,7 +6547,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.0576172,0.0014390945,1.9099426};
+					position[]={-2.0585938,0.0014390945,1.9086914};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -6473,7 +6568,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4748;
+				id=22;
 				type="LIB_SOV_LC_rifleman";
 				class CustomAttributes
 				{
@@ -6789,7 +6884,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.0405884,0.0014390945,0.86795044};
+					position[]={-2.0415039,0.0014390945,0.86669922};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -6797,8 +6892,8 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD44Oct_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2nd Squad | 2nd Team | Machine Gunner";
+					init="[this,""NKVD44Oct_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					description="2nd Squad | 2nd Team | Strelok";
 					isPlayable=1;
 					class Inventory
 					{
@@ -6810,7 +6905,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4750;
+				id=23;
 				type="LIB_SOV_mgunner";
 				class CustomAttributes
 				{
@@ -6854,6 +6949,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="acex_headless_blacklist";
+						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="Enh_taskPatrol_formation";
 						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
 						class Value
@@ -6871,7 +6985,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_onDamagedEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
@@ -6890,7 +7004,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute5
 					{
 						property="Enh_taskPatrol_speed";
 						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
@@ -6909,7 +7023,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
+					class Attribute6
 					{
 						property="Enh_animCombType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
@@ -6928,7 +7042,7 @@ class items
 							};
 						};
 					};
-					class Attribute6
+					class Attribute7
 					{
 						property="Enh_animEquipment";
 						expression="_this setVariable ['Enh_animEquipment',_value];";
@@ -6947,7 +7061,7 @@ class items
 							};
 						};
 					};
-					class Attribute7
+					class Attribute8
 					{
 						property="Enh_onKilledEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
@@ -6966,7 +7080,7 @@ class items
 							};
 						};
 					};
-					class Attribute8
+					class Attribute9
 					{
 						property="pitch";
 						expression="_this setpitch _value;";
@@ -6985,7 +7099,7 @@ class items
 							};
 						};
 					};
-					class Attribute9
+					class Attribute10
 					{
 						property="Enh_taskPatrol_behaviour";
 						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
@@ -7004,7 +7118,7 @@ class items
 							};
 						};
 					};
-					class Attribute10
+					class Attribute11
 					{
 						property="Enh_removeFAK";
 						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
@@ -7023,7 +7137,7 @@ class items
 							};
 						};
 					};
-					class Attribute11
+					class Attribute12
 					{
 						property="Enh_taskPatrol_combatMode";
 						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
@@ -7042,7 +7156,7 @@ class items
 							};
 						};
 					};
-					class Attribute12
+					class Attribute13
 					{
 						property="Enh_removeMap";
 						expression="_this unlinkItem 'ItemMap'";
@@ -7061,7 +7175,7 @@ class items
 							};
 						};
 					};
-					class Attribute13
+					class Attribute14
 					{
 						property="Enh_animType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
@@ -7080,7 +7194,7 @@ class items
 							};
 						};
 					};
-					class Attribute14
+					class Attribute15
 					{
 						property="Enh_removeNVG";
 						expression="_this unlinkItem (hmd _this)";
@@ -7099,7 +7213,7 @@ class items
 							};
 						};
 					};
-					class Attribute15
+					class Attribute16
 					{
 						property="Enh_removeGPS";
 						expression="_this unlinkItem 'ItemGPS'";
@@ -7118,7 +7232,7 @@ class items
 							};
 						};
 					};
-					nAttributes=16;
+					nAttributes=17;
 				};
 			};
 			class Item7
@@ -7126,344 +7240,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.0695801,0.0014390945,-0.10205078};
-					angles[]={0,1.6168381,0};
-				};
-				side="East";
-				flags=4;
-				class Attributes
-				{
-					skill=0.40000001;
-					init="[this,""NKVD44Oct_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2nd Squad | 2nd Team | Machine Gun Assistant";
-					isPlayable=1;
-					class Inventory
-					{
-						class uniform
-						{
-							typeName="U_C_Driver_1_orange";
-							isBackpack=0;
-						};
-						radio="tf_anprc148jem_1";
-					};
-				};
-				id=4752;
-				type="LIB_SOV_rifleman";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_animCombEquipment";
-						expression="_this setVariable ['Enh_animCombEquipment',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="ASIS";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="Enh_onRespawnEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="Enh_taskPatrol_formation";
-						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
-						class Value
-						{
-							class data
-							{
-								nil=1;
-								class type
-								{
-									type[]=
-									{
-										"ANY"
-									};
-								};
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_onDamagedEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="Enh_taskPatrol_speed";
-						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="LIMITED";
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="Enh_animCombType";
-						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="Enh_animEquipment";
-						expression="_this setVariable ['Enh_animEquipment',_value];";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="ASIS";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="Enh_onKilledEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute8
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute9
-					{
-						property="Enh_taskPatrol_behaviour";
-						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="SAFE";
-							};
-						};
-					};
-					class Attribute10
-					{
-						property="Enh_removeFAK";
-						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute11
-					{
-						property="Enh_taskPatrol_combatMode";
-						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					class Attribute12
-					{
-						property="Enh_removeMap";
-						expression="_this unlinkItem 'ItemMap'";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute13
-					{
-						property="Enh_animType";
-						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					class Attribute14
-					{
-						property="Enh_removeNVG";
-						expression="_this unlinkItem (hmd _this)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute15
-					{
-						property="Enh_removeGPS";
-						expression="_this unlinkItem 'ItemGPS'";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=16;
-				};
-			};
-			class Item8
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-2.0546265,0.0014390945,-1.0890503};
+					position[]={-2.0703125,0.0014390945,-0.10351563};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -7484,7 +7261,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4754;
+				id=24;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -7528,6 +7305,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="acex_headless_blacklist";
+						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="Enh_taskPatrol_formation";
 						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
 						class Value
@@ -7545,7 +7341,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_onDamagedEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
@@ -7564,7 +7360,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute5
 					{
 						property="Enh_taskPatrol_speed";
 						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
@@ -7583,7 +7379,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
+					class Attribute6
 					{
 						property="Enh_animCombType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
@@ -7602,7 +7398,7 @@ class items
 							};
 						};
 					};
-					class Attribute6
+					class Attribute7
 					{
 						property="Enh_animEquipment";
 						expression="_this setVariable ['Enh_animEquipment',_value];";
@@ -7621,7 +7417,7 @@ class items
 							};
 						};
 					};
-					class Attribute7
+					class Attribute8
 					{
 						property="Enh_onKilledEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
@@ -7640,7 +7436,382 @@ class items
 							};
 						};
 					};
+					class Attribute9
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute10
+					{
+						property="Enh_taskPatrol_behaviour";
+						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="SAFE";
+							};
+						};
+					};
+					class Attribute11
+					{
+						property="Enh_removeFAK";
+						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute12
+					{
+						property="Enh_taskPatrol_combatMode";
+						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="YELLOW";
+							};
+						};
+					};
+					class Attribute13
+					{
+						property="Enh_removeMap";
+						expression="_this unlinkItem 'ItemMap'";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute14
+					{
+						property="Enh_animType";
+						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="";
+							};
+						};
+					};
+					class Attribute15
+					{
+						property="Enh_removeNVG";
+						expression="_this unlinkItem (hmd _this)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute16
+					{
+						property="Enh_removeGPS";
+						expression="_this unlinkItem 'ItemGPS'";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=17;
+				};
+			};
+			class Item8
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-2.0561523,0.0014390945,-1.0908203};
+					angles[]={0,1.6168381,0};
+				};
+				side="East";
+				flags=4;
+				class Attributes
+				{
+					skill=0.40000001;
+					init="[this,""NKVD44Oct_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					description="2nd Squad | 2nd Team | Strelok";
+					isPlayable=1;
+					class Inventory
+					{
+						class uniform
+						{
+							typeName="U_C_Driver_1_orange";
+							isBackpack=0;
+						};
+						radio="tf_anprc148jem_1";
+					};
+				};
+				id=25;
+				type="LIB_SOV_rifleman";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_animCombEquipment";
+						expression="_this setVariable ['Enh_animCombEquipment',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ASIS";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="Enh_onRespawnEvent";
+						expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="acex_headless_blacklist";
+						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_taskPatrol_formation";
+						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
+						class Value
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"ANY"
+									};
+								};
+							};
+						};
+					};
+					class Attribute4
+					{
+						property="Enh_onDamagedEvent";
+						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false";
+							};
+						};
+					};
+					class Attribute5
+					{
+						property="Enh_taskPatrol_speed";
+						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="LIMITED";
+							};
+						};
+					};
+					class Attribute6
+					{
+						property="Enh_animCombType";
+						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="";
+							};
+						};
+					};
+					class Attribute7
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03SU";
+							};
+						};
+					};
 					class Attribute8
+					{
+						property="Enh_animEquipment";
+						expression="_this setVariable ['Enh_animEquipment',_value];";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ASIS";
+							};
+						};
+					};
+					class Attribute9
+					{
+						property="Enh_onKilledEvent";
+						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false";
+							};
+						};
+					};
+					class Attribute10
 					{
 						property="pitch";
 						expression="_this setpitch _value;";
@@ -7659,7 +7830,7 @@ class items
 							};
 						};
 					};
-					class Attribute9
+					class Attribute11
 					{
 						property="Enh_taskPatrol_behaviour";
 						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
@@ -7678,7 +7849,7 @@ class items
 							};
 						};
 					};
-					class Attribute10
+					class Attribute12
 					{
 						property="Enh_removeFAK";
 						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
@@ -7697,7 +7868,7 @@ class items
 							};
 						};
 					};
-					class Attribute11
+					class Attribute13
 					{
 						property="Enh_taskPatrol_combatMode";
 						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
@@ -7716,7 +7887,7 @@ class items
 							};
 						};
 					};
-					class Attribute12
+					class Attribute14
 					{
 						property="Enh_removeMap";
 						expression="_this unlinkItem 'ItemMap'";
@@ -7735,7 +7906,7 @@ class items
 							};
 						};
 					};
-					class Attribute13
+					class Attribute15
 					{
 						property="Enh_animType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
@@ -7754,7 +7925,7 @@ class items
 							};
 						};
 					};
-					class Attribute14
+					class Attribute16
 					{
 						property="Enh_removeNVG";
 						expression="_this unlinkItem (hmd _this)";
@@ -7773,7 +7944,7 @@ class items
 							};
 						};
 					};
-					class Attribute15
+					class Attribute17
 					{
 						property="Enh_removeGPS";
 						expression="_this unlinkItem 'ItemGPS'";
@@ -7792,7 +7963,7 @@ class items
 							};
 						};
 					};
-					nAttributes=16;
+					nAttributes=18;
 				};
 			};
 			class Item9
@@ -7800,7 +7971,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.041626,0.0014390945,-2.0940552};
+					position[]={-2.0424805,0.0014390945,-2.0957031};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -7821,7 +7992,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4756;
+				id=26;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -7865,6 +8036,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="acex_headless_blacklist";
+						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="Enh_taskPatrol_formation";
 						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
 						class Value
@@ -7882,7 +8072,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_onDamagedEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
@@ -7901,7 +8091,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute5
 					{
 						property="Enh_taskPatrol_speed";
 						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
@@ -7920,7 +8110,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
+					class Attribute6
 					{
 						property="Enh_animCombType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
@@ -7939,7 +8129,7 @@ class items
 							};
 						};
 					};
-					class Attribute6
+					class Attribute7
 					{
 						property="Enh_animEquipment";
 						expression="_this setVariable ['Enh_animEquipment',_value];";
@@ -7958,7 +8148,7 @@ class items
 							};
 						};
 					};
-					class Attribute7
+					class Attribute8
 					{
 						property="Enh_onKilledEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
@@ -7977,7 +8167,7 @@ class items
 							};
 						};
 					};
-					class Attribute8
+					class Attribute9
 					{
 						property="pitch";
 						expression="_this setpitch _value;";
@@ -7996,7 +8186,7 @@ class items
 							};
 						};
 					};
-					class Attribute9
+					class Attribute10
 					{
 						property="Enh_taskPatrol_behaviour";
 						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
@@ -8015,7 +8205,7 @@ class items
 							};
 						};
 					};
-					class Attribute10
+					class Attribute11
 					{
 						property="Enh_removeFAK";
 						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
@@ -8034,7 +8224,7 @@ class items
 							};
 						};
 					};
-					class Attribute11
+					class Attribute12
 					{
 						property="Enh_taskPatrol_combatMode";
 						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
@@ -8053,7 +8243,7 @@ class items
 							};
 						};
 					};
-					class Attribute12
+					class Attribute13
 					{
 						property="Enh_removeMap";
 						expression="_this unlinkItem 'ItemMap'";
@@ -8072,7 +8262,7 @@ class items
 							};
 						};
 					};
-					class Attribute13
+					class Attribute14
 					{
 						property="Enh_animType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
@@ -8091,7 +8281,7 @@ class items
 							};
 						};
 					};
-					class Attribute14
+					class Attribute15
 					{
 						property="Enh_removeNVG";
 						expression="_this unlinkItem (hmd _this)";
@@ -8110,7 +8300,7 @@ class items
 							};
 						};
 					};
-					class Attribute15
+					class Attribute16
 					{
 						property="Enh_removeGPS";
 						expression="_this unlinkItem 'ItemGPS'";
@@ -8129,7 +8319,7 @@ class items
 							};
 						};
 					};
-					nAttributes=16;
+					nAttributes=17;
 				};
 			};
 		};
@@ -8140,7 +8330,7 @@ class items
 			speedMode="LIMITED";
 			formation="FILE";
 		};
-		id=4746;
+		id=16;
 	};
 	class Item3
 	{
@@ -8154,7 +8344,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.047607422,0.0014390945,9.8929443};
+					position[]={-0.048828125,0.0014390945,9.8916016};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -8176,7 +8366,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4758;
+				id=28;
 				type="LIB_SOV_LC_rifleman";
 				class CustomAttributes
 				{
@@ -8492,7 +8682,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.030578613,0.0014390945,8.8509521};
+					position[]={-0.031738281,0.0014390945,8.8496094};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -8513,7 +8703,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4760;
+				id=29;
 				type="LIB_SOV_mgunner";
 				class CustomAttributes
 				{
@@ -8829,7 +9019,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.059631348,0.0014390945,7.881958};
+					position[]={-0.060546875,0.0014390945,7.8803711};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -8850,7 +9040,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4762;
+				id=30;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -9166,7 +9356,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.044616699,0.0014390945,6.8949585};
+					position[]={-0.045410156,0.0014390945,6.8935547};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -9187,7 +9377,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4764;
+				id=31;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -9503,7 +9693,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.031616211,0.0014390945,5.8889465};
+					position[]={-0.032714844,0.0014390945,5.8876953};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -9524,7 +9714,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4766;
+				id=32;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -9840,7 +10030,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.0546265,0.0014390945,9.9069519};
+					position[]={-2.0556641,0.0014390945,9.9052734};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -9861,7 +10051,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4759;
+				id=33;
 				type="LIB_SOV_LC_rifleman";
 				class CustomAttributes
 				{
@@ -10177,7 +10367,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.0375977,0.0014390945,8.8649597};
+					position[]={-2.0385742,0.0014390945,8.8632813};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -10185,8 +10375,8 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD44Oct_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="3rd Squad | 2nd Team | Machine Gunner";
+					init="[this,""NKVD44Oct_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					description="3rd Squad | 2nd Team | Strelok";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10198,7 +10388,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4761;
+				id=34;
 				type="LIB_SOV_mgunner";
 				class CustomAttributes
 				{
@@ -10242,6 +10432,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="acex_headless_blacklist";
+						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="Enh_taskPatrol_formation";
 						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
 						class Value
@@ -10259,7 +10468,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_onDamagedEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
@@ -10278,7 +10487,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute5
 					{
 						property="Enh_taskPatrol_speed";
 						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
@@ -10297,7 +10506,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
+					class Attribute6
 					{
 						property="Enh_animCombType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
@@ -10316,7 +10525,7 @@ class items
 							};
 						};
 					};
-					class Attribute6
+					class Attribute7
 					{
 						property="Enh_animEquipment";
 						expression="_this setVariable ['Enh_animEquipment',_value];";
@@ -10335,7 +10544,7 @@ class items
 							};
 						};
 					};
-					class Attribute7
+					class Attribute8
 					{
 						property="Enh_onKilledEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
@@ -10354,7 +10563,7 @@ class items
 							};
 						};
 					};
-					class Attribute8
+					class Attribute9
 					{
 						property="pitch";
 						expression="_this setpitch _value;";
@@ -10373,7 +10582,7 @@ class items
 							};
 						};
 					};
-					class Attribute9
+					class Attribute10
 					{
 						property="Enh_taskPatrol_behaviour";
 						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
@@ -10392,7 +10601,7 @@ class items
 							};
 						};
 					};
-					class Attribute10
+					class Attribute11
 					{
 						property="Enh_removeFAK";
 						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
@@ -10411,7 +10620,7 @@ class items
 							};
 						};
 					};
-					class Attribute11
+					class Attribute12
 					{
 						property="Enh_taskPatrol_combatMode";
 						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
@@ -10430,7 +10639,7 @@ class items
 							};
 						};
 					};
-					class Attribute12
+					class Attribute13
 					{
 						property="Enh_removeMap";
 						expression="_this unlinkItem 'ItemMap'";
@@ -10449,7 +10658,7 @@ class items
 							};
 						};
 					};
-					class Attribute13
+					class Attribute14
 					{
 						property="Enh_animType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
@@ -10468,7 +10677,7 @@ class items
 							};
 						};
 					};
-					class Attribute14
+					class Attribute15
 					{
 						property="Enh_removeNVG";
 						expression="_this unlinkItem (hmd _this)";
@@ -10487,7 +10696,7 @@ class items
 							};
 						};
 					};
-					class Attribute15
+					class Attribute16
 					{
 						property="Enh_removeGPS";
 						expression="_this unlinkItem 'ItemGPS'";
@@ -10506,7 +10715,7 @@ class items
 							};
 						};
 					};
-					nAttributes=16;
+					nAttributes=17;
 				};
 			};
 			class Item7
@@ -10514,344 +10723,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.0665894,0.0014390945,7.8959351};
-					angles[]={0,1.6168381,0};
-				};
-				side="East";
-				flags=4;
-				class Attributes
-				{
-					skill=0.40000001;
-					init="[this,""NKVD44Oct_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="3rd Squad | 2nd Team | Machine Gun Assistant";
-					isPlayable=1;
-					class Inventory
-					{
-						class uniform
-						{
-							typeName="U_C_Driver_1_orange";
-							isBackpack=0;
-						};
-						radio="tf_anprc148jem_1";
-					};
-				};
-				id=4763;
-				type="LIB_SOV_rifleman";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_animCombEquipment";
-						expression="_this setVariable ['Enh_animCombEquipment',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="ASIS";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="Enh_onRespawnEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="Enh_taskPatrol_formation";
-						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
-						class Value
-						{
-							class data
-							{
-								nil=1;
-								class type
-								{
-									type[]=
-									{
-										"ANY"
-									};
-								};
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="Enh_onDamagedEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="Enh_taskPatrol_speed";
-						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="LIMITED";
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="Enh_animCombType";
-						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="Enh_animEquipment";
-						expression="_this setVariable ['Enh_animEquipment',_value];";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="ASIS";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="Enh_onKilledEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute8
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute9
-					{
-						property="Enh_taskPatrol_behaviour";
-						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="SAFE";
-							};
-						};
-					};
-					class Attribute10
-					{
-						property="Enh_removeFAK";
-						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute11
-					{
-						property="Enh_taskPatrol_combatMode";
-						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					class Attribute12
-					{
-						property="Enh_removeMap";
-						expression="_this unlinkItem 'ItemMap'";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute13
-					{
-						property="Enh_animType";
-						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					class Attribute14
-					{
-						property="Enh_removeNVG";
-						expression="_this unlinkItem (hmd _this)";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute15
-					{
-						property="Enh_removeGPS";
-						expression="_this unlinkItem 'ItemGPS'";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=16;
-				};
-			};
-			class Item8
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-2.0515747,0.0014390945,6.9089355};
+					position[]={-2.0673828,0.0014390945,7.8945313};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -10872,7 +10744,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4765;
+				id=35;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -10916,6 +10788,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="acex_headless_blacklist";
+						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="Enh_taskPatrol_formation";
 						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
 						class Value
@@ -10933,7 +10824,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_onDamagedEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
@@ -10952,7 +10843,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute5
 					{
 						property="Enh_taskPatrol_speed";
 						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
@@ -10971,7 +10862,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
+					class Attribute6
 					{
 						property="Enh_animCombType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
@@ -10990,7 +10881,7 @@ class items
 							};
 						};
 					};
-					class Attribute6
+					class Attribute7
 					{
 						property="Enh_animEquipment";
 						expression="_this setVariable ['Enh_animEquipment',_value];";
@@ -11009,7 +10900,7 @@ class items
 							};
 						};
 					};
-					class Attribute7
+					class Attribute8
 					{
 						property="Enh_onKilledEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
@@ -11028,7 +10919,382 @@ class items
 							};
 						};
 					};
+					class Attribute9
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute10
+					{
+						property="Enh_taskPatrol_behaviour";
+						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="SAFE";
+							};
+						};
+					};
+					class Attribute11
+					{
+						property="Enh_removeFAK";
+						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute12
+					{
+						property="Enh_taskPatrol_combatMode";
+						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="YELLOW";
+							};
+						};
+					};
+					class Attribute13
+					{
+						property="Enh_removeMap";
+						expression="_this unlinkItem 'ItemMap'";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute14
+					{
+						property="Enh_animType";
+						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="";
+							};
+						};
+					};
+					class Attribute15
+					{
+						property="Enh_removeNVG";
+						expression="_this unlinkItem (hmd _this)";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute16
+					{
+						property="Enh_removeGPS";
+						expression="_this unlinkItem 'ItemGPS'";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=17;
+				};
+			};
+			class Item8
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-2.0532227,0.0014390945,6.9072266};
+					angles[]={0,1.6168381,0};
+				};
+				side="East";
+				flags=4;
+				class Attributes
+				{
+					skill=0.40000001;
+					init="[this,""NKVD44Oct_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					description="3rd Squad | 2nd Team | Strelok";
+					isPlayable=1;
+					class Inventory
+					{
+						class uniform
+						{
+							typeName="U_C_Driver_1_orange";
+							isBackpack=0;
+						};
+						radio="tf_anprc148jem_1";
+					};
+				};
+				id=36;
+				type="LIB_SOV_rifleman";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_animCombEquipment";
+						expression="_this setVariable ['Enh_animCombEquipment',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ASIS";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="Enh_onRespawnEvent";
+						expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="acex_headless_blacklist";
+						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="Enh_taskPatrol_formation";
+						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
+						class Value
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"ANY"
+									};
+								};
+							};
+						};
+					};
+					class Attribute4
+					{
+						property="Enh_onDamagedEvent";
+						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false";
+							};
+						};
+					};
+					class Attribute5
+					{
+						property="Enh_taskPatrol_speed";
+						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="LIMITED";
+							};
+						};
+					};
+					class Attribute6
+					{
+						property="Enh_animCombType";
+						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="";
+							};
+						};
+					};
+					class Attribute7
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01SU";
+							};
+						};
+					};
 					class Attribute8
+					{
+						property="Enh_animEquipment";
+						expression="_this setVariable ['Enh_animEquipment',_value];";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ASIS";
+							};
+						};
+					};
+					class Attribute9
+					{
+						property="Enh_onKilledEvent";
+						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false";
+							};
+						};
+					};
+					class Attribute10
 					{
 						property="pitch";
 						expression="_this setpitch _value;";
@@ -11047,7 +11313,7 @@ class items
 							};
 						};
 					};
-					class Attribute9
+					class Attribute11
 					{
 						property="Enh_taskPatrol_behaviour";
 						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
@@ -11066,7 +11332,7 @@ class items
 							};
 						};
 					};
-					class Attribute10
+					class Attribute12
 					{
 						property="Enh_removeFAK";
 						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
@@ -11085,7 +11351,7 @@ class items
 							};
 						};
 					};
-					class Attribute11
+					class Attribute13
 					{
 						property="Enh_taskPatrol_combatMode";
 						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
@@ -11104,7 +11370,7 @@ class items
 							};
 						};
 					};
-					class Attribute12
+					class Attribute14
 					{
 						property="Enh_removeMap";
 						expression="_this unlinkItem 'ItemMap'";
@@ -11123,7 +11389,7 @@ class items
 							};
 						};
 					};
-					class Attribute13
+					class Attribute15
 					{
 						property="Enh_animType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
@@ -11142,7 +11408,7 @@ class items
 							};
 						};
 					};
-					class Attribute14
+					class Attribute16
 					{
 						property="Enh_removeNVG";
 						expression="_this unlinkItem (hmd _this)";
@@ -11161,7 +11427,7 @@ class items
 							};
 						};
 					};
-					class Attribute15
+					class Attribute17
 					{
 						property="Enh_removeGPS";
 						expression="_this unlinkItem 'ItemGPS'";
@@ -11180,7 +11446,7 @@ class items
 							};
 						};
 					};
-					nAttributes=16;
+					nAttributes=18;
 				};
 			};
 			class Item9
@@ -11188,7 +11454,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.0375977,0.0014390945,5.9029541};
+					position[]={-2.0385742,0.0014390945,5.9013672};
 					angles[]={0,1.6168381,0};
 				};
 				side="East";
@@ -11209,7 +11475,7 @@ class items
 						radio="tf_anprc148jem_1";
 					};
 				};
-				id=4767;
+				id=37;
 				type="LIB_SOV_rifleman";
 				class CustomAttributes
 				{
@@ -11253,6 +11519,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="acex_headless_blacklist";
+						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="Enh_taskPatrol_formation";
 						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
 						class Value
@@ -11270,7 +11555,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_onDamagedEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
@@ -11289,7 +11574,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute5
 					{
 						property="Enh_taskPatrol_speed";
 						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
@@ -11308,7 +11593,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
+					class Attribute6
 					{
 						property="Enh_animCombType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
@@ -11327,7 +11612,7 @@ class items
 							};
 						};
 					};
-					class Attribute6
+					class Attribute7
 					{
 						property="Enh_animEquipment";
 						expression="_this setVariable ['Enh_animEquipment',_value];";
@@ -11346,7 +11631,7 @@ class items
 							};
 						};
 					};
-					class Attribute7
+					class Attribute8
 					{
 						property="Enh_onKilledEvent";
 						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
@@ -11365,7 +11650,7 @@ class items
 							};
 						};
 					};
-					class Attribute8
+					class Attribute9
 					{
 						property="pitch";
 						expression="_this setpitch _value;";
@@ -11384,7 +11669,7 @@ class items
 							};
 						};
 					};
-					class Attribute9
+					class Attribute10
 					{
 						property="Enh_taskPatrol_behaviour";
 						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
@@ -11403,7 +11688,7 @@ class items
 							};
 						};
 					};
-					class Attribute10
+					class Attribute11
 					{
 						property="Enh_removeFAK";
 						expression="		{			if (_x == 'FirstAidKit') then			{				_this removeItem _x;			}		} forEach (items _this);	";
@@ -11422,7 +11707,7 @@ class items
 							};
 						};
 					};
-					class Attribute11
+					class Attribute12
 					{
 						property="Enh_taskPatrol_combatMode";
 						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
@@ -11441,7 +11726,7 @@ class items
 							};
 						};
 					};
-					class Attribute12
+					class Attribute13
 					{
 						property="Enh_removeMap";
 						expression="_this unlinkItem 'ItemMap'";
@@ -11460,7 +11745,7 @@ class items
 							};
 						};
 					};
-					class Attribute13
+					class Attribute14
 					{
 						property="Enh_animType";
 						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
@@ -11479,7 +11764,7 @@ class items
 							};
 						};
 					};
-					class Attribute14
+					class Attribute15
 					{
 						property="Enh_removeNVG";
 						expression="_this unlinkItem (hmd _this)";
@@ -11498,7 +11783,7 @@ class items
 							};
 						};
 					};
-					class Attribute15
+					class Attribute16
 					{
 						property="Enh_removeGPS";
 						expression="_this unlinkItem 'ItemGPS'";
@@ -11517,7 +11802,7 @@ class items
 							};
 						};
 					};
-					nAttributes=16;
+					nAttributes=17;
 				};
 			};
 		};
@@ -11528,6 +11813,6 @@ class items
 			speedMode="LIMITED";
 			formation="FILE";
 		};
-		id=4757;
+		id=27;
 	};
 };

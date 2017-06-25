@@ -1,40 +1,379 @@
 version=53;
-center[]={5334.8628,5,4632.3828};
+center[]={456.99509,4.9999585,839.33539};
 class items
 {
 	items=6;
 	class Item0
 	{
-		dataType="Marker";
-		position[]={-2.309082,3.541254e+012,6.4501953};
-		name="AO";
-		markerType="RECTANGLE";
-		type="Empty";
-		colorName="ColorRed";
-		fillName="Border";
-		a=700;
-		b=700;
-		drawBorder=1;
-		id=0;
-		atlOffset=3.541254e+012;
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.99655151,0.0014805794,-1.291626};
+				};
+				side="Civilian";
+				flags=6;
+				class Attributes
+				{
+					rank="CAPTAIN";
+					init="this setVariable [""ace_w_allow_dam"",false,true];" \n "this allowDamage false; " \n "this addItemToUniform ""NVGoggles_OPFOR""; " \n "this linkItem ""ItemWatch"";";
+					name="God";
+					description="Zeus | Bataillonsführer";
+					isPlayer=1;
+					isPlayable=1;
+				};
+				id=9627;
+				type="LIB_CIV_Functionary_4";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_animCombEquipment";
+						expression="_this setVariable ['Enh_animCombEquipment',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ASIS";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="Enh_onRespawnEvent";
+						expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="enableStamina";
+						expression="_this enablestamina _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute4
+					{
+						property="acex_headless_blacklist";
+						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute5
+					{
+						property="Enh_taskPatrol_formation";
+						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
+						class Value
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"ANY"
+									};
+								};
+							};
+						};
+					};
+					class Attribute6
+					{
+						property="Enh_onDamagedEvent";
+						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false";
+							};
+						};
+					};
+					class Attribute7
+					{
+						property="Enh_taskPatrol_speed";
+						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="LIMITED";
+							};
+						};
+					};
+					class Attribute8
+					{
+						property="Enh_animCombType";
+						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="";
+							};
+						};
+					};
+					class Attribute9
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01SU";
+							};
+						};
+					};
+					class Attribute10
+					{
+						property="Enh_animEquipment";
+						expression="_this setVariable ['Enh_animEquipment',_value];";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ASIS";
+							};
+						};
+					};
+					class Attribute11
+					{
+						property="Enh_onKilledEvent";
+						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false";
+							};
+						};
+					};
+					class Attribute12
+					{
+						property="Enh_removeWeapon";
+						expression="		removeAllWeapons _this;		_this switchMove 'AmovPercMstpSnonWnonDnon'	";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute13
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.03;
+							};
+						};
+					};
+					class Attribute14
+					{
+						property="Enh_taskPatrol_behaviour";
+						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="SAFE";
+							};
+						};
+					};
+					class Attribute15
+					{
+						property="Enh_taskPatrol_combatMode";
+						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="YELLOW";
+							};
+						};
+					};
+					class Attribute16
+					{
+						property="Enh_animType";
+						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="";
+							};
+						};
+					};
+					nAttributes=17;
+				};
+			};
+		};
+		class Attributes
+		{
+		};
+		id=9626;
 	};
 	class Item1
-	{
-		dataType="Marker";
-		position[]={-2.3193359,0,7.4902344};
-		name="SpectatorMarker";
-		type="Empty";
-		id=1;
-	};
-	class Item2
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.7270508,0,5.1621094};
+			position[]={0.99981689,4.2438507e-005,-1.3364258};
 		};
-		id=2;
+		id=9628;
 		type="ModuleCurator_F";
+		atlOffset=9.5367432e-007;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -52,14 +391,14 @@ class items
 								"STRING"
 							};
 						};
-						value="#adminVoted";
+						value="God";
 					};
 				};
 			};
 			class Attribute1
 			{
-				property="ModuleCurator_F_Forced";
-				expression="_this setVariable ['Forced',_value,true];";
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
 				class Value
 				{
 					class data
@@ -71,7 +410,7 @@ class items
 								"SCALAR"
 							};
 						};
-						value=0;
+						value=3;
 					};
 				};
 			};
@@ -115,6 +454,59 @@ class items
 			};
 			class Attribute4
 			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item2
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0.99847412,4.0531158e-005,0.66992188};
+		};
+		id=16018;
+		type="ModuleCurator_F";
+		atlOffset=-9.5367432e-007;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="#adminVoted";
+					};
+				};
+			};
+			class Attribute1
+			{
 				property="ModuleCurator_F_Addons";
 				expression="_this setVariable ['Addons',_value,true];";
 				class Value
@@ -132,6 +524,63 @@ class items
 					};
 				};
 			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
 			nAttributes=5;
 		};
 	};
@@ -140,10 +589,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.5654297,0,5.1152344};
+			position[]={2.9988403,0,0.66802979};
 		};
-		id=3;
+		id=16019;
 		type="tfar_ModuleTaskForceRadioEnforceUsage";
+		atlOffset=-4.1484833e-005;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -287,9 +737,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-0.041992188,0,5.1152344};
+			position[]={-0.99755859,4.1484833e-005,0.6708374};
 		};
-		id=4;
+		id=16020;
 		type="acex_headless_module";
 		class CustomAttributes
 		{
@@ -377,13 +827,14 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-1.4897461,0,5.1152344};
+			position[]={-3.0029907,3.9577484e-005,0.66906738};
 		};
-		name="HC";
+		name="HC_1";
 		init="this setGroupId [""Headless Client""];";
 		isPlayable=1;
 		description="Headless Client";
-		id=5;
+		id=16021;
 		type="HeadlessClient_F";
+		atlOffset=-1.9073486e-006;
 	};
 };

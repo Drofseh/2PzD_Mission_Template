@@ -33,3 +33,10 @@ class Params {
 	#include "modules\modules.sqf" //DO NOT REMOVE
 	
 };
+
+//This ensures that accidental friendly fire won't prevent players from getting into vehicles with each other and other similar FF related issues
+class Extended_InitPost_EventHandlers {
+  class CAManBase {
+    class FixFriendlyFire { init = "if (local (_this select 0)) then {(_this select 0) addRating 100000;};";};
+  };
+};

@@ -118,6 +118,7 @@
 #define Ger_Vest_MG				"fow_v_heer_mg"
 #define Ger_Vest_MGA			"fow_v_heer_k98_ass"
 #define Ger_Vest_HGun			"fow_v_heer_p38"
+#define Ger_Vest_Med			"V_LIB_GER_VestKar98"
 
 #define Ger_Vest_VCrew			"V_LIB_GER_TankPrivateBelt"
 
@@ -188,7 +189,8 @@
 
 #define Ger_leader_equipment \
 ["LIB_Binocular_GER"] call FNC_AddItem; \
-["ACE_MapTools"] call FNC_AddItem;
+["ACE_MapTools"] call FNC_AddItem; \
+["fow_i_whistle"] call FNC_AddItem;
 
 #define Ger_medicP_equipment \
 ["ACE_fieldDressing",30,"backpack"] call FNC_AddItem; \

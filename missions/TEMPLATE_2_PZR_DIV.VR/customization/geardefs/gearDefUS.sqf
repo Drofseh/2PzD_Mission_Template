@@ -12,6 +12,7 @@
 #define US_Weap_M1928_D			"LIB_M1928_Thompson_d"
 #define US_Weap_M1928A1			"LIB_M1928A1_Thompson"
 #define US_Weap_M1T				"LIB_M1A1_Thompson"
+#define US_Weap_M1A1T			"LIB_M1A1_Thompson"
 #define US_Weap_M3GG			"fow_w_m3"
 #define US_Weap_M3A1GG			"LEN_M3a1"
 #define US_Weap_M55				"fow_w_m55_reising"
@@ -68,57 +69,162 @@
 
 //Radio
 #define US_Radio_P				"tf_anprc154"
-#define US_Radio_C				"tf_anprc155"
+#define US_Radio_C				"tf_anprc148jem"
 
 //===== US Army Equipment Definitions =====
 
 //=== Clothes ===
 
 //Uniform
-#define USA_Uni_CPT				"U_LIB_US_Cap"
-#define USA_Uni_LT				"U_LIB_US_Off"
-#define USA_Uni_SGT				"U_LIB_US_Sergant"
-#define USA_Uni_CPL				"U_LIB_US_Corp"
-#define USA_Uni_PFC				"U_LIB_US_Private_1st"
-#define USA_Uni_PVT				"U_LIB_US_Private"
-#define USA_Uni_Med				"U_LIB_US_Med"
-#define USA_Uni_VCrew1			"U_LIB_US_Tank_Crew"
-#define USA_Uni_VCrew2			"U_LIB_US_Tank_Crew2"
+#define US_Uni_CPT				"U_LIB_US_Cap"
+#define US_Uni_LT				"U_LIB_US_Off"
+#define US_Uni_SGT				"U_LIB_US_Sergant"
+#define US_Uni_CPL				"U_LIB_US_Corp"
+#define US_Uni_PFC				"U_LIB_US_Private_1st"
+#define US_Uni_PVT				"U_LIB_US_Private"
+#define US_Uni_Med				"U_LIB_US_Med"
+#define US_Uni_Tec5				"U_LIB_US_Eng"
+#define US_Uni_VCrew1			"U_LIB_US_Tank_Crew"
+#define US_Uni_VCrew2			"U_LIB_US_Tank_Crew2"
 
 	//North Africa Uniform
-#define USA_UniNA_CPT			"U_LIB_US_NAC_Uniform_2"
-#define USA_UniNA_LT			"U_LIB_US_NAC_Uniform_2"
-#define USA_UniNA_SGT			"U_LIB_US_NAC_Uniform_2"
-#define USA_UniNA_CPL			"U_LIB_US_NAC_Uniform_2"
-#define USA_UniNA_PFC			"U_LIB_US_NAC_Uniform_2"
-#define USA_UniNA_PVT			"U_LIB_US_NAC_Uniform_2"
-#define USA_UniNA_Med			"U_LIB_US_NAC_Uniform_2"
-#define USA_UniNA_VCrew1		"U_LIB_US_Tank_Crew"
-#define USA_UniNA_VCrew2		"U_LIB_US_Tank_Crew2"
+#define US_UniNA_CPT			"U_LIB_US_NAC_Uniform_2"
+#define US_UniNA_LT				"U_LIB_US_NAC_Uniform_2"
+#define US_UniNA_SGT			"U_LIB_US_NAC_Uniform_2"
+#define US_UniNA_CPL			"U_LIB_US_NAC_Uniform_2"
+#define US_UniNA_PFC			"U_LIB_US_NAC_Uniform_2"
+#define US_UniNA_PVT			"U_LIB_US_NAC_Uniform_2"
+#define US_UniNA_Med			"U_LIB_US_NAC_Uniform_2"
+#define US_UniNA_VCrew1			"U_LIB_US_Tank_Crew"
+#define US_UniNA_VCrew2			"U_LIB_US_Tank_Crew2"
 
 	//North Africa Op Torch Uniform
-#define USA_UniOT_CPT			"U_LIB_US_NAC_Uniform"
-#define USA_UniOT_LT			"U_LIB_US_NAC_Uniform"
-#define USA_UniOT_SGT			"U_LIB_US_NAC_Uniform"
-#define USA_UniOT_CPL			"U_LIB_US_NAC_Uniform"
-#define USA_UniOT_PFC			"U_LIB_US_NAC_Uniform"
-#define USA_UniOT_PVT			"U_LIB_US_NAC_Uniform"
-#define USA_UniOT_Med			"U_LIB_US_NAC_Med"
-#define USA_UniOT_VCrew1		"U_LIB_US_Tank_Crew"
-#define USA_UniOT_VCrew2		"U_LIB_US_Tank_Crew2"
+#define US_UniOT_CPT			"U_LIB_US_NAC_Uniform"
+#define US_UniOT_LT				"U_LIB_US_NAC_Uniform"
+#define US_UniOT_SGT			"U_LIB_US_NAC_Uniform"
+#define US_UniOT_CPL			"U_LIB_US_NAC_Uniform"
+#define US_UniOT_PFC			"U_LIB_US_NAC_Uniform"
+#define US_UniOT_PVT			"U_LIB_US_NAC_Uniform"
+#define US_UniOT_Med			"U_LIB_US_NAC_Med"
+#define US_UniOT_VCrew1			"U_LIB_US_Tank_Crew"
+#define US_UniOT_VCrew2			"U_LIB_US_Tank_Crew2"
 
 	//Ranger Uniform
-#define USA_UniR_CPT			"U_LIB_US_Cap"
-#define USA_UniR_LT				"U_LIB_US_Off"
-#define USA_UniR_SGT			"U_LIB_US_Rangers_Sergant"
-#define USA_UniR_CPL			"U_LIB_US_Rangers_Corp"
-#define USA_UniR_PFC			"U_LIB_US_Rangers_Private_1st"
-#define USA_UniR_PVT			"U_LIB_US_Rangers_Uniform"
-#define USA_UniR_Med			"U_LIB_US_Rangers_Med"
-#define USA_UniR_VCrew1			"U_LIB_US_Tank_Crew"
-#define USA_UniR_VCrew2			"U_LIB_US_Tank_Crew2"
+#define US_UniR_CPT				"U_LIB_US_Cap"
+#define US_UniR_LT				"U_LIB_US_Off"
+#define US_UniR_SGT				"U_LIB_US_Rangers_Sergant"
+#define US_UniR_CPL				"U_LIB_US_Rangers_Corp"
+#define US_UniR_PFC				"U_LIB_US_Rangers_Private_1st"
+#define US_UniR_PVT				"U_LIB_US_Rangers_Uniform"
+#define US_UniR_Med				"U_LIB_US_Rangers_Med"
+#define US_UniR_Tec5			"U_LIB_US_Rangers_Eng"
+#define US_UniR_VCrew1			"U_LIB_US_Tank_Crew"
+#define US_UniR_VCrew2			"U_LIB_US_Tank_Crew2"
 
-	//Airborne Uniform
+	//Winter Uniform
+#define US_UniW_CPT				"U_LIB_US_Cap"
+#define US_UniW_LT				"U_LIB_US_Off"
+#define US_UniW_SGT				"U_LIB_US_Sergant"
+#define US_UniW_CPL				"U_LIB_US_Corp"
+#define US_UniW_PFC				"U_LIB_US_Private_1st"
+#define US_UniW_PVT				"U_LIB_US_Private_w"
+#define US_UniW_Med				"U_LIB_US_Med"
+#define US_UniW_VCrew1			"U_LIB_US_Tank_Crew"
+#define US_UniW_VCrew2			"U_LIB_US_Tank_Crew2"
+
+//Vests
+#define US_Vest_Pistol			"fow_v_us_45"
+#define US_Vest_NCO_M1C			"fow_v_us_carbine_nco"
+#define US_Vest_NCO_M1T			"fow_v_us_thompson_nco"
+#define US_Vest_M1G				"fow_v_us_garand"
+#define US_Vest_M1G_Gren		"V_LIB_US_Vest_Grenadier"
+#define US_Vest_M1C				"fow_v_us_carbine"
+#define US_Vest_M1C_Eng			"fow_v_us_carbine_eng"
+#define US_Vest_M1T				"fow_v_us_thompson"
+#define US_Vest_BAR				"fow_v_us_bar"
+#define US_Vest_MGA				"fow_v_us_asst_mg"
+#define US_Vest_Mort			"V_LIB_US_Vest_Medic"
+#define US_Vest_Med				"fow_v_us_medic"
+#define US_Vest_M1G_Frag		"fow_v_us_Grenade"
+
+//Backpack
+#define US_BP_r					["B_LIB_US_Backpack"],["B_LIB_US_Backpack"],["B_LIB_US_Backpack"],["B_LIB_US_M36"]
+#define US_BP_M1928				"B_LIB_US_Backpack"
+#define US_BP_M36				"B_LIB_US_M36"
+#define US_BP_M36R				"B_LIB_US_M36_Rope"
+#define US_BP_AT				"B_LIB_US_RocketBag_Big_Empty"
+#define US_BP_Med				"B_LIB_US_MedicBackpack_Big_Empty"
+#define US_BP_MG				"B_LIB_US_MGbag_Big_Empty"
+#define US_BP_Radio				"fow_b_US_Radio"
+#define US_Bando				"B_LIB_US_Bandoleer"
+
+//Headgear
+#define US_Helm_CPT				"H_LIB_US_Helmet_Cap"
+#define US_Helm_LT				"H_LIB_US_Helmet_First_lieutenant"
+#define US_Helm_2LT				"H_LIB_US_Helmet_Second_lieutenant"
+#define US_Helm_Med_r			["H_LIB_US_Helmet_Med"],["H_LIB_US_Helmet_Med_os"],["H_LIB_US_Helmet_Med_ns"]
+								//strap, open strap, no strap
+#define US_Helm_r				["H_LIB_US_Helmet"],["H_LIB_US_Helmet_os"],["H_LIB_US_Helmet_ns"],["H_LIB_US_Helmet_Net"],["H_LIB_US_Helmet_Net_os"],["H_LIB_US_Helmet_Net_ns"]
+								//strap, open strap, no strap, camo strap, camo open strap, camo no strap
+
+#define US_Helm_VCrew			"H_LIB_US_Helmet_Tank"
+#define US_Helm_Air				"fow_h_us_flight_helmet"
+
+	//Ranger Headgear
+#define US_HelmR_CPT			"H_LIB_US_Rangers_Helmet_Cap"
+#define US_HelmR_LT				"H_LIB_US_Rangers_Helmet_First_lieutenant"
+#define US_HelmR_2LT			"H_LIB_US_Rangers_Helmet_Second_lieutenant"
+#define US_HelmR_Med_r			["H_LIB_US_Helmet_Med"],["H_LIB_US_Helmet_Med_os"],["H_LIB_US_Helmet_Med_ns"]
+								//strap, open strap, no strap
+#define US_HelmR_r				["H_LIB_US_Rangers_Helmet_ns"],["H_LIB_US_Rangers_Helmet_os"]
+								//no strap, open strap
+
+#define US_HelmR_VCrew			"H_LIB_US_Helmet_Tank"
+#define US_HelmR_Air			"fow_h_us_flight_helmet"
+
+	//Winter Headgear
+#define US_HelmW_CPT			"H_LIB_US_Helmet_Cap_w"
+#define US_HelmW_LT				"H_LIB_US_Helmet_First_lieutenant_w"
+#define US_HelmW_2LT			"H_LIB_US_Helmet_Second_lieutenant_w"
+#define US_HelmW_Med_r			["H_LIB_US_Helmet_Med_w"],["H_LIB_US_Helmet_Med_w"],["H_LIB_US_Helmet_Med_w"]
+								//strap, open strap, no strap
+#define US_HelmW_r				["H_LIB_US_Helmet_w"],["H_LIB_US_Helmet_Net_w"],["H_LIB_US_Helmet_Cover_w"]
+								//strap, open strap, no strap, camo strap, camo open strap, camo no strap
+
+#define US_HelmW_VCrew			"H_LIB_US_Helmet_Tank"
+#define US_HelmW_Air			"fow_h_us_flight_helmet"
+
+//=== EQUIPMENT ===
+
+#define US_default_equipment \
+["ItemMap"] call FNC_AddItem; \
+["ItemCompass"] call FNC_AddItem; \
+["ItemWatch"]call FNC_AddItem; \
+["ACE_EntrenchingTool"]call FNC_AddItem; \
+["ACE_fieldDressing",4] call FNC_AddItem; \
+["ACE_tourniquet",1] call FNC_AddItem; \
+["ACE_Flashlight_MX991"]call FNC_AddItem; \
+["ACE_CableTie"]call FNC_AddItem;
+
+#define US_leader_equipment \
+["LIB_Binocular_SU"] call FNC_AddItem; \
+["ACE_MapTools"] call FNC_AddItem; \
+["fow_i_whistle"] call FNC_AddItem;
+
+#define US_medic_equipment \
+["ACE_fieldDressing",30,"backpack"] call FNC_AddItem; \
+["ACE_morphine",10,"backpack"] call FNC_AddItem; \
+["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
+["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
+["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
+["ACE_personalAidKit",5,"backpack"] call FNC_AddItem; \
+["ACE_salineIV_500",5,"backpack"] call FNC_AddItem;
+
+//===== US Army Airborne Equipment Definitions =====
+
+//=== Clothes ===
+
+//Airborne Uniform
 #define USAB_UniK_CPT			"U_LIB_US_AB_Uniform_M42"
 #define USAB_UniK_LT			"U_LIB_US_AB_Uniform_M42"
 #define USAB_UniK_SGT			"U_LIB_US_AB_Uniform_M42_NCO"
@@ -139,79 +245,41 @@
 #define USAB_UniG_VCrew1		"U_LIB_US_Tank_Crew"
 #define USAB_UniG_VCrew2		"U_LIB_US_Tank_Crew2"
 
-	//Winter Uniform
-#define USA_UniW_CPT			"U_LIB_US_Cap"
-#define USA_UniW_LT				"U_LIB_US_Off"
-#define USA_UniW_SGT			"U_LIB_US_Sergant"
-#define USA_UniW_CPL			"U_LIB_US_Corp"
-#define USA_UniW_PFC			"U_LIB_US_Private_1st"
-#define USA_UniW_PVT			"U_LIB_US_Private_w"
-#define USA_UniW_Med			"U_LIB_US_Med"
-#define USA_UniW_VCrew1			"U_LIB_US_Tank_Crew"
-#define USA_UniW_VCrew2			"U_LIB_US_Tank_Crew2"
+//Winter Uniform
+#define USAB_UniW_CPT			"U_LIB_US_Cap"
+#define USAB_UniW_LT			"U_LIB_US_Off"
+#define USAB_UniW_SGT			"U_LIB_US_Sergant"
+#define USAB_UniW_CPL			"U_LIB_US_Corp"
+#define USAB_UniW_PFC			"U_LIB_US_Private_1st"
+#define USAB_UniW_PVT			"U_LIB_US_Private_w"
+#define USAB_UniW_Med			"U_LIB_US_Med"
 
-//Vests
-#define USA_Vest_Pistol			"fow_v_us_45"
-#define USA_Vest_NCO_M1C		"fow_v_us_carbine_nco"
-#define USA_Vest_NCO_M1T		"fow_v_us_thompson_nco"
-#define USA_Vest_M1G			"fow_v_us_garand"
-#define USA_Vest_M1G_Frag		"fow_v_us_Grenade"
-#define USA_Vest_M1C			"fow_v_us_carbine"
-#define USA_Vest_M1C_Eng		"fow_v_us_carbine_eng"
-#define USA_Vest_M1T			"fow_v_us_thompson"
-#define USA_Vest_BAR			"fow_v_us_bar"
-#define USA_Vest_MGA			"fow_v_us_asst_mg"
-#define USA_Vest_Med			"fow_v_us_medic"
-
-	//Airborne Vests
+//Airborne Vests
 #define USAB_Vest_Pistol		"fow_v_us_45"
 #define USAB_Vest_NCO_M1C		"V_LIB_US_AB_Vest_Carbine_nco"
 #define USAB_Vest_NCO_M1T		"V_LIB_US_AB_Vest_Thompson_nco"
 #define USAB_Vest_M1G			"V_LIB_US_AB_Vest_Garand"
-#define USAB_Vest_M1G_Frag		"V_LIB_US_AB_Vest_Grenadier"
+#define USAB_Vest_M1G_Gren		"V_LIB_US_AB_Vest_Grenadier"
 #define USAB_Vest_M1C			"V_LIB_US_AB_Vest_Carbine"
 #define USAB_Vest_M1C_Eng		"fow_v_us_carbine_eng"
 #define USAB_Vest_M1T			"V_LIB_US_AB_Vest_Thompson"
 #define USAB_Vest_BAR			"V_LIB_US_AB_Vest_Bar"
 #define USAB_Vest_MGA			"V_LIB_US_AB_Vest_Grenadier"
+#define USAB_Vest_Mort			"V_LIB_US_Vest_Medic"
 #define USAB_Vest_Med			"fow_v_us_medic"
 
-//Backpack
-#define USA_BP_r				["B_LIB_US_Backpack"],["B_LIB_US_Backpack"],["B_LIB_US_Backpack"],["B_LIB_US_M36"]
-#define USA_BP_M1928			"B_LIB_US_Backpack"
-#define USA_BP_M36				"B_LIB_US_M36"
-#define USA_BP_M36R				"B_LIB_US_M36_Rope"
-#define USA_BP_AT				"B_LIB_US_RocketBag_Big_Empty"
-#define USA_BP_Med				"B_LIB_US_MedicBackpack_Big_Empty"
-#define USA_BP_MG				"B_LIB_US_MGbag_Big_Empty"
-#define USA_BP_Radio			"fow_b_US_Radio"
-#define USA_Bando				"B_LIB_US_Bandoleer"
+//Airborne Backpack
+#define USAB_BP_r				["B_LIB_US_M36"],["B_LIB_US_M36"],["B_LIB_US_M36_Rope"],["B_LIB_US_M36_Rope"]
+#define USAB_BP_M1928			"B_LIB_US_Backpack"
+#define USAB_BP_M36				"B_LIB_US_M36"
+#define USAB_BP_M36R			"B_LIB_US_M36_Rope"
+#define USAB_BP_AT				"B_LIB_US_RocketBag_Big_Empty"
+#define USAB_BP_Med				"B_LIB_US_MedicBackpack_Big_Empty"
+#define USAB_BP_MG				"B_LIB_US_MGbag_Big_Empty"
+#define USAB_BP_Radio			"fow_b_US_Radio"
+#define USAB_Bando				"B_LIB_US_Bandoleer"
 
-//Headgear
-#define USA_Helm_CPT			"H_LIB_US_Helmet_Cap"
-#define USA_Helm_LT				"H_LIB_US_Helmet_First_lieutenant"
-#define USA_Helm_2LT			"H_LIB_US_Helmet_Second_lieutenant"
-#define USA_Helm_Med_r			["H_LIB_US_Helmet_Med"],["H_LIB_US_Helmet_Med_os"],["H_LIB_US_Helmet_Med_ns"]
-								//strap, open strap, no strap
-#define USA_Helm_r				["H_LIB_US_Helmet"],["H_LIB_US_Helmet_os"],["H_LIB_US_Helmet_ns"],["H_LIB_US_Helmet_Net"],["H_LIB_US_Helmet_Net_os"],["H_LIB_US_Helmet_Net_ns"]
-								//strap, open strap, no strap, camo strap, camo open strap, camo no strap
-
-#define USA_Helm_VCrew			"H_LIB_US_Helmet_Tank"
-#define USA_Helm_Air			"fow_h_us_flight_helmet"
-
-	//Ranger Headgear
-#define USA_HelmR_CPT			"H_LIB_US_Rangers_Helmet_Cap"
-#define USA_HelmR_LT			"H_LIB_US_Rangers_Helmet_First_lieutenant"
-#define USA_HelmR_2LT			"H_LIB_US_Rangers_Helmet_Second_lieutenant"
-#define USA_HelmR_Med_r			["H_LIB_US_Helmet_Med"],["H_LIB_US_Helmet_Med_os"],["H_LIB_US_Helmet_Med_ns"]
-								//strap, open strap, no strap
-#define USA_HelmR_r				["H_LIB_US_Rangers_Helmet_ns"],["H_LIB_US_Rangers_Helmet_os"]
-								//no strap, open strap
-
-#define USA_HelmR_VCrew			"H_LIB_US_Helmet_Tank"
-#define USA_HelmR_Air			"fow_h_us_flight_helmet"
-
-	//Airborne Headgear
+//Airborne Headgear
 #define USAB_Helm_CPT			"H_LIB_US_AB_Helmet_CO_1"
 #define USAB_Helm_LT			"H_LIB_US_AB_Helmet_CO_2"
 #define USAB_Helm_2LT			"H_LIB_US_AB_Helmet_NCO_1"
@@ -222,61 +290,15 @@
 #define USAB_Helm_Air			"fow_h_us_flight_helmet"
 
 	//Winter Headgear
-#define USA_HelmW_CPT			"H_LIB_US_Helmet_Cap_w"
-#define USA_HelmW_LT			"H_LIB_US_Helmet_First_lieutenant_w"
-#define USA_HelmW_2LT			"H_LIB_US_Helmet_Second_lieutenant_w"
-#define USA_HelmW_Med_r			["H_LIB_US_Helmet_Med_w"],["H_LIB_US_Helmet_Med_w"],["H_LIB_US_Helmet_Med_w"]
-								//strap, open strap, no strap
-#define USA_HelmW_r				["H_LIB_US_Helmet_w"],["H_LIB_US_Helmet_Net_w"],["H_LIB_US_Helmet_Cover_w"]
-								//strap, open strap, no strap, camo strap, camo open strap, camo no strap
-
-#define USA_HelmW_VCrew			"H_LIB_US_Helmet_Tank"
-#define USA_HelmW_Air			"fow_h_us_flight_helmet"
-
-//===== US Army Airborne Equipment Definitions =====
-
-//=== Clothes ===
-
-	//Winter Uniform
-#define USAB_UniW_CPT			"U_LIB_US_Cap"
-#define USAB_UniW_LT			"U_LIB_US_Off"
-#define USAB_UniW_SGT			"U_LIB_US_Sergant"
-#define USAB_UniW_CPL			"U_LIB_US_Corp"
-#define USAB_UniW_PFC			"U_LIB_US_Private_1st"
-#define USAB_UniW_PVT			"U_LIB_US_Private_w"
-#define USAB_UniW_Med			"U_LIB_US_Med"
-
-//Backpack
-#define USAB_BP_r				["B_LIB_US_Backpack"],["B_LIB_US_Backpack"],["B_LIB_US_Backpack"],["B_LIB_US_M36"]
-#define USAB_BP_M1928			"B_LIB_US_Backpack"
-#define USAB_BP_M36				"B_LIB_US_M36"
-#define USAB_BP_AT				"B_LIB_US_RocketBag_Big_Empty"
-#define USAB_BP_Med				"B_LIB_US_MedicBackpack_Big_Empty"
-#define USAB_BP_MG				"B_LIB_US_MGbag_Big_Empty"
-#define USAB_BP_Radio			"fow_b_US_Radio"
-#define USAB_Bando				"B_LIB_US_Bandoleer"
-
-//Headgear
-#define USAB_Helm_CPT			"H_LIB_US_Helmet_Cap"
-#define USAB_Helm_LT				"H_LIB_US_Helmet_First_lieutenant"
-#define USAB_Helm_2LT			"H_LIB_US_Helmet_Second_lieutenant"
-#define USAB_Helm_Med_r			["H_LIB_US_Helmet_Med"],["H_LIB_US_Helmet_Med_os"],["H_LIB_US_Helmet_Med_ns"]
-								//strap, open strap, no strap
-#define USAB_Helm_r				["H_LIB_US_Helmet"],["H_LIB_US_Helmet_os"],["H_LIB_US_Helmet_ns"],["H_LIB_US_Helmet_Net"],["H_LIB_US_Helmet_Net_os"],["H_LIB_US_Helmet_Net_ns"]
-								//strap, open strap, no strap, camo strap, camo open strap, camo no strap
-
-#define USAB_Helm_VCrew			"H_LIB_US_Helmet_Tank"
-
-	//Winter Headgear
 #define USAB_HelmW_CPT			"H_LIB_US_Helmet_Cap_w"
 #define USAB_HelmW_LT			"H_LIB_US_Helmet_First_lieutenant_w"
 #define USAB_HelmW_2LT			"H_LIB_US_Helmet_Second_lieutenant_w"
-#define USAB_HelmW_Med_r			["H_LIB_US_Helmet_Med_w"],["H_LIB_US_Helmet_Med_w"],["H_LIB_US_Helmet_Med_w"]
+#define USAB_HelmW_Med_r		["H_LIB_US_Helmet_Med_w"],["H_LIB_US_Helmet_Med_w"],["H_LIB_US_Helmet_Med_w"]
 								//strap, open strap, no strap
-#define USAB_HelmW_r				["H_LIB_US_Helmet_w"],["H_LIB_US_Helmet_Net_w"],["H_LIB_US_Helmet_Cover_w"]
+#define USAB_HelmW_r			["H_LIB_US_Helmet_w"],["H_LIB_US_Helmet_Net_w"],["H_LIB_US_Helmet_Cover_w"]
 								//strap, open strap, no strap, camo strap, camo open strap, camo no strap
 
-#define USAB_HelmW_VCrew			"H_LIB_US_Helmet_Tank"
+#define USAB_HelmW_VCrew		"H_LIB_US_Helmet_Tank"
 
 //===== USMC Equipment Definitions =====
 
@@ -311,3 +333,14 @@
 								//strap, open strap, no strap, camo strap, camo open strap, camo no strap
 
 #define USMC_Helm_VCrew			"H_LIB_US_Helmet_Tank"
+
+//===== US Air Force Equipment Definitions =====
+
+//=== Clothes ===
+
+//Uniform
+#define USAF_UniG				"fow_u_us_pilot_02"
+#define USAF_UniK				"fow_u_us_pilot_01"
+
+//Headgear
+#define USAF_Helm				"H_LIB_US_Helmet_Pilot"

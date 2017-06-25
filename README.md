@@ -21,6 +21,6 @@ Please check the [here](https://github.com/Drofseh/2PzD_Mission_Template/blob/ma
 
 Olsen for making the [Olsen Framework](https://github.com/dklollol/Olsen-Framework-Arma-3).
 
-If you want a framework for making ARMA mission and aren't a member of 2.PzD I strongly recommend the Olsen Framework.
+If you want a framework for making ARMA missions and aren't a member of 2.PzD I strongly recommend the Olsen Framework.
 
 [IFA3 Lite](https://forums.bistudio.com/forums/topic/190809-iron-front-in-arm3-lite-preview-versions/) and [FOW](https://forums.bistudio.com/forums/topic/198194-faces-of-war-ww2/) teams and [Lennard](https://forums.bistudio.com/forums/topic/200914-len-weapons-pack-for-ifa3-lite/) for their respective mods which provide essential assets for ARMA3 gameplay in a WWII setting.

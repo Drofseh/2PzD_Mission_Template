@@ -13,6 +13,7 @@
 #define UK_Weap_StenMkV			"LEN_StenMk5"
 #define UK_Weap_StenMkVI		"LEN_StenMk2S"
 #define UK_Weap_Bren			"fow_w_bren"
+#define UK_Weap_Boys			"LIB_PTRD"
 
 //Secondary
 #define UK_Weap_HiPower			"LEN_P640b"
@@ -32,6 +33,7 @@
 #define UK_Mag_LeeEn			"fow_10Rnd_303"
 #define UK_Mag_Sten				"LEN_32Rnd_9x19"
 #define UK_Mag_Bren				"fow_30Rnd_303_bren"
+#define UK_Mag_Boys				"LIB_1Rnd_145x114"
 #define UK_Mag_HiPower			"LEN_13Rnd_9x19"
 #define UK_Mag_Webley455		"fow_6Rnd_455"
 #define UK_Mag_Welrod_1			"LEN_8Rnd_765x17_2PzD"
@@ -80,21 +82,21 @@
 //Backpack
 #define UK_BPK					"fow_b_uk_p37"
 #define UK_BPG					"fow_b_uk_p37_blanco"
-
 #define UK_BPG_L				"fow_b_uk_bergenpack"
+#define UK_BP_P					"fow_b_uk_piat"
 
 #define UK_BPK_Radio			"fow_b_us_radio"
 
 //Headgear
-#define UK_Helm_r				["fow_h_uk_mk2"],["fow_h_uk_mk2_net"],["fow_h_uk_mk3"],["fow_h_uk_mk3_net"]
+#define UK_Helm_r				["fow_h_uk_mk2"],["fow_h_uk_mk2_net"],["fow_h_uk_mk3"],["fow_h_uk_mk3_net_camo"]
 #define UK_Helm_Mk2_r			["fow_h_uk_mk2"],["fow_h_uk_mk2_net"]
-#define UK_Helm_Mk3_r			["fow_h_uk_mk3"],["fow_h_uk_mk3_net"]
+#define UK_Helm_Mk3_r			["fow_h_uk_mk3"],["fow_h_uk_mk3_net_camo"]
 #define UK_Helm_Mk2_P_r			["fow_h_uk_mk2_para"],["fow_h_uk_mk2_para_foliage"]
 #define UK_Helm_Mk2				"fow_h_uk_mk2"
 #define UK_Helm_Mk2_Net			"fow_h_uk_mk2_net";
 #define UK_Helm_Mk2_NetF		"fow_h_uk_mk2_net_camo";
 #define UK_Helm_Mk3				"fow_h_uk_mk3"
-#define UK_Helm_Mk3_Net			"fow_h_uk_mk3_net"
+#define UK_Helm_Mk3_Net			"fow_h_uk_mk3_net_camo"
 #define UK_Helm_P_Mk2			"fow_h_uk_mk2_para";
 #define UK_Helm_P_Mk2_Fol		"fow_h_uk_mk2_para_foliage";
 
@@ -121,7 +123,8 @@
 
 #define UK_leader_equipment \
 ["LIB_Binocular_SU"] call FNC_AddItem; \
-["ACE_MapTools"] call FNC_AddItem;
+["ACE_MapTools"] call FNC_AddItem; \
+["fow_i_whistle"] call FNC_AddItem;
 
 #define UK_medic_equipment \
 ["ACE_fieldDressing",30,"backpack"] call FNC_AddItem; \
