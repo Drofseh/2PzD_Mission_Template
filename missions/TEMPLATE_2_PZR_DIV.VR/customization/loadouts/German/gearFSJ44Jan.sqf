@@ -49,10 +49,10 @@
 		[Ger_Mag_MP40,3,"vest"]
 		],[90],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[GEN_Face_Bino],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[10]
 		] call FNC_AddItemRandomPercent;
@@ -107,10 +107,10 @@
 		[Ger_Mag_MP40,3,"vest"]
 		],[90],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[GEN_Face_Bino],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[10]
 		] call FNC_AddItemRandomPercent;
@@ -172,10 +172,10 @@
 		[Ger_Mag_MP40,3,"vest"]
 		],[90],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[GEN_Face_Bino],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[10]
 		] call FNC_AddItemRandomPercent;
@@ -231,9 +231,9 @@
 		[Ger_Mag_MP40,6,"vest"]
 		],[90],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[10]
 		] call FNC_AddItemRandomPercent;
@@ -298,9 +298,9 @@
 		[Ger_Mag_G43,12,"vest"]
 		],[15],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[12],
 		[//FG42
@@ -371,9 +371,9 @@
 		[Ger_Mag_G43,12,"vest"]
 		],[15],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[12],
 		[//FG42
@@ -444,9 +444,9 @@
 		[Ger_Mag_G43,6,"vest"]
 		],[15],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[12],
 		[//FG42
@@ -506,10 +506,10 @@
 		[Ger_Mag_MP40,3,"vest"]
 		],[90],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[GEN_Face_Bino],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[10]
 		] call FNC_AddItemRandomPercent;
@@ -561,9 +561,9 @@
 		[Ger_Mag_MP40,6,"vest"]
 		],[90],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[10]
 		] call FNC_AddItemRandomPercent;
@@ -676,7 +676,7 @@
 		],[15],
 		[//StG44
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[12],
 		[//FG42
@@ -838,9 +838,9 @@
 		[Ger_Mag_G43,12,"vest"]
 		],[15],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[12],
 		[//FG42

@@ -1032,7 +1032,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD44Oct_Med""] call FNC_GearScript;";
+					init="[this,""NKVD44Oct_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Platoon HQ | Medic";
 					isPlayable=1;
 					class Inventory

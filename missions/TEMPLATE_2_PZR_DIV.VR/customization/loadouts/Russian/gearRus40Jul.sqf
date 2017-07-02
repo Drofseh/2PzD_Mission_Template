@@ -98,7 +98,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -143,7 +143,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -214,7 +214,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -259,7 +259,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -296,7 +296,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -337,7 +337,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -368,7 +368,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -469,7 +469,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -624,7 +624,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -722,7 +722,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],

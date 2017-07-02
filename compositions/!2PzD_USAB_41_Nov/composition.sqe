@@ -3032,7 +3032,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USAB41Nov_Med""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""USAB41Nov_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="1 Platoon | Platoon HQ | Medic";
 					isPlayable=1;
 					class Inventory
@@ -15661,7 +15661,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USAB41Nov_Med""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""USAB41Nov_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="2 Platoon | Platoon HQ | Medic";
 					isPlayable=1;
 					class Inventory

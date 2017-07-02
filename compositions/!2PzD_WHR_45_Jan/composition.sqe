@@ -5897,7 +5897,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR45_MedP""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""WHR45_MedP""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					name="G_1614";
 					description="1.Zug | Zugtrupp | Krankenträger";
 					isPlayable=1;
@@ -14825,7 +14825,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR45_MedP""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""WHR45_MedP""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					name="G_2614";
 					description="2.Zug | Zugtrupp | Krankenträger";
 					isPlayable=1;

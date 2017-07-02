@@ -2768,7 +2768,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R40Jul_Med""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""R40Jul_Med""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="1 Platoon | Platoon HQ | Medic";
 					isPlayable=1;
 					class Inventory
@@ -15689,7 +15689,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R40Jul_Med""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""R40Jul_Med""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="2 Platoon | Platoon HQ | Medic";
 					isPlayable=1;
 					class Inventory

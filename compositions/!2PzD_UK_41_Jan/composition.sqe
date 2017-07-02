@@ -1740,8 +1740,8 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UK41Jan_MortG""] call FNC_GearScript;";
-					description="Company | HQ Section | Mortar Gunner";
+					init="[this,""UK41Jan_LMortG""] call FNC_GearScript;";
+					description="Company | HQ Section | 2"" Mortar Gunner";
 					isPlayable=1;
 					class Inventory
 					{
@@ -2114,8 +2114,8 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UK41Jan_MortA""] call FNC_GearScript;";
-					description="Company | HQ Section | Mortar Assistant";
+					init="[this,""UK41Jan_LMortA""] call FNC_GearScript;";
+					description="Company | HQ Section | 2"" Mortar Assistant";
 					isPlayable=1;
 					class Inventory
 					{
@@ -3887,7 +3887,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UK41Jan_Med""] call FNC_GearScript;";
+					init="[this,""UK41Jan_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="1 Platoon | HQ Section | Medic";
 					isPlayable=1;
 					class Inventory
@@ -13006,7 +13006,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UK41Jan_Med""] call FNC_GearScript;";
+					init="[this,""UK41Jan_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="2 Platoon | HQ Section | Medic";
 					isPlayable=1;
 					class Inventory

@@ -335,17 +335,17 @@
 		[Ger_Mag_K98,12,"vest"]
 		],[40],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[25],
 		[//SVT
-		[Rus_Vest_SVT],
+		[Ger_Vest_G43],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[19],
 		[//G43
 		[Ger_Vest_G43],
@@ -354,13 +354,13 @@
 		[Ger_Mag_G43,6,"vest"]
 		],[10],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -386,17 +386,17 @@
 		[Ger_Mag_K98,12,"vest"]
 		],[40],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[25],
 		[//SVT
-		[Rus_Vest_SVT],
+		[Ger_Vest_G43],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[19],
 		[//G43
 		[Ger_Vest_G43],
@@ -405,13 +405,13 @@
 		[Ger_Mag_G43,6,"vest"]
 		],[10],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -456,7 +456,7 @@
 		[//SVT
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[19],
 		[//G43
 		[Ger_Mag_G43,1],
@@ -465,7 +465,7 @@
 		],[10],
 		[//StG44
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5],
 		[//Mosin M38
@@ -547,17 +547,17 @@
 		[Ger_Mag_K98,12,"vest"]
 		],[35],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[30],
 		[//SVT
-		[Rus_Vest_SVT],
+		[Ger_Vest_G43],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[19],
 		[//G43
 		[Ger_Vest_G43],
@@ -566,13 +566,13 @@
 		[Ger_Mag_G43,6,"vest"]
 		],[10],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -729,7 +729,7 @@
 		[//SVT
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[19],
 		[//G43
 		[Ger_Mag_G43,1],
@@ -738,7 +738,7 @@
 		],[10],
 		[//StG44
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5],
 		[//Mosin M38
@@ -771,17 +771,17 @@
 		[Ger_Mag_K98,12,"vest"]
 		],[40],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[25],
 		[//SVT
-		[Rus_Vest_SVT],
+		[Ger_Vest_G43],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[19],
 		[//G43
 		[Ger_Vest_G43],
@@ -790,13 +790,13 @@
 		[Ger_Mag_G43,6,"vest"]
 		],[10],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -847,17 +847,17 @@
 		[Ger_Mag_K98,12,"vest"]
 		],[40],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[25],
 		[//SVT
-		[Rus_Vest_SVT],
+		[Ger_Vest_G43],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[19],
 		[//G43
 		[Ger_Vest_G43],
@@ -866,13 +866,13 @@
 		[Ger_Mag_G43,6,"vest"]
 		],[10],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -909,17 +909,17 @@
 		[Ger_Mag_K98,12,"vest"]
 		],[40],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[25],
 		[//SVT
-		[Rus_Vest_SVT],
+		[Ger_Vest_G43],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[19],
 		[//G43
 		[Ger_Vest_G43],
@@ -928,13 +928,13 @@
 		[Ger_Mag_G43,6,"vest"]
 		],[10],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -1087,17 +1087,17 @@
 		[Ger_Mag_K98,12,"vest"]
 		],[40],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[25],
 		[//SVT
-		[Rus_Vest_SVT],
+		[Ger_Vest_G43],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[19],
 		[//G43
 		[Ger_Vest_G43],
@@ -1106,13 +1106,13 @@
 		[Ger_Mag_G43,6,"vest"]
 		],[10],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -1152,7 +1152,7 @@
 		[//SVT
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[19],
 		[//G43
 		[Ger_Mag_G43,1],
@@ -1161,7 +1161,7 @@
 		],[10],
 		[//StG44
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5],
 		[//Mosin M38
@@ -1258,17 +1258,17 @@
 		[Ger_Mag_K98,12,"vest"]
 		],[40],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[25],
 		[//SVT
-		[Rus_Vest_SVT],
+		[Ger_Vest_G43],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[19],
 		[//G43
 		[Ger_Vest_G43],
@@ -1277,13 +1277,13 @@
 		[Ger_Mag_G43,6,"vest"]
 		],[10],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -1404,17 +1404,17 @@
 		[Ger_Mag_K98,12,"vest"]
 		],[40],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[25],
 		[//SVT
-		[Rus_Vest_SVT],
+		[Ger_Vest_G43],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[19],
 		[//G43
 		[Ger_Vest_G43],
@@ -1423,13 +1423,13 @@
 		[Ger_Mag_G43,6,"vest"]
 		],[10],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,1],
-		[Ger_Weap_MP44],
+		[Ger_Weap_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
+		[Ger_Vest_K98],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]

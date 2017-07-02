@@ -94,13 +94,13 @@
 #define UK_Helm_Mk2_P_r			["fow_h_uk_mk2_para"],["fow_h_uk_mk2_para_foliage"]
 #define UK_Helm_Mk2				"fow_h_uk_mk2"
 #define UK_Helm_Mk2_Net			"fow_h_uk_mk2_net";
-#define UK_Helm_Mk2_NetF		"fow_h_uk_mk2_net_camo";
+#define UK_Helm_Mk2_NetF		"fow_h_uk_mk2_net_camo"
 #define UK_Helm_Mk3				"fow_h_uk_mk3"
 #define UK_Helm_Mk3_Net			"fow_h_uk_mk3_net_camo"
 #define UK_Helm_P_Mk2			"fow_h_uk_mk2_para";
-#define UK_Helm_P_Mk2_Fol		"fow_h_uk_mk2_para_foliage";
+#define UK_Helm_P_Mk2_Fol		"fow_h_uk_mk2_para_foliage"
 
-#define UK_Woolie				"fow_h_uk_woolen_hat";
+#define UK_Woolie				"fow_h_uk_woolen_hat"
 #define UK_Beret_Com			"fow_h_uk_beret_commando"
 #define UK_Beret_Para_P			"fow_h_uk_beret_para"
 #define UK_Beret_Para_R			"fow_h_uk_beret_para_2"

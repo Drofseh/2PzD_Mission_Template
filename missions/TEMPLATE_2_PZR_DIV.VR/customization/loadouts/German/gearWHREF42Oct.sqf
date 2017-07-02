@@ -288,6 +288,7 @@
 	//Funker
 	case "WHREF42Oct_RTO" : {
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
+		[Ger_Vest_K98] call FNC_AddItem;
 		[Ger_BP_Radio] call FNC_AddItem;
 		[Ger_Hat] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
@@ -299,26 +300,22 @@
 		
 		[//Primary Weapon
 		[//K98k
-		[Ger_Vest_K98],
 		[Ger_Mag_K98,1],
 		[Ger_Weap_K98],
 		[Ger_Mag_K98,12,"vest"]
 		],[70],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[20],
 		[//SVT
-		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[9],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -329,6 +326,7 @@
 	//Melder
 	case "WHREF42Oct_Mess" : {
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
+		[Ger_Vest_K98] call FNC_AddItem;
 		[Ger_BP_r] call FNC_AddItemRandom;
 		[Ger_Helmet] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
@@ -338,26 +336,22 @@
 		
 		[//Primary Weapon
 		[//K98k
-		[Ger_Vest_K98],
 		[Ger_Mag_K98,1],
 		[Ger_Weap_K98],
 		[Ger_Mag_K98,12,"vest"]
 		],[70],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[20],
 		[//SVT
-		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[9],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -395,7 +389,7 @@
 		[//SVT
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[9],
 		[//Mosin M38
 		[Rus_Mag_Mosin,1],
@@ -460,26 +454,22 @@
 		
 		[//Primary Weapon
 		[//K98k
-		[Ger_Vest_K98],
 		[Ger_Mag_K98,1],
 		[Ger_Weap_K98],
 		[Ger_Mag_K98,12,"vest"]
 		],[70],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[15],
 		[//SVT
-		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[14],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -617,7 +607,7 @@
 		[//SVT
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[9],
 		[//Mosin M38
 		[Rus_Mag_Mosin,1],
@@ -633,6 +623,7 @@
 	//MG-Munitionsträger
 	case "WHREF42Oct_MGAB" : {
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
+		[Ger_Vest_K98] call FNC_AddItem;
 		[Ger_BP_MG_B] call FNC_AddItem;
 		_unit removeItemFromBackpack "fow_50Rnd_792x57";
 		[Ger_Helmet] call FNC_AddItem;
@@ -643,26 +634,22 @@
 		
 		[//Primary Weapon
 		[//K98k
-		[Ger_Vest_K98],
 		[Ger_Mag_K98,1],
 		[Ger_Weap_K98],
 		[Ger_Mag_K98,12,"vest"]
 		],[70],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[20],
 		[//SVT
-		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[9],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -697,6 +684,7 @@
 	//Hilfs-Krankenträger
 	case "WHREF42Oct_MedS" : {
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
+		[Ger_Vest_K98] call FNC_AddItem;
 		[Ger_BP_Med] call FNC_AddItem;
 		[Ger_Helmet] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
@@ -707,26 +695,22 @@
 		
 		[//Primary Weapon
 		[//K98k
-		[Ger_Vest_K98],
 		[Ger_Mag_K98,1],
 		[Ger_Weap_K98],
 		[Ger_Mag_K98,12,"vest"]
 		],[70],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[20],
 		[//SVT
-		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[9],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -741,6 +725,7 @@
 	//Gewehrschütze
 	case "WHREF42Oct_Rif" : {
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
+		[Ger_Vest_K98] call FNC_AddItem;
 		[Ger_BP_r] call FNC_AddItemRandom;
 		[Ger_Helmet] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
@@ -750,26 +735,22 @@
 		
 		[//Primary Weapon
 		[//K98k
-		[Ger_Vest_K98],
 		[Ger_Mag_K98,1],
 		[Ger_Weap_K98],
 		[Ger_Mag_K98,12,"vest"]
 		],[70],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[20],
 		[//SVT
-		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[9],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -895,6 +876,7 @@
 	//Mortar Munitionsträger
 	case "WHREF42Oct_MortA" : {
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
+		[Ger_Vest_K98] call FNC_AddItem;
 		[Ger_BP_T34] call FNC_AddItem;
 		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
@@ -906,26 +888,22 @@
 		
 		[//Primary Weapon
 		[//K98k
-		[Ger_Vest_K98],
 		[Ger_Mag_K98,1],
 		[Ger_Weap_K98],
 		[Ger_Mag_K98,12,"vest"]
 		],[70],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[20],
 		[//SVT
-		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[9],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]
@@ -965,7 +943,7 @@
 		[//SVT
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[9],
 		[//Mosin M38
 		[Rus_Mag_Mosin,1],
@@ -1046,6 +1024,7 @@
 	//HMG Munitionsträger
 	case "WHREF42Oct_HMGA" : {
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
+		[Ger_Vest_K98] call FNC_AddItem;
 		[Ger_BP_T34] call FNC_AddItem;
 		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
@@ -1055,26 +1034,22 @@
 		
 		[//Primary Weapon
 		[//K98k
-		[Ger_Vest_K98],
 		[Ger_Mag_K98,1],
 		[Ger_Weap_K98],
 		[Ger_Mag_K98,12,"vest"]
 		],[70],
 		[//Mosin M91/30
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM9130],
 		[Rus_Weap_Mos_Bayo],
 		[Rus_Mag_Mosin,12,"vest"]
 		],[20],
 		[//SVT
-		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[9],
 		[//Mosin M38
-		[Rus_Vest_Mosin],
 		[Rus_Mag_Mosin,1],
 		[Rus_Weap_MosM38],
 		[Rus_Mag_Mosin,12,"vest"]

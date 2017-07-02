@@ -162,7 +162,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -174,7 +174,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_AVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[2]
 		] call FNC_AddItemRandomPercent;
 		
@@ -303,7 +303,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -315,7 +315,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_AVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[2]
 		] call FNC_AddItemRandomPercent;
 		
@@ -352,7 +352,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -364,7 +364,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_AVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[2]
 		] call FNC_AddItemRandomPercent;
 		
@@ -557,7 +557,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//PPSh-41, Stick
 		[Rus_Vest_PPSH_D1],
@@ -587,7 +587,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_AVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[2]
 		] call FNC_AddItemRandomPercent;
 		
@@ -748,7 +748,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -760,7 +760,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_AVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[2]
 		] call FNC_AddItemRandomPercent;
 		
@@ -858,7 +858,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -870,7 +870,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_AVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[2]
 		] call FNC_AddItemRandomPercent;
 		
@@ -982,7 +982,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_SVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[10],
 		[//Mosin M38
 		[Rus_Vest_Mosin],
@@ -994,7 +994,7 @@
 		[Rus_Vest_SVT],
 		[Rus_Mag_SVT40,1],
 		[Rus_Weap_AVT40],
-		[Rus_Mag_SVT40,12,"vest"]
+		[Rus_Mag_SVT40,6,"vest"]
 		],[2]
 		] call FNC_AddItemRandomPercent;
 		

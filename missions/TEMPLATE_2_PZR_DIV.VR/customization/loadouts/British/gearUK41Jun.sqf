@@ -296,7 +296,7 @@
 		
 		//Assigned Items
 		UK_default_equipment;
-		[UK_Bino] call FNC_AddItem;
+		[GEN_BinoR] call FNC_AddItem;
 		
 		[//Primary Weapon
 		[//Lee Enfield No1

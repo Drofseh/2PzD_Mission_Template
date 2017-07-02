@@ -371,7 +371,7 @@
 		[Ger_Mag_MP40,3,"vest"]
 		],[95],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[GEN_Face_Bino],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5]
@@ -421,7 +421,7 @@
 		[Ger_Mag_MP40,6,"vest"]
 		],[95],
 		[//StG44
-		[Ger_Vest_MP44],
+		[Ger_Vest_StG44],
 		[Ger_Mag_StG44,6,"vest"]
 		],[5]
 		] call FNC_AddItemRandomPercent;
