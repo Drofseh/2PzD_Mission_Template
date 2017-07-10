@@ -70,3 +70,29 @@
 
 #define IJA_Helmet_VCrew		"fow_h_ija_tank_helmet"
 #define IJA_Helmet_Air			"fow_h_ija_flight_helmet"
+
+//=== EQUIPMENT ===
+
+#define IJA_default_equipment \
+["ItemMap"] call FNC_AddItem; \
+["ItemCompass"] call FNC_AddItem; \
+["ItemWatch"]call FNC_AddItem; \
+["ACE_EntrenchingTool"]call FNC_AddItem; \
+["ACE_fieldDressing",4] call FNC_AddItem; \
+["ACE_tourniquet",1] call FNC_AddItem; \
+["ACE_Flashlight_KSF1"]call FNC_AddItem; \
+["ACE_CableTie"]call FNC_AddItem;
+
+#define IJA_leader_equipment \
+["LIB_Binocular_GER"] call FNC_AddItem; \
+["ACE_MapTools"] call FNC_AddItem;
+
+#define IJA_medic_equipment \
+["ACE_fieldDressing",20,"backpack"] call FNC_AddItem; \
+["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
+["ACE_morphine",10,"backpack"] call FNC_AddItem; \
+["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
+["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
+["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
+["ACE_personalAidKit",5,"backpack"] call FNC_AddItem; \
+["ACE_salineIV_500",5,"backpack"] call FNC_AddItem;

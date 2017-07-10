@@ -59,11 +59,11 @@
 ["fow_i_whistle"] call FNC_AddItem;
 
 #define Parti_medic_equipment \
-["ACE_fieldDressing",16,"backpack"] call FNC_AddItem; \
+["ACE_fieldDressing",20,"backpack"] call FNC_AddItem; \
+["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
 ["ACE_morphine",5,"backpack"] call FNC_AddItem; \
-["ACE_epinephrine",4,"backpack"] call FNC_AddItem; \
-["ACE_salineIV_500",3,"backpack"] call FNC_AddItem; \
-["ACE_fieldDressing",16,"backpack"] call FNC_AddItem; \
-["ACE_morphine",5,"backpack"] call FNC_AddItem; \
-["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
-["ACE_salineIV_500",2,"backpack"] call FNC_AddItem;
+["ACE_epinephrine",2,"backpack"] call FNC_AddItem; \
+["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
+["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
+["ACE_personalAidKit",1,"backpack"] call FNC_AddItem; \
+["ACE_salineIV_500",1,"backpack"] call FNC_AddItem;

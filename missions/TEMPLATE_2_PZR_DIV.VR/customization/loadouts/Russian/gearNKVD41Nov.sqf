@@ -25,7 +25,7 @@
 
 	//Leutenant
 	case "NKVD41Nov_LT" : {
-		[NKVD_Unit_LT] call FNC_AddItem;
+		[NKVD_Uni_LT] call FNC_AddItem;
 		[NKVD_Hat_O] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
@@ -74,7 +74,7 @@
 
 	//Starshina
 	case "NKVD41Nov_Star" : {
-		[NKVD_Unit_Star] call FNC_AddItem;
+		[NKVD_Uni_Star] call FNC_AddItem;
 		[NKVD_Hat] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
@@ -120,7 +120,7 @@
 
 	//Radio Operator
 	case "NKVD41Nov_RTO" : {
-		[NKVD_Unit_Stre] call FNC_AddItem;
+		[NKVD_Uni_Stre] call FNC_AddItem;
 		[Rus_BP_Radio] call FNC_AddItem;
 		[NKVD_Hat] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
@@ -159,7 +159,7 @@
 
 	//Medic
 	case "NKVD41Nov_Med" : {
-		[NKVD_Unit_Stre] call FNC_AddItem;
+		[NKVD_Uni_Stre] call FNC_AddItem;
 		[Rus_BP_Med] call FNC_AddItem;
 		[NKVD_Hat] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
@@ -201,7 +201,7 @@
 
 	//Sergeant
 	case "NKVD41Nov_Sgt" : {
-		[NKVD_Unit_Sgt] call FNC_AddItem;
+		[NKVD_Uni_Sgt] call FNC_AddItem;
 		[NKVD_Hat] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
@@ -227,7 +227,7 @@
 
 	//Efreitor
 	case "NKVD41Nov_Efr" : {
-		[NKVD_Unit_Efr] call FNC_AddItem;
+		[NKVD_Uni_Efr] call FNC_AddItem;
 		[NKVD_Hat] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
@@ -253,7 +253,7 @@
 
 	//Machine Gunner
 	case "NKVD41Nov_MG" : {
-		[NKVD_Unit_Efr] call FNC_AddItem;
+		[NKVD_Uni_Efr] call FNC_AddItem;
 		[NKVD_Vest_HKC] call FNC_AddItem;
 		[Rus_BP_MG] call FNC_AddItem;
 		[NKVD_Hat] call FNC_AddItem;
@@ -289,7 +289,7 @@
 
 	//Machine Gun Assistant
 	case "NKVD41Nov_MGA" : {
-		[NKVD_Unit_Stre] call FNC_AddItem;
+		[NKVD_Uni_Stre] call FNC_AddItem;
 		[Rus_BP_MG] call FNC_AddItem;
 		[NKVD_Hat] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
@@ -332,7 +332,7 @@
 
 	//Strelok
 	case "NKVD41Nov_Stre" : {
-		[NKVD_Unit_Stre] call FNC_AddItem;
+		[NKVD_Uni_Stre] call FNC_AddItem;
 		[NKVD_Hat] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		

@@ -92,3 +92,28 @@
 //Radio
 
 //=== EQUIPMENT ===
+
+#define GEN_default_equipment \
+["ItemMap"] call FNC_AddItem; \
+["ItemCompass"] call FNC_AddItem; \
+["ItemWatch"]call FNC_AddItem; \
+["ACE_EntrenchingTool"]call FNC_AddItem; \
+["ACE_fieldDressing",4] call FNC_AddItem; \
+["ACE_tourniquet",1] call FNC_AddItem; \
+["ACE_Flashlight_MX991"]call FNC_AddItem; \
+["ACE_CableTie"]call FNC_AddItem;
+
+#define GEN_leader_equipment \
+["LIB_Binocular_SU"] call FNC_AddItem; \
+["ACE_MapTools"] call FNC_AddItem; \
+["fow_i_whistle"] call FNC_AddItem;
+
+#define GEN_medic_equipment \
+["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
+["ACE_elasticBandage",5,"backpack"] call FNC_AddItem; \
+["ACE_morphine",5,"backpack"] call FNC_AddItem; \
+["ACE_epinephrine",2,"backpack"] call FNC_AddItem; \
+["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
+["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
+["ACE_personalAidKit",2,"backpack"] call FNC_AddItem; \
+["ACE_salineIV_500",2,"backpack"] call FNC_AddItem;

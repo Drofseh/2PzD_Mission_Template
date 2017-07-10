@@ -23,7 +23,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Lt""] call FNC_GearScript;";
-					description="Company | Company Commander";
+					description="Company Commander@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -397,7 +397,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Sgt""] call FNC_GearScript;";
-					description="Company | HQ Section | Company Sergeant Major";
+					description="Company Sergeant Major@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -733,7 +733,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_LCpl""] call FNC_GearScript;";
-					description="Company | HQ Section | Section Leader";
+					description="Section Leader@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -1069,7 +1069,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Sig""] call FNC_GearScript;";
-					description="Company | HQ Section | Signaller";
+					description="Signaller@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -1405,7 +1405,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;";
-					description="Company | HQ Section | Runner";
+					description="Runner@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -1741,7 +1741,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_MortG""] call FNC_GearScript;";
-					description="Company | HQ Section | Mortar Gunner";
+					description="Mortar Gunner@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -2115,7 +2115,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_MortA""] call FNC_GearScript;";
-					description="Company | HQ Section | Mortar Assistant";
+					description="Mortar Assistant@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -2506,7 +2506,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Lt""] call FNC_GearScript;";
-					description="1 Platoon | Platoon Commander";
+					description="Platoon Commander@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -2880,7 +2880,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Sgt""] call FNC_GearScript;";
-					description="1 Platoon | HQ Section | Platoon Sergeant";
+					description="Platoon Sergeant@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -3216,7 +3216,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Sig""] call FNC_GearScript;";
-					description="1 Platoon | HQ Section | Signaller";
+					description="Signaller@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -3552,7 +3552,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;";
-					description="1 Platoon | HQ Section | Runner";
+					description="Runner@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -3888,7 +3888,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
-					description="1 Platoon | HQ Section | Medic";
+					description="Medic@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -4262,7 +4262,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_LMortG""] call FNC_GearScript;";
-					description="1 Platoon | HQ Section | 2"" Mortar Gunner";
+					description="2"" Mortar Gunner@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -4636,7 +4636,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_LMortA""] call FNC_GearScript;";
-					description="1 Platoon | HQ Section | 2"" Mortar Assistant";
+					description="2"" Mortar Assistant@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -5027,7 +5027,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Cpl""] call FNC_GearScript;";
-					description="1 Platoon | 1 Section | Section Leader";
+					description="Section Leader@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -5363,7 +5363,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Section | Rifleman";
+					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -5566,7 +5566,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Section | Rifleman";
+					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -5770,7 +5770,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Section | Rifleman";
+					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -5973,7 +5973,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Section | Rifleman";
+					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -6176,7 +6176,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Section | Gun Team Leader";
+					description="Gun Team Leader@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -6512,7 +6512,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Section | Bren Gunner";
+					description="Bren Gunner@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -6867,7 +6867,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Section | Bren Gun Assistant";
+					description="Bren Gun Assistant@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -7239,7 +7239,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Cpl""] call FNC_GearScript;";
-					description="1 Platoon | 2 Section | Section Leader";
+					description="Section Leader@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -7575,7 +7575,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Section | Rifleman";
+					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -7778,7 +7778,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Section | Rifleman";
+					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -7982,7 +7982,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Section | Rifleman";
+					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -8185,7 +8185,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Section | Rifleman";
+					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -8388,7 +8388,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Section | Gun Team Leader";
+					description="Gun Team Leader@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -8724,7 +8724,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Section | Bren Gunner";
+					description="Bren Gunner@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -9079,7 +9079,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Section | Bren Gun Assistant";
+					description="Bren Gun Assistant@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -9451,7 +9451,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Cpl""] call FNC_GearScript;";
-					description="1 Platoon | 3 Section | Section Leader";
+					description="Section Leader@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -9787,7 +9787,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Section | Rifleman";
+					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -9990,7 +9990,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Section | Rifleman";
+					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10194,7 +10194,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Section | Rifleman";
+					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10397,7 +10397,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Section | Rifleman";
+					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10600,7 +10600,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Section | Gun Team Leader";
+					description="Gun Team Leader@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10936,7 +10936,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Section | Bren Gunner";
+					description="Bren Gunner@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -11291,7 +11291,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Section | Bren Gun Assistant";
+					description="Bren Gun Assistant@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -11663,7 +11663,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Lt""] call FNC_GearScript;";
-					description="2 Platoon | Platoon Commander";
+					description="Platoon Commander@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -12037,7 +12037,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Sgt""] call FNC_GearScript;";
-					description="2 Platoon | HQ Section | Platoon Sergeant";
+					description="Platoon Sergeant@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -12373,7 +12373,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Sig""] call FNC_GearScript;";
-					description="2 Platoon | HQ Section | Signaller";
+					description="Signaller@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -12709,7 +12709,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;";
-					description="2 Platoon | HQ Section | Runner";
+					description="Runner@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -13045,7 +13045,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
-					description="2 Platoon | HQ Section | Medic";
+					description="Medic@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -13420,7 +13420,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_LMortG""] call FNC_GearScript;";
-					description="2 Platoon | HQ Section | 2"" Mortar Gunner";
+					description="2"" Mortar Gunner@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -13794,7 +13794,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_LMortA""] call FNC_GearScript;";
-					description="2 Platoon | HQ Section | 2"" Mortar Assistant";
+					description="2"" Mortar Assistant@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -14185,7 +14185,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Cpl""] call FNC_GearScript;";
-					description="2 Platoon | 1 Section | Section Leader";
+					description="Section Leader@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -14521,7 +14521,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Section | Rifleman";
+					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -14724,7 +14724,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Section | Rifleman";
+					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -14928,7 +14928,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Section | Rifleman";
+					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -15131,7 +15131,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Section | Rifleman";
+					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -15334,7 +15334,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Section | Gun Team Leader";
+					description="Gun Team Leader@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -15670,7 +15670,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Section | Bren Gunner";
+					description="Bren Gunner@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -16025,7 +16025,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Section | Bren Gun Assistant";
+					description="Bren Gun Assistant@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -16397,7 +16397,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Cpl""] call FNC_GearScript;";
-					description="2 Platoon | 2 Section | Section Leader";
+					description="Section Leader@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -16733,7 +16733,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Section | Rifleman";
+					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -16936,7 +16936,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Section | Rifleman";
+					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -17140,7 +17140,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Section | Rifleman";
+					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -17343,7 +17343,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Section | Rifleman";
+					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -17546,7 +17546,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Section | Gun Team Leader";
+					description="Gun Team Leader@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -17882,7 +17882,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Section | Bren Gunner";
+					description="Bren Gunner@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -18237,7 +18237,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Section | Bren Gun Assistant";
+					description="Bren Gun Assistant@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -18609,7 +18609,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Cpl""] call FNC_GearScript;";
-					description="2 Platoon | 3 Section | Section Leader";
+					description="Section Leader@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -18945,7 +18945,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Section | Rifleman";
+					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -19148,7 +19148,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Section | Rifleman";
+					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -19352,7 +19352,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Section | Rifleman";
+					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -19555,7 +19555,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Section | Rifleman";
+					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -19758,7 +19758,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Section | Gun Team Leader";
+					description="Gun Team Leader@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -20094,7 +20094,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Section | Bren Gunner";
+					description="Bren Gunner@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -20449,7 +20449,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Section | Bren Gun Assistant";
+					description="Bren Gun Assistant@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
 					{
@@ -20821,7 +20821,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_MortTL""] call FNC_GearScript;";
-					description="Mortar Team | Team Leader";
+					description="Team Leader@Mortar Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -21195,7 +21195,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_MortG""] call FNC_GearScript;";
-					description="Mortar Team | 3"" Mortar Gunner";
+					description="3"" Mortar Gunner@Mortar Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -21569,7 +21569,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_MortA""] call FNC_GearScript;";
-					description="Mortar Team | 3"" Mortar Assistant";
+					description="3"" Mortar Assistant@Mortar Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -21943,7 +21943,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_MortAB""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Mortar Team | 3"" Mortar Ammo Bearer";
+					description="3"" Mortar Ammo Bearer@Mortar Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -22357,7 +22357,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_MGTL""] call FNC_GearScript;";
-					description="Machine Gun Team | Team Leader";
+					description="Team Leader@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -22731,7 +22731,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_MG""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Machine Gun Team | Machine Gunner";
+					description="Machine Gunner@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -23105,7 +23105,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_MGA""] call FNC_GearScript;";
-					description="Machine Gun Team | Assistant Machine Gunner";
+					description="Assistant Machine Gunner@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -23479,7 +23479,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_MGAB""] call FNC_GearScript;";
-					description="Machine Gun Team | Ammo Bearer";
+					description="Ammo Bearer@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -23893,7 +23893,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_ATRTL""] call FNC_GearScript;";
-					description="Boys AT Rifle Team | Team Leader";
+					description="Team Leader@Boys AT Rifle Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -24267,7 +24267,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_ATRG""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Boys AT Rifle Team | Boys Gunner";
+					description="Boys Gunner@Boys AT Rifle Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -24641,7 +24641,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_ATRG""] call FNC_GearScript;";
-					description="Boys AT Rifle Team | Boys Gunner";
+					description="Boys Gunner@Boys AT Rifle Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -25015,7 +25015,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_ATRAB""] call FNC_GearScript;";
-					description="Boys AT Rifle Team | Ammo Bearer";
+					description="Ammo Bearer@Boys AT Rifle Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -25429,7 +25429,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_VCom""] call FNC_GearScript;";
-					description="Tank | Tank Commander";
+					description="Tank Commander@Tank";
 					isPlayable=1;
 					class Inventory
 					{
@@ -25803,7 +25803,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Tank | Tank Crew";
+					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
 					{
@@ -26025,7 +26025,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Tank | Tank Crew";
+					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
 					{
@@ -26380,7 +26380,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jan_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Tank | Tank Crew";
+					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
 					{

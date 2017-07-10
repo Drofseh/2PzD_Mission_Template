@@ -24,7 +24,7 @@ class items
 					rank="LIEUTENANT";
 					init="[this,""WHR43Mar_CC""] call FNC_GearScript;" \n "this removeItem ""TFAR_rf7800str"";";
 					name="G_611";
-					description="1.Kompanie | Kompanieführer";
+					description="Kompanieführer@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -304,7 +304,7 @@ class items
 					rank="SERGEANT";
 					init="[this,""WHR43Mar_C2""] call FNC_GearScript;";
 					name="G_612";
-					description="1.Kompanie | Kompanietrupp | Kompanietruppführer";
+					description="Kompanietruppführer@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -584,7 +584,7 @@ class items
 					ammo=0.7751143;
 					init="[this,""WHR43Mar_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";" \n "this removeItem ""TFAR_rf7800str"";";
 					name="G_613";
-					description="1.Kompanie | Kompanietrupp | Funker";
+					description="Funker@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -863,7 +863,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_614";
-					description="1.Kompanie | Kompanietrupp | Gewehrschütze";
+					description="Gewehrschütze@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -1142,7 +1142,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_615";
-					description="1.Kompanie | Kompanietrupp | Gewehrschütze";
+					description="Gewehrschütze@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -1439,7 +1439,7 @@ class items
 					rank="SERGEANT";
 					init="[this,""WHR43Mar_SL""] call FNC_GearScript;";
 					name="G_R01_2";
-					description="1.Kompanie | Ersatztruppen | Gruppenführer";
+					description="Gruppenführer@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
 					class Inventory
 					{
@@ -1699,7 +1699,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_R06_2";
-					description="1.Kompanie | Ersatztruppen | MG-Richtschütze";
+					description="MG-Richtschütze@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
 					class Inventory
 					{
@@ -1978,7 +1978,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_R07_2";
-					description="1.Kompanie | Ersatztruppen | MG-Hilfsschütze";
+					description="MG-Hilfsschütze@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
 					class Inventory
 					{
@@ -2257,7 +2257,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_R10_3";
-					description="1.Kompanie | Ersatztruppen | Hilfs-Krankenträger";
+					description="Hilfs-Krankenträger@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
 					class Inventory
 					{
@@ -2537,7 +2537,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_R03_2";
-					description="1.Kompanie | Ersatztruppen | Gefreiter";
+					description="Gefreiter@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
 					class Inventory
 					{
@@ -2797,7 +2797,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_R04_2";
-					description="1.Kompanie | Ersatztruppen | Grenadier";
+					description="Grenadier@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
 					class Inventory
 					{
@@ -3077,7 +3077,7 @@ class items
 					skill=0.40000001;
 					init="[this,""WHR43Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_R05_2";
-					description="1.Kompanie | Ersatztruppen | Gewehrschütze";
+					description="Gewehrschütze@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
 					class Inventory
 					{
@@ -3356,7 +3356,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MGAB""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_R08_2";
-					description="1.Kompanie | Ersatztruppen | Gewehrschütze";
+					description="Gewehrschütze@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
 					class Inventory
 					{
@@ -3636,7 +3636,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S2""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;";
 					name="G_R02_2";
-					description="1.Kompanie | Ersatztruppen | Stellver. Gruppenführer";
+					description="Stellver. Gruppenführer@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
 					class Inventory
 					{
@@ -3933,7 +3933,7 @@ class items
 				{
 					init="[this,""WHR43Mar_VCom""] call FNC_GearScript;";
 					name="G_T101_2";
-					description="Eva | Panzerbesatzungsführer";
+					description="Panzerbesatzungsführer@Eva";
 					isPlayable=1;
 					class Inventory
 					{
@@ -4214,7 +4214,7 @@ class items
 				{
 					init="[this,""WHR43Mar_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_T102_2";
-					description="Eva | Panzerbesatzung";
+					description="Panzerbesatzung@Eva";
 					isPlayable=1;
 					class Inventory
 					{
@@ -4495,7 +4495,7 @@ class items
 				{
 					init="[this,""WHR43Mar_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_T103_2";
-					description="Eva | Panzerbesatzung";
+					description="Panzerbesatzung@Eva";
 					isPlayable=1;
 					class Inventory
 					{
@@ -4776,7 +4776,7 @@ class items
 				{
 					init="[this,""WHR43Mar_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_T104_2";
-					description="Eva | Panzerbesatzung";
+					description="Panzerbesatzung@Eva";
 					isPlayable=1;
 					class Inventory
 					{
@@ -5076,7 +5076,7 @@ class items
 					rank="LIEUTENANT";
 					init="[this,""WHR43Mar_PC""] call FNC_GearScript;";
 					name="G_1611";
-					description="1.Zug | Zugführer";
+					description="Zugführer@1. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -5357,7 +5357,7 @@ class items
 					rank="SERGEANT";
 					init="[this,""WHR43Mar_P2""] call FNC_GearScript;";
 					name="G_1612";
-					description="1.Zug | Stellver. Zugführer";
+					description="Stellver. Zugführer@1. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -5619,7 +5619,7 @@ class items
 					ammo=0.7751143;
 					init="[this,""WHR43Mar_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";" \n "this removeItem ""TFAR_rf7800str"";";
 					name="G_1613";
-					description="1.Zug | Zugtrupp | Funker";
+					description="Funker@1. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -5899,7 +5899,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MedP""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					name="G_1614";
-					description="1.Zug | Zugtrupp | Krankenträger";
+					description="Krankenträger@1. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -6217,7 +6217,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Mess""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1615";
-					description="1.Zug | Zugtrupp | Melder";
+					description="Melder@1. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -6496,7 +6496,7 @@ class items
 					rank="SERGEANT";
 					init="[this,""WHR43Mar_SL""] call FNC_GearScript;";
 					name="G_1123";
-					description="1.Zug | 1.Gruppe | Gruppenführer";
+					description="Gruppenführer@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -6757,7 +6757,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1124";
-					description="1.Zug | 1.Gruppe | MG-Richtschütze";
+					description="MG-Richtschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -7037,7 +7037,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1125";
-					description="1.Zug | 1.Gruppe | MG-Hilfsschütze";
+					description="MG-Hilfsschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -7317,7 +7317,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1134";
-					description="1.Zug | 1.Gruppe | Hilfs-Krankenträger";
+					description="Hilfs-Krankenträger@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -7598,7 +7598,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1128";
-					description="1.Zug | 1.Gruppe | Gefreiter";
+					description="Gefreiter@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -7859,7 +7859,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1129";
-					description="1.Zug | 1.Gruppe | Grenadier";
+					description="Grenadier@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -8139,7 +8139,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1130";
-					description="1.Zug | 1.Gruppe | Gewehrschütze";
+					description="Gewehrschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -8419,7 +8419,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1131";
-					description="1.Zug | 1.Gruppe | Gewehrschütze";
+					description="Gewehrschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -8700,7 +8700,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
 					name="G_1133";
-					description="1.Zug | 1.Gruppe | Stellver. Gruppenführer";
+					description="Stellver. Gruppenführer@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -8998,7 +8998,7 @@ class items
 					rank="SERGEANT";
 					init="[this,""WHR43Mar_SL""] call FNC_GearScript;";
 					name="G_1223";
-					description="1.Zug | 2.Gruppe | Gruppenführer";
+					description="Gruppenführer@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -9259,7 +9259,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1224";
-					description="1.Zug | 2.Gruppe | MG-Richtschütze";
+					description="MG-Richtschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -9539,7 +9539,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1225";
-					description="1.Zug | 2.Gruppe | MG-Hilfsschütze";
+					description="MG-Hilfsschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -9819,7 +9819,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1235";
-					description="1.Zug | 2.Gruppe | Hilfs-Krankenträger";
+					description="Hilfs-Krankenträger@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10100,7 +10100,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1228";
-					description="1.Zug | 2.Gruppe | Gefreiter";
+					description="Gefreiter@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10361,7 +10361,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1229";
-					description="1.Zug | 2.Gruppe | Grenadier";
+					description="Grenadier@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10641,7 +10641,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1230";
-					description="1.Zug | 2.Gruppe | Gewehrschütze";
+					description="Gewehrschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10921,7 +10921,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1231";
-					description="1.Zug | 2.Gruppe | Gewehrschütze";
+					description="Gewehrschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -11203,7 +11203,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S2""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;";
 					name="G_1233";
-					description="1.Zug | 2.Gruppe | Stellver. Gruppenführer";
+					description="Stellver. Gruppenführer@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -11501,7 +11501,7 @@ class items
 					rank="SERGEANT";
 					init="[this,""WHR43Mar_SL""] call FNC_GearScript;";
 					name="G_1236";
-					description="1.Zug | 3.Gruppe | Gruppenführer";
+					description="Gruppenführer@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -11781,7 +11781,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1237";
-					description="1.Zug | 3.Gruppe | MG-Richtschütze";
+					description="MG-Richtschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -12061,7 +12061,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1238";
-					description="1.Zug | 3.Gruppe | MG-Hilfsschütze";
+					description="MG-Hilfsschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -12341,7 +12341,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1241";
-					description="1.Zug | 3.Gruppe | Hilfs-Krankenträger";
+					description="Hilfs-Krankenträger@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -12622,7 +12622,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1242";
-					description="1.Zug | 3.Gruppe | Gefreiter";
+					description="Gefreiter@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -12902,7 +12902,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1243";
-					description="1.Zug | 3.Gruppe | Grenadier";
+					description="Grenadier@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -13182,7 +13182,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1244";
-					description="1.Zug | 3.Gruppe | Gewehrschütze";
+					description="Gewehrschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -13462,7 +13462,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_1245";
-					description="1.Zug | 3.Gruppe | Gewehrschütze";
+					description="Gewehrschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -13744,7 +13744,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S2""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;";
 					name="G_1248";
-					description="1.Zug | 3.Gruppe | Stellver. Gruppenführer";
+					description="Stellver. Gruppenführer@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -14042,7 +14042,7 @@ class items
 					rank="LIEUTENANT";
 					init="[this,""WHR43Mar_PC""] call FNC_GearScript;";
 					name="G_2611";
-					description="2.Zug | Zugführer";
+					description="Zugführer@2. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -14323,7 +14323,7 @@ class items
 					rank="SERGEANT";
 					init="[this,""WHR43Mar_P2""] call FNC_GearScript;";
 					name="G_2612";
-					description="2.Zug | Stellver. Zugführer";
+					description="Stellver. Zugführer@2. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -14585,7 +14585,7 @@ class items
 					ammo=0.7751143;
 					init="[this,""WHR43Mar_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";" \n "this removeItem ""TFAR_rf7800str"";";
 					name="G_2613";
-					description="2.Zug | Zugtrupp | Funker";
+					description="Funker@2. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -14865,7 +14865,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MedP""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					name="G_2614";
-					description="2.Zug | Zugtrupp | Krankenträger";
+					description="Krankenträger@2. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -15164,7 +15164,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Mess""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2615";
-					description="2.Zug | Zugtrupp | Melder";
+					description="Melder@2. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
 					{
@@ -15439,7 +15439,7 @@ class items
 					rank="SERGEANT";
 					init="[this,""WHR43Mar_SL""] call FNC_GearScript;";
 					name="G_2223";
-					description="2.Zug | 1.Gruppe | Gruppenführer";
+					description="Gruppenführer@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -15700,7 +15700,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2224";
-					description="2.Zug | 1.Gruppe | MG-Richtschütze";
+					description="MG-Richtschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -15980,7 +15980,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2225";
-					description="2.Zug | 1.Gruppe | MG-Hilfsschütze";
+					description="MG-Hilfsschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -16261,7 +16261,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2228";
-					description="2.Zug | 1.Gruppe | Gefreiter";
+					description="Gefreiter@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -16541,7 +16541,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2229";
-					description="2.Zug | 1.Gruppe | Grenadier";
+					description="Grenadier@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -16821,7 +16821,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2230";
-					description="2.Zug | 1.Gruppe | Gewehrschütze";
+					description="Gewehrschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -17101,7 +17101,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2231";
-					description="2.Zug | 1.Gruppe | Gewehrschütze";
+					description="Gewehrschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -17382,7 +17382,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S2""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;";
 					name="G_2233";
-					description="2.Zug | 1.Gruppe | Stellver. Gruppenführer";
+					description="Stellver. Gruppenführer@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -17662,7 +17662,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2234";
-					description="2.Zug | 1.Gruppe | Hilfs-Krankenträger";
+					description="Hilfs-Krankenträger@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -17956,7 +17956,7 @@ class items
 					rank="SERGEANT";
 					init="[this,""WHR43Mar_SL""] call FNC_GearScript;";
 					name="G_2121";
-					description="2.Zug | 2.Gruppe | Gruppenführer";
+					description="Gruppenführer@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -18217,7 +18217,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_218";
-					description="2.Zug | 2.Gruppe | MG-Richtschütze";
+					description="MG-Richtschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -18497,7 +18497,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2122";
-					description="2.Zug | 2.Gruppe | MG-Hilfsschütze";
+					description="MG-Hilfsschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -18777,7 +18777,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2131";
-					description="2.Zug | 2.Gruppe | Hilfs-Krankenträger";
+					description="Hilfs-Krankenträger@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -19058,7 +19058,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2125";
-					description="2.Zug | 2.Gruppe | Gefreiter";
+					description="Gefreiter@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -19338,7 +19338,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2126";
-					description="2.Zug | 2.Gruppe | Grenadier";
+					description="Grenadier@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -19618,7 +19618,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2127";
-					description="2.Zug | 2.Gruppe | Gewehrschütze";
+					description="Gewehrschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -19898,7 +19898,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2128";
-					description="2.Zug | 2.Gruppe | Gewehrschütze";
+					description="Gewehrschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -20180,7 +20180,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S2""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;";
 					name="G_2130";
-					description="2.Zug | 2.Gruppe | Stellver. Gruppenführer";
+					description="Stellver. Gruppenführer@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -20455,7 +20455,7 @@ class items
 					rank="SERGEANT";
 					init="[this,""WHR43Mar_SL""] call FNC_GearScript;";
 					name="G_2133";
-					description="2.Zug | 3.Gruppe | Gruppenführer";
+					description="Gruppenführer@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -20735,7 +20735,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_219";
-					description="2.Zug | 3.Gruppe | MG-Richtschütze";
+					description="MG-Richtschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -21015,7 +21015,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2134";
-					description="2.Zug | 3.Gruppe | MG-Hilfsschütze";
+					description="MG-Hilfsschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -21295,7 +21295,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2137";
-					description="2.Zug | 3.Gruppe | Hilfs-Krankenträger";
+					description="Hilfs-Krankenträger@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -21576,7 +21576,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2138";
-					description="2.Zug | 3.Gruppe | Gefreiter";
+					description="Gefreiter@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -21856,7 +21856,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2139";
-					description="2.Zug | 3.Gruppe | Grenadier";
+					description="Grenadier@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -22136,7 +22136,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2140";
-					description="2.Zug | 3.Gruppe | Gewehrschütze";
+					description="Gewehrschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -22416,7 +22416,7 @@ class items
 				{
 					init="[this,""WHR43Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_2141";
-					description="2.Zug | 3.Gruppe | Gewehrschütze";
+					description="Gewehrschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -22698,7 +22698,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_S2""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;";
 					name="G_2144";
-					description="2.Zug | 3.Gruppe | Stellver. Gruppenführer";
+					description="Stellver. Gruppenführer@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
 					{
@@ -22991,7 +22991,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_MortSL""] call FNC_GearScript;";
 					name="G_2236";
-					description="Schwerer Waffentrupp | Mortar | Truppführer";
+					description="Truppführer@Schwerer Waffentrupp | Mortar";
 					isPlayable=1;
 					class Inventory
 					{
@@ -23289,7 +23289,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MortG""] call FNC_GearScript;";
 					name="G_2237";
-					description="Schwerer Waffentrupp | Mortar | Granatwerferschützen";
+					description="Granatwerferschützen@Schwerer Waffentrupp | Mortar";
 					isPlayable=1;
 					class Inventory
 					{
@@ -23587,7 +23587,7 @@ class items
 				{
 					init="[this,""WHR43Mar_MortA""] call FNC_GearScript;";
 					name="G_2238";
-					description="Schwerer Waffentrupp | Mortar | Munitionsträger";
+					description="Munitionsträger@Schwerer Waffentrupp | Mortar";
 					isPlayable=1;
 					class Inventory
 					{
@@ -23899,7 +23899,7 @@ class items
 					rank="CORPORAL";
 					init="[this,""WHR43Mar_HMGSL""] call FNC_GearScript;";
 					name="G_2239";
-					description="Schwerer Waffentrupp | HMG | Truppführer";
+					description="Truppführer@Schwerer Waffentrupp | HMG";
 					isPlayable=1;
 					class Inventory
 					{
@@ -24197,7 +24197,7 @@ class items
 				{
 					init="[this,""WHR43Mar_HMGG""] call FNC_GearScript;";
 					name="G_2240";
-					description="Schwerer Waffentrupp | HMG | Richtschütze";
+					description="Richtschütze@Schwerer Waffentrupp | HMG";
 					isPlayable=1;
 					class Inventory
 					{
@@ -24495,7 +24495,7 @@ class items
 				{
 					init="[this,""WHR43Mar_HMGA""] call FNC_GearScript;";
 					name="G_2241";
-					description="Schwerer Waffentrupp | HMG | Munitionsträger";
+					description="Munitionsträger@Schwerer Waffentrupp | HMG";
 					isPlayable=1;
 					class Inventory
 					{

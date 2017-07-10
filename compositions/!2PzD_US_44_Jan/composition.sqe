@@ -22,7 +22,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_CC""] call FNC_GearScript;";
-					description="Company Commander";
+					description="Company Commander@Company HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -396,7 +396,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_C2""] call FNC_GearScript;";
-					description="Company HQ | Company Executive Officer";
+					description="Company Executive Officer@Company HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -769,7 +769,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_CSGT""] call FNC_GearScript;";
-					description="Company HQ | Company First Sergeant";
+					description="Company First Sergeant@Company HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -1142,7 +1142,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_CRTO""] call FNC_GearScript;";
-					description="Company HQ | Company Radio Operator";
+					description="Company Radio Operator@Company HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -1534,7 +1534,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_PC""] call FNC_GearScript;";
-					description="1 Platoon | Platoon Commander";
+					description="Platoon Commander@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -1908,7 +1908,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_PSGT""] call FNC_GearScript;";
-					description="1 Platoon | Platoon HQ | Platoon Sergeant";
+					description="Platoon Sergeant@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -2282,7 +2282,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Mess""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | Platoon HQ | Messenger";
+					description="Messenger@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -2656,7 +2656,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Mess""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | Platoon HQ | Messenger";
+					description="Messenger@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -3030,7 +3030,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
-					description="1 Platoon | Platoon HQ | Medic";
+					description="Medic@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -3404,7 +3404,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_PSGT""] call FNC_GearScript;" \n "";
-					description="1 Platoon | Platoon HQ | Platoon Guide";
+					description="Platoon Guide@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -3794,7 +3794,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_SL""] call FNC_GearScript;";
-					description="1 Platoon | 1 Squad | Squad Leader";
+					description="1 Squad | Squad Leader@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -4168,7 +4168,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Scout""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Squad | Alpha Team | Scout";
+					description="Alpha Team | Scout@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -4390,7 +4390,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Scout""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Squad | Alpha Team | Scout";
+					description="Alpha Team | Scout@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -4612,7 +4612,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Squad | Bravo Team | Automatic Rifleman";
+					description="Bravo Team | Automatic Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -4967,7 +4967,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Squad | Bravo Team | Assistant Automatic Rifleman";
+					description="Bravo Team | Assistant Automatic Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -5322,7 +5322,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_ARB""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Squad | Bravo Team | Ammo Bearer";
+					description="Bravo Team | Ammo Bearer@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -5677,7 +5677,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_S2""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
-					description="1 Platoon | 1 Squad | Charlie Team | Assistant Squad Leader";
+					description="Charlie Team | Assistant Squad Leader@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -6032,7 +6032,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -6387,7 +6387,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -6609,7 +6609,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -6964,7 +6964,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -7186,7 +7186,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 1 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -7425,7 +7425,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_SL""] call FNC_GearScript;";
-					description="1 Platoon | 2 Squad | Squad Leader";
+					description="2 Squad | Squad Leader@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -7799,7 +7799,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Scout""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Squad | Alpha Team | Scout";
+					description="Alpha Team | Scout@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -8021,7 +8021,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Scout""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Squad | Alpha Team | Scout";
+					description="Alpha Team | Scout@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -8243,7 +8243,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Squad | Bravo Team | Automatic Rifleman";
+					description="Bravo Team | Automatic Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -8598,7 +8598,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Squad | Bravo Team | Assistant Automatic Rifleman";
+					description="Bravo Team | Assistant Automatic Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -8953,7 +8953,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_ARB""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Squad | Bravo Team | Ammo Bearer";
+					description="Bravo Team | Ammo Bearer@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -9308,7 +9308,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_S2""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
-					description="1 Platoon | 2 Squad | Charlie Team | Assistant Squad Leader";
+					description="Charlie Team | Assistant Squad Leader@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -9663,7 +9663,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -9885,7 +9885,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10107,7 +10107,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10329,7 +10329,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10551,7 +10551,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 2 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10790,7 +10790,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_SL""] call FNC_GearScript;";
-					description="1 Platoon | 3 Squad | Squad Leader";
+					description="3 Squad | Squad Leader@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -11164,7 +11164,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Scout""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Squad | Alpha Team | Scout";
+					description="Alpha Team | Scout@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -11386,7 +11386,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Scout""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Squad | Alpha Team | Scout";
+					description="Alpha Team | Scout@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -11608,7 +11608,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Squad | Bravo Team | Automatic Rifleman";
+					description="Bravo Team | Automatic Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -11963,7 +11963,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Squad | Bravo Team | Assistant Automatic Rifleman";
+					description="Bravo Team | Assistant Automatic Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -12318,7 +12318,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_ARB""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Squad | Bravo Team | Ammo Bearer";
+					description="Bravo Team | Ammo Bearer@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -12673,7 +12673,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_S2""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
-					description="1 Platoon | 3 Squad | Charlie Team | Assistant Squad Leader";
+					description="Charlie Team | Assistant Squad Leader@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -13028,7 +13028,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -13250,7 +13250,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -13472,7 +13472,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -13694,7 +13694,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -13916,7 +13916,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="1 Platoon | 3 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -14155,7 +14155,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_PC""] call FNC_GearScript;";
-					description="2 Platoon | Platoon Commander";
+					description="Platoon Commander@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -14530,7 +14530,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_PSGT""] call FNC_GearScript;";
-					description="2 Platoon | Platoon HQ | Platoon Sergeant";
+					description="Platoon Sergeant@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -14905,7 +14905,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Mess""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | Platoon HQ | Messenger";
+					description="Messenger@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -15280,7 +15280,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Mess""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | Platoon HQ | Messenger";
+					description="Messenger@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -15655,7 +15655,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
-					description="2 Platoon | Platoon HQ | Medic";
+					description="Medic@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -16030,7 +16030,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_PSGT""] call FNC_GearScript;";
-					description="2 Platoon | Platoon HQ | Platoon Guide";
+					description="Platoon Guide@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -16422,7 +16422,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_SL""] call FNC_GearScript;";
-					description="2 Platoon | 1 Squad | Squad Leader";
+					description="1 Squad | Squad Leader@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -16796,7 +16796,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Scout""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Squad | Alpha Team | Scout";
+					description="Alpha Team | Scout@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -17018,7 +17018,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Scout""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Squad | Alpha Team | Scout";
+					description="Alpha Team | Scout@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -17240,7 +17240,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Squad | Bravo Team | Automatic Rifleman";
+					description="Bravo Team | Automatic Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -17595,7 +17595,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Squad | Bravo Team | Assistant Automatic Rifleman";
+					description="Bravo Team | Assistant Automatic Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -17950,7 +17950,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_ARB""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Squad | Bravo Team | Ammo Bearer";
+					description="Bravo Team | Ammo Bearer@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -18305,7 +18305,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_S2""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
-					description="2 Platoon | 1 Squad | Charlie Team | Assistant Squad Leader";
+					description="Charlie Team | Assistant Squad Leader@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -18660,7 +18660,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -18882,7 +18882,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -19104,7 +19104,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -19326,7 +19326,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -19548,7 +19548,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 1 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -19787,7 +19787,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_SL""] call FNC_GearScript;";
-					description="2 Platoon | 2 Squad | Squad Leader";
+					description="2 Squad | Squad Leader@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -20161,7 +20161,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Scout""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Squad | Alpha Team | Scout";
+					description="Alpha Team | Scout@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -20383,7 +20383,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Scout""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Squad | Alpha Team | Scout";
+					description="Alpha Team | Scout@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -20605,7 +20605,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Squad | Bravo Team | Automatic Rifleman";
+					description="Bravo Team | Automatic Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -20960,7 +20960,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Squad | Bravo Team | Assistant Automatic Rifleman";
+					description="Bravo Team | Assistant Automatic Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -21315,7 +21315,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_ARB""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Squad | Bravo Team | Ammo Bearer";
+					description="Bravo Team | Ammo Bearer@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -21670,7 +21670,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_S2""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
-					description="2 Platoon | 2 Squad | Charlie Team | Assistant Squad Leader";
+					description="Charlie Team | Assistant Squad Leader@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -22025,7 +22025,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -22247,7 +22247,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -22469,7 +22469,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -22691,7 +22691,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -22913,7 +22913,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 2 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -23152,7 +23152,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_SL""] call FNC_GearScript;";
-					description="2 Platoon | 3 Squad | Squad Leader";
+					description="3 Squad | Squad Leader@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -23526,7 +23526,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Scout""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Squad | Alpha Team | Scout";
+					description="Alpha Team | Scout@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -23748,7 +23748,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Scout""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Squad | Alpha Team | Scout";
+					description="Alpha Team | Scout@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -23970,7 +23970,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Squad | Bravo Team | Automatic Rifleman";
+					description="Bravo Team | Automatic Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -24325,7 +24325,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Squad | Bravo Team | Assistant Automatic Rifleman";
+					description="Bravo Team | Assistant Automatic Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -24680,7 +24680,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_ARB""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Squad | Bravo Team | Ammo Bearer";
+					description="Bravo Team | Ammo Bearer@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -25035,7 +25035,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_S2""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
-					description="2 Platoon | 3 Squad | Charlie Team | Assistant Squad Leader";
+					description="Charlie Team | Assistant Squad Leader@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -25390,7 +25390,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -25745,7 +25745,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -25967,7 +25967,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -26189,7 +26189,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -26411,7 +26411,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="2 Platoon | 3 Squad | Charlie Team | Rifleman";
+					description="Charlie Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -26649,7 +26649,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_MGTL""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
-					description="Machine Gun Team | Team Leader";
+					description="Team Leader@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -27022,7 +27022,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_MG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Machine Gun Team | Machine Gunner";
+					description="Machine Gunner@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -27395,7 +27395,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_MGA""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
-					description="Machine Gun Team | Assistant Machine Gunner";
+					description="Assistant Machine Gunner@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -27768,7 +27768,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_MGAB""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Machine Gun Team | Machine Gun Ammo Bearer";
+					description="Machine Gun Ammo Bearer@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -28181,7 +28181,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_MortTL""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
-					description="Mortar Team | Team Leader";
+					description="Team Leader@Mortar Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -28554,7 +28554,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_MortG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
-					description="Mortar Team | Mortar Gunner";
+					description="Mortar Gunner@Mortar Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -28928,7 +28928,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_MortA""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
-					description="Mortar Team | Mortar Assistant";
+					description="Mortar Assistant@Mortar Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -29302,7 +29302,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_MortAB""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Mortar Team | Mortar Ammo Bearer";
+					description="Mortar Ammo Bearer@Mortar Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -29716,7 +29716,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_BzkaTL""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
-					description="Bazooka Team | Team Leader";
+					description="Team Leader@Bazooka Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -30089,7 +30089,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_BzkaG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Bazooka Team | Bazooka Gunner";
+					description="Bazooka Gunner@Bazooka Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -30462,7 +30462,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_BzkaG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Bazooka Team | Bazooka Gunner";
+					description="Bazooka Gunner@Bazooka Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -30835,7 +30835,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_BzkaAB""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Bazooka Team | Bazooka Ammo Bearer";
+					description="Bazooka Ammo Bearer@Bazooka Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -31249,7 +31249,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_VCom""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Tank Commander";
+					description="Tank Commander@Tank";
 					isPlayable=1;
 					class Inventory
 					{
@@ -31623,7 +31623,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Tank Crew";
+					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
 					{
@@ -31845,7 +31845,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Tank Crew";
+					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
 					{
@@ -32067,7 +32067,7 @@ class items
 				class Attributes
 				{
 					init="[this,""US44Jan_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Tank Crew";
+					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
 					{

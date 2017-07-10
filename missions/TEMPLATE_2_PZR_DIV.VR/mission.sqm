@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=22419;
+		nextID=22504;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={460.95102,97.704018,787.06268};
-		dir[]={0.020626454,-0.76528251,0.64355081};
-		up[]={0.024520764,0.64358264,0.76497805};
-		aside[]={0.99958849,-4.4052285e-008,-0.032044441};
+		pos[]={479.33914,30,426.22473};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -434,7 +434,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=108;
+		items=192;
 		class Item0
 		{
 			dataType="Marker";
@@ -1293,13 +1293,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={349.69711,7.1491137,371.09238};
+				position[]={337.21399,7.1491137,346.578};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this removeMagazinesTurret [""LIB_10x_BR350P_APCR"",[0]];  " \n "this removeMagazinesTurret [""LIB_40x_BR350B_AP"",[0]];  " \n "this removeMagazinesTurret [""LIB_50x_OF350_HE"",[0]];  " \n "this addMagazineTurret [""LIB_40x_BR350B_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_40x_BR350B_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_10x_BR350P_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_10x_BR350P_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_50x_OF350_HE"",[0],10];  " \n "this addMagazineTurret [""LIB_50x_OF350_HE"",[0],10];  " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[0]];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[1]];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];";
+				init="call{this removeMagazinesTurret [""LIB_10x_BR350P_APCR"",[0]]; " \n "this removeMagazinesTurret [""LIB_40x_BR350B_AP"",[0]]; " \n "this removeMagazinesTurret [""LIB_50x_OF350_HE"",[0]]; " \n "this addMagazineTurret [""LIB_40x_BR350B_AP"",[0],30]; " \n "this addMagazineTurret [""LIB_40x_BR350B_AP"",[0],23]; " \n "this addMagazineTurret [""LIB_10x_BR350P_APCR"",[0],10]; " \n "this addMagazineTurret [""LIB_50x_OF350_HE"",[0],14];  " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[0]]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[1]]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63];}";
 				textures="standard";
 			};
 			id=9629;
@@ -1390,13 +1390,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={648.62549,7.2852077,353.67868};
+				position[]={604.97302,7.2852077,342.9238};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this removeMagazinesTurret [""LIB_12x_BR471_AP"",[0]]; " \n "this removeMagazinesTurret [""LIB_16x_OF471_HE"",[0]]; " \n "this addMagazineTurret [""LIB_12x_BR471_AP"",[0],8]; " \n "this addMagazineTurret [""LIB_12x_BR471_AP"",[0],8]; " \n "this addMagazineTurret [""LIB_16x_OF471_HE"",[0],12]; " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[0]]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];";
+				init="call{this removeMagazinesTurret [""LIB_12x_BR471_AP"",[0]];  " \n "this removeMagazinesTurret [""LIB_16x_OF471_HE"",[0]];  " \n "this addMagazineTurret [""LIB_12x_BR471_AP"",[0],8];  " \n "this addMagazineTurret [""LIB_12x_BR471_AP"",[0],8];  " \n "this addMagazineTurret [""LIB_16x_OF471_HE"",[0],12];  " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[0]];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; }";
 			};
 			id=9630;
 			type="LIB_JS2_43";
@@ -1486,13 +1486,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={450.38348,5.001956,352.77887};
+				position[]={436.95786,5.001956,349.62607};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this removeMagazinesTurret [""LIB_30x_M61_M1_AP"",[0]]; " \n "this removeMagazinesTurret [""LIB_14x_T45_M1_APCR"",[0]]; " \n "this removeMagazinesTurret [""LIB_60x_M42A1_M1_HE"",[0]]; " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30]; " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30]; " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10]; " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10]; " \n "this addMagazineTurret [""LIB_60x_M42A1_M1_HE"",[0],20]; " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];";
+				init="call{this removeMagazinesTurret [""LIB_30x_M61_M1_AP"",[0]];  " \n "this removeMagazinesTurret [""LIB_14x_T45_M1_APCR"",[0]];  " \n "this removeMagazinesTurret [""LIB_60x_M42A1_M1_HE"",[0]];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_60x_M42A1_M1_HE"",[0],17];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
 				textures="soviet";
 			};
 			id=9631;
@@ -1583,13 +1583,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={552.30457,7.2870412,352.61487};
+				position[]={562.19897,7.2870412,350.91299};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this removeMagazinesTurret [""LIB_15x_BR365_AP"",[0]]; " \n "this removeMagazinesTurret [""LIB_8x_BR365P_APCR"",[0]]; " \n "this removeMagazinesTurret [""LIB_25x_O365_HE"",[0]]; " \n "this addMagazineTurret [""LIB_15x_BR365_AP"",[0],14]; " \n "this addMagazineTurret [""LIB_15x_BR365_AP"",[0],14]; " \n "this addMagazineTurret [""LIB_8x_BR365P_APCR"",[0],5]; " \n "this addMagazineTurret [""LIB_8x_BR365P_APCR"",[0],5]; " \n "this addMagazineTurret [""LIB_25x_O365_HE"",[0],10];";
+				init="call{this removeMagazinesTurret [""LIB_15x_BR365_AP"",[0]]; " \n "this removeMagazinesTurret [""LIB_8x_BR365P_APCR"",[0]]; " \n "this removeMagazinesTurret [""LIB_25x_O365_HE"",[0]]; " \n "this addMagazineTurret [""LIB_15x_BR365_AP"",[0],14]; " \n "this addMagazineTurret [""LIB_15x_BR365_AP"",[0],14]; " \n "this addMagazineTurret [""LIB_8x_BR365P_APCR"",[0],5]; " \n "this addMagazineTurret [""LIB_8x_BR365P_APCR"",[0],5]; " \n "this addMagazineTurret [""LIB_25x_O365_HE"",[0],10];}";
 			};
 			id=9632;
 			type="LIB_SU85";
@@ -1679,17 +1679,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={453.80328,5.0019598,253.07063};
+				position[]={446.00656,5.001956,253.00168};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this removeMagazinesTurret [""LIB_30x_M61_M1_AP"",[0]]; " \n "this removeMagazinesTurret [""LIB_14x_T45_M1_APCR"",[0]]; " \n "this removeMagazinesTurret [""LIB_60x_M42A1_M1_HE"",[0]]; " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30]; " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30]; " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10]; " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10]; " \n "this addMagazineTurret [""LIB_60x_M42A1_M1_HE"",[0],20]; " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];";
+				init="call{this removeMagazinesTurret [""LIB_30x_M61_M1_AP"",[0]];  " \n "this removeMagazinesTurret [""LIB_14x_T45_M1_APCR"",[0]];  " \n "this removeMagazinesTurret [""LIB_60x_M42A1_M1_HE"",[0]];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_60x_M42A1_M1_HE"",[0],17];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
 			};
 			id=9633;
 			type="LIB_M4A3_75";
-			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1776,7 +1775,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={342.93604,5.0138803,320.04385};
+				position[]={421.49969,5.0138803,348.92862};
 			};
 			side="Empty";
 			flags=4;
@@ -1853,13 +1852,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={652.44958,7.1691761,353.58087};
+				position[]={604.77899,7.1691761,354.164};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this removeMagazinesTurret [""LIB_14x_BR365_AP"",[0]];  " \n "this removeMagazinesTurret [""LIB_5x_BR365P_APCR"",[0]];  " \n "this removeMagazinesTurret [""LIB_36x_O365_HE"",[0]];  " \n "this addMagazineTurret [""LIB_14x_BR365_AP"",[0],10];  " \n "this addMagazineTurret [""LIB_14x_BR365_AP"",[0],10];   " \n "this addMagazineTurret [""LIB_14x_BR365_AP"",[0],10];  " \n "this addMagazineTurret [""LIB_5x_BR365P_APCR"",[0],5];  " \n "this addMagazineTurret [""LIB_5x_BR365P_APCR"",[0],5];  " \n "this addMagazineTurret [""LIB_5x_BR365P_APCR"",[0],5];  " \n "this addMagazineTurret [""LIB_36x_O365_HE"",[0],15];  " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[0]];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],150];  " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[1]];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],150];";
+				init="call{this removeMagazinesTurret [""LIB_14x_BR365_AP"",[0]]; " \n "this removeMagazinesTurret [""LIB_5x_BR365P_APCR"",[0]]; " \n "this removeMagazinesTurret [""LIB_36x_O365_HE"",[0]]; " \n "this addMagazineTurret [""LIB_14x_BR365_AP"",[0],10]; " \n "this addMagazineTurret [""LIB_14x_BR365_AP"",[0],10]; " \n "this addMagazineTurret [""LIB_14x_BR365_AP"",[0],10]; " \n "this addMagazineTurret [""LIB_5x_BR365P_APCR"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_BR365P_APCR"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_BR365P_APCR"",[0],5]; " \n "this addMagazineTurret [""LIB_36x_O365_HE"",[0],10]; " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[0]]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[1]]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63];}";
 			};
 			id=9635;
 			type="LIB_T34_85";
@@ -1949,13 +1948,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={447.63477,5.001956,252.90089};
+				position[]={429.12631,5.001956,253.01622};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this removeMagazinesTurret [""LIB_30x_M61_M1_AP"",[0]]; " \n "this removeMagazinesTurret [""LIB_14x_T45_M1_APCR"",[0]]; " \n "this removeMagazinesTurret [""LIB_60x_M42A1_M1_HE"",[0]]; " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30]; " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30]; " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10]; " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10]; " \n "this addMagazineTurret [""LIB_60x_M42A1_M1_HE"",[0],20]; " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];";
+				init="call{this removeMagazinesTurret [""LIB_30x_M61_M1_AP"",[0]];  " \n "this removeMagazinesTurret [""LIB_14x_T45_M1_APCR"",[0]];  " \n "this removeMagazinesTurret [""LIB_60x_M42A1_M1_HE"",[0]];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_60x_M42A1_M1_HE"",[0],17];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
 				textures="standard";
 			};
 			id=9636;
@@ -2046,13 +2045,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={147.3766,5.072741,227.06383};
+				position[]={338.5686,5.072741,249.9066};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100]; " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100]; " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];";
+				init="call{this removeMagazinesTurret [""LIB_100Rnd_127x99_M2"",[0]];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100]; }";
 			};
 			id=9637;
 			type="LIB_US_M3_Halftrack";
@@ -2142,7 +2141,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={343.67902,6.9974732,353.85757};
+				position[]={353.8371,6.9974732,346.31766};
 				angles[]={0,0.0016057029,0};
 			};
 			side="Empty";
@@ -2240,7 +2239,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={149.23105,7.220746,457.98242};
+				position[]={545.77643,7.220746,449.4751};
 			};
 			side="Empty";
 			flags=4;
@@ -2336,7 +2335,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={546.52454,7.2940998,449.21188};
+				position[]={562.54437,7.2940998,448.53613};
 			};
 			side="Empty";
 			flags=4;
@@ -2470,7 +2469,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={650.83948,7.3124075,451.70889};
+				position[]={604.94464,7.3124075,447.35449};
 			};
 			side="Empty";
 			flags=4;
@@ -2604,7 +2603,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={551.58252,7.3076982,449.74988};
+				position[]={520.64673,7.3076982,448.81738};
 			};
 			side="Empty";
 			flags=4;
@@ -2739,7 +2738,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={249.28563,7.0840282,455.95752};
+				position[]={495.03653,7.0840282,448.71045};
 			};
 			side="Empty";
 			flags=4;
@@ -2873,7 +2872,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={248.6237,6.1524878,431.19873};
+				position[]={212.10854,6.1524878,454.0921};
 			};
 			side="Empty";
 			flags=4;
@@ -2888,7 +2887,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={251.19377,6.5918212,431.08746};
+				position[]={212.12581,6.5918212,448.07199};
 			};
 			side="Empty";
 			flags=4;
@@ -2984,7 +2983,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={148.12277,4.999711,422.6124};
+				position[]={86.10524,4.999711,416.71661};
 			};
 			side="Empty";
 			flags=4;
@@ -3061,7 +3060,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={152.14279,4.999711,422.74341};
+				position[]={86.14389,4.999711,413.05072};
 			};
 			side="Empty";
 			flags=4;
@@ -3138,7 +3137,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={250.03419,5,423.25296};
+				position[]={220.86903,5,448.33987};
 			};
 			side="Empty";
 			flags=4;
@@ -3215,7 +3214,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={147.38403,6.9974732,449.82156};
+				position[]={86.199577,6.9974732,491.97232};
 			};
 			side="Empty";
 			flags=4;
@@ -3311,7 +3310,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={452.32535,5.0068002,450.28104};
+				position[]={228.73839,5.0068002,449.03592};
 			};
 			side="Empty";
 			flags=4;
@@ -3407,7 +3406,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={454.25052,5.044466,438.65363};
+				position[]={405.00479,5.044466,448.50385};
 			};
 			side="Empty";
 			flags=4;
@@ -3484,17 +3483,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={349.95856,5.0727334,353.72891};
+				position[]={362.12759,5.072741,356.47592};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100]; " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100]; " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];";
+				init="call{this removeMagazinesTurret [""LIB_100Rnd_127x99_M2"",[0]];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100]; }";
 			};
 			id=9656;
 			type="LIB_SOV_M3_Halftrack";
-			atlOffset=-7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3581,7 +3579,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={149.62236,7.3396378,313.43994};
+				position[]={85.997543,7.3396378,318.45004};
 			};
 			side="Empty";
 			flags=4;
@@ -3677,17 +3675,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={355.66104,6.0599003,353.68042};
+				position[]={86.064781,6.0599155,250.71739};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];";
+				init="call{this removeMagazinesTurret [""LIB_100Rnd_127x99_M2"",[0]];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],50]; }";
+				textures="standard";
 			};
-			id=9658;
-			type="LIB_Scout_M3";
-			atlOffset=-1.5258789e-005;
+			id=9659;
+			type="LIB_US_Scout_M3";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3774,16 +3772,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={151.35794,6.0599155,226.82605};
+				position[]={646.25537,5.001956,250.90147};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];";
+				init="call{this removeMagazinesTurret [""LIB_30x_M61_M1_AP"",[0]];  " \n "this removeMagazinesTurret [""LIB_14x_T45_M1_APCR"",[0]];  " \n "this removeMagazinesTurret [""LIB_60x_M42A1_M1_HE"",[0]];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_60x_M42A1_M1_HE"",[0],17];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
 			};
-			id=9659;
-			type="LIB_US_Scout_M3";
+			id=9660;
+			type="LIB_M4A3_75_Tubes";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3870,17 +3868,891 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={652.04529,5.0019541,252.92993};
+				position[]={85.968193,4.5735121,327.65311};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this removeMagazinesTurret [""LIB_30x_M61_M1_AP"",[0]]; " \n "this removeMagazinesTurret [""LIB_14x_T45_M1_APCR"",[0]]; " \n "this removeMagazinesTurret [""LIB_60x_M42A1_M1_HE"",[0]]; " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30]; " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30]; " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10]; " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10]; " \n "this addMagazineTurret [""LIB_60x_M42A1_M1_HE"",[0],20]; " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];";
+				init="this addMagazineTurret [""LIB_5x_61k"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_61k"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_61k"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_61k"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_61k"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_61k"",[0],5];";
 			};
-			id=9660;
-			type="LIB_M4A3_75_Tubes";
-			atlOffset=-1.9073486e-006;
+			id=9661;
+			type="LIB_61k";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item36
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={85.761414,5.0054083,340.74692};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250];";
+			};
+			id=9662;
+			type="LIB_Maxim_M30_base";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item37
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={85.805252,5.0001421,337.52103};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250];";
+			};
+			id=9663;
+			type="LIB_Maxim_M30_Trench";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item38
+		{
+			dataType="Marker";
+			position[]={450,3.4449601e+022,550};
+			name="marker_14";
+			text="1942";
+			type="mil_arrow";
+			a=1.5;
+			b=1.5;
+			angle=180;
+			id=9665;
+			atlOffset=3.4449601e+022;
+		};
+		class Item39
+		{
+			dataType="Marker";
+			position[]={550,3.4431442e+022,550};
+			name="marker_15";
+			text="1943";
+			type="mil_arrow";
+			a=1.5;
+			b=1.5;
+			angle=180;
+			id=9666;
+			atlOffset=3.4431442e+022;
+		};
+		class Item40
+		{
+			dataType="Marker";
+			position[]={650,3.4449601e+022,550};
+			name="marker_16";
+			text="1944";
+			type="mil_arrow";
+			a=1.5;
+			b=1.5;
+			angle=180;
+			id=9667;
+			atlOffset=3.4449601e+022;
+		};
+		class Item41
+		{
+			dataType="Marker";
+			position[]={25,1.289867e+019,250};
+			name="marker_19";
+			text="American";
+			type="mil_arrow";
+			colorName="ColorGUER";
+			a=1.5;
+			b=1.5;
+			angle=90;
+			id=9668;
+			atlOffset=1.289867e+019;
+		};
+		class Item42
+		{
+			dataType="Marker";
+			position[]={25,1.289867e+019,450};
+			name="marker_17";
+			text="German";
+			type="mil_arrow";
+			colorName="ColorWEST";
+			a=1.5;
+			b=1.5;
+			angle=90;
+			id=9669;
+			atlOffset=1.289867e+019;
+		};
+		class Item43
+		{
+			dataType="Marker";
+			position[]={100,4.1911579e+024,300};
+			name="marker_20";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=2;
+			b=300;
+			id=9670;
+			atlOffset=4.1911579e+024;
+		};
+		class Item44
+		{
+			dataType="Marker";
+			position[]={200,3.6515664e+036,300};
+			name="marker_21";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=2;
+			b=300;
+			id=9671;
+			atlOffset=3.6515664e+036;
+		};
+		class Item45
+		{
+			dataType="Marker";
+			position[]={300,5945412,300};
+			name="marker_22";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=2;
+			b=300;
+			id=9672;
+			atlOffset=5945407;
+		};
+		class Item46
+		{
+			dataType="Marker";
+			position[]={400,3.6515664e+036,300};
+			name="marker_23";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=2;
+			b=300;
+			id=9673;
+			atlOffset=3.6515664e+036;
+		};
+		class Item47
+		{
+			dataType="Marker";
+			position[]={400,3.2788334e+013,500};
+			name="marker_24";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=2;
+			b=400;
+			angle=90;
+			id=9674;
+			atlOffset=3.2788334e+013;
+		};
+		class Item48
+		{
+			dataType="Marker";
+			position[]={400,3.6515664e+036,400};
+			name="marker_25";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=2;
+			b=400;
+			angle=90;
+			id=9675;
+			atlOffset=3.6515664e+036;
+		};
+		class Item49
+		{
+			dataType="Marker";
+			position[]={400,3.2788334e+013,300};
+			name="marker_26";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=2;
+			b=400;
+			angle=90;
+			id=9676;
+			atlOffset=3.2788334e+013;
+		};
+		class Item50
+		{
+			dataType="Marker";
+			position[]={400,3.6515664e+036,200};
+			name="marker_27";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=2;
+			b=400;
+			angle=90;
+			id=9677;
+			atlOffset=3.6515664e+036;
+		};
+		class Item51
+		{
+			dataType="Marker";
+			position[]={25,1.289867e+019,350};
+			name="marker_18";
+			text="Soviet";
+			type="mil_arrow";
+			colorName="ColorEAST";
+			a=1.5;
+			b=1.5;
+			angle=90;
+			id=9678;
+			atlOffset=1.289867e+019;
+		};
+		class Item52
+		{
+			dataType="Marker";
+			position[]={500,5945412,300};
+			name="marker_28";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=2;
+			b=300;
+			id=9679;
+			atlOffset=5945407;
+		};
+		class Item53
+		{
+			dataType="Marker";
+			position[]={600,3.6515664e+036,300};
+			name="marker_29";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=2;
+			b=300;
+			id=9680;
+			atlOffset=3.6515664e+036;
+		};
+		class Item54
+		{
+			dataType="Marker";
+			position[]={700,5945412,300};
+			name="marker_30";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=2;
+			b=300;
+			id=9681;
+			atlOffset=5945407;
+		};
+		class Item55
+		{
+			dataType="Marker";
+			position[]={800,3.6515664e+036,300};
+			name="marker_31";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=2;
+			b=300;
+			id=9682;
+			atlOffset=3.6515664e+036;
+		};
+		class Item56
+		{
+			dataType="Marker";
+			position[]={750,5945412,550};
+			name="marker_32";
+			text="1945";
+			type="mil_arrow";
+			a=1.5;
+			b=1.5;
+			angle=180;
+			id=9683;
+			atlOffset=5945407;
+		};
+		class Item57
+		{
+			dataType="Marker";
+			position[]={350,3.6528442e+036,550};
+			name="marker_33";
+			text="1941";
+			type="mil_arrow";
+			a=1.5;
+			b=1.5;
+			angle=180;
+			id=9684;
+			atlOffset=3.6528442e+036;
+		};
+		class Item58
+		{
+			dataType="Marker";
+			position[]={250,3.6528442e+036,550};
+			name="marker_34";
+			text="1940";
+			type="mil_arrow";
+			a=1.5;
+			b=1.5;
+			angle=180;
+			id=9685;
+			atlOffset=3.6528442e+036;
+		};
+		class Item59
+		{
+			dataType="Marker";
+			position[]={150,3.6528442e+036,550};
+			name="marker_35";
+			text="1939";
+			type="mil_arrow";
+			a=1.5;
+			b=1.5;
+			angle=180;
+			id=9686;
+			atlOffset=3.6528442e+036;
+		};
+		class Item60
+		{
+			dataType="Marker";
+			position[]={400,5945412,100};
+			name="marker_36";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=2;
+			b=400;
+			angle=90;
+			id=9687;
+			atlOffset=5945407;
+		};
+		class Item61
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={86.119041,7.0606985,482.97906};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				aiRadarUsage=106852;
+			};
+			id=9688;
+			type="LIB_SdKfz251_FFV";
+		};
+		class Item62
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={86.241119,5.9449916,403.71252};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=9689;
+			type="LIB_GrWr34_ACE";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item63
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={479.49899,5.0016179,451.8797};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=9690;
+			type="LIB_MG42_Lafette_Deployed";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item64
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={479.59085,4.4268479,446.20557};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=9692;
+			type="LIB_MG42_Lafette_low_Deployed";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item65
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={85.839676,5.0046506,333.17734};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=9693;
+			type="LIB_BM37_ACE";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item66
+		{
+			dataType="Marker";
+			position[]={25,1.289867e+019,150};
+			name="marker_37";
+			text="British";
+			type="mil_arrow";
+			colorName="ColorGUER";
+			a=1.5;
+			b=1.5;
+			angle=90;
+			id=9694;
+			atlOffset=1.289867e+019;
+		};
+		class Item67
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={620.66638,6.4691896,250.46339};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this removeMagazinesTurret [""LIB_30x_76L55_M79"",[0]];  " \n "this removeMagazinesTurret [""LIB_14x_76L55_M93"",[0]];  " \n "this removeMagazinesTurret [""LIB_60x_76L55_M42"",[0]];  " \n "this addMagazineTurret [""LIB_30x_76L55_M79"",[0],20];  " \n "this addMagazineTurret [""LIB_30x_76L55_M79"",[0],20];  " \n "this addMagazineTurret [""LIB_14x_76L55_M93"",[0],14];  " \n "this addMagazineTurret [""LIB_60x_76L55_M42"",[0],17];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
+			};
+			id=9695;
+			type="LIB_M4A3_76";
+		};
+		class Item68
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={662.47034,6.5423632,250.24579};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this removeMagazinesTurret [""LIB_30x_76L55_M79"",[0]];  " \n "this removeMagazinesTurret [""LIB_14x_76L55_M93"",[0]];  " \n "this removeMagazinesTurret [""LIB_60x_76L55_M42"",[0]];  " \n "this addMagazineTurret [""LIB_30x_76L55_M79"",[0],20];  " \n "this addMagazineTurret [""LIB_30x_76L55_M79"",[0],20];  " \n "this addMagazineTurret [""LIB_14x_76L55_M93"",[0],14];  " \n "this addMagazineTurret [""LIB_60x_76L55_M42"",[0],17];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
+			};
+			id=9696;
+			type="LIB_M4A3_76_HVSS";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3962,906 +4834,12 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item36
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={149.46382,4.5735121,336.81674};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this addMagazineTurret [""LIB_5x_61k"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_61k"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_61k"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_61k"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_61k"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_61k"",[0],5];";
-			};
-			id=9661;
-			type="LIB_61k";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_onKilledEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="Enh_onRespawnEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="Enh_onDamagedEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				nAttributes=3;
-			};
-		};
-		class Item37
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={149.22392,5.0054083,326.0488};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250];";
-			};
-			id=9662;
-			type="LIB_Maxim_M30_base";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_onKilledEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="Enh_onRespawnEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="Enh_onDamagedEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				nAttributes=3;
-			};
-		};
-		class Item38
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={151.22803,5.0001421,325.9957};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250];";
-			};
-			id=9663;
-			type="LIB_Maxim_M30_Trench";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_onKilledEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="Enh_onRespawnEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="Enh_onDamagedEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				nAttributes=3;
-			};
-		};
-		class Item39
-		{
-			dataType="Marker";
-			position[]={450,3.4449601e+022,550};
-			name="marker_14";
-			text="1942";
-			type="mil_arrow";
-			a=1.5;
-			b=1.5;
-			angle=180;
-			id=9665;
-			atlOffset=3.4449601e+022;
-		};
-		class Item40
-		{
-			dataType="Marker";
-			position[]={550,3.4431442e+022,550};
-			name="marker_15";
-			text="1943";
-			type="mil_arrow";
-			a=1.5;
-			b=1.5;
-			angle=180;
-			id=9666;
-			atlOffset=3.4431442e+022;
-		};
-		class Item41
-		{
-			dataType="Marker";
-			position[]={650,3.4449601e+022,550};
-			name="marker_16";
-			text="1944";
-			type="mil_arrow";
-			a=1.5;
-			b=1.5;
-			angle=180;
-			id=9667;
-			atlOffset=3.4449601e+022;
-		};
-		class Item42
-		{
-			dataType="Marker";
-			position[]={25,1.289867e+019,250};
-			name="marker_19";
-			text="American";
-			type="mil_arrow";
-			colorName="ColorGUER";
-			a=1.5;
-			b=1.5;
-			angle=90;
-			id=9668;
-			atlOffset=1.289867e+019;
-		};
-		class Item43
-		{
-			dataType="Marker";
-			position[]={25,1.289867e+019,450};
-			name="marker_17";
-			text="German";
-			type="mil_arrow";
-			colorName="ColorWEST";
-			a=1.5;
-			b=1.5;
-			angle=90;
-			id=9669;
-			atlOffset=1.289867e+019;
-		};
-		class Item44
-		{
-			dataType="Marker";
-			position[]={100,5945412,300};
-			name="marker_20";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=2;
-			b=300;
-			id=9670;
-			atlOffset=5945407;
-		};
-		class Item45
-		{
-			dataType="Marker";
-			position[]={200,3.6515664e+036,300};
-			name="marker_21";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=2;
-			b=300;
-			id=9671;
-			atlOffset=3.6515664e+036;
-		};
-		class Item46
-		{
-			dataType="Marker";
-			position[]={300,5945412,300};
-			name="marker_22";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=2;
-			b=300;
-			id=9672;
-			atlOffset=5945407;
-		};
-		class Item47
-		{
-			dataType="Marker";
-			position[]={400,3.6515664e+036,300};
-			name="marker_23";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=2;
-			b=300;
-			id=9673;
-			atlOffset=3.6515664e+036;
-		};
-		class Item48
-		{
-			dataType="Marker";
-			position[]={400,3.2788334e+013,500};
-			name="marker_24";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=2;
-			b=400;
-			angle=90;
-			id=9674;
-			atlOffset=3.2788334e+013;
-		};
-		class Item49
-		{
-			dataType="Marker";
-			position[]={400,3.6515664e+036,400};
-			name="marker_25";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=2;
-			b=400;
-			angle=90;
-			id=9675;
-			atlOffset=3.6515664e+036;
-		};
-		class Item50
-		{
-			dataType="Marker";
-			position[]={400,3.2788334e+013,300};
-			name="marker_26";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=2;
-			b=400;
-			angle=90;
-			id=9676;
-			atlOffset=3.2788334e+013;
-		};
-		class Item51
-		{
-			dataType="Marker";
-			position[]={400,3.6515664e+036,200};
-			name="marker_27";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=2;
-			b=400;
-			angle=90;
-			id=9677;
-			atlOffset=3.6515664e+036;
-		};
-		class Item52
-		{
-			dataType="Marker";
-			position[]={25,1.289867e+019,350};
-			name="marker_18";
-			text="Soviet";
-			type="mil_arrow";
-			colorName="ColorEAST";
-			a=1.5;
-			b=1.5;
-			angle=90;
-			id=9678;
-			atlOffset=1.289867e+019;
-		};
-		class Item53
-		{
-			dataType="Marker";
-			position[]={500,5945412,300};
-			name="marker_28";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=2;
-			b=300;
-			id=9679;
-			atlOffset=5945407;
-		};
-		class Item54
-		{
-			dataType="Marker";
-			position[]={600,3.6515664e+036,300};
-			name="marker_29";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=2;
-			b=300;
-			id=9680;
-			atlOffset=3.6515664e+036;
-		};
-		class Item55
-		{
-			dataType="Marker";
-			position[]={700,5945412,300};
-			name="marker_30";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=2;
-			b=300;
-			id=9681;
-			atlOffset=5945407;
-		};
-		class Item56
-		{
-			dataType="Marker";
-			position[]={800,3.6515664e+036,300};
-			name="marker_31";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=2;
-			b=300;
-			id=9682;
-			atlOffset=3.6515664e+036;
-		};
-		class Item57
-		{
-			dataType="Marker";
-			position[]={750,5945412,550};
-			name="marker_32";
-			text="1945";
-			type="mil_arrow";
-			a=1.5;
-			b=1.5;
-			angle=180;
-			id=9683;
-			atlOffset=5945407;
-		};
-		class Item58
-		{
-			dataType="Marker";
-			position[]={350,3.6528442e+036,550};
-			name="marker_33";
-			text="1941";
-			type="mil_arrow";
-			a=1.5;
-			b=1.5;
-			angle=180;
-			id=9684;
-			atlOffset=3.6528442e+036;
-		};
-		class Item59
-		{
-			dataType="Marker";
-			position[]={250,3.6528442e+036,550};
-			name="marker_34";
-			text="1940";
-			type="mil_arrow";
-			a=1.5;
-			b=1.5;
-			angle=180;
-			id=9685;
-			atlOffset=3.6528442e+036;
-		};
-		class Item60
-		{
-			dataType="Marker";
-			position[]={150,3.6528442e+036,550};
-			name="marker_35";
-			text="1939";
-			type="mil_arrow";
-			a=1.5;
-			b=1.5;
-			angle=180;
-			id=9686;
-			atlOffset=3.6528442e+036;
-		};
-		class Item61
-		{
-			dataType="Marker";
-			position[]={400,5945412,100};
-			name="marker_36";
-			markerType="RECTANGLE";
-			type="rectangle";
-			a=2;
-			b=400;
-			angle=90;
-			id=9687;
-			atlOffset=5945407;
-		};
-		class Item62
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={151.98357,7.0606842,449.52475};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				aiRadarUsage=106852;
-			};
-			id=9688;
-			type="LIB_SdKfz251_FFV";
-			atlOffset=-1.4305115e-005;
-		};
-		class Item63
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={148.23145,5.9449859,433.07663};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=9689;
-			type="LIB_GrWr34_ACE";
-			atlOffset=-5.7220459e-006;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_onKilledEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="Enh_onRespawnEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="Enh_onDamagedEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				nAttributes=3;
-			};
-		};
-		class Item64
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={446.41187,5.0016179,438.54196};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=9690;
-			type="LIB_MG42_Lafette_Deployed";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_onKilledEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="Enh_onRespawnEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="Enh_onDamagedEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				nAttributes=3;
-			};
-		};
-		class Item65
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={448.42374,4.4268479,438.61371};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=9692;
-			type="LIB_MG42_Lafette_low_Deployed";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_onKilledEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="Enh_onRespawnEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="Enh_onDamagedEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				nAttributes=3;
-			};
-		};
-		class Item66
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={147.27591,5.0046506,325.99484};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=9693;
-			type="LIB_BM37_ACE";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_onKilledEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="Enh_onRespawnEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="Enh_onDamagedEvent";
-					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="false";
-						};
-					};
-				};
-				nAttributes=3;
-			};
-		};
-		class Item67
-		{
-			dataType="Marker";
-			position[]={25,1.289867e+019,150};
-			name="marker_37";
-			text="British";
-			type="mil_arrow";
-			colorName="ColorGUER";
-			a=1.5;
-			b=1.5;
-			angle=90;
-			id=9694;
-			atlOffset=1.289867e+019;
-		};
-		class Item68
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={643.55603,6.4691839,252.59412};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=9695;
-			type="LIB_M4A3_76";
-			atlOffset=-5.7220459e-006;
-		};
 		class Item69
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={659.8349,6.5423613,252.87646};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				aiRadarUsage=-1;
-			};
-			id=9696;
-			type="LIB_M4A3_76_HVSS";
-			atlOffset=-1.9073486e-006;
-		};
-		class Item70
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={551.72894,6.5446587,149.05667};
+				position[]={637.42175,6.5446644,150.22755};
 			};
 			side="Empty";
 			flags=4;
@@ -4871,24 +4849,119 @@ class Mission
 			};
 			id=9697;
 			type="LIB_M4A4_FIREFLY";
-			atlOffset=-5.7220459e-006;
+		};
+		class Item70
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={438.32471,5.001956,151.65636};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this removeMagazinesTurret [""LIB_30x_M61_M1_AP"",[0]];  " \n "this removeMagazinesTurret [""LIB_14x_T45_M1_APCR"",[0]];  " \n "this removeMagazinesTurret [""LIB_60x_M42A1_M1_HE"",[0]];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_60x_M42A1_M1_HE"",[0],17];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
+				textures="soviet";
+			};
+			id=9698;
+			type="LIB_M4A2_SOV";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 		class Item71
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={449.48633,5.001956,150.93468};
+				position[]={470.11707,4.9950533,253.24023};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this removeMagazinesTurret [""LIB_30x_M61_M1_AP"",[0]]; " \n "this removeMagazinesTurret [""LIB_14x_T45_M1_APCR"",[0]]; " \n "this removeMagazinesTurret [""LIB_60x_M42A1_M1_HE"",[0]]; " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30]; " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30]; " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10]; " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10]; " \n "this addMagazineTurret [""LIB_60x_M42A1_M1_HE"",[0],20]; " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];";
-				textures="soviet";
+				init="call{this removeMagazinesTurret [""LIB_50x_37L57_M74"",[0]];   " \n "this removeMagazinesTurret [""LIB_40x_37L57_M51"",[0]];   " \n "this removeMagazinesTurret [""LIB_60x_37L57_M63"",[0]];   " \n "this addMagazineTurret [""LIB_50x_37L57_M74"",[0],44];   " \n "this addMagazineTurret [""LIB_40x_37L57_M51"",[0],40];   " \n "this addMagazineTurret [""LIB_40x_37L57_M51"",[0],40];   " \n "this addMagazineTurret [""LIB_60x_37L57_M63"",[0],50];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],220];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
 			};
-			id=9698;
-			type="LIB_M4A2_SOV";
+			id=9699;
+			type="LIB_M3A3_Stuart";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4975,103 +5048,407 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={349.64401,4.9950533,254.74545};
+				position[]={487.97134,4.9928627,253.14011};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				aiRadarUsage=-1082130432;
+				init="call{this removeMagazinesTurret [""LIB_50x_37L57_M74"",[0]];   " \n "this removeMagazinesTurret [""LIB_40x_37L57_M51"",[0]];   " \n "this removeMagazinesTurret [""LIB_60x_37L57_M63"",[0]];   " \n "this addMagazineTurret [""LIB_50x_37L57_M74"",[0],37];   " \n "this addMagazineTurret [""LIB_40x_37L57_M51"",[0],35];   " \n "this addMagazineTurret [""LIB_40x_37L57_M51"",[0],35];   " \n "this addMagazineTurret [""LIB_60x_37L57_M63"",[0],40];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
 			};
-			id=9699;
-			type="LIB_M3A3_Stuart";
+			id=9700;
+			type="LIB_M5A1_Stuart";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 		class Item73
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={441.94739,4.9928646,252.42412};
+				position[]={478.94626,4.9950533,151.22495};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				aiRadarUsage=93988;
+				init="call{this removeMagazinesTurret [""LIB_50x_37L57_M74"",[0]];   " \n "this removeMagazinesTurret [""LIB_40x_37L57_M51"",[0]];   " \n "this removeMagazinesTurret [""LIB_60x_37L57_M63"",[0]];   " \n "this addMagazineTurret [""LIB_50x_37L57_M74"",[0],44];   " \n "this addMagazineTurret [""LIB_40x_37L57_M51"",[0],40];   " \n "this addMagazineTurret [""LIB_40x_37L57_M51"",[0],40];   " \n "this addMagazineTurret [""LIB_60x_37L57_M63"",[0],50];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],220];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
 			};
-			id=9700;
-			type="LIB_M5A1_Stuart";
-			atlOffset=1.9073486e-006;
+			id=9701;
+			type="LIB_M3A3_Stuart";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 		class Item74
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={442.10175,4.9950533,150.22586};
+				position[]={495.15759,4.9928627,150.97153};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				aiRadarUsage=-1082130432;
+				init="call{this removeMagazinesTurret [""LIB_50x_37L57_M74"",[0]];   " \n "this removeMagazinesTurret [""LIB_40x_37L57_M51"",[0]];   " \n "this removeMagazinesTurret [""LIB_60x_37L57_M63"",[0]];   " \n "this addMagazineTurret [""LIB_50x_37L57_M74"",[0],37];   " \n "this addMagazineTurret [""LIB_40x_37L57_M51"",[0],35];   " \n "this addMagazineTurret [""LIB_40x_37L57_M51"",[0],35];   " \n "this addMagazineTurret [""LIB_60x_37L57_M63"",[0],40];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
 			};
-			id=9701;
-			type="LIB_M3A3_Stuart";
+			id=9702;
+			type="LIB_M5A1_Stuart";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 		class Item75
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={457.8266,4.9928627,150.23901};
+				position[]={520.59668,6.9932785,252.9043};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				aiRadarUsage=93988;
+				init="call{this removeMagazinesTurret [""LIB_25x_37L57_M74"",[0]];  " \n "this removeMagazinesTurret [""LIB_20x_37L57_M51"",[0]];  " \n "this removeMagazinesTurret [""LIB_30x_37L57_M63"",[0]];  " \n "this addMagazineTurret [""LIB_25x_37L57_M74"",[0],25];  " \n "this addMagazineTurret [""LIB_25x_37L57_M74"",[0],25];  " \n "this addMagazineTurret [""LIB_20x_37L57_M51"",[0],20];  " \n "this addMagazineTurret [""LIB_30x_37L57_M63"",[0],20];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];}";
 			};
-			id=9702;
-			type="LIB_M5A1_Stuart";
+			id=9703;
+			type="LIB_M8_Greyhound";
 		};
 		class Item76
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={549.92999,6.9932785,250.08203};
+				position[]={529.30383,6.9932785,150.78613};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{this removeMagazinesTurret [""LIB_25x_37L57_M74"",[0]];  " \n "this removeMagazinesTurret [""LIB_20x_37L57_M51"",[0]];  " \n "this removeMagazinesTurret [""LIB_30x_37L57_M63"",[0]];  " \n "this addMagazineTurret [""LIB_25x_37L57_M74"",[0],25];  " \n "this addMagazineTurret [""LIB_25x_37L57_M74"",[0],25];  " \n "this addMagazineTurret [""LIB_20x_37L57_M51"",[0],20];  " \n "this addMagazineTurret [""LIB_30x_37L57_M63"",[0],20];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];}";
 			};
-			id=9703;
+			id=9704;
 			type="LIB_M8_Greyhound";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 		class Item77
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={543.97723,6.9932747,148.27182};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=9704;
-			type="LIB_M8_Greyhound";
-			atlOffset=-3.8146973e-006;
-		};
-		class Item78
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={254.02744,6.1524839,431.01971};
+				position[]={212.01694,6.1524878,442.23495};
 			};
 			side="Empty";
 			flags=4;
@@ -5080,14 +5457,13 @@ class Mission
 			};
 			id=9705;
 			type="LIB_Kfz1_Hood";
-			atlOffset=-3.8146973e-006;
 		};
-		class Item79
+		class Item78
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={149.77895,5.9402375,441.46906};
+				position[]={86.087868,5.9402356,420.2695};
 			};
 			side="Empty";
 			flags=4;
@@ -5096,14 +5472,13 @@ class Mission
 			};
 			id=9706;
 			type="fow_ger_truppenfahrrad";
-			atlOffset=1.9073486e-006;
 		};
-		class Item80
+		class Item79
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={140.42921,6.9770446,413.73907};
+				position[]={86.722488,6.9770446,426.58456};
 			};
 			side="Empty";
 			flags=4;
@@ -5114,12 +5489,12 @@ class Mission
 			id=9707;
 			type="LIB_opelblitz_ambulance";
 		};
-		class Item81
+		class Item80
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={143.88206,6.383224,413.086};
+				position[]={86.210907,6.3832221,433.93018};
 			};
 			side="Empty";
 			flags=4;
@@ -5128,14 +5503,13 @@ class Mission
 			};
 			id=9708;
 			type="LIB_opelblitz_ammo";
-			atlOffset=1.9073486e-006;
 		};
-		class Item82
+		class Item81
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={147.95354,6.8431664,413.65097};
+				position[]={86.314827,6.8431664,450.33035};
 			};
 			side="Empty";
 			flags=4;
@@ -5146,12 +5520,12 @@ class Mission
 			id=9709;
 			type="LIB_opelblitz_fuel";
 		};
-		class Item83
+		class Item82
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={151.89854,6.3832221,413.05023};
+				position[]={86.12336,6.3832221,457.44037};
 			};
 			side="Empty";
 			flags=4;
@@ -5161,12 +5535,12 @@ class Mission
 			id=9710;
 			type="LIB_opelblitz_open_y_camo";
 		};
-		class Item84
+		class Item83
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={156.41922,6.9771128,413.87436};
+				position[]={86.746635,6.9771109,442.49142};
 			};
 			side="Empty";
 			flags=4;
@@ -5176,14 +5550,13 @@ class Mission
 			};
 			id=9711;
 			type="LIB_opelblitz_parm";
-			atlOffset=1.9073486e-006;
 		};
-		class Item85
+		class Item84
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={159.82562,6.3832259,413.2276};
+				position[]={86.107826,6.3832221,465.37698};
 			};
 			side="Empty";
 			flags=4;
@@ -5193,14 +5566,13 @@ class Mission
 			};
 			id=9712;
 			type="LIB_opelblitz_tent_y_camo";
-			atlOffset=3.8146973e-006;
 		};
-		class Item86
+		class Item85
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={650.66998,5.4730334,441.61139};
+				position[]={670.88141,5.4730334,447.40924};
 			};
 			side="Empty";
 			flags=4;
@@ -5290,12 +5662,12 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item87
+		class Item86
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={149.9351,5.0016189,433.48413};
+				position[]={86.014503,5.0016179,409.55078};
 			};
 			side="Empty";
 			flags=4;
@@ -5305,14 +5677,13 @@ class Mission
 			};
 			id=9716;
 			type="LIB_MG34_Lafette_Deployed";
-			atlOffset=9.5367432e-007;
 		};
-		class Item88
+		class Item87
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={151.88647,4.4268441,433.51544};
+				position[]={85.996635,4.4268479,406.70718};
 			};
 			side="Empty";
 			flags=4;
@@ -5322,14 +5693,13 @@ class Mission
 			};
 			id=9717;
 			type="LIB_MG34_Lafette_low_Deployed";
-			atlOffset=-3.8146973e-006;
 		};
-		class Item89
+		class Item88
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={149.56297,5.0201759,344.46686};
+				position[]={86.008606,5.0201759,378.90375};
 			};
 			side="Empty";
 			flags=4;
@@ -5420,12 +5790,12 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item90
+		class Item89
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={343.70325,6.0824051,339.72827};
+				position[]={387.66147,6.0824051,357.49615};
 			};
 			side="Empty";
 			flags=4;
@@ -5436,12 +5806,12 @@ class Mission
 			id=9719;
 			type="LIB_US6_Tent";
 		};
-		class Item91
+		class Item90
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={349.89655,6.0823708,339.6821};
+				position[]={387.56238,6.0824051,337.151};
 			};
 			side="Empty";
 			flags=4;
@@ -5451,14 +5821,13 @@ class Mission
 			};
 			id=9720;
 			type="LIB_US6_Ammo";
-			atlOffset=-3.4332275e-005;
 		};
-		class Item92
+		class Item91
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={355.79971,6.0824051,339.56433};
+				position[]={387.56165,6.0824051,347.44287};
 			};
 			side="Empty";
 			flags=4;
@@ -5469,12 +5838,12 @@ class Mission
 			id=9721;
 			type="LIB_US6_Open";
 		};
-		class Item93
+		class Item92
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={350.00525,6.325541,330.05539};
+				position[]={362.34137,6.3255639,346.20163};
 			};
 			side="Empty";
 			flags=4;
@@ -5483,14 +5852,13 @@ class Mission
 			};
 			id=9722;
 			type="LIB_Willys_MB";
-			atlOffset=-2.2888184e-005;
 		};
-		class Item94
+		class Item93
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={140.69333,7.0225792,359.19922};
+				position[]={85.900642,7.0225792,369.70688};
 			};
 			side="Empty";
 			flags=4;
@@ -5501,12 +5869,12 @@ class Mission
 			id=9726;
 			type="LIB_Zis5v";
 		};
-		class Item95
+		class Item94
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={146.52727,7.0225792,359.46542};
+				position[]={85.823753,7.0225792,346.65497};
 			};
 			side="Empty";
 			flags=4;
@@ -5516,12 +5884,12 @@ class Mission
 			id=9727;
 			type="LIB_Zis5v_Med";
 		};
-		class Item96
+		class Item95
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={152.54349,6.9984212,359.21585};
+				position[]={85.863846,6.9984307,353.50079};
 			};
 			side="Empty";
 			flags=4;
@@ -5530,14 +5898,13 @@ class Mission
 			};
 			id=9728;
 			type="LIB_zis5v_fuel";
-			atlOffset=-9.5367432e-006;
 		};
-		class Item97
+		class Item96
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={158.57759,6.9833193,359.37299};
+				position[]={85.726151,6.9833193,361.35318};
 			};
 			side="Empty";
 			flags=4;
@@ -5548,12 +5915,12 @@ class Mission
 			id=9729;
 			type="LIB_zis6_parm";
 		};
-		class Item98
+		class Item97
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={334.22879,6.2249522,242.3067};
+				position[]={378.79193,6.2249522,255.89703};
 			};
 			side="Empty";
 			flags=4;
@@ -5563,12 +5930,12 @@ class Mission
 			id=9732;
 			type="LIB_US_GMC_Tent";
 		};
-		class Item99
+		class Item98
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={340.14706,6.5755987,241.81909};
+				position[]={378.78787,6.5755987,247.6949};
 			};
 			side="Empty";
 			flags=4;
@@ -5578,12 +5945,12 @@ class Mission
 			id=9733;
 			type="LIB_US_GMC_Ambulance";
 		};
-		class Item100
+		class Item99
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={346.20102,6.2249522,242.20233};
+				position[]={378.79669,6.2249522,239.7216};
 			};
 			side="Empty";
 			flags=4;
@@ -5593,12 +5960,12 @@ class Mission
 			id=9734;
 			type="LIB_US_GMC_Ammo";
 		};
-		class Item101
+		class Item100
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={352.1348,5.7479119,242.1628};
+				position[]={378.80771,5.747931,232.13336};
 			};
 			side="Empty";
 			flags=4;
@@ -5607,14 +5974,13 @@ class Mission
 			};
 			id=9735;
 			type="LIB_US_GMC_Fuel";
-			atlOffset=-1.9073486e-005;
 		};
-		class Item102
+		class Item101
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={358.15149,6.2249522,242.2932};
+				position[]={378.76041,6.2249522,223.92526};
 			};
 			side="Empty";
 			flags=4;
@@ -5624,12 +5990,12 @@ class Mission
 			id=9736;
 			type="LIB_US_GMC_Open";
 		};
-		class Item103
+		class Item102
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={364.16714,5.6331625,242.42307};
+				position[]={378.83813,5.6331625,216.51068};
 			};
 			side="Empty";
 			flags=4;
@@ -5639,12 +6005,12 @@ class Mission
 			id=9737;
 			type="LIB_US_GMC_Parm";
 		};
-		class Item104
+		class Item103
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={349.86096,6.3255563,233.67467};
+				position[]={354.14957,6.3255639,249.08983};
 			};
 			side="Empty";
 			flags=4;
@@ -5653,14 +6019,13 @@ class Mission
 			};
 			id=9738;
 			type="LIB_US_Willys_MB";
-			atlOffset=-7.6293945e-006;
 		};
-		class Item105
+		class Item104
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={147.22896,5.9811912,216.04504};
+				position[]={85.959877,5.9811912,239.03465};
 			};
 			side="Empty";
 			flags=4;
@@ -5670,12 +6035,12 @@ class Mission
 			id=9740;
 			type="LIB_M2_60_ACE";
 		};
-		class Item106
+		class Item105
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={151.3537,5.0004416,216.21584};
+				position[]={85.891022,5.0004768,243.5076};
 			};
 			side="Empty";
 			flags=4;
@@ -5684,14 +6049,13 @@ class Mission
 			};
 			id=9741;
 			type="LIB_M1919_M2";
-			atlOffset=-3.528595e-005;
 		};
-		class Item107
+		class Item106
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={147.62589,5.0015254,144.34746};
+				position[]={89.912003,5.0015254,148.18828};
 			};
 			side="Empty";
 			flags=4;
@@ -5700,6 +6064,1454 @@ class Mission
 			};
 			id=21686;
 			type="fow_w_uk_vickers";
+		};
+		class Item107
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={629.12988,6.4691896,150.28712};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this removeMagazinesTurret [""LIB_30x_76L55_M79"",[0]];  " \n "this removeMagazinesTurret [""LIB_14x_76L55_M93"",[0]];  " \n "this removeMagazinesTurret [""LIB_60x_76L55_M42"",[0]];  " \n "this addMagazineTurret [""LIB_30x_76L55_M79"",[0],20];  " \n "this addMagazineTurret [""LIB_30x_76L55_M79"",[0],20];  " \n "this addMagazineTurret [""LIB_14x_76L55_M93"",[0],14];  " \n "this addMagazineTurret [""LIB_60x_76L55_M42"",[0],17];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250]; " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
+				textures="standard";
+			};
+			id=22419;
+			type="LIB_M4A3_76";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item108
+		{
+			dataType="Marker";
+			position[]={108.33,3.5388954e+023,300};
+			name="marker_38";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22420;
+			atlOffset=3.5388954e+023;
+		};
+		class Item109
+		{
+			dataType="Marker";
+			position[]={116.66,1.2075476e+023,300};
+			name="marker_39";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22421;
+			atlOffset=1.2075476e+023;
+		};
+		class Item110
+		{
+			dataType="Marker";
+			position[]={125,3.4798659e+023,300};
+			name="marker_40";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22422;
+			atlOffset=3.4798659e+023;
+		};
+		class Item111
+		{
+			dataType="Marker";
+			position[]={133.33299,1.2075476e+023,300};
+			name="marker_41";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22423;
+			atlOffset=1.2075476e+023;
+		};
+		class Item112
+		{
+			dataType="Marker";
+			position[]={141.666,5.8039037e+024,300};
+			name="marker_42";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22424;
+			atlOffset=5.8039037e+024;
+		};
+		class Item113
+		{
+			dataType="Marker";
+			position[]={150,4.1911579e+024,300};
+			name="marker_43";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22425;
+			atlOffset=4.1911579e+024;
+		};
+		class Item114
+		{
+			dataType="Marker";
+			position[]={158.33299,5.8794616e+024,300};
+			name="marker_44";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22426;
+			atlOffset=5.8794616e+024;
+		};
+		class Item115
+		{
+			dataType="Marker";
+			position[]={166.666,1.2075476e+023,300};
+			name="marker_45";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22427;
+			atlOffset=1.2075476e+023;
+		};
+		class Item116
+		{
+			dataType="Marker";
+			position[]={175,5.8794616e+024,300};
+			name="marker_46";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22428;
+			atlOffset=5.8794616e+024;
+		};
+		class Item117
+		{
+			dataType="Marker";
+			position[]={183.33299,4.1911579e+024,300};
+			name="marker_47";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22429;
+			atlOffset=4.1911579e+024;
+		};
+		class Item118
+		{
+			dataType="Marker";
+			position[]={191.666,1.2075476e+023,300};
+			name="marker_48";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22430;
+			atlOffset=1.2075476e+023;
+		};
+		class Item119
+		{
+			dataType="Marker";
+			position[]={208.33,5.7992551e+024,300};
+			name="marker_49";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22431;
+			atlOffset=5.7992551e+024;
+		};
+		class Item120
+		{
+			dataType="Marker";
+			position[]={216.66,1.2071845e+023,300};
+			name="marker_50";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22432;
+			atlOffset=1.2071845e+023;
+		};
+		class Item121
+		{
+			dataType="Marker";
+			position[]={225,5.8039037e+024,300};
+			name="marker_51";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22433;
+			atlOffset=5.8039037e+024;
+		};
+		class Item122
+		{
+			dataType="Marker";
+			position[]={233.33299,1.2075476e+023,300};
+			name="marker_52";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22434;
+			atlOffset=1.2075476e+023;
+		};
+		class Item123
+		{
+			dataType="Marker";
+			position[]={241.666,8.146692e+021,300};
+			name="marker_53";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22435;
+			atlOffset=8.146692e+021;
+		};
+		class Item124
+		{
+			dataType="Marker";
+			position[]={250,1.2071845e+023,300};
+			name="marker_54";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22436;
+			atlOffset=1.2071845e+023;
+		};
+		class Item125
+		{
+			dataType="Marker";
+			position[]={258.33301,5.7992551e+024,300};
+			name="marker_55";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22437;
+			atlOffset=5.7992551e+024;
+		};
+		class Item126
+		{
+			dataType="Marker";
+			position[]={266.66599,1.2075476e+023,300};
+			name="marker_56";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22438;
+			atlOffset=1.2075476e+023;
+		};
+		class Item127
+		{
+			dataType="Marker";
+			position[]={275,5.8039037e+024,300};
+			name="marker_57";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22439;
+			atlOffset=5.8039037e+024;
+		};
+		class Item128
+		{
+			dataType="Marker";
+			position[]={283.33301,1.2071845e+023,300};
+			name="marker_58";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22440;
+			atlOffset=1.2071845e+023;
+		};
+		class Item129
+		{
+			dataType="Marker";
+			position[]={291.66599,5.8015794e+024,300};
+			name="marker_59";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22441;
+			atlOffset=5.8015794e+024;
+		};
+		class Item130
+		{
+			dataType="Marker";
+			position[]={308.32999,1.2075476e+023,300};
+			name="marker_60";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22442;
+			atlOffset=1.2075476e+023;
+		};
+		class Item131
+		{
+			dataType="Marker";
+			position[]={316.66,5.7992551e+024,300};
+			name="marker_61";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22443;
+			atlOffset=5.7992551e+024;
+		};
+		class Item132
+		{
+			dataType="Marker";
+			position[]={325,1.2071845e+023,300};
+			name="marker_62";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22444;
+			atlOffset=1.2071845e+023;
+		};
+		class Item133
+		{
+			dataType="Marker";
+			position[]={333.33301,5.8039037e+024,300};
+			name="marker_63";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22445;
+			atlOffset=5.8039037e+024;
+		};
+		class Item134
+		{
+			dataType="Marker";
+			position[]={341.66599,4.1911579e+024,300};
+			name="marker_64";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22446;
+			atlOffset=4.1911579e+024;
+		};
+		class Item135
+		{
+			dataType="Marker";
+			position[]={350,5.8015794e+024,300};
+			name="marker_65";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22447;
+			atlOffset=5.8015794e+024;
+		};
+		class Item136
+		{
+			dataType="Marker";
+			position[]={358.33301,1.2071845e+023,300};
+			name="marker_66";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22448;
+			atlOffset=1.2071845e+023;
+		};
+		class Item137
+		{
+			dataType="Marker";
+			position[]={366.66599,5.7992551e+024,300};
+			name="marker_67";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22449;
+			atlOffset=5.7992551e+024;
+		};
+		class Item138
+		{
+			dataType="Marker";
+			position[]={375,1.2075476e+023,300};
+			name="marker_68";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22450;
+			atlOffset=1.2075476e+023;
+		};
+		class Item139
+		{
+			dataType="Marker";
+			position[]={383.33301,5.8039037e+024,300};
+			name="marker_69";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22451;
+			atlOffset=5.8039037e+024;
+		};
+		class Item140
+		{
+			dataType="Marker";
+			position[]={391.66599,1.2071845e+023,300};
+			name="marker_70";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22452;
+			atlOffset=1.2071845e+023;
+		};
+		class Item141
+		{
+			dataType="Marker";
+			position[]={408.32999,5.8015794e+024,300};
+			name="marker_71";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22453;
+			atlOffset=5.8015794e+024;
+		};
+		class Item142
+		{
+			dataType="Marker";
+			position[]={416.66,1.2075476e+023,300};
+			name="marker_72";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22454;
+			atlOffset=1.2075476e+023;
+		};
+		class Item143
+		{
+			dataType="Marker";
+			position[]={425,5.7992551e+024,300};
+			name="marker_73";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22455;
+			atlOffset=5.7992551e+024;
+		};
+		class Item144
+		{
+			dataType="Marker";
+			position[]={433.33301,1.2071845e+023,300};
+			name="marker_74";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22456;
+			atlOffset=1.2071845e+023;
+		};
+		class Item145
+		{
+			dataType="Marker";
+			position[]={441.66599,5.8039037e+024,300};
+			name="marker_75";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22457;
+			atlOffset=5.8039037e+024;
+		};
+		class Item146
+		{
+			dataType="Marker";
+			position[]={450,1.2075476e+023,300};
+			name="marker_76";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22458;
+			atlOffset=1.2075476e+023;
+		};
+		class Item147
+		{
+			dataType="Marker";
+			position[]={458.33301,5.8015794e+024,300};
+			name="marker_77";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22459;
+			atlOffset=5.8015794e+024;
+		};
+		class Item148
+		{
+			dataType="Marker";
+			position[]={466.66599,1.2071845e+023,300};
+			name="marker_78";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22460;
+			atlOffset=1.2071845e+023;
+		};
+		class Item149
+		{
+			dataType="Marker";
+			position[]={475,5.7992551e+024,300};
+			name="marker_79";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22461;
+			atlOffset=5.7992551e+024;
+		};
+		class Item150
+		{
+			dataType="Marker";
+			position[]={483.33301,1.2075476e+023,300};
+			name="marker_80";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22462;
+			atlOffset=1.2075476e+023;
+		};
+		class Item151
+		{
+			dataType="Marker";
+			position[]={491.66599,5.8039037e+024,300};
+			name="marker_81";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22463;
+			atlOffset=5.8039037e+024;
+		};
+		class Item152
+		{
+			dataType="Marker";
+			position[]={508.32999,1.2071845e+023,300};
+			name="marker_82";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22464;
+			atlOffset=1.2071845e+023;
+		};
+		class Item153
+		{
+			dataType="Marker";
+			position[]={516.65997,5.8015794e+024,300};
+			name="marker_83";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22465;
+			atlOffset=5.8015794e+024;
+		};
+		class Item154
+		{
+			dataType="Marker";
+			position[]={525,1.2075476e+023,300};
+			name="marker_84";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22466;
+			atlOffset=1.2075476e+023;
+		};
+		class Item155
+		{
+			dataType="Marker";
+			position[]={533.33301,5.7992551e+024,300};
+			name="marker_85";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22467;
+			atlOffset=5.7992551e+024;
+		};
+		class Item156
+		{
+			dataType="Marker";
+			position[]={541.66602,4.1911579e+024,300};
+			name="marker_86";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22468;
+			atlOffset=4.1911579e+024;
+		};
+		class Item157
+		{
+			dataType="Marker";
+			position[]={550,1.2075476e+023,300};
+			name="marker_87";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22469;
+			atlOffset=1.2075476e+023;
+		};
+		class Item158
+		{
+			dataType="Marker";
+			position[]={558.33301,5.8015794e+024,300};
+			name="marker_88";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22470;
+			atlOffset=5.8015794e+024;
+		};
+		class Item159
+		{
+			dataType="Marker";
+			position[]={566.66602,1.2071845e+023,300};
+			name="marker_89";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22471;
+			atlOffset=1.2071845e+023;
+		};
+		class Item160
+		{
+			dataType="Marker";
+			position[]={575,5.7992551e+024,300};
+			name="marker_90";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22472;
+			atlOffset=5.7992551e+024;
+		};
+		class Item161
+		{
+			dataType="Marker";
+			position[]={583.33301,1.2075476e+023,300};
+			name="marker_91";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22473;
+			atlOffset=1.2075476e+023;
+		};
+		class Item162
+		{
+			dataType="Marker";
+			position[]={591.66602,5.8039037e+024,300};
+			name="marker_92";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22474;
+			atlOffset=5.8039037e+024;
+		};
+		class Item163
+		{
+			dataType="Marker";
+			position[]={608.33002,1.2071845e+023,300};
+			name="marker_93";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22475;
+			atlOffset=1.2071845e+023;
+		};
+		class Item164
+		{
+			dataType="Marker";
+			position[]={616.65997,5.8015794e+024,300};
+			name="marker_94";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22476;
+			atlOffset=5.8015794e+024;
+		};
+		class Item165
+		{
+			dataType="Marker";
+			position[]={625,1.2075476e+023,300};
+			name="marker_95";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22477;
+			atlOffset=1.2075476e+023;
+		};
+		class Item166
+		{
+			dataType="Marker";
+			position[]={633.33301,5.7992551e+024,300};
+			name="marker_96";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22478;
+			atlOffset=5.7992551e+024;
+		};
+		class Item167
+		{
+			dataType="Marker";
+			position[]={641.66602,5.8039037e+024,300};
+			name="marker_97";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22479;
+			atlOffset=5.8039037e+024;
+		};
+		class Item168
+		{
+			dataType="Marker";
+			position[]={650,5.8039037e+024,300};
+			name="marker_98";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22480;
+			atlOffset=5.8039037e+024;
+		};
+		class Item169
+		{
+			dataType="Marker";
+			position[]={658.33301,1.2075476e+023,300};
+			name="marker_99";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22481;
+			atlOffset=1.2075476e+023;
+		};
+		class Item170
+		{
+			dataType="Marker";
+			position[]={666.66602,1.2075476e+023,300};
+			name="marker_100";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22482;
+			atlOffset=1.2075476e+023;
+		};
+		class Item171
+		{
+			dataType="Marker";
+			position[]={675,1.2071845e+023,300};
+			name="marker_101";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22483;
+			atlOffset=1.2071845e+023;
+		};
+		class Item172
+		{
+			dataType="Marker";
+			position[]={683.33301,5.8015794e+024,300};
+			name="marker_102";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22484;
+			atlOffset=5.8015794e+024;
+		};
+		class Item173
+		{
+			dataType="Marker";
+			position[]={691.66602,1.2075476e+023,300};
+			name="marker_103";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22485;
+			atlOffset=1.2075476e+023;
+		};
+		class Item174
+		{
+			dataType="Marker";
+			position[]={708.33002,8.1489618e+021,300};
+			name="marker_104";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22486;
+			atlOffset=8.1489618e+021;
+		};
+		class Item175
+		{
+			dataType="Marker";
+			position[]={716.65997,5.7992551e+024,300};
+			name="marker_105";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22487;
+			atlOffset=5.7992551e+024;
+		};
+		class Item176
+		{
+			dataType="Marker";
+			position[]={725,8.1489618e+021,300};
+			name="marker_106";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22488;
+			atlOffset=8.1489618e+021;
+		};
+		class Item177
+		{
+			dataType="Marker";
+			position[]={733.33301,5.8039037e+024,300};
+			name="marker_107";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22489;
+			atlOffset=5.8039037e+024;
+		};
+		class Item178
+		{
+			dataType="Marker";
+			position[]={741.66602,4.1911579e+024,300};
+			name="marker_108";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22490;
+			atlOffset=4.1911579e+024;
+		};
+		class Item179
+		{
+			dataType="Marker";
+			position[]={750,8.1489618e+021,300};
+			name="marker_109";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22491;
+			atlOffset=8.1489618e+021;
+		};
+		class Item180
+		{
+			dataType="Marker";
+			position[]={758.33301,5.8039037e+024,300};
+			name="marker_110";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22492;
+			atlOffset=5.8039037e+024;
+		};
+		class Item181
+		{
+			dataType="Marker";
+			position[]={766.66602,8.1489618e+021,300};
+			name="marker_111";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22493;
+			atlOffset=8.1489618e+021;
+		};
+		class Item182
+		{
+			dataType="Marker";
+			position[]={775,5.7992551e+024,300};
+			name="marker_112";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22494;
+			atlOffset=5.7992551e+024;
+		};
+		class Item183
+		{
+			dataType="Marker";
+			position[]={783.33301,8.1489618e+021,300};
+			name="marker_113";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22495;
+			atlOffset=8.1489618e+021;
+		};
+		class Item184
+		{
+			dataType="Marker";
+			position[]={791.66602,5.8039037e+024,300};
+			name="marker_114";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGrey";
+			a=0.5;
+			b=300;
+			id=22496;
+			atlOffset=5.8039037e+024;
+		};
+		class Item185
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={645.83899,5.001956,151.39854};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this removeMagazinesTurret [""LIB_30x_M61_M1_AP"",[0]];  " \n "this removeMagazinesTurret [""LIB_14x_T45_M1_APCR"",[0]];  " \n "this removeMagazinesTurret [""LIB_60x_M42A1_M1_HE"",[0]];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_60x_M42A1_M1_HE"",[0],17];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
+			};
+			id=22497;
+			type="LIB_M4A3_75_Tubes";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item186
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={379.0824,6.0824051,285.94702};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				aiRadarUsage=1066410904;
+			};
+			id=22498;
+			type="LIB_US6_Tent";
+		};
+		class Item187
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={378.98331,6.0824051,265.60187};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				aiRadarUsage=1066410904;
+			};
+			id=22499;
+			type="LIB_US6_Ammo";
+		};
+		class Item188
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={378.98257,6.0824051,275.89374};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				aiRadarUsage=1066410904;
+			};
+			id=22500;
+			type="LIB_US6_Open";
+		};
+		class Item189
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={361.94513,6.0599155,337.07748};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this removeMagazinesTurret [""LIB_100Rnd_127x99_M2"",[0]];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],100];  " \n "this addMagazineTurret [""LIB_100Rnd_127x99_M2"",[0],50]; }";
+				textures="soviet";
+			};
+			id=22501;
+			type="LIB_US_Scout_M3";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item190
+		{
+			dataType="Marker";
+			position[]={50,1.6182749e+031,550};
+			name="marker_115";
+			text="Pre-War";
+			type="mil_arrow";
+			a=1.5;
+			b=1.5;
+			angle=180;
+			id=22502;
+			atlOffset=1.6182749e+031;
+		};
+		class Item191
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={86.094757,5.0065928,474.53723};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="standard";
+			};
+			id=22503;
+			type="LIB_SdKfz_7";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 };

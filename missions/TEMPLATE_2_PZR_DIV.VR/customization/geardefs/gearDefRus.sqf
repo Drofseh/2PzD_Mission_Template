@@ -137,13 +137,13 @@
 ["fow_i_whistle"] call FNC_AddItem;
 
 #define Rus_medic_equipment \
-["ACE_fieldDressing",16,"backpack"] call FNC_AddItem; \
+["ACE_fieldDressing",20,"backpack"] call FNC_AddItem; \
+["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
 ["ACE_morphine",5,"backpack"] call FNC_AddItem; \
-["ACE_epinephrine",4,"backpack"] call FNC_AddItem; \
-["ACE_salineIV_500",3,"backpack"] call FNC_AddItem; \
-["ACE_fieldDressing",16,"backpack"] call FNC_AddItem; \
-["ACE_morphine",5,"backpack"] call FNC_AddItem; \
-["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
+["ACE_epinephrine",2,"backpack"] call FNC_AddItem; \
+["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
+["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
+["ACE_personalAidKit",2,"backpack"] call FNC_AddItem; \
 ["ACE_salineIV_500",2,"backpack"] call FNC_AddItem;
 
 //===== VDV Equipment Definitions =====
@@ -166,13 +166,13 @@
 ["fow_i_whistle"] call FNC_AddItem;
 
 #define VDV_medic_equipment \
-["ACE_fieldDressing",16,"backpack"] call FNC_AddItem; \
-["ACE_morphine",5,"backpack"] call FNC_AddItem; \
-["ACE_epinephrine",4,"backpack"] call FNC_AddItem; \
-["ACE_salineIV_500",3,"backpack"] call FNC_AddItem; \
-["ACE_fieldDressing",16,"backpack"] call FNC_AddItem; \
-["ACE_morphine",5,"backpack"] call FNC_AddItem; \
-["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
+["ACE_fieldDressing",10] call FNC_AddItem; \
+["ACE_elasticBandage",5] call FNC_AddItem; \
+["ACE_morphine",5] call FNC_AddItem; \
+["ACE_epinephrine",2] call FNC_AddItem; \
+["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
+["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
+["ACE_personalAidKit",2,"backpack"] call FNC_AddItem; \
 ["ACE_salineIV_500",2,"backpack"] call FNC_AddItem;
 
 //===== NKVD Equipment Definitions =====
@@ -180,21 +180,21 @@
 //=== Clothes ===
 
 //Uniform
-#define NKVD_Unit_LT			"U_LIB_NKVD_StLeutenant"
-#define NKVD_Unit_Star			"U_LIB_NKVD_Starshina"
-#define NKVD_Unit_Sgt			"U_LIB_NKVD_Sergeant"
-#define NKVD_Unit_Efr			"U_LIB_NKVD_Efreitor"
-#define NKVD_Unit_Stre			"U_LIB_NKVD_Strelok"
+#define NKVD_Uni_LT			"U_LIB_NKVD_StLeutenant"
+#define NKVD_Uni_Star			"U_LIB_NKVD_Starshina"
+#define NKVD_Uni_Sgt			"U_LIB_NKVD_Sergeant"
+#define NKVD_Uni_Efr			"U_LIB_NKVD_Efreitor"
+#define NKVD_Uni_Stre			"U_LIB_NKVD_Strelok"
 
-#define NKVD_Unit_JLT			"U_LIB_NKVD_Leutenant"
+#define NKVD_Uni_JLT			"U_LIB_NKVD_Leutenant"
 //This JLT uniform has a green jacket and blue pants and is totally different from the other uniforms
 
 	//Winter Uniform
-#define NKVD_Unit_LT			"U_LIB_SOV_Sniper_w"
-#define NKVD_Unit_Star			"U_LIB_SOV_Sniper_w"
-#define NKVD_Unit_Sgt			"U_LIB_SOV_Sniper_w"
-#define NKVD_Unit_Efr			"U_LIB_SOV_Strelok_2_w"
-#define NKVD_Unit_Stre			"U_LIB_SOV_Strelok_w"
+#define NKVD_UniW_LT			"U_LIB_SOV_Sniper_w"
+#define NKVD_UniW_Star			"U_LIB_SOV_Sniper_w"
+#define NKVD_UniW_Sgt			"U_LIB_SOV_Sniper_w"
+#define NKVD_UniW_Efr			"U_LIB_SOV_Strelok_2_w"
+#define NKVD_UniW_Stre			"U_LIB_SOV_Strelok_w"
 
 //Vests
 #define NKVD_Vest_HKC			"V_LIB_SOV_RAZV_MGBelt"

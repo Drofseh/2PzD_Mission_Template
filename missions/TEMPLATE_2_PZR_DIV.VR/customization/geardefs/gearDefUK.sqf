@@ -127,7 +127,8 @@
 ["fow_i_whistle"] call FNC_AddItem;
 
 #define UK_medic_equipment \
-["ACE_fieldDressing",30,"backpack"] call FNC_AddItem; \
+["ACE_fieldDressing",20,"backpack"] call FNC_AddItem; \
+["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
 ["ACE_morphine",10,"backpack"] call FNC_AddItem; \
 ["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
 ["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
