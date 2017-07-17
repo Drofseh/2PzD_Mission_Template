@@ -85,7 +85,8 @@
 #define GEN_BinoG				"LIB_Binocular_GER"
 #define GEN_BinoR				"LIB_Binocular_SU"
 #define GEN_Headset				"LIB_GER_Headset"
-#define GEN_Demo				"SatchelCharge_Remote_Mag"
+#define GEN_DemoSmall			"DemoCharge_Remote_Mag"
+#define GEN_DemoLarge			"SatchelCharge_Remote_Mag"
 #define GEN_Minedetector		"MineDetector"
 #define GEN_Toolkit				"ToolKit"
 

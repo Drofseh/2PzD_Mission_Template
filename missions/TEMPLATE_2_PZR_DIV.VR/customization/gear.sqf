@@ -202,6 +202,22 @@ switch (_type) do {
 #include "loadouts\US\gearUSAB44May.sqf"
 #include "loadouts\US\gearUSAB45Jan.sqf"
 
+	//Marine Corps
+#include "loadouts\US\gearUSMC39.sqf"
+#include "loadouts\US\gearUSMC40.sqf"
+#include "loadouts\US\gearUSMC41Jan.sqf"
+#include "loadouts\US\gearUSMC41Nov.sqf"
+#include "loadouts\US\gearUSMC42Apr.sqf"
+#include "loadouts\US\gearUSMC42Jun.sqf"
+#include "loadouts\US\gearUSMC42Oct.sqf"
+#include "loadouts\US\gearUSMC43Jan.sqf"
+#include "loadouts\US\gearUSMC43Jun.sqf"
+#include "loadouts\US\gearUSMC44Jan.sqf"
+#include "loadouts\US\gearUSMC44May.sqf"
+#include "loadouts\US\gearUSMC44Nov.sqf"
+#include "loadouts\US\gearUSMC45Jan.sqf"
+#include "loadouts\US\gearUSMC45Jun.sqf"
+
 	//Air Force
 #include "loadouts\US\gearUSAF39.sqf"
 

@@ -14,7 +14,7 @@ _groups = [];
 _hiddenGroups = [];
  
 {	
-    // Add to ORBAT if side matches, group isn'span class="re5"> t already listed, and group has players
+    // Add to ORBAT if side matches, group isn't already listed, and group has players
     if ((side _x == side group player) && !(_x in _groups) && ({_x in playableUnits} count units _x) > 0) then {
     //if ((side _x == side group player) && !(_x in _groups)) then {
         _groups = _groups + [_x];
@@ -40,14 +40,42 @@ _groups = _groups - _hiddenGroups;
         };
     };
 
-	//Leader
+	//Leader - This will take the leader's description and use it in the ORBAT. 
+
     _groupleader = leader _x;
 
-    _leaderRole = roleDescription _groupleader;
- 
-    _orbatText = _orbatText + format ["<font color='%3'>%1 - %2</font>", _leaderRole, name leader _x,_color] + "<br />";
- 
-   
+    _leaderPrep01 = roleDescription _groupleader;
+
+    if (["@",_leaderPrep01] call BIS_fnc_inString) then {
+
+        //If the description has an @ (presumably from the CBA Group Name setup)
+        //then it will split the string at the @, swap each half, and 
+        //join them again with an | in the middle.
+        //"Team Leader@Team 1" will become "Team 1 | Team Leader" in the ORBAT
+    
+        _leaderPrep02 = _leaderPrep01 splitString "@";
+
+        _leaderPrep03 = _leaderPrep02 select 0;
+
+        _leaderPrep04 = _leaderPrep02 select 1;
+
+        _leaderRole = [_leaderPrep04,_leaderPrep03] joinString " | ";
+
+        _orbatText = _orbatText + format ["<font color='%3'>%1 - %2</font>", _leaderRole, name leader _x,_color] + "<br />";
+
+        } else {
+
+        //If no @ is found, then it will just use the description string as written
+        _leaderRole = roleDescription _groupleader;
+        
+        //If the any of the above variables are nil then things break (either because the leader is AI or because it wasn't slotted)
+        //This will force _leaderRole to a value that can be output as part of _orbatText
+        if (isNil _leaderRole) then { _leaderRole = " " };
+
+        _orbatText = _orbatText + format ["<font color='%3'>%1 - %2</font>", _leaderRole, name leader _x,_color] + "<br />";
+
+    }; //End Leader
+
     //Detection of other special roles by class name.
 
 	//German Wehrmacht/DAK
@@ -188,12 +216,6 @@ _groups = _groups - _hiddenGroups;
     } forEach units _x;
 
     {
-        if (typeOf _x == "LIB_US_mgunner" && {_x != leader group _x}) then {
-            _orbatText = _orbatText + format["|	--> %1 [Automatic Rifleman]",name _x] + "<br />";
-        };
-    } forEach units _x;
-
-    {
         if (typeOf _x == "LIB_US_corporal" && {_x != leader group _x}) then {
             _orbatText = _orbatText + format["|	--> %1 [Assistant Squad Leader]",name _x] + "<br />";
         };
@@ -283,6 +305,7 @@ _groups = _groups - _hiddenGroups;
  
  
 //Vehicle detection below here. Unsure if working.
+/*
 _veharray = [];
 {
  
@@ -335,7 +358,7 @@ _orbatText = _orbatText + "<br />VEHICLE CREWS + PASSENGERS<br />";
  
     } forEach _veharray;
  
-};
+};*/
  
 // Insert final result into subsection ORBAT of section Notes
 player createDiaryRecord ["diary", ["--ORBAT--", _orbatText]];

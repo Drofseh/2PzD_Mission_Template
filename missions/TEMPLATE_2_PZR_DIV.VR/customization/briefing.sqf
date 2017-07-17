@@ -278,13 +278,37 @@ NEWTAB("Mission notes:")
 // put win condition here
 <br/>Defeat occurs when
 // put failure conditions here, example - Russian forces secure the train (after 30 minutes of uninterrupted occupation), USMC suffer too many casualties(80%), or time limit is reached.
-
 ENDTAB;
 
 NEWTAB("Game Mastering")
 // Change this if you want a zeus to guide your mission
 This mission is not designed for game mastering and should only be manipulated for technical, administrative or diagnostic purposes.
 ENDTAB;
+
+//Used to call the end mission.
+_adminState = call BIS_fnc_admin;
+_uid = getPlayerUID player;
+
+if (_adminState != 0 || player call BIS_fnc_isCurator || _uid == "76561197970317496") then {
+	//This tab has clickable commands to allow the admin or zeus to end the mission.
+	//More may be added by makin an entry here and adding a corresponding entry in the settings.sqf
+    NEWTAB("Admin Tab") 
+    <br/>The server admin and the zeus (if present) both have access to these options.
+    <br/>
+    <br/>This is used to call mission endings, please be careful since if you press it once it will end the mission.
+    <br/>
+    <br/><execute expression='victoryMessage call FNC_EndMissionRequest'>Call Mission Victory</execute>  
+    <br/>
+    <br/><execute expression='failureMessage call FNC_EndMissionRequest'>Call Mission Failure</execute>
+    <br/>
+    <br/>Helper checks are: //Server vars
+    <br/><execute expression='systemChat str westCasualty'>Check Bluefor Casualty Percentage</execute>
+    <br/><execute expression='systemChat str eastCasualty'>Check Opfor Casualty Percentage</execute>
+    //<br/><execute expression='systemChat str resistanceCasualty'>Check Indfor Casualty Percentage</execute>
+    //<br/><execute expression='systemChat str civilianCasualty'>Check Civilian Casualty Percentage</execute>
+    <br/><execute expression='systemChat str testVar'>Test Boolean Handling</execute>
+    ENDTAB;
+};
 
 DISPLAYBRIEFING();
 

@@ -50,8 +50,8 @@
 	//Company Commander
 	case "USAB40_CC" : {
 		[USAB_UniK_CPT] call FNC_AddItem;
-		[US_Vest_Pistol] call FNC_AddItem;
-		[US_Helm_CPT] call FNC_AddItem;
+		[USAB_Vest_Pistol] call FNC_AddItem;
+		[USAB_Helm_CPT] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -71,8 +71,8 @@
 	//Company Executive Officer
 	case "USAB40_C2" : {
 		[USAB_UniK_LT] call FNC_AddItem;
-		[US_Vest_Pistol] call FNC_AddItem;
-		[US_Helm_LT] call FNC_AddItem;
+		[USAB_Vest_Pistol] call FNC_AddItem;
+		[USAB_Helm_LT] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -92,9 +92,9 @@
 	//Company First Sergeant
 	case "USAB40_CSGT" : {
 		[USAB_UniK_SGT] call FNC_AddItem;
-		[US_Vest_M1G] call FNC_AddItem;
-		[US_BP_M1928] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G] call FNC_AddItem;
+		[USAB_BP_r] call FNC_AddItemRandom;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -119,9 +119,9 @@
 	//Company Radio Operator
 	case "USAB40_CRTO" : {
 		[USAB_UniK_CPL] call FNC_AddItem;
-		[US_Vest_M1G] call FNC_AddItem;
-		[US_BP_Radio] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G] call FNC_AddItem;
+		[USAB_BP_Radio] call FNC_AddItem;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -144,8 +144,8 @@
 	//Platoon Commander
 	case "USAB40_PC" : {
 		[USAB_UniK_LT] call FNC_AddItem;
-		[US_Vest_M1T] call FNC_AddItem;
-		[US_Helm_2LT] call FNC_AddItem;
+		[USAB_Vest_M1T] call FNC_AddItem;
+		[USAB_Helm_2LT] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -178,9 +178,9 @@
 	//Platoon Sergeant
 	case "USAB40_PSGT" : {
 		[USAB_UniK_SGT] call FNC_AddItem;
-		[US_Vest_M1G] call FNC_AddItem;
-		[US_BP_M1928] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G] call FNC_AddItem;
+		[USAB_BP_r] call FNC_AddItemRandom;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -205,8 +205,8 @@
 	//Messenger
 	case "USAB40_Mess" : {
 		[USAB_UniK_PFC] call FNC_AddItem;
-		[US_Vest_M1G] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G] call FNC_AddItem;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -225,9 +225,9 @@
 	//Medic
 	case "USAB40_Med" : {
 		[USAB_UniK_Med] call FNC_AddItem;
-		[US_Vest_Med] call FNC_AddItem;
-		[US_BP_M1928] call FNC_AddItem;
-		[US_Helm_Med_r] call FNC_AddItemRandom;
+		[USAB_Vest_Med] call FNC_AddItem;
+		[USAB_BP_r] call FNC_AddItemRandom;
+		[USAB_Helm_Med_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -248,9 +248,9 @@
 	//Squad Leader
 	case "USAB40_SL" : {
 		[USAB_UniK_SGT] call FNC_AddItem;
-		[US_Vest_M1T] call FNC_AddItem;
-		[US_BP_M1928] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1T] call FNC_AddItem;
+		[USAB_BP_r] call FNC_AddItemRandom;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -278,9 +278,9 @@
 	//Assistant Squad Leader
 	case "USAB40_S2" : {
 		[USAB_UniK_CPL] call FNC_AddItem;
-		[US_Vest_M1G] call FNC_AddItem;
-		[US_BP_M1928] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G] call FNC_AddItem;
+		[USAB_BP_r] call FNC_AddItemRandom;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -306,9 +306,9 @@
 		[USAB_UniK_PVT]
 		],[50]
 		] call FNC_AddItemRandomPercent;
-		[US_Vest_M1G] call FNC_AddItem;
-		[US_BP_M1928] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G] call FNC_AddItem;
+		[USAB_BP_r] call FNC_AddItemRandom;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -327,9 +327,9 @@
 	//Machine Gunner
 	case "USAB40_MG" : {
 		[USAB_UniK_PFC] call FNC_AddItem;
-		[US_Vest_MGA] call FNC_AddItem;
-		[US_BP_MG] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_MGA] call FNC_AddItem;
+		[USAB_BP_MG] call FNC_AddItem;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -349,9 +349,9 @@
 	//Assistant Machine Gunner
 	case "USAB40_MGA" : {
 		[USAB_UniK_PFC] call FNC_AddItem;
-		[US_Vest_M1G] call FNC_AddItem;
-		[US_BP_MG] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G] call FNC_AddItem;
+		[USAB_BP_MG] call FNC_AddItem;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -378,9 +378,9 @@
 		[USAB_UniK_PVT]
 		],[50]
 		] call FNC_AddItemRandomPercent;
-		[US_Vest_M1G_Gren] call FNC_AddItem;
-		[US_BP_MG] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G_Gren] call FNC_AddItem;
+		[USAB_BP_MG] call FNC_AddItem;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -398,9 +398,9 @@
 	//Automatic Rifleman
 	case "USAB40_AR" : {
 		[USAB_UniK_CPL] call FNC_AddItem;
-		[US_Vest_BAR] call FNC_AddItem;
-		[US_BP_M1928] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_BAR] call FNC_AddItem;
+		[USAB_BP_r] call FNC_AddItemRandom;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -420,9 +420,9 @@
 	//Automatic Rifle Assistant
 	case "USAB40_AAR" : {
 		[USAB_UniK_PFC] call FNC_AddItem;
-		[US_Vest_M1G] call FNC_AddItem;
-		[US_BP_M1928] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G] call FNC_AddItem;
+		[USAB_BP_r] call FNC_AddItemRandom;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -449,9 +449,9 @@
 		[USAB_UniK_PVT]
 		],[50]
 		] call FNC_AddItemRandomPercent;
-		[US_Vest_M1G] call FNC_AddItem;
-		[US_BP_M1928] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G] call FNC_AddItem;
+		[USAB_BP_r] call FNC_AddItemRandom;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -477,9 +477,9 @@
 		[USAB_UniK_PVT]
 		],[50]
 		] call FNC_AddItemRandomPercent;
-		[US_Vest_M1G] call FNC_AddItem;
-		[US_BP_M1928] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G] call FNC_AddItem;
+		[USAB_BP_r] call FNC_AddItemRandom;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -500,9 +500,9 @@
 	//Machine Gun Team Leader
 	case "USAB40_MGTL" : {
 		[USAB_UniK_CPL] call FNC_AddItem;
-		[US_Vest_M1G] call FNC_AddItem;
-		[US_BP_M1928] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G] call FNC_AddItem;
+		[USAB_BP_r] call FNC_AddItemRandom;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -524,9 +524,9 @@
 	//Mortar Team Leader
 	case "USAB40_MortTL" : {
 		[USAB_UniK_CPL] call FNC_AddItem;
-		[US_Vest_M1G] call FNC_AddItem;
-		[US_BP_M1928] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G] call FNC_AddItem;
+		[USAB_BP_r] call FNC_AddItemRandom;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -547,9 +547,9 @@
 	//Mortar Gunner
 	case "USAB40_MortG" : {
 		[USAB_UniK_PFC] call FNC_AddItem;
-		[US_Vest_Mort] call FNC_AddItem;
-		[US_BP_MG] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_Mort] call FNC_AddItem;
+		[USAB_BP_MG] call FNC_AddItem;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -571,9 +571,9 @@
 	//Mortar Assistant
 	case "USAB40_MortA" : {
 		[USAB_UniK_PFC] call FNC_AddItem;
-		[US_Vest_Mort] call FNC_AddItem;
-		[US_BP_MG] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_Mort] call FNC_AddItem;
+		[USAB_BP_MG] call FNC_AddItem;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -602,9 +602,9 @@
 		[USAB_UniK_PVT]
 		],[50]
 		] call FNC_AddItemRandomPercent;
-		[US_Vest_M1G_Gren] call FNC_AddItem;
-		[US_BP_M1928] call FNC_AddItem;
-		[US_Helm_r] call FNC_AddItemRandom;
+		[USAB_Vest_M1G_Gren] call FNC_AddItem;
+		[USAB_BP_r] call FNC_AddItemRandom;
+		[USAB_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items

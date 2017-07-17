@@ -3795,7 +3795,7 @@ class items
 				class Attributes
 				{
 					init="[this,""USAB44May_SL""] call FNC_GearScript;";
-					description="1 Squad | Squad Leader@1 Platoon | 1 Squad";
+					description="Squad Leader@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -7426,7 +7426,7 @@ class items
 				class Attributes
 				{
 					init="[this,""USAB44May_SL""] call FNC_GearScript;";
-					description="2 Squad | Squad Leader@1 Platoon | 2 Squad";
+					description="Squad Leader@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10791,7 +10791,7 @@ class items
 				class Attributes
 				{
 					init="[this,""USAB44May_SL""] call FNC_GearScript;";
-					description="3 Squad | Squad Leader@1 Platoon | 3 Squad";
+					description="Squad Leader@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -16423,7 +16423,7 @@ class items
 				class Attributes
 				{
 					init="[this,""USAB44May_SL""] call FNC_GearScript;";
-					description="1 Squad | Squad Leader@2 Platoon | 1 Squad";
+					description="Squad Leader@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -19788,7 +19788,7 @@ class items
 				class Attributes
 				{
 					init="[this,""USAB44May_SL""] call FNC_GearScript;";
-					description="2 Squad | Squad Leader@2 Platoon | 2 Squad";
+					description="Squad Leader@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
 					{
@@ -23153,7 +23153,7 @@ class items
 				class Attributes
 				{
 					init="[this,""USAB44May_SL""] call FNC_GearScript;";
-					description="3 Squad | Squad Leader@2 Platoon | 3 Squad";
+					description="Squad Leader@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
 					{

@@ -18,8 +18,8 @@ private _scenario = _this;
 if (time > 0) then {
 
     FW_MissionEnded = true;
-	
-	//[] call ocap_fnc_exportData; // call AAR
+
+    //[] call ocap_fnc_exportData; // call AAR
 
     {
 

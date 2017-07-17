@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=641;
 	class ItemIDProvider
 	{
-		nextID=22504;
+		nextID=26453;
 	};
 	class MarkerIDProvider
 	{
-		nextID=21;
+		nextID=122;
 	};
 	class Camera
 	{
-		pos[]={479.33914,30,426.22473};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={452.94138,5,853.31519};
+		dir[]={-0.03214496,-0.99449378,0.099743575};
+		up[]={-0.30505905,0.10479543,0.94655007};
+		aside[]={0.95179087,8.6612999e-007,0.30674797};
 	};
 };
 binarizationWanted=0;
@@ -337,7 +337,6 @@ randomSeed=13547937;
 class ScenarioData
 {
 	author="Drofseh";
-	disabledAI=1;
 };
 class CustomAttributes
 {
@@ -434,7 +433,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=192;
+		items=193;
 		class Item0
 		{
 			dataType="Marker";
@@ -839,7 +838,7 @@ class Mission
 						rank="CAPTAIN";
 						init="this setVariable [""ace_w_allow_dam"",false,true];" \n "this allowDamage false; " \n "this addItemToUniform ""NVGoggles_OPFOR""; " \n "this linkItem ""ItemWatch"";";
 						name="God";
-						description="Zeus | Bataillonsführer";
+						description="Zeus@Mount Olympus";
 						isPlayer=1;
 						isPlayable=1;
 					};
@@ -7512,6 +7511,20 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item192
+		{
+			dataType="Marker";
+			position[]={75,1.6987723e+015,600};
+			name="marker_116";
+			text="Years are divided into months (if that wasn't obvious)";
+			type="mil_arrow";
+			colorName="ColorGrey";
+			a=1.5;
+			b=1.5;
+			angle=90;
+			id=25961;
+			atlOffset=1.6987723e+015;
 		};
 	};
 };

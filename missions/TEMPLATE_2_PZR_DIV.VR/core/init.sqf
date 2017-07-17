@@ -14,6 +14,7 @@ PREP(createRespawnMarker);
 PREP(inArea);
 PREP(areaCount);
 PREP(endMission);
+PREP(endMissionRequest);
 PREP(casualtyPercentage);
 PREP(casualtyCount);
 PREP(alive);

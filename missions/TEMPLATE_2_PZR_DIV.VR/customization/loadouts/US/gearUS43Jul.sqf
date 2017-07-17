@@ -851,7 +851,6 @@
 		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
 		[US_Mag_Mort_HE,5] call FNC_AddItem;
 		[GEN_ace_rangetable,1] call FNC_AddItem;
-		[GEN_ace_maptools,1] call FNC_AddItem;
 	};
 
 	//Mortar Gunner
@@ -875,7 +874,6 @@
 		//Extra
 		[US_Mag_Mort_HE,8] call FNC_AddItem;
 		[GEN_ace_rangetable,1] call FNC_AddItem;
-		[GEN_ace_maptools,1] call FNC_AddItem;
 	};
 
 	//Mortar Assistant
@@ -899,7 +897,6 @@
 		//Extra
 		[US_Mag_Mort_HE,8] call FNC_AddItem;
 		[GEN_ace_rangetable,1] call FNC_AddItem;
-		[GEN_ace_maptools,1] call FNC_AddItem;
 	};
 
 	//Mortar Ammo Bearer
@@ -1024,7 +1021,6 @@
 		[US_Uni_PVT]
 		],[10]
 		] call FNC_AddItemRandomPercent;
-		[US_Vest_M1G_Gren] call FNC_AddItem;
 		[US_BP_AT] call FNC_AddItem;
 		[US_Helm_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
@@ -1034,11 +1030,13 @@
 		
 		[//Primary Weapon
 		[//M1 Garand
+		[US_Vest_M1G],
 		[US_Mag_M1G,1],
 		[US_Weap_M1G],
 		[US_Mag_M1G,10,"vest"]
 		],[99],
 		[//M1903
+		[US_Vest_M1G],
 		[US_Mag_M1903,1],
 		[US_Weap_M1903A3],
 		[US_Mag_M1903,20,"vest"]
