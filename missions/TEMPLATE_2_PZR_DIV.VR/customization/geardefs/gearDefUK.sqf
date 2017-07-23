@@ -115,11 +115,11 @@
 ["ItemMap"] call FNC_AddItem; \
 ["ItemCompass"] call FNC_AddItem; \
 ["ItemWatch"]call FNC_AddItem; \
-["ACE_EntrenchingTool"]call FNC_AddItem; \
+["ACE_EntrenchingTool"] call FNC_AddItem; \
 ["ACE_fieldDressing",4] call FNC_AddItem; \
 ["ACE_tourniquet",1] call FNC_AddItem; \
-["ACE_Flashlight_MX991"]call FNC_AddItem; \
-["ACE_CableTie"]call FNC_AddItem;
+["ACE_Flashlight_MX991"] call FNC_AddItem; \
+["ACE_CableTie"] call FNC_AddItem;
 
 #define UK_leader_equipment \
 ["LIB_Binocular_SU"] call FNC_AddItem; \

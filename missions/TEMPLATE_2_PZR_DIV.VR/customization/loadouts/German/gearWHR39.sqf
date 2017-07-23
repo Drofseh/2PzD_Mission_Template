@@ -83,7 +83,7 @@
 	//Kompanietruppführer
 	case "WHR39_C2" : {
 		[Ger_Uni_SL] call FNC_AddItem;
-		[Ger_Vest_K982] call FNC_AddItem;
+		[Ger_Vest_CC] call FNC_AddItem;
 		[Ger_Hat] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
@@ -147,7 +147,7 @@
 	//Zugtruppführer
 	case "WHR39_P2" : {
 		[Ger_Uni_SL] call FNC_AddItem;
-		[Ger_Vest_K982] call FNC_AddItem;
+		[Ger_Vest_K98] call FNC_AddItem;
 		[Ger_BP_AF] call FNC_AddItem;
 		[Ger_Hat] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
@@ -233,7 +233,7 @@
 	//Gruppenführer
 	case "WHR39_SL" : {
 		[Ger_Uni_SL] call FNC_AddItem;
-		[Ger_Vest_K982] call FNC_AddItem;
+		[Ger_Vest_K98] call FNC_AddItem;
 		[Ger_BP_AF] call FNC_AddItem;
 		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;

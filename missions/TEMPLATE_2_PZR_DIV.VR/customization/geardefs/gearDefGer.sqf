@@ -137,6 +137,8 @@
 #define Ger_VestW_StG44			"V_LIB_GER_VestSTG"
 #define Ger_VestW_MG			"V_LIB_GER_VestMG"
 #define Ger_VestW_MGA			"V_LIB_GER_VestMG"
+#define Ger_Vest_HGun			"fow_v_heer_p38"
+#define Ger_Vest_Med			"V_LIB_GER_VestKar98"
 
 #define Ger_VestW_VCrew			"V_LIB_GER_TankPrivateBelt"
 

@@ -22,7 +22,7 @@
 #define US_Weap_M1919A6			"LIB_M1919A6"
 #define US_Weap_M1903A4			"LIB_M1903A4_Springfield"
 #define US_Weap_M12				"LEN_M12"
-#define US_Weap_Flame			"fow_w_m2_flamethrower"
+#define US_Weap_Flame			"LIB_M2_Flamethrower"
 
 //Secondary
 #define US_Weap_M1911			"LIB_Colt_M1911"
@@ -63,7 +63,7 @@
 #define US_Mag_Mort_HE			"LIB_1Rnd_60mm_Mo_HE"
 #define US_Mag_Mort_Smoke		"LIB_1Rnd_60mm_Mo_Smoke"
 #define US_Mag_Mort_Illum		"LIB_1Rnd_60mm_Mo_Illum"
-#define US_Mag_Flame			""
+#define US_Mag_Flame			"LIB_M2_Flamethrower_Mag"
 
 //Grenades
 #define US_Gren_Frag			"fow_e_mk2"
@@ -157,6 +157,7 @@
 #define US_BP_Med				"B_LIB_US_MedicBackpack_Big_Empty"
 #define US_BP_MG				"B_LIB_US_MGbag_Big_Empty"
 #define US_BP_Radio				"fow_b_US_Radio"
+#define US_BP_Flame				"B_LIB_US_M2Flamethrower"
 #define US_Bando				"B_LIB_US_Bandoleer"
 
 //Headgear

@@ -31,9 +31,9 @@
 [this,"CdnRWR43Jun_MortA"] call FNC_GearScript;		Mortar Assistant
 [this,"CdnRWR43Jun_MortAB"] call FNC_GearScript;	Mortar Ammo Bearer
 
-[this,"CdnRWR43Jun_ATRTL"] call FNC_GearScript;		Boys AT Rifle Team Leader
-[this,"CdnRWR43Jun_ATRG"] call FNC_GearScript;		Boys AT Rifle Gunner
-[this,"CdnRWR43Jun_ATRAB"] call FNC_GearScript;		Boys AT Rifle Ammo Bearer
+[this,"CdnRWR43Jun_ATRTL"] call FNC_GearScript;		Boys Rifle Team Leader
+[this,"CdnRWR43Jun_ATRG"] call FNC_GearScript;		Boys Rifle Gunner
+[this,"CdnRWR43Jun_ATRAB"] call FNC_GearScript;		Boys Rifle Ammo Bearer
 
 [this,"CdnRWR43Jun_ATTL"] call FNC_GearScript;		PIAT Team Leader
 [this,"CdnRWR43Jun_ATG"] call FNC_GearScript;		PIAT Gunner
@@ -554,7 +554,6 @@
 		
 		//Assigned Items
 		UK_default_equipment;
-		UK_leader_equipment;
 		[Rus_Weap_MortB] call FNC_AddItem;
 		
 		//Secondary Weapon
@@ -578,7 +577,6 @@
 		
 		//Assigned Items
 		UK_default_equipment;
-		UK_leader_equipment;
 		[Rus_Weap_MortT] call FNC_AddItem;
 		
 		//Secondary Weapon
@@ -620,9 +618,9 @@
 		[Rus_Mag_Mort_HE,5,"backpack"] call FNC_AddItem;
 	};
 
-//Boys AT Rifle Team
+//Boys Rifle Team
 
-	//Boys AT Rifle Team Leader
+	//Boys Rifle Team Leader
 	case "CdnRWR43Jun_ATRTL" : {
 		[CDN_UniRWR_Cpl] call FNC_AddItem;
 		[UK_VestK_LeeEn] call FNC_AddItem;
@@ -653,7 +651,7 @@
 		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
-	//Boys AT Rifle Gunner
+	//Boys Rifle Gunner
 	case "CdnRWR43Jun_ATRG" : {
 		[CDN_UniRWR_Pte] call FNC_AddItem;
 		[UK_VestK_O] call FNC_AddItem;
@@ -675,7 +673,7 @@
 		[UK_Mag_Boys,20] call FNC_AddItem;
 	};
 
-	//Boys AT Rifle Ammo Bearer
+	//Boys Rifle Ammo Bearer
 	case "CdnRWR43Jun_ATRAB" : {
 		[CDN_UniRWR_Pte] call FNC_AddItem;
 		[UK_VestK_Bren] call FNC_AddItem;

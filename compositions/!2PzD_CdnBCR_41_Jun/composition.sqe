@@ -22,7 +22,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Lt""] call FNC_GearScript;";
+					init="[this,""CdnBC41Jun_Lt""] call FNC_GearScript;" \n "{ group _x setGroupId [""Company HQ""]} foreach units group this;";
 					description="Company Commander@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -2511,7 +2511,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Lt""] call FNC_GearScript;";
+					init="[this,""CdnBC41Jun_Lt""] call FNC_GearScript;" \n "{ group _x setGroupId [""1 Platoon HQ""]} foreach units group this;";
 					description="Platoon Commander@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -5034,7 +5034,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Cpl""] call FNC_GearScript;";
+					init="[this,""CdnBC41Jun_Cpl""] call FNC_GearScript;" \n "{ group _x setGroupId [""1 Platoon | 1 Section""]} foreach units group this;";
 					description="Section Leader@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -7947,7 +7947,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Cpl""] call FNC_GearScript;";
+					init="[this,""CdnBC41Jun_Cpl""] call FNC_GearScript;" \n "{ group _x setGroupId [""1 Platoon | 2 Section""]} foreach units group this;";
 					description="Section Leader@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -10860,7 +10860,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Cpl""] call FNC_GearScript;";
+					init="[this,""CdnBC41Jun_Cpl""] call FNC_GearScript;" \n "{ group _x setGroupId [""1 Platoon | 3 Section""]} foreach units group this;";
 					description="Section Leader@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -16297,7 +16297,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Cpl""] call FNC_GearScript;";
+					init="[this,""CdnBC41Jun_Cpl""] call FNC_GearScript;" \n "{ group _x setGroupId [""2 Platoon | 1 Section""]} foreach units group this;";
 					description="Section Leader@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -19210,7 +19210,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Cpl""] call FNC_GearScript;";
+					init="[this,""CdnBC41Jun_Cpl""] call FNC_GearScript;" \n "{ group _x setGroupId [""2 Platoon | 2 Section""]} foreach units group this;";
 					description="Section Leader@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -22123,7 +22123,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Cpl""] call FNC_GearScript;";
+					init="[this,""CdnBC41Jun_Cpl""] call FNC_GearScript;" \n "{ group _x setGroupId [""2 Platoon | 3 Section""]} foreach units group this;";
 					description="Section Leader@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -25036,7 +25036,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_MortTL""] call FNC_GearScript;";
+					init="[this,""CdnBC41Jun_MortTL""] call FNC_GearScript;" \n "{ group _x setGroupId [""Mortar Team""]} foreach units group this;";
 					description="Team Leader@Mortar Team";
 					isPlayable=1;
 					class Inventory
@@ -26572,7 +26572,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_MGTL""] call FNC_GearScript;";
+					init="[this,""CdnBC41Jun_MGTL""] call FNC_GearScript;" \n "{ group _x setGroupId [""Machine Gun Team""]} foreach units group this;";
 					description="Team Leader@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
@@ -28108,8 +28108,8 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_ATRTL""] call FNC_GearScript;";
-					description="Team Leader@Boys AT Rifle Team";
+					init="[this,""CdnBC41Jun_ATRTL""] call FNC_GearScript;" \n "{ group _x setGroupId [""Boys Rifle Team""]} foreach units group this;";
+					description="Team Leader@Boys Rifle Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -28483,7 +28483,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jun_ATRG""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
-					description="Boys Gunner@Boys AT Rifle Team";
+					description="Boys Gunner@Boys Rifle Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -28857,7 +28857,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jun_ATRG""] call FNC_GearScript;";
-					description="Boys Gunner@Boys AT Rifle Team";
+					description="Boys Gunner@Boys Rifle Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -29231,7 +29231,7 @@ class items
 				class Attributes
 				{
 					init="[this,""CdnBC41Jun_ATRAB""] call FNC_GearScript;";
-					description="Ammo Bearer@Boys AT Rifle Team";
+					description="Ammo Bearer@Boys Rifle Team";
 					isPlayable=1;
 					class Inventory
 					{
@@ -29644,7 +29644,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_VCom""] call FNC_GearScript;";
+					init="[this,""CdnBC41Jun_VCom""] call FNC_GearScript;" \n "{ group _x setGroupId [""Tank Crew""]} foreach units group this;";
 					description="Tank Commander@Tank";
 					isPlayable=1;
 					class Inventory

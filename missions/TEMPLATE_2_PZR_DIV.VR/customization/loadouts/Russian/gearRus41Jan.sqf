@@ -424,30 +424,19 @@
 	//Grenadier
 	case "R41Jan_Gren" : {
 		[Rus_Uni_Rif] call FNC_AddItem;
-		
-		[//Primary Weapon & Vest
-		[//Mosin M91/30
-		[Rus_Vest_Mosin],
-		[Rus_Mag_Mosin,1],
-		[Rus_Weap_MosM9130],
-		[Rus_Weap_Mos_GL],
-		[Rus_Mag_Mosin,12,"vest"]
-		],[97],
-		[//Mosin M38
-		[Rus_Vest_Mosin],
-		[Rus_Mag_Mosin,1],
-		[Rus_Weap_MosM38],
-		[Rus_Weap_Mos_GL],
-		[Rus_Mag_Mosin,12,"vest"]
-		],[3]
-		] call FNC_AddItemRandomPercent;
-		
+		[Rus_Vest_Mosin] call FNC_AddItem;
 		[Rus_BP_r] call FNC_AddItemRandom;
 		[Rus_Helmet] call FNC_AddItem;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
 		Rus_default_equipment;
+		
+		//Primary Weapon
+		[Rus_Mag_Mosin,1] call FNC_AddItem;
+		[Rus_Weap_MosM9130] call FNC_AddItem;
+		[Rus_Weap_Mos_GL] call FNC_AddItem;
+		[Rus_Mag_Mosin,12,"vest"] call FNC_AddItem;
 		
 		//Extra
 		[Rus_Mag_RGrn_HE,6] call FNC_AddItem;

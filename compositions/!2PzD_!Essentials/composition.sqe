@@ -23,7 +23,7 @@ class items
 				class Attributes
 				{
 					rank="CAPTAIN";
-					init="this setVariable [""ace_w_allow_dam"",false,true];" \n "this allowDamage false; " \n "this addItemToUniform ""NVGoggles_OPFOR""; " \n "this linkItem ""ItemWatch"";";
+					init="this setVariable [""ace_w_allow_dam"",false,true];" \n "this allowDamage false; " \n "this addItemToUniform ""NVGoggles_OPFOR""; " \n "this linkItem ""ItemWatch"";" \n "{ group _x setGroupId [""Mount Olympus""]} foreach units group this;";
 					name="God";
 					description="Zeus@Mount Olympus";
 					isPlayable=1;

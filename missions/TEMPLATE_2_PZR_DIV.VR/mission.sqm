@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=641;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=26453;
+		nextID=26949;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={452.94138,5,853.31519};
-		dir[]={-0.03214496,-0.99449378,0.099743575};
-		up[]={-0.30505905,0.10479543,0.94655007};
-		aside[]={0.95179087,8.6612999e-007,0.30674797};
+		pos[]={452.22821,209.11948,1054.9258};
+		dir[]={-0.090682231,-0.4544791,-0.8861565};
+		up[]={-0.046262793,0.89073628,-0.45216304};
+		aside[]={-0.99483132,7.6930446e-006,0.10180051};
 	};
 };
 binarizationWanted=0;
@@ -839,7 +839,6 @@ class Mission
 						init="this setVariable [""ace_w_allow_dam"",false,true];" \n "this allowDamage false; " \n "this addItemToUniform ""NVGoggles_OPFOR""; " \n "this linkItem ""ItemWatch"";";
 						name="God";
 						description="Zeus@Mount Olympus";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=9627;
@@ -5919,7 +5918,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={378.79193,6.2249522,255.89703};
+				position[]={378.79193,6.2249522,255.89702};
 			};
 			side="Empty";
 			flags=4;

@@ -31,9 +31,9 @@
 [this,"CdnRWR40Sep_MortA"] call FNC_GearScript;		Mortar Assistant
 [this,"CdnRWR40Sep_MortAB"] call FNC_GearScript;	Mortar Ammo Bearer
 
-[this,"CdnRWR40Sep_ATRTL"] call FNC_GearScript;		Boys AT Rifle Team Leader
-[this,"CdnRWR40Sep_ATRG"] call FNC_GearScript;		Boys AT Rifle Gunner
-[this,"CdnRWR40Sep_ATRAB"] call FNC_GearScript;		Boys AT Rifle Ammo Bearer
+[this,"CdnRWR40Sep_ATRTL"] call FNC_GearScript;		Boys Rifle Team Leader
+[this,"CdnRWR40Sep_ATRG"] call FNC_GearScript;		Boys Rifle Gunner
+[this,"CdnRWR40Sep_ATRAB"] call FNC_GearScript;		Boys Rifle Ammo Bearer
 
 	Vehicle Crew
 [this,"CdnRWR40Sep_VCom"] call FNC_GearScript;		Tank Commander
@@ -426,7 +426,6 @@
 		
 		//Assigned Items
 		UK_default_equipment;
-		UK_leader_equipment;
 		[Rus_Weap_MortB] call FNC_AddItem;
 		
 		//Secondary Weapon
@@ -450,7 +449,6 @@
 		
 		//Assigned Items
 		UK_default_equipment;
-		UK_leader_equipment;
 		[Rus_Weap_MortT] call FNC_AddItem;
 		
 		//Secondary Weapon
@@ -484,9 +482,9 @@
 		[Rus_Mag_Mort_HE,5,"backpack"] call FNC_AddItem;
 	};
 
-//Boys AT Rifle Team
+//Boys Rifle Team
 
-	//Boys AT Rifle Team Leader
+	//Boys Rifle Team Leader
 	case "CdnRWR40Sep_ATRTL" : {
 		[CDN_UniRWR_Cpl] call FNC_AddItem;
 		[UK_VestK_LeeEn] call FNC_AddItem;
@@ -509,7 +507,7 @@
 		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
-	//Boys AT Rifle Gunner
+	//Boys Rifle Gunner
 	case "CdnRWR40Sep_ATRG" : {
 		[CDN_UniRWR_Pte] call FNC_AddItem;
 		[UK_VestK_O] call FNC_AddItem;
@@ -531,7 +529,7 @@
 		[UK_Mag_Boys,20] call FNC_AddItem;
 	};
 
-	//Boys AT Rifle Ammo Bearer
+	//Boys Rifle Ammo Bearer
 	case "CdnRWR40Sep_ATRAB" : {
 		[CDN_UniRWR_Pte] call FNC_AddItem;
 		[UK_VestK_Bren] call FNC_AddItem;
