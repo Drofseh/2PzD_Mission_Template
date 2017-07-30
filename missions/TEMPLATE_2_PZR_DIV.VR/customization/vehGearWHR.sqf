@@ -100,7 +100,7 @@
 		["ToolKit", 1] call FNC_AddItemVehicle;
 	};
 
-	case "1942_G_SdKfz_Zug_SWT": {
+	case "1942_G_SdKfz_SWT": {
 		_vehicle call FNC_RemoveAllVehicleGear;
 		["LIB_FLARE_PISTOL", 1] call FNC_AddItemVehicle;
 		["SmokeShell", 10] call FNC_AddItemVehicle;

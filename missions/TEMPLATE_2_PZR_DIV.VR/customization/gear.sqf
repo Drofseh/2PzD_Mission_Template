@@ -39,8 +39,8 @@ switch (_type) do {
 //=== Loadouts ===
 
 //Loadouts are in the loadouts folder. Only keep the ones needed for your mission.
-	//=== British ===
-	//Army
+    //=== British ===
+    //Army
 #include "loadouts\British\gearUK39.sqf"
 #include "loadouts\British\gearUK40Sep.sqf"
 #include "loadouts\British\gearUK41Jan.sqf"
@@ -67,8 +67,8 @@ switch (_type) do {
 #include "loadouts\British\gearUKEsx44Sep.sqf"
 #include "loadouts\British\gearUKEsx45Jan.sqf"
 
-	//=== Canadian ===
-	//British Columbia Regiment
+    //=== Canadian ===
+    //British Columbia Regiment
 #include "loadouts\Canadian\gearCdnBC39.sqf"
 #include "loadouts\Canadian\gearCdnBC40Sep.sqf"
 #include "loadouts\Canadian\gearCdnBC41Jan.sqf"
@@ -82,7 +82,7 @@ switch (_type) do {
 #include "loadouts\Canadian\gearCdnBC44Sep.sqf"
 #include "loadouts\Canadian\gearCdnBC45Jan.sqf"
 
-	//Royal Winnipeg Rifles
+    //Royal Winnipeg Rifles
 #include "loadouts\Canadian\gearCdnRWR39.sqf"
 #include "loadouts\Canadian\gearCdnRWR40Sep.sqf"
 #include "loadouts\Canadian\gearCdnRWR41Jan.sqf"
@@ -96,14 +96,14 @@ switch (_type) do {
 #include "loadouts\Canadian\gearCdnRWR44Sep.sqf"
 #include "loadouts\Canadian\gearCdnRWR45Jan.sqf"
 
-	//=== German ===
-	//Africa Corps (Deutsches Afrikakorps)
+    //=== German ===
+    //Africa Corps (Deutsches Afrikakorps)
 #include "loadouts\German\gearDAK41Feb.sqf"
 #include "loadouts\German\gearDAK42Jan.sqf"
 #include "loadouts\German\gearDAK42Oct.sqf"
 #include "loadouts\German\gearDAK43Mar.sqf"
 
-	//Fallschirmjäger
+    //Fallschirmjäger
 #include "loadouts\German\gearFSJ39.sqf"
 #include "loadouts\German\gearFSJ40Jun.sqf"
 #include "loadouts\German\gearFSJ40Mar.sqf"
@@ -117,7 +117,7 @@ switch (_type) do {
 #include "loadouts\German\gearFSJ44Jul.sqf"
 #include "loadouts\German\gearFSJ45.sqf"
 
-	//Fallschirmjäger with Parachutes
+    //Fallschirmjäger with Parachutes
 #include "loadouts\German\gearFSJP39.sqf"
 #include "loadouts\German\gearFSJP40Jun.sqf"
 #include "loadouts\German\gearFSJP40Mar.sqf"
@@ -131,7 +131,7 @@ switch (_type) do {
 #include "loadouts\German\gearFSJP44Jul.sqf"
 #include "loadouts\German\gearFSJP45.sqf"
 
-	//Wehrmacht
+    //Wehrmacht
 #include "loadouts\German\gearWHR39.sqf"
 #include "loadouts\German\gearWHR40Jun.sqf"
 #include "loadouts\German\gearWHR40Mar.sqf"
@@ -145,15 +145,32 @@ switch (_type) do {
 #include "loadouts\German\gearWHR44Jul.sqf"
 #include "loadouts\German\gearWHR45.sqf"
 
-	//Wehrmacht (Easter Front)
+    //Wehrmacht (Easter Front)
 #include "loadouts\German\gearWHREF42Jan.sqf"
 #include "loadouts\German\gearWHREF42Oct.sqf"
 #include "loadouts\German\gearWHREF43Aug.sqf"
 #include "loadouts\German\gearWHREF43Mar.sqf"
 #include "loadouts\German\gearWHREF43Oct.sqf"
 
-	//=== Russian ===
-	//Red Army
+    //=== Japanese ===
+    //Imperial Japanese Army
+#include "loadouts\Japan\gearJpn39.sqf"
+#include "loadouts\Japan\gearJpn41.sqf"
+#include "loadouts\Japan\gearJpn42.sqf"
+#include "loadouts\Japan\gearJpn43.sqf"
+#include "loadouts\Japan\gearJpn44.sqf"
+#include "loadouts\Japan\gearJpn45.sqf"
+
+    //Imperial Japanese Navy Special Naval Landing Forces
+#include "loadouts\Japan\gearJpnSNLF39.sqf"
+#include "loadouts\Japan\gearJpnSNLF41.sqf"
+#include "loadouts\Japan\gearJpnSNLF42.sqf"
+#include "loadouts\Japan\gearJpnSNLF43.sqf"
+#include "loadouts\Japan\gearJpnSNLF44.sqf"
+#include "loadouts\Japan\gearJpnSNLF45.sqf"
+
+    //=== Russian ===
+    //Red Army
 #include "loadouts\Russian\gearRus39.sqf"
 #include "loadouts\Russian\gearRus40Jul.sqf"
 #include "loadouts\Russian\gearRus41Jan.sqf"
@@ -166,15 +183,15 @@ switch (_type) do {
 #include "loadouts\Russian\gearRus44Oct.sqf"
 #include "loadouts\Russian\gearRus45.sqf"
 
-	//NKVD (Secret Police)
+    //NKVD (Secret Police)
 #include "loadouts\Russian\gearNKVD39.sqf"
 #include "loadouts\Russian\gearNKVD40Jul.sqf"
 #include "loadouts\Russian\gearNKVD41Nov.sqf"
 #include "loadouts\Russian\gearNKVD42May.sqf"
 #include "loadouts\Russian\gearNKVD44Oct.sqf"
 
-	//=== United States ===
-	//Army
+    //=== United States ===
+    //Army
 #include "loadouts\US\gearUS39.sqf"
 #include "loadouts\US\gearUS40.sqf"
 #include "loadouts\US\gearUS41Jan.sqf"
@@ -188,7 +205,7 @@ switch (_type) do {
 #include "loadouts\US\gearUS44May.sqf"
 #include "loadouts\US\gearUS45Jan.sqf"
 
-	//Army Airborne
+    //Army Airborne
 #include "loadouts\US\gearUSAB39.sqf"
 #include "loadouts\US\gearUSAB40.sqf"
 #include "loadouts\US\gearUSAB41Jan.sqf"
@@ -202,7 +219,7 @@ switch (_type) do {
 #include "loadouts\US\gearUSAB44May.sqf"
 #include "loadouts\US\gearUSAB45Jan.sqf"
 
-	//Marine Corps
+    //Marine Corps
 #include "loadouts\US\gearUSMC39.sqf"
 #include "loadouts\US\gearUSMC40.sqf"
 #include "loadouts\US\gearUSMC41Jan.sqf"
@@ -218,7 +235,7 @@ switch (_type) do {
 #include "loadouts\US\gearUSMC45Jan.sqf"
 #include "loadouts\US\gearUSMC45Jun.sqf"
 
-	//Air Force
+    //Air Force
 #include "loadouts\US\gearUSAF39.sqf"
 
 };

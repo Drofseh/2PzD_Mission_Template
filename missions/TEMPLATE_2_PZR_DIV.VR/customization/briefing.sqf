@@ -27,20 +27,25 @@ NEWTAB("III. Aufklärung (Intelligence):")
 <br/>A. Overview
 <br/>
 <br/><font color='#FF8C00'>1. Terrain:</font>
-// Describe the terrain and weather conditions
-// Mountainous, Countryside, open, dense woods, light/heavy fog, rain, clear skies, etc.
+// Describe the terrain
+// Mountainous, Countryside, open, dense woods
 <br/>
 <br/>
-<br/><font color='#FF8C00'>2. Points of Interest:</font>
+<br/><font color='#FF8C00'>2. Weather:</font>
+// Describe and weather conditions
+// Light/heavy fog, rain, clear skies, etc.
+<br/>
+<br/>
+<br/><font color='#FF8C00'>3. Points of Interest:</font>
 //Any locations on the map that can be of interest to either us or the enemy
 <br/>
 <br/>
-<br/><font color='#FF8C00'>3. Areas of Interest:</font>
+<br/><font color='#FF8C00'>4. Areas of Interest:</font>
 // That area of interest/concern to the commander, including the area of influence, areas adjacent thereto, and extending into enemy territory to the objectives of current or planned operations.
 // This area also includes areas occupied by enemy forces who could jeopardize the accomplishment of the mission.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>4. Civilians:</font>
+<br/><font color='#FF8C00'>5. Civilians:</font>
 // Are there civilians in the area? Where? Are they friendly to us?
 <br/>
 <br/>
@@ -105,7 +110,7 @@ NEWTAB("C. Eigene Kräfte (Friendly Forces):")
 <br/>
 <br/>2x Züge each consisting of:
 <br/>1x Zugtrupp
-<br/>4x Gruppen
+<br/>3x Gruppen
 <br/>
 <br/><font color='#FF8C00'>3. Supporting fires:</font>
 // Friendly Artillery is listed here
@@ -156,11 +161,11 @@ NEWTAB("IV. Durchführung (Execution):")
 <br/>
 <br/><font color='#70db70'>2. Control Measures:</font>
 // Any specific boundary areas, etc. usually set by the Kompanie
-<br/>As per the platoon commanders Discretion.
+<br/>As per the direction of the Kompanieführer.
 <br/>
 <br/><font color='#70db70'>3. Rules of Engagement</font>
 // Rules of engagement go here.
-<br/>All Red Army forces may be engaged at will.
+<br/>All enemy forces may be engaged at will.
 <br/>
 ENDTAB;
 
@@ -214,10 +219,12 @@ NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
 <br/>1'0 - 1 Zug Zugtrupp
 <br/>1'1 - 1 Zug 1 Gruppe
 <br/>1'2 - 1 Zug 2 Gruppe
+<br/>1'3 - 1 Zug 3 Gruppe
 <br/>
 <br/>2'0 - 2 Zug Zugtrupp
 <br/>2'1 - 2 Zug 1 Gruppe
 <br/>2'2 - 2 Zug 2 Gruppe
+<br/>2'3 - 2 Zug 3 Gruppe
 <br/>
 <br/>Actual - Used for the actual commander of the unit.
 <br/>For example 1'0 Actual would be 1 Zug Zugführer, not his radio operator. //'
