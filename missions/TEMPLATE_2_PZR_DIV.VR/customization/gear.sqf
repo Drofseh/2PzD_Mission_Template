@@ -205,6 +205,9 @@ switch (_type) do {
 #include "loadouts\US\gearUS44May.sqf"
 #include "loadouts\US\gearUS45Jan.sqf"
 
+#include "loadouts\US\gearUS42NovOpT.sqf"
+#include "loadouts\US\gearUS43JanNA.sqf"
+
     //Army Airborne
 #include "loadouts\US\gearUSAB39.sqf"
 #include "loadouts\US\gearUSAB40.sqf"

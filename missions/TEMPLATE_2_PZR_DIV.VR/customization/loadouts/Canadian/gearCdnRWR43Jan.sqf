@@ -305,7 +305,7 @@
 	};
 
 	//Bren Gunner
-	case "CdnRWR43Jan_A" : {
+	case "CdnRWR43Jan_AR" : {
 		[CDN_UniRWR_Pte] call FNC_AddItem;
 		[UK_VestK_Bren] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;

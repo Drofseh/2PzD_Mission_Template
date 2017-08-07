@@ -34,7 +34,6 @@ addons[]=
 	"WW2_Assets_c_Characters_Civilians_c_CIV_Civilians",
 	"WW2_Core_c_WW2_EditorPreviews_c",
 	"WW2_Assets_c_Vehicles_Tanks_c_T34_76",
-	"IFA3_COMP_ACE_main",
 	"WW2_Assets_c_Vehicles_Tanks_c_JS2_43",
 	"WW2_Assets_c_Vehicles_Tanks_c_M4A3_75",
 	"WW2_Assets_c_Vehicles_ModelConfig_c",
@@ -60,6 +59,7 @@ addons[]=
 	"WW2_Assets_c_Vehicles_StaticWeapons_c_61k",
 	"WW2_Core_c_WW2_Core_c_Eventhandlers",
 	"WW2_Assets_c_Vehicles_StaticWeapons_c",
+	"IFA3_COMP_ACE_main",
 	"IFA3_COMP_ACE_mortar",
 	"WW2_Assets_c_Vehicles_Tanks_c_M4_Sherman",
 	"WW2_Assets_c_Vehicles_Tanks_c_M3_Stuart",
@@ -137,135 +137,135 @@ class AddonsMetaData
 		};
 		class Item9
 		{
-			className="IFA3_COMP_ACE_main";
-			name="IFA3_COMP_ACE_main";
-			author="IFA3 team";
-			url="https://github.com/bux578/IFA3_ACE_COMPAT";
-		};
-		class Item10
-		{
 			className="WW2_Assets_c_Vehicles_Tanks_c_JS2_43";
 			name="WW2_Assets_c_Vehicles_Tanks_c_JS2_43";
 		};
-		class Item11
+		class Item10
 		{
 			className="WW2_Assets_c_Vehicles_Tanks_c_M4A3_75";
 			name="WW2_Assets_c_Vehicles_Tanks_c_M4A3_75";
 		};
-		class Item12
+		class Item11
 		{
 			className="WW2_Assets_c_Vehicles_ModelConfig_c";
 			name="WW2_Assets_c_Vehicles_ModelConfig_c";
 		};
-		class Item13
+		class Item12
 		{
 			className="WW2_Assets_c_Vehicles_Tanks_c_SU85";
 			name="WW2_Assets_c_Vehicles_Tanks_c_SU85";
 		};
-		class Item14
+		class Item13
 		{
 			className="WW2_Assets_c_Vehicles_StaticWeapons_c_Zis3";
 			name="WW2_Assets_c_Vehicles_StaticWeapons_c_Zis3";
 		};
-		class Item15
+		class Item14
 		{
 			className="WW2_Assets_c_Vehicles_Tanks_c_T34_85";
 			name="WW2_Assets_c_Vehicles_Tanks_c_T34_85";
 		};
-		class Item16
+		class Item15
 		{
 			className="WW2_Assets_c_Vehicles_WheeledAPC_c_M3_Halftrack";
 			name="WW2_Assets_c_Vehicles_WheeledAPC_c_M3_Halftrack";
 		};
-		class Item17
+		class Item16
 		{
 			className="WW2_Assets_c_Vehicles_WheeledAPC_c_SdKfz251";
 			name="WW2_Assets_c_Vehicles_WheeledAPC_c_SdKfz251";
 		};
-		class Item18
+		class Item17
 		{
 			className="WW2_Assets_c_Vehicles_Tanks_c_PzKpfwIV_H";
 			name="WW2_Assets_c_Vehicles_Tanks_c_PzKpfwIV_H";
 		};
-		class Item19
+		class Item18
 		{
 			className="WW2_Assets_c_Vehicles_Tanks_c_PzKpfwV";
 			name="WW2_Assets_c_Vehicles_Tanks_c_PzKpfwV";
 		};
-		class Item20
+		class Item19
 		{
 			className="WW2_Assets_c_Vehicles_Tanks_c_PzKpfwVI_B";
 			name="WW2_Assets_c_Vehicles_Tanks_c_PzKpfwVI_B";
 		};
-		class Item21
+		class Item20
 		{
 			className="WW2_Assets_c_Vehicles_Tanks_c_PzKpfwVI_E";
 			name="WW2_Assets_c_Vehicles_Tanks_c_PzKpfwVI_E";
 		};
-		class Item22
+		class Item21
 		{
 			className="WW2_Assets_c_Vehicles_Tanks_c_StuG_III_G";
 			name="WW2_Assets_c_Vehicles_Tanks_c_StuG_III_G";
 		};
-		class Item23
+		class Item22
 		{
 			className="WW2_Assets_c_Vehicles_Wheeled_c_Kfz1";
 			name="WW2_Assets_c_Vehicles_Wheeled_c_Kfz1";
 		};
-		class Item24
+		class Item23
 		{
 			className="WW2_Assets_c_Vehicles_StaticWeapons_c_Flak_38";
 			name="WW2_Assets_c_Vehicles_StaticWeapons_c_Flak_38";
 		};
-		class Item25
+		class Item24
 		{
 			className="WW2_Assets_c_Vehicles_StaticWeapons_c_FlakVierling_38";
 			name="WW2_Assets_c_Vehicles_StaticWeapons_c_FlakVierling_38";
 		};
-		class Item26
+		class Item25
 		{
 			className="WW2_Assets_c_Vehicles_WheeledAPC_c_SdKfz7";
 			name="WW2_Assets_c_Vehicles_WheeledAPC_c_SdKfz7";
 		};
-		class Item27
+		class Item26
 		{
 			className="WW2_Assets_c_Vehicles_StaticWeapons_c_Pak40";
 			name="WW2_Assets_c_Vehicles_StaticWeapons_c_Pak40";
 		};
-		class Item28
+		class Item27
 		{
 			className="WW2_Assets_c_Vehicles_Wheeled_c_US6";
 			name="WW2_Assets_c_Vehicles_Wheeled_c_US6";
 		};
-		class Item29
+		class Item28
 		{
 			className="WW2_Assets_c_Vehicles_StaticWeapons_c_Towing";
 			name="WW2_Assets_c_Vehicles_StaticWeapons_c_Towing";
 		};
-		class Item30
+		class Item29
 		{
 			className="WW2_Assets_c_Vehicles_Extended_HUD_c";
 			name="WW2_Assets_c_Vehicles_Extended_HUD_c";
 		};
-		class Item31
+		class Item30
 		{
 			className="WW2_Assets_c_Vehicles_Wheeled_c_Scout_M3";
 			name="WW2_Assets_c_Vehicles_Wheeled_c_Scout_M3";
 		};
-		class Item32
+		class Item31
 		{
 			className="WW2_Assets_c_Vehicles_StaticWeapons_c_61k";
 			name="WW2_Assets_c_Vehicles_StaticWeapons_c_61k";
 		};
-		class Item33
+		class Item32
 		{
 			className="WW2_Core_c_WW2_Core_c_Eventhandlers";
 			name="WW2_Core_c_WW2_Core_c_Eventhandlers";
 		};
-		class Item34
+		class Item33
 		{
 			className="WW2_Assets_c_Vehicles_StaticWeapons_c";
 			name="WW2_Assets_c_Vehicles_StaticWeapons_c";
+		};
+		class Item34
+		{
+			className="IFA3_COMP_ACE_main";
+			name="IFA3_COMP_ACE_main";
+			author="IFA3 team";
+			url="https://github.com/bux578/IFA3_ACE_COMPAT";
 		};
 		class Item35
 		{
@@ -1301,6 +1301,7 @@ class Mission
 				position[]={337.21399,7.1491137,346.578};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="call{this removeMagazinesTurret [""LIB_10x_BR350P_APCR"",[0]]; " \n "this removeMagazinesTurret [""LIB_40x_BR350B_AP"",[0]]; " \n "this removeMagazinesTurret [""LIB_50x_OF350_HE"",[0]]; " \n "this addMagazineTurret [""LIB_40x_BR350B_AP"",[0],30]; " \n "this addMagazineTurret [""LIB_40x_BR350B_AP"",[0],23]; " \n "this addMagazineTurret [""LIB_10x_BR350P_APCR"",[0],10]; " \n "this addMagazineTurret [""LIB_50x_OF350_HE"",[0],14];  " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[0]]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[1]]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63];}";
@@ -1308,7 +1309,6 @@ class Mission
 			};
 			id=9629;
 			type="LIB_T34_76";
-			atlOffset=2.1491137;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1398,13 +1398,13 @@ class Mission
 				position[]={604.97302,7.2852077,342.9238};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="call{this removeMagazinesTurret [""LIB_12x_BR471_AP"",[0]];  " \n "this removeMagazinesTurret [""LIB_16x_OF471_HE"",[0]];  " \n "this addMagazineTurret [""LIB_12x_BR471_AP"",[0],8];  " \n "this addMagazineTurret [""LIB_12x_BR471_AP"",[0],8];  " \n "this addMagazineTurret [""LIB_16x_OF471_HE"",[0],12];  " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[0]];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63];  " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; }";
 			};
 			id=9630;
 			type="LIB_JS2_43";
-			atlOffset=2.2852077;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1591,13 +1591,13 @@ class Mission
 				position[]={562.19897,7.2870412,350.91299};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="call{this removeMagazinesTurret [""LIB_15x_BR365_AP"",[0]]; " \n "this removeMagazinesTurret [""LIB_8x_BR365P_APCR"",[0]]; " \n "this removeMagazinesTurret [""LIB_25x_O365_HE"",[0]]; " \n "this addMagazineTurret [""LIB_15x_BR365_AP"",[0],14]; " \n "this addMagazineTurret [""LIB_15x_BR365_AP"",[0],14]; " \n "this addMagazineTurret [""LIB_8x_BR365P_APCR"",[0],5]; " \n "this addMagazineTurret [""LIB_8x_BR365P_APCR"",[0],5]; " \n "this addMagazineTurret [""LIB_25x_O365_HE"",[0],10];}";
 			};
 			id=9632;
 			type="LIB_SU85";
-			atlOffset=2.2870412;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1687,13 +1687,13 @@ class Mission
 				position[]={446.00656,5.001956,253.00168};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="call{this removeMagazinesTurret [""LIB_30x_M61_M1_AP"",[0]];  " \n "this removeMagazinesTurret [""LIB_14x_T45_M1_APCR"",[0]];  " \n "this removeMagazinesTurret [""LIB_60x_M42A1_M1_HE"",[0]];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_30x_M61_M1_AP"",[0],30];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_14x_T45_M1_APCR"",[0],10];  " \n "this addMagazineTurret [""LIB_60x_M42A1_M1_HE"",[0],17];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[0]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[0],250];  " \n "this removeMagazinesTurret [""LIB_250Rnd_M1919A4"",[1]];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250];  " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; " \n "this addMagazineTurret [""LIB_250Rnd_M1919A4"",[1],250]; }";
 			};
 			id=9633;
 			type="LIB_M4A3_75";
-			atlOffset=0.001955986;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1860,13 +1860,13 @@ class Mission
 				position[]={604.77899,7.1691761,354.164};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="call{this removeMagazinesTurret [""LIB_14x_BR365_AP"",[0]]; " \n "this removeMagazinesTurret [""LIB_5x_BR365P_APCR"",[0]]; " \n "this removeMagazinesTurret [""LIB_36x_O365_HE"",[0]]; " \n "this addMagazineTurret [""LIB_14x_BR365_AP"",[0],10]; " \n "this addMagazineTurret [""LIB_14x_BR365_AP"",[0],10]; " \n "this addMagazineTurret [""LIB_14x_BR365_AP"",[0],10]; " \n "this addMagazineTurret [""LIB_5x_BR365P_APCR"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_BR365P_APCR"",[0],5]; " \n "this addMagazineTurret [""LIB_5x_BR365P_APCR"",[0],5]; " \n "this addMagazineTurret [""LIB_36x_O365_HE"",[0],10]; " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[0]]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[0],63]; " \n "this removeMagazinesTurret [""LIB_63rnd_DT"",[1]]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63]; " \n "this addMagazineTurret [""LIB_63rnd_DT"",[1],63];}";
 			};
 			id=9635;
 			type="LIB_T34_85";
-			atlOffset=2.1691761;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5928,7 +5928,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={378.79193,6.2249522,255.89703};
+				position[]={378.79193,6.2249522,255.89702};
 			};
 			side="Empty";
 			flags=4;

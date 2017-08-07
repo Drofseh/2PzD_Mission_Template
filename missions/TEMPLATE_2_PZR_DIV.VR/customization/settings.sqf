@@ -33,6 +33,7 @@ if (!isDedicated) then { //This scope is only for the player
 };
 
 //New end messages to be used with the in briefing Admin Tab end mission options.
+//Change the messages to reflect your mission.
     victoryMessage = "
     <br/>The Admin or Zeus has ended the mission.
     <br/>
