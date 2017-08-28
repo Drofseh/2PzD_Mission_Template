@@ -67,7 +67,7 @@ if (FW_RespawnTickets > 0) then {
 
         player setVariable ["FW_Spectating", true, true];
 
-        [true] call acre_api_fnc_setSpectator;
+        //[true] call acre_api_fnc_setSpectator; //Enable this if using ACRE2
         "" execVM "core\spectate.sqf";
 
 
