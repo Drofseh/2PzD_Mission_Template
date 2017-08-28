@@ -212,7 +212,7 @@
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
 		[Ger_Vest_K98] call FNC_AddItemRandom;
 		[Ger_BP_r] call FNC_AddItemRandom;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -233,7 +233,7 @@
 		[Ger_Uni_Med] call FNC_AddItemRandom;
 		[Ger_Vest_Med] call FNC_AddItemRandom;
 		[Ger_BP_Med] call FNC_AddItem;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -256,7 +256,7 @@
 		[Ger_Uni_SL] call FNC_AddItem;
 		[Ger_Vest_SL] call FNC_AddItem;
 		[Ger_BP_AF] call FNC_AddItem;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -279,7 +279,7 @@
 		[Ger_Uni_S2_r] call FNC_AddItemRandom;
 		[Ger_Vest_K98] call FNC_AddItemRandom;
 		[Ger_BP_r] call FNC_AddItemRandom;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -301,7 +301,7 @@
 		[Ger_Uni_S3_r] call FNC_AddItemRandom;
 		[Ger_Vest_MP40] call FNC_AddItem;
 		[Ger_BP_r] call FNC_AddItemRandom;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -324,7 +324,7 @@
 		[Ger_Vest_MG] call FNC_AddItem;
 		[Ger_BP_MG_B] call FNC_AddItem;
 		_unit removeItemFromBackpack "fow_50Rnd_792x57";
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -363,7 +363,7 @@
 		[Ger_Vest_MGA] call FNC_AddItem;
 		[Ger_BP_MG_B] call FNC_AddItem;
 		_unit removeItemFromBackpack "fow_50Rnd_792x57";
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -386,7 +386,7 @@
 		[Ger_Vest_K98] call FNC_AddItem;
 		[Ger_BP_MG_B] call FNC_AddItem;
 		_unit removeItemFromBackpack "fow_50Rnd_792x57";
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -406,7 +406,7 @@
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
 		[Ger_Vest_K98] call FNC_AddItem;
 		[Ger_BP_r] call FNC_AddItemRandom;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -426,7 +426,7 @@
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
 		[Ger_Vest_K98] call FNC_AddItemRandom;
 		[Ger_BP_Med] call FNC_AddItem;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -448,7 +448,7 @@
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
 		[Ger_Vest_K98] call FNC_AddItemRandom;
 		[Ger_BP_r] call FNC_AddItemRandom;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -473,7 +473,7 @@
 		[Ger_Uni_S3_r] call FNC_AddItemRandom;
 		[Ger_Vest_HGun] call FNC_AddItem;
 		[Ger_BP_T34] call FNC_AddItem;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -512,7 +512,7 @@
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
 		[Ger_Vest_HGun] call FNC_AddItemRandom;
 		[Ger_BP_T34] call FNC_AddItem;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -550,7 +550,7 @@
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
 		[Ger_Vest_K98] call FNC_AddItemRandom;
 		[Ger_BP_T34] call FNC_AddItem;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -573,7 +573,7 @@
 		[Ger_Uni_S3_r] call FNC_AddItemRandom;
 		[Ger_Vest_MGA] call FNC_AddItem;
 		[Ger_BP_T34] call FNC_AddItem;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -598,7 +598,7 @@
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
 		[Ger_Vest_MG] call FNC_AddItem;
 		[Ger_BP_T34] call FNC_AddItem;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items
@@ -638,7 +638,7 @@
 		[Ger_Uni_Rif_r] call FNC_AddItemRandom;
 		[Ger_Vest_K98] call FNC_AddItem;
 		[Ger_BP_T34] call FNC_AddItem;
-		[Ger_Helmet] call FNC_AddItem;
+		[Ger_Helmet_r] call FNC_AddItemRandom;
 		[GEN_Face_r] call FNC_AddItemRandom;
 		
 		//Assigned Items

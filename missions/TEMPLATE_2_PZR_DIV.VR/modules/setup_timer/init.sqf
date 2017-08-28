@@ -8,10 +8,6 @@ if !(markerType NAME == "") then { \
 	_temp call FNC_DebugMessage; \
 };
 
-if (!isMultiplayer) exitWith {
-    "Setup Timer: Singleplayer session detected, this module will function only in multiplayer." call FNC_DebugMessage;
-};
-
 if (isServer) then {
     [] spawn {
         waitUntil {time > 0};
@@ -20,10 +16,8 @@ if (isServer) then {
     };
 };
 
-if (!isDedicated) then {
+if (!isServer) then {
 	
-	private ["_markers", "_pos", "_timeLeft", "_string", "_displayed"];
-
 	_markers = [];
 
 	#include "settings.sqf"
@@ -32,22 +26,14 @@ if (!isDedicated) then {
 	
 		[_markers] spawn {
 			
-			_marker = [];
-			_displayed = false;
+            private ["_pos", "_timeLeft", "_string"];
+            params ["_markers"];
             
-			waitUntil {!isNil "FW_setup_start_time"};
+            waitUntil {!isNil "FW_setup_start_time"};
             _startTime = FW_setup_start_time;
-            //we are checking for a bug described on serverTime wiki page
-            //bugged value is usually around 400 000
-            if (abs (FW_setup_start_time - serverTime) > 100000) then { 
-                _startTime = serverTime;
-                FW_setup_start_time = serverTime; //client time is used instead, according to wiki it's always correct
-                //we send it across network. Possible issue: multiple clients send it at the same time
-                //and increase network traffic. Shouldn't be too bad because data is small.
-                publicVariable "FW_setup_start_time";
-                systemchat "Setup Timer: Detected desynchronized server and client clock, using client's time instead.";
-            };
             
+			_marker = [];
+			
 			{
 				if (((_x select 0) == (side player)) && [(vehicle player), (_x select 2)] call FNC_InArea) then {
 				
@@ -59,7 +45,7 @@ if (!isDedicated) then {
 					
 				};
 				
-			} forEach (_this select 0);
+			} forEach _markers;
 			
 			_pos = getPosATL (vehicle player);
 			
@@ -85,14 +71,19 @@ if (!isDedicated) then {
 					
 				};
 				
-				if (_timeLeft > 0 && !_displayed) then {
-					_displayed = true;
-					missionNamespace setVariable ["FW_ST_TimeLeft", _timeLeft];
-					cutRsc ["RscSetupTimer", "PLAIN", 0.5, false];
+				_string = "Time remaining: %1:%2";
+				
+				if (_timeLeft % 60 < 10) then {
+					
+					_string = "Time remaining: %1:0%2";
+					
 				};
+				
+				hintSilent format [_string, floor(_timeLeft / 60), _timeLeft % 60];
 				
 				if (_timeLeft == 0) then {
 				
+					hint "Setup timer expired";
 					(_marker select 1) setMarkerAlphaLocal 0;
 					_marker = [];
 					

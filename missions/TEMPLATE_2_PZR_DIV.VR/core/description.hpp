@@ -9,9 +9,9 @@
 	respawnButton = 1; //Disables the respawn button
 	respawnDialog = 0; //Disables the score screen while respawning
     respawnTemplates[] = {"Base"}; //Disables respawn countdown
-    //enableDebugConsole[] = {"76561197970317496"}; //Haas
+//  enableDebugConsole[] = {"76561197970317496"}; //Haas
     enableDebugConsole = 1; // 1 = Only for logged-in admins
-	enableTargetDebug = 1; //Enable CBA Target Debugging
+	enableTargetDebug = 1;
 
 	class Extended_PreInit_EventHandlers {
 		

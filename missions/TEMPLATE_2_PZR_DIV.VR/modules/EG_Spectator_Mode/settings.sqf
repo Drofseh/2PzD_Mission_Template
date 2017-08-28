@@ -19,10 +19,10 @@
 	eg_show_Entities_and_locations_lists = true;
 
 // Define where the spectator camera starts. (add a marker with the name inside the "")
-	eg_spectator_marker = "SpectatorMarker";
+	eg_spectator_marker = "";
 
 // Activate showing information about killer
-	killcam_active = true;
+	killcam_active = false;
 
 // Makes screen turn black instantly and mutes all audio when killed
     eg_instant_death = true;

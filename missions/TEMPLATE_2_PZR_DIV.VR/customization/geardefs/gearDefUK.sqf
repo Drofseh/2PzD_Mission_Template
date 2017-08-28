@@ -14,7 +14,6 @@
 #define UK_Weap_StenMkVI		"LEN_StenMk2S"
 #define UK_Weap_Bren			"fow_w_bren"
 #define UK_Weap_Boys			"LIB_PTRD"
-#define UK_Weap_DeLisle			"LIB_DELISLE"
 
 //Secondary
 #define UK_Weap_HiPower			"LEN_P640b"
@@ -35,7 +34,6 @@
 #define UK_Mag_Sten				"LEN_32Rnd_9x19"
 #define UK_Mag_Bren				"fow_30Rnd_303_bren"
 #define UK_Mag_Boys				"LIB_1Rnd_145x114"
-#define UK_Mag_DeLisle			"LIB_11Rnd_45ACP_2PzD"
 #define UK_Mag_HiPower			"LEN_13Rnd_9x19"
 #define UK_Mag_Webley455		"fow_6Rnd_455"
 #define UK_Mag_Welrod_1			"LEN_8Rnd_765x17_2PzD"
@@ -104,7 +102,6 @@
 
 #define UK_Woolie				"fow_h_uk_woolen_hat"
 #define UK_Beret_Com			"fow_h_uk_beret_commando"
-#define UK_Hat_Com_R			["fow_h_uk_woolen_hat"],["fow_h_uk_woolen_hat"],["fow_h_uk_beret_commando"],["fow_h_uk_mk3"],["fow_h_uk_mk3_net_camo"]
 #define UK_Beret_Para_P			"fow_h_uk_beret_para"
 #define UK_Beret_Para_R			"fow_h_uk_beret_para_2"
 #define UK_Beret_Marine			"fow_h_uk_beret_royalmarines"

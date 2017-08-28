@@ -13,7 +13,6 @@
 #define Ger_Weap_MP40			"LIB_MP40"
 #define Ger_Weap_StG44			"LIB_MP44"
 #define Ger_Weap_FG42			"LEN_FG42"
-#define Ger_Weap_PzB39			"LIB_PTRD"
 #define Ger_Weap_MG34			"LIB_MG34"
 #define Ger_Weap_MG34_PT		"LIB_MG34_PT"
 #define Ger_Weap_MG42			"LIB_MG42"
@@ -41,7 +40,6 @@
 #define Ger_Mag_MP40			"LIB_32Rnd_9x19"
 #define Ger_Mag_StG44			"LIB_30Rnd_792x33"
 #define Ger_Mag_FG42			"len_20Rnd_792x57"
-#define Ger_Mag_PzB39			"LIB_1Rnd_145x114"
 #define Ger_Mag_MG_50			"LIB_50Rnd_792x57"
 #define Ger_Mag_MG_100			"LIB_100Rnd_792x57"
 #define Ger_Mag_MG_150			"LIB_150Rnd_792x57_2PzD"
@@ -163,7 +161,7 @@
 #define Ger_Hat_Officer			"fow_h_ger_officer_cap"
 #define Ger_Hat_Wedge			"fow_h_ger_m38_feldmutze"
 #define Ger_Hat					"fow_h_ger_feldmutze"
-#define Ger_Helmet_r			["fow_h_ger_m40_heer_01"],["fow_h_ger_m40_heer_01"],["fow_h_ger_m40_heer_01_net"],["fow_h_ger_m40_heer_02"],["fow_h_ger_m40_heer_camo"],["H_LIB_GER_Helmet"],["H_LIB_GER_Helmet"],["H_LIB_GER_HelmetCamo2"],["H_LIB_GER_HelmetCamo"],["H_LIB_GER_Helmet_net"],["H_LIB_GER_Helmet_ns"],["H_LIB_GER_Helmet_painted"],["H_LIB_GER_Helmet_net_painted"],["H_LIB_GER_Helmet_ns_painted"]
+#define Ger_Helmet_r			["fow_h_ger_m40_heer_01"],["fow_h_ger_m40_heer_01"],["fow_h_ger_m40_heer_01_net"],["fow_h_ger_m40_heer_camo"],["H_LIB_GER_Helmet"],["H_LIB_GER_Helmet"],["H_LIB_GER_HelmetCamo2"],["H_LIB_GER_HelmetCamo"],["H_LIB_GER_Helmet_net"],["H_LIB_GER_Helmet_ns"],["H_LIB_GER_Helmet_painted"],["H_LIB_GER_Helmet_net_painted"],["H_LIB_GER_Helmet_ns_painted"]
 #define Ger_Helmet				"fow_h_ger_m40_heer_01"
 
 #define Ger_Hat_VCom			["H_LIB_GER_TankOfficerCap"],["H_LIB_GER_TankOfficerCap2"]
@@ -239,8 +237,6 @@
 
 //Backpack
 #define DAK_BP_r				["B_LIB_DAK_A_frame_kit"],["B_LIB_DAK_A_frame"],["B_LIB_DAK_A_frame"],["B_LIB_GER_Tonister34_cowhide"]
-#define DAK_BP_AF				"B_LIB_DAK_A_frame"
-#define DAK_BP_AF_Kit			"B_LIB_DAK_A_frame_kit"
 
 //Headgear
 #define DAK_Hat_O				"H_LIB_DAK_OfficerCap"

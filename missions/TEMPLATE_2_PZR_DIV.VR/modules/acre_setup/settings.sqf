@@ -2,7 +2,7 @@
 //RADIO SCRAMBLE
 //////////////////
 
-FW_enable_scramble = true;
+FW_enable_scramble = false;
 
 //If enabled all sides will have different scramble frequencies.
 //Function below is to switch one unit to different scramble side.
@@ -100,22 +100,17 @@ FW_enable_babel = false;
 //define all available languages here
 
 FW_all_languages = [
-    ["cz", "Czech"],
     ["en", "English"],
-    ["fr", "French"],
-    ["gr", "German"],
-    ["it", "Italian"],
-    ["jp", "Japanese"],
-    ["pl", "Polish"],
-    ["ru", "Russian"]
+    ["ru", "Russian"],
+    ["fr", "French"]
 ];
 
 //define languages for different sides
 FW_languages_babel = [
-    ["gr"],//WEST
-    ["ru"],//EAST
-    ["en"],//INDEPENDENT
-    ["fr"]//DEFAULT/CIVILIAN
+    ["fr", "en"],//WEST
+    ["ru", "en"],//EAST
+    ["fr", "en", "ru"],//INDEPENDENT
+    ["en"]//DEFAULT/CIVILIAN
 ];
 
 ///////////////////////
@@ -165,6 +160,13 @@ FW_languages_babel = [
 /*
   Direct speech slider
   ACRE2 has a built in direct speech slider allowing you to determine how far your voice in direct speech should travel. The system has five states and by default starts in the middle state. The below table contains an approximated table with empirical testing by Bullhorn.
+  
+  Volume state: -1 | Loud (m): 1  | Quiet (m): 2  | Barely audible (m): 13
+  Volume state: -2 | Loud (m): 3  | Quiet (m): 15 | Barely audible (m): 55
+  Volume state: 0  | Loud (m): 8  | Quiet (m): 30 | Barely audible (m): 100
+  Volume state: -1 | Loud (m): 12 | Quiet (m): 45 | Barely audible (m): 145
+  Volume state: -2 | Loud (m): 15 | Quiet (m): 55 | Barely audible (m): 196
+  
   
   Volume state  |  Loud (m)  |  Quiet (m)  |  Barely audible (m)
   -2            |  1         |  2          |  13
