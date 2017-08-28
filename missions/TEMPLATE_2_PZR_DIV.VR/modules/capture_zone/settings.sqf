@@ -19,11 +19,14 @@
 //Comments: In endConditions.sqf add MARKERNAMEINQUOTES call FNC_isCaptured;
 //			will return "EAST","WEST","CIVILIAN","RESISTANCE","NONE" depending on who captured it
 // 			Example:if("EAST" == "marker" call FNC_isCaptured) exitWith {};
+
 //Additional:
+
 // SECONDS call FNC_setIntervall;
 // time between checks if people have entered the capturezone
 // use under your own discretion
 // Default: 15
+
 // [BLUCOLOR,EASTCOLOR,RESISTANCECOLOR,CIVILIAN,CONDESTEDCOLOR,UNCONDESTEDCOLOR] call FNC_setColors;
 // will set Capturezone colors
 // Default: ["ColorBlue","ColorRed","ColorGreen","ColorYellow","ColorWhite","ColorKhaki"];
