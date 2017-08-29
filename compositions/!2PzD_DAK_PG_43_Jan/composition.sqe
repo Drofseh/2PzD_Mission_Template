@@ -1539,7 +1539,7 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					init="[this,""DAK42Oct_SL""] call FNC_GearScript;" \n "{ group _x setGroupId [""1. Kompanie | Ersatztruppen""]} foreach units group this;}";
+					init="{[this,""DAK42Oct_SL""] call FNC_GearScript;" \n "{ group _x setGroupId [""1. Kompanie | Ersatztruppen""]} foreach units group this;}";
 					name="G_R01";
 					description="Gruppenführer@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
