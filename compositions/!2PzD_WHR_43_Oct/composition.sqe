@@ -24729,7 +24729,7 @@ class items
 				class Attributes
 				{
 					rank="CORPORAL";
-					init="[this,""WHR43Oct_PzrSL""] call FNC_GearScript;";
+					init="[this,""WHR43Oct_ATSL""] call FNC_GearScript;";
 					name="G_2242";
 					description="Truppführer@Schwerer Waffentrupp | Panzerschreck";
 					isPlayable=1;
@@ -25027,7 +25027,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR43Oct_PzrG""] call FNC_GearScript;";
+					init="[this,""WHR43Oct_ATG""] call FNC_GearScript;";
 					name="G_2243";
 					description="Richtschütze@Schwerer Waffentrupp | Panzerschreck";
 					isPlayable=1;
@@ -25325,7 +25325,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR43Oct_PzrA""] call FNC_GearScript;";
+					init="[this,""WHR43Oct_ATA""] call FNC_GearScript;";
 					name="G_2244";
 					description="Munitionsträger@Schwerer Waffentrupp | Panzerschreck";
 					isPlayable=1;

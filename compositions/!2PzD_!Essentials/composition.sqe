@@ -1,5 +1,5 @@
 version=53;
-center[]={3602.0847,77.386108,4260.0928};
+center[]={5641.0674,4.9467545,4173.125};
 class items
 {
 	items=8;
@@ -15,22 +15,22 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.13037109,0.47576904,-1.1435547};
-					angles[]={6.2671871,0,6.1677017};
+					position[]={-0.72460938,0.029684544,-1.0732422};
 				};
 				side="Civilian";
 				flags=6;
 				class Attributes
 				{
 					rank="CAPTAIN";
-					init="this setVariable [""ace_w_allow_dam"",false,true];" \n "this allowDamage false; " \n "this addItemToUniform ""NVGoggles_OPFOR""; " \n "this linkItem ""ItemWatch"";" \n "{ group _x setGroupId [""Mount Olympus""]} foreach units group this;";
+					init="call{this setVariable [""ace_w_allow_dam"",false,true];" \n "this allowDamage false; " \n "this addItemToUniform ""NVGoggles_OPFOR""; " \n "this linkItem ""ItemWatch"";" \n "{ group _x setGroupId [""Mount Olympus""]} foreach units group this;}";
 					name="God";
 					description="Zeus@Mount Olympus";
+					isPlayer=1;
 					isPlayable=1;
 				};
-				id=340;
+				id=129;
 				type="LIB_CIV_Functionary_4";
-				atlOffset=-0.024986267;
+				atlOffset=-0.025000095;
 				class CustomAttributes
 				{
 					class Attribute0
@@ -363,17 +363,17 @@ class items
 		class Attributes
 		{
 		};
-		id=339;
-		atlOffset=-0.024986267;
+		id=128;
+		atlOffset=-0.025000095;
 	};
 	class Item1
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.126709,0.21265411,-1.1884766};
+			position[]={1.2724609,3.0517578e-005,-1.1181641};
 		};
-		id=341;
+		id=130;
 		type="ModuleCurator_F";
 		atlOffset=-0.053215027;
 		class CustomAttributes
@@ -481,9 +481,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.1254883,0.23851013,0.81787109};
+			position[]={1.2709961,7.6293945e-005,0.88818359};
 		};
-		id=342;
+		id=131;
 		type="ModuleCurator_F";
 		atlOffset=-0.05316925;
 		class CustomAttributes
@@ -591,9 +591,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={4.1257324,0,0.81591797};
+			position[]={3.2714844,0,0.88623047};
 		};
-		id=343;
+		id=132;
 		type="tfar_ModuleTaskForceRadioEnforceUsage";
 		atlOffset=-0.053245544;
 		class CustomAttributes
@@ -739,9 +739,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.12939453,0.4764328,0.81884766};
+			position[]={-0.72509766,3.8146973e-005,0.88916016};
 		};
-		id=344;
+		id=133;
 		type="acex_headless_module";
 		atlOffset=-0.053207397;
 		class CustomAttributes
@@ -830,20 +830,20 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-1.8759766,0.7142334,0.81689453};
+			position[]={-2.7304688,0.0032424927,0.88720703};
 		};
 		name="HC_1";
 		init="this setGroupId [""Headless Client""];";
 		isPlayable=1;
 		description="Headless Client";
-		id=345;
+		id=134;
 		type="HeadlessClient_F";
 		atlOffset=-0.050003052;
 	};
 	class Item6
 	{
 		dataType="Marker";
-		position[]={-3.376709,3.541254e+012,-0.96484375};
+		position[]={-4.2314453,3.541254e+012,-0.89453125};
 		name="AO";
 		markerType="RECTANGLE";
 		type="Empty";
@@ -852,15 +852,15 @@ class items
 		a=700;
 		b=700;
 		drawBorder=1;
-		id=347;
+		id=135;
 		atlOffset=3.541254e+012;
 	};
 	class Item7
 	{
 		dataType="Marker";
-		position[]={-3.3869629,0.9318161,0.075195313};
+		position[]={-4.2412109,0.053245544,0.14550781};
 		name="SpectatorMarker";
 		type="Empty";
-		id=348;
+		id=136;
 	};
 };

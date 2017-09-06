@@ -217,11 +217,17 @@
 //=== Clothes ===
 
 //Uniform
-#define DAK_Uni_O				"U_LIB_DAK_lieutenant"
-#define DAK_Uni_NCO_S_r			["U_LIB_DAK_NCO"],["U_LIB_DAK_NCO"],["U_LIB_DAK_NCO_2"]
-#define DAK_Uni_NCO_J_r			["U_LIB_DAK_Sentry"],["U_LIB_DAK_Sentry_2"]
+#define DAK_Uni_CC				"U_LIB_DAK_lieutenant"
+#define DAK_Uni_C2				"U_LIB_DAK_lieutenant"
+#define DAK_Uni_PC				"U_LIB_DAK_lieutenant"
+#define DAK_Uni_SL_r			["U_LIB_DAK_NCO"],["U_LIB_DAK_NCO"],["U_LIB_DAK_NCO_2"]
+#define DAK_Uni_S2_r			["U_LIB_DAK_Sentry"],["U_LIB_DAK_Sentry_2"]
+#define DAK_Uni_S3_r			["U_LIB_DAK_Sentry"],["U_LIB_DAK_Sentry_2"]
 #define DAK_Uni_Rif_r			["U_LIB_DAK_Soldier"],["U_LIB_DAK_Soldier_2"],["U_LIB_DAK_Soldier_3"]
-#define DAK_Uni_Med				"U_LIB_DAK_Medic"
+#define DAK_Uni_Med				"U_LIB_GER_Medic"
+
+#define DAK_Uni_VCom_r			["U_LIB_DAK_NCO"],["U_LIB_DAK_NCO"],["U_LIB_DAK_NCO_2"]
+#define DAK_Uni_VCrew_r			["U_LIB_DAK_Soldier"],["U_LIB_DAK_Soldier_2"],["U_LIB_DAK_Soldier_3"]
 
 //Vests
 #define DAK_Vest_CC				"V_LIB_DAK_PrivateBelt"

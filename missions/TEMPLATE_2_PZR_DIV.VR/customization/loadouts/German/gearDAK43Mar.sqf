@@ -52,7 +52,7 @@
 
     //Kompanieführer
     case "DAK43Mar_CC" : {
-        [DAK_Uni_O] call FNC_AddItem;
+        [DAK_Uni_CC] call FNC_AddItem;
         [DAK_Vest_PC] call FNC_AddItem;
         [Ger_BP_radio] call FNC_AddItem;
         [DAK_Hat_O] call FNC_AddItem;
@@ -99,7 +99,7 @@
 
     //Kompanietruppführer
     case "DAK43Mar_C2" : {
-        [DAK_Uni_NCO_S_r] call FNC_AddItemRandom;
+        [DAK_Uni_SL_r] call FNC_AddItemRandom;
         [DAK_Vest_PC] call FNC_AddItem;
         [DAK_Hat_Pith] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -141,7 +141,7 @@
 
     //Zugführer
     case "DAK43Mar_PC" : {
-        [DAK_Uni_O] call FNC_AddItem;
+        [DAK_Uni_PC] call FNC_AddItem;
         [DAK_Vest_PC] call FNC_AddItem;
         [DAK_Hat_O] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -186,7 +186,7 @@
 
     //Zugtruppführer
     case "DAK43Mar_P2" : {
-        [DAK_Uni_NCO_S_r] call FNC_AddItemRandom;
+        [DAK_Uni_SL_r] call FNC_AddItemRandom;
         [DAK_Vest_SL] call FNC_AddItem;
         [DAK_BP_r] call FNC_AddItemRandom;
         [DAK_Hat] call FNC_AddItem;
@@ -286,7 +286,7 @@
 
     //Gruppenführer
     case "DAK43Mar_SL" : {
-        [DAK_Uni_NCO_J_r] call FNC_AddItemRandom;
+        [DAK_Uni_SL_r] call FNC_AddItemRandom;
         [DAK_Vest_SL] call FNC_AddItem;
         [DAK_BP_r] call FNC_AddItemRandom;
         [DAK_Helmet_r] call FNC_AddItemRandom;
@@ -316,7 +316,7 @@
 
     //Stellvertretender Gruppenführer
     case "DAK43Mar_S2" : {
-        [DAK_Uni_NCO_J_r] call FNC_AddItemRandom;
+        [DAK_Uni_S2_r] call FNC_AddItemRandom;
         [DAK_Vest_K98] call FNC_AddItemRandom;
         [DAK_BP_r] call FNC_AddItemRandom;
         [DAK_Helmet_r] call FNC_AddItemRandom;
@@ -345,7 +345,7 @@
 
     //Gefreiter
     case "DAK43Mar_S3" : {
-        [DAK_Uni_NCO_J_r] call FNC_AddItemRandom;
+        [DAK_Uni_S3_r] call FNC_AddItemRandom;
         [DAK_Vest_MP40] call FNC_AddItem;
         [DAK_BP_r] call FNC_AddItemRandom;
         [DAK_Helmet_r] call FNC_AddItemRandom;
@@ -551,7 +551,7 @@
     //Mortar Team
     //Mortar Truppführer
     case "DAK43Mar_MortSL" : {
-        [DAK_Uni_NCO_J_r] call FNC_AddItemRandom;
+        [DAK_Uni_S3_r] call FNC_AddItemRandom;
         [DAK_Vest_VCrew] call FNC_AddItem;
         [Ger_BP_T34] call FNC_AddItem;
         [DAK_Helmet_r] call FNC_AddItemRandom;
@@ -559,7 +559,7 @@
 
         //Assigned Items
         Ger_default_equipment;
-        [GEN_ace_maptools,1] call FNC_AddItem;
+        Ger_leader_equipment;
         [GEN_ace_rangetable,1] call FNC_AddItem;
 
         [//Secondary Weapon
@@ -661,7 +661,7 @@
     //HMG Team
     //HMG Truppführer
     case "DAK43Mar_HMGSL" : {
-        [DAK_Uni_NCO_J_r] call FNC_AddItemRandom;
+        [DAK_Uni_S3_r] call FNC_AddItemRandom;
         [DAK_Vest_K98] call FNC_AddItem;
         [Ger_BP_T34] call FNC_AddItem;
         [DAK_Helmet_r] call FNC_AddItemRandom;
@@ -760,7 +760,7 @@
     //Panzerbüchse Team
     //Panzerbüchse Truppführer
     case "DAK43Mar_ATRSL" : {
-        [DAK_Uni_NCO_J_r] call FNC_AddItemRandom;
+        [DAK_Uni_S3_r] call FNC_AddItemRandom;
         [DAK_Vest_K98] call FNC_AddItem;
         [Ger_BP_T34] call FNC_AddItem;
         [DAK_Helmet_r] call FNC_AddItemRandom;
@@ -823,7 +823,7 @@
     };
 
     //Panzerbüchse Munitionsträger
-    case "DAK43Mar_ATRA" : {
+    case "DAK43Mar_ATRAB" : {
         [DAK_Uni_Rif_r] call FNC_AddItemRandom;
         [DAK_Vest_K98] call FNC_AddItem;
         [Ger_BP_T34] call FNC_AddItem;
@@ -847,7 +847,7 @@
 
     //Besatzungsführer
     case "DAK43Mar_VCom" : {
-        [DAK_Uni_NCO_S_r] call FNC_AddItemRandom;
+        [DAK_Uni_VCom_r] call FNC_AddItemRandom;
         [DAK_Vest_PC] call FNC_AddItem;
         [Ger_BP_VCrew] call FNC_AddItem;
         [DAK_Hat_Pith] call FNC_AddItem;
@@ -866,24 +866,34 @@
         [//P38
         [Ger_Mag_P38,1],
         [Ger_Weap_P38],
-        [Ger_Mag_P38,1]
-        ],[50],
+        [Ger_Mag_P38,2]
+        ],[59],
         [//P08
         [Ger_Mag_P08,1],
         [Ger_Weap_P08],
-        [Ger_Mag_P08,1]
-        ],[38],
-        [//C96
-        [Ger_Weap_C96_Mag,1],
-        [Ger_Weap_C96],
-        [Ger_Weap_C96_Mag,1]
-        ],[12]
+        [Ger_Mag_P08,2]
+        ],[27],
+        [//PPK
+        [Ger_Mag_PPK,1],
+        [Ger_Weap_PPK],
+        [Ger_Mag_PPK,2]
+        ],[10],
+        [//PPK
+        [PHA_Mag_Radom,1],
+        [PHA_Weap_Radom],
+        [PHA_Mag_Radom,2]
+        ],[2],
+        [//BHP
+        [UK_Mag_HiPower,1],
+        [UK_Weap_HiPower],
+        [UK_Mag_HiPower,2]
+        ],[2]
         ] call FNC_AddItemRandomPercent;
     };
 
     //Besatzung
     case "DAK43Mar_VCrew" : {
-        [DAK_Uni_Rif_r] call FNC_AddItemRandom;
+        [DAK_Uni_VCrew_r] call FNC_AddItemRandom;
         [DAK_Vest_VCrew] call FNC_AddItem;
         [Ger_BP_VCrew] call FNC_AddItem;
         [DAK_Hat_Pith] call FNC_AddItem;

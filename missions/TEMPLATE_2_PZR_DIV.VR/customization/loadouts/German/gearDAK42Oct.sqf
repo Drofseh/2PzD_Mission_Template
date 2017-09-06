@@ -52,7 +52,7 @@
 
     //Kompanieführer
     case "DAK42Oct_CC" : {
-        [DAK_Uni_O] call FNC_AddItem;
+        [DAK_Uni_CC] call FNC_AddItem;
         [DAK_Vest_PC] call FNC_AddItem;
         [Ger_BP_radio] call FNC_AddItem;
         [DAK_Hat_O] call FNC_AddItem;
@@ -99,7 +99,7 @@
 
     //Kompanietruppführer
     case "DAK42Oct_C2" : {
-        [DAK_Uni_NCO_S_r] call FNC_AddItemRandom;
+        [DAK_Uni_SL_r] call FNC_AddItemRandom;
         [DAK_Vest_PC] call FNC_AddItem;
         [DAK_Hat_Pith] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -141,7 +141,7 @@
 
     //Zugführer
     case "DAK42Oct_PC" : {
-        [DAK_Uni_O] call FNC_AddItem;
+        [DAK_Uni_PC] call FNC_AddItem;
         [DAK_Vest_PC] call FNC_AddItem;
         [DAK_Hat_O] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -186,7 +186,7 @@
 
     //Zugtruppführer
     case "DAK42Oct_P2" : {
-        [DAK_Uni_NCO_S_r] call FNC_AddItemRandom;
+        [DAK_Uni_SL_r] call FNC_AddItemRandom;
         [DAK_Vest_SL] call FNC_AddItem;
         [DAK_BP_r] call FNC_AddItemRandom;
         [DAK_Hat] call FNC_AddItem;
@@ -272,7 +272,7 @@
 
     //Gruppenführer
     case "DAK42Oct_SL" : {
-        [DAK_Uni_NCO_J_r] call FNC_AddItemRandom;
+        [DAK_Uni_SL_r] call FNC_AddItemRandom;
         [DAK_Vest_SL] call FNC_AddItem;
         [DAK_BP_r] call FNC_AddItemRandom;
         [DAK_Helmet_r] call FNC_AddItemRandom;
@@ -295,7 +295,7 @@
 
     //Stellvertretender Gruppenführer
     case "DAK42Oct_S2" : {
-        [DAK_Uni_NCO_J_r] call FNC_AddItemRandom;
+        [DAK_Uni_S2_r] call FNC_AddItemRandom;
         [DAK_Vest_K98] call FNC_AddItemRandom;
         [DAK_BP_r] call FNC_AddItemRandom;
         [DAK_Helmet_r] call FNC_AddItemRandom;
@@ -317,7 +317,7 @@
 
     //Gefreiter
     case "DAK42Oct_S3" : {
-        [DAK_Uni_NCO_J_r] call FNC_AddItemRandom;
+        [DAK_Uni_S3_r] call FNC_AddItemRandom;
         [DAK_Vest_MP40] call FNC_AddItem;
         [DAK_BP_r] call FNC_AddItemRandom;
         [DAK_Helmet_r] call FNC_AddItemRandom;
@@ -453,28 +453,6 @@
         [Ger_Mag_RGrn_ATL,1] call FNC_AddItem;
     };
 
-    //Gewehrschütze
-    case "DAK42Oct_Rif" : {
-        [DAK_Uni_Rif_r] call FNC_AddItemRandom;
-        [DAK_Vest_K98] call FNC_AddItem;
-        [DAK_BP_r] call FNC_AddItemRandom;
-        [DAK_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
-
-        //Assigned Items
-        Ger_default_equipment;
-
-        //Primary Weapon
-        [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
-        [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
-
-        //Extra
-        [Ger_Gren_Frag_SC,1] call FNC_AddItem;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
-    };
-
     //Hilfs-Krankenträger
     case "DAK42Oct_MedS" : {
         [DAK_Uni_Rif_r] call FNC_AddItemRandom;
@@ -497,12 +475,34 @@
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
     };
 
+    //Gewehrschütze
+    case "DAK42Oct_Rif" : {
+        [DAK_Uni_Rif_r] call FNC_AddItemRandom;
+        [DAK_Vest_K98] call FNC_AddItem;
+        [DAK_BP_r] call FNC_AddItemRandom;
+        [DAK_Helmet_r] call FNC_AddItemRandom;
+        [GEN_Face_r] call FNC_AddItemRandom;
+
+        //Assigned Items
+        Ger_default_equipment;
+
+        //Primary Weapon
+        [Ger_Mag_K98,1] call FNC_AddItem;
+        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
+
+        //Extra
+        [Ger_Gren_Frag_SC,1] call FNC_AddItem;
+        [Ger_Mag_MG_50,1] call FNC_AddItem;
+        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+    };
+
 //Weapon Truppen
 
     //Mortar Team
     //Mortar Truppführer
     case "DAK42Oct_MortSL" : {
-        [DAK_Uni_NCO_J_r] call FNC_AddItemRandom;
+        [DAK_Uni_S3_r] call FNC_AddItemRandom;
         [DAK_Vest_VCrew] call FNC_AddItem;
         [Ger_BP_T34] call FNC_AddItem;
         [DAK_Helmet_r] call FNC_AddItemRandom;
@@ -510,7 +510,7 @@
 
         //Assigned Items
         Ger_default_equipment;
-        [GEN_ace_maptools,1] call FNC_AddItem;
+        Ger_leader_equipment;
         [GEN_ace_rangetable,1] call FNC_AddItem;
 
         [//Secondary Weapon
@@ -612,7 +612,7 @@
     //HMG Team
     //HMG Truppführer
     case "DAK42Oct_HMGSL" : {
-        [DAK_Uni_NCO_J_r] call FNC_AddItemRandom;
+        [DAK_Uni_S3_r] call FNC_AddItemRandom;
         [DAK_Vest_K98] call FNC_AddItem;
         [Ger_BP_T34] call FNC_AddItem;
         [DAK_Helmet_r] call FNC_AddItemRandom;
@@ -711,7 +711,7 @@
     //Panzerbüchse Team
     //Panzerbüchse Truppführer
     case "DAK42Oct_ATRSL" : {
-        [DAK_Uni_NCO_J_r] call FNC_AddItemRandom;
+        [DAK_Uni_S3_r] call FNC_AddItemRandom;
         [DAK_Vest_K98] call FNC_AddItem;
         [Ger_BP_T34] call FNC_AddItem;
         [DAK_Helmet_r] call FNC_AddItemRandom;
@@ -773,11 +773,32 @@
         [Ger_Mag_PzB39,20] call FNC_AddItem;
     };
 
+    //Panzerbüchse Munitionsträger
+    case "DAK42Oct_ATRAB" : {
+        [DAK_Uni_Rif_r] call FNC_AddItemRandom;
+        [DAK_Vest_K98] call FNC_AddItem;
+        [Ger_BP_T34] call FNC_AddItem;
+        [DAK_Helmet_r] call FNC_AddItemRandom;
+        [GEN_Face_r] call FNC_AddItemRandom;
+
+        //Assigned Items
+        Ger_default_equipment;
+
+        //Primary Weapon
+        [Ger_Mag_K98,1] call FNC_AddItem;
+        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
+
+        //Extra
+        [Ger_Mag_PzB39,20,"backpack"] call FNC_AddItem;
+        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+    };
+
 //Tank Crew
 
     //Besatzungsführer
     case "DAK42Oct_VCom" : {
-        [DAK_Uni_NCO_S_r] call FNC_AddItemRandom;
+        [DAK_Uni_VCom_r] call FNC_AddItemRandom;
         [DAK_Vest_PC] call FNC_AddItem;
         [Ger_BP_VCrew] call FNC_AddItem;
         [DAK_Hat_Pith] call FNC_AddItem;
@@ -823,7 +844,7 @@
 
     //Besatzung
     case "DAK42Oct_VCrew" : {
-        [DAK_Uni_Rif_r] call FNC_AddItemRandom;
+        [DAK_Uni_VCrew_r] call FNC_AddItemRandom;
         [DAK_Vest_VCrew] call FNC_AddItem;
         [Ger_BP_VCrew] call FNC_AddItem;
         [DAK_Hat_Pith] call FNC_AddItem;
