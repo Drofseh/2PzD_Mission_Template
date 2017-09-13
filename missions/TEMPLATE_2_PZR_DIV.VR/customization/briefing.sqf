@@ -808,15 +808,9 @@ if (isNil {God}) then {God = player};
 if (God == player) then {
 //All Zeus Notes should go in this tab.
     NEWTAB("Zeus Notes:")
-    <br/>This tab is a test to check briefing tab generation based on if the player is Zeus or not.
+    <br/><font color='#FF8C00'>If you are not the Zeus, do not read this tab.</font>
     <br/>
-    <br/>Only Zeus should be able to see this tab.
-    <br/>
-    <br/>Let Haas know if:
-    <br/>
-    <br/>You ARE Zeus and you can see this tab.
-    <br/>
-    <br/>You are NOT Zeus and you can see this tab.
+    <br/>All notes for the Zeus from the mission maker should go in this tab.
     ENDTAB;
 };
 
@@ -825,7 +819,7 @@ _adminState = call BIS_fnc_admin;
 _uid = getPlayerUID player;
 
 //Displays the Admin Tab for the admin, the Zeus, Haas, Madsen, Schuttler, Sauer, Schmidt, and Brauer
-if (_adminState != 0) || (player call BIS_fnc_isCurator) || (_uid == "76561197970317496") || (_uid == "76561197983143701") || (_uid == "76561198096113294") || (_uid == "76561197985738940") || (_uid == "76561198007878058") || (_uid == "76561198006804011") then {
+if ((_adminState != 0) || (God == player) || (_uid == "76561197970317496") || (_uid == "76561197983143701") || (_uid == "76561198096113294") || (_uid == "76561197985738940") || (_uid == "76561198007878058") || (_uid == "76561198006804011")) then {
 	//This tab has clickable commands to allow the admin or zeus to end the mission.
 	//More may be added by makin an entry here and adding a corresponding entry in the settings.sqf
     NEWTAB("Admin Tab") 

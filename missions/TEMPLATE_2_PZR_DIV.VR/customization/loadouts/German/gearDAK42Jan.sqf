@@ -54,7 +54,7 @@
     case "DAK42Jan_CC" : {
         [DAK_Uni_CC] call FNC_AddItem;
         [DAK_Vest_PC] call FNC_AddItem;
-        [Ger_BP_radio] call FNC_AddItem;
+        [Ger_BP_Radio] call FNC_AddItem;
         [DAK_Hat_O] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
         _unit removeItem "TFAR_rf7800str";
@@ -211,7 +211,7 @@
     case "DAK42Jan_RTO" : {
         [DAK_Uni_Rif_r] call FNC_AddItemRandom;
         [DAK_Vest_K98] call FNC_AddItem;
-        [Ger_BP_radio] call FNC_AddItem;
+        [Ger_BP_Radio] call FNC_AddItem;
         [DAK_Hat] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
         _unit removeItem "TFAR_rf7800str";

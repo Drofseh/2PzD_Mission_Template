@@ -7,26 +7,26 @@
 /*Loadouts
 
     //Kompanietrupp
-[this,"WHR45Jan_CC"] call FNC_GearScript;       Kompanieführer
-[this,"WHR45Jan_C2"] call FNC_GearScript;       Kompanietruppführer
+[this,"WHR45_CC"] call FNC_GearScript;       Kompanieführer
+[this,"WHR45_C2"] call FNC_GearScript;       Kompanietruppführer
 
     //Zugtrupp
-[this,"WHR45Jan_PC"] call FNC_GearScript;       Zugführer
-[this,"WHR45Jan_P2"] call FNC_GearScript;       Zugtruppführer
-[this,"WHR45Jan_RTO"] call FNC_GearScript;      Funker
-[this,"WHR45Jan_Mess"] call FNC_GearScript;     Melder
-[this,"WHR45Jan_MedP"] call FNC_GearScript;     Krankenträger
+[this,"WHR45_PC"] call FNC_GearScript;       Zugführer
+[this,"WHR45_P2"] call FNC_GearScript;       Zugtruppführer
+[this,"WHR45_RTO"] call FNC_GearScript;      Funker
+[this,"WHR45_Mess"] call FNC_GearScript;     Melder
+[this,"WHR45_MedP"] call FNC_GearScript;     Krankenträger
 
     //Gruppe
-[this,"WHR45Jan_SL"] call FNC_GearScript;       Gruppenführer
-[this,"WHR45Jan_S2"] call FNC_GearScript;       Stellvertretender Gruppenführer
-[this,"WHR45Jan_S3"] call FNC_GearScript;       Gefreiter
-[this,"WHR45Jan_MG"] call FNC_GearScript;       MG-Richtschütze
-[this,"WHR45Jan_MGA"] call FNC_GearScript;      MG-Hilfsschütze
-[this,"WHR45Jan_MGAB"] call FNC_GearScript;     MG-Munitionsträger
-[this,"WHR45Jan_Gren"] call FNC_GearScript;     Grenadier
-[this,"WHR45Jan_MedS"] call FNC_GearScript;     Hilfs-Krankenträger
-[this,"WHR45Jan_Rif"] call FNC_GearScript;      Gewehrschütze
+[this,"WHR45_SL"] call FNC_GearScript;       Gruppenführer
+[this,"WHR45_S2"] call FNC_GearScript;       Stellvertretender Gruppenführer
+[this,"WHR45_S3"] call FNC_GearScript;       Gefreiter
+[this,"WHR45_MG"] call FNC_GearScript;       MG-Richtschütze
+[this,"WHR45_MGA"] call FNC_GearScript;      MG-Hilfsschütze
+[this,"WHR45_MGAB"] call FNC_GearScript;     MG-Munitionsträger
+[this,"WHR45_Gren"] call FNC_GearScript;     Grenadier
+[this,"WHR45_MedS"] call FNC_GearScript;     Hilfs-Krankenträger
+[this,"WHR45_Rif"] call FNC_GearScript;      Gewehrschütze
 
     //Weapon Truppen
 [this,"WHR45_MortSL"] call FNC_GearScript;      Mortar Truppführer
@@ -46,8 +46,8 @@
 [this,"WHR45_ATA"] call FNC_GearScript;         Panzerschreck Munitionsträger
 
     //Tank Crew
-[this,"WHR45Jan_VCom"] call FNC_GearScript;     Besatzungsführer
-[this,"WHR45Jan_VCrew"] call FNC_GearScript;    Besatzung
+[this,"WHR45_VCom"] call FNC_GearScript;     Besatzungsführer
+[this,"WHR45_VCrew"] call FNC_GearScript;    Besatzung
 */
 
 //======================== Loadouts ========================
@@ -55,7 +55,7 @@
 //Company HQ
 
     //Kompanieführer
-    case "WHR45Jan_CC" : {
+    case "WHR45_CC" : {
         [Ger_Uni_CC] call FNC_AddItem;
         [Ger_Vest_PC] call FNC_AddItem;
         [Ger_BP_Radio] call FNC_AddItem;
@@ -102,7 +102,7 @@
     };
 
     //Kompanietruppführer
-    case "WHR45Jan_C2" : {
+    case "WHR45_C2" : {
         [Ger_Uni_SL] call FNC_AddItem;
         [Ger_Vest_PC] call FNC_AddItem;
         [Ger_Hat] call FNC_AddItem;
@@ -144,7 +144,7 @@
 //Platoon HQ
 
     //Zugführer
-    case "WHR45Jan_PC" : {
+    case "WHR45_PC" : {
         [Ger_Uni_PC] call FNC_AddItem;
         [Ger_Vest_PC] call FNC_AddItem;
         [Ger_Hat_Officer] call FNC_AddItem;
@@ -189,7 +189,7 @@
     };
 
     //Zugtruppführer
-    case "WHR45Jan_P2" : {
+    case "WHR45_P2" : {
         [Ger_Uni_SL] call FNC_AddItem;
         [Ger_Vest_SL] call FNC_AddItem;
         [Ger_BP_AF] call FNC_AddItem;
@@ -219,7 +219,7 @@
     };
 
     //Funker
-    case "WHR45Jan_RTO" : {
+    case "WHR45_RTO" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
         [Ger_BP_Radio] call FNC_AddItem;
         [Ger_Hat] call FNC_AddItem;
@@ -253,7 +253,7 @@
     };
 
     //Melder
-    case "WHR45Jan_Mess" : {
+    case "WHR45_Mess" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
         [Ger_BP_r] call FNC_AddItemRandom;
         [Ger_Helmet_r] call FNC_AddItemRandom;
@@ -296,7 +296,7 @@
     };
 
     //Krankenträger
-    case "WHR45Jan_MedP" : {
+    case "WHR45_MedP" : {
         [Ger_Uni_Med] call FNC_AddItemRandom;
         [Ger_Vest_Med] call FNC_AddItemRandom;
         [Ger_BP_Med] call FNC_AddItem;
@@ -335,7 +335,7 @@
 //Squad
 
     //Gruppenführer
-    case "WHR45Jan_SL" : {
+    case "WHR45_SL" : {
         [Ger_Uni_SL] call FNC_AddItem;
         [Ger_Vest_SL] call FNC_AddItem;
         [Ger_BP_AF] call FNC_AddItem;
@@ -365,7 +365,7 @@
     };
 
     //Stellvertretender Gruppenführer
-    case "WHR45Jan_S2" : {
+    case "WHR45_S2" : {
         [Ger_Uni_S2_r] call FNC_AddItemRandom;
         [Ger_BP_r] call FNC_AddItemRandom;
         [Ger_Helmet_r] call FNC_AddItemRandom;
@@ -409,7 +409,7 @@
     };
 
     //Gefreiter
-    case "WHR45Jan_S3" : {
+    case "WHR45_S3" : {
         [Ger_Uni_S3_r] call FNC_AddItemRandom;
         [Ger_BP_r] call FNC_AddItemRandom;
         [Ger_Helmet_r] call FNC_AddItemRandom;
@@ -447,7 +447,7 @@
     };
 
     //MG-Richtschütze
-    case "WHR45Jan_MG" : {
+    case "WHR45_MG" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
         [Ger_Vest_MG] call FNC_AddItem;
         [Ger_BP_MG_B] call FNC_AddItem;
@@ -498,7 +498,7 @@
     };
 
     //MG-Hilfsschütze
-    case "WHR45Jan_MGA" : {
+    case "WHR45_MGA" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
         [Ger_Vest_MGA] call FNC_AddItem;
         [Ger_BP_MG_B] call FNC_AddItem;
@@ -534,7 +534,7 @@
     };
 
     //MG-Munitionsträger
-    case "WHR45Jan_MGAB" : {
+    case "WHR45_MGAB" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
         [Ger_BP_MG_B] call FNC_AddItem;
         _unit removeItemFromBackpack "fow_50Rnd_792x57";
@@ -572,7 +572,7 @@
     };
 
     //Grenadier
-    case "WHR45Jan_Gren" : {
+    case "WHR45_Gren" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
         [Ger_Vest_K98] call FNC_AddItem;
         [Ger_BP_r] call FNC_AddItemRandom;
@@ -592,7 +592,7 @@
     };
 
     //Hilfs-Krankenträger
-    case "WHR45Jan_MedS" : {
+    case "WHR45_MedS" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
         [Ger_BP_Med] call FNC_AddItem;
         [Ger_Helmet_r] call FNC_AddItemRandom;
@@ -636,7 +636,7 @@
     };
 
     //Gewehrschütze
-    case "WHR45Jan_Rif" : {
+    case "WHR45_Rif" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
         [Ger_BP_r] call FNC_AddItemRandom;
         [Ger_Helmet_r] call FNC_AddItemRandom;
@@ -1149,7 +1149,7 @@
 //Tank Crew
 
     //Besatzungsführer
-    case "WHR45Jan_VCom" : {
+    case "WHR45_VCom" : {
         [Ger_Uni_VCom] call FNC_AddItem;
         [Ger_Vest_PC] call FNC_AddItem;
         [Ger_BP_VCrew] call FNC_AddItem;
@@ -1195,7 +1195,7 @@
     };
 
     //Besatzung
-    case "WHR45Jan_VCrew" : {
+    case "WHR45_VCrew" : {
         [Ger_Uni_VCrew] call FNC_AddItem;
         [Ger_Vest_VCrew] call FNC_AddItem;
         [Ger_BP_VCrew] call FNC_AddItem;

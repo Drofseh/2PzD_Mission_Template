@@ -57,8 +57,7 @@
 		["LIB_50Rnd_792x57", 20] call FNC_AddItemVehicle;
 		["LIB_32Rnd_9x19", 20] call FNC_AddItemVehicle;
 		["HandGrenade", 10] call FNC_AddItemVehicle;
-		["fow_e_m24K_spli", 10] call FNC_AddItemVehicle;
-		["fow_e_m24K", 10] call FNC_AddItemVehicle;
+		["fow_e_m24K", 20] call FNC_AddItemVehicle;
 		["LIB_1Rnd_G_PZGR_30", 5] call FNC_AddItemVehicle;
 		["LIB_1Rnd_G_PZGR_40", 5] call FNC_AddItemVehicle;
 		["LIB_1Rnd_G_SPRGR_30", 5] call FNC_AddItemVehicle;
@@ -92,8 +91,7 @@
 		["LIB_50Rnd_792x57", 10] call FNC_AddItemVehicle;
 		["LIB_32Rnd_9x19", 10] call FNC_AddItemVehicle;
 		["HandGrenade", 10] call FNC_AddItemVehicle;
-		["fow_e_m24K_spli", 10] call FNC_AddItemVehicle;
-		["fow_e_m24K", 10] call FNC_AddItemVehicle;
+		["fow_e_m24K", 20] call FNC_AddItemVehicle;
 		["LIB_8Rnd_9x19", 10] call FNC_AddItemVehicle;
 		["LIB_8Rnd_9x19_P08", 5] call FNC_AddItemVehicle;
 		["LEN_7Rnd_765x17", 2] call FNC_AddItemVehicle;
@@ -118,8 +116,7 @@
 		["LIB_50Rnd_792x57", 20] call FNC_AddItemVehicle;
 		["LIB_32Rnd_9x19", 5] call FNC_AddItemVehicle;
 		["HandGrenade", 10] call FNC_AddItemVehicle;
-		["fow_e_m24K_spli", 10] call FNC_AddItemVehicle;
-		["fow_e_m24K", 10] call FNC_AddItemVehicle;
+		["fow_e_m24K", 20] call FNC_AddItemVehicle;
 		["LIB_8Rnd_9x19", 15] call FNC_AddItemVehicle;
 		["LIB_8Rnd_9x19_P08", 5] call FNC_AddItemVehicle;
 		["ToolKit", 1] call FNC_AddItemVehicle;
@@ -150,8 +147,7 @@
 		["LIB_50Rnd_792x57", 20] call FNC_AddItemVehicle;
 		["LIB_32Rnd_9x19", 5] call FNC_AddItemVehicle;
 		["HandGrenade", 5] call FNC_AddItemVehicle;
-		["fow_e_m24K_spli", 5] call FNC_AddItemVehicle;
-		["fow_e_m24K", 5] call FNC_AddItemVehicle;
+		["fow_e_m24K", 10] call FNC_AddItemVehicle;
 		["LIB_8Rnd_9x19", 12] call FNC_AddItemVehicle;
 		["LIB_8Rnd_9x19_P08", 5] call FNC_AddItemVehicle;
 		["LEN_7Rnd_765x17", 2] call FNC_AddItemVehicle;
