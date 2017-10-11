@@ -6,7 +6,7 @@
 
 //Primary
 #define Ger_Weap_K98_E			"LIB_K98"
-#define Ger_Weap_K98			"LIB_K98_Late"
+#define Ger_Weap_K98			"fow_w_k98"
 #define Ger_Weap_K98_S			"LIB_K98ZF39"
 #define Ger_Weap_G3340			"LIB_G3340"
 #define Ger_Weap_G43			"LIB_G43"
