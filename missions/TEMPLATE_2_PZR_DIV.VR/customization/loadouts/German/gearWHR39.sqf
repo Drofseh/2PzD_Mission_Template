@@ -53,7 +53,6 @@
     //Kompanieführer
     case "WHR39_CC" : {
         [Ger_Uni_CC] call FNC_AddItem;
-        [Ger_Vest_C2] call FNC_AddItem;
         [Ger_BP_Radio] call FNC_AddItem;
         [Ger_Hat_Officer] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -63,7 +62,17 @@
         Ger_default_equipment;
         Ger_leader_equipment;
 
-        //Primary Weapon
+        [//Primary Weapon
+        [//Nothing but a vest!
+        [Ger_Vest_C2]
+        ],[80],
+        [//MP38
+        [Ger_Vest_PC],
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[20]
+        ] call FNC_AddItemRandomPercent;
 
         [//Secondary Weapon
         [//P08
@@ -87,7 +96,6 @@
     //Kompanietruppführer
     case "WHR39_C2" : {
         [Ger_Uni_SL] call FNC_AddItem;
-        [Ger_Vest_CC] call FNC_AddItem;
         [Ger_Hat] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
@@ -95,10 +103,20 @@
         Ger_default_equipment;
         Ger_leader_equipment;
 
-        //Primary Weapon
-        [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
-        [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
+        [//Primary Weapon
+        [//K98k
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[80],
+        [//MP38
+        [Ger_Vest_SL],
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[20]
+        ] call FNC_AddItemRandomPercent;
 
         [//Secondary Weapon
         [//P08
@@ -127,7 +145,17 @@
         Ger_default_equipment;
         Ger_leader_equipment;
 
-        //Primary Weapon
+        [//Primary Weapon
+        [//Nothing but a vest!
+        [Ger_Vest_C2]
+        ],[80],
+        [//MP38
+        [Ger_Vest_PC],
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[20]
+        ] call FNC_AddItemRandomPercent;
 
         [//Secondary Weapon
         [//P08
@@ -151,7 +179,6 @@
     //Zugtruppführer
     case "WHR39_P2" : {
         [Ger_Uni_SL] call FNC_AddItem;
-        [Ger_Vest_K98] call FNC_AddItem;
         [Ger_BP_AF] call FNC_AddItem;
         [Ger_Hat] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -160,10 +187,20 @@
         Ger_default_equipment;
         Ger_leader_equipment;
 
-        //Primary Weapon
-        [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
-        [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
+        [//Primary Weapon
+        [//K98k
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[80],
+        [//MP38
+        [Ger_Vest_SL],
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[20]
+        ] call FNC_AddItemRandomPercent;
 
         //Extra
         [Ger_Gren_Frag_SC,1] call FNC_AddItem;
@@ -186,7 +223,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
     };
 
@@ -203,7 +240,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
 
         //Extra
@@ -224,7 +261,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
 
         //Extra
@@ -237,7 +274,6 @@
     //Gruppenführer
     case "WHR39_SL" : {
         [Ger_Uni_SL] call FNC_AddItem;
-        [Ger_Vest_K98] call FNC_AddItem;
         [Ger_BP_AF] call FNC_AddItem;
         [Ger_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -246,10 +282,20 @@
         Ger_default_equipment;
         Ger_leader_equipment;
 
-        //Primary Weapon
-        [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
-        [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
+        [//Primary Weapon
+        [//K98k
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[80],
+        [//MP38
+        [Ger_Vest_SL],
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[20]
+        ] call FNC_AddItemRandomPercent;
 
         //Extra
         [Ger_Gren_Frag_SC,1] call FNC_AddItem;
@@ -270,7 +316,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
 
         //Extra
@@ -282,7 +328,6 @@
     //Gefreiter
     case "WHR39_S3" : {
         [Ger_Uni_S3_r] call FNC_AddItemRandom;
-        [Ger_Vest_K98] call FNC_AddItem;
         [Ger_BP_r] call FNC_AddItemRandom;
         [Ger_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -290,10 +335,20 @@
         //Assigned Items
         Ger_default_equipment;
 
-        //Primary Weapon
-        [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
-        [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
+        [//Primary Weapon
+        [//K98k
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[80],
+        [//MP38
+        [Ger_Vest_MP40],
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,6,"vest"]
+        ],[20]
+        ] call FNC_AddItemRandomPercent;
 
         //Extra
         [Ger_Gren_Frag_SC,1] call FNC_AddItem;
@@ -351,7 +406,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
 
         //Extra
@@ -372,7 +427,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
 
         //Extra
@@ -392,7 +447,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Weap_K98_RG] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
         [Ger_Mag_RGrn_HE,4] call FNC_AddItem;
@@ -413,7 +468,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
 
         //Extra
@@ -434,7 +489,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
 
         //Extra
@@ -528,7 +583,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
 
         //Extra
@@ -551,7 +606,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12] call FNC_AddItem;
 
         //Launcher
@@ -609,7 +664,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
 
         //Extra
@@ -632,7 +687,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12] call FNC_AddItem;
 
         //Extra
@@ -685,7 +740,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
+        [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
 
         //Extra
@@ -698,7 +753,6 @@
     //Besatzungsführer
     case "WHR39_VCom" : {
         [Ger_Uni_VCom] call FNC_AddItem;
-        [Ger_Vest_VCrew] call FNC_AddItem;
         [Ger_BP_VCrew] call FNC_AddItem;
         [Ger_Hat_VCom] call FNC_AddItemRandom;
         [Ger_Face_Tank_r] call FNC_AddItemRandom;
@@ -707,7 +761,17 @@
         Ger_default_equipment;
         Ger_leader_equipment;
 
-        //Primary Weapon
+        [//Primary Weapon
+        [//Nothing but a vest!
+        [Ger_Vest_VCrew]
+        ],[80],
+        [//MP38
+        [Ger_Vest_PC],
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[20]
+        ] call FNC_AddItemRandomPercent;
 
         [//Secondary Weapon
         [//P08

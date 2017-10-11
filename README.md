@@ -1,7 +1,16 @@
 ## 2. Panzer Division Mission Template
-
+<p align="left">
+    <a href="https://github.com/Drofseh/2PzD_Mission_Template/releases/latest">
+        <img src="https://img.shields.io/badge/Version-2.8.0-blue.svg" alt="2PzD Mission Template Version">
+    </a>
+    <a href="http://forums.unitedoperations.net/index.php/topic/27450-olsen-framework-infodiscussion-thread/">
+        <img src="https://img.shields.io/badge/2PzD-Website-yellow.svg" alt="2PzD Website">
+    </a>
+</p>
 <p align="center">
+    <a href="https://2pzd.net/">
     <img src="https://c2.staticflickr.com/6/5524/30201576222_3b9546362d_o.png" width="480">
+    </a>
 </p>
 
 #### A customized version of the [Olsen Framework](https://github.com/dklollol/Olsen-Framework-Arma-3) for use by [2. Panzer Division ARMA Community](https://2pzd.net/) mission makers as a mission template. 
@@ -9,6 +18,9 @@
 #### Required dependencies:
 * ARMA 3
 * 2.Pzd Modset
+
+#### Releases
+Releases can be found [here](https://github.com/Drofseh/2PzD_Mission_Template/releases)
 
 #### Usage Guide:
 * Extract the composition and mission folders to your ARMA 3 profile folder.

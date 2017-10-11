@@ -5928,7 +5928,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={378.79193,6.2249522,255.89703};
+				position[]={378.79193,6.2249522,255.89702};
 			};
 			side="Empty";
 			flags=4;

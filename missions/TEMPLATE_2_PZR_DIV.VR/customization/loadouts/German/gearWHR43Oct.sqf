@@ -67,10 +67,18 @@
         Ger_default_equipment;
         Ger_leader_equipment;
 
-        //Primary Weapon
-        [Ger_Mag_MP40,1] call FNC_AddItem;
-        [Ger_Weap_MP40] call FNC_AddItem;
-        [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
+        [//Primary Weapon
+        [//MP40
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP40],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[99],
+        [//MP38
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[1]
+        ] call FNC_AddItemRandomPercent;
 
         [//Secondary Weapon
         [//P38
@@ -112,10 +120,18 @@
         Ger_default_equipment;
         Ger_leader_equipment;
 
-        //Primary Weapon
-        [Ger_Mag_MP40,1] call FNC_AddItem;
-        [Ger_Weap_MP40] call FNC_AddItem;
-        [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
+        [//Primary Weapon
+        [//MP40
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP40],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[99],
+        [//MP38
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[1]
+        ] call FNC_AddItemRandomPercent;
 
         [//Secondary Weapon
         [//P38
@@ -154,10 +170,18 @@
         Ger_default_equipment;
         Ger_leader_equipment;
 
-        //Primary Weapon
-        [Ger_Mag_MP40,1] call FNC_AddItem;
-        [Ger_Weap_MP40] call FNC_AddItem;
-        [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
+        [//Primary Weapon
+        [//MP40
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP40],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[99],
+        [//MP38
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[1]
+        ] call FNC_AddItemRandomPercent;
 
         [//Secondary Weapon
         [//P38
@@ -200,10 +224,18 @@
         Ger_default_equipment;
         Ger_leader_equipment;
 
-        //Primary Weapon
-        [Ger_Mag_MP40,1] call FNC_AddItem;
-        [Ger_Weap_MP40] call FNC_AddItem;
-        [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
+        [//Primary Weapon
+        [//MP40
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP40],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[99],
+        [//MP38
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[1]
+        ] call FNC_AddItemRandomPercent;
 
         //Extra
         [
@@ -236,7 +268,7 @@
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
         [Ger_Mag_K98,12,"vest"]
-        ],[85],
+        ],[84],
         [//G43
         [Ger_Vest_G43],
         [Ger_Mag_G43,1],
@@ -248,7 +280,13 @@
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[5]
+        ],[5],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
     };
 
@@ -268,7 +306,7 @@
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
         [Ger_Mag_K98,12,"vest"]
-        ],[85],
+        ],[84],
         [//G43
         [Ger_Vest_G43],
         [Ger_Mag_G43,1],
@@ -280,7 +318,13 @@
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[5]
+        ],[5],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -312,7 +356,7 @@
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
         [Ger_Mag_K98,12,"vest"]
-        ],[85],
+        ],[84],
         [//G43
         [Ger_Vest_G43],
         [Ger_Mag_G43,1],
@@ -324,7 +368,13 @@
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[5]
+        ],[5],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -346,10 +396,18 @@
         Ger_default_equipment;
         Ger_leader_equipment;
 
-        //Primary Weapon
-        [Ger_Mag_MP40,1] call FNC_AddItem;
-        [Ger_Weap_MP40] call FNC_AddItem;
-        [Ger_Mag_MP40,6,"vest"] call FNC_AddItem;
+        [//Primary Weapon
+        [//MP40
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP40],
+        [Ger_Mag_MP40,6,"vest"]
+        ],[99],
+        [//MP38
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,6,"vest"]
+        ],[1]
+        ] call FNC_AddItemRandomPercent;
 
         //Extra
         [
@@ -380,7 +438,7 @@
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
         [Ger_Mag_K98,12,"vest"]
-        ],[85],
+        ],[84],
         [//G43
         [Ger_Vest_G43],
         [Ger_Mag_G43,1],
@@ -392,7 +450,13 @@
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[5]
+        ],[5],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -424,13 +488,19 @@
         [Ger_Mag_MP40,1],
         [Ger_Weap_MP40],
         [Ger_Mag_MP40,6,"vest"]
-        ],[90],
+        ],[89],
         [//StG44
         [Ger_Vest_StG44],
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[10]
+        ],[10],
+        [//MP38
+        [Ger_Vest_MP40],
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,6,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -513,20 +583,29 @@
 
         [//Primary Weapon
         [//K98k
+        [Ger_Vest_K98],
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
         [Ger_Mag_K98,12,"vest"]
-        ],[85],
+        ],[84],
         [//G43
+        [Ger_Vest_G43],
         [Ger_Mag_G43,1],
         [Ger_Weap_G43],
         [Ger_Mag_G43,6,"vest"]
         ],[10],
         [//StG44
+        [Ger_Vest_StG44],
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[5]
+        ],[5],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -549,22 +628,26 @@
         [Ger_Vest_K98],
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"],
-        [Ger_Mag_MG_50,2]
-        ],[85],
+        [Ger_Mag_K98,12,"vest"]
+        ],[84],
         [//G43
         [Ger_Vest_G43],
         [Ger_Mag_G43,1],
         [Ger_Weap_G43],
-        [Ger_Mag_G43,6,"vest"],
-        [Ger_Mag_MG_50,1]
+        [Ger_Mag_G43,6,"vest"]
         ],[10],
         [//StG44
         [Ger_Vest_StG44],
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[5]
+        ],[5],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -609,7 +692,7 @@
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
         [Ger_Mag_K98,12,"vest"]
-        ],[85],
+        ],[84],
         [//G43
         [Ger_Vest_G43],
         [Ger_Mag_G43,1],
@@ -621,7 +704,13 @@
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[5]
+        ],[5],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -652,7 +741,7 @@
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
         [Ger_Mag_K98,12,"vest"]
-        ],[85],
+        ],[84],
         [//G43
         [Ger_Vest_G43],
         [Ger_Mag_G43,1],
@@ -664,7 +753,13 @@
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[5]
+        ],[5],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
 
         //Launcher
@@ -791,7 +886,7 @@
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
         [Ger_Mag_K98,12,"vest"]
-        ],[85],
+        ],[84],
         [//G43
         [Ger_Vest_G43],
         [Ger_Mag_G43,1],
@@ -803,7 +898,13 @@
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[5]
+        ],[5],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -824,10 +925,18 @@
         Ger_leader_equipment;
         [GEN_ace_sparebarrel] call FNC_AddItem;
 
-        //Primary Weapon
-        [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
-        [Ger_Mag_K98,12] call FNC_AddItem;
+        [//Primary Weapon
+        [//K98k
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98],
+        [Ger_Mag_K98,12,"vest"]
+        ],[99],
+        [//K98k Pre-War
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
+        ] call FNC_AddItemRandomPercent;
 
         //Launcher
         [Ger_Weap_MG_T,1] call FNC_AddItem;
@@ -904,7 +1013,7 @@
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
         [Ger_Mag_K98,12,"vest"]
-        ],[85],
+        ],[84],
         [//G43
         [Ger_Vest_G43],
         [Ger_Mag_G43,1],
@@ -916,7 +1025,13 @@
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[5]
+        ],[5],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -942,7 +1057,7 @@
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
         [Ger_Mag_K98,12,"vest"]
-        ],[85],
+        ],[84],
         [//G43
         [Ger_Vest_G43],
         [Ger_Mag_G43,1],
@@ -954,7 +1069,13 @@
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[5]
+        ],[5],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -1020,7 +1141,7 @@
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
         [Ger_Mag_K98,12,"vest"]
-        ],[85],
+        ],[84],
         [//G43
         [Ger_Vest_G43],
         [Ger_Mag_G43,1],
@@ -1032,7 +1153,13 @@
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[5]
+        ],[5],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -1128,7 +1255,7 @@
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
         [Ger_Mag_K98,12,"vest"]
-        ],[85],
+        ],[84],
         [//G43
         [Ger_Vest_G43],
         [Ger_Mag_G43,1],
@@ -1140,7 +1267,13 @@
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
-        ],[5]
+        ],[5],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -1161,10 +1294,18 @@
         Ger_default_equipment;
         Ger_leader_equipment;
 
-        //Primary Weapon
-        [Ger_Mag_MP40,1] call FNC_AddItem;
-        [Ger_Weap_MP40] call FNC_AddItem;
-        [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
+        [//Primary Weapon
+        [//MP40
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP40],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[99],
+        [//MP38
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[1]
+        ] call FNC_AddItemRandomPercent;
 
         [//Secondary Weapon
         [//P38
