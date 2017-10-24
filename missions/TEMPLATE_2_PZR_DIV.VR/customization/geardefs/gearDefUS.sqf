@@ -153,7 +153,7 @@
 #define US_BP_M1928				"B_LIB_US_Backpack"
 #define US_BP_M36				"B_LIB_US_M36"
 #define US_BP_M36R				"B_LIB_US_M36_Rope"
-#define US_BP_AT				"B_LIB_US_RocketBag_Big_Empty"
+#define US_BP_AT				"fow_b_us_rocket_bag"
 #define US_BP_Med				"B_LIB_US_MedicBackpack_Big_Empty"
 #define US_BP_MG				"B_LIB_US_MGbag_Big_Empty"
 #define US_BP_Radio				"fow_b_US_Radio"

@@ -16,7 +16,7 @@ eastCasualty = "Red Army" call FNC_CasualtyPercentage; //Gets the casualty perce
 //Some basic casualty based end conditions, you can make your own based on basically whatever ARMA will support.
 //They aren't limited to one per side or anything like that, so make as many as you need
 //Just make sure you test to make sure they all work!
-
+/*
 if (eastCasualty >= 75) exitWith { //ends when Opfor deaths above or equal to 75%
 	"Red Army forces have taken too many casualties to continue operations.
 	<br/>
@@ -28,7 +28,7 @@ if (westCasualty >= 75) exitWith { //ends when Bluefor deaths above or equal to 
 	<br/>
 	<br/>OPFOR VICTORY" call FNC_EndMission;
 };
-
+*/
 //Time limit message/time are in settings.sqf
 
 sleep (10); //This determines how frequently the end conditions should be checked in seconds

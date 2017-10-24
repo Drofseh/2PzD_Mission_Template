@@ -836,7 +836,6 @@
 		
 		//Assigned Items
 		US_default_equipment;
-		US_leader_equipment;
 		[US_Weap_MortB] call FNC_AddItem;
 		
 		//Secondary Weapon
@@ -847,6 +846,7 @@
 		//Extra
 		[US_Mag_Mort_HE,8] call FNC_AddItem;
 		[GEN_ace_rangetable,1] call FNC_AddItem;
+		[GEN_ace_maptools,1] call FNC_AddItem;
 	};
 
 	//Mortar Assistant
@@ -859,7 +859,6 @@
 		
 		//Assigned Items
 		US_default_equipment;
-		US_leader_equipment;
 		[US_Weap_MortT] call FNC_AddItem;
 		
 		//Secondary Weapon
@@ -870,6 +869,7 @@
 		//Extra
 		[US_Mag_Mort_HE,8] call FNC_AddItem;
 		[GEN_ace_rangetable,1] call FNC_AddItem;
+		[GEN_ace_maptools,1] call FNC_AddItem;
 	};
 
 	//Mortar Ammo Bearer

@@ -1187,7 +1187,7 @@
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
 		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
 		[US_Mag_Mort_HE,4] call FNC_AddItem;
-		[GEN_ace_maptools,1] call FNC_AddItem;
+		[GEN_ace_rangetable,1] call FNC_AddItem;
 	};
 
 	//Mortar Gunner
@@ -1210,6 +1210,7 @@
 		
 		//Extra
 		[US_Mag_Mort_HE,8] call FNC_AddItem;
+		[GEN_ace_rangetable,1] call FNC_AddItem;
 		[GEN_ace_maptools,1] call FNC_AddItem;
 	};
 
@@ -1233,6 +1234,7 @@
 		
 		//Extra
 		[US_Mag_Mort_HE,8] call FNC_AddItem;
+		[GEN_ace_rangetable,1] call FNC_AddItem;
 		[GEN_ace_maptools,1] call FNC_AddItem;
 	};
 
