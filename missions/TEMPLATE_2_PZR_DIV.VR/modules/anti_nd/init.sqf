@@ -33,7 +33,7 @@ if (!isDedicated) then {
 
 			if ((FW_SpawnPos distance player) <= ANTI_ND_DIST || missionNamespace getVariable ["FW_ND_Active", false]) then {
 				deleteVehicle _p;
-				hintC "You are firing at base without approval. Cease your actions Immediately!";
+				hintC "You are firing without approval. Cease your actions Immediately!";
 			};
 		}];
 

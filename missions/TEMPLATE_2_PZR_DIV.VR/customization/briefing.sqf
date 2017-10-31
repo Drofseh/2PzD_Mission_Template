@@ -246,12 +246,12 @@ NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
 <br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me //'
 <br/>
 <br/>Smoke:
-<br/>Green - Advance
+<br/>Green - Go signal
+<br/>Red - Stop/halt signal
+<br/>Purple - Request support
+<br/>Orange - Need a medic
+<br/>Blue - Friendly position
 <br/>Yellow - Regroup on that position
-<br/>Red - Halt!
-<br/>Blue - Retreat
-<br/>Purple - Artillery Marker
-<br/>Orange - Concentrate Fire Here
 <br/>White - Used for concealment only
 //<br/>
 //<br/><font color='#70db70'>4. Codewords:</font>
@@ -502,12 +502,12 @@ NEWTAB("VI. Командная и сигнальная (Command & Signal):")
 <br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me //'
 <br/>
 <br/>Smoke:
-<br/>Green - Advance
+<br/>Green - Go signal
+<br/>Red - Stop/halt signal
+<br/>Purple - Request support
+<br/>Orange - Need a medic
+<br/>Blue - Friendly position
 <br/>Yellow - Regroup on that position
-<br/>Red - Halt!
-<br/>Blue - Retreat
-<br/>Purple - Artillery Marker
-<br/>Orange - Concentrate Fire Here
 <br/>White - Used for concealment only
 //<br/>
 //<br/><font color='#70db70'>4. Codewords:</font>
@@ -758,12 +758,12 @@ NEWTAB("VI. Command & Signal:")
 <br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me //'
 <br/>
 <br/>Smoke:
-<br/>Green - Advance
+<br/>Green - Go signal
+<br/>Red - Stop/halt signal
+<br/>Purple - Request support
+<br/>Orange - Need a medic
+<br/>Blue - Friendly position
 <br/>Yellow - Regroup on that position
-<br/>Red - Halt!
-<br/>Blue - Retreat
-<br/>Purple - Artillery Marker
-<br/>Orange - Concentrate Fire Here
 <br/>White - Used for concealment only
 //<br/>
 //<br/><font color='#70db70'>4. Codewords:</font>

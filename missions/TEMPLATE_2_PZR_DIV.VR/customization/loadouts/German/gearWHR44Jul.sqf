@@ -352,25 +352,21 @@
 
         [//Primary Weapon
         [//K98k
-        [Ger_Vest_K98],
         [Ger_Mag_K98,1],
         [Ger_Weap_K98],
         [Ger_Mag_K98,12,"vest"]
         ],[64],
         [//G43
-        [Ger_Vest_G43],
         [Ger_Mag_G43,1],
         [Ger_Weap_G43],
         [Ger_Mag_G43,6,"vest"]
         ],[20],
         [//StG44
-        [Ger_Vest_StG44],
         [Ger_Mag_StG44,1],
         [Ger_Weap_StG44],
         [Ger_Mag_StG44,6,"vest"]
         ],[15],
         [//K98k Pre-War
-        [Ger_Vest_K98],
         [Ger_Mag_K98,1],
         [Ger_Weap_K98_E],
         [Ger_Mag_K98,12,"vest"]

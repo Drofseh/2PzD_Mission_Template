@@ -9,7 +9,7 @@ if (isServer) then { //This scope is only for the server
     // The names in endConditions.sqf used in the casualty calls MUST match these names.
     [west, "2 Panzer Division", "player"] call FNC_AddTeam; //Adds a player team called USA on side west
     [east, "Red Army", "ai"] call FNC_AddTeam; //Adds a ai team called MSV on side east
-    //[resistance, "PUT_TEAM_NAME_HERE, British, US Army, Whatever", "ai"] call FNC_AddTeam; //Adds an ai team called PUT_TEAM_NAME_HERE on side resistance (aka independent)
+    //[resistance, "PUT_TEAM_NAME_HERE", "ai"] call FNC_AddTeam; //Adds an ai team called PUT_TEAM_NAME_HERE on side resistance (aka independent)
     //[civilian, "Civilians", "ai"] call FNC_AddTeam; // civilians
     
     publicVariable "callMissionRemote";

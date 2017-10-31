@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={447.4837,186.58569,-97.046402};
-		dir[]={-0.012007028,-0.38254651,0.92386466};
-		up[]={-0.004971425,0.92393452,0.3825185};
-		aside[]={0.99992251,1.2382225e-007,0.012996214};
+		pos[]={848.62537,30,183.70898};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -57,9 +57,9 @@ addons[]=
 	"WW2_Assets_c_Vehicles_Extended_HUD_c",
 	"WW2_Assets_c_Vehicles_Wheeled_c_Scout_M3",
 	"WW2_Assets_c_Vehicles_StaticWeapons_c_61k",
-	"WW2_Core_c_WW2_Core_c_Eventhandlers",
-	"WW2_Assets_c_Vehicles_StaticWeapons_c",
 	"IFA3_COMP_ACE_main",
+	"WW2_Assets_c_Vehicles_StaticWeapons_c",
+	"WW2_Core_c_WW2_Core_c_Eventhandlers",
 	"IFA3_COMP_ACE_mortar",
 	"WW2_Assets_c_Vehicles_Tanks_c_M4_Sherman",
 	"WW2_Assets_c_Vehicles_Tanks_c_M3_Stuart",
@@ -252,8 +252,10 @@ class AddonsMetaData
 		};
 		class Item32
 		{
-			className="WW2_Core_c_WW2_Core_c_Eventhandlers";
-			name="WW2_Core_c_WW2_Core_c_Eventhandlers";
+			className="IFA3_COMP_ACE_main";
+			name="IFA3_COMP_ACE_main";
+			author="IFA3 team";
+			url="https://github.com/bux578/IFA3_ACE_COMPAT";
 		};
 		class Item33
 		{
@@ -262,10 +264,8 @@ class AddonsMetaData
 		};
 		class Item34
 		{
-			className="IFA3_COMP_ACE_main";
-			name="IFA3_COMP_ACE_main";
-			author="IFA3 team";
-			url="https://github.com/bux578/IFA3_ACE_COMPAT";
+			className="WW2_Core_c_WW2_Core_c_Eventhandlers";
+			name="WW2_Core_c_WW2_Core_c_Eventhandlers";
 		};
 		class Item35
 		{
@@ -1867,6 +1867,7 @@ class Mission
 			};
 			id=9635;
 			type="LIB_T34_85";
+			atlOffset=-0.0056419373;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3961,7 +3962,7 @@ class Mission
 				init="call{this removeMagazinesTurret [""lib_250rnd_7_62x54R_maxim"",[0]]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250]; " \n "this addMagazineTurret [""lib_250rnd_7_62x54R_maxim"",[0],250];}";
 			};
 			id=9662;
-			type="LIB_Maxim_M30_base";
+			type="lib_maxim_m30_base";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5495,7 +5496,7 @@ class Mission
 				aiRadarUsage=-1;
 			};
 			id=9707;
-			type="LIB_opelblitz_ambulance";
+			type="LIB_OpelBlitz_Ambulance";
 		};
 		class Item80
 		{
@@ -5573,7 +5574,7 @@ class Mission
 				aiRadarUsage=1066259957;
 			};
 			id=9712;
-			type="LIB_opelblitz_tent_y_camo";
+			type="LIB_OpelBlitz_Tent_Y_Camo";
 		};
 		class Item85
 		{
@@ -5717,6 +5718,7 @@ class Mission
 			};
 			id=9718;
 			type="LIB_GazM1_SOV";
+			atlOffset=-0.074999809;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5905,7 +5907,7 @@ class Mission
 			{
 			};
 			id=9728;
-			type="LIB_Zis5v_Fuel";
+			type="LIB_zis5v_fuel";
 		};
 		class Item96
 		{
@@ -5921,14 +5923,14 @@ class Mission
 				aiRadarUsage=-1082130432;
 			};
 			id=9729;
-			type="LIB_Zis6_Parm";
+			type="LIB_zis6_parm";
 		};
 		class Item97
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={378.79193,6.2249522,255.89702};
+				position[]={378.79193,6.2249522,255.89703};
 			};
 			side="Empty";
 			flags=4;
