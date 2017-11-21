@@ -105,13 +105,13 @@
 
         [//Primary Weapon
         [//K98k
-        [Ger_Vest_K98],
+        [Ger_Vest_K98IFA],
         [Ger_Mag_K98,1],
         [Ger_Weap_K98_E],
         [Ger_Mag_K98,12,"vest"]
         ],[80],
         [//MP38
-        [Ger_Vest_SL],
+        [Ger_Vest_PC],
         [Ger_Mag_MP40,1],
         [Ger_Weap_MP38],
         [Ger_Mag_MP40,3,"vest"]
@@ -189,13 +189,13 @@
 
         [//Primary Weapon
         [//K98k
-        [Ger_Vest_K98],
+        [Ger_Vest_K98IFA],
         [Ger_Mag_K98,1],
         [Ger_Weap_K98_E],
         [Ger_Mag_K98,12,"vest"]
         ],[80],
         [//MP38
-        [Ger_Vest_SL],
+        [Ger_Vest_PC],
         [Ger_Mag_MP40,1],
         [Ger_Weap_MP38],
         [Ger_Mag_MP40,3,"vest"]
@@ -284,7 +284,7 @@
 
         [//Primary Weapon
         [//K98k
-        [Ger_Vest_K98],
+        [Ger_Vest_K98IFA],
         [Ger_Mag_K98,1],
         [Ger_Weap_K98_E],
         [Ger_Mag_K98,12,"vest"]

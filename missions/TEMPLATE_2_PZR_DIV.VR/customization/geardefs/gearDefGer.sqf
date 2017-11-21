@@ -158,7 +158,8 @@
 #define Ger_BP_Pzr				"B_LIB_GER_Panzer_Empty"
 #define Ger_BP_Radio			"B_LIB_GER_Radio"
 #define Ger_BP_VCrew			"B_LIB_GER_SapperBackpack_empty"
-#define Ger_BP_Med				"B_LIB_GER_MedicBackpack_Big_Empty"
+#define Ger_BP_Med				"fow_b_tornister_medic"
+                                //change back to B_LIB_GER_MedicBackpack_Big_Empty if it gets a new model
 
 //Headgear
 #define Ger_Hat_Officer			"fow_h_ger_officer_cap"

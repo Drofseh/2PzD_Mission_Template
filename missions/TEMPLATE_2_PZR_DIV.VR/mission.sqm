@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={848.62537,30,183.70898};
+		pos[]={421.53769,30,323.57275};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
 		aside[]={0.99999994,0,-0};
@@ -5930,7 +5930,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={378.79193,6.2249522,255.89703};
+				position[]={378.79193,6.2249522,255.89702};
 			};
 			side="Empty";
 			flags=4;
