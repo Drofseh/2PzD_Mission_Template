@@ -32,7 +32,7 @@ if (!_result) then {
         private _msg = "Framework has detected an invalid classname - " + str _class + "! Mission will continue but some parts of gear will be missing.";
         if (!isNil "FW_missing_gear_found") then {
             if !(_class in FW_missing_gear_found) then {
-                //systemChat _msg;
+                systemChat _msg;
                 diag_log _msg;
                 FW_missing_gear_found pushBackUnique _class;
             };
