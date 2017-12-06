@@ -75,7 +75,7 @@
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
 	//Sergeant
@@ -121,7 +121,7 @@
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,2] call FNC_AddItem;
+		[UK_Gren_Smoke_W,2] call FNC_AddItem;
 		[US_Mag_Mort_HE,5,"backpack"] call FNC_AddItem;
 	};
 
@@ -137,21 +137,26 @@
 		UK_default_equipment;
 		
 		[//Primary Weapon
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[65],
 		[//Lee Enfield No1
 		[UK_Mag_LeeEn,1],
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
-		],[35]
+		],[35],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[33],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[32]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
 		UK_medic_equipment;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
 	//Signaller
@@ -168,21 +173,26 @@
 		_unit assignItem UK_Radio;
 		
 		[//Primary Weapon
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[65],
 		[//Lee Enfield No1
 		[UK_Mag_LeeEn,1],
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
-		],[35]
+		],[35],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[33],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[32]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
 	//Light Mortar Gunner
@@ -275,7 +285,7 @@
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,2] call FNC_AddItem;
+		[UK_Gren_Smoke_W,2] call FNC_AddItem;
 		[UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
 	};
 
@@ -321,7 +331,7 @@
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,2] call FNC_AddItem;
+		[UK_Gren_Smoke_W,2] call FNC_AddItem;
 		[UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
 	};
 
@@ -360,16 +370,21 @@
 		[GEN_BinoR] call FNC_AddItem;
 		
 		[//Primary Weapon
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[65],
 		[//Lee Enfield No1
 		[UK_Mag_LeeEn,1],
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
-		],[35]
+		],[35],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[33],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[32]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -390,16 +405,21 @@
 		UK_default_equipment;
 		
 		[//Primary Weapon
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[65],
 		[//Lee Enfield No1
 		[UK_Mag_LeeEn,1],
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
-		],[35]
+		],[35],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[33],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[32]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -419,16 +439,21 @@
 		UK_default_equipment;
 		
 		[//Primary Weapon
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[65],
 		[//Lee Enfield No1
 		[UK_Mag_LeeEn,1],
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
-		],[35]
+		],[35],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[33],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[32]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -451,21 +476,26 @@
 		UK_leader_equipment;
 		
 		[//Primary Weapon
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[65],
 		[//Lee Enfield No1
 		[UK_Mag_LeeEn,1],
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
-		],[35]
+		],[35],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[33],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[32]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
 	//Machine Gunner
@@ -517,16 +547,21 @@
 		UK_default_equipment;
 		
 		[//Primary Weapon
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[65],
 		[//Lee Enfield No1
 		[UK_Mag_LeeEn,1],
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
-		],[35]
+		],[35],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[33],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[32]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -547,21 +582,26 @@
 		UK_leader_equipment;
 		
 		[//Primary Weapon
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[65],
 		[//Lee Enfield No1
 		[UK_Mag_LeeEn,1],
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
-		],[35]
+		],[35],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[33],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[32]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 		[Rus_Mag_Mort_HE,5,"backpack"] call FNC_AddItem;
 	};
 
@@ -623,16 +663,21 @@
 		UK_default_equipment;
 		
 		[//Primary Weapon
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[65],
 		[//Lee Enfield No1
 		[UK_Mag_LeeEn,1],
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
-		],[35]
+		],[35],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[33],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[32]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -654,22 +699,27 @@
 		UK_leader_equipment;
 		
 		[//Primary Weapon
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[65],
 		[//Lee Enfield No1
 		[UK_Mag_LeeEn,1],
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
-		],[35]
+		],[35],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[33],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[32]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
 		[UK_Mag_Boys,20,"backpack"] call FNC_AddItem;
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
 	//Boys Rifle Gunner
@@ -706,16 +756,21 @@
 		UK_default_equipment;
 		
 		[//Primary Weapon
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[65],
 		[//Lee Enfield No1
 		[UK_Mag_LeeEn,1],
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
-		],[35]
+		],[35],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[33],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[32]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -738,22 +793,27 @@
 		UK_leader_equipment;
 		
 		[//Primary Weapon
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[65],
 		[//Lee Enfield No1
 		[UK_Mag_LeeEn,1],
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
-		],[35]
+		],[35],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[33],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[32]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
 		[UK_Mag_Piat_HEAT,3,"backpack"] call FNC_AddItem;
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
 	//PIAT Gunner
@@ -789,16 +849,21 @@
 		UK_default_equipment;
 		
 		[//Primary Weapon
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[65],
 		[//Lee Enfield No1
 		[UK_Mag_LeeEn,1],
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
-		],[35]
+		],[35],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[33],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[32]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -856,7 +921,7 @@
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,2] call FNC_AddItem;
+		[UK_Gren_Smoke_W,2] call FNC_AddItem;
 	};
 
 	//Tank Crew

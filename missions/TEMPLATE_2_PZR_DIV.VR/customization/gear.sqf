@@ -243,5 +243,7 @@ switch (_type) do {
 
     //Air Force
 //#include "loadouts\US\gearUSAF39.sqf"
+//#include "loadouts\US\gearUSAF41Nov.sqf"
+//#include "loadouts\US\gearUSAF42Oct.sqf"
 
 };

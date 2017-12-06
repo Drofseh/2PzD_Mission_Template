@@ -292,7 +292,7 @@
         [Ger_Gren_Frag_SF,1]
         ],[34]
         ] call FNC_AddItemRandomPercent;
-        [GEN_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
     };
 
@@ -378,13 +378,13 @@
         [Ger_Gren_Frag_SF,1]
         ],[34]
         ] call FNC_AddItemRandomPercent;
-        [GEN_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Krankenträger
     case "WHREF43Mar_MedP" : {
-        [Ger_Uni_Med] call FNC_AddItemRandom;
-        [Ger_Vest_Med] call FNC_AddItemRandom;
+        [Ger_Uni_Med] call FNC_AddItem;
+        [Ger_Vest_Med] call FNC_AddItem;
         [Ger_BP_Med] call FNC_AddItem;
         [Ger_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -417,7 +417,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [GEN_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
         Ger_medicP_equipment;
     };
 
@@ -463,7 +463,7 @@
         ],[34]
         ] call FNC_AddItemRandomPercent;
         [Ger_Mag_MG_50,1] call FNC_AddItem;
-        [GEN_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Stellvertretender Gruppenführer
@@ -511,7 +511,7 @@
         ],[34]
         ] call FNC_AddItemRandomPercent;
         [Ger_Mag_MG_50,1] call FNC_AddItem;
-        [GEN_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Gefreiter
@@ -553,15 +553,15 @@
         ],[34]
         ] call FNC_AddItemRandomPercent;
         [Ger_Mag_MG_50,1] call FNC_AddItem;
-        [GEN_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //MG-Richtschütze
     case "WHREF43Mar_MG" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
         [Ger_Vest_MG] call FNC_AddItem;
-        [Ger_BP_MG_B] call FNC_AddItem;
-        _unit removeItemFromBackpack "fow_50Rnd_792x57";
+        [Ger_BP_MG_D] call FNC_AddItem;
+        [Ger_mg_neck] call FNC_AddItem;
         [Ger_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
@@ -621,8 +621,8 @@
     case "WHREF43Mar_MGA" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
         [Ger_Vest_MGA] call FNC_AddItem;
-        [Ger_BP_MG_B] call FNC_AddItem;
-        _unit removeItemFromBackpack "fow_50Rnd_792x57";
+        [Ger_BP_MG_D] call FNC_AddItem;
+        [Ger_mg_neck] call FNC_AddItem;
         [Ger_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
@@ -663,8 +663,8 @@
     case "WHREF43Mar_MGAB" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
         [Ger_Vest_K98] call FNC_AddItem;
-        [Ger_BP_MG_B] call FNC_AddItem;
-        _unit removeItemFromBackpack "fow_50Rnd_792x57";
+        [Ger_BP_MG_D] call FNC_AddItem;
+        [Ger_mg_neck] call FNC_AddItem;
         [Ger_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
@@ -870,7 +870,7 @@
 
         //Extra
         [Ger_Mag_Mort_HE,4] call FNC_AddItem;
-        [GEN_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Mortar Granatwerferschützen
@@ -972,7 +972,8 @@
     case "WHREF43Mar_HMGSL" : {
         [Ger_Uni_S3_r] call FNC_AddItemRandom;
         [Ger_Vest_MGA] call FNC_AddItem;
-        [Ger_BP_T34] call FNC_AddItem;
+        [Ger_BP_MG_B] call FNC_AddItem;
+        [Ger_mg_neck] call FNC_AddItem;
         [Ger_Helmet_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
@@ -1016,7 +1017,8 @@
     case "WHREF43Mar_HMGG" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
         [Ger_Vest_MG] call FNC_AddItem;
-        [Ger_BP_T34] call FNC_AddItem;
+        [Ger_BP_MG_B] call FNC_AddItem;
+        [Ger_mg_neck] call FNC_AddItem;
         [Ger_Helmet_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
@@ -1078,7 +1080,8 @@
     case "WHREF43Mar_HMGA" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
         [Ger_Vest_K98] call FNC_AddItem;
-        [Ger_BP_T34] call FNC_AddItem;
+        [Ger_BP_MG_B] call FNC_AddItem;
+        [Ger_mg_neck] call FNC_AddItem;
         [Ger_Helmet_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
@@ -1154,7 +1157,7 @@
         //Extra
         [Ger_Mag_PzB39,20,"backpack"] call FNC_AddItem;
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [GEN_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Panzerbüchse Richtschütze

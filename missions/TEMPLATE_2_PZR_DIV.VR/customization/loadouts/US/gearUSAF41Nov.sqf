@@ -6,7 +6,7 @@
 
 /*Loadouts
 
-	//Vehicle Crew
+	//Tank Crew
 [this,"USAF41Nov_Pil"] call FNC_GearScript;			Pilot
 [this,"USAF41Nov_GPil"] call FNC_GearScript;		Glider Pilot
 [this,"USAF41Nov_ACrew"] call FNC_GearScript;		Air Crew
@@ -14,7 +14,7 @@
 
 //======================== Loadouts ========================
 
-//Vehicle Crew
+//Tank Crew
 
 	//Pilot
 	case "USAF41Nov_Pil" : {

@@ -28,7 +28,7 @@ switch (side player) do { //Checks what team the player is on
 	case east: { //If player is east he receives this message
 
 		_startTextArray = [
-			["TITLEQUOTE", "OPFOR Time"],
+			["TITLEQUOTE", "Mission_Title_or_something"],
 			["TEXT", "Somewhere in Pyrgos"],
 			["DATETIME"]
 		];

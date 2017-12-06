@@ -29,6 +29,7 @@
 #define GEN_Gren_Smoke_P        "SmokeShellPurple"
 #define GEN_Gren_Smoke_R        "SmokeShellRed"
 #define GEN_Gren_Smoke_Y        "SmokeShellYellow"
+#define GEN_Gren_TNT            "fow_e_tnt_halfpound"
 
 //=== Clothes ===
 

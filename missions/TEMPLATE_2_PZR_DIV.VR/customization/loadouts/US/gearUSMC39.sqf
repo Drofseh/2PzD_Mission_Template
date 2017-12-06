@@ -38,7 +38,7 @@
 [this,"USMC39_MortA"] call FNC_GearScript;		Mortar Assistant
 [this,"USMC39_MortAB"] call FNC_GearScript;		Mortar Ammo Bearer
 
-	//Vehicle Crew
+	//Tank Crew
 [this,"USMC39_VOff"] call FNC_GearScript;		Tank Officer
 [this,"USMC39_VCom"] call FNC_GearScript;		Tank Commander
 [this,"USMC39_VCrew"] call FNC_GearScript;		Tank Crew
@@ -106,7 +106,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Secondary Weapon
@@ -132,7 +132,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Extra
@@ -178,7 +178,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Secondary Weapon
@@ -203,7 +203,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Extra
@@ -224,7 +224,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Extra
@@ -277,7 +277,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Extra
@@ -305,7 +305,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Extra
@@ -349,7 +349,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Extra
@@ -377,7 +377,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Extra
@@ -405,7 +405,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Extra
@@ -430,7 +430,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Extra
@@ -476,7 +476,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20] call FNC_AddItem;
 		
 		//Extra
@@ -503,7 +503,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Extra
@@ -526,7 +526,7 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Extra
@@ -604,14 +604,14 @@
 		
 		//Primary Weapon
 		[US_Mag_M1903,1] call FNC_AddItem;
-		[US_Weap_M1903A3] call FNC_AddItem;
+		[US_Weap_M1903A1] call FNC_AddItem;
 		[US_Mag_M1903,20,"vest"] call FNC_AddItem;
 		
 		//Extra
 		[US_Mag_Mort_HE,8] call FNC_AddItem;
 	};
 
-//Vehicle Crew
+//Tank Crew
 
 	//Tank Officer
 	case "USMC39_VOff" : {

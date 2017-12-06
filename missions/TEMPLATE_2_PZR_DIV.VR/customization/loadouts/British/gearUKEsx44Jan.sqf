@@ -7,29 +7,29 @@
 /*Loadouts
 
 	Platoon
-[this,"UKEsx44Jan_Lt"] call FNC_GearScript;			Lieutenant
+[this,"UKEsx44Jan_Lt"] call FNC_GearScript;		Lieutenant
 [this,"UKEsx44Jan_Sgt"] call FNC_GearScript;		Sergeant
 [this,"UKEsx44Jan_Med"] call FNC_GearScript;		Medic
 [this,"UKEsx44Jan_Sig"] call FNC_GearScript;		Signaller
-[this,"UKEsx44Jan_LMortG"] call FNC_GearScript;		Light Mortar Gunner
-[this,"UKEsx44Jan_LMortA"] call FNC_GearScript;		Light Mortar Assistant
+[this,"UKEsx44Jan_LMortG"] call FNC_GearScript;	Light Mortar Gunner
+[this,"UKEsx44Jan_LMortA"] call FNC_GearScript;	Light Mortar Assistant
 [this,"UKEsx44Jan_Cpl"] call FNC_GearScript;		Corporal
 [this,"UKEsx44Jan_LCpl"] call FNC_GearScript;		Lance Corporal
-[this,"UKEsx44Jan_AR"] call FNC_GearScript;			Bren Gunner
+[this,"UKEsx44Jan_AR"] call FNC_GearScript;		Bren Gunner
 [this,"UKEsx44Jan_AAR"] call FNC_GearScript;		Bren Gun Assistant
 [this,"UKEsx44Jan_AAB"] call FNC_GearScript;		Bren Gun Ammo Bearer
 [this,"UKEsx44Jan_Rif"] call FNC_GearScript;		Rifleman
 
 	Weapons Teams
 [this,"UKEsx44Jan_MGTL"] call FNC_GearScript;		Machine Gun Team Leader
-[this,"UKEsx44Jan_MG"] call FNC_GearScript;			Machine Gunner
+[this,"UKEsx44Jan_MG"] call FNC_GearScript;		Machine Gunner
 [this,"UKEsx44Jan_MGA"] call FNC_GearScript;		Machine Gun Assistant
 [this,"UKEsx44Jan_MGAB"] call FNC_GearScript;		Machine Gun Ammo Bearer
 
-[this,"UKEsx44Jan_MortTL"] call FNC_GearScript;		Mortar Team Leader
+[this,"UKEsx44Jan_MortTL"] call FNC_GearScript;	Mortar Team Leader
 [this,"UKEsx44Jan_MortG"] call FNC_GearScript;		Mortar Gunner
 [this,"UKEsx44Jan_MortA"] call FNC_GearScript;		Mortar Assistant
-[this,"UKEsx44Jan_MortAB"] call FNC_GearScript;		Mortar Ammo Bearer
+[this,"UKEsx44Jan_MortAB"] call FNC_GearScript;	Mortar Ammo Bearer
 
 [this,"UKEsx44Jan_ATRTL"] call FNC_GearScript;		Boys Rifle Team Leader
 [this,"UKEsx44Jan_ATRG"] call FNC_GearScript;		Boys Rifle Gunner
@@ -49,7 +49,7 @@
 //Platoon
 
 	//Lieutenant
-	case "UKEsx44Jan_Lt" : {
+	case "UK44Jan_Lt" : {
 		[UK_UniEsx_Lt] call FNC_AddItem;
 		[UK_VestK_O] call FNC_AddItem;
 		[UK_Helm_r] call FNC_AddItemRandom;
@@ -66,11 +66,11 @@
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
 	//Sergeant
-	case "UKEsx44Jan_Sgt" : {
+	case "UK44Jan_Sgt" : {
 		[UK_UniEsx_Sgt] call FNC_AddItem;
 		[UK_VestK_Sten] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -108,12 +108,12 @@
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,2] call FNC_AddItem;
+		[UK_Gren_Smoke_W,2] call FNC_AddItem;
 		[US_Mag_Mort_HE,5,"backpack"] call FNC_AddItem;
 	};
 
 	//Medic
-	case "UKEsx44Jan_Med" : {
+	case "UK44Jan_Med" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_LeeEn] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -129,20 +129,25 @@
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
 		],[50],
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[50]
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
 		UK_medic_equipment;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
 	//Signaller
-	case "UKEsx44Jan_Sig" : {
+	case "UK44Jan_Sig" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_LeeEn] call FNC_AddItem;
 		[UK_BPK_Radio] call FNC_AddItem;
@@ -160,20 +165,25 @@
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
 		],[50],
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[50]
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
 	//Light Mortar Gunner
-	case "UKEsx44Jan_LMortG" : {
+	case "UK44Jan_LMortG" : {
 		[UK_UniEsx_LCpl] call FNC_AddItem;
 		[UK_VestK_O] call FNC_AddItem;
 		[UK_BPG_L] call FNC_AddItem;
@@ -196,7 +206,7 @@
 	};
 
 	//Light Mortar Assistant
-	case "UKEsx44Jan_LMortA" : {
+	case "UK44Jan_LMortA" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_O] call FNC_AddItem;
 		[UK_BPG_L] call FNC_AddItem;
@@ -221,7 +231,7 @@
 //Squad
 
 	//Corporal
-	case "UKEsx44Jan_Cpl" : {
+	case "UK44Jan_Cpl" : {
 		[UK_UniEsx_Cpl] call FNC_AddItem;
 		[UK_VestK_Sten] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -258,12 +268,12 @@
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,2] call FNC_AddItem;
+		[UK_Gren_Smoke_W,2] call FNC_AddItem;
 		[UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
 	};
 
 	//Lance Corporal
-	case "UKEsx44Jan_LCpl" : {
+	case "UK44Jan_LCpl" : {
 		[UK_UniEsx_LCpl] call FNC_AddItem;
 		[UK_VestK_Sten] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -300,12 +310,12 @@
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,2] call FNC_AddItem;
+		[UK_Gren_Smoke_W,2] call FNC_AddItem;
 		[UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
 	};
 
 	//Bren Gunner
-	case "UKEsx44Jan_AR" : {
+	case "UK44Jan_AR" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_Bren] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -327,7 +337,7 @@
 	};
 
 	//Bren Gun Assistant
-	case "UKEsx44Jan_AAR" : {
+	case "UK44Jan_AAR" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_Bren] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -344,11 +354,16 @@
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
 		],[50],
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[50]
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -358,7 +373,7 @@
 	};
 
 	//Bren Gun Ammo Bearer
-	case "UKEsx44Jan_AAB" : {
+	case "UK44Jan_AAB" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_Bren] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -374,11 +389,16 @@
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
 		],[50],
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[50]
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -387,7 +407,7 @@
 	};
 
 	//Rifleman
-	case "UKEsx44Jan_Rif" : {
+	case "UK44Jan_Rif" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_LeeEn] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -403,11 +423,16 @@
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
 		],[50],
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[50]
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -418,7 +443,7 @@
 //Machine Gun Team
 
 	//Machine Gun Team Leader
-	case "UKEsx44Jan_MGTL" : {
+	case "UK44Jan_MGTL" : {
 		[UK_UniEsx_LCpl] call FNC_AddItem;
 		[UK_VestK_LeeEn] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -435,20 +460,25 @@
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
 		],[50],
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[50]
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
 	//Machine Gunner
-	case "UKEsx44Jan_MG" : {
+	case "UK44Jan_MG" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestG_Bren] call FNC_AddItem;
 		[UK_Weap_HMG_G] call FNC_AddItem;
@@ -465,7 +495,7 @@
 	};
 
 	//Machine Gun Assistant
-	case "UKEsx44Jan_MGA" : {
+	case "UK44Jan_MGA" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestG_Bren] call FNC_AddItem;
 		[UK_Weap_HMG_T] call FNC_AddItem;
@@ -485,7 +515,7 @@
 	};
 
 	//Machine Gun Ammo Bearer
-	case "UKEsx44Jan_MGAB" : {
+	case "UK44Jan_MGAB" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_LeeEn] call FNC_AddItem;
 		[UK_BPG_L] call FNC_AddItem;
@@ -501,11 +531,16 @@
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
 		],[50],
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[50]
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -514,7 +549,7 @@
 //Mortar Team
 
 	//Mortar Team Leader
-	case "UKEsx44Jan_MortTL" : {
+	case "UK44Jan_MortTL" : {
 		[UK_UniEsx_Cpl] call FNC_AddItem;
 		[UK_VestK_LeeEn] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -531,21 +566,26 @@
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
 		],[50],
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[50]
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 		[Rus_Mag_Mort_HE,5,"backpack"] call FNC_AddItem;
 	};
 
 	//Mortar Gunner
-	case "UKEsx44Jan_MortG" : {
+	case "UK44Jan_MortG" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_O] call FNC_AddItem;
 		[UK_BPG_L] call FNC_AddItem;
@@ -568,7 +608,7 @@
 	};
 
 	//Mortar Assistant
-	case "UKEsx44Jan_MortA" : {
+	case "UK44Jan_MortA" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_O] call FNC_AddItem;
 		[UK_BPG_L] call FNC_AddItem;
@@ -591,7 +631,7 @@
 	};
 
 	//Mortar Ammo Bearer
-	case "UKEsx44Jan_MortAB" : {
+	case "UK44Jan_MortAB" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_LeeEn] call FNC_AddItem;
 		[UK_BPG_L] call FNC_AddItem;
@@ -607,11 +647,16 @@
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
 		],[50],
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[50]
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -621,7 +666,7 @@
 //Boys Rifle Team
 
 	//Boys Rifle Team Leader
-	case "UKEsx44Jan_ATRTL" : {
+	case "UK44Jan_ATRTL" : {
 		[UK_UniEsx_Cpl] call FNC_AddItem;
 		[UK_VestK_LeeEn] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -638,21 +683,26 @@
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
 		],[50],
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[50]
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
 		[UK_Mag_Boys,20,"backpack"] call FNC_AddItem;
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
 	//Boys Rifle Gunner
-	case "UKEsx44Jan_ATRG" : {
+	case "UK44Jan_ATRG" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_O] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -674,7 +724,7 @@
 	};
 
 	//Boys Rifle Ammo Bearer
-	case "UKEsx44Jan_ATRAB" : {
+	case "UK44Jan_ATRAB" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_Bren] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -690,11 +740,16 @@
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
 		],[50],
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[50]
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -705,7 +760,7 @@
 //PIAT Team
 
 	//PIAT Team Leader
-	case "UKEsx44Jan_ATTL" : {
+	case "UK44Jan_ATTL" : {
 		[UK_UniEsx_Cpl] call FNC_AddItem;
 		[UK_VestK_LeeEn] call FNC_AddItem;
 		[UK_BP_P] call FNC_AddItem;
@@ -722,21 +777,26 @@
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
 		],[50],
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[50]
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
 		[UK_Mag_Piat_HEAT,3,"backpack"] call FNC_AddItem;
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,1] call FNC_AddItem;
+		[UK_Gren_Smoke_W,1] call FNC_AddItem;
 	};
 
 	//PIAT Gunner
-	case "UKEsx44Jan_ATG" : {
+	case "UK44Jan_ATG" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_O] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -757,7 +817,7 @@
 	};
 
 	//PIAT Ammo Bearer
-	case "UKEsx44Jan_ATAB" : {
+	case "UK44Jan_ATAB" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_LeeEn] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -773,11 +833,16 @@
 		[UK_Weap_LeeEnNo1],
 		[UK_Mag_LeeEn,5,"vest"]
 		],[50],
-		[//Lee Enfield No4
-		[UK_Mag_LeeEn,1],
-		[UK_Weap_LeeEnNo4],
-		[UK_Mag_LeeEn,5,"vest"]
-		],[50]
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_1],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25],
+        [//Lee Enfield No4
+        [UK_Mag_LeeEn,1],
+        [UK_Weap_LeeEnNo4_2],
+        [UK_Mag_LeeEn,5,"vest"]
+        ],[25]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -788,7 +853,7 @@
 //Vehicle Crew
 
 	//Tank Commander
-	case "UKEsx44Jan_VCom" : {
+	case "UK44Jan_VCom" : {
 		[UK_UniEsx_Sgt] call FNC_AddItem;
 		[UK_VestK_Sten] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;
@@ -831,11 +896,11 @@
 		
 		//Extra
 		[GEN_Gren_Frag_P,1] call FNC_AddItem;
-		[GEN_Gren_Smoke_W,2] call FNC_AddItem;
+		[UK_Gren_Smoke_W,2] call FNC_AddItem;
 	};
 
 	//Tank Crew
-	case "UKEsx44Jan_VCrew" : {
+	case "UK44Jan_VCrew" : {
 		[UK_UniEsx_Pte] call FNC_AddItem;
 		[UK_VestK_Sten] call FNC_AddItem;
 		[UK_BPK] call FNC_AddItem;

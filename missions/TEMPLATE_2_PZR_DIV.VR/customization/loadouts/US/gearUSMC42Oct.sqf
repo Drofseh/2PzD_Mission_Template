@@ -42,7 +42,7 @@
 [this,"USMC42Oct_BzkaG"] call FNC_GearScript;		Bazooka Gunner
 [this,"USMC42Oct_BzkaAB"] call FNC_GearScript;		Bazooka Ammo Bearer
 
-	//Vehicle Crew
+	//Tank Crew
 [this,"USMC42Oct_VOff"] call FNC_GearScript;		Tank Officer
 [this,"USMC42Oct_VCom"] call FNC_GearScript;		Tank Commander
 [this,"USMC42Oct_VCrew"] call FNC_GearScript;		Tank Crew
@@ -204,12 +204,18 @@
 		USMC_leader_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[72],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[50],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[22],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -226,9 +232,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[8]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[2]
 		] call FNC_AddItemRandomPercent;
 		
 		//Secondary Weapon
@@ -253,12 +271,18 @@
 		[US_Radio_C] call FNC_AddItem;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[72],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[50],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[22],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -275,9 +299,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[8]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[2]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -369,12 +405,18 @@
 		USMC_leader_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[72],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[50],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[22],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -391,9 +433,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[8]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[2]
 		] call FNC_AddItemRandomPercent;
 		
 		//Secondary Weapon
@@ -416,12 +470,18 @@
 		USMC_default_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[72],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[50],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[22],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -438,9 +498,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[8]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[2]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -460,11 +532,16 @@
 		USMC_default_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[72],
+        [//M1903A1
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[50],
+        [//M1903A3
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[22],
 		[//M1 Carbine
 		[US_Mag_M1C,1],
 		[US_Weap_M1C],
@@ -478,9 +555,19 @@
 		],[10],
 		[//M1 Garand
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[8]
+		],[3],
+		[//M1 Garand
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[2]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -566,12 +653,18 @@
 		USMC_default_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[81],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[56],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[25],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -581,9 +674,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[9]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[3]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -609,12 +714,18 @@
 		USMC_default_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[81],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[56],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[25],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -624,9 +735,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[9]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[3]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -668,12 +791,18 @@
 		USMC_leader_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[81],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[56],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[25],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -683,9 +812,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[9]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[3]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -711,12 +852,18 @@
 		USMC_default_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[81],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[56],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[25],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -726,9 +873,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[9]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[3]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -754,12 +913,18 @@
 		USMC_default_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[81],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[56],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[25],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -769,9 +934,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[9]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[3]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -794,12 +971,18 @@
 		USMC_leader_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[81],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[56],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[25],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -809,9 +992,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[9]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[3]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -855,12 +1050,18 @@
 		[US_Weap_M1919A4_T] call FNC_AddItem;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[72],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[50],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[22],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -877,9 +1078,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[8]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[2]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -905,11 +1118,16 @@
 		USMC_default_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[81],
+        [//M1903A1
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[56],
+        [//M1903A3
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[25],
 		[//M1 Carbine
 		[US_Mag_M1C,1],
 		[US_Weap_M1C],
@@ -917,9 +1135,19 @@
 		],[10],
 		[//M1 Garand
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[9]
+		],[3],
+		[//M1 Garand
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[3]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -940,12 +1168,18 @@
 		USMC_leader_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[81],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[56],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[25],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -955,9 +1189,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[9]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[3]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -1034,11 +1280,16 @@
 		USMC_default_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[81],
+        [//M1903A1
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[56],
+        [//M1903A3
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[25],
 		[//M1 Carbine
 		[US_Mag_M1C,1],
 		[US_Weap_M1C],
@@ -1046,9 +1297,19 @@
 		],[10],
 		[//M1 Garand
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[9]
+		],[3],
+		[//M1 Garand
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[3]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -1069,12 +1330,18 @@
 		USMC_leader_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[81],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[56],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[25],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -1084,9 +1351,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[9]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[3]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -1106,12 +1385,18 @@
 		USMC_default_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[81],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[56],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[25],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -1121,9 +1406,21 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[9]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[3]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
@@ -1150,12 +1447,18 @@
 		USMC_default_equipment;
 		
 		[//Primary Weapon
-		[//M1903
-		[USMC_Vest_M1G],
-		[US_Mag_M1903,1],
-		[US_Weap_M1903A3],
-		[US_Mag_M1903,20,"vest"]
-		],[81],
+        [//M1903A1
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A1],
+        [US_Mag_M1903,20,"vest"]
+        ],[56],
+        [//M1903A3
+        [USMC_Vest_M1G],
+        [US_Mag_M1903,1],
+        [US_Weap_M1903A3],
+        [US_Mag_M1903,20,"vest"]
+        ],[25],
 		[//M1 Carbine
 		[USMC_Vest_M1C],
 		[US_Mag_M1C,1],
@@ -1165,16 +1468,28 @@
 		[//M1 Garand
 		[USMC_Vest_M1G],
 		[US_Mag_M1G,1],
-		[US_Weap_M1G],
+		[US_Weap_M1G_1],
 		[US_Mag_M1G,10,"vest"]
-		],[9]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_2],
+		[US_Mag_M1G,10,"vest"]
+		],[3],
+		[//M1 Garand
+		[USMC_Vest_M1G],
+		[US_Mag_M1G,1],
+		[US_Weap_M1G_3],
+		[US_Mag_M1G,10,"vest"]
+		],[3]
 		] call FNC_AddItemRandomPercent;
 		
 		//Extra
 		[US_Mag_Bazoo,3,"backpack"] call FNC_AddItem;
 	};
 
-//Vehicle Crew
+//Tank Crew
 
 	//Tank Officer
 	case "USMC42Oct_VOff" : {

@@ -5,14 +5,14 @@
 //Primary
 
 //Secondary
-#define PHA_Weap_Radom			"LEN_P35"
+#define PHA_Weap_Radom			"fow_w_p35"
 
 //Launcher
 
 //Attachments
 
 //Ammo
-#define PHA_Mag_Radom		"LEN_8Rnd_9x19_2PzD"
+#define PHA_Mag_Radom	    	"LEN_8Rnd_9x19_2PzD"
 
 //Grenades
 
