@@ -16,7 +16,7 @@
 #define Ger_Weap_StG44          "fow_w_stg44"
 #define Ger_Weap_FG42           "fow_w_fg42"
 #define Ger_Weap_PzB39          "LIB_PTRD"
-#define Ger_Weap_MG34           "fow_w_mg34"
+#define Ger_Weap_MG34           "LIB_MG34"
 #define Ger_Weap_MG34_PT        "LIB_MG34_PT"
 #define Ger_Weap_MG42           "LIB_MG42"
 

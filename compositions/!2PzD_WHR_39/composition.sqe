@@ -3652,7 +3652,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""WHR39_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""WHR39_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_R05_2";
 					description="Gewehrschütze@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
@@ -3931,7 +3931,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR39_MGAB""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""WHR39_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
 					name="G_R08_2";
 					description="Gewehrschütze@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
