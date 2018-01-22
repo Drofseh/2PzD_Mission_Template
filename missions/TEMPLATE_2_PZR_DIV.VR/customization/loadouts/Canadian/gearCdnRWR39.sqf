@@ -25,7 +25,7 @@
 [this,"CdnRWR39_MG"] call FNC_GearScript;       Machine Gunner
 [this,"CdnRWR39_MGA"] call FNC_GearScript;      Machine Gun Assistant
 [this,"CdnRWR39_MGAB"] call FNC_GearScript;     Machine Gun Ammo Bearer
-                                            
+
 [this,"CdnRWR39_MortTL"] call FNC_GearScript;   Mortar Team Leader
 [this,"CdnRWR39_MortG"] call FNC_GearScript;    Mortar Gunner
 [this,"CdnRWR39_MortA"] call FNC_GearScript;    Mortar Assistant

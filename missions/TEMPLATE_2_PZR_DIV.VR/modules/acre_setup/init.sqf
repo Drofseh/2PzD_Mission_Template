@@ -18,10 +18,10 @@ if (isServer && FW_enable_channel_names) then {
 };
 
 if(hasInterface) then {
-	[] spawn {
-		waitUntil { !isNull acre_player };
+    [] spawn {
+        waitUntil { !isNull acre_player };
 
-		private _side = side player;
+        private _side = side player;
         private _customSide = (player getVariable ["FW_CustomScramble", nil]);
 
         if (!isNil "FW_Acre_Volume_Value") then {
@@ -30,46 +30,46 @@ if(hasInterface) then {
             };
             private _v = 0.7;
             switch (FW_Acre_Volume_Value) do {
-                case -2: {_v = 0.1;}; 
-                case -1: {_v = 0.2;}; 
-                case 0: {_v = 0.4;}; 
-                case 1: {_v = 0.7;}; 
-                case 2: {_v = 1.0;}; 
-                default {_v = 0.4;}; 
+                case -2: {_v = 0.1;};
+                case -1: {_v = 0.2;};
+                case 0: {_v = 0.4;};
+                case 1: {_v = 0.7;};
+                case 2: {_v = 1.0;};
+                default {_v = 0.4;};
             };
             [_v] call acre_api_fnc_setSelectableVoiceCurve;
             acre_sys_gui_VolumeControl_Level = FW_Acre_Volume_Value;
-            
+
             [] spawn {
                 sleep 1;
                 acre_sys_gui_VolumeControl_Level = FW_Acre_Volume_Value;
             };
         };
-        
-        
+
+
         if (!isNil "_customSide") then {
             _side = _customSide;
         };
-        
+
         private _side_i = 3;
-        switch (_side) do { 
-            case west: { 
+        switch (_side) do {
+            case west: {
                 _side_i = 0;
             };
-            case east: { 
+            case east: {
                 _side_i = 1;
             };
-            case independent: { 
+            case independent: {
                 _side_i = 2;
             };
-            default { 
+            default {
                 _side_i = 3;
             };
         };
-        
+
         if (FW_enable_scramble) then {
             private _preset = FW_Presets select _side_i;
-            
+
             ["ACRE_PRC343", _preset ] call acre_api_fnc_setPreset;
             ["ACRE_PRC77", _preset ] call acre_api_fnc_setPreset;
             ["ACRE_PRC117F", _preset ] call acre_api_fnc_setPreset;
@@ -81,20 +81,20 @@ if(hasInterface) then {
 
         if (FW_enable_babel) then {
             {_x call acre_api_fnc_babelAddLanguageType;} foreach FW_all_languages;
-            
+
             (FW_languages_babel select _side_i) call acre_api_fnc_babelSetSpokenLanguages;
-        
+
             private _languages = player getVariable ["FW_Languages", []];
 
             if (count _languages > 0) then {
-                
+
                 _languages call acre_api_fnc_babelSetSpokenLanguages;
-                
+
             };
         };
-        
+
         waitUntil {[] call acre_api_fnc_isInitialized};
-        
+
         private _channels = player getVariable ["FW_Channels", []];
 
         {
@@ -109,7 +109,7 @@ if(hasInterface) then {
                 [_radioID, _spatial] call acre_api_fnc_setRadioSpatial;
             };
         } foreach _channels;
-		
-	};
-    
+
+    };
+
 };

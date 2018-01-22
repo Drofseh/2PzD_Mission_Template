@@ -12923,7 +12923,7 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="[this, ""1943_G_EF_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
+			init="[this, ""1943_G_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
 		};
 		id=3725;
 		type="fow_v_sdkfz_251_camo_ger_heer";
@@ -13020,7 +13020,7 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="[this, ""1943_G_EF_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
+			init="[this, ""1943_G_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
 		};
 		id=3726;
 		type="fow_v_sdkfz_251_camo_ger_heer";
@@ -13117,7 +13117,7 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="[this, ""1943_G_EF_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
+			init="[this, ""1943_G_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
 		};
 		id=3727;
 		type="fow_v_sdkfz_251_camo_ger_heer";
@@ -13214,7 +13214,7 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="[this, ""1943_G_EF_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
+			init="[this, ""1943_G_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
 		};
 		id=3728;
 		type="fow_v_sdkfz_251_camo_ger_heer";
@@ -13311,7 +13311,7 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="[this, ""1943_G_EF_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
+			init="[this, ""1943_G_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
 		};
 		id=3729;
 		type="fow_v_sdkfz_251_camo_ger_heer";
@@ -13408,7 +13408,7 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="[this, ""1943_G_EF_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
+			init="[this, ""1943_G_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
 		};
 		id=3730;
 		type="fow_v_sdkfz_251_camo_ger_heer";
@@ -13505,7 +13505,7 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="[this, ""1943_G_EF_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
+			init="[this, ""1943_G_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
 		};
 		id=3731;
 		type="fow_v_sdkfz_251_camo_ger_heer";
@@ -13602,7 +13602,7 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="[this, ""1943_G_EF_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
+			init="[this, ""1943_G_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
 		};
 		id=3732;
 		type="fow_v_sdkfz_251_camo_ger_heer";
@@ -13699,7 +13699,7 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="[this, ""1943_G_EF_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
+			init="[this, ""1943_G_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
 		};
 		id=3733;
 		type="fow_v_sdkfz_251_camo_ger_heer";
@@ -13796,7 +13796,7 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="[this, ""1943_G_EF_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
+			init="[this, ""1943_G_SdKfz""] call FNC_VehicleGearScript;" \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200]; " \n "this addMagazineTurret [""fow_200Rnd_792x57"",[0],200];";
 		};
 		id=3734;
 		type="fow_v_sdkfz_251_camo_ger_heer";

@@ -112,9 +112,9 @@
         Ger_leader_equipment;
 
         [//Primary Weapon
-               
-                          
-                        
+
+
+
         [//MP38
         [Ger_Mag_MP40,1],
         [Ger_Weap_MP38],
@@ -160,9 +160,9 @@
         Ger_leader_equipment;
 
         [//Primary Weapon
-               
+
         [//MP38
-                      
+
         [Ger_Mag_MP40,1],
         [Ger_Weap_MP38],
         [Ger_Mag_MP40,3,"vest"]
@@ -329,8 +329,8 @@
         Ger_leader_equipment;
 
         [//Primary Weapon
-               
-                          
+
+
         [//MP38
         [Ger_Mag_MP40,1],
         [Ger_Weap_MP38],

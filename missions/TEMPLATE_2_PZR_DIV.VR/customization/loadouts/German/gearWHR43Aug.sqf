@@ -640,7 +640,7 @@
         [Ger_BP_r] call FNC_AddItemRandom;
         [Ger_Helmet_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         Ger_default_equipment;
 

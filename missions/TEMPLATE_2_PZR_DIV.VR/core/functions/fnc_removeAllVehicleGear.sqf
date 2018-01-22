@@ -11,7 +11,7 @@
  *
  * Public: No
  */
- 
+
  private _vehicle = _this;
 
 clearItemCargoGlobal _vehicle;

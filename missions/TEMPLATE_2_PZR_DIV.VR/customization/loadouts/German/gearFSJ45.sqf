@@ -497,7 +497,7 @@
         [GEN_BinoG] call FNC_AddItem;
 
         //Primary Weapon
-        
+
         [//Random MG
         [//MG34
         [Ger_Weap_MG34]

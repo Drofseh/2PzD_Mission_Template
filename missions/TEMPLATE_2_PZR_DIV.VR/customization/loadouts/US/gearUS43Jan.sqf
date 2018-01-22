@@ -56,11 +56,11 @@
         [US_Uni_CPT] call FNC_AddItem;
         [US_Helm_CPT] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         US_leader_equipment;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -99,12 +99,12 @@
         [US_Mag_M1T_1,5,"vest"]
         ],[5]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
         [US_Mag_M1911,1] call FNC_AddItem;
-        
+
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -115,11 +115,11 @@
         [US_Uni_LT] call FNC_AddItem;
         [US_Helm_LT] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         US_leader_equipment;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -158,12 +158,12 @@
         [US_Mag_M1T_1,5,"vest"]
         ],[5]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
         [US_Mag_M1911,1] call FNC_AddItem;
-        
+
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -175,11 +175,11 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         US_leader_equipment;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -212,12 +212,12 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
         [US_Mag_M1911,1] call FNC_AddItem;
-        
+
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -229,12 +229,12 @@
         [US_BP_Radio] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         [US_Radio_P] call FNC_AddItem;
         _unit assignItem US_Radio_P;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -267,7 +267,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -280,11 +280,11 @@
         [US_Uni_LT] call FNC_AddItem;
         [US_Helm_2LT] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         US_leader_equipment;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -323,12 +323,12 @@
         [US_Mag_M1T_1,5,"vest"]
         ],[5]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
         [US_Mag_M1911,1] call FNC_AddItem;
-        
+
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -340,11 +340,11 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         US_leader_equipment;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -377,12 +377,12 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
         [US_Mag_M1911,1] call FNC_AddItem;
-        
+
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -393,10 +393,10 @@
         [US_Uni_PFC] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -429,7 +429,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -442,10 +442,10 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_Med_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Mag_M1C,1],
@@ -473,7 +473,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
         US_medic_equipment;
@@ -487,11 +487,11 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         US_leader_equipment;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -530,7 +530,7 @@
         [US_Mag_M1T_1,5,"vest"]
         ],[5]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -542,10 +542,10 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -554,25 +554,25 @@
         [US_Mag_M1C,4,"vest"]
         ],[35],
         [//M1 Garand
-		[US_Vest_M1G_Gren],
-		[US_Mag_M1G,1],
-		[US_Weap_M1G_1],
-		[US_Mag_M1G,10,"vest"],
-		[US_Mag_RGrn_AT,10]
+        [US_Vest_M1G_Gren],
+        [US_Mag_M1G,1],
+        [US_Weap_M1G_1],
+        [US_Mag_M1G,10,"vest"],
+        [US_Mag_RGrn_AT,10]
         ],[22],
         [//M1 Garand
-		[US_Vest_M1G_Gren],
-		[US_Mag_M1G,1],
-		[US_Weap_M1G_2],
-		[US_Mag_M1G,10,"vest"],
-		[US_Mag_RGrn_AT,10]
+        [US_Vest_M1G_Gren],
+        [US_Mag_M1G,1],
+        [US_Weap_M1G_2],
+        [US_Mag_M1G,10,"vest"],
+        [US_Mag_RGrn_AT,10]
         ],[21],
         [//M1 Garand
-		[US_Vest_M1G_Gren],
-		[US_Mag_M1G,1],
-		[US_Weap_M1G_3],
-		[US_Mag_M1G,10,"vest"],
-		[US_Mag_RGrn_AT,10]
+        [US_Vest_M1G_Gren],
+        [US_Mag_M1G,1],
+        [US_Weap_M1G_3],
+        [US_Mag_M1G,10,"vest"],
+        [US_Mag_RGrn_AT,10]
         ],[21],
         [//M1903
         [US_Vest_M1G],
@@ -581,7 +581,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -600,10 +600,10 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -636,7 +636,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -649,17 +649,17 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
-        
+
         //Primary Weapon
         [US_Mag_BAR,1] call FNC_AddItem;
         [US_Weap_BAR] call FNC_AddItem;
         [US_Weap_BAR_Bipod] call FNC_AddItem;
         [US_Mag_BAR,6,"vest"] call FNC_AddItem;
         [US_Mag_BAR,9,"backpack"] call FNC_AddItem;
-        
+
         //Extra
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
     };
@@ -671,11 +671,11 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         US_leader_equipment;
-        
+
         [//Primary Weapon
         [//M1 Garand
         [US_Mag_M1G,1],
@@ -698,7 +698,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
         [US_Mag_BAR,10,"backpack"] call FNC_AddItem;
@@ -718,10 +718,10 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
-        
+
         [//Primary Weapon
         [//M1 Garand
         [US_Mag_M1G,1],
@@ -744,7 +744,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [US_Mag_BAR,15,"backpack"] call FNC_AddItem;
@@ -764,10 +764,10 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
-        
+
         [//Primary Weapon
         [//M1 Garand
         [US_Mag_M1G,1],
@@ -790,7 +790,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [GEN_Gren_Frag_P,2] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -806,11 +806,11 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         US_leader_equipment;
-        
+
         [//Primary Weapon
         [//M1 Garand
         [US_Mag_M1G,1],
@@ -833,7 +833,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -847,15 +847,15 @@
         [US_BP_MG] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
-        
+
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
         [US_Mag_M1911,2] call FNC_AddItem;
-        
+
         //Primary Weapon
         [US_Mag_M1919_250,1] call FNC_AddItem;
         [US_Weap_M1919A4] call FNC_AddItem;
@@ -868,12 +868,12 @@
         [US_BP_MG] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         US_leader_equipment;
         [US_Weap_M1919A4_T] call FNC_AddItem;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -906,7 +906,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [US_Mag_M1919_250,2] call FNC_AddItem;
     };
@@ -925,10 +925,10 @@
         [US_BP_MG] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
-        
+
         [//Primary Weapon
         [//M1 Garand
         [US_Mag_M1G,1],
@@ -951,7 +951,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [US_Mag_M1919_250,4] call FNC_AddItem;
     };
@@ -964,11 +964,11 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         US_leader_equipment;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -1001,7 +1001,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -1016,16 +1016,16 @@
         [US_BP_MG] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         [US_Weap_MortB] call FNC_AddItem;
-        
+
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
         [US_Mag_M1911,3] call FNC_AddItem;
-        
+
         //Extra
         [US_Mag_Mort_HE,8] call FNC_AddItem;
         [GEN_ace_rangetable,1] call FNC_AddItem;
@@ -1039,16 +1039,16 @@
         [US_BP_MG] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         [US_Weap_MortT] call FNC_AddItem;
-        
+
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
         [US_Mag_M1911,3] call FNC_AddItem;
-        
+
         //Extra
         [US_Mag_Mort_HE,8] call FNC_AddItem;
         [GEN_ace_rangetable,1] call FNC_AddItem;
@@ -1069,10 +1069,10 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
-        
+
         [//Primary Weapon
         [//M1 Garand
         [US_Mag_M1G,1],
@@ -1095,7 +1095,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [US_Mag_Mort_HE,9] call FNC_AddItem;
     };
@@ -1108,11 +1108,11 @@
         [US_BP_AT] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
         US_leader_equipment;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -1145,7 +1145,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [US_Mag_Bazoo,3,"backpack"] call FNC_AddItem;
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -1158,10 +1158,10 @@
         [US_BP_AT] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
-        
+
         [//Primary Weapon
         [//M1 Carbine
         [US_Vest_M1C],
@@ -1194,7 +1194,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [US_Mag_Bazoo,1] call FNC_AddItem;
         [US_Weap_Bazoo] call FNC_AddItem;
@@ -1215,10 +1215,10 @@
         [US_BP_AT] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
         US_default_equipment;
-        
+
         [//Primary Weapon
         [//M1 Garand
         [US_Mag_M1G,1],
@@ -1241,7 +1241,7 @@
         [US_Mag_M1903,20,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [US_Mag_Bazoo,3,"backpack"] call FNC_AddItem;
     };
@@ -1253,11 +1253,11 @@
         [US_Uni_SGT] call FNC_AddItem;
         [US_Helm_VCrew] call FNC_AddItem;
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
-        USA_default_equipment;
-        USA_leader_equipment;
-        
+        US_default_equipment;
+        US_leader_equipment;
+
         [//Primary Weapon
         [//M1 Thompson
         [US_Vest_M1T],
@@ -1296,13 +1296,13 @@
         [US_Mag_M1T_2,5,"vest"]
         ],[5]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
         [US_Mag_M1911,3] call FNC_AddItem;
     };
-    
+
     //Tank Crew
     case "US43Jan_VCrew" : {
         [//Uniform
@@ -1319,10 +1319,10 @@
         [US_BP_M1928] call FNC_AddItem;
         [US_Helm_VCrew] call FNC_AddItem;
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
-        
+
         //Assigned Items
-        USA_default_equipment;
-        
+        US_default_equipment;
+
         [//Weapon
         [//M3 Grease Gun & M1911
         [US_Vest_M1T],
@@ -1370,7 +1370,7 @@
         [US_Mag_M1911,3]
         ],[1]
         ] call FNC_AddItemRandomPercent;
-        
+
         //Extra
         [GEN_Toolkit] call FNC_AddItem;
     };

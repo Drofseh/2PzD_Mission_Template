@@ -6,58 +6,58 @@
 
 /*Loadouts
 
-	//Tank Crew
-[this,"USAF39_Pil"] call FNC_GearScript;		Pilot
-[this,"USAF39_GPil"] call FNC_GearScript;		Glider Pilot
-[this,"USAF39_ACrew"] call FNC_GearScript;		Air Crew
+    //Tank Crew
+[this,"USAF39_Pil"] call FNC_GearScript;        Pilot
+[this,"USAF39_GPil"] call FNC_GearScript;       Glider Pilot
+[this,"USAF39_ACrew"] call FNC_GearScript;      Air Crew
 */
 
 //======================== Loadouts ========================
 
 //Tank Crew
 
-	//Pilot
-	case "USAF39_Pil" : {
-		[USAF_UniG] call FNC_AddItem;
-		[US_Vest_Pistol] call FNC_AddItem;
-		[GEN_BP_Para] call FNC_AddItem;
-		[USAF_Helm] call FNC_AddItem;
-		[GEN_Face_r] call FNC_AddItemRandom;
-		
-		//Assigned Items
-		USA_default_equipment;
-		USA_leader_equipment;
-		
-		//Secondary Weapon
-		[US_Mag_M1911,1] call FNC_AddItem;
-		[US_Weap_M1911] call FNC_AddItem;
-		[US_Mag_M1911,3] call FNC_AddItem;
-	};
+    //Pilot
+    case "USAF39_Pil" : {
+        [USAF_UniG] call FNC_AddItem;
+        [US_Vest_Pistol] call FNC_AddItem;
+        [GEN_BP_Para] call FNC_AddItem;
+        [USAF_Helm] call FNC_AddItem;
+        [GEN_Face_r] call FNC_AddItemRandom;
 
-	//Glider Pilot
-	case "USAF39_GPil" : {
-		[USAF_UniG] call FNC_AddItem;
-		[US_Vest_Pistol] call FNC_AddItem;
-		[USAF_Helm] call FNC_AddItem;
-		[GEN_Face_r] call FNC_AddItemRandom;
-		
-		//Assigned Items
-		USA_default_equipment;
-		USA_leader_equipment;
-		
-		//Secondary Weapon
-		[US_Mag_M1911,1] call FNC_AddItem;
-		[US_Weap_M1911] call FNC_AddItem;
-		[US_Mag_M1911,3] call FNC_AddItem;
-	};
+        //Assigned Items
+        USAF_default_equipment;
+        USAF_leader_equipment;
 
-	//Air Crew
-	case "USAF39_ACrew" : {
-		[USAF_UniG] call FNC_AddItem;
-		[GEN_BP_Para] call FNC_AddItem;
-		[USAF_Helm] call FNC_AddItem;
-		[GEN_Face_r] call FNC_AddItemRandom;
-		
-		//Assigned Items
-		USA_default_equipment;
-	};
+        //Secondary Weapon
+        [US_Mag_M1911,1] call FNC_AddItem;
+        [US_Weap_M1911] call FNC_AddItem;
+        [US_Mag_M1911,3] call FNC_AddItem;
+    };
+
+    //Glider Pilot
+    case "USAF39_GPil" : {
+        [USAF_UniG] call FNC_AddItem;
+        [US_Vest_Pistol] call FNC_AddItem;
+        [USAF_Helm] call FNC_AddItem;
+        [GEN_Face_r] call FNC_AddItemRandom;
+
+        //Assigned Items
+        USAF_default_equipment;
+        USAF_leader_equipment;
+
+        //Secondary Weapon
+        [US_Mag_M1911,1] call FNC_AddItem;
+        [US_Weap_M1911] call FNC_AddItem;
+        [US_Mag_M1911,3] call FNC_AddItem;
+    };
+
+    //Air Crew
+    case "USAF39_ACrew" : {
+        [USAF_UniG] call FNC_AddItem;
+        [GEN_BP_Para] call FNC_AddItem;
+        [USAF_Helm] call FNC_AddItem;
+        [GEN_Face_r] call FNC_AddItemRandom;
+
+        //Assigned Items
+        USAF_default_equipment;
+    };

@@ -18,7 +18,7 @@
 #include "start_on_team_color\root.sqf"
 #include "start_with_earplugs\root.sqf"
 
-//Additional modules that can be enabled by removing the // 
+//Additional modules that can be enabled by removing the //
 //!!Some of them require changing settings in their settings.sqf file!!
 
 //#include "a3_endscreen\root.sqf"

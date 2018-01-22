@@ -15,7 +15,7 @@ aidrivers_removeUnit = {
     params ["_target"];
 
     private _driver = _target getVariable ["aidrivers_driver", objNull];
-    
+
     if (!isNull _driver) then {
         deleteVehicle _driver;
     };
@@ -23,9 +23,9 @@ aidrivers_removeUnit = {
 
 aidrivers_createUnit = {
     params ["_target", "_caller"];
-    
+
     if (!isNull driver _target) exitWith {};
-    
+
     private _class = "B_Soldier_F";
     if (side _caller == EAST) then {
         _class = "O_Soldier_F";
@@ -33,13 +33,13 @@ aidrivers_createUnit = {
     if (side _caller == INDEPENDENT) then {
         _class = "I_Soldier_F";
     };
-    
+
     _unit = group _caller createUnit [_class, [0,0,0], [], 0, "CAN_COLLIDE"];
 
     _target setVariable ["aidrivers_driver", _unit];
-    
+
     _unit moveInDriver _target;
-    
+
     [{vehicle (_this select 0) != _this select 0}, {
         (_this select 1) params ["_unit", "_target", "_caller", "_id2"];
         [{
@@ -56,7 +56,7 @@ aidrivers_createUnit = {
             };
         }, 1, [_unit, _target, _caller, _id2]] call CBA_fnc_addPerFrameHandler;
     }, [_unit, [_unit, _target, _caller, _id2]]] call CBA_fnc_WaitUntilAndExecute;
-    
+
 };
 
 {

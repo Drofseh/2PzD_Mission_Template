@@ -25,7 +25,7 @@
 [this,"UKEsx39_MG"] call FNC_GearScript;       Machine Gunner
 [this,"UKEsx39_MGA"] call FNC_GearScript;      Machine Gun Assistant
 [this,"UKEsx39_MGAB"] call FNC_GearScript;     Machine Gun Ammo Bearer
-                                            
+
 [this,"UKEsx39_MortTL"] call FNC_GearScript;   Mortar Team Leader
 [this,"UKEsx39_MortG"] call FNC_GearScript;    Mortar Gunner
 [this,"UKEsx39_MortA"] call FNC_GearScript;    Mortar Assistant

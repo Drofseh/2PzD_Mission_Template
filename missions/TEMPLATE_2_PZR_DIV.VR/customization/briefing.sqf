@@ -11,7 +11,7 @@ switch (side player) do { // Checks what team the player is on
 
 case west: { // If player is west he receives this briefing
 
-NEWTAB("I. Lage (Situation):") 
+NEWTAB("I. Lage (Situation):")
 // Give a brief description of the current situation. Ex. what has happened that led up to this mission. Generally should give an idea of why this mission is happening.
 <br/>
 <br/>
@@ -267,7 +267,7 @@ ENDTAB;
 
 case east: { // Briefing for Opfor goes here if needed
 
-NEWTAB("I. Ситуация (Situation):") 
+NEWTAB("I. Ситуация (Situation):")
 // Give a brief description of the current situation. Ex. what has happened that led up to this mission. Generally should give an idea of why this mission is happening.
 <br/>
 <br/>
@@ -523,7 +523,7 @@ ENDTAB;
 
 case resistance: { // Briefing for Indfor goes here if needed
 
-NEWTAB("I. Situation:") 
+NEWTAB("I. Situation:")
 // Give a brief description of the current situation. Ex. what has happened that led up to this mission. Generally should give an idea of why this mission is happening.
 <br/>
 <br/>
@@ -826,14 +826,14 @@ if (God isEqualTo player) then {
 _adminState = call BIS_fnc_admin;
 _uid = getPlayerUID player;
 if ((_adminState != 0) || (God isEqualTo player) || (_uid == "76561197970317496") || (_uid == "76561197983143701") || (_uid == "76561198096113294") || (_uid == "76561197985738940") || (_uid == "76561198007878058") || (_uid == "76561198006804011")) then {
-	//This tab has clickable commands to allow the admin or zeus to end the mission.
-	//More may be added by makin an entry here and adding a corresponding entry in the settings.sqf
-    NEWTAB("Admin Tab") 
+    //This tab has clickable commands to allow the admin or zeus to end the mission.
+    //More may be added by makin an entry here and adding a corresponding entry in the settings.sqf
+    NEWTAB("Admin Tab")
     <br/>The server admin and the zeus (if present) both have access to these options.
     <br/>
     <br/>This is used to call mission endings, please be careful since if you press it once it will end the mission.
     <br/>
-    <br/><execute expression='victoryMessage call FNC_EndMissionRequest'>Call Mission Victory</execute>  
+    <br/><execute expression='victoryMessage call FNC_EndMissionRequest'>Call Mission Victory</execute>
     <br/>
     <br/><execute expression='failureMessage call FNC_EndMissionRequest'>Call Mission Failure</execute>
     <br/>

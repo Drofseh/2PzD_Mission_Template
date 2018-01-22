@@ -231,7 +231,7 @@
         [Rus_Weap_PPD40],
         [Rus_Mag_PPD40,1,"vest"]
         ],[5]
-        ] call FNC_AddItemRandomPercent; 
+        ] call FNC_AddItemRandomPercent;
 
         [//Secondary Weapon
         [//P38

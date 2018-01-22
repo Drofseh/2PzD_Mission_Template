@@ -25,7 +25,7 @@
 [this,"UK39_MG"] call FNC_GearScript;       Machine Gunner
 [this,"UK39_MGA"] call FNC_GearScript;      Machine Gun Assistant
 [this,"UK39_MGAB"] call FNC_GearScript;     Machine Gun Ammo Bearer
-                                            
+
 [this,"UK39_MortTL"] call FNC_GearScript;   Mortar Team Leader
 [this,"UK39_MortG"] call FNC_GearScript;    Mortar Gunner
 [this,"UK39_MortA"] call FNC_GearScript;    Mortar Assistant

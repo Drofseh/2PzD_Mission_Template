@@ -42,7 +42,7 @@ if (!_result) then {
             FW_missing_gear_found = [_class];
         };
     }] remoteExec ["BIS_fnc_call", 0, true];
-    
+
     if (!isNull _unit) then {
         [_class, _unit] remoteExecCall ["FNC_makeUnitsList", 2, false];
     };

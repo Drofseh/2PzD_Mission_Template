@@ -43,7 +43,7 @@
         Ger_leader_equipment;
 
         //Primary Weapon
-        
+
         [//Secondary Weapon
         [//P08
         [Ger_Mag_P08,1],
@@ -82,7 +82,7 @@
         [Ger_Mag_K98,1] call FNC_AddItem;
         [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
-        
+
         [//Secondary Weapon
         [//P08
         [Ger_Mag_P08,1],
@@ -116,7 +116,7 @@
         Ger_leader_equipment;
 
         //Primary Weapon
-        
+
         [//Secondary Weapon
         [//P08
         [Ger_Mag_P08,1],
@@ -155,7 +155,7 @@
         [Ger_Mag_K98,1] call FNC_AddItem;
         [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
-        
+
         [//Secondary Weapon
         [//P08
         [Ger_Mag_P08,1],

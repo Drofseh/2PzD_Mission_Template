@@ -178,7 +178,7 @@
     //Zugtruppführer
     case "WHR39_P2" : {
         [Ger_Uni_SL] call FNC_AddItem;
-                                       
+
         [Ger_BP_AF] call FNC_AddItem;
         [Ger_Hat] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -315,7 +315,7 @@
         Ger_default_equipment;
 
         //Primary Weapon
-                       
+
         [Ger_Mag_K98,1] call FNC_AddItem;
         [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
@@ -670,9 +670,9 @@
         [Ger_Mag_K98,1] call FNC_AddItem;
         [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
-                       
-                               
-              
+
+
+
 
         //Extra
         [Ger_Mag_MG_250,2] call FNC_AddItem;
@@ -726,10 +726,10 @@
         [Ger_Weap_P38],
         [Ger_Mag_P38,2]
         ],[42]
-                       
-               
-                
-                          
+
+
+
+
         ] call FNC_AddItemRandomPercent;
 
         //Primary Weapon

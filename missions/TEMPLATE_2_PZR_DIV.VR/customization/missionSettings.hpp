@@ -4,9 +4,9 @@ loadScreen = "Logo.jpg"; //Sets the image displayed during the loading screen, m
 onLoadMission = "PUT_YOUR_LOADING_TEXT_HERE"; //Text displayed under the image during the loading screen
 
 class Header {
-	
-	gameType = Coop;
-	minPlayers = 1;
-	maxPlayers = 78; //maxPlayers must always be accurate to the amount of playable units
-	
+
+    gameType = Coop;
+    minPlayers = 1;
+    maxPlayers = 78; //maxPlayers must always be accurate to the amount of playable units
+
 };

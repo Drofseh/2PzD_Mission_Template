@@ -18,15 +18,15 @@ eastCasualty = "Red Army" call FNC_CasualtyPercentage; //Gets the casualty perce
 //Just make sure you test to make sure they all work!
 /*
 if (eastCasualty >= 75) exitWith { //ends when Opfor deaths above or equal to 75%
-	"Red Army forces have taken too many casualties to continue operations.
-	<br/>
-	<br/>BLUFOR VICTORY" call FNC_EndMission;
+    "Red Army forces have taken too many casualties to continue operations.
+    <br/>
+    <br/>BLUFOR VICTORY" call FNC_EndMission;
 };
 
 if (westCasualty >= 75) exitWith { //ends when Bluefor deaths above or equal to 75%
-	"2 Panzer Division has taken too many casualties to continue operations.
-	<br/>
-	<br/>OPFOR VICTORY" call FNC_EndMission;
+    "2 Panzer Division has taken too many casualties to continue operations.
+    <br/>
+    <br/>OPFOR VICTORY" call FNC_EndMission;
 };
 */
 //Time limit message/time are in settings.sqf

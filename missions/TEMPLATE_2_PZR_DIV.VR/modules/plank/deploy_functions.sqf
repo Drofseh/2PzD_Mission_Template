@@ -28,7 +28,7 @@ plank_deploy_fnc_setFortPosition = {
 
 plank_deploy_fnc_setFortVariables = {
     FUN_ARGS_7(_fortIndex,_fort,_relativeHeight,_direction,_distance,_pitch,_bank);
-    
+
     _unit setVariable ["plank_deploy_fortIndex", _fortIndex, false];
     _unit setVariable ["plank_deploy_fort", _fort, false];
     _unit setVariable ["plank_deploy_fortRelativeHeight", _relativeHeight, false];

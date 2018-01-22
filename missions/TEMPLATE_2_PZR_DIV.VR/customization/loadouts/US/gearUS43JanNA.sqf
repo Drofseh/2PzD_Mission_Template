@@ -554,25 +554,25 @@
         [US_Mag_M1C,4,"vest"]
         ],[35],
         [//M1 Garand
-		[US_Vest_M1G_Gren],
-		[US_Mag_M1G,1],
-		[US_Weap_M1G_1],
-		[US_Mag_M1G,10,"vest"],
-		[US_Mag_RGrn_AT,10]
+        [US_Vest_M1G_Gren],
+        [US_Mag_M1G,1],
+        [US_Weap_M1G_1],
+        [US_Mag_M1G,10,"vest"],
+        [US_Mag_RGrn_AT,10]
         ],[22],
         [//M1 Garand
-		[US_Vest_M1G_Gren],
-		[US_Mag_M1G,1],
-		[US_Weap_M1G_2],
-		[US_Mag_M1G,10,"vest"],
-		[US_Mag_RGrn_AT,10]
+        [US_Vest_M1G_Gren],
+        [US_Mag_M1G,1],
+        [US_Weap_M1G_2],
+        [US_Mag_M1G,10,"vest"],
+        [US_Mag_RGrn_AT,10]
         ],[21],
         [//M1 Garand
-		[US_Vest_M1G_Gren],
-		[US_Mag_M1G,1],
-		[US_Weap_M1G_3],
-		[US_Mag_M1G,10,"vest"],
-		[US_Mag_RGrn_AT,10]
+        [US_Vest_M1G_Gren],
+        [US_Mag_M1G,1],
+        [US_Weap_M1G_3],
+        [US_Mag_M1G,10,"vest"],
+        [US_Mag_RGrn_AT,10]
         ],[21],
         [//M1903
         [US_Vest_M1G],
@@ -1020,12 +1020,12 @@
         //Assigned Items
         US_default_equipment;
         [US_Weap_MortB] call FNC_AddItem;
-        
+
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
         [US_Mag_M1911,3] call FNC_AddItem;
-        
+
         //Extra
         [US_Mag_Mort_HE,8] call FNC_AddItem;
         [GEN_ace_rangetable,1] call FNC_AddItem;
@@ -1043,12 +1043,12 @@
         //Assigned Items
         US_default_equipment;
         [US_Weap_MortT] call FNC_AddItem;
-        
+
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
         [US_Mag_M1911,3] call FNC_AddItem;
-        
+
         //Extra
         [US_Mag_Mort_HE,8] call FNC_AddItem;
         [GEN_ace_rangetable,1] call FNC_AddItem;
@@ -1255,8 +1255,8 @@
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USA_default_equipment;
-        USA_leader_equipment;
+        US_default_equipment;
+        US_leader_equipment;
 
         [//Primary Weapon
         [//M1 Thompson
@@ -1302,7 +1302,7 @@
         [US_Weap_M1911] call FNC_AddItem;
         [US_Mag_M1911,3] call FNC_AddItem;
     };
-    
+
     //Tank Crew
     case "US43NA_VCrew" : {
         [//Uniform
@@ -1321,7 +1321,7 @@
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USA_default_equipment;
+        US_default_equipment;
 
         [//Weapon
         [//M3 Grease Gun & M1911

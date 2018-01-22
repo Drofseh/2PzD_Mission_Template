@@ -97,7 +97,7 @@
 #define US_Uni_VCrew1           "fow_u_us_m41_01_private"
 #define US_Uni_VCrew2           "fow_u_us_m41_01_private"
 
-//Early UniEform
+//Early Uniform
 #define US_UniE_CPT              "fow_u_us_m37_01_private"
 #define US_UniE_LT               "fow_u_us_m37_01_private"
 #define US_UniE_SGT              "fow_u_us_m37_01_private"
@@ -529,3 +529,16 @@
 
 //Headgear
 #define USAF_Helm               "H_LIB_US_Helmet_Pilot"
+
+#define USAF_default_equipment \
+["ItemMap"] call FNC_AddItem; \
+["ItemCompass"] call FNC_AddItem; \
+["ItemWatch"]call FNC_AddItem; \
+["ACE_fieldDressing",4] call FNC_AddItem; \
+["ACE_tourniquet",1] call FNC_AddItem; \
+["ACE_Flashlight_MX991"]call FNC_AddItem;
+
+#define USAF_leader_equipment \
+["LIB_Binocular_SU"] call FNC_AddItem; \
+["ACE_MapTools"] call FNC_AddItem; \
+["fow_i_whistle"] call FNC_AddItem;

@@ -14,5 +14,5 @@
 
 private _scenario = _this;
 
-callMissionRemote = [_scenario]; 
+callMissionRemote = [_scenario];
 publicVariableServer "callMissionRemote";

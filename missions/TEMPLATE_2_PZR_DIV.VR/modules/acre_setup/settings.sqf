@@ -10,7 +10,7 @@ FW_enable_scramble = true;
 /*
  * FNC_SetScramble
  * Change unit's scramble so it matches set faction
- * 
+ *
  * Example:
  * [this, east] call FNC_SetScramble;
  * Will set unit's radio to east's scramble setting.
@@ -88,7 +88,7 @@ FW_enable_babel = false;
 
 /*
  * FNC_SetLanguages
- * 
+ *
  * Use this function in player's init to set player's custom languages (translator for example)
  * faction setting will be overwritten by this value
  *
@@ -165,7 +165,7 @@ FW_languages_babel = [
 /*
   Direct speech slider
   ACRE2 has a built in direct speech slider allowing you to determine how far your voice in direct speech should travel. The system has five states and by default starts in the middle state. The below table contains an approximated table with empirical testing by Bullhorn.
-  
+
   Volume state  |  Loud (m)  |  Quiet (m)  |  Barely audible (m)
   -2            |  1         |  2          |  13
   -1            |  3         |  15         |  55

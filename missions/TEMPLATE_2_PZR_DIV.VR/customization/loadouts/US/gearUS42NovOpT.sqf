@@ -1328,8 +1328,8 @@
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USA_default_equipment;
-        USA_leader_equipment;
+        US_default_equipment;
+        US_leader_equipment;
 
         [//Primary Weapon
         [//M1928A1
@@ -1369,7 +1369,7 @@
         [US_Weap_M1911] call FNC_AddItem;
         [US_Mag_M1911,3] call FNC_AddItem;
     };
-    
+
     //Tank Crew
     case "US42OpT_VCrew" : {
         [//Uniform
@@ -1388,7 +1388,7 @@
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USA_default_equipment;
+        US_default_equipment;
 
         [//Weapon
         [//M1911 Only
