@@ -262,18 +262,19 @@
 ["fow_i_whistle"] call FNC_AddItem;
 
 #define Ger_medicP_equipment \
-["ACE_fieldDressing",20,"backpack"] call FNC_AddItem; \
-["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
+["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
+["ACE_elasticBandage",20,"backpack"] call FNC_AddItem; \
+["ACE_packingBandage",20,"backpack"] call FNC_AddItem; \
 ["ACE_morphine",10,"backpack"] call FNC_AddItem; \
 ["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
 ["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
 ["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
-["ACE_personalAidKit",5,"backpack"] call FNC_AddItem; \
-["ACE_salineIV_500",5,"backpack"] call FNC_AddItem;
+["ACE_salineIV_500",14,"backpack"] call FNC_AddItem;
 
 #define Ger_medicS_equipment \
-["ACE_fieldDressing",15,"backpack"] call FNC_AddItem; \
-["ACE_elasticBandage",5,"backpack"] call FNC_AddItem; \
+["ACE_fieldDressing",5,"backpack"] call FNC_AddItem; \
+["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
+["ACE_packingBandage",10,"backpack"] call FNC_AddItem; \
 ["ACE_morphine",5,"backpack"] call FNC_AddItem; \
 ["ACE_tourniquet",5,"backpack"] call FNC_AddItem;
 
@@ -381,8 +382,8 @@
 //=== EQUIPMENT ===
 
 #define FSJ_medic_equipment \
-["ACE_fieldDressing",12] call FNC_AddItem; \
-["ACE_elasticBandage",4,"backpack"] call FNC_AddItem; \
+["ACE_elasticBandage",8] call FNC_AddItem; \
+["ACE_packingBandage",8] call FNC_AddItem; \
 ["ACE_morphine",5] call FNC_AddItem; \
 ["ACE_epinephrine",4] call FNC_AddItem; \
 ["ACE_salineIV_500",3] call FNC_AddItem;

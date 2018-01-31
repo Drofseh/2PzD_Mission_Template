@@ -112,11 +112,11 @@
 ["fow_i_whistle"] call FNC_AddItem;
 
 #define GEN_medic_equipment \
-["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
-["ACE_elasticBandage",5,"backpack"] call FNC_AddItem; \
+["ACE_fieldDressing",5,"backpack"] call FNC_AddItem; \
+["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
+["ACE_packingBandage",10,"backpack"] call FNC_AddItem; \
 ["ACE_morphine",5,"backpack"] call FNC_AddItem; \
 ["ACE_epinephrine",2,"backpack"] call FNC_AddItem; \
 ["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
 ["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
-["ACE_personalAidKit",2,"backpack"] call FNC_AddItem; \
-["ACE_salineIV_500",2,"backpack"] call FNC_AddItem;
+["ACE_salineIV_500",4,"backpack"] call FNC_AddItem;

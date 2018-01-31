@@ -1,4 +1,12 @@
 //========================Civilian Equipment Definitions========================
+//=== Weapons ===
+
+//Primary
+//Secondary
+//Launcher
+//Attachments
+//Ammo
+//Grenades
 
 //=== Clothes ===
 
@@ -13,7 +21,7 @@
 //Suits
 #define Civ_Uni_Lab_r           ["U_LIB_CIV_Assistant"],["U_LIB_CIV_Assistant_2"],["U_LIB_CIV_Doctor"],["U_LIB_CIV_Schoolteacher"],["U_LIB_CIV_Schoolteacher_2"]
 //Lab Coats
-#define Civ_Uni_Priest          "U_LIB_CIV_Priest"
+#define Civ_Uni_Priest_O        "U_LIB_CIV_Priest"
 //Orthodox Priest Robes
 
 //Vests
@@ -37,3 +45,21 @@
 //Fedora-ish
 #define Civ_Beret               "H_Beret_blk"
 //Black Beret for irregulars
+
+//Face
+#define Civ_Face_r             ["G_LIB_Dienst_Brille"],["G_LIB_Dienst_Brille2"], \
+                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
+                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
+                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
+                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
+                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
+                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
+                                ["G_LIB_Watch2"],["G_LIB_Watch1"]
+#define Civ_Face_Bino          "G_LIB_Binoculars"
+
+//=== MISC ===
+
+//=== EQUIPMENT ===
+
+#define Civ_default_equipment \
+["ItemWatch"]call FNC_AddItem;

@@ -137,14 +137,14 @@
 ["fow_i_whistle"] call FNC_AddItem;
 
 #define Rus_medic_equipment \
-["ACE_fieldDressing",20,"backpack"] call FNC_AddItem; \
-["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
-["ACE_morphine",5,"backpack"] call FNC_AddItem; \
-["ACE_epinephrine",2,"backpack"] call FNC_AddItem; \
+["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
+["ACE_elasticBandage",20,"backpack"] call FNC_AddItem; \
+["ACE_packingBandage",20,"backpack"] call FNC_AddItem; \
+["ACE_morphine",10,"backpack"] call FNC_AddItem; \
+["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
 ["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
 ["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
-["ACE_personalAidKit",2,"backpack"] call FNC_AddItem; \
-["ACE_salineIV_500",2,"backpack"] call FNC_AddItem;
+["ACE_salineIV_500",4,"backpack"] call FNC_AddItem;
 
 //===== VDV Equipment Definitions =====
 
@@ -166,14 +166,14 @@
 ["fow_i_whistle"] call FNC_AddItem;
 
 #define VDV_medic_equipment \
-["ACE_fieldDressing",10] call FNC_AddItem; \
-["ACE_elasticBandage",5] call FNC_AddItem; \
-["ACE_morphine",5] call FNC_AddItem; \
-["ACE_epinephrine",2] call FNC_AddItem; \
+["ACE_fieldDressing",5,"backpack"] call FNC_AddItem; \
+["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
+["ACE_packingBandage",15,"backpack"] call FNC_AddItem; \
+["ACE_morphine",5,"backpack"] call FNC_AddItem; \
+["ACE_epinephrine",2,"backpack"] call FNC_AddItem; \
 ["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
 ["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
-["ACE_personalAidKit",2,"backpack"] call FNC_AddItem; \
-["ACE_salineIV_500",2,"backpack"] call FNC_AddItem;
+["ACE_salineIV_500",3,"backpack"] call FNC_AddItem;
 
 //===== NKVD Equipment Definitions =====
 
