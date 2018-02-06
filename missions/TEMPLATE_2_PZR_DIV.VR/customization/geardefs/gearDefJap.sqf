@@ -92,6 +92,7 @@
 ["ItemMap"] call FNC_AddItem; \
 ["ItemCompass"] call FNC_AddItem; \
 ["ItemWatch"]call FNC_AddItem; \
+["ACE_Fortify"]call FNC_AddItem; \
 ["ACE_EntrenchingTool"]call FNC_AddItem; \
 ["ACE_fieldDressing",4] call FNC_AddItem; \
 ["ACE_tourniquet",1] call FNC_AddItem; \

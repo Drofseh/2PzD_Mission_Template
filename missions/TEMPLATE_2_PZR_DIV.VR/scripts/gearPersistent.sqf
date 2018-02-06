@@ -2,7 +2,9 @@
 
 // this will load a players previously saved loadout from the last missions rpt file base on their UID.
 
-// Make sure when copying loadouts from the rpt that you remove extra " marks.
+// to call this on a unit use
+// nul = [this] call compile preprocessFileLineNumbers "scripts\gearPersistant.sqf";
+
 // If there is no matching UID case then they will get the default loadout.
 
 if (local (_this select 0)) then {
@@ -17,7 +19,7 @@ if (local (_this select 0)) then {
             // you must change these to be appropriate for your mission
             default {
                 //this is just an example, I recommend using the basic rifleman loadout for the players side.
-                [_playa,"WHR39_Rif"] call FNC_GearScript;
+                [_playa,"WHR45_Rif_LR"] call FNC_GearScript;
             };
             // cases from the log file go here
             // it should look like the line below
@@ -35,6 +37,6 @@ if (local (_this select 0)) then {
         // I consider this fair and hopefully it will motivate players to join on time.
     if (didJIP) then {
         //this is just an example, I recommend using the basic rifleman loadout for the players side.
-        [_playa,"WHR39_Rif"] call FNC_GearScript;
+        [_playa,"WHR45_Rif_LR"] call FNC_GearScript;
     };
 };

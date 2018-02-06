@@ -562,7 +562,7 @@ class items
 				class Attributes
 				{
 					ammo=0.7751143;
-					init="[this,""FSJ40Mar_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";" \n "this removeItem ""TFAR_rf7800str"";";
+					init="[this,""FSJ40Mar_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";" \n "this removeItem ""TFAR_rf7800str"";";
 					description="Funker@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
 					class Inventory
@@ -840,7 +840,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
 					class Inventory
@@ -1118,7 +1118,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
 					class Inventory
@@ -1939,7 +1939,7 @@ class items
 				class Attributes
 				{
 					ammo=0.7751143;
-					init="[this,""FSJ40Mar_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";" \n "this removeItem ""TFAR_rf7800str"";";
+					init="[this,""FSJ40Mar_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";" \n "this removeItem ""TFAR_rf7800str"";";
 					description="Funker@1. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
@@ -2497,7 +2497,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mess""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Mess""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Melder@1. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
@@ -3037,7 +3037,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Richtschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -3297,7 +3297,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Hilfsschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -3576,7 +3576,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Scharfschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -3855,7 +3855,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -4414,7 +4414,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Richtschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -4674,7 +4674,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Hilfsschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -4953,7 +4953,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Grenadier@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -5232,7 +5232,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -5810,7 +5810,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Richtschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -6070,7 +6070,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Hilfsschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -6330,7 +6330,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Scharfschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -6609,7 +6609,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -7150,7 +7150,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Richtschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -7410,7 +7410,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Hilfsschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -7670,7 +7670,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Grenadier@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -7949,7 +7949,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -8527,7 +8527,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Richtschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -8806,7 +8806,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Hilfsschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -9066,7 +9066,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Scharfschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -9345,7 +9345,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -9904,7 +9904,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Richtschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -10165,7 +10165,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Hilfsschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -10444,7 +10444,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Grenadier@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -10723,7 +10723,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -11563,7 +11563,7 @@ class items
 				class Attributes
 				{
 					ammo=0.7751143;
-					init="[this,""FSJ40Mar_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";" \n "this removeItem ""TFAR_rf7800str"";";
+					init="[this,""FSJ40Mar_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";" \n "this removeItem ""TFAR_rf7800str"";";
 					description="Funker@2. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
@@ -12102,7 +12102,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mess""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Mess""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Melder@2. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
@@ -12661,7 +12661,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Richtschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -12921,7 +12921,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Hilfsschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -13200,7 +13200,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Scharfschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -13479,7 +13479,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -14038,7 +14038,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Richtschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -14317,7 +14317,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Hilfsschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -14596,7 +14596,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Grenadier@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -14875,7 +14875,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -15434,7 +15434,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Richtschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -15713,7 +15713,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Hilfsschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -15992,7 +15992,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Scharfschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -16271,7 +16271,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -16831,7 +16831,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Richtschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -17110,7 +17110,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Hilfsschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -17389,7 +17389,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Grenadier@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -17668,7 +17668,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -18246,7 +18246,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Richtschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -18525,7 +18525,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Hilfsschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -18804,7 +18804,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Scharfschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -19083,7 +19083,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -19643,7 +19643,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Richtschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -19903,7 +19903,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="MG-Hilfsschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -20182,7 +20182,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Grenadier@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -20461,7 +20461,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gewehrschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory

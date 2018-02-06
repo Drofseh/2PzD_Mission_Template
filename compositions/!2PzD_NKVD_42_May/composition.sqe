@@ -1724,7 +1724,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_MG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_MG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="1st Team | Machine Gunner@1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -2061,7 +2061,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_MGA""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_MGA""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="1st Team | Machine Gun Assistant@1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -2398,7 +2398,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="1st Team | Strelok@1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -2735,7 +2735,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="1st Team | Strelok@1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -3409,7 +3409,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="2nd Team | Strelok@1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -3765,7 +3765,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="2nd Team | Strelok@1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -4121,7 +4121,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="2nd Team | Strelok@1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -4496,7 +4496,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="2nd Team | Strelok@1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -5207,7 +5207,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_MG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_MG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="1st Team | Machine Gunner@2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -5544,7 +5544,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_MGA""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_MGA""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="1st Team | Machine Gun Assistant@2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -5881,7 +5881,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="1stTeam | Strelok@2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -6218,7 +6218,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="1st Team | Strelok@2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -6892,7 +6892,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="2nd Team | Strelok@2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -7248,7 +7248,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="2nd Team | Strelok@2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -7604,7 +7604,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="2nd Team | Strelok@2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -7979,7 +7979,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="2nd Team | Strelok@2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -8690,7 +8690,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_MG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_MG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="1st Team | Machine Gunner@3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -9027,7 +9027,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_MGA""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_MGA""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="1st Team | Machine Gun Assistant@3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -9364,7 +9364,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="1st Team | Strelok@3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -9701,7 +9701,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="1st Team | Strelok@3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -10375,7 +10375,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="2nd Team | Strelok@3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -10731,7 +10731,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="2nd Team | Strelok@3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -11087,7 +11087,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="2nd Team | Strelok@3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -11462,7 +11462,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""NKVD42May_Stre""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="2nd Team | Strelok@3rd Squad";
 					isPlayable=1;
 					class Inventory

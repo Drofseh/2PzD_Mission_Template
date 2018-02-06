@@ -788,6 +788,71 @@
         [Ger_Mag_MG_50,3] call FNC_AddItem;
     };
 
+    //Gewehrschütze Low Random
+    case "WHR45_Rif_LR" : {
+        [Ger_Uni_Rif_L] call FNC_AddItem;
+        [Ger_BP_r] call FNC_AddItemRandom;
+        [Ger_Helmet_r] call FNC_AddItemRandom;
+        [GEN_Face_r] call FNC_AddItemRandom;
+
+        //Assigned Items
+        Ger_default_equipment;
+
+        [//Primary Weapon
+        [//K98k
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98],
+        [Ger_Mag_K98,12,"vest"]
+        ],[90],
+        [//G43
+        [Ger_Vest_G43],
+        [Ger_Mag_G43,1],
+        [Ger_Weap_G43],
+        [Ger_Mag_G43,6,"vest"]
+        ],[5],
+        [//StG44
+        [Ger_Vest_StG44],
+        [Ger_Mag_StG44,1],
+        [Ger_Weap_StG44],
+        [Ger_Mag_StG44,6,"vest"]
+        ],[4],
+        [//K98k Pre-War
+        [Ger_Vest_K98],
+        [Ger_Mag_K98,1],
+        [Ger_Weap_K98_E],
+        [Ger_Mag_K98,12,"vest"]
+        ],[1]
+        ] call FNC_AddItemRandomPercent;
+
+        [//Launcher
+        [//
+        [Ger_Weap_PzFaust_60]
+        ],[50],
+        [//
+        [Ger_Weap_PzFaust_30]
+        ],[25],
+        [//
+        [Ger_Weap_PzFaust_100]
+        ],[15],
+        [//
+        [Ger_Weap_PzFaust_K]
+        ],[10]
+        ] call FNC_AddItemRandomPercent;
+
+        //Extra
+        [
+        [//M24
+        [Ger_Gren_Frag_SC,1]
+        ],[66],
+        [//M24 Splittering
+        [Ger_Gren_Frag_SF,1]
+        ],[34]
+        ] call FNC_AddItemRandomPercent;
+        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Mag_MG_50,1] call FNC_AddItem;
+    };
+
 //Weapon Truppen
 
     //Mortar Team

@@ -5362,7 +5362,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -5565,7 +5565,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -5769,7 +5769,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -5972,7 +5972,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -6175,7 +6175,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gun Team Leader@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -6511,7 +6511,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Bren Gunner@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -6866,7 +6866,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Bren Gun Assistant@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -7574,7 +7574,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -7777,7 +7777,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -7981,7 +7981,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -8184,7 +8184,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -8387,7 +8387,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gun Team Leader@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -8723,7 +8723,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Bren Gunner@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -9078,7 +9078,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Bren Gun Assistant@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -9786,7 +9786,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -9989,7 +9989,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -10193,7 +10193,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -10396,7 +10396,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -10599,7 +10599,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gun Team Leader@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -10935,7 +10935,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Bren Gunner@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -11290,7 +11290,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Bren Gun Assistant@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -14557,7 +14557,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -14760,7 +14760,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -14964,7 +14964,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -15167,7 +15167,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -15370,7 +15370,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gun Team Leader@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -15706,7 +15706,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Bren Gunner@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -16061,7 +16061,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Bren Gun Assistant@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -16769,7 +16769,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -16972,7 +16972,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -17176,7 +17176,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -17379,7 +17379,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -17582,7 +17582,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gun Team Leader@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -17918,7 +17918,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Bren Gunner@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -18273,7 +18273,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Bren Gun Assistant@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -18981,7 +18981,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -19184,7 +19184,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -19388,7 +19388,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -19591,7 +19591,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -19794,7 +19794,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_LCpl""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Gun Team Leader@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -20130,7 +20130,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_AR""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Bren Gunner@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -20485,7 +20485,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_AAR""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Bren Gun Assistant@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -21979,7 +21979,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_MortAB""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_MortAB""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="3"" Mortar Ammo Bearer@Mortar Team";
 					isPlayable=1;
 					class Inventory
@@ -22767,7 +22767,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_MG""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_MG""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Machine Gunner@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
@@ -24303,7 +24303,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_ATRG""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_ATRG""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Boys Gunner@Boys Rifle Team";
 					isPlayable=1;
 					class Inventory
@@ -25839,7 +25839,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
@@ -26061,7 +26061,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
@@ -26416,7 +26416,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC39_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""removeMap.sqf"";";
+					init="[this,""CdnBC39_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
