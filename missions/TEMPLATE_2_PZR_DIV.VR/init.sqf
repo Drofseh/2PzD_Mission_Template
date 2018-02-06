@@ -1,6 +1,9 @@
 
 #define framework
 
+loggingEnabled = 0; // Set this to 1 to enable inventory logging for players and named vehicles. See scripts\gearLog.sqf for more requirements.
+loggingTime = 60; // How often (in seconds) an inventory log will be created during play. I do not recommend changing this except when doing testing and diagnostics.
+
 #include "core\script_macros.hpp"
 #include "core\init.sqf" //DO NOT REMOVE
 #include "customization\settings.sqf" //DO NOT REMOVE
@@ -30,9 +33,6 @@ if (isServer) then {
 #include "core\postChecks.sqf" //DO NOT REMOVE
 
 LIB_GLOBAL_ENABLE_RADIO_IN_VEHICLE = false;
-
-loggingEnabled = 0; // Set this to 1 to enable inventory logging for players and named vehicles. See scripts\gearLog.sqf for more requirements.
-loggingTime = 60; // How often (in seconds) an inventory log will be created during play. I do not recommend changing this except when doing testing and diagnostics.
 
 #include "scripts\gearLog.sqf"
 

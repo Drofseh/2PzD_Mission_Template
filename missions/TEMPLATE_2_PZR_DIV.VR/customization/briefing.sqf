@@ -793,7 +793,7 @@ NEWTAB("Mission notes:")
 // put failure conditions here, example - Russian forces secure the train (after 30 minutes of uninterrupted occupation), USMC suffer too many casualties(80%), or time limit is reached.
 ENDTAB;
 
-if (loggingEnabled == 1;) then {
+if (loggingEnabled == 1) then {
     //Persistance system information should go in this tab.
     NEWTAB("Persistence System")
     <br/><font color='#FF8C00'>To ensure accurate logging of data follow the following steps:</font>
