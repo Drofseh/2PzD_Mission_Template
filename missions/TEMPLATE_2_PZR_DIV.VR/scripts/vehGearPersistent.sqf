@@ -1,7 +1,7 @@
 ﻿    // This will assign vehicle loadout based on vehicle variable name
 
-    // to call _vic on a vehicle use
-    // nul = [_vic] call compile preprocessFileLineNumbers "scripts\vehGearPersistent.sqf";
+    // to call this on a vehicle use
+    // nul = [this] execVM "scripts\vehGearPersistent.sqf";
 
 /*
     //--- For All Vehicles:
@@ -22,8 +22,8 @@
             _vic addItemCargo ["ACE_morphine", 4];          // adds 4 ACE_morphine
 
     Weapons Class & Count: These are the type and number of weapons that are in the vehicles inventory.
-        addWeaponCargo - Works just like addItemCargo, but for weapons.
-            _vic addWeaponCargo ["hgun_PDW2000_F", 4];    // adds 4 hgun_PDW2000_F weapons
+        addWeaponCargoGlobal - Works just like addItemCargo, but for weapons.
+            _vic addWeaponCargoGlobal ["hgun_PDW2000_F", 4];    // adds 4 hgun_PDW2000_F weapons
 
     Bags Class & Count: These are the type and number of backpacks that are in the vehicles inventory.
         addBackpackCargo - Also works like addItemCargo, but is required for backpacks, because in ARMA backpacks aren't items they're vehicles, go figure that one out.
@@ -82,10 +82,10 @@
     Fuel Cargo: This is how much vanilla refuel supply the vehicle has left. Generally it shouldn't be needed since only ACE refueling should be functional.
         setFuelCargo - This sets the amount of fuel in a refueling truck that uses vanilla refueling has to refuel with.
             _vic setFuelCargo 0.65;  // sets cargo fuel to 65%
-    */
+*/
 
+sleep 1;
 if (local (_this select 0)) then {
-
     _vic = _this select 0;
     _vic call FNC_RemoveAllVehicleGear;
 
@@ -99,7 +99,7 @@ if (local (_this select 0)) then {
             _vic addMagazineAmmoCargo ["30Rnd_9x21_Mag",1,28];
             _vic addMagazineAmmoCargo ["HandGrenade",3,1];
             _vic addMagazineAmmoCargo ["Chemlight_blue",5,1];
-            _vic addWeaponCargo ["hgun_PDW2000_F", 4];
+            _vic addWeaponCargoGlobal ["hgun_PDW2000_F", 4];
             _vic addBackpackCargo ["TK_RPG_Backpack_EP1",2];
 
             // set fuel

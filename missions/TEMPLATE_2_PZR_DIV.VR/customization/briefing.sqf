@@ -796,13 +796,13 @@ ENDTAB;
 if (loggingEnabled == 1) then {
     //Persistance system information should go in this tab.
     NEWTAB("Persistence System")
-    <br/><font color='#FF8C00'>To ensure accurate logging of data follow the following steps:</font>
+    <br/><font color='#70db70'>To ensure accurate logging of data follow these steps:</font>
     <br/>
-    <br/><font color='#70db70'>When putting a weapon in a vehicle or container:</font>
+    <br/><font color='#FF8C00'>When putting a weapon in a vehicle or container:</font>
     <br/>Remove the magazine and all attachments and put them in separately.
     <br/>Any attachments or magazines left in or on a weapons will be lost.
     <br/>
-    <br/><font color='#70db70'>When putting a uniform, vest, or backpack in a vehicle or container:</font>
+    <br/><font color='#FF8C00'>When putting a uniform, vest, or backpack in a vehicle or container:</font>
     <br/>Remove all items from inside the uniform/vest/backpack and put them in separately.
     <br/>Any items left inside a uniform/vest/backpack will be lost.
     ENDTAB;

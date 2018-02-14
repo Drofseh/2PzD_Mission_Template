@@ -172,6 +172,13 @@ switch (_type) do {
 //#include "loadouts\Japan\gearJpnSNLF44.sqf"
 //#include "loadouts\Japan\gearJpnSNLF45.sqf"
 
+    //=== Partisans ===
+    //Pro-German
+//#include "loadouts\Partisans\gearPartiGerE45.sqf"
+
+    //Pro-Russians
+//#include "loadouts\Partisans\gearPartiRus45.sqf"
+
     //=== Russian ===
     //Red Army
 //#include "loadouts\Russian\gearRus39.sqf"

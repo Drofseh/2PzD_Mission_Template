@@ -40,8 +40,10 @@ switch (_type) do {
 // Remove the // at the start of a line to enable that loadout set.
 // Delete all the loadout files you are not using in order to keep the filesize down.
 
+// #include "loadoutsVeh\Russian\vehGearRUS.sqf"
+
 #include "loadoutsVeh\German\vehGearWHR.sqf"
 
-//#include "loadoutsVeh\German\vehGearFSJ.sqf"
+// #include "loadoutsVeh\German\vehGearFSJ.sqf"
 
 };
