@@ -1,38 +1,16 @@
 version=53;
-center[]={443.65503,5,695.61719};
+center[]={3572.9434,5,3892.4731};
 class items
 {
-	items=11;
+	items=9;
 	class Item0
-	{
-		dataType="Marker";
-		position[]={0.27090454,0,2.9365234};
-		name="AO";
-		markerType="RECTANGLE";
-		type="Empty";
-		colorName="ColorRed";
-		fillName="Border";
-		a=3000;
-		b=3000;
-		drawBorder=1;
-		id=0;
-	};
-	class Item1
-	{
-		dataType="Marker";
-		position[]={0.26022339,0,3.9777222};
-		name="SpectatorMarker";
-		type="Empty";
-		id=1;
-	};
-	class Item2
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.91815186,0,1.8231201};
+			position[]={0.96630859,0,2.4516602};
 		};
-		id=2643;
+		id=2;
 		type="ModuleCurator_F";
 		class CustomAttributes
 		{
@@ -134,14 +112,14 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item3
+	class Item1
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.7565002,0,1.7767334};
+			position[]={2.8046875,0,2.4052734};
 		};
-		id=2644;
+		id=3;
 		type="tfar_ModuleTaskForceRadioEnforceUsage";
 		class CustomAttributes
 		{
@@ -281,14 +259,14 @@ class items
 			nAttributes=7;
 		};
 	};
-	class Item4
+	class Item2
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-0.85125732,0,1.7767334};
+			position[]={-0.8034668,0,2.4047852};
 		};
-		id=2741;
+		id=4;
 		type="acex_headless_module";
 		class CustomAttributes
 		{
@@ -326,7 +304,7 @@ class items
 								"BOOL"
 							};
 						};
-						value=0;
+						value=1;
 					};
 				};
 			};
@@ -345,7 +323,7 @@ class items
 								"BOOL"
 							};
 						};
-						value=0;
+						value=1;
 					};
 				};
 			};
@@ -364,35 +342,35 @@ class items
 								"SCALAR"
 							};
 						};
-						value=0;
+						value=2;
 					};
 				};
 			};
 			nAttributes=4;
 		};
 	};
-	class Item5
+	class Item3
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-2.2987366,0,1.7771606};
+			position[]={-2.2507324,0,2.4057617};
 		};
 		name="HC";
 		init="call{this setGroupId [""Headless Client 01""];}";
 		isPlayable=1;
 		description="Headless Client 01";
-		id=2742;
+		id=5;
 		type="HeadlessClient_F";
 	};
-	class Item6
+	class Item4
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.2737427,0,-1.6695557};
+			position[]={2.3217773,0,-1.0410156};
 		};
-		id=9628;
+		id=6;
 		type="ModuleCurator_F";
 		class CustomAttributes
 		{
@@ -494,7 +472,7 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item7
+	class Item5
 	{
 		dataType="Group";
 		side="Civilian";
@@ -506,7 +484,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.30325317,0.0014390945,-1.5708618};
+					position[]={0.35131836,0.0014390945,-0.94213867};
 				};
 				side="Civilian";
 				flags=6;
@@ -518,7 +496,7 @@ class items
 					description="Zeus@Mount Olympus";
 					isPlayable=1;
 				};
-				id=30778;
+				id=8;
 				type="LIB_CIV_Functionary_4";
 				class CustomAttributes
 				{
@@ -852,37 +830,37 @@ class items
 		class Attributes
 		{
 		};
-		id=30777;
+		id=7;
 	};
-	class Item8
+	class Item6
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-2.2987366,0,1.2771606};
+			position[]={-2.2507324,0,1.9057617};
 		};
 		name="HC_1";
 		init="call{this setGroupId [""Headless Client 02""];}";
 		isPlayable=1;
 		description="Headless Client 02";
-		id=41810;
+		id=9;
 		type="HeadlessClient_F";
 	};
-	class Item9
+	class Item7
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-2.2987366,0,0.77716064};
+			position[]={-2.2507324,0,1.4057617};
 		};
 		name="HC_2";
 		init="call{this setGroupId [""Headless Client 03""];}";
 		isPlayable=1;
 		description="Headless Client 03";
-		id=41811;
+		id=10;
 		type="HeadlessClient_F";
 	};
-	class Item10
+	class Item8
 	{
 		dataType="Group";
 		side="Civilian";
@@ -894,7 +872,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.32150269,0.0014390945,-3.5653076};
+					position[]={0.36962891,0.0014390945,-2.9367676};
 				};
 				side="Civilian";
 				flags=6;
@@ -906,7 +884,7 @@ class items
 					description="Camera Man@Media Team";
 					isPlayable=1;
 				};
-				id=43482;
+				id=12;
 				type="LIB_CIV_Functionary_4";
 				class CustomAttributes
 				{
@@ -1260,7 +1238,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.3213501,0.0014390945,-5.5530396};
+					position[]={0.36938477,0.0014390945,-4.9243164};
 				};
 				side="Civilian";
 				flags=4;
@@ -1272,7 +1250,7 @@ class items
 					description="Camera Man@Media Team";
 					isPlayable=1;
 				};
-				id=43484;
+				id=13;
 				type="LIB_CIV_Functionary_4";
 				class CustomAttributes
 				{
@@ -1625,6 +1603,6 @@ class items
 		class Attributes
 		{
 		};
-		id=43481;
+		id=11;
 	};
 };
