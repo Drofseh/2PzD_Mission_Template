@@ -37,7 +37,7 @@ if (!_result) then {
                 FW_missing_gear_found pushBackUnique _class;
             };
         } else {
-            //systemChat _msg;
+            systemChat _msg;
             diag_log _msg;
             FW_missing_gear_found = [_class];
         };

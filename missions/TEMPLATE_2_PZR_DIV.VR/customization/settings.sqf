@@ -28,8 +28,21 @@ if (!isDedicated) then { //This scope is only for the player
     player switchMove "AmovPercMstpSlowWrflDnon_AmovPknlMstpSlowWrflDnon";
 
     setViewDistance 2000; //View distance for the player - set lower on urbanised map to increase player performance
-
-    FW_RespawnTickets = 0;//If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_west_respawn
+    
+    switch (side player) do { // Sets respawn tickets based on player side.
+        case west: {
+            FW_RespawnTickets = 0; //If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_west_respawn
+        };
+        case east: {
+            FW_RespawnTickets = 0; //If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_east_respawn
+        };
+        case resistance: {
+            FW_RespawnTickets = 0; //If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_resistance_respawn
+        };
+        case civilian: {
+            FW_RespawnTickets = 0; //If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_civilian_respawn
+        };
+    };
 };
 
 //New end messages to be used with the in briefing Admin Tab end mission options.

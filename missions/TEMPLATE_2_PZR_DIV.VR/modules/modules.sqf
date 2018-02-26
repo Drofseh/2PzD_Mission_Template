@@ -39,7 +39,6 @@
 //#include "firemission\root.sqf"
 //#include "hostage\root.sqf"
 //#include "in_game_briefing_utilities\root.sqf"
-//#include "plank\root.sqf"
 //#include "setup_timer\root.sqf"
 //#include "start_in_parachute\root.sqf"
 //#include "start_text\root.sqf"

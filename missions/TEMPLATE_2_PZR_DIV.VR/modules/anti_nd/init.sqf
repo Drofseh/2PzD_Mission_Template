@@ -39,7 +39,7 @@ if (!isDedicated) then {
                     _msg1 = "\nFiring will be allowed after the timer expires.\nTime remaining: " + str round (ANTI_ND_TIME - time) + " seconds.";
                 };
                 if ((FW_SpawnPos distance player) <= ANTI_ND_DIST) then {
-                    _msg2 = "\nFiring is not allowed at the start location, you must move away from from the spawn.\nDistance from start: " + str round (FW_SpawnPos distance player) + " out of " + str (round ANTI_ND_DIST) + " meters.";
+                    _msg2 = "\nFiring is not allowed at the start location, you must move away from from the spawn.\nDistance from spawn: " + str round (FW_SpawnPos distance player) + " out of " + str (round ANTI_ND_DIST) + " meters.";
                 };
                 hintC format ["You are firing without approval. Cease your actions Immediately!%1%2", _msg1, _msg2];
                 if ((_this select 5) call BIS_fnc_isThrowable) then {

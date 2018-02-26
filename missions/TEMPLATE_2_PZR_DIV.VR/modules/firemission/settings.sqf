@@ -1,9 +1,3 @@
-
-
-
-
-
-
 /*
     Quick-Reference:
 
@@ -16,11 +10,10 @@
 */
 
 /*
-
-    How firemissions work: (description of capitalised words are found in FNC description)
+    How fire missions work: (description of capitalised words are found in FNC description)
     A firemission script will be called. The Artillery gun will wait AIMTIME before firing spotting rounds. It will wait till splash to fire a new round.
-    It will fire spotting rounds aslong as the distance from impact to actual target is above MINSPOTTEDDISTANCE. For no spotting rounds use a number greater than 1000.
-    After it finished its spotting rounds it will wait CALCULATIONTIME to fire the actuall firemission.
+    It will fire spotting rounds as long as the distance from impact to actual target is above MINSPOTTEDDISTANCE. For no spotting rounds use a number greater than 1000.
+    After it finished its spotting rounds it will wait CALCULATIONTIME to fire the actual firemission.
     Example point firemission. It will find a spot within DISPERSION from the TARGETPOS and fire ROUNDSPERBURST at that spot. It will do this BURSTCOUNT times.
     It will wait BURSTWAITIME or FIRERATE * ROUNDSPERBURST depending on what is greater before the next burst is fired. BURSTWAITIME is the time from first shot of a burst to next burst.
 */

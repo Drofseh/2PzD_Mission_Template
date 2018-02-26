@@ -2,11 +2,19 @@
 switch (side player) do { // Checks what team the player is on
 
 // use // to comment out a line, this will make it no longer appear in the briefing
+
 // use </br> to make a line break, if you don't do this your briefing will all be on one line.
+
+// Other formatting may be used on text by including it inside <font> </font> tags.
+// For example:
+// <font color='#BBBBBB' size='16' face='PuristaBold'>This example formats the colour, size, and font of the text.</font><br/>
+    // Note that when changing the face, the fonts must be available in game.
+    // Available fonts can be found the in config viewer under configfile >> "CfgFontFamilies"
+    // EtelkaNarrowMediumPro is broken and should not be used.
+
 // To make a word clickable, in order to auto move and zoom the map, you can tie it to a map marker, ex:
 // <marker name='markername'>description(words or numbers)</marker> , example - [<marker name='obja'>Objective Alpha</marker>]
 
-// Briefing is default west only, for east, ind, and civ go to the cases near the bottom of this file.
 // Some options that are applicable to our current eastern front setting are included by default.
 
 case west: { // If player is west he receives this briefing
