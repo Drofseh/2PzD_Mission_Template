@@ -57,11 +57,11 @@
         [Ger_BP_Radio] call FNC_AddItem;
         [Ger_Hat_Officer] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
-        _unit removeItem "TFAR_rf7800str";
 
         //Assigned Items
         Ger_default_equipment;
         Ger_leader_equipment;
+        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//MP40
@@ -303,11 +303,11 @@
         [Ger_BP_Radio] call FNC_AddItem;
         [Ger_Hat] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
-        _unit removeItem "TFAR_rf7800str";
 
         //Assigned Items
         Ger_default_equipment;
         [GEN_Headset] call FNC_AddItem;
+        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//K98k

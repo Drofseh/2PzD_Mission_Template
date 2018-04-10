@@ -45,6 +45,7 @@
 #define Rus_Mag_PPSH_D          "LIB_71Rnd_762x25"
 #define Rus_Mag_PPS43           "LEN_35Rnd_762x25_2PzD"
 #define Rus_Mag_DP              "LIB_47Rnd_762x54"
+#define Rus_Mag_DP_H            "LIB_47Rnd_762x54d"
 #define Rus_Mag_DT_1            "LIB_63Rnd_762x54"
 #define Rus_Mag_DT_2            "LIB_63Rnd_762x54d"
 #define Rus_Mag_TT33            "LIB_8Rnd_762x25"

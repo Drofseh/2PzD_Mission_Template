@@ -46,8 +46,11 @@
 [this,"WHR44Jan_ATA"] call FNC_GearScript;      Panzerschreck Munitionsträger
 
     //Tank Crew
-[this,"WHR44Jan_VCom"] call FNC_GearScript;     Besatzungsführer
-[this,"WHR44Jan_VCrew"] call FNC_GearScript;    Besatzung
+[this,"WHR44Jan_VOff"] call FNC_GearScript;     Panzer Zugführer
+[this,"WHR44Jan_VCom"] call FNC_GearScript;     Panzerbesatzungsführer
+[this,"WHR44Jan_VOGef"] call FNC_GearScript;    Panzer Funker
+[this,"WHR44Jan_VGef"] call FNC_GearScript;     Panzerschütze
+[this,"WHR44Jan_VCrew"] call FNC_GearScript;    Panzerbesatzung
 */
 
 //======================== Loadouts ========================
@@ -61,11 +64,11 @@
         [Ger_BP_Radio] call FNC_AddItem;
         [Ger_Hat_Officer] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
-        _unit removeItem "TFAR_rf7800str";
 
         //Assigned Items
         Ger_default_equipment;
         Ger_leader_equipment;
+        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//MP40
@@ -256,11 +259,11 @@
         [Ger_BP_Radio] call FNC_AddItem;
         [Ger_Hat] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
-        _unit removeItem "TFAR_rf7800str";
 
         //Assigned Items
         Ger_default_equipment;
         [GEN_Headset] call FNC_AddItem;
+        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//K98k
@@ -1304,7 +1307,61 @@
 
 //Tank Crew
 
-    //Besatzungsführer
+    //Panzer Zugführer
+    case "WHR44Jan_VOff" : {
+        [Ger_Uni_VOff] call FNC_AddItem;
+        [Ger_Vest_PC] call FNC_AddItem;
+        [Ger_BP_VCrew] call FNC_AddItem;
+        [Ger_Hat_VCom] call FNC_AddItemRandom;
+        [Ger_Face_Tank_r] call FNC_AddItemRandom;
+
+        //Assigned Items
+        Ger_default_equipment;
+        Ger_leader_equipment;
+
+        [//Primary Weapon
+        [//MP40
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP40],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[99],
+        [//MP38
+        [Ger_Mag_MP40,1],
+        [Ger_Weap_MP38],
+        [Ger_Mag_MP40,3,"vest"]
+        ],[1]
+        ] call FNC_AddItemRandomPercent;
+
+        [//Secondary Weapon
+        [//P38
+        [Ger_Mag_P38,1],
+        [Ger_Weap_P38],
+        [Ger_Mag_P38,2]
+        ],[68],
+        [//P08
+        [Ger_Mag_P08,1],
+        [Ger_Weap_P08],
+        [Ger_Mag_P08,2]
+        ],[18],
+        [//PPK
+        [Ger_Mag_PPK,1],
+        [Ger_Weap_PPK],
+        [Ger_Mag_PPK,2]
+        ],[10],
+        [//Radom
+        [PHA_Mag_Radom,1],
+        [PHA_Weap_Radom],
+        [PHA_Mag_Radom,2]
+        ],[2],
+        [//BHP
+        [UK_Mag_HiPower,1],
+        [UK_Weap_HiPower],
+        [UK_Mag_HiPower,2]
+        ],[2]
+        ] call FNC_AddItemRandomPercent;
+    };
+
+    //Panzerbesatzungsführer
     case "WHR44Jan_VCom" : {
         [Ger_Uni_VCom] call FNC_AddItem;
         [Ger_Vest_PC] call FNC_AddItem;
@@ -1359,8 +1416,84 @@
     };
 
     //Besatzung
+    case "WHR44Jan_VOGef" : {
+        [Ger_Uni_VOGef] call FNC_AddItem;
+        [Ger_Vest_VCrew] call FNC_AddItem;
+        [Ger_BP_VCrew] call FNC_AddItem;
+        [Ger_Hat_VCrew] call FNC_AddItemRandom;
+        [Ger_Face_Tank_r] call FNC_AddItemRandom;
+
+        //Assigned Items
+        Ger_default_equipment;
+
+        [//Secondary Weapon
+        [//P38
+        [Ger_Mag_P38,1],
+        [Ger_Weap_P38],
+        [Ger_Mag_P38,2]
+        ],[70],
+        [//P08
+        [Ger_Mag_P08,1],
+        [Ger_Weap_P08],
+        [Ger_Mag_P08,2]
+        ],[26],
+        [//Radom
+        [PHA_Mag_Radom,1],
+        [PHA_Weap_Radom],
+        [PHA_Mag_Radom,2]
+        ],[2],
+        [//BHP
+        [UK_Mag_HiPower,1],
+        [UK_Weap_HiPower],
+        [UK_Mag_HiPower,2]
+        ],[2]
+        ] call FNC_AddItemRandomPercent;
+
+        //Extra
+        [GEN_Toolkit] call FNC_AddItem;
+    };
+
+    //Besatzung
+    case "WHR44Jan_VGef" : {
+        [Ger_Uni_VGef] call FNC_AddItem;
+        [Ger_Vest_VCrew] call FNC_AddItem;
+        [Ger_BP_VCrew] call FNC_AddItem;
+        [Ger_Hat_VCrew] call FNC_AddItemRandom;
+        [Ger_Face_Tank_r] call FNC_AddItemRandom;
+
+        //Assigned Items
+        Ger_default_equipment;
+
+        [//Secondary Weapon
+        [//P38
+        [Ger_Mag_P38,1],
+        [Ger_Weap_P38],
+        [Ger_Mag_P38,2]
+        ],[70],
+        [//P08
+        [Ger_Mag_P08,1],
+        [Ger_Weap_P08],
+        [Ger_Mag_P08,2]
+        ],[26],
+        [//Radom
+        [PHA_Mag_Radom,1],
+        [PHA_Weap_Radom],
+        [PHA_Mag_Radom,2]
+        ],[2],
+        [//BHP
+        [UK_Mag_HiPower,1],
+        [UK_Weap_HiPower],
+        [UK_Mag_HiPower,2]
+        ],[2]
+        ] call FNC_AddItemRandomPercent;
+
+        //Extra
+        [GEN_Toolkit] call FNC_AddItem;
+    };
+
+    //Besatzung
     case "WHR44Jan_VCrew" : {
-        [Ger_Uni_VCrew] call FNC_AddItem;
+        [Ger_Uni_VSch] call FNC_AddItem;
         [Ger_Vest_VCrew] call FNC_AddItem;
         [Ger_BP_VCrew] call FNC_AddItem;
         [Ger_Hat_VCrew] call FNC_AddItemRandom;

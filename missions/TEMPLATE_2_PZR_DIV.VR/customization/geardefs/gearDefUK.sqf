@@ -138,7 +138,6 @@
 #define UK_Beret_RTR_HS         "fow_h_uk_beret_rtr_headset"
 
 //Radio
-#define UK_Radio                "tf_anprc154"
 
 //=== EQUIPMENT ===
 

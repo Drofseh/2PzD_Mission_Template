@@ -73,15 +73,24 @@
 #define GEN_nada                "ACE_Banana"
 
 //Medical
-#define GEN_Bandage             "ACE_fieldDressing";
-#define GEN_TQ                  "ACE_tourniquet";
-#define GEN_Morp                "ACE_morphine";
-#define GEN_Epi                 "ACE_epinephrine";
-#define GEN_Blood1000           "ACE_bloodIV";
-#define GEN_Blood500            "ACE_bloodIV_250";
-#define GEN_Blood250            "ACE_bloodIV_500";
-#define GEN_PAK                 "ACE_personalAidKit";
-#define GEN_SurgKit             "ACE_surgicalKit";
+#define GEN_Bandage             "ACE_fieldDressing"
+#define GEN_BandageE            "ACE_elasticBandage"
+#define GEN_BandageP            "ACE_packingBandage"
+#define GEN_BandageQ            "ACE_quikclot"
+#define GEN_TQ                  "ACE_tourniquet"
+#define GEN_Morp                "ACE_morphine"
+#define GEN_Epi                 "ACE_epinephrine"
+#define GEN_SurgKit             "ACE_surgicalKit"
+#define GEN_Blood1000           "ACE_bloodIV"
+#define GEN_Blood500            "ACE_bloodIV_500"
+#define GEN_Blood250            "ACE_bloodIV_250"
+#define GEN_Plasma1000          "ACE_plasmaIV"
+#define GEN_Plasma500           "ACE_plasmaIV_500"
+#define GEN_Plasma250           "ACE_plasmaIV_250"
+#define GEN_Saline1000          "ACE_salineIV"
+#define GEN_Saline500           "ACE_salineIV_500"
+#define GEN_Saline250           "ACE_salineIV_250"
+#define GEN_PAK                 "ACE_personalAidKit"
 
 //Double Misc
 #define GEN_BinoG               "LIB_Binocular_GER"
@@ -93,6 +102,8 @@
 #define GEN_Toolkit             "ToolKit"
 
 //Radio
+#define GEN_Radio_HH            "ACRE_PRC343"
+#define GEN_Radio_BP            "ACRE_PRC77"
 
 //=== EQUIPMENT ===
 

@@ -61,11 +61,11 @@
         [Ger_BP_Radio] call FNC_AddItem;
         [Ger_Hat_Officer] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
-        _unit removeItem "TFAR_rf7800str";
 
         //Assigned Items
         Ger_default_equipment;
         Ger_leader_equipment;
+        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//MP40
@@ -256,11 +256,11 @@
         [Ger_BP_Radio] call FNC_AddItem;
         [Ger_Hat] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
-        _unit removeItem "TFAR_rf7800str";
 
         //Assigned Items
         Ger_default_equipment;
         [GEN_Headset] call FNC_AddItem;
+        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//K98k
@@ -350,31 +350,31 @@
         //Assigned Items
         Ger_default_equipment;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[54],
-        [//G43
-        [Ger_Mag_G43,1],
-        [Ger_Weap_G43],
-        [Ger_Mag_G43,6,"vest"]
-        ],[25],
-        [//StG44
-        [Ger_Mag_StG44,1],
-        [Ger_Weap_StG44],
-        [Ger_Mag_StG44,6,"vest"]
+        [//Secondary Weapon
+        [//P38
+        [Ger_Mag_P38,1],
+        [Ger_Weap_P38],
+        [Ger_Mag_P38,2]
+        ],[76],
+        [//P08
+        [Ger_Mag_P08,1],
+        [Ger_Weap_P08],
+        [Ger_Mag_P08,2]
         ],[20],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[1]
+        [//Radom
+        [PHA_Mag_Radom,1],
+        [PHA_Weap_Radom],
+        [PHA_Mag_Radom,2]
+        ],[2],
+        [//BHP
+        [UK_Mag_HiPower,1],
+        [UK_Weap_HiPower],
+        [UK_Mag_HiPower,2]
+        ],[2]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,2] call FNC_AddItem;
         Ger_medicP_equipment;
     };
 
@@ -765,13 +765,13 @@
         [Ger_Weap_PzFaust_60]
         ],[50],
         [//
-        [Ger_Weap_PzFaust_30]
+        [Ger_Weap_PzFaust_60]
         ],[25],
         [//
-        [Ger_Weap_PzFaust_100]
+        [Ger_Weap_PzFaust_60]
         ],[15],
         [//
-        [Ger_Weap_PzFaust_K]
+        [Ger_Weap_PzFaust_60]
         ],[10]
         ] call FNC_AddItemRandomPercent;
 
@@ -830,13 +830,13 @@
         [Ger_Weap_PzFaust_60]
         ],[50],
         [//
-        [Ger_Weap_PzFaust_30]
+        [Ger_Weap_PzFaust_60]
         ],[25],
         [//
-        [Ger_Weap_PzFaust_100]
+        [Ger_Weap_PzFaust_60]
         ],[15],
         [//
-        [Ger_Weap_PzFaust_K]
+        [Ger_Weap_PzFaust_60]
         ],[10]
         ] call FNC_AddItemRandomPercent;
 

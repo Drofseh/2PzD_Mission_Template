@@ -2,7 +2,7 @@
 //RADIO SCRAMBLE
 //////////////////
 
-FW_enable_scramble = true;
+FW_enable_scramble = false;
 
 //If enabled all sides will have different scramble frequencies.
 //Function below is to switch one unit to different scramble side.
@@ -84,7 +84,7 @@ FW_ChannelNames = [
 //BABEL
 //////////////
 
-FW_enable_babel = false;
+FW_enable_babel = true;
 
 /*
  * FNC_SetLanguages
@@ -130,40 +130,37 @@ FW_languages_babel = [
  * Remove // to enable a setting.
 */
 
-/*Specify and value between 1.0 and 0. Setting it to 0 means the terrain loss model is disabled, 1 is default.
+/*Specify and value between 1.0 and 0.0 Setting it to 0.0 means the terrain loss model is disabled, 1.0 is default.
   Note this setting only effects loss caused by terrain, loss due to power dissipation over range will always occur.*/
+//[1.0] call acre_api_fnc_setLossModelScale;
 
-//[0.0] call acre_api_fnc_setLossModelScale;
-
-
+//  RADIO DUPLEX
 /*Sets the duplex of radio transmissions.
-  If set to true, it means that you will receive transmissions even while talking and multiple people can speak at the same time.*/
+  If set to true, it means that you will receive transmissions even while talking and multiple people can speak at the same time.
+  If false then when you are speaking you cannot receive.*/
+[false] call acre_api_fnc_setFullDuplex;
 
-//[false] call acre_api_fnc_setFullDuplex;
 
-
+//  Signal Interference
 /*Sets whether transmissions will interfere with each other.
   This, by default, causes signal loss when multiple people are transmitting on the same frequency.*/
-
-//[false] call acre_api_fnc_setInterference;
+[true] call acre_api_fnc_setInterference;
 
 
 /*Sets whether AI can detect players speaking.
   This utilizes an advanced model of inverse-square volume detection and randomization against the range of the unit, and duration and quantity of speaking.
   In a nutshell, the closer you are to an AI unit and the more you speak - the better chance he has of hearing you.*/
+[true] call acre_api_fnc_setRevealToAI;
 
-//[false] call acre_api_fnc_setRevealToAI;
 
-
+//  Antenna Direction
 /*This setting can be used to disable the simulation of antenna radiation patterns for both the transmitting and receiving radios.
   It will make all antennas act with perfect omni-directional behaviour. (true/false)*/
-
-
 //[true] call acre_api_fnc_ignoreAntennaDirection;
 
 
+//  Direct Speach Starting Volume
 /*
-  Direct speech slider
   ACRE2 has a built in direct speech slider allowing you to determine how far your voice in direct speech should travel. The system has five states and by default starts in the middle state. The below table contains an approximated table with empirical testing by Bullhorn.
 
   Volume state  |  Loud (m)  |  Quiet (m)  |  Barely audible (m)
@@ -173,6 +170,5 @@ FW_languages_babel = [
   +1            |  12        |  45         |  145
   +2            |  15        |  55         |  195
 */
-
-FW_Acre_Volume_Value = -1;
+FW_Acre_Volume_Value = -2;
 

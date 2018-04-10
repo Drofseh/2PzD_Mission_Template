@@ -39,10 +39,10 @@ if (
 
     _serverNameOut = format ["Server Name: %1", serverName];
     _missionFileNameOut = format ["Mission Name: %1", missionName];
-    //_missionName = ("Scenario" get3DENMissionAttribute "IntelBriefingName");
+    //_missionName = ("Scenario" get3DENMissionAttribute "IntelBriefingName"); // doesn't return on dedicated server
     //_missionNameOut = format ["Mission Name: %1", _missionName];
-    //_briefingNameOut = format ["Briefing Name: %1", briefingName];
-    //_authorName = ("Scenario" get3DENMissionAttribute "Author");
+    //_briefingNameOut = format ["Briefing Name: %1", briefingName]; // doesn't return on dedicated server
+    //_authorName = ("Scenario" get3DENMissionAttribute "Author"); // doesn't return on dedicated server
     //_authorNameOut = format ["Author: %1", _authorName];
     _worldNameOut = format ["Map Name: %1", worldName];
     _dateStartOut = format ["In Game Start Date/Time: %1", date];
@@ -94,21 +94,6 @@ if (
             _thePlayasList = format ["Playable Units: %1", _thePlayas];
             conFile(_thePlayasList);
 
-            // logs the UID, inventory, and name of all living the playable units
-            {
-                _theGearVoid = _x spawn {
-                    _playa = _this;
-                    if (alive _playa) then {
-                        _playaUID = getPlayerUID _playa;
-                        _playaLoad = getUnitLoadout _playa;
-                        _playaSlotOut = format ["Player: %1 | Slot %2", _playaUID, _playa];
-                        conFile(_playaSlotOut);
-                        _playaLoadOut = format ["Player Case: case ( ""%1"" ) : { _playa setUnitLoadout %2; };", _playaUID, _playaLoad];
-                        conFile(_playaLoadOut);
-                    };
-                };
-            } foreach _thePlayas;
-
             // Builds a list of living named vehicles and logs it
             // if the admin names a vehicle during the mission then it will get added to the list and logged
             // the name must be unique to that vehicle or it will upset things
@@ -132,11 +117,28 @@ if (
             conFile(_theVicsList);
             conFile(_theVicsDeadList);
 
+            // logs the UID, inventory, and name of all living the playable units
+            _thePlayaVoid = _thePlayas call {
+                {
+                    _theGearVoid = _x call {
+                        _playa = _this;
+                        if (alive _playa) then {
+                            _playaUID = getPlayerUID _playa;
+                            _playaLoad = getUnitLoadout _playa;
+                            _playaSlotOut = format ["Player: %1 | Slot %2", _playaUID, _playa];
+                            conFile(_playaSlotOut);
+                            _playaLoadOut = format ["Player Case: case ( ""%1"" ) : { _playa setUnitLoadout %2; };", _playaUID, _playaLoad];
+                            conFile(_playaLoadOut);
+                        };
+                    };
+                } foreach _this;
+            };
+
             // Logs the Class name, all Items, Magazines, Weapons, and Backpacks, all Magazines in all turrets, the fuel level, and the resupply fuel, ammo, and repair levels of all of the named vehicles.
             // This will NOT log items that are inside uniforms, vests, or backpacks.
             // It will also NOT log weapon attachments that are still attached to the weapon.
             {
-                _theVicVoid = _x spawn {
+                _theVicVoid = _x call {
                     _victor = _this;
 
                     if (!alive _victor) then {
@@ -211,33 +213,57 @@ if (
                                 conFile(_vicOutMags);
                             };
 
-                        /* //this doesn't work yet, don't use it
+                        // I /think/ cargo and cargo space is working now, needs a little more testing
                         _victorCargoBase = _victor getVariable ["ace_cargo_loaded", []];
-                        _vicOutCargoBase = format ["%1 | Cargo Loaded: %2;", _victor, _victorCargoBase];
+                        _vicOutCargoBase = format ["%1 | Cargo Loaded (List): %2;", _victor, _victorCargoBase];
+                        // systemChat format ["%1 | _vicOutCargoBase: %2;", _victor, _vicOutCargoBase];
                         conFile(_vicOutCargoBase);
-                        systemChat format ["%1 | _victorCargoBase: %2;", _victor, _victorCargoBase];
-                        
-                            _victorCargoNew = [];
-                            _victorCargoUsed = 0;
+
+                        _victorCargoSpaceUsed = 0;
+                        _victorWheelsLoaded = 0;
+                        _victorTracksLoaded = 0;
                             {
-                                if ((_x isEqualType "") || {!isNull _x}) then {
-                                    _victorCargoNew pushback _x;
-                                    systemChat format ["%1 | _victorCargoNew: %2;", _victor, _victorCargoNew];
-                                    
-                                    _victorCargoUsed = _victorCargoUsed + ([_x] call ace_cargo_fnc_getSizeItem);
-                                    systemChat format ["%1 | _victorCargoUsed: %2;", _victor, _victorCargoUsed];
-                                    conFile(_victorCargoUsed);
+                                _victorCargoItem = _x;
+                                if ((typeName _x) == "OBJECT") then {
+                                    if ((typeOf _x) == "ACE_Wheel") then {
+                                        _victorCargoItem = "ACE_Wheel";
+                                        _victorWheelsLoaded = _victorWheelsLoaded + 1;
+
+                                    } else {
+                                        if ((typeOf _x) == "ACE_Track") then {
+                                            _victorCargoItem = "ACE_Track";
+                                            _victorTracksLoaded = _victorTracksLoaded + 1;
+                                        } else {
+                                            _vicOutCargoItem = format ["%1 | Cargo Loaded (Object): [%2, _vic] call ace_cargo_fnc_loadItem;", _victor, _victorCargoItem];
+                                            conFile(_vicOutCargoItem);
+                                        };
+                                    };
                                 };
-                                true
+                                _victorCargoSpaceUsed = _victorCargoSpaceUsed + ([_x] call ace_cargo_fnc_getSizeItem);
                             } forEach _victorCargoBase;
-                            
-                        _victorCargo = _victorCargoUsed + (_victor getVariable "ace_cargo_space");
-                        systemChat format ["%1 | _victorCargo: %2;", _victor, _victorCargo];
-                        
-                        _vicOutCargo = format ["%1 | Cargo Space: [%1, %2] call ace_cargo_fnc_setSpace;", _victor, _victorCargo];
-                        systemChat format ["%1", _vicOutCargo];
-                        conFile(_vicOutCargo);
-                        */
+
+                        if (_victorWheelsLoaded == 0) then {
+                            _vicOutWheelsLoaded = format ["%1 | Cargo Wheels: Default editor value OK", _victor];
+                            conFile(_vicOutWheelsLoaded);
+                        } else {
+                            _vicOutWheelsLoaded = format ["%1 | Cargo Wheels: Increase Spare Wheels in Eden Attributes by %2", _victor, _victorWheelsLoaded];
+                            conFile(_vicOutWheelsLoaded);
+                        };
+
+                        if (_victorTracksLoaded == 0) then {
+                            _vicOutTracksLoaded = format ["%1 | Cargo Tracks: Default editor value OK", _victor];
+                            conFile(_vicOutTracksLoaded);
+                        } else {
+                            _vicOutTracksLoaded = format ["%1 | Cargo Tracks: Increase Spare Tracks in Eden Attributes by %2", _victor, _victorTracksLoaded];
+                            conFile(_vicOutTracksLoaded);
+                        };
+
+                        _victorCargoSpace = 0;
+                        _victorCargoSpace = _victorCargoSpaceUsed + (_victor getVariable "ace_cargo_space");
+                        if (isNil "_victorCargoSpace") then {_victorCargoSpace = "This object cannot carry cargo.";};
+
+                        _vicOutCargoSpace = format ["%1 | Cargo Space (Max): Set Cargo Space in Attributes to %2", _victor, _victorCargoSpace];
+                        conFile(_vicOutCargoSpace);
 
                         _victorFuel = fuel _victor;
                         _vicOutFuel = format ["%1 | Fuel: _vic setFuel %2;", _victor, _victorFuel];

@@ -119,8 +119,7 @@
 
         //Assigned Items
         UK_default_equipment;
-        [UK_Radio] call FNC_AddItem;
-        _unit assignItem UK_Radio;
+        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         //Primary Weapon
         [UK_Mag_LeeEn,1] call FNC_AddItem;

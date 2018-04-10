@@ -104,7 +104,7 @@
 #define Ger_Uni_Med             "U_LIB_GER_Medic"
 
     //Vehicle Crew Uniforms
-#define Ger_Uni_VPC             "fow_u_ger_tankcrew_01_2nd_leutnant"
+#define Ger_Uni_VOff            "fow_u_ger_tankcrew_01_2nd_leutnant"
 #define Ger_Uni_VCom            "fow_u_ger_tankcrew_01_unteroffizier"
 #define Ger_Uni_VOGef           "fow_u_ger_tankcrew_01_obergefreiter"
 #define Ger_Uni_VGef            "fow_u_ger_tankcrew_01_gefreiter"

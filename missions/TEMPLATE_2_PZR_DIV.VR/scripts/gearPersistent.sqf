@@ -32,8 +32,10 @@ if (local (_this select 0)) then {
         // as a side effect it also means that players that join late will also lose their loadout.
         // I consider this fair and hopefully it will motivate players to join on time.
     if (didJIP) then {
-        //this is just an example, I recommend using the basic rifleman loadout for the players side.
-        [_playa,"WHR45_Rif_LR"] call FNC_GearScript;
-        _nul = [_playa] execVM "scripts\removeMap.sqf";
+        if (persistantJipTime >= (15 * 60)) then {
+            //this is just an example, I recommend using the basic rifleman loadout for the players side.
+            [_playa,"WHR45_Rif_LR"] call FNC_GearScript;
+            _nul = [_playa] execVM "scripts\removeMap.sqf";
+        };
     };
 };

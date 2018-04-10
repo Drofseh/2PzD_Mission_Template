@@ -179,6 +179,7 @@
         //Assigned Items
         Rus_default_equipment;
         [GEN_Headset] call FNC_AddItem;
+        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
     };
 
 //Platoon HQ

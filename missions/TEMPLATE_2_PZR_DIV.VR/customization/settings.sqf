@@ -1,6 +1,6 @@
 if (isServer) then { //This scope is only for the server
 
-    setViewDistance 2000; //View distance for the server (the ai), lower will give better server performance, but you probably don't want to go lower than 1000
+    setViewDistance 2000; //View distance for the server and any AI controlled by the server (Note - the server does not normally control the AI, instead the Headless Clients do)
 
     FW_TimeLimit = 4*60; //Time limit in minutes, to disable the time limit set it to 0
     FW_TimeLimitMessage = "TIME LIMIT REACHED!"; //The message displayed when the time runs out
@@ -21,13 +21,13 @@ if (isServer) then { //This scope is only for the server
     };
 };
 
-if (!isDedicated) then { //This scope is only for the player
+if (!isDedicated) then { //This scope is for the player & the Headless Clients
 
     FW_DebugMessagesEnabled = true;//Only disable debug messages when the mission is released
 
     player switchMove "AmovPercMstpSlowWrflDnon_AmovPknlMstpSlowWrflDnon";
 
-    setViewDistance 2000; //View distance for the player - set lower on urbanised map to increase player performance
+    setViewDistance 2000; //View distance for the player and any AI controlled by the Headless Clients (which is normally all the AI) - set lower on urbanised map to increase player performance
     
     switch (side player) do { // Sets respawn tickets based on player side.
         case west: {

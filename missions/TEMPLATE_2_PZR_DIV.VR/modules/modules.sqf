@@ -5,6 +5,7 @@
 
 //Enabled modules by default, disable them by adding // in front.
 
+#include "acre_setup\root.sqf"
 #include "auto_track_assets\root.sqf"
 #include "anti_nd\root.sqf"
 #include "cover_map\root.sqf"
@@ -23,7 +24,6 @@
 
 //#include "a3_endscreen\root.sqf"
 //#include "ace_medical\root.sqf"
-//#include "acre_setup\root.sqf"
 //#include "ai_attack\root.sqf"
 //#include "ai_behaviour\root.sqf"
 //#include "ai_drivers\root.sqf"
@@ -35,6 +35,7 @@
 //#include "ao_limit_soft\root.sqf"
 //#include "call_mission\root.sqf"
 //#include "capture_zone\root.sqf"
+//#include "cover_map_multiple\root.sqf"
 //#include "extract\root.sqf"
 //#include "firemission\root.sqf"
 //#include "hostage\root.sqf"

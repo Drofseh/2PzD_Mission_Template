@@ -45,7 +45,7 @@
 //Platoon
 
     //Lieutenant
-    case "UK42Jan_Lt" : {
+    case "UKEsx42Jan_Lt" : {
         [UK_UniEsx_Lt] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -66,7 +66,7 @@
     };
 
     //Sergeant
-    case "UK42Jan_Sgt" : {
+    case "UKEsx42Jan_Sgt" : {
         [UK_UniEsx_Sgt] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -98,7 +98,7 @@
     };
 
     //Medic
-    case "UK42Jan_Med" : {
+    case "UKEsx42Jan_Med" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -132,7 +132,7 @@
     };
 
     //Signaller
-    case "UK42Jan_Sig" : {
+    case "UKEsx42Jan_Sig" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK_Radio] call FNC_AddItem;
@@ -141,8 +141,7 @@
 
         //Assigned Items
         UK_default_equipment;
-        [UK_Radio] call FNC_AddItem;
-        _unit assignItem UK_Radio;
+        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//Lee Enfield No1
@@ -168,7 +167,7 @@
     };
 
     //Light Mortar Gunner
-    case "UK42Jan_LMortG" : {
+    case "UKEsx42Jan_LMortG" : {
         [UK_UniEsx_LCpl] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
@@ -191,7 +190,7 @@
     };
 
     //Light Mortar Assistant
-    case "UK42Jan_LMortA" : {
+    case "UKEsx42Jan_LMortA" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
@@ -216,7 +215,7 @@
 //Squad
 
     //Corporal
-    case "UK42Jan_Cpl" : {
+    case "UKEsx42Jan_Cpl" : {
         [UK_UniEsx_Cpl] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -247,7 +246,7 @@
     };
 
     //Lance Corporal
-    case "UK42Jan_LCpl" : {
+    case "UKEsx42Jan_LCpl" : {
         [UK_UniEsx_LCpl] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -278,7 +277,7 @@
     };
 
     //Bren Gunner
-    case "UK42Jan_AR" : {
+    case "UKEsx42Jan_AR" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -300,7 +299,7 @@
     };
 
     //Bren Gun Assistant
-    case "UK42Jan_AAR" : {
+    case "UKEsx42Jan_AAR" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -336,7 +335,7 @@
     };
 
     //Bren Gun Ammo Bearer
-    case "UK42Jan_AAB" : {
+    case "UKEsx42Jan_AAB" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -370,7 +369,7 @@
     };
 
     //Rifleman
-    case "UK42Jan_Rif" : {
+    case "UKEsx42Jan_Rif" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -406,7 +405,7 @@
 //Machine Gun Team
 
     //Machine Gun Team Leader
-    case "UK42Jan_MGTL" : {
+    case "UKEsx42Jan_MGTL" : {
         [UK_UniEsx_LCpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -441,7 +440,7 @@
     };
 
     //Machine Gunner
-    case "UK42Jan_MG" : {
+    case "UKEsx42Jan_MG" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestG_Bren] call FNC_AddItem;
         [UK_Weap_HMG_G] call FNC_AddItem;
@@ -458,7 +457,7 @@
     };
 
     //Machine Gun Assistant
-    case "UK42Jan_MGA" : {
+    case "UKEsx42Jan_MGA" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestG_Bren] call FNC_AddItem;
         [UK_Weap_HMG_T] call FNC_AddItem;
@@ -478,7 +477,7 @@
     };
 
     //Machine Gun Ammo Bearer
-    case "UK42Jan_MGAB" : {
+    case "UKEsx42Jan_MGAB" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
@@ -512,7 +511,7 @@
 //Mortar Team
 
     //Mortar Team Leader
-    case "UK42Jan_MortTL" : {
+    case "UKEsx42Jan_MortTL" : {
         [UK_UniEsx_Cpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -548,7 +547,7 @@
     };
 
     //Mortar Gunner
-    case "UK42Jan_MortG" : {
+    case "UKEsx42Jan_MortG" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
@@ -571,7 +570,7 @@
     };
 
     //Mortar Assistant
-    case "UK42Jan_MortA" : {
+    case "UKEsx42Jan_MortA" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
@@ -594,7 +593,7 @@
     };
 
     //Mortar Ammo Bearer
-    case "UK42Jan_MortAB" : {
+    case "UKEsx42Jan_MortAB" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
@@ -629,7 +628,7 @@
 //Boys Rifle Team
 
     //Boys Rifle Team Leader
-    case "UK42Jan_ATRTL" : {
+    case "UKEsx42Jan_ATRTL" : {
         [UK_UniEsx_Cpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -665,7 +664,7 @@
     };
 
     //Boys Rifle Gunner
-    case "UK42Jan_ATRG" : {
+    case "UKEsx42Jan_ATRG" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -687,7 +686,7 @@
     };
 
     //Boys Rifle Ammo Bearer
-    case "UK42Jan_ATRAB" : {
+    case "UKEsx42Jan_ATRAB" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -723,7 +722,7 @@
 //Vehicle Crew
 
     //Tank Commander
-    case "UK42Jan_VCom" : {
+    case "UKEsx42Jan_VCom" : {
         [UK_UniEsx_Sgt] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -759,7 +758,7 @@
     };
 
     //Tank Crew
-    case "UK42Jan_VCrew" : {
+    case "UKEsx42Jan_VCrew" : {
         [UK_UniEsx_Pte] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;

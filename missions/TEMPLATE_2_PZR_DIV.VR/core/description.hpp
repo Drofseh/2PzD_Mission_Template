@@ -9,8 +9,9 @@
     respawnButton = 1; //Disables the respawn button
     respawnDialog = 0; //Disables the score screen while respawning
     respawnTemplates[] = {"Base"}; //Disables respawn countdown
-    //enableDebugConsole[] = {"76561197970317496"}; //Haas
-    enableDebugConsole = 1; // 1 = Only for logged-in admins
+    enableDebugConsole[] = {"76561197970317496","76561197983143701","76561198096113294","76561197985738940","76561198007878058","76561198006804011"};
+    // Haas, Madsen, Schuttler, Sauer, Schmidt, and Brauer
+    // enableDebugConsole = 1; // 1 = Only for logged-in admins
     enableTargetDebug = 1; //Enable CBA Target Debugging
 
     class Extended_PreInit_EventHandlers {

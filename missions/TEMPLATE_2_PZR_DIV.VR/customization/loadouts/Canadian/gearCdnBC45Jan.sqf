@@ -49,7 +49,7 @@
 //Platoon
 
     //Lieutenant
-    case "UK45_Lt" : {
+    case "CdnBC45_Lt" : {
         [CDN_UniBCR_Lt] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -79,7 +79,7 @@
     };
 
     //Sergeant
-    case "UK45_Sgt" : {
+    case "CdnBC45_Sgt" : {
         [CDN_UniBCR_Sgt] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -125,7 +125,7 @@
     };
 
     //Medic
-    case "UK45_Med" : {
+    case "CdnBC45_Med" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -159,7 +159,7 @@
     };
 
     //Signaller
-    case "UK45_Sig" : {
+    case "CdnBC45_Sig" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK_Radio] call FNC_AddItem;
@@ -168,8 +168,7 @@
 
         //Assigned Items
         UK_default_equipment;
-        [UK_Radio] call FNC_AddItem;
-        _unit assignItem UK_Radio;
+        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//Lee Enfield No4
@@ -195,7 +194,7 @@
     };
 
     //Light Mortar Gunner
-    case "UK45_LMortG" : {
+    case "CdnBC45_LMortG" : {
         [CDN_UniBCR_LCpl] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
@@ -218,7 +217,7 @@
     };
 
     //Light Mortar Assistant
-    case "UK45_LMortA" : {
+    case "CdnBC45_LMortA" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
@@ -243,7 +242,7 @@
 //Squad
 
     //Corporal
-    case "UK45_Cpl" : {
+    case "CdnBC45_Cpl" : {
         [CDN_UniBCR_Cpl] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -288,7 +287,7 @@
     };
 
     //Lance Corporal
-    case "UK45_LCpl" : {
+    case "CdnBC45_LCpl" : {
         [CDN_UniBCR_LCpl] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -333,7 +332,7 @@
     };
 
     //Bren Gunner
-    case "UK45_AR" : {
+    case "CdnBC45_AR" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -355,7 +354,7 @@
     };
 
     //Bren Gun Assistant
-    case "UK45_AAR" : {
+    case "CdnBC45_AAR" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -391,7 +390,7 @@
     };
 
     //Bren Gun Ammo Bearer
-    case "UK45_AAB" : {
+    case "CdnBC45_AAB" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -425,7 +424,7 @@
     };
 
     //Rifleman
-    case "UK45_Rif" : {
+    case "CdnBC45_Rif" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -461,7 +460,7 @@
 //Machine Gun Team
 
     //Machine Gun Team Leader
-    case "UK45_MGTL" : {
+    case "CdnBC45_MGTL" : {
         [CDN_UniBCR_LCpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -496,7 +495,7 @@
     };
 
     //Machine Gunner
-    case "UK45_MG" : {
+    case "CdnBC45_MG" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestG_Bren] call FNC_AddItem;
         [UK_Weap_HMG_G] call FNC_AddItem;
@@ -513,7 +512,7 @@
     };
 
     //Machine Gun Assistant
-    case "UK45_MGA" : {
+    case "CdnBC45_MGA" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestG_Bren] call FNC_AddItem;
         [UK_Weap_HMG_T] call FNC_AddItem;
@@ -533,7 +532,7 @@
     };
 
     //Machine Gun Ammo Bearer
-    case "UK45_MGAB" : {
+    case "CdnBC45_MGAB" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
@@ -567,7 +566,7 @@
 //Mortar Team
 
     //Mortar Team Leader
-    case "UK45_MortTL" : {
+    case "CdnBC45_MortTL" : {
         [CDN_UniBCR_Cpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -603,7 +602,7 @@
     };
 
     //Mortar Gunner
-    case "UK45_MortG" : {
+    case "CdnBC45_MortG" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
@@ -626,7 +625,7 @@
     };
 
     //Mortar Assistant
-    case "UK45_MortA" : {
+    case "CdnBC45_MortA" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
@@ -649,7 +648,7 @@
     };
 
     //Mortar Ammo Bearer
-    case "UK45_MortAB" : {
+    case "CdnBC45_MortAB" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
@@ -684,7 +683,7 @@
 //Boys Rifle Team
 
     //Boys Rifle Team Leader
-    case "UK45Jan_ATRTL" : {
+    case "CdnBC45Jan_ATRTL" : {
         [CDN_UniBCR_Cpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -720,7 +719,7 @@
     };
 
     //Boys Rifle Gunner
-    case "UK45Jan_ATRG" : {
+    case "CdnBC45Jan_ATRG" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -742,7 +741,7 @@
     };
 
     //Boys Rifle Ammo Bearer
-    case "UK45Jan_ATRAB" : {
+    case "CdnBC45Jan_ATRAB" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -778,7 +777,7 @@
 //PIAT Team
 
     //PIAT Team Leader
-    case "UK45Jan_ATTL" : {
+    case "CdnBC45Jan_ATTL" : {
         [CDN_UniBCR_Cpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BP_P] call FNC_AddItem;
@@ -814,7 +813,7 @@
     };
 
     //PIAT Gunner
-    case "UK45Jan_ATG" : {
+    case "CdnBC45Jan_ATG" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -835,7 +834,7 @@
     };
 
     //PIAT Ammo Bearer
-    case "UK45Jan_ATAB" : {
+    case "CdnBC45Jan_ATAB" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -871,7 +870,7 @@
 //Vehicle Crew
 
     //Tank Commander
-    case "UK45_VCom" : {
+    case "CdnBC45_VCom" : {
         [CDN_UniBCR_Sgt] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -921,7 +920,7 @@
     };
 
     //Tank Crew
-    case "UK45_VCrew" : {
+    case "CdnBC45_VCrew" : {
         [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;

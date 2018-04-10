@@ -277,7 +277,7 @@
 
         //Assigned Items
         USMC_default_equipment;
-        [US_Radio_C] call FNC_AddItem;
+        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//M1 Carbine
@@ -326,6 +326,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
+        [GEN_Radio_HH,"vest"] call FNC_AddItem;
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
     };
@@ -482,7 +483,6 @@
 
         //Assigned Items
         USMC_default_equipment;
-        [US_Radio_C] call FNC_AddItem;
 
         [//Primary Weapon
         [//M1 Carbine
@@ -531,6 +531,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
+        [GEN_Radio_HH,"vest"] call FNC_AddItem;
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
     };

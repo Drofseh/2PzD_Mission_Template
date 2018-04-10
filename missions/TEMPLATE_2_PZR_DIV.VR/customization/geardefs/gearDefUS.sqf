@@ -78,8 +78,6 @@
 #define US_Gren_Frag            "fow_e_mk2"
 
 //Radio
-#define US_Radio_P              "tf_anprc154"
-#define US_Radio_C              "tf_anprc148jem"
 
 //===== US Army Equipment Definitions =====
 

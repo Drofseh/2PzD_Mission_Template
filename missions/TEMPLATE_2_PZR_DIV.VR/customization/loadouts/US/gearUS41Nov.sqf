@@ -192,8 +192,7 @@
 
         //Assigned Items
         US_default_equipment;
-        [US_Radio_P] call FNC_AddItem;
-        _unit assignItem US_Radio_P;
+        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//M1903

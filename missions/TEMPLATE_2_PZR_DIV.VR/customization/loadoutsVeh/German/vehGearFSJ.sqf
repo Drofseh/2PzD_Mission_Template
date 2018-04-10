@@ -34,51 +34,52 @@ case "FSJ_DC_CHQ": {
 
     _inventory = magazines _x;
 
-        if (_inventory select 1 == "LIB_5Rnd_792x57") then {
-        ["LIB_K98"] call FNC_AddItemVehicle;
-        ["LIB_5Rnd_792x57",12] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_K98) then {
+        [Ger_Weap_K98] call FNC_AddItemVehicle;
+        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "len_20Rnd_792x57") then {
-        ["LEN_FG42"] call FNC_AddItemVehicle;
-        ["len_20Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_FG42) then {
+        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_10Rnd_792x57") then {
-        ["LIB_G43"] call FNC_AddItemVehicle;
-        ["LIB_10Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_G43) then {
+        [Ger_Weap_G43] call FNC_AddItemVehicle;
+        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_30Rnd_792x33") then {
-        ["LIB_MP44"] call FNC_AddItemVehicle;
-        ["LIB_30Rnd_792x33",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_StG44) then {
+        [Ger_Weap_StG44] call FNC_AddItemVehicle;
+        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_32Rnd_9x19") then {
-        ["LIB_MP40"] call FNC_AddItemVehicle;
-        ["LIB_32Rnd_9x19",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_MP40) then {
+        [Ger_Weap_MP40] call FNC_AddItemVehicle;
+        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
          } else {};
 
     } forEach _squad; //end of weapon matching
 
     //extra items
-    ["LIB_K98", 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
 
-    ["B_LIB_GER_Tonister34_cowhide", 5] call FNC_AddItemVehicle;
-    ["B_LIB_GER_Radio", 1] call FNC_AddItemVehicle;
+    [Ger_BP_T34, 5] call FNC_AddItemVehicle;
+    [Ger_BP_Radio, 1] call FNC_AddItemVehicle;
+    [GEN_Radio] call FNC_AddItemVehicle;
 
-    ["LIB_FLARE_PISTOL", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_white", 6] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_green", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_red", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_yellow", 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Pistol, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_W, 6] call FNC_AddItemVehicle;
+    [GEN_Flare_G, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_R, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    ["fow_e_m24", 15] call FNC_AddItemVehicle;
-    ["SmokeShell", 5] call FNC_AddItemVehicle;
-    ["SmokeShellBlue", 2] call FNC_AddItemVehicle;
-    ["SmokeShellGreen", 2] call FNC_AddItemVehicle;
-    ["SmokeShellOrange", 2] call FNC_AddItemVehicle;
-    ["SmokeShellPurple", 2] call FNC_AddItemVehicle;
-    ["SmokeShellRed", 2] call FNC_AddItemVehicle;
-    ["SmokeShellYellow", 2] call FNC_AddItemVehicle;
-    ["ACE_fieldDressing", 10] call FNC_AddItemVehicle;
-    ["ACE_tourniquet", 5] call FNC_AddItemVehicle;
+    [Ger_Gren_Frag_SC, 15] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_W, 5] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_O, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_P, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_R, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
+    [GEN_Bandage, 10] call FNC_AddItemVehicle;
+    [GEN_TQ, 5] call FNC_AddItemVehicle;
 }; //end of case FSJ_DC_CHQ
 
 case "FSJ_DC_Z1HQ": {
@@ -90,59 +91,58 @@ case "FSJ_DC_Z1HQ": {
 
     _inventory = magazines _x;
 
-        if (_inventory select 1 == "LIB_5Rnd_792x57") then {
-        ["LIB_K98"] call FNC_AddItemVehicle;
-        ["LIB_5Rnd_792x57",12] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_K98) then {
+        [Ger_Weap_K98] call FNC_AddItemVehicle;
+        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "len_20Rnd_792x57") then {
-        ["LEN_FG42"] call FNC_AddItemVehicle;
-        ["len_20Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_FG42) then {
+        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_10Rnd_792x57") then {
-        ["LIB_G43"] call FNC_AddItemVehicle;
-        ["LIB_10Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_G43) then {
+        [Ger_Weap_G43] call FNC_AddItemVehicle;
+        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_30Rnd_792x33") then {
-        ["LIB_MP44"] call FNC_AddItemVehicle;
-        ["LIB_30Rnd_792x33",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_StG44) then {
+        [Ger_Weap_StG44] call FNC_AddItemVehicle;
+        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_32Rnd_9x19") then {
-        ["LIB_MP40"] call FNC_AddItemVehicle;
-        ["LIB_32Rnd_9x19",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_MP40) then {
+        [Ger_Weap_MP40] call FNC_AddItemVehicle;
+        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
          } else {};
 
     } forEach _squad; //end of weapon matching
 
     //extra items
-    ["LIB_K98", 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
 
-    ["B_LIB_GER_Tonister34_cowhide", 5] call FNC_AddItemVehicle;
-    ["B_LIB_GER_Radio", 1] call FNC_AddItemVehicle;
+    [Ger_BP_T34, 5] call FNC_AddItemVehicle;
+    [Ger_BP_Radio, 1] call FNC_AddItemVehicle;
+    [GEN_Radio] call FNC_AddItemVehicle;
 
-    ["LIB_FLARE_PISTOL", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_white", 6] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_green", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_red", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_yellow", 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Pistol, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_W, 6] call FNC_AddItemVehicle;
+    [GEN_Flare_G, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_R, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    ["fow_e_m24", 15] call FNC_AddItemVehicle;
-    ["SmokeShell", 5] call FNC_AddItemVehicle;
-    ["SmokeShellBlue", 2] call FNC_AddItemVehicle;
-    ["SmokeShellGreen", 2] call FNC_AddItemVehicle;
-    ["SmokeShellOrange", 2] call FNC_AddItemVehicle;
-    ["SmokeShellPurple", 2] call FNC_AddItemVehicle;
-    ["SmokeShellRed", 2] call FNC_AddItemVehicle;
-    ["SmokeShellYellow", 2] call FNC_AddItemVehicle;
-    ["ACE_fieldDressing", 10] call FNC_AddItemVehicle;
-    ["ACE_morphine", 5] call FNC_AddItemVehicle;
-    ["ACE_tourniquet", 5] call FNC_AddItemVehicle;
-    ["ACE_epinephrine", 5] call FNC_AddItemVehicle;
-    ["ACE_fieldDressing",32] call FNC_AddItemVehicle;
-    ["ACE_morphine",10] call FNC_AddItemVehicle;
-    ["ACE_epinephrine",8] call FNC_AddItemVehicle;
-    ["ACE_atropine",4] call FNC_AddItemVehicle;
-    ["ACE_salineIV_500",5] call FNC_AddItemVehicle;
-    ["ACE_personalAidKit", 10] call FNC_AddItemVehicle;
+    [Ger_Gren_Frag_SC, 15] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_W, 5] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_O, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_P, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_R, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
+    [GEN_Bandage, 10] call FNC_AddItemVehicle;
+    [GEN_Morp, 5] call FNC_AddItemVehicle;
+    [GEN_TQ, 5] call FNC_AddItemVehicle;
+    [GEN_Epi, 5] call FNC_AddItemVehicle;
+    [GEN_BandageP,32] call FNC_AddItemVehicle;
+    [GEN_Morp,10] call FNC_AddItemVehicle;
+    [GEN_Epi,8] call FNC_AddItemVehicle;
+    [GEN_Saline500,15] call FNC_AddItemVehicle;
 }; //end of case FSJ_DC_Z1HQ
 
 case "FSJ_DC_Z2HQ": {
@@ -154,59 +154,58 @@ case "FSJ_DC_Z2HQ": {
 
     _inventory = magazines _x;
 
-        if (_inventory select 1 == "LIB_5Rnd_792x57") then {
-        ["LIB_K98"] call FNC_AddItemVehicle;
-        ["LIB_5Rnd_792x57",12] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_K98) then {
+        [Ger_Weap_K98] call FNC_AddItemVehicle;
+        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "len_20Rnd_792x57") then {
-        ["LEN_FG42"] call FNC_AddItemVehicle;
-        ["len_20Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_FG42) then {
+        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_10Rnd_792x57") then {
-        ["LIB_G43"] call FNC_AddItemVehicle;
-        ["LIB_10Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_G43) then {
+        [Ger_Weap_G43] call FNC_AddItemVehicle;
+        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_30Rnd_792x33") then {
-        ["LIB_MP44"] call FNC_AddItemVehicle;
-        ["LIB_30Rnd_792x33",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_StG44) then {
+        [Ger_Weap_StG44] call FNC_AddItemVehicle;
+        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_32Rnd_9x19") then {
-        ["LIB_MP40"] call FNC_AddItemVehicle;
-        ["LIB_32Rnd_9x19",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_MP40) then {
+        [Ger_Weap_MP40] call FNC_AddItemVehicle;
+        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
          } else {};
 
     } forEach _squad; //end of weapon matching
 
     //extra items
-    ["LIB_K98", 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
 
-    ["B_LIB_GER_Tonister34_cowhide", 5] call FNC_AddItemVehicle;
-    ["B_LIB_GER_Radio", 1] call FNC_AddItemVehicle;
+    [Ger_BP_T34, 5] call FNC_AddItemVehicle;
+    [Ger_BP_Radio, 1] call FNC_AddItemVehicle;
+    [GEN_Radio] call FNC_AddItemVehicle;
 
-    ["LIB_FLARE_PISTOL", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_white", 6] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_green", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_red", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_yellow", 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Pistol, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_W, 6] call FNC_AddItemVehicle;
+    [GEN_Flare_G, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_R, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    ["fow_e_m24", 15] call FNC_AddItemVehicle;
-    ["SmokeShell", 5] call FNC_AddItemVehicle;
-    ["SmokeShellBlue", 2] call FNC_AddItemVehicle;
-    ["SmokeShellGreen", 2] call FNC_AddItemVehicle;
-    ["SmokeShellOrange", 2] call FNC_AddItemVehicle;
-    ["SmokeShellPurple", 2] call FNC_AddItemVehicle;
-    ["SmokeShellRed", 2] call FNC_AddItemVehicle;
-    ["SmokeShellYellow", 2] call FNC_AddItemVehicle;
-    ["ACE_fieldDressing", 10] call FNC_AddItemVehicle;
-    ["ACE_morphine", 5] call FNC_AddItemVehicle;
-    ["ACE_tourniquet", 5] call FNC_AddItemVehicle;
-    ["ACE_epinephrine", 5] call FNC_AddItemVehicle;
-    ["ACE_fieldDressing",32] call FNC_AddItemVehicle;
-    ["ACE_morphine",10] call FNC_AddItemVehicle;
-    ["ACE_epinephrine",8] call FNC_AddItemVehicle;
-    ["ACE_atropine",4] call FNC_AddItemVehicle;
-    ["ACE_salineIV_500",5] call FNC_AddItemVehicle;
-    ["ACE_personalAidKit", 10] call FNC_AddItemVehicle;
+    [Ger_Gren_Frag_SC, 15] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_W, 5] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_O, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_P, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_R, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
+    [GEN_Bandage, 10] call FNC_AddItemVehicle;
+    [GEN_Morp, 5] call FNC_AddItemVehicle;
+    [GEN_TQ, 5] call FNC_AddItemVehicle;
+    [GEN_Epi, 5] call FNC_AddItemVehicle;
+    [GEN_BandageP,32] call FNC_AddItemVehicle;
+    [GEN_Morp,10] call FNC_AddItemVehicle;
+    [GEN_Epi,8] call FNC_AddItemVehicle;
+    [GEN_Saline500,15] call FNC_AddItemVehicle;
 }; //end of case FSJ_DC_Z2HQ
 
 //End HQs
@@ -222,57 +221,59 @@ case "FSJ_DC_Z1G1W": {
 
     _inventory = magazines _x;
 
-        if (_inventory select 1 == "LIB_5Rnd_792x57") then {
-        ["LIB_K98"] call FNC_AddItemVehicle;
-        ["LIB_5Rnd_792x57",12] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_K98) then {
+        [Ger_Weap_K98] call FNC_AddItemVehicle;
+        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "len_20Rnd_792x57") then {
-        ["LEN_FG42"] call FNC_AddItemVehicle;
-        ["len_20Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_FG42) then {
+        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_10Rnd_792x57") then {
-        ["LIB_G43"] call FNC_AddItemVehicle;
-        ["LIB_10Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_G43) then {
+        [Ger_Weap_G43] call FNC_AddItemVehicle;
+        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_30Rnd_792x33") then {
-        ["LIB_MP44"] call FNC_AddItemVehicle;
-        ["LIB_30Rnd_792x33",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_StG44) then {
+        [Ger_Weap_StG44] call FNC_AddItemVehicle;
+        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_32Rnd_9x19") then {
-        ["LIB_MP40"] call FNC_AddItemVehicle;
-        ["LIB_32Rnd_9x19",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_MP40) then {
+        [Ger_Weap_MP40] call FNC_AddItemVehicle;
+        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
          } else {};
 
     } forEach _squad; //end of weapon matching
 
     //extra items
-    ["LIB_ACC_GW_SB_Empty", 1] call FNC_AddItemVehicle;
-    ["LIB_K98ZF39", 1] call FNC_AddItemVehicle;
-    ["LIB_K98", 1] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_G_PZGR_30", 8] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_G_SPRGR_30", 8] call FNC_AddItemVehicle;
-    ["LIB_MG42", 2] call FNC_AddItemVehicle;
-    ["ACE_SpareBarrel", 2] call FNC_AddItemVehicle;
-    ["LIB_50Rnd_792x57", 20] call FNC_AddItemVehicle;
+    [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Mag_RGrn_ATS, 8] call FNC_AddItemVehicle;
+    [Ger_Mag_RGrn_HE, 8] call FNC_AddItemVehicle;
+    [Ger_Weap_MG34, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_MG42, 1] call FNC_AddItemVehicle;
+    [GEN_ace_sparebarrel, 2] call FNC_AddItemVehicle;
+    [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
 
-    ["B_LIB_GER_Tonister34_cowhide", 10] call FNC_AddItemVehicle;
+    [Ger_BP_T34, 10] call FNC_AddItemVehicle;
 
-    ["LIB_FLARE_PISTOL", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_white", 6] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_green", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_red", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_yellow", 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Pistol, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_W, 6] call FNC_AddItemVehicle;
+    [GEN_Flare_G, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_R, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    ["fow_e_m24", 30] call FNC_AddItemVehicle;
-    ["SmokeShell", 10] call FNC_AddItemVehicle;
-    ["SmokeShellBlue", 2] call FNC_AddItemVehicle;
-    ["SmokeShellGreen", 2] call FNC_AddItemVehicle;
-    ["SmokeShellOrange", 2] call FNC_AddItemVehicle;
-    ["SmokeShellPurple", 2] call FNC_AddItemVehicle;
-    ["SmokeShellRed", 2] call FNC_AddItemVehicle;
-    ["SmokeShellYellow", 2] call FNC_AddItemVehicle;
-    ["ACE_fieldDressing", 20] call FNC_AddItemVehicle;
-    ["ACE_tourniquet", 10] call FNC_AddItemVehicle;
+    [Ger_Gren_Frag_SC, 30] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_O, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_P, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_R, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
+    [GEN_Bandage, 10] call FNC_AddItemVehicle;
+    [GEN_BandageP, 10] call FNC_AddItemVehicle;
+    [GEN_TQ, 10] call FNC_AddItemVehicle;
 }; //end of case FSJ_DC_Z1G1W
 
 case "FSJ_DC_Z1G2W": {
@@ -284,57 +285,59 @@ case "FSJ_DC_Z1G2W": {
 
     _inventory = magazines _x;
 
-        if (_inventory select 1 == "LIB_5Rnd_792x57") then {
-        ["LIB_K98"] call FNC_AddItemVehicle;
-        ["LIB_5Rnd_792x57",12] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_K98) then {
+        [Ger_Weap_K98] call FNC_AddItemVehicle;
+        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "len_20Rnd_792x57") then {
-        ["LEN_FG42"] call FNC_AddItemVehicle;
-        ["len_20Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_FG42) then {
+        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_10Rnd_792x57") then {
-        ["LIB_G43"] call FNC_AddItemVehicle;
-        ["LIB_10Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_G43) then {
+        [Ger_Weap_G43] call FNC_AddItemVehicle;
+        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_30Rnd_792x33") then {
-        ["LIB_MP44"] call FNC_AddItemVehicle;
-        ["LIB_30Rnd_792x33",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_StG44) then {
+        [Ger_Weap_StG44] call FNC_AddItemVehicle;
+        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_32Rnd_9x19") then {
-        ["LIB_MP40"] call FNC_AddItemVehicle;
-        ["LIB_32Rnd_9x19",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_MP40) then {
+        [Ger_Weap_MP40] call FNC_AddItemVehicle;
+        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
          } else {};
 
     } forEach _squad; //end of weapon matching
 
     //extra items
-    ["LIB_ACC_GW_SB_Empty", 1] call FNC_AddItemVehicle;
-    ["LIB_K98ZF39", 1] call FNC_AddItemVehicle;
-    ["LIB_K98", 1] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_G_PZGR_30", 8] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_G_SPRGR_30", 8] call FNC_AddItemVehicle;
-    ["LIB_MG42", 2] call FNC_AddItemVehicle;
-    ["ACE_SpareBarrel", 2] call FNC_AddItemVehicle;
-    ["LIB_50Rnd_792x57", 20] call FNC_AddItemVehicle;
+    [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Mag_RGrn_ATS, 8] call FNC_AddItemVehicle;
+    [Ger_Mag_RGrn_HE, 8] call FNC_AddItemVehicle;
+    [Ger_Weap_MG34, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_MG42, 1] call FNC_AddItemVehicle;
+    [GEN_ace_sparebarrel, 2] call FNC_AddItemVehicle;
+    [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
 
-    ["B_LIB_GER_Tonister34_cowhide", 10] call FNC_AddItemVehicle;
+    [Ger_BP_T34, 10] call FNC_AddItemVehicle;
 
-    ["LIB_FLARE_PISTOL", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_white", 6] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_green", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_red", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_yellow", 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Pistol, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_W, 6] call FNC_AddItemVehicle;
+    [GEN_Flare_G, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_R, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    ["fow_e_m24", 30] call FNC_AddItemVehicle;
-    ["SmokeShell", 10] call FNC_AddItemVehicle;
-    ["SmokeShellBlue", 2] call FNC_AddItemVehicle;
-    ["SmokeShellGreen", 2] call FNC_AddItemVehicle;
-    ["SmokeShellOrange", 2] call FNC_AddItemVehicle;
-    ["SmokeShellPurple", 2] call FNC_AddItemVehicle;
-    ["SmokeShellRed", 2] call FNC_AddItemVehicle;
-    ["SmokeShellYellow", 2] call FNC_AddItemVehicle;
-    ["ACE_fieldDressing", 20] call FNC_AddItemVehicle;
-    ["ACE_tourniquet", 10] call FNC_AddItemVehicle;
+    [Ger_Gren_Frag_SC, 30] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_O, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_P, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_R, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
+    [GEN_Bandage, 10] call FNC_AddItemVehicle;
+    [GEN_BandageP, 10] call FNC_AddItemVehicle;
+    [GEN_TQ, 10] call FNC_AddItemVehicle;
 }; //end of case FSJ_DC_Z1G2W
 
 case "FSJ_DC_Z1G3W": {
@@ -346,57 +349,59 @@ case "FSJ_DC_Z1G3W": {
 
     _inventory = magazines _x;
 
-        if (_inventory select 1 == "LIB_5Rnd_792x57") then {
-        ["LIB_K98"] call FNC_AddItemVehicle;
-        ["LIB_5Rnd_792x57",12] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_K98) then {
+        [Ger_Weap_K98] call FNC_AddItemVehicle;
+        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "len_20Rnd_792x57") then {
-        ["LEN_FG42"] call FNC_AddItemVehicle;
-        ["len_20Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_FG42) then {
+        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_10Rnd_792x57") then {
-        ["LIB_G43"] call FNC_AddItemVehicle;
-        ["LIB_10Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_G43) then {
+        [Ger_Weap_G43] call FNC_AddItemVehicle;
+        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_30Rnd_792x33") then {
-        ["LIB_MP44"] call FNC_AddItemVehicle;
-        ["LIB_30Rnd_792x33",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_StG44) then {
+        [Ger_Weap_StG44] call FNC_AddItemVehicle;
+        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_32Rnd_9x19") then {
-        ["LIB_MP40"] call FNC_AddItemVehicle;
-        ["LIB_32Rnd_9x19",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_MP40) then {
+        [Ger_Weap_MP40] call FNC_AddItemVehicle;
+        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
          } else {};
 
     } forEach _squad; //end of weapon matching
 
     //extra items
-    ["LIB_ACC_GW_SB_Empty", 1] call FNC_AddItemVehicle;
-    ["LIB_K98ZF39", 1] call FNC_AddItemVehicle;
-    ["LIB_K98", 1] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_G_PZGR_30", 8] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_G_SPRGR_30", 8] call FNC_AddItemVehicle;
-    ["LIB_MG42", 2] call FNC_AddItemVehicle;
-    ["ACE_SpareBarrel", 2] call FNC_AddItemVehicle;
-    ["LIB_50Rnd_792x57", 20] call FNC_AddItemVehicle;
+    [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Mag_RGrn_ATS, 8] call FNC_AddItemVehicle;
+    [Ger_Mag_RGrn_HE, 8] call FNC_AddItemVehicle;
+    [Ger_Weap_MG34, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_MG42, 1] call FNC_AddItemVehicle;
+    [GEN_ace_sparebarrel, 2] call FNC_AddItemVehicle;
+    [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
 
-    ["B_LIB_GER_Tonister34_cowhide", 10] call FNC_AddItemVehicle;
+    [Ger_BP_T34, 10] call FNC_AddItemVehicle;
 
-    ["LIB_FLARE_PISTOL", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_white", 6] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_green", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_red", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_yellow", 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Pistol, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_W, 6] call FNC_AddItemVehicle;
+    [GEN_Flare_G, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_R, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    ["fow_e_m24", 30] call FNC_AddItemVehicle;
-    ["SmokeShell", 10] call FNC_AddItemVehicle;
-    ["SmokeShellBlue", 2] call FNC_AddItemVehicle;
-    ["SmokeShellGreen", 2] call FNC_AddItemVehicle;
-    ["SmokeShellOrange", 2] call FNC_AddItemVehicle;
-    ["SmokeShellPurple", 2] call FNC_AddItemVehicle;
-    ["SmokeShellRed", 2] call FNC_AddItemVehicle;
-    ["SmokeShellYellow", 2] call FNC_AddItemVehicle;
-    ["ACE_fieldDressing", 20] call FNC_AddItemVehicle;
-    ["ACE_tourniquet", 10] call FNC_AddItemVehicle;
+    [Ger_Gren_Frag_SC, 30] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_O, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_P, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_R, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
+    [GEN_Bandage, 10] call FNC_AddItemVehicle;
+    [GEN_BandageP, 10] call FNC_AddItemVehicle;
+    [GEN_TQ, 10] call FNC_AddItemVehicle;
 }; //end of case FSJ_DC_Z1G3W
 
 //End 1 Zug
@@ -412,57 +417,59 @@ case "FSJ_DC_Z2G1W": {
 
     _inventory = magazines _x;
 
-        if (_inventory select 1 == "LIB_5Rnd_792x57") then {
-        ["LIB_K98"] call FNC_AddItemVehicle;
-        ["LIB_5Rnd_792x57",12] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_K98) then {
+        [Ger_Weap_K98] call FNC_AddItemVehicle;
+        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "len_20Rnd_792x57") then {
-        ["LEN_FG42"] call FNC_AddItemVehicle;
-        ["len_20Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_FG42) then {
+        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_10Rnd_792x57") then {
-        ["LIB_G43"] call FNC_AddItemVehicle;
-        ["LIB_10Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_G43) then {
+        [Ger_Weap_G43] call FNC_AddItemVehicle;
+        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_30Rnd_792x33") then {
-        ["LIB_MP44"] call FNC_AddItemVehicle;
-        ["LIB_30Rnd_792x33",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_StG44) then {
+        [Ger_Weap_StG44] call FNC_AddItemVehicle;
+        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_32Rnd_9x19") then {
-        ["LIB_MP40"] call FNC_AddItemVehicle;
-        ["LIB_32Rnd_9x19",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_MP40) then {
+        [Ger_Weap_MP40] call FNC_AddItemVehicle;
+        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
          } else {};
 
     } forEach _squad; //end of weapon matching
 
     //extra items
-    ["LIB_ACC_GW_SB_Empty", 1] call FNC_AddItemVehicle;
-    ["LIB_K98ZF39", 1] call FNC_AddItemVehicle;
-    ["LIB_K98", 1] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_G_PZGR_30", 8] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_G_SPRGR_30", 8] call FNC_AddItemVehicle;
-    ["LIB_MG42", 2] call FNC_AddItemVehicle;
-    ["ACE_SpareBarrel", 2] call FNC_AddItemVehicle;
-    ["LIB_50Rnd_792x57", 20] call FNC_AddItemVehicle;
+    [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Mag_RGrn_ATS, 8] call FNC_AddItemVehicle;
+    [Ger_Mag_RGrn_HE, 8] call FNC_AddItemVehicle;
+    [Ger_Weap_MG34, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_MG42, 1] call FNC_AddItemVehicle;
+    [GEN_ace_sparebarrel, 2] call FNC_AddItemVehicle;
+    [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
 
-    ["B_LIB_GER_Tonister34_cowhide", 10] call FNC_AddItemVehicle;
+    [Ger_BP_T34, 10] call FNC_AddItemVehicle;
 
-    ["LIB_FLARE_PISTOL", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_white", 6] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_green", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_red", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_yellow", 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Pistol, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_W, 6] call FNC_AddItemVehicle;
+    [GEN_Flare_G, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_R, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    ["fow_e_m24", 30] call FNC_AddItemVehicle;
-    ["SmokeShell", 10] call FNC_AddItemVehicle;
-    ["SmokeShellBlue", 2] call FNC_AddItemVehicle;
-    ["SmokeShellGreen", 2] call FNC_AddItemVehicle;
-    ["SmokeShellOrange", 2] call FNC_AddItemVehicle;
-    ["SmokeShellPurple", 2] call FNC_AddItemVehicle;
-    ["SmokeShellRed", 2] call FNC_AddItemVehicle;
-    ["SmokeShellYellow", 2] call FNC_AddItemVehicle;
-    ["ACE_fieldDressing", 20] call FNC_AddItemVehicle;
-    ["ACE_tourniquet", 10] call FNC_AddItemVehicle;
+    [Ger_Gren_Frag_SC, 30] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_O, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_P, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_R, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
+    [GEN_Bandage, 10] call FNC_AddItemVehicle;
+    [GEN_BandageP, 10] call FNC_AddItemVehicle;
+    [GEN_TQ, 10] call FNC_AddItemVehicle;
 }; //end of case FSJ_DC_Z2G1W
 
 case "FSJ_DC_Z2G2W": {
@@ -474,57 +481,59 @@ case "FSJ_DC_Z2G2W": {
 
     _inventory = magazines _x;
 
-        if (_inventory select 1 == "LIB_5Rnd_792x57") then {
-        ["LIB_K98"] call FNC_AddItemVehicle;
-        ["LIB_5Rnd_792x57",12] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_K98) then {
+        [Ger_Weap_K98] call FNC_AddItemVehicle;
+        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "len_20Rnd_792x57") then {
-        ["LEN_FG42"] call FNC_AddItemVehicle;
-        ["len_20Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_FG42) then {
+        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_10Rnd_792x57") then {
-        ["LIB_G43"] call FNC_AddItemVehicle;
-        ["LIB_10Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_G43) then {
+        [Ger_Weap_G43] call FNC_AddItemVehicle;
+        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_30Rnd_792x33") then {
-        ["LIB_MP44"] call FNC_AddItemVehicle;
-        ["LIB_30Rnd_792x33",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_StG44) then {
+        [Ger_Weap_StG44] call FNC_AddItemVehicle;
+        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_32Rnd_9x19") then {
-        ["LIB_MP40"] call FNC_AddItemVehicle;
-        ["LIB_32Rnd_9x19",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_MP40) then {
+        [Ger_Weap_MP40] call FNC_AddItemVehicle;
+        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
          } else {};
 
     } forEach _squad; //end of weapon matching
 
     //extra items
-    ["LIB_ACC_GW_SB_Empty", 1] call FNC_AddItemVehicle;
-    ["LIB_K98ZF39", 1] call FNC_AddItemVehicle;
-    ["LIB_K98", 1] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_G_PZGR_30", 8] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_G_SPRGR_30", 8] call FNC_AddItemVehicle;
-    ["LIB_MG42", 2] call FNC_AddItemVehicle;
-    ["ACE_SpareBarrel", 2] call FNC_AddItemVehicle;
-    ["LIB_50Rnd_792x57", 20] call FNC_AddItemVehicle;
+    [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Mag_RGrn_ATS, 8] call FNC_AddItemVehicle;
+    [Ger_Mag_RGrn_HE, 8] call FNC_AddItemVehicle;
+    [Ger_Weap_MG34, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_MG42, 1] call FNC_AddItemVehicle;
+    [GEN_ace_sparebarrel, 2] call FNC_AddItemVehicle;
+    [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
 
-    ["B_LIB_GER_Tonister34_cowhide", 10] call FNC_AddItemVehicle;
+    [Ger_BP_T34, 10] call FNC_AddItemVehicle;
 
-    ["LIB_FLARE_PISTOL", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_white", 6] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_green", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_red", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_yellow", 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Pistol, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_W, 6] call FNC_AddItemVehicle;
+    [GEN_Flare_G, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_R, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    ["fow_e_m24", 30] call FNC_AddItemVehicle;
-    ["SmokeShell", 10] call FNC_AddItemVehicle;
-    ["SmokeShellBlue", 2] call FNC_AddItemVehicle;
-    ["SmokeShellGreen", 2] call FNC_AddItemVehicle;
-    ["SmokeShellOrange", 2] call FNC_AddItemVehicle;
-    ["SmokeShellPurple", 2] call FNC_AddItemVehicle;
-    ["SmokeShellRed", 2] call FNC_AddItemVehicle;
-    ["SmokeShellYellow", 2] call FNC_AddItemVehicle;
-    ["ACE_fieldDressing", 20] call FNC_AddItemVehicle;
-    ["ACE_tourniquet", 10] call FNC_AddItemVehicle;
+    [Ger_Gren_Frag_SC, 30] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_O, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_P, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_R, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
+    [GEN_Bandage, 10] call FNC_AddItemVehicle;
+    [GEN_BandageP, 10] call FNC_AddItemVehicle;
+    [GEN_TQ, 10] call FNC_AddItemVehicle;
 }; //end of case FSJ_DC_Z2G2W
 
 case "FSJ_DC_Z2G3W": {
@@ -536,56 +545,58 @@ case "FSJ_DC_Z2G3W": {
 
     _inventory = magazines _x;
 
-        if (_inventory select 1 == "LIB_5Rnd_792x57") then {
-        ["LIB_K98"] call FNC_AddItemVehicle;
-        ["LIB_5Rnd_792x57",12] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_K98) then {
+        [Ger_Weap_K98] call FNC_AddItemVehicle;
+        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "len_20Rnd_792x57") then {
-        ["LEN_FG42"] call FNC_AddItemVehicle;
-        ["len_20Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_FG42) then {
+        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_10Rnd_792x57") then {
-        ["LIB_G43"] call FNC_AddItemVehicle;
-        ["LIB_10Rnd_792x57",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_G43) then {
+        [Ger_Weap_G43] call FNC_AddItemVehicle;
+        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_30Rnd_792x33") then {
-        ["LIB_MP44"] call FNC_AddItemVehicle;
-        ["LIB_30Rnd_792x33",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_StG44) then {
+        [Ger_Weap_StG44] call FNC_AddItemVehicle;
+        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
          } else {};
-        if (_inventory select 1 == "LIB_32Rnd_9x19") then {
-        ["LIB_MP40"] call FNC_AddItemVehicle;
-        ["LIB_32Rnd_9x19",6] call FNC_AddItemVehicle;
+        if (_inventory select 1 == Ger_Mag_MP40) then {
+        [Ger_Weap_MP40] call FNC_AddItemVehicle;
+        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
          } else {};
 
     } forEach _squad; //end of weapon matching
 
     //extra items
-    ["LIB_ACC_GW_SB_Empty", 1] call FNC_AddItemVehicle;
-    ["LIB_K98ZF39", 1] call FNC_AddItemVehicle;
-    ["LIB_K98", 1] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_G_PZGR_30", 8] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_G_SPRGR_30", 8] call FNC_AddItemVehicle;
-    ["LIB_MG42", 2] call FNC_AddItemVehicle;
-    ["ACE_SpareBarrel", 2] call FNC_AddItemVehicle;
-    ["LIB_50Rnd_792x57", 20] call FNC_AddItemVehicle;
+    [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Mag_RGrn_ATS, 8] call FNC_AddItemVehicle;
+    [Ger_Mag_RGrn_HE, 8] call FNC_AddItemVehicle;
+    [Ger_Weap_MG34, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_MG42, 1] call FNC_AddItemVehicle;
+    [GEN_ace_sparebarrel, 2] call FNC_AddItemVehicle;
+    [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
 
-    ["B_LIB_GER_Tonister34_cowhide", 10] call FNC_AddItemVehicle;
+    [Ger_BP_T34, 10] call FNC_AddItemVehicle;
 
-    ["LIB_FLARE_PISTOL", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_white", 6] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_green", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_red", 2] call FNC_AddItemVehicle;
-    ["LIB_1Rnd_flare_yellow", 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Pistol, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_W, 6] call FNC_AddItemVehicle;
+    [GEN_Flare_G, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_R, 2] call FNC_AddItemVehicle;
+    [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    ["fow_e_m24", 30] call FNC_AddItemVehicle;
-    ["SmokeShell", 10] call FNC_AddItemVehicle;
-    ["SmokeShellBlue", 2] call FNC_AddItemVehicle;
-    ["SmokeShellGreen", 2] call FNC_AddItemVehicle;
-    ["SmokeShellOrange", 2] call FNC_AddItemVehicle;
-    ["SmokeShellPurple", 2] call FNC_AddItemVehicle;
-    ["SmokeShellRed", 2] call FNC_AddItemVehicle;
-    ["SmokeShellYellow", 2] call FNC_AddItemVehicle;
-    ["ACE_fieldDressing", 20] call FNC_AddItemVehicle;
-    ["ACE_tourniquet", 10] call FNC_AddItemVehicle;
+    [Ger_Gren_Frag_SC, 30] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_O, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_P, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_R, 2] call FNC_AddItemVehicle;
+    [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
+    [GEN_Bandage, 10] call FNC_AddItemVehicle;
+    [GEN_BandageP, 10] call FNC_AddItemVehicle;
+    [GEN_TQ, 10] call FNC_AddItemVehicle;
 }; //end of case FSJ_DC_Z2G3W
 //End 2 Zug

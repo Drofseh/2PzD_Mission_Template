@@ -8,9 +8,13 @@ switch (side player) do { // Checks what team the player is on
 // Other formatting may be used on text by including it inside <font> </font> tags.
 // For example:
 // <font color='#BBBBBB' size='16' face='PuristaBold'>This example formats the colour, size, and font of the text.</font><br/>
-    // Note that when changing the face, the fonts must be available in game.
-    // Available fonts can be found the in config viewer under configfile >> "CfgFontFamilies"
-    // EtelkaNarrowMediumPro is broken and should not be used.
+    // Colour accepts HTML colour codes.
+    // Size 12 is the default text size.
+    // When changing the face, the fonts must be available in game.
+        // Available fonts can be found the in config viewer under configfile >> "CfgFontFamilies"
+        // EtelkaNarrowMediumPro is broken and should not be used.
+
+// don't use "double quotes" unless you escape them with more ""double quotes"", 'single quotes' are ok, usually, I think, might break the clickable markers if your have any
 
 // To make a word clickable, in order to auto move and zoom the map, you can tie it to a map marker, ex:
 // <marker name='markername'>description(words or numbers)</marker> , example - [<marker name='obja'>Objective Alpha</marker>]
@@ -20,40 +24,42 @@ switch (side player) do { // Checks what team the player is on
 case west: { // If player is west he receives this briefing
 
 NEWTAB("I. Lage (Situation):")
-// Give a brief description of the current situation. Ex. what has happened that led up to this mission. Generally should give an idea of why this mission is happening.
+// Give a brief description of the current situation. Ex. what has happened that led up to this mission.
+// Generally should give an idea of why this mission is happening.
 <br/>
 <br/>
 ENDTAB;
 
 NEWTAB("II. Auftrag (Mission):")
-// A concise statement that includes the Who, What, Where, When, and Why of the operation to be conducted. This is generally a single sentence and there should be no question as to what needs to be done.
+// A concise statement that includes the Who, What, Where, When, and Why of the operation to be conducted.
+// This is generally a single sentence and there should be no question as to what needs to be done.
 // Ex. 1 Kompanie is to SECURE the town of Tottah and DESTROY any enemy assets.
 <br/>
 ENDTAB;
 
 NEWTAB("III. Aufklärung (Intelligence):")
-<br/>A. Overview
+<font color='#FF8C00' size='16'>A. Overview</font>
 <br/>
-<br/><font color='#FF8C00'>1. Terrain:</font>
+<br/><font color='#70db70' size='14'>1. Terrain:</font>
 // Describe the terrain
 // Mountainous, Countryside, open, dense woods
 <br/>
 <br/>
-<br/><font color='#FF8C00'>2. Weather:</font>
+<br/><font color='#70db70' size='14'>2. Weather:</font>
 // Describe and weather conditions
 // Light/heavy fog, rain, clear skies, etc.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>3. Points of Interest:</font>
+<br/><font color='#70db70' size='14'>3. Points of Interest:</font>
 //Any locations on the map that can be of interest to either us or the enemy
 <br/>
 <br/>
-<br/><font color='#FF8C00'>4. Areas of Interest:</font>
+<br/><font color='#70db70' size='14'>4. Areas of Interest:</font>
 // That area of interest/concern to the commander, including the area of influence, areas adjacent thereto, and extending into enemy territory to the objectives of current or planned operations.
 // This area also includes areas occupied by enemy forces who could jeopardize the accomplishment of the mission.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>5. Civilians:</font>
+<br/><font color='#70db70' size='14'>5. Civilians:</font>
 // Are there civilians in the area? Where? Are they friendly to us?
 <br/>
 <br/>
@@ -62,38 +68,38 @@ ENDTAB;
 NEWTAB("B. Feindliche Kräfte (Enemy Forces):")
 // Name of the enemy force(s) here.
 // Ex. Armed Forces of the Russian Federation (MSV)
-<br/>Red Army
+<br/><font size='14'>Red Army</font>
 <br/>
-<br/><font color='#FF8C00'>1. Equipment:</font>
+<br/><font color='#70db70' size='14'>1. Equipment:</font>
 // List equipment that the enemy most likely uses
 <br/>Standard Red Army small arms
 <br/>
-<br/><font color='#FF8C00'>2. Strength:</font>
+<br/><font color='#70db70' size='14'>2. Strength:</font>
 // An approximation of enemy strength
 <br/>
 <br/>
-<br/><font color='#FF8C00'>3. Location:</font>
+<br/><font color='#70db70' size='14'>3. Location:</font>
 // Known location of enemies
 <br/>
 <br/>
-<br/><font color='#FF8C00'>4. Expected Enemy Actions:</font>
+<br/><font color='#70db70' size='14'>4. Expected Enemy Actions:</font>
 // Most Likely Course Of Action for the enemy, example:
 // On contact, EN will initially attempt to return fire. After determining the situation untenable, the EN will attempt to fix and attrition with massed direct fires and reinforce from adjacent elements.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>5. Most Dangerous Enemy Actions:</font>
+<br/><font color='#70db70' size='14'>5. Most Dangerous Enemy Actions:</font>
 // Most Dangerous Course Of Action for the enemy to take against us
 <br/>
 <br/>
-<br/><font color='#FF8C00'>6. Defensive Fires:</font>
+<br/><font color='#70db70' size='14'>6. Defensive Fires:</font>
 // Enemy Artillery is listed here, otherwise put Unknown or N/A
 <br/>
 <br/>
-<br/><font color='#FF8C00'>7. Enemy Air Presence:</font>
+<br/><font color='#70db70' size='14'>7. Enemy Air Presence:</font>
 // Any enemy planes operating in the area, if none put N/A
 <br/>
 <br/>
-<br/><font color='#FF8C00'>8. Future intentions:</font>
+<br/><font color='#70db70' size='14'>8. Future intentions:</font>
 // What are the goals of the enemy
 // example - To restore the train to working order and continue the relocation of the experimental T-80s.
 <br/>
@@ -102,14 +108,14 @@ ENDTAB;
 
 NEWTAB("C. Eigene Kräfte (Friendly Forces):")
 // Name of friendly force(s) here.
-<br/>2. Panzer Division
+<br/><font size='14'>2. Panzer Division</font>
 <br/>
-<br/><font color='#FF8C00'>1. Higher HQ Mission and Intent:</font>
+<br/><font color='#70db70' size='14'>1. Higher HQ Mission and Intent:</font>
 // Describe the intent of higher, can go up to battalion level
 // eg. 1UP intent is to take airfield, 2UP intent is create a forward landing zone for follow on forces.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>2. Composition:</font>
+<br/><font color='#70db70' size='14'>2. Composition:</font>
 // Describe the makeup of the friendly forces.
 <br/>1x Kompanie consisting of:
 <br/>
@@ -120,15 +126,15 @@ NEWTAB("C. Eigene Kräfte (Friendly Forces):")
 <br/>1x Zugtrupp
 <br/>3x Gruppen
 <br/>
-<br/><font color='#FF8C00'>3. Supporting fires:</font>
+<br/><font color='#70db70' size='14'>3. Supporting fires:</font>
 // Friendly Artillery is listed here
 <br/>None
 <br/>
-<br/><font color='#FF8C00'>4. Attachments/Detachments:</font>
+<br/><font color='#70db70' size='14'>4. Attachments/Detachments:</font>
 // Any attached or detached elements or units
 <br/>1x Panzerbesatzung
 <br/>
-<br/><font color='#FF8C00'>5. Assets:</font>
+<br/><font color='#70db70' size='14'>5. Assets:</font>
 // List any vehicles or other special equipment the the friendly side has
 <br/>8x Schützenpanzerwagen
 <br/>1x Panzerkampfwagen IV Ausf. H
@@ -136,70 +142,76 @@ ENDTAB;
 
 
 NEWTAB("IV. Durchführung (Execution):")
-<br/><font color='#FF8C00'>A. Concept of the Operation</font>
+<font color='#FF8C00' size='16'>A. Concept of the Operation</font>
 // A description of the way the operation should unfold.
 // Example:
 // USMC Forces will rapidly launch from the USS Thorne to secure the area surrounding the derailed train before the VDV Company arrives. Upon securing the area, USMC Pilots callsign VADER-1 and VADER-2 will
 // transport the crate of explosives needed for the destruction of the experimental T-80s to the area. Should the VDV arrive during the operation, USMC ground forces will need to defend the area until the objective is complete.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>B. Scheme of Manoeuvre</font>
+<br/><font color='#FF8C00' size='16'>B. Scheme of Manoeuvre</font>
 // How the units will move, usually left up-to the company/platoon commander to decide
 // Example:
 // USMC Forces will launch from the USS Thorne VIA UH-1Y Helicopters.
 // Further movement will be be at the direction of the Zugführer.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>C. Main Effort</font>
+<br/><font color='#FF8C00' size='16'>C. Main Effort</font>
 // Which units will provide the main effort and which will provide support
 // example: 1 Zug will provide the main force for the assault, supported by 2 Zug and Eva, with the Kompanietrupp overseeing the operation.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>D. Tasks to Subordinate Units</font>
+<br/><font color='#FF8C00' size='16'>D. Tasks to Subordinate Units</font>
 // Usually companies tasking to their platoons.
 // Example: 1 Zug will provide a blocking force at grid 123456 in order to allow 2 Zug to assault and destroy enemy elements
 <br/>
 <br/>
-<br/><font color='#FF8C00'>E. Coordinating Instructions</font>
+<br/><font color='#FF8C00' size='16'>E. Coordinating Instructions</font>
 <br/>
-<br/><font color='#70db70'>1. Timings:</font>
+<br/><font color='#70db70' size='14'>1. Timings:</font>
 // Timing for phases during the mission, can also be timing for expected enemy contact in defence mission
 // Example -  We will commence the attack at 0500hrs and must have completed the assault no later than 0620hrs.
 <br/>
 <br/>
-<br/><font color='#70db70'>2. Control Measures:</font>
+<br/><font color='#70db70' size='14'>2. Control Measures:</font>
 // Any specific boundary areas, etc. usually set by the Kompanie
 <br/>As per the direction of the Kompanieführer.
 <br/>
-<br/><font color='#70db70'>3. Rules of Engagement</font>
+<br/><font color='#70db70' size='14'>3. Rules of Engagement</font>
 // Rules of engagement go here.
 <br/>All enemy forces may be engaged at will.
 <br/>
 ENDTAB;
 
 NEWTAB("V. Logistik (Sustainment):")
-<br/><font color='#FF8C00'>A. Equipment Variations</font>
+<font color='#FF8C00' size='16'>A. Equipment Variations</font>
 // Any changes from standard to any of the following.
-<br/>Dress: None
-<br/>Equipment: None
-<br/>Weapons: None
-<br/>Vehicle Loading: None
+<br/>1. Dress: None
 <br/>
-<br/><font color='#FF8C00'>B. Logistic Support</font>
+<br/>2. Equipment: None
+<br/>
+<br/>3. Weapons: None
+<br/>
+<br/>4. Vehicle Loading: None
+<br/>
+<br/><font color='#FF8C00' size='16'>B. Logistic Support</font>
 // Any special re-supply plans put here, example - Helicopters will bring a crate of ammunition after ....
-<br/>Replen Plan: Supplies for each Gruppe are carried in their Schützenpanzerwagen.
-<br/>Ammunition: Each man carries his own ammunition.
-<br/>Protective Equipment: Helmets are to be worn at all times.
+<br/>1. Replen Plan: Supplies for each Gruppe are carried in their Schützenpanzerwagen.
 <br/>
-<br/><font color='#FF8C00'>C. Medical</font>
-<br/>Stretchers: None
-<br/>Med Packs and Morphine: Supplies for each Gruppe are carried in their Schützenpanzerwagen.
+<br/>2. Ammunition: Each man carries his own ammunition.
+<br/>
+<br/>3. Protective Equipment: Helmets are to be worn at all times.
+<br/>
+<br/><font color='#FF8C00' size='16'>C. Medical</font>
+<br/>1. Stretchers: None
+<br/>
+<br/>2. Med Packs and Morphine: Supplies for each Gruppe are carried in their Schützenpanzerwagen.
 ENDTAB;
 
 NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
-<br/><font color='#FF8C00'>A. Command</font>
+<font color='#FF8C00' size='16'>A. Command</font>
 <br/>
-<br/><font color='#70db70'>1. Succession of Command:</font>
+<br/><font color='#70db70' size='14'>1. Succession of Command:</font>
 //Who will take over when casualties occur among leadership elements
 <br/>1 Kompanieführer
 <br/>1 Zug Zugführer
@@ -213,13 +225,13 @@ NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
 <br/>1 Zug 3 Gruppe Gruppenführer
 <br/>2 Zug 3 Gruppe Gruppenführer
 <br/>
-<br/><font color='#70db70'>2. Higher Level Command Post:</font>
+<br/><font color='#70db70' size='14'>2. Higher Level Command Post:</font>
 // Company or Division HQ location, mostly useful for campaign so comment it out with // if not needed.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>B. Signals</font>
+<br/><font color='#FF8C00' size='16'>B. Signals</font>
 <br/>
-<br/><font color='#70db70'>1. Call Signs:</font>
+<br/><font color='#70db70' size='14'>1. Call Signs:</font>
 //Include others as needed
 <br/>
 <br/>HQ - 1 Kompanietrupp
@@ -241,14 +253,14 @@ NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
 <br/>
 <br/>Kommen - Over, reply to me.
 <br/>
-<br/><font color='#70db70'>2. Radio Frequencies:</font>
+<br/><font color='#70db70' size='14'>2. Radio Frequencies:</font>
 //Include others as needed
 <br/>
-<br/>Frequency 40 - Kompanie Net
-<br/>Frequency 60 - 1 Zug Schützenpanzerwagenen
-<br/>Frequency 80 - 2 Zug Schützenpanzerwagenen
+<br/>Frequency 51.70 mhz - Kompanie Net
+<br/>Frequency 31.70 mhz - 1 Zug Sub-Net
+<br/>Frequency 54.70 mhz - 2 Zug Sub-Net
 <br/>
-<br/><font color='#70db70'>3. Special Signals</font>
+<br/><font color='#70db70' size='14'>3. Special Signals</font>
 //Include others as needed
 <br/>Waving like a idiot - Don't shoot me //'
 <br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me //'
@@ -262,11 +274,11 @@ NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
 <br/>Yellow - Regroup on that position
 <br/>White - Used for concealment only
 //<br/>
-//<br/><font color='#70db70'>4. Codewords:</font>
+//<br/><font color='#70db70' size='14'>4. Codewords:</font>
 //Include and uncomment as needed
 //<br/>
 //<br/>
-//<br/><font color='#70db70'>5. Passwords:</font>
+//<br/><font color='#70db70' size='14'>5. Passwords:</font>
 //Include and uncomment as needed
 //<br/>
 ENDTAB;
@@ -288,28 +300,28 @@ NEWTAB("II. Задача (Mission):")
 ENDTAB;
 
 NEWTAB("III. Разведка (Intelligence):")
-<br/>A. Overview
+<font color='#FF8C00' size='16'>A. Overview</font>
 <br/>
-<br/><font color='#FF8C00'>1. Terrain:</font>
+<br/><font color='#70db70' size='14'>1. Terrain:</font>
 // Describe the terrain
 // Mountainous, Countryside, open, dense woods
 <br/>
 <br/>
-<br/><font color='#FF8C00'>2. Weather:</font>
+<br/><font color='#70db70' size='14'>2. Weather:</font>
 // Describe and weather conditions
 // Light/heavy fog, rain, clear skies, etc.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>3. Points of Interest:</font>
+<br/><font color='#70db70' size='14'>3. Points of Interest:</font>
 //Any locations on the map that can be of interest to either us or the enemy
 <br/>
 <br/>
-<br/><font color='#FF8C00'>4. Areas of Interest:</font>
+<br/><font color='#70db70' size='14'>4. Areas of Interest:</font>
 // That area of interest/concern to the commander, including the area of influence, areas adjacent thereto, and extending into enemy territory to the objectives of current or planned operations.
 // This area also includes areas occupied by enemy forces who could jeopardize the accomplishment of the mission.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>5. Civilians:</font>
+<br/><font color='#70db70' size='14'>5. Civilians:</font>
 // Are there civilians in the area? Where? Are they friendly to us?
 <br/>
 <br/>
@@ -318,38 +330,38 @@ ENDTAB;
 NEWTAB("B. Вражеские Силы (Enemy Forces):")
 // Name of the enemy force(s) here.
 // Ex. Armed Forces of the Russian Federation (MSV)
-<br/>German Wehrmacht
+<br/><br/><font size='14'>German Wehrmacht</font>
 <br/>
-<br/><font color='#FF8C00'>1. Equipment:</font>
+<br/><font color='#70db70' size='14'>1. Equipment:</font>
 // List equipment that the enemy most likely uses
 <br/>Standard German small arms
 <br/>
-<br/><font color='#FF8C00'>2. Strength:</font>
+<br/><font color='#70db70' size='14'>2. Strength:</font>
 // An approximation of enemy strength
 <br/>
 <br/>
-<br/><font color='#FF8C00'>3. Location:</font>
+<br/><font color='#70db70' size='14'>3. Location:</font>
 // Known location of enemies
 <br/>
 <br/>
-<br/><font color='#FF8C00'>4. Expected Enemy Actions:</font>
+<br/><font color='#70db70' size='14'>4. Expected Enemy Actions:</font>
 // Most Likely Course Of Action for the enemy, example:
 // On contact, EN will initially attempt to return fire. After determining the situation untenable, the EN will attempt to fix and attrition with massed direct fires and reinforce from adjacent elements.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>5. Most Dangerous Enemy Actions:</font>
+<br/><font color='#70db70' size='14'>5. Most Dangerous Enemy Actions:</font>
 // Most Dangerous Course Of Action for the enemy to take against us
 <br/>
 <br/>
-<br/><font color='#FF8C00'>6. Defensive Fires:</font>
+<br/><font color='#70db70' size='14'>6. Defensive Fires:</font>
 // Enemy Artillery is listed here, otherwise put Unknown or N/A
 <br/>
 <br/>
-<br/><font color='#FF8C00'>7. Enemy Air Presence:</font>
+<br/><font color='#70db70' size='14'>7. Enemy Air Presence:</font>
 // Any enemy planes operating in the area, if none put N/A
 <br/>
 <br/>
-<br/><font color='#FF8C00'>8. Future intentions:</font>
+<br/><font color='#70db70' size='14'>8. Future intentions:</font>
 // What are the goals of the enemy
 // example - To restore the train to working order and continue the relocation of the experimental T-80s.
 <br/>
@@ -358,14 +370,14 @@ ENDTAB;
 
 NEWTAB("C. Дружественные Силы (Friendly Forces):")
 // Name of friendly force(s) here.
-<br/>The Red Army
+<br/><font size='14'>The Red Army</font>
 <br/>
-<br/><font color='#FF8C00'>1. Higher HQ Mission and Intent:</font>
+<br/><font color='#70db70' size='14'>1. Higher HQ Mission and Intent:</font>
 // Describe the intent of higher, can go up to battalion level
 // eg. 1UP intent is to take airfield, 2UP intent is create a forward landing zone for follow on forces.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>2. Composition:</font>
+<br/><font color='#70db70' size='14'>2. Composition:</font>
 // Describe the makeup of the friendly forces.
 <br/>1x Company consisting of:
 <br/>
@@ -376,15 +388,15 @@ NEWTAB("C. Дружественные Силы (Friendly Forces):")
 <br/>1x Platoon HQ
 <br/>3x Squad
 <br/>
-<br/><font color='#FF8C00'>3. Supporting fires:</font>
+<br/><font color='#70db70' size='14'>3. Supporting fires:</font>
 // Friendly Artillery is listed here
 <br/>None
 <br/>
-<br/><font color='#FF8C00'>4. Attachments/Detachments:</font>
+<br/><font color='#70db70' size='14'>4. Attachments/Detachments:</font>
 // Any attached or detached elements or units
 <br/>1x Tank Crew
 <br/>
-<br/><font color='#FF8C00'>5. Assets:</font>
+<br/><font color='#70db70' size='14'>5. Assets:</font>
 // List any vehicles or other special equipment the the friendly side has
 <br/>8x Trucks
 <br/>1x T-34
@@ -392,70 +404,77 @@ ENDTAB;
 
 
 NEWTAB("IV. Исполнение (Execution):")
-<br/><font color='#FF8C00'>A. Concept of the Operation</font>
+<font color='#FF8C00' size='16'>A. Concept of the Operation</font>
 // A description of the way the operation should unfold.
 // Example:
 // USMC Forces will rapidly launch from the USS Thorne to secure the area surrounding the derailed train before the VDV Company arrives. Upon securing the area, USMC Pilots callsign VADER-1 and VADER-2 will
 // transport the crate of explosives needed for the destruction of the experimental T-80s to the area. Should the VDV arrive during the operation, USMC ground forces will need to defend the area until the objective is complete.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>B. Scheme of Manoeuvre</font>
+<br/><font color='#FF8C00' size='16'>B. Scheme of Manoeuvre</font>
 // How the units will move, usually left up-to the company/platoon commander to decide
 // Example:
 // USMC Forces will launch from the USS Thorne VIA UH-1Y Helicopters.
 // Further movement will be be at the direction of the Zugführer.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>C. Main Effort</font>
+<br/><font color='#FF8C00' size='16'>C. Main Effort</font>
 // Which units will provide the main effort and which will provide support
 // example: 1 Zug will provide the main force for the assault, supported by 2 Zug and Eva, with the Kompanietrupp overseeing the operation.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>D. Tasks to Subordinate Units</font>
+<br/><font color='#FF8C00' size='16'>D. Tasks to Subordinate Units</font>
 // Usually companies tasking to their platoons.
 // Example: 1 Zug will provide a blocking force at grid 123456 in order to allow 2 Zug to assault and destroy enemy elements
 <br/>
 <br/>
-<br/><font color='#FF8C00'>E. Coordinating Instructions</font>
+<br/><font color='#FF8C00' size='16'>E. Coordinating Instructions</font>
 <br/>
-<br/><font color='#70db70'>1. Timings:</font>
+<br/><font color='#70db70' size='14'>1. Timings:</font>
 // Timing for phases during the mission, can also be timing for expected enemy contact in defence mission
 // Example -  We will commence the attack at 0500hrs and must have completed the assault no later than 0620hrs.
 <br/>
 <br/>
-<br/><font color='#70db70'>2. Control Measures:</font>
+<br/><font color='#70db70' size='14'>2. Control Measures:</font>
 // Any specific boundary areas, etc. usually set by the Kompanie
 <br/>As per the direction of the Company Commander.
 <br/>
-<br/><font color='#70db70'>3. Rules of Engagement</font>
+<br/><font color='#70db70' size='14'>3. Rules of Engagement</font>
 // Rules of engagement go here.
 <br/>All enemy forces may be engaged at will.
 <br/>
 ENDTAB;
 
 NEWTAB("V. поддержка (Sustainment):")
-<br/><font color='#FF8C00'>A. Equipment Variations</font>
+<font color='#FF8C00' size='16'>A. Equipment Variations</font>
 // Any changes from standard to any of the following.
-<br/>Dress: None
-<br/>Equipment: None
-<br/>Weapons: None
-<br/>Vehicle Loading: None
+<br/>1. Dress: None
 <br/>
-<br/><font color='#FF8C00'>B. Logistic Support</font>
+<br/>2. Equipment: None
+<br/>
+<br/>3. Weapons: None
+<br/>
+<br/>4. Vehicle Loading: None
+<br/>
+<br/><font color='#FF8C00' size='16'>B. Logistic Support</font>
 // Any special re-supply plans put here, example - Helicopters will bring a crate of ammunition after ....
-<br/>Replen Plan: Supplies for each squad are carried in their own truck.
-<br/>Ammunition: Each man carries his own ammunition.
-<br/>Protective Equipment: Helmets are to be worn at all times.
+<br/>1. Replen Plan: Supplies for each squad are carried in their own truck.
 <br/>
-<br/><font color='#FF8C00'>C. Medical</font>
-<br/>Stretchers: None
-<br/>Med Packs and Morphine: Supplies for each squad are carried in their own truck.
+<br/>2. Ammunition: Each man carries his own ammunition.
+<br/>
+<br/>3. Protective Equipment: Helmets are to be worn at all times.
+<br/>
+<br/><font color='#FF8C00' size='16'>C. Medical</font>
+<br/>1. Stretchers: None
+<br/>
+<br/>2. Med Packs and Morphine: Supplies for each squad are carried in their own truck.
+<br/>
 ENDTAB;
 
 NEWTAB("VI. Командная и сигнальная (Command & Signal):")
-<br/><font color='#FF8C00'>A. Command</font>
+<font color='#FF8C00' size='16'>A. Command</font>
 <br/>
-<br/><font color='#70db70'>1. Succession of Command:</font>
+<br/><font color='#70db70' size='14'>1. Succession of Command:</font>
 //Who will take over when casualties occur among leadership elements
 <br/>1 Company Commander
 <br/>1 Platoon, Platoon Commander
@@ -469,13 +488,13 @@ NEWTAB("VI. Командная и сигнальная (Command & Signal):")
 <br/>1 Platoon, 3 Squad, Squad Leader
 <br/>2 Platoon, 3 Squad, Squad Leader
 <br/>
-<br/><font color='#70db70'>2. Higher Level Command Post:</font>
+<br/><font color='#70db70' size='14'>2. Higher Level Command Post:</font>
 // Company or Division HQ location, mostly useful for campaign so comment it out with // if not needed.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>B. Signals</font>
+<br/><font color='#FF8C00' size='16'>B. Signals</font>
 <br/>
-<br/><font color='#70db70'>1. Call Signs:</font>
+<br/><font color='#70db70' size='14'>1. Call Signs:</font>
 //Include others as needed
 <br/>
 <br/>HQ - 1 Company HQ
@@ -497,14 +516,14 @@ NEWTAB("VI. Командная и сигнальная (Command & Signal):")
 <br/>
 <br/>Kommen - Over, reply to me.
 <br/>
-<br/><font color='#70db70'>2. Radio Frequencies:</font>
+<br/><font color='#70db70' size='14'>2. Radio Frequencies:</font>
 //Include others as needed
 <br/>
-<br/>Frequency 45 - Company Net
-<br/>Frequency 65 - 1 Platoon Net
-<br/>Frequency 85 - 2 Platoon Net
+<br/>Frequency 53.20 mhz - Company Net
+<br/>Frequency 33.20 mhz - 1 Platoon Sub-Net
+<br/>Frequency 56.20 mhz - 2 Platoon Sub-Net
 <br/>
-<br/><font color='#70db70'>3. Special Signals</font>
+<br/><font color='#70db70' size='14'>3. Special Signals</font>
 //Include others as needed
 <br/>Waving like a idiot - Don't shoot me //'
 <br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me //'
@@ -518,11 +537,11 @@ NEWTAB("VI. Командная и сигнальная (Command & Signal):")
 <br/>Yellow - Regroup on that position
 <br/>White - Used for concealment only
 //<br/>
-//<br/><font color='#70db70'>4. Codewords:</font>
+//<br/><font color='#70db70' size='14'>4. Codewords:</font>
 //Include and uncomment as needed
 //<br/>
 //<br/>
-//<br/><font color='#70db70'>5. Passwords:</font>
+//<br/><font color='#70db70' size='14'>5. Passwords:</font>
 //Include and uncomment as needed
 //<br/>
 ENDTAB;
@@ -544,28 +563,28 @@ NEWTAB("II. Mission:")
 ENDTAB;
 
 NEWTAB("III. Intelligence:")
-<br/>A. Overview
+<font color='#FF8C00' size='16'>A. Overview</font>
 <br/>
-<br/><font color='#FF8C00'>1. Terrain:</font>
+<br/><font color='#70db70' size='14'>1. Terrain:</font>
 // Describe the terrain
 // Mountainous, Countryside, open, dense woods
 <br/>
 <br/>
-<br/><font color='#FF8C00'>2. Weather:</font>
+<br/><font color='#70db70' size='14'>2. Weather:</font>
 // Describe and weather conditions
 // Light/heavy fog, rain, clear skies, etc.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>3. Points of Interest:</font>
+<br/><font color='#70db70' size='14'>3. Points of Interest:</font>
 //Any locations on the map that can be of interest to either us or the enemy
 <br/>
 <br/>
-<br/><font color='#FF8C00'>4. Areas of Interest:</font>
+<br/><font color='#70db70' size='14'>4. Areas of Interest:</font>
 // That area of interest/concern to the commander, including the area of influence, areas adjacent thereto, and extending into enemy territory to the objectives of current or planned operations.
 // This area also includes areas occupied by enemy forces who could jeopardize the accomplishment of the mission.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>5. Civilians:</font>
+<br/><font color='#70db70' size='14'>5. Civilians:</font>
 // Are there civilians in the area? Where? Are they friendly to us?
 <br/>
 <br/>
@@ -574,38 +593,38 @@ ENDTAB;
 NEWTAB("B. Enemy Forces:")
 // Name of the enemy force(s) here.
 // Ex. Armed Forces of the Russian Federation (MSV)
-<br/>German Wehrmacht
+<br/><br/><font size='14'>German Wehrmacht</font>
 <br/>
-<br/><font color='#FF8C00'>1. Equipment:</font>
+<br/><font color='#70db70' size='14'>1. Equipment:</font>
 // List equipment that the enemy most likely uses
 <br/>Standard German small arms
 <br/>
-<br/><font color='#FF8C00'>2. Strength:</font>
+<br/><font color='#70db70' size='14'>2. Strength:</font>
 // An approximation of enemy strength
 <br/>
 <br/>
-<br/><font color='#FF8C00'>3. Location:</font>
+<br/><font color='#70db70' size='14'>3. Location:</font>
 // Known location of enemies
 <br/>
 <br/>
-<br/><font color='#FF8C00'>4. Expected Enemy Actions:</font>
+<br/><font color='#70db70' size='14'>4. Expected Enemy Actions:</font>
 // Most Likely Course Of Action for the enemy, example:
 // On contact, EN will initially attempt to return fire. After determining the situation untenable, the EN will attempt to fix and attrition with massed direct fires and reinforce from adjacent elements.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>5. Most Dangerous Enemy Actions:</font>
+<br/><font color='#70db70' size='14'>5. Most Dangerous Enemy Actions:</font>
 // Most Dangerous Course Of Action for the enemy to take against us
 <br/>
 <br/>
-<br/><font color='#FF8C00'>6. Defensive Fires:</font>
+<br/><font color='#70db70' size='14'>6. Defensive Fires:</font>
 // Enemy Artillery is listed here, otherwise put Unknown or N/A
 <br/>
 <br/>
-<br/><font color='#FF8C00'>7. Enemy Air Presence:</font>
+<br/><font color='#70db70' size='14'>7. Enemy Air Presence:</font>
 // Any enemy planes operating in the area, if none put N/A
 <br/>
 <br/>
-<br/><font color='#FF8C00'>8. Future intentions:</font>
+<br/><font color='#70db70' size='14'>8. Future intentions:</font>
 // What are the goals of the enemy
 // example - To restore the train to working order and continue the relocation of the experimental T-80s.
 <br/>
@@ -614,14 +633,14 @@ ENDTAB;
 
 NEWTAB("C. Friendly Forces:")
 // Name of friendly force(s) here.
-<br/>The British Army and Allied Forces
+<br/><font size='14'>The British Army and Allied Forces</font>
 <br/>
-<br/><font color='#FF8C00'>1. Higher HQ Mission and Intent:</font>
+<br/><font color='#70db70' size='14'>1. Higher HQ Mission and Intent:</font>
 // Describe the intent of higher, can go up to battalion level
 // eg. 1UP intent is to take airfield, 2UP intent is create a forward landing zone for follow on forces.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>2. Composition:</font>
+<br/><font color='#70db70' size='14'>2. Composition:</font>
 // Describe the makeup of the friendly forces.
 <br/>1x Company consisting of:
 <br/>
@@ -632,15 +651,15 @@ NEWTAB("C. Friendly Forces:")
 <br/>1x Platoon HQ
 <br/>3x Sections
 <br/>
-<br/><font color='#FF8C00'>3. Supporting fires:</font>
+<br/><font color='#70db70' size='14'>3. Supporting fires:</font>
 // Friendly Artillery is listed here
 <br/>None
 <br/>
-<br/><font color='#FF8C00'>4. Attachments/Detachments:</font>
+<br/><font color='#70db70' size='14'>4. Attachments/Detachments:</font>
 // Any attached or detached elements or units
 <br/>1x Tank Crew
 <br/>
-<br/><font color='#FF8C00'>5. Assets:</font>
+<br/><font color='#70db70' size='14'>5. Assets:</font>
 // List any vehicles or other special equipment the the friendly side has
 <br/>8x Trucks
 <br/>1x Tank
@@ -648,70 +667,77 @@ ENDTAB;
 
 
 NEWTAB("IV. Execution:")
-<br/><font color='#FF8C00'>A. Concept of the Operation</font>
+<font color='#FF8C00' size='16'>A. Concept of the Operation</font>
 // A description of the way the operation should unfold.
 // Example:
 // USMC Forces will rapidly launch from the USS Thorne to secure the area surrounding the derailed train before the VDV Company arrives. Upon securing the area, USMC Pilots callsign VADER-1 and VADER-2 will
 // transport the crate of explosives needed for the destruction of the experimental T-80s to the area. Should the VDV arrive during the operation, USMC ground forces will need to defend the area until the objective is complete.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>B. Scheme of Manoeuvre</font>
+<br/><font color='#FF8C00' size='16'>B. Scheme of Manoeuvre</font>
 // How the units will move, usually left up-to the company/platoon commander to decide
 // Example:
 // USMC Forces will launch from the USS Thorne VIA UH-1Y Helicopters.
 // Further movement will be be at the direction of the Zugführer.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>C. Main Effort</font>
+<br/><font color='#FF8C00' size='16'>C. Main Effort</font>
 // Which units will provide the main effort and which will provide support
 // example: 1 Zug will provide the main force for the assault, supported by 2 Zug and Eva, with the Kompanietrupp overseeing the operation.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>D. Tasks to Subordinate Units</font>
+<br/><font color='#FF8C00' size='16'>D. Tasks to Subordinate Units</font>
 // Usually companies tasking to their platoons.
 // Example: 1 Zug will provide a blocking force at grid 123456 in order to allow 2 Zug to assault and destroy enemy elements
 <br/>
 <br/>
-<br/><font color='#FF8C00'>E. Coordinating Instructions</font>
+<br/><font color='#FF8C00' size='16'>E. Coordinating Instructions</font>
 <br/>
-<br/><font color='#70db70'>1. Timings:</font>
+<br/><font color='#70db70' size='14'>1. Timings:</font>
 // Timing for phases during the mission, can also be timing for expected enemy contact in defence mission
 // Example -  We will commence the attack at 0500hrs and must have completed the assault no later than 0620hrs.
 <br/>
 <br/>
-<br/><font color='#70db70'>2. Control Measures:</font>
+<br/><font color='#70db70' size='14'>2. Control Measures:</font>
 // Any specific boundary areas, etc. usually set by the Kompanie
 <br/>As per the direction of the Company Commander.
 <br/>
-<br/><font color='#70db70'>3. Rules of Engagement</font>
+<br/><font color='#70db70' size='14'>3. Rules of Engagement</font>
 // Rules of engagement go here.
 <br/>All enemy forces may be engaged at will.
 <br/>
 ENDTAB;
 
 NEWTAB("V. Sustainment:")
-<br/><font color='#FF8C00'>A. Equipment Variations</font>
+<font color='#FF8C00' size='16'>A. Equipment Variations</font>
 // Any changes from standard to any of the following.
-<br/>Dress: None
-<br/>Equipment: None
-<br/>Weapons: None
-<br/>Vehicle Loading: None
+<br/>1. Dress: None
 <br/>
-<br/><font color='#FF8C00'>B. Logistic Support</font>
+<br/>2. Equipment: None
+<br/>
+<br/>3. Weapons: None
+<br/>
+<br/>4. Vehicle Loading: None
+<br/>
+<br/><font color='#FF8C00' size='16'>B. Logistic Support</font>
 // Any special re-supply plans put here, example - Helicopters will bring a crate of ammunition after ....
-<br/>Replen Plan: Supplies for each section are carried in their own truck.
-<br/>Ammunition: Each man carries his own ammunition.
-<br/>Protective Equipment: Helmets are to be worn at all times.
+<br/>1. Replen Plan: Supplies for each squad are carried in their own truck.
 <br/>
-<br/><font color='#FF8C00'>C. Medical</font>
-<br/>Stretchers: None
-<br/>Med Packs and Morphine: Supplies for each section are carried in their own truck.
+<br/>2. Ammunition: Each man carries his own ammunition.
+<br/>
+<br/>3. Protective Equipment: Helmets are to be worn at all times.
+<br/>
+<br/><font color='#FF8C00' size='16'>C. Medical</font>
+<br/>1. Stretchers: None
+<br/>
+<br/>2. Med Packs and Morphine: Supplies for each squad are carried in their own truck.
+<br/>
 ENDTAB;
 
 NEWTAB("VI. Command & Signal:")
-<br/><font color='#FF8C00'>A. Command</font>
+<font color='#FF8C00' size='16'>A. Command</font>
 <br/>
-<br/><font color='#70db70'>1. Succession of Command:</font>
+<br/><font color='#70db70' size='14'>1. Succession of Command:</font>
 //Who will take over when casualties occur among leadership elements
 <br/>1 Company Commander
 <br/>1 Platoon, Platoon Commander
@@ -725,13 +751,13 @@ NEWTAB("VI. Command & Signal:")
 <br/>1 Platoon, 3 Section, Section Leader
 <br/>2 Platoon, 3 Section, Section Leader
 <br/>
-<br/><font color='#70db70'>2. Higher Level Command Post:</font>
+<br/><font color='#70db70' size='14'>2. Higher Level Command Post:</font>
 // Company or Division HQ location, mostly useful for campaign so comment it out with // if not needed.
 <br/>
 <br/>
-<br/><font color='#FF8C00'>B. Signals</font>
+<br/><font color='#FF8C00' size='16'>B. Signals</font>
 <br/>
-<br/><font color='#70db70'>1. Call Signs:</font>
+<br/><font color='#70db70' size='14'>1. Call Signs:</font>
 //Include others as needed
 <br/>
 <br/>HQ - 1 Company HQ
@@ -753,14 +779,14 @@ NEWTAB("VI. Command & Signal:")
 <br/>
 <br/>Over - Reply to me.
 <br/>
-<br/><font color='#70db70'>2. Radio Frequencies:</font>
+<br/><font color='#70db70' size='14'>2. Radio Frequencies:</font>
 //Include others as needed
 <br/>
-<br/>Frequency 50 - Company Net
-<br/>Frequency 70 - 1 Platoon Net
-<br/>Frequency 90 - 2 Platoon Net
+<br/>Frequency 55.35 mhz - Company Net
+<br/>Frequency 35.35 mhz - 1 Platoon Sub-Net
+<br/>Frequency 58.35 mhz - 2 Platoon Sub-Net
 <br/>
-<br/><font color='#70db70'>3. Special Signals</font>
+<br/><font color='#70db70' size='14'>3. Special Signals</font>
 //Include others as needed
 <br/>Waving like a idiot - Don't shoot me //'
 <br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me //'
@@ -774,11 +800,11 @@ NEWTAB("VI. Command & Signal:")
 <br/>Yellow - Regroup on that position
 <br/>White - Used for concealment only
 //<br/>
-//<br/><font color='#70db70'>4. Codewords:</font>
+//<br/><font color='#70db70' size='14'>4. Codewords:</font>
 //Include and uncomment as needed
 //<br/>
 //<br/>
-//<br/><font color='#70db70'>5. Passwords:</font>
+//<br/><font color='#70db70' size='14'>5. Passwords:</font>
 //Include and uncomment as needed
 //<br/>
 ENDTAB;
@@ -837,9 +863,10 @@ if (isNil {God}) then {
 if (God isEqualTo player) then {
     //All Zeus Notes should go in this tab, only the Zeus player will see them.
     NEWTAB("Zeus Notes")
+    <br/><font color='#FF8C00' size='20'>If you are not going to Zeus this mission, do not read this tab.</font>
+    <br/>
     <br/>All notes for the Zeus from the mission maker should go in this tab.
     <br/>
-    <br/><font color='#FF8C00'>If you are not going to Zeus this mission, do not read this tab.</font>
     <br/>
     <br/>
     ENDTAB;
