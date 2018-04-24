@@ -128,7 +128,6 @@
 
         //Assigned Items
         USMC_default_equipment;
-        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//M1903

@@ -161,7 +161,7 @@
     case "US42OpT_CSGT" : {
         [US_UniOT_SGT] call FNC_AddItem;
         [US_BP_M1928] call FNC_AddItem;
-        [US_Helm_r] call FNC_AddItemRandom;
+        [US_Helm_NCO_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
@@ -226,7 +226,6 @@
 
         //Assigned Items
         US_default_equipment;
-        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//M1 Carbine
@@ -331,7 +330,7 @@
     case "US42OpT_PSGT" : {
         [US_UniOT_SGT] call FNC_AddItem;
         [US_BP_M1928] call FNC_AddItem;
-        [US_Helm_r] call FNC_AddItemRandom;
+        [US_Helm_NCO_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
@@ -495,7 +494,7 @@
     case "US42OpT_SL" : {
         [US_UniOT_SGT] call FNC_AddItem;
         [US_BP_M1928] call FNC_AddItem;
-        [US_Helm_r] call FNC_AddItemRandom;
+        [US_Helm_NCO_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items

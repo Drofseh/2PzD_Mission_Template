@@ -145,7 +145,7 @@
     case "US42Apr_CSGT" : {
         [US_Uni_SGT] call FNC_AddItem;
         [US_BP_M1928] call FNC_AddItem;
-        [US_Helm_r] call FNC_AddItemRandom;
+        [US_Helm_NCO_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
@@ -210,7 +210,6 @@
 
         //Assigned Items
         US_default_equipment;
-        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//M1903A1
@@ -308,7 +307,7 @@
     case "US42Apr_PSGT" : {
         [US_Uni_SGT] call FNC_AddItem;
         [US_BP_M1928] call FNC_AddItem;
-        [US_Helm_r] call FNC_AddItemRandom;
+        [US_Helm_NCO_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
@@ -472,7 +471,7 @@
     case "US42Apr_SL" : {
         [US_Uni_SGT] call FNC_AddItem;
         [US_BP_M1928] call FNC_AddItem;
-        [US_Helm_r] call FNC_AddItemRandom;
+        [US_Helm_NCO_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items

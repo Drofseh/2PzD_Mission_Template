@@ -215,15 +215,27 @@ NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
 //Who will take over when casualties occur among leadership elements
 <br/>1 Kompanieführer
 <br/>1 Zug Zugführer
+<br/>   1 Zug Stellver. Zugführer
+<br/>       1 Gruppe Gruppenführer
+<br/>           1 Gruppe Stellver. Gruppenführer
+<br/>           1 Gruppe Gefreiter
+<br/>       2 Gruppe Gruppenführer
+<br/>           2 Gruppe Stellver. Gruppenführer
+<br/>           2 Gruppe Gefreiter
+<br/>       3 Gruppe Gruppenführer
+<br/>           3 Gruppe Stellver. Gruppenführer
+<br/>           3 Gruppe Gefreiter
 <br/>2 Zug Zugführer
-//<br/>1 Zug Stellver. Zugführer
-//<br/>2 Zug Stellver. Zugführer
-<br/>1 Zug 1 Gruppe Gruppenführer
-<br/>2 Zug 1 Gruppe Gruppenführer
-<br/>1 Zug 2 Gruppe Gruppenführer
-<br/>2 Zug 2 Gruppe Gruppenführer
-<br/>1 Zug 3 Gruppe Gruppenführer
-<br/>2 Zug 3 Gruppe Gruppenführer
+<br/>   2 Zug Stellver. Zugführer
+<br/>       1 Gruppe Gruppenführer
+<br/>           1 Gruppe Stellver. Gruppenführer
+<br/>           1 Gruppe Gefreiter
+<br/>       2 Gruppe Gruppenführer
+<br/>           2 Gruppe Stellver. Gruppenführer
+<br/>           2 Gruppe Gefreiter
+<br/>       3 Gruppe Gruppenführer
+<br/>           3 Gruppe Stellver. Gruppenführer
+<br/>           3 Gruppe Gefreiter
 <br/>
 <br/><font color='#70db70' size='14'>2. Higher Level Command Post:</font>
 // Company or Division HQ location, mostly useful for campaign so comment it out with // if not needed.
@@ -234,22 +246,24 @@ NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
 <br/><font color='#70db70' size='14'>1. Call Signs:</font>
 //Include others as needed
 <br/>
-<br/>HQ - 1 Kompanietrupp
+<br/>HQ - Kompanietrupp
 <br/>
 <br/>1'0 - 1 Zug Zugtrupp
-<br/>1'1 - 1 Zug 1 Gruppe
-<br/>1'2 - 1 Zug 2 Gruppe
-<br/>1'3 - 1 Zug 3 Gruppe
+<br/>    1'1 - 1 Zug 1 Gruppe
+<br/>    1'2 - 1 Zug 2 Gruppe
+<br/>    1'3 - 1 Zug 3 Gruppe
 <br/>
 <br/>2'0 - 2 Zug Zugtrupp
-<br/>2'1 - 2 Zug 1 Gruppe
-<br/>2'2 - 2 Zug 2 Gruppe
-<br/>2'3 - 2 Zug 3 Gruppe
+<br/>    2'1 - 2 Zug 1 Gruppe
+<br/>    2'2 - 2 Zug 2 Gruppe
+<br/>    2'3 - 2 Zug 3 Gruppe
+<br/>
+<br/>Eva - The tank.
 <br/>
 <br/>Actual - Used for the actual commander of the unit.
-<br/>For example 1'0 Actual would be 1 Zug Zugführer, not his radio operator. //'
+<br/>   For example 1 Actual would be the 1 Zug Zugführer personally, not his radio operator. //'
 <br/>
-<br/>Ende - Out, do not reply.
+<br/>Ende - Out, reply not required.
 <br/>
 <br/>Kommen - Over, reply to me.
 <br/>
@@ -510,11 +524,11 @@ NEWTAB("VI. Командная и сигнальная (Command & Signal):")
 <br/>2'3 - 2 Platoon, 3 Squad
 <br/>
 <br/>Actual - Used for the actual commander of the unit.
-<br/>For example 1'0 Actual would be 1 Platoon, Platoon Commander, not his radio operator. //'
+<br/>   For example 1 Actual would be 1 Platoon, Platoon Commander personally, not his radio operator. //'
 <br/>
-<br/>Ende - Out, do not reply.
+<br/>Out - Reply not required.
 <br/>
-<br/>Kommen - Over, reply to me.
+<br/>Over - Reply to me.
 <br/>
 <br/><font color='#70db70' size='14'>2. Radio Frequencies:</font>
 //Include others as needed
@@ -773,9 +787,9 @@ NEWTAB("VI. Command & Signal:")
 <br/>2'3 - 2 Platoon, 3 Section
 <br/>
 <br/>Actual - Used for the actual commander of the unit.
-<br/>For example 1'0 Actual would be 1 Platoon, Platoon Commander, not his radio operator. //'
+<br/>   For example 1 Actual would be 1 Platoon, Platoon Commander personally, not his radio operator. //'
 <br/>
-<br/>Out - Do not reply.
+<br/>Out - Reply not required.
 <br/>
 <br/>Over - Reply to me.
 <br/>

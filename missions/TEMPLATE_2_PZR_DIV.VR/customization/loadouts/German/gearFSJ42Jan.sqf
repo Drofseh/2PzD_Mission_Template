@@ -41,7 +41,6 @@
         //Assigned Items
         Ger_default_equipment;
         Ger_leader_equipment;
-        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         //Primary Weapon
         [Ger_Mag_MP40,1] call FNC_AddItem;
@@ -232,7 +231,6 @@
 
         //Assigned Items
         Ger_default_equipment;
-        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;

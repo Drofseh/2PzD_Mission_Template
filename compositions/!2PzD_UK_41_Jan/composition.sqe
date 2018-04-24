@@ -32,7 +32,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21874;
@@ -406,7 +405,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21875;
@@ -742,7 +740,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21876;
@@ -1078,7 +1075,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21877;
@@ -1414,7 +1410,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21878;
@@ -1750,7 +1745,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21879;
@@ -2124,7 +2118,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21880;
@@ -2515,7 +2508,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21882;
@@ -2889,7 +2881,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21883;
@@ -3225,7 +3216,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21884;
@@ -3561,7 +3551,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21885;
@@ -3897,7 +3886,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21886;
@@ -4233,7 +4221,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21887;
@@ -4607,7 +4594,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21888;
@@ -4998,7 +4984,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21890;
@@ -5334,7 +5319,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21891;
@@ -5537,7 +5521,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21892;
@@ -5741,7 +5724,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21893;
@@ -5944,7 +5926,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21895;
@@ -6147,7 +6128,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21896;
@@ -6483,7 +6463,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21897;
@@ -6838,7 +6817,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21898;
@@ -7210,7 +7188,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21901;
@@ -7546,7 +7523,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21902;
@@ -7749,7 +7725,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21903;
@@ -7953,7 +7928,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21904;
@@ -8156,7 +8130,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21906;
@@ -8359,7 +8332,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21907;
@@ -8695,7 +8667,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21908;
@@ -9050,7 +9021,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21909;
@@ -9422,7 +9392,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21912;
@@ -9758,7 +9727,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21913;
@@ -9961,7 +9929,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21914;
@@ -10165,7 +10132,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21915;
@@ -10368,7 +10334,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21917;
@@ -10571,7 +10536,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21918;
@@ -10907,7 +10871,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21919;
@@ -11262,7 +11225,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21920;
@@ -11634,7 +11596,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21923;
@@ -12008,7 +11969,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21924;
@@ -12344,7 +12304,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21925;
@@ -12680,7 +12639,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21926;
@@ -13016,7 +12974,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21927;
@@ -13353,7 +13310,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21928;
@@ -13727,7 +13683,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21929;
@@ -14118,7 +14073,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21931;
@@ -14454,7 +14408,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21932;
@@ -14657,7 +14610,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21933;
@@ -14861,7 +14813,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21934;
@@ -15064,7 +15015,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21936;
@@ -15267,7 +15217,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21937;
@@ -15603,7 +15552,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21938;
@@ -15958,7 +15906,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21939;
@@ -16330,7 +16277,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21942;
@@ -16666,7 +16612,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21943;
@@ -16869,7 +16814,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21944;
@@ -17073,7 +17017,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21945;
@@ -17276,7 +17219,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21947;
@@ -17479,7 +17421,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21948;
@@ -17815,7 +17756,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21949;
@@ -18170,7 +18110,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21950;
@@ -18542,7 +18481,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21953;
@@ -18878,7 +18816,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21954;
@@ -19081,7 +19018,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21955;
@@ -19285,7 +19221,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21956;
@@ -19488,7 +19423,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21958;
@@ -19691,7 +19625,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21959;
@@ -20027,7 +19960,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21960;
@@ -20382,7 +20314,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21961;
@@ -20754,7 +20685,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21964;
@@ -21128,7 +21058,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21965;
@@ -21502,7 +21431,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21966;
@@ -21876,7 +21804,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21967;
@@ -22290,7 +22217,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21969;
@@ -22664,7 +22590,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21970;
@@ -23038,7 +22963,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21971;
@@ -23412,7 +23336,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21972;
@@ -23826,7 +23749,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21974;
@@ -24200,7 +24122,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21975;
@@ -24574,7 +24495,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21976;
@@ -24948,7 +24868,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21977;
@@ -25362,7 +25281,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21984;
@@ -25736,7 +25654,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21985;
@@ -25958,7 +25875,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21986;
@@ -26313,7 +26229,6 @@ class items
 							typeName="U_C_Driver_1_green";
 							isBackpack=0;
 						};
-						radio="tf_anprc148jem_1";
 					};
 				};
 				id=21987;

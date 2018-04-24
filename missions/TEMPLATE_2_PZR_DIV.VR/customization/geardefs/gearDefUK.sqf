@@ -62,6 +62,13 @@
 #define UK_Uni_LCpl             "fow_u_uk_bd40_lance_corporal"
 #define UK_Uni_Pte              "fow_u_uk_bd40_private"
 
+#define UK_UniEsx_Lt            "fow_u_uk_bd40_01_lieutenant"
+#define UK_UniEsx_Sgt           "fow_u_uk_bd40_01_sergeant"
+#define UK_UniEsx_Cpl           "fow_u_uk_bd40_01_corporal"
+#define UK_UniEsx_LCpl          "fow_u_uk_bd40_01_lance_corporal"
+#define UK_UniEsx_Pte           "fow_u_uk_bd40_01_private"
+
+//South East Asia Uniforms
 #define UK_UniA1_Lt             "fow_u_uk_bd40_seac_01_lieutenant"
 #define UK_UniA1_Sgt            "fow_u_uk_bd40_seac_01_sergeant"
 #define UK_UniA1_Cpl            "fow_u_uk_bd40_seac_01_corporal"
@@ -73,12 +80,6 @@
 #define UK_UniA2_Cpl            "fow_u_uk_bd40_seac_02_corporal"
 #define UK_UniA2_LCpl           "fow_u_uk_bd40_seac_02_lance_corporal"
 #define UK_UniA2_Pte            "fow_u_uk_bd40_seac_02_private"
-
-#define UK_UniEsx_Lt            "fow_u_uk_bd40_01_lieutenant"
-#define UK_UniEsx_Sgt           "fow_u_uk_bd40_01_sergeant"
-#define UK_UniEsx_Cpl           "fow_u_uk_bd40_01_corporal"
-#define UK_UniEsx_LCpl          "fow_u_uk_bd40_01_lance_corporal"
-#define UK_UniEsx_Pte           "fow_u_uk_bd40_01_private"
 
 #define UK_Uni_Para             "fow_u_uk_parasmock"
 
@@ -95,9 +96,13 @@
 #define UK_VestG_Bren           "fow_v_uk_bren_green"
 #define UK_VestG_O              "fow_v_uk_officer_green"
 
-#define UK_VestParaG_LeeEn      "fow_v_uk_para_base"
-#define UK_VestParaG_Sten       "fow_v_uk_para_sten"
-#define UK_VestParaG_Bren       "fow_v_uk_para_bren"
+#define UK_VestParaK_LeeEn      "fow_v_uk_para_base"
+#define UK_VestParaK_Sten       "fow_v_uk_para_sten"
+#define UK_VestParaK_Bren       "fow_v_uk_para_bren"
+
+#define UK_VestParaG_LeeEn      "fow_v_uk_para_base_green"
+#define UK_VestParaG_Sten       "fow_v_uk_para_sten_green"
+#define UK_VestParaG_Bren       "fow_v_uk_para_bren_green"
 
 //Backpack
 #define UK_BPK                  "fow_b_uk_p37"
@@ -111,19 +116,22 @@
 #define UK_BPG_Radio            "fow_b_uk_p37_radio_blanco"
 
 //Headgear
-#define UK_Helm_r               ["fow_h_uk_mk2"],["fow_h_uk_mk2_net"],["fow_h_uk_mk3"],["fow_h_uk_mk3_net_camo"]
+#define UK_Helm_r               ["fow_h_uk_mk2"],["fow_h_uk_mk2_net"],["fow_h_uk_mk2_net_camo"],["fow_h_uk_mk2_net_foliage"],["fow_h_uk_mk3"],["fow_h_uk_mk3_net_camo"]
 #define UK_Helm_Mk2_r           ["fow_h_uk_mk2"],["fow_h_uk_mk2_net"]
 #define UK_Helm_Mk3_r           ["fow_h_uk_mk3"],["fow_h_uk_mk3_net_camo"]
 #define UK_Helm_Mk2_P_r         ["fow_h_uk_mk2_para"],["fow_h_uk_mk2_para_foliage"]
 #define UK_Helm_Mk2             "fow_h_uk_mk2"
 #define UK_Helm_Mk2_Net         "fow_h_uk_mk2_net";
-#define UK_Helm_Mk2_NetF        "fow_h_uk_mk2_net_camo"
+#define UK_Helm_Mk2_NetC        "fow_h_uk_mk2_net_camo"
+#define UK_Helm_Mk2_NetF        "fow_h_uk_mk2_net_foliage"
 #define UK_Helm_Mk3             "fow_h_uk_mk3"
 #define UK_Helm_Mk3_Net         "fow_h_uk_mk3_net_camo"
 #define UK_Helm_P_Mk2           "fow_h_uk_mk2_para";
 #define UK_Helm_P_Mk2_Fol       "fow_h_uk_mk2_para_foliage"
 
 #define UK_Woolie               "fow_h_uk_woolen_hat"
+#define UK_Woolie2              "fow_h_uk_woolen_hat"
+#define UK_Woolie_r             ["fow_h_uk_woolen_hat"],["fow_h_uk_woolen_hat02"]
 #define UK_Hat_Com_R            ["fow_h_uk_woolen_hat"],["fow_h_uk_woolen_hat"],["fow_h_uk_beret_commando"],["fow_h_uk_mk3"],["fow_h_uk_mk3_net_camo"]
 #define UK_Hat_J                "fow_h_uk_jungle_hat_03"
 #define UK_Hat_J_S              "fow_h_uk_jungle_hat_01"
@@ -131,6 +139,8 @@
 #define UK_Beret_Com            "fow_h_uk_beret_commando"
 #define UK_Beret_Para_P         "fow_h_uk_beret_para"
 #define UK_Beret_Para_R         "fow_h_uk_beret_para_2"
+#define UK_Beret_SAS_M          "fow_h_uk_beret_sas"
+#define UK_Beret_SAS_T          "fow_h_uk_beret_sas_2"
 #define UK_Beret_Marine         "fow_h_uk_beret_royalmarines"
 #define UK_Beret_RHA            "fow_h_uk_beret_rha"
 #define UK_Beret_RHA_HS         "fow_h_uk_beret_rha_headset"
@@ -161,7 +171,8 @@
 ["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
 ["ACE_elasticBandage",20,"backpack"] call FNC_AddItem; \
 ["ACE_packingBandage",20,"backpack"] call FNC_AddItem; \
-["ACE_morphine",10,"backpack"] call FNC_AddItem; \
+["ACE_morphine",5,"backpack"] call FNC_AddItem; \
+["ACE_painkillers",10,"backpack"] call FNC_AddItem; \
 ["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
 ["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
 ["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \

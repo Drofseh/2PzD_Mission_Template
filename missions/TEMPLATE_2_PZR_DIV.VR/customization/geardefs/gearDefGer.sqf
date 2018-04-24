@@ -10,6 +10,7 @@
 #define Ger_Weap_K98_Zf39       "LIB_K98ZF39"
 #define Ger_Weap_K98_Zf41       "fow_w_k98_scoped"
 #define Ger_Weap_G3340          "LIB_G3340"
+#define Ger_Weap_G43            "LIB_G41"
 #define Ger_Weap_G43            "fow_w_g43"
 #define Ger_Weap_MP38           "LIB_MP38"
 #define Ger_Weap_MP40           "fow_w_mp40"
@@ -26,9 +27,9 @@
 #define Ger_Weap_PPK            "fow_w_ppk"
 
 //Launcher
-#define Ger_Weap_PzFaust_K      "fow_w_pzfaust_30_klein"
-#define Ger_Weap_PzFaust_30     "fow_w_pzfaust_30"
-#define Ger_Weap_PzFaust_60     "fow_w_pzfaust_60"
+#define Ger_Weap_PzFaust_K      "LIB_Faustpatrone"
+#define Ger_Weap_PzFaust_30     "LIB_PzFaust_30m"
+#define Ger_Weap_PzFaust_60     "LIB_PzFaust_60m"
 #define Ger_Weap_PzFaust_100    "fow_w_pzfaust_100"
 #define Ger_Weap_Pzschrck       "LIB_RPzB"
 #define Ger_Weap_Pzschrck_W     "LIB_RPzB_w"
@@ -43,6 +44,7 @@
 
 //Ammo
 #define Ger_Mag_K98             "LIB_5Rnd_792x57"
+#define Ger_Mag_G41             "LIB_10Rnd_792x57_clip"
 #define Ger_Mag_G43             "LIB_10Rnd_792x57"
 #define Ger_Mag_MP40            "LIB_32Rnd_9x19"
 #define Ger_Mag_StG44           "LIB_30Rnd_792x33"
@@ -119,6 +121,14 @@
 #define Ger_Uni_RVSch           "fow_u_ger_tankcrew_02_shutz"
 #define Ger_Uni_RVCrew          "fow_u_ger_tankcrew_02"
 #define Ger_Uni_RVCrew_R        ["fow_u_ger_tankcrew_02_obergefreiter"],["fow_u_ger_tankcrew_02_gefreiter"],["fow_u_ger_tankcrew_02_shutz"],["fow_u_ger_tankcrew_02"]
+    //Panzer Lehr Division
+#define Ger_Uni_PlVOff            "fow_u_ger_pzlehr_01_2nd_leutnant"
+#define Ger_Uni_PlVCom            "fow_u_ger_pzlehr_01_unteroffizier"
+#define Ger_Uni_PlVOGef           "fow_u_ger_pzlehr_01_obergefreiter"
+#define Ger_Uni_PlVGef            "fow_u_ger_pzlehr_01_gefreiter"
+#define Ger_Uni_PlVSch            "fow_u_ger_pzlehr_01_shutz"
+#define Ger_Uni_PlVCrew           "fow_u_ger_pzlehr_01"
+#define Ger_Uni_PlVCrew_R         ["fow_u_ger_pzlehr_01_obergefreiter"],["fow_u_ger_pzlehr_01_gefreiter"],["fow_u_ger_pzlehr_01_shutz"],["fow_u_ger_pzlehr_01"]
 
     //Winter Uniforms
 #define Ger_UniW_CC             "U_LIB_GER_Scharfschutze_2_w"
@@ -266,7 +276,8 @@
 ["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
 ["ACE_elasticBandage",20,"backpack"] call FNC_AddItem; \
 ["ACE_packingBandage",20,"backpack"] call FNC_AddItem; \
-["ACE_morphine",10,"backpack"] call FNC_AddItem; \
+["ACE_morphine",5,"backpack"] call FNC_AddItem; \
+["ACE_painkillers",10,"backpack"] call FNC_AddItem; \
 ["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
 ["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
 ["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
@@ -276,7 +287,7 @@
 ["ACE_fieldDressing",5,"backpack"] call FNC_AddItem; \
 ["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
 ["ACE_packingBandage",10,"backpack"] call FNC_AddItem; \
-["ACE_morphine",5,"backpack"] call FNC_AddItem; \
+["ACE_painkillers",10,"backpack"] call FNC_AddItem; \
 ["ACE_tourniquet",5,"backpack"] call FNC_AddItem;
 
 //===== Deutsches Afrikakorps Equipment Definitions =====
@@ -341,20 +352,25 @@
 //Vests
 
 //Uniform
-#define FSJ_Uni_NI              "fow_u_ger_fall_01_private"
 #define FSJ_Uni_SL              "fow_u_ger_fall_01_sergeant"
 #define FSJ_Uni_S2              "fow_u_ger_fall_01_corporal"
 #define FSJ_Uni_Rif             "fow_u_ger_fall_01_lance_corporal"
+#define FSJ_Uni_NI              "fow_u_ger_fall_01_private"
 
-#define FSJ_UniC_NI             "fow_u_ger_fall_03_private"
 #define FSJ_UniC_SL             "fow_u_ger_fall_03_sergeant"
 #define FSJ_UniC_S2             "fow_u_ger_fall_03_corporal"
 #define FSJ_UniC_Rif            "fow_u_ger_fall_03_lance_corporal"
+#define FSJ_UniC_NI             "fow_u_ger_fall_03_private"
 
-#define FSJ_UniI_NI             "fow_u_ger_fall_02_private"
+#define FSJ_UniC2_SL            "fow_u_ger_fall_04_sergeant"
+#define FSJ_UniC2_S2            "fow_u_ger_fall_04_corporal"
+#define FSJ_UniC2_Rif           "fow_u_ger_fall_04_lance_corporal"
+#define FSJ_UniC2_NI            "fow_u_ger_fall_04_private"
+
 #define FSJ_UniI_SL             "fow_u_ger_fall_02_sergeant"
 #define FSJ_UniI_S2             "fow_u_ger_fall_02_corporal"
 #define FSJ_UniI_Rif            "fow_u_ger_fall_02_lance_corporal"
+#define FSJ_UniI_NI             "fow_u_ger_fall_02_private"
 
 #define FSJ_Uni_VCom            "fow_u_ger_fall_01_sergeant"
 #define FSJ_Uni_VCrew           "fow_u_ger_fall_01_lance_corporal"

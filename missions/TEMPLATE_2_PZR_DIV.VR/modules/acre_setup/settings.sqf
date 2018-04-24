@@ -42,6 +42,15 @@ FW_enable_channel_names = false;
 //don't change "label" value!
 
 FW_ChannelNames = [
+    [//DEFAULT - USE THIS IF SCRAMBLE IS OFF
+        ["1", "label", "PLTNET 1"],
+        ["2", "label", "PLTNET 2"],
+        ["3", "label", "PLTNET 3"],
+        ["4", "label", "PLTNET 4"],
+        ["5", "label", "COY"],
+        ["6", "label", "CAS"],
+        ["7", "label", "FIRES"]
+    ],
     [//WEST - USE SIDE SETTINGS ONLY IF SCRAMBLE IS ON
         ["1", "label", "PLTNET 1"],
         ["2", "label", "PLTNET 2"],
@@ -68,15 +77,6 @@ FW_ChannelNames = [
         ["5", "label", "COY"],
         ["6", "label", "CAS"],
         ["7", "label", "FIRES"]
-    ],
-    [//DEFAULT - USE THIS IF SCRAMBLE IS OFF
-        ["1", "label", "PLTNET 1"],
-        ["2", "label", "PLTNET 2"],
-        ["3", "label", "PLTNET 3"],
-        ["4", "label", "PLTNET 4"],
-        ["5", "label", "COY"],
-        ["6", "label", "CAS"],
-        ["7", "label", "FIRES"]
     ]
 ];
 
@@ -84,7 +84,9 @@ FW_ChannelNames = [
 //BABEL
 //////////////
 
-FW_enable_babel = true;
+// set this to true to enable babel
+// this scrambles the voices of people who don't speak the same language as your side
+FW_enable_babel = false;
 
 /*
  * FNC_SetLanguages
@@ -171,4 +173,3 @@ FW_languages_babel = [
   +2            |  15        |  55         |  195
 */
 FW_Acre_Volume_Value = -2;
-

@@ -54,7 +54,7 @@
     //Company Commander
     case "USAB42Jun_CC" : {
         [USAB_UniK_CPT] call FNC_AddItem;
-        [USAB_Helm_CPT] call FNC_AddItem;
+        [USAB_Helm_CPT_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
@@ -101,7 +101,7 @@
     //Company Executive Officer
     case "USAB42Jun_C2" : {
         [USAB_UniK_LT] call FNC_AddItem;
-        [USAB_Helm_LT] call FNC_AddItem;
+        [USAB_Helm_LT_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
@@ -149,7 +149,7 @@
     case "USAB42Jun_CSGT" : {
         [USAB_UniK_SGT] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
-        [USAB_Helm_r] call FNC_AddItemRandom;
+        [USAB_Helm_NCO_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
@@ -214,7 +214,6 @@
 
         //Assigned Items
         US_default_equipment;
-        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//M1903A1
@@ -265,7 +264,7 @@
     //Platoon Commander
     case "USAB42Jun_PC" : {
         [USAB_UniK_LT] call FNC_AddItem;
-        [USAB_Helm_2LT] call FNC_AddItem;
+        [USAB_Helm_2LT_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
@@ -313,7 +312,7 @@
     case "USAB42Jun_PSGT" : {
         [USAB_UniK_SGT] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
-        [USAB_Helm_r] call FNC_AddItemRandom;
+        [USAB_Helm_NCO_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
@@ -477,7 +476,7 @@
     case "USAB42Jun_SL" : {
         [USAB_UniK_SGT] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
-        [USAB_Helm_r] call FNC_AddItemRandom;
+        [USAB_Helm_NCO_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
@@ -520,7 +519,7 @@
     case "USAB42Jun_S2" : {
         [USAB_UniK_CPL] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
-        [USAB_Helm_r] call FNC_AddItemRandom;
+        [USAB_Helm_NCO_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items

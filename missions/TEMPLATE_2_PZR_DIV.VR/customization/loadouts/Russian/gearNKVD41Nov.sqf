@@ -127,7 +127,6 @@
 
         //Assigned Items
         Rus_default_equipment;
-        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         //Primary Weapon
         [

@@ -61,7 +61,6 @@
         //Assigned Items
         Ger_default_equipment;
         Ger_leader_equipment;
-        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//MP38
@@ -250,7 +249,6 @@
         //Assigned Items
         Ger_default_equipment;
         [GEN_Headset] call FNC_AddItem;
-        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//K98k Pre-War

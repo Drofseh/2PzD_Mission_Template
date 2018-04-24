@@ -65,7 +65,6 @@
         //Assigned Items
         Ger_default_equipment;
         Ger_leader_equipment;
-        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//MP40
@@ -260,7 +259,6 @@
         //Assigned Items
         Ger_default_equipment;
         [GEN_Headset] call FNC_AddItem;
-        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
 
         [//Primary Weapon
         [//K98k
@@ -765,13 +763,13 @@
         [Ger_Weap_PzFaust_60]
         ],[50],
         [//
-        [Ger_Weap_PzFaust_60]
+        [Ger_Weap_PzFaust_30]
         ],[25],
         [//
-        [Ger_Weap_PzFaust_60]
+        [Ger_Weap_PzFaust_100]
         ],[15],
         [//
-        [Ger_Weap_PzFaust_60]
+        [Ger_Weap_PzFaust_K]
         ],[10]
         ] call FNC_AddItemRandomPercent;
 
@@ -830,13 +828,13 @@
         [Ger_Weap_PzFaust_60]
         ],[50],
         [//
-        [Ger_Weap_PzFaust_60]
+        [Ger_Weap_PzFaust_30]
         ],[25],
         [//
-        [Ger_Weap_PzFaust_60]
+        [Ger_Weap_PzFaust_100]
         ],[15],
         [//
-        [Ger_Weap_PzFaust_60]
+        [Ger_Weap_PzFaust_K]
         ],[10]
         ] call FNC_AddItemRandomPercent;
 

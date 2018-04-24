@@ -58,6 +58,7 @@
 
 //Grenades
 #define Rus_Gren_Frag_S         "LIB_rg42"
+#define Rus_Gren_Frag_P         "LIB_f1"
 #define Rus_Gren_AT             "LIB_rpg6"
 
 //=== Clothes ===
@@ -142,7 +143,8 @@
 ["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
 ["ACE_elasticBandage",20,"backpack"] call FNC_AddItem; \
 ["ACE_packingBandage",20,"backpack"] call FNC_AddItem; \
-["ACE_morphine",10,"backpack"] call FNC_AddItem; \
+["ACE_morphine",5,"backpack"] call FNC_AddItem; \
+["ACE_painkillers",10,"backpack"] call FNC_AddItem; \
 ["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
 ["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
 ["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \

@@ -136,7 +136,7 @@
 
         //Extra
         [Rus_Gren_Frag_S,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Rus_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -179,7 +179,6 @@
         //Assigned Items
         Rus_default_equipment;
         [GEN_Headset] call FNC_AddItem;
-        [GEN_Radio_BP,"backpack"] call FNC_AddItem;
     };
 
 //Platoon HQ
@@ -272,7 +271,7 @@
 
         //Extra
         [Rus_Gren_Frag_S,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Rus_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -566,7 +565,7 @@
 
         //Extra
         [Rus_Gren_Frag_S,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Rus_Gren_Frag_P,1] call FNC_AddItem;
         [Rus_Mag_DP,1,"backpack"] call FNC_AddItem;
     };
 

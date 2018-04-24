@@ -1,16 +1,38 @@
 version=53;
-center[]={3572.9434,5,3892.4731};
+center[]={443.82916,5,694.44714};
 class items
 {
-	items=9;
+	items=12;
 	class Item0
+	{
+		dataType="Marker";
+		position[]={0.09677124,0,4.1065674};
+		name="AO";
+		markerType="RECTANGLE";
+		type="Empty";
+		colorName="ColorRed";
+		fillName="Border";
+		a=3000;
+		b=3000;
+		drawBorder=1;
+		id=0;
+	};
+	class Item1
+	{
+		dataType="Marker";
+		position[]={0.086090088,0,5.1477661};
+		name="SpectatorMarker";
+		type="Empty";
+		id=1;
+	};
+	class Item2
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.96630859,0,2.4516602};
+			position[]={2.1741943,0,1.5862427};
 		};
-		id=2;
+		id=2643;
 		type="ModuleCurator_F";
 		class CustomAttributes
 		{
@@ -112,161 +134,14 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item1
+	class Item3
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.8046875,0,2.4052734};
+			position[]={-1.8692627,0,1.5718384};
 		};
-		id=3;
-		type="tfar_ModuleTaskForceRadioEnforceUsage";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
-				expression="_this setVariable ['radio_channel_password',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="123";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="tfar_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
-				expression="_this setVariable ['RiflemanRadio',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
-				expression="_this setVariable ['radio_channel_name',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="TaskForceRadio";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="tfar_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
-				expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="tfar_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
-				expression="_this setVariable ['TeamLeaderRadio',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute5
-			{
-				property="tfar_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
-				expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute6
-			{
-				property="tfar_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
-				expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=7;
-					};
-				};
-			};
-			nAttributes=7;
-		};
-	};
-	class Item2
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={-0.8034668,0,2.4047852};
-		};
-		id=4;
+		id=2741;
 		type="acex_headless_module";
 		class CustomAttributes
 		{
@@ -349,28 +224,28 @@ class items
 			nAttributes=4;
 		};
 	};
-	class Item3
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={-2.2507324,0,2.4057617};
-		};
-		name="HC";
-		init="call{this setGroupId [""Headless Client 01""];}";
-		isPlayable=1;
-		description="Headless Client 01";
-		id=5;
-		type="HeadlessClient_F";
-	};
 	class Item4
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.3217773,0,-1.0410156};
+			position[]={0.16638184,0,2.085083};
 		};
-		id=6;
+		name="HC";
+		init="call{this setGroupId [""Headless Client 01""];}";
+		isPlayable=1;
+		description="Headless Client 01";
+		id=2742;
+		type="HeadlessClient_F";
+	};
+	class Item5
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={2.0996094,0,-0.49951172};
+		};
+		id=9628;
 		type="ModuleCurator_F";
 		class CustomAttributes
 		{
@@ -472,7 +347,7 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item5
+	class Item6
 	{
 		dataType="Group";
 		side="Civilian";
@@ -484,7 +359,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.35131836,0.0014390945,-0.94213867};
+					position[]={0.12911987,0.0014390945,-0.40081787};
 				};
 				side="Civilian";
 				flags=6;
@@ -496,7 +371,7 @@ class items
 					description="Zeus@Mount Olympus";
 					isPlayable=1;
 				};
-				id=8;
+				id=30778;
 				type="LIB_CIV_Functionary_4";
 				class CustomAttributes
 				{
@@ -830,37 +705,37 @@ class items
 		class Attributes
 		{
 		};
-		id=7;
-	};
-	class Item6
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={-2.2507324,0,1.9057617};
-		};
-		name="HC_1";
-		init="call{this setGroupId [""Headless Client 02""];}";
-		isPlayable=1;
-		description="Headless Client 02";
-		id=9;
-		type="HeadlessClient_F";
+		id=30777;
 	};
 	class Item7
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-2.2507324,0,1.4057617};
+			position[]={0.16638184,0,1.585083};
+		};
+		name="HC_1";
+		init="call{this setGroupId [""Headless Client 02""];}";
+		isPlayable=1;
+		description="Headless Client 02";
+		id=41810;
+		type="HeadlessClient_F";
+	};
+	class Item8
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0.16638184,0,1.085083};
 		};
 		name="HC_2";
 		init="call{this setGroupId [""Headless Client 03""];}";
 		isPlayable=1;
 		description="Headless Client 03";
-		id=10;
+		id=41811;
 		type="HeadlessClient_F";
 	};
-	class Item8
+	class Item9
 	{
 		dataType="Group";
 		side="Civilian";
@@ -872,7 +747,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.36962891,0.0014390945,-2.9367676};
+					position[]={0.14736938,0.0014390945,-2.3952637};
 				};
 				side="Civilian";
 				flags=6;
@@ -884,7 +759,7 @@ class items
 					description="Camera Man@Media Team";
 					isPlayable=1;
 				};
-				id=12;
+				id=43482;
 				type="LIB_CIV_Functionary_4";
 				class CustomAttributes
 				{
@@ -1238,7 +1113,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.36938477,0.0014390945,-4.9243164};
+					position[]={0.1472168,0.0014390945,-4.3829956};
 				};
 				side="Civilian";
 				flags=4;
@@ -1250,7 +1125,7 @@ class items
 					description="Camera Man@Media Team";
 					isPlayable=1;
 				};
-				id=13;
+				id=43484;
 				type="LIB_CIV_Functionary_4";
 				class CustomAttributes
 				{
@@ -1603,6 +1478,158 @@ class items
 		class Attributes
 		{
 		};
-		id=11;
+		id=43481;
+	};
+	class Item10
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-1.8117371,0.94023561,-4.4471436};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=43486;
+		type="fow_v_truppenfahrrad_ger_heer";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="Enh_onKilledEvent";
+				expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="false";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="Enh_onRespawnEvent";
+				expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="false";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="Enh_onDamagedEvent";
+				expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="false";
+					};
+				};
+			};
+			nAttributes=3;
+		};
+	};
+	class Item11
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-1.8117371,0.94023561,-2.4471436};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=43487;
+		type="fow_v_truppenfahrrad_ger_heer";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="Enh_onKilledEvent";
+				expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="false";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="Enh_onRespawnEvent";
+				expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="false";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="Enh_onDamagedEvent";
+				expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="false";
+					};
+				};
+			};
+			nAttributes=3;
+		};
 	};
 };
