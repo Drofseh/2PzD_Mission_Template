@@ -304,17 +304,27 @@
         //Assigned Items
         Ger_default_equipment;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[66],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[34]
+        [//Secondary Weapon
+        [//P38
+        [Ger_Mag_P38,1],
+        [Ger_Weap_P38],
+        [Ger_Mag_P38,2]
+        ],[52],
+        [//P08
+        [Ger_Mag_P08,1],
+        [Ger_Weap_P08],
+        [Ger_Mag_P08,2]
+        ],[44],
+        [//Radom
+        [PHA_Mag_Radom,1],
+        [PHA_Weap_Radom],
+        [PHA_Mag_Radom,2]
+        ],[2],
+        [//BHP
+        [UK_Mag_HiPower,1],
+        [UK_Weap_HiPower],
+        [UK_Mag_HiPower,2]
+        ],[2]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -389,7 +399,7 @@
     case "WHR41_S3" : {
         [Ger_Uni_S3_r] call FNC_AddItemRandom;
         [Ger_Vest_MP40] call FNC_AddItem;
-        [Ger_BP_r] call FNC_AddItemRandom;
+        [Ger_BP_T34] call FNC_AddItem;
         [Ger_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 

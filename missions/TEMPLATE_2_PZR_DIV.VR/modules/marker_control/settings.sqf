@@ -6,5 +6,5 @@
 //DELETE_AFTER_START set to true will delete marker after briefing
 
 //Example:
-//ADDMARKER(west, "start", true);
+//ADDMARKER(west, "start", false);
 //ADDMARKER(SYSTEM, "objBravo", false);

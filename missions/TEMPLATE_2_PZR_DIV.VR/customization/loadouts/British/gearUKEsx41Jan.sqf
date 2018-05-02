@@ -433,8 +433,8 @@
 
         //Extra
         [Rus_Mag_Mort_HE,3,"backpack"] call FNC_AddItem;
-        [GEN_ace_rangetable,1] call FNC_AddItem;
-        [GEN_ace_maptools,1] call FNC_AddItem;
+        [GEN_ace_rangetable] call FNC_AddItem;
+        [GEN_ace_maptools] call FNC_AddItem;
     };
 
     //Mortar Assistant
@@ -456,8 +456,8 @@
 
         //Extra
         [Rus_Mag_Mort_HE,3,"backpack"] call FNC_AddItem;
-        [GEN_ace_rangetable,1] call FNC_AddItem;
-        [GEN_ace_maptools,1] call FNC_AddItem;
+        [GEN_ace_rangetable] call FNC_AddItem;
+        [GEN_ace_maptools] call FNC_AddItem;
     };
 
     //Mortar Ammo Bearer

@@ -469,7 +469,7 @@
     //Gefreiter
     case "WHR45_S3" : {
         [Ger_Uni_S3_L] call FNC_AddItem;
-        [Ger_BP_r] call FNC_AddItemRandom;
+        [Ger_BP_T34] call FNC_AddItem;
         [Ger_Helmet_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 

@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=649;
+	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=43653;
+		nextID=44247;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={508.27374,30,879.70166};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={445.54126,22.036438,685.35107};
+		dir[]={-0.037270743,-0.85107791,0.52378196};
+		up[]={-0.0604086,0.52500576,0.84894496};
+		aside[]={0.99750882,-6.5314816e-007,0.070979871};
 	};
 };
 binarizationWanted=0;
@@ -1843,6 +1843,7 @@ class Mission
 			};
 			id=9639;
 			type="LIB_PzKpfwIV_H";
+			atlOffset=-0.0034723282;
 			class CustomAttributes
 			{
 				class Attribute0

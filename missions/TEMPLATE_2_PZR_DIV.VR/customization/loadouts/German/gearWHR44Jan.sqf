@@ -351,27 +351,27 @@
         //Assigned Items
         Ger_default_equipment;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[72],
-        [//G43
-        [Ger_Mag_G43,1],
-        [Ger_Weap_G43],
-        [Ger_Mag_G43,6,"vest"]
-        ],[15],
-        [//StG44
-        [Ger_Mag_StG44,1],
-        [Ger_Weap_StG44],
-        [Ger_Mag_StG44,6,"vest"]
-        ],[12],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[1]
+        [//Secondary Weapon
+        [//P38
+        [Ger_Mag_P38,1],
+        [Ger_Weap_P38],
+        [Ger_Mag_P38,2]
+        ],[70],
+        [//P08
+        [Ger_Mag_P08,1],
+        [Ger_Weap_P08],
+        [Ger_Mag_P08,2]
+        ],[26],
+        [//Radom
+        [PHA_Mag_Radom,1],
+        [PHA_Weap_Radom],
+        [PHA_Mag_Radom,2]
+        ],[2],
+        [//BHP
+        [UK_Mag_HiPower,1],
+        [UK_Weap_HiPower],
+        [UK_Mag_HiPower,2]
+        ],[2]
         ] call FNC_AddItemRandomPercent;
 
         //Extra
@@ -472,7 +472,7 @@
     //Gefreiter
     case "WHR44Jan_S3" : {
         [Ger_Uni_S3_L] call FNC_AddItem;
-        [Ger_BP_r] call FNC_AddItemRandom;
+        [Ger_BP_T34] call FNC_AddItem;
         [Ger_Helmet_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 

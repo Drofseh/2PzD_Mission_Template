@@ -94,7 +94,7 @@
         [//TT-33
         [Rus_Mag_TT33,1],
         [Rus_Weap_TT33],
-        [Rus_Mag_TT33,1]
+        [Rus_Mag_TT33,2]
         ],[15],
         [//PPK
         [Ger_Mag_PPK,1],
@@ -104,7 +104,7 @@
         [//M1895
         [Rus_Mag_M1895,1],
         [Rus_Weap_M1895],
-        [Rus_Mag_M1895,1]
+        [Rus_Mag_M1895,2]
         ],[5],
         [//Radom
         [PHA_Mag_Radom,1],
@@ -162,12 +162,12 @@
         [//TT-33
         [Rus_Mag_TT33,1],
         [Rus_Weap_TT33],
-        [Rus_Mag_TT33,1]
+        [Rus_Mag_TT33,2]
         ],[15],
         [//M1895
         [Rus_Mag_M1895,1],
         [Rus_Weap_M1895],
-        [Rus_Mag_M1895,1]
+        [Rus_Mag_M1895,2]
         ],[5],
         [//Radom
         [PHA_Mag_Radom,1],
@@ -227,7 +227,7 @@
         [//TT-33
         [Rus_Mag_TT33,1],
         [Rus_Weap_TT33],
-        [Rus_Mag_TT33,1]
+        [Rus_Mag_TT33,2]
         ],[15],
         [//PPK
         [Ger_Mag_PPK,1],
@@ -237,7 +237,7 @@
         [//M1895
         [Rus_Mag_M1895,1],
         [Rus_Weap_M1895],
-        [Rus_Mag_M1895,1]
+        [Rus_Mag_M1895,2]
         ],[5],
         [//Radom
         [PHA_Mag_Radom,1],
@@ -488,7 +488,7 @@
     case "WHREF42Oct_S3" : {
         [Ger_Uni_S3_r] call FNC_AddItemRandom;
         [Ger_Vest_MP40] call FNC_AddItem;
-        [Ger_BP_r] call FNC_AddItemRandom;
+        [Ger_BP_T34] call FNC_AddItem;
         [Ger_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
@@ -545,12 +545,12 @@
         [//TT-33
         [Rus_Mag_TT33,1],
         [Rus_Weap_TT33],
-        [Rus_Mag_TT33,1]
+        [Rus_Mag_TT33,2]
         ],[15],
         [//M1895
         [Rus_Mag_M1895,1],
         [Rus_Weap_M1895],
-        [Rus_Mag_M1895,1]
+        [Rus_Mag_M1895,2]
         ],[5],
         [//Radom
         [PHA_Mag_Radom,1],
@@ -795,12 +795,12 @@
         [//TT-33
         [Rus_Mag_TT33,1],
         [Rus_Weap_TT33],
-        [Rus_Mag_TT33,1]
+        [Rus_Mag_TT33,2]
         ],[15],
         [//M1895
         [Rus_Mag_M1895,1],
         [Rus_Weap_M1895],
-        [Rus_Mag_M1895,1]
+        [Rus_Mag_M1895,2]
         ],[5],
         [//Radom
         [PHA_Mag_Radom,1],
@@ -849,12 +849,12 @@
         [//TT-33
         [Rus_Mag_TT33,1],
         [Rus_Weap_TT33],
-        [Rus_Mag_TT33,1]
+        [Rus_Mag_TT33,2]
         ],[15],
         [//M1895
         [Rus_Mag_M1895,1],
         [Rus_Weap_M1895],
-        [Rus_Mag_M1895,1]
+        [Rus_Mag_M1895,2]
         ],[5],
         [//Radom
         [PHA_Mag_Radom,1],
@@ -989,12 +989,12 @@
         [//TT-33
         [Rus_Mag_TT33,1],
         [Rus_Weap_TT33],
-        [Rus_Mag_TT33,1]
+        [Rus_Mag_TT33,2]
         ],[15],
         [//M1895
         [Rus_Mag_M1895,1],
         [Rus_Weap_M1895],
-        [Rus_Mag_M1895,1]
+        [Rus_Mag_M1895,2]
         ],[5],
         [//Radom
         [PHA_Mag_Radom,1],
@@ -1135,12 +1135,12 @@
         [//TT-33
         [Rus_Mag_TT33,1],
         [Rus_Weap_TT33],
-        [Rus_Mag_TT33,1]
+        [Rus_Mag_TT33,2]
         ],[15],
         [//M1895
         [Rus_Mag_M1895,1],
         [Rus_Weap_M1895],
-        [Rus_Mag_M1895,1]
+        [Rus_Mag_M1895,2]
         ],[5],
         [//Radom
         [PHA_Mag_Radom,1],
@@ -1246,7 +1246,7 @@
         [//TT-33
         [Rus_Mag_TT33,1],
         [Rus_Weap_TT33],
-        [Rus_Mag_TT33,1]
+        [Rus_Mag_TT33,2]
         ],[15],
         [//PPK
         [Ger_Mag_PPK,1],
@@ -1256,7 +1256,7 @@
         [//M1895
         [Rus_Mag_M1895,1],
         [Rus_Weap_M1895],
-        [Rus_Mag_M1895,1]
+        [Rus_Mag_M1895,2]
         ],[5],
         [//Radom
         [PHA_Mag_Radom,1],
@@ -1296,12 +1296,12 @@
         [//TT-33
         [Rus_Mag_TT33,1],
         [Rus_Weap_TT33],
-        [Rus_Mag_TT33,1]
+        [Rus_Mag_TT33,2]
         ],[15],
         [//M1895
         [Rus_Mag_M1895,1],
         [Rus_Weap_M1895],
-        [Rus_Mag_M1895,1]
+        [Rus_Mag_M1895,2]
         ],[5],
         [//Radom
         [PHA_Mag_Radom,1],

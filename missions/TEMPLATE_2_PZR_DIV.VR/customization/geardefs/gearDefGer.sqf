@@ -174,7 +174,7 @@
 #define Ger_Vest_MG             "fow_v_heer_mg"
 #define Ger_Vest_MGA            "fow_v_heer_k98_ass"
 #define Ger_Vest_HGun           "fow_v_heer_p38"
-#define Ger_Vest_Med            "V_LIB_GER_VestKar98"
+#define Ger_Vest_Med            "V_LIB_GER_PioneerVest"
 
 #define Ger_Vest_VCom           "fow_v_heer_mp40_nco"
 #define Ger_Vest_VCrew          "fow_v_heer_tankcrew_p38"
@@ -279,9 +279,10 @@
 ["ACE_morphine",5,"backpack"] call FNC_AddItem; \
 ["ACE_painkillers",10,"backpack"] call FNC_AddItem; \
 ["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
-["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
+["ACE_tourniquet",4,"backpack"] call FNC_AddItem; \
 ["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
-["ACE_salineIV_500",14,"backpack"] call FNC_AddItem;
+["ACE_salineIV",5,"backpack"] call FNC_AddItem; \
+["ACE_salineIV_500",10,"vest"] call FNC_AddItem;
 
 #define Ger_medicS_equipment \
 ["ACE_fieldDressing",5,"backpack"] call FNC_AddItem; \
