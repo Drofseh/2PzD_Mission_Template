@@ -14,6 +14,12 @@
 
 if (FW_RespawnTickets > 0) then {
 
+    [false] call acre_api_fnc_setSpectator;
+    // systemChat "Acre Spec UnSet";
+    
+    [false] call ace_spectator_fnc_setSpectator;
+    // systemChat "ACE Spec UnSet";
+
     private _respawnName = toLower(format ["fw_%1_respawn", side player]);
     private _respawnPoint = missionNamespace getVariable [_respawnName, objNull];
 
@@ -41,8 +47,6 @@ if (FW_RespawnTickets > 0) then {
 
     };
 
-    call BIS_fnc_VRFadeIn;
-
     cutText [format ['%1 %2', FW_RespawnTickets, _text], 'PLAIN DOWN'];
 
     player setVariable ["FW_Body", player, true];
@@ -51,29 +55,19 @@ if (FW_RespawnTickets > 0) then {
 
     player setVariable ["FW_Dead", true, true]; //Tells the framework the player is dead
 
-    player setCaptive true;
+    //player setCaptive true;
     player allowdamage false;
 
     player call FNC_RemoveAllGear;
 
     player addWeapon "itemMap";
 
-    player setPos [0, 0, 0];
+    //player setPos [0, 0, 0];
     [player] join grpNull;
 
     hideObjectGlobal player;
 
-    if (!(player getVariable ["FW_Spectating", false])) then {
+    player setVariable ["FW_Spectating", true, true];
 
-        player setVariable ["FW_Spectating", true, true];
-
-        //[true] call acre_api_fnc_setSpectator; //Enable this if using ACRE2
-        "" execVM "core\spectate.sqf";
-
-
-    } else {
-
-        call BIS_fnc_VRFadeIn;
-
-    };
+    //"" execVM "core\spectate.sqf"; //This is the frameworks original spectator script
 };

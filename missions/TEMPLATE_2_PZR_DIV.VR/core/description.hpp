@@ -3,16 +3,16 @@
     #include "dia\rscdefinitions.hpp" //Must have for the end screen to work, if removed Arma 3 will crash on mission load
     #include "dia\endscreen\dia_endscreen.hpp" //Must have for the end screen to work, if removed Arma 3 will crash on mission load
 
-    respawn = "BASE"; //Do not change, spectator script needs people to respawn, to be declared as dead and put into spectator mode
-    respawndelay = 5; //5 seconds are needed to make sure people properly die and go into spectator
-    disabledAI = 1; //disabledAI does so not slotted units do not spawn as ai
-    respawnButton = 1; //Disables the respawn button
+    respawn = "BASE"; //Do not change
+    respawndelay = 10e10; //How long it takes a player to respawn in seconds - 10e10 is 10 billion seconds, only change this if you want players to respawn
+    disabledAI = 1; //disabledAI so unslotted playable units do not spawn as ai
+    respawnButton = 0; //Disables the respawn button
     respawnDialog = 0; //Disables the score screen while respawning
-    respawnTemplates[] = {"Base"}; //Disables respawn countdown
+    respawnTemplates[] = {"ace_spectator","Base"}; //Disables respawn countdown // "ace_spectator","Base","Counter","Tickets","Wave",
     enableDebugConsole[] = {"76561197970317496","76561197983143701","76561198096113294","76561197985738940","76561198007878058","76561198006804011"};
-    // Haas, Madsen, Schuttler, Sauer, Schmidt, and Brauer
-    // enableDebugConsole = 1; // 1 = Only for logged-in admins
-    enableTargetDebug = 1; //Enable CBA Target Debugging
+    // debug console is enabled for Haas, Madsen, Schuttler, Sauer, Schmidt, and Brauer by default. Add your UID to the list if you want to access the debug console during your mission
+    // enableDebugConsole = 1; // 1 = Only for logged-in admins - This setting is superseded by the array above.
+    enableTargetDebug = 1; //Enable CBA Target Debugging - This allows debugging one non-local machines.
 
     class Extended_PreInit_EventHandlers {
 

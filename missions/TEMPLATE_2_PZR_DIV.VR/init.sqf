@@ -31,19 +31,16 @@ if (isServer) then {
         };
     };
 };
-
+/*
+if (!isDedicated) then { //This scope is for the player & the Headless Clients
+    if (FW_RespawnTickets > 0) then {
+        [player, FW_RespawnTickets] call BIS_fnc_respawnTickets;
+    };
+};
+*/
 #include "modules\modules.sqf" //DO NOT REMOVE
 #include "core\postChecks.sqf" //DO NOT REMOVE
 
 LIB_GLOBAL_ENABLE_RADIO_IN_VEHICLE = false;
 
 #include "scripts\gearLog.sqf"
-
-//restrict camera to 1PP
-thirdperson_allowed = false;
-waituntil {
-    if(cameraView == "EXTERNAL" || cameraView == "GROUP") then {
-        vehicle player switchCamera "INTERNAL";
-    };
-    thirdperson_allowed
-};

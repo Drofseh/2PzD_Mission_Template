@@ -81,6 +81,7 @@ _groups = _groups - _hiddenGroups;
             } else {
                 _roleRole = roleDescription _x;
                 if (isNil _roleRole) then { _roleRole = "Group Member" };
+                if (_roleRole == "") then { _roleRole = "Group Member" };
                 _orbatText = _orbatText + format ["    |--- %1 | %2", _roleRole, name _x] + "<br />";
             };
         };

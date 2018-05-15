@@ -11,7 +11,7 @@ github.com/dklollol/Olsen-Framework-Arma-3<br/>
 <br/>
 Current Versions:
     Oslen Framework v3.3.2
-    2PzD Template   v2.16.0
+    2PzD Template   v2.17.0
 ";
 
 player createDiaryRecord ["FW_Menu", ["Framework Info", _info]];

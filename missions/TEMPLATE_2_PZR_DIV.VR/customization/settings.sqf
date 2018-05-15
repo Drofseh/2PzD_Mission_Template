@@ -2,8 +2,8 @@ if (isServer) then { //This scope is only for the server
 
     setViewDistance 2000; //View distance for the server and any AI controlled by the server (Note - the server does not normally control the AI, instead the Headless Clients do)
 
-    FW_TimeLimit = 4*60; //Time limit in minutes, to disable the time limit set it to 0
-    FW_TimeLimitMessage = "TIME LIMIT REACHED!"; //The message displayed when the time runs out
+    FW_TimeLimit = 4*60; //Time limit in minutes, to disable the time limit set it to 0 - Is is strongly recommended that every mission has a time limit simply to force the mission to end if it is accidentally left running.
+    FW_TimeLimitMessage = "TIME LIMIT REACHED!"; //This message displayed when the time runs out
 
     // Teams, used for the end screen and to calculate casualties on each side
     // The names in endConditions.sqf used in the casualty calls MUST match these names.
@@ -23,30 +23,34 @@ if (isServer) then { //This scope is only for the server
 
 if (!isDedicated) then { //This scope is for the player & the Headless Clients
 
-    FW_DebugMessagesEnabled = true;//Only disable debug messages when the mission is released
+    FW_DebugMessagesEnabled = true;//Only disable debug messages when the mission is released - to disable messages, set this to false
 
-    player switchMove "AmovPercMstpSlowWrflDnon_AmovPknlMstpSlowWrflDnon";
+    player switchMove "AmovPercMstpSlowWrflDnon_AmovPknlMstpSlowWrflDnon"; //This moves all players to the kneeling position at mission start
 
     setViewDistance 2000; //View distance for the player and any AI controlled by the Headless Clients (which is normally all the AI) - set lower on urbanised map to increase player performance
     
-    switch (side player) do { // Sets respawn tickets based on player side.
+    switch (side player) do { // Sets respawn tickets and sides visible in spectator, based on player side.
         case west: {
             FW_RespawnTickets = 0; //If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_west_respawn
+            FW_SpectatorSides = [[west], [east,independent,civilian]]; //[[allowed sides],[disallowed sides]] move a side to the other array to change it's visibility.  Example: [[west,independent], [east,civilian]]
         };
         case east: {
             FW_RespawnTickets = 0; //If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_east_respawn
+            FW_SpectatorSides = [[east], [west,independent,civilian]];
         };
         case resistance: {
             FW_RespawnTickets = 0; //If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_resistance_respawn
+            FW_SpectatorSides = [[independent], [west,east,civilian]];
         };
         case civilian: {
             FW_RespawnTickets = 0; //If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_civilian_respawn
+            FW_SpectatorSides = [[civilian], [west,east,independent]];
         };
     };
 };
 
-//New end messages to be used with the in briefing Admin Tab end mission options.
-//Change the messages to reflect your mission.
+//End messages to be used with the in briefing Admin Tab end mission options.
+//Change the messages to reflect your mission and add additional messages as required.
     victoryMessage = "
     <br/>The Admin or Zeus has ended the mission.
     <br/>

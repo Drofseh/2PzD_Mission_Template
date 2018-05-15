@@ -1,3 +1,4 @@
+//This spectator is deprecated, do not use it, it will probably be removed in a future update.
 deadbody = (player getVariable "FW_Body");
 
 setAperture -1;

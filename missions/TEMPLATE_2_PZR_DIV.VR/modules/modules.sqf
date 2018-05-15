@@ -6,11 +6,10 @@
 //Enabled modules by default, disable them by adding // in front.
 
 #include "acre_setup\root.sqf"
-#include "auto_track_assets\root.sqf"
 #include "anti_nd\root.sqf"
+#include "auto_track_assets\root.sqf"
 #include "cover_map\root.sqf"
 #include "disconnect_control\root.sqf"
-#include "EG_Spectator_Mode\root.sqf"
 #include "env_parameters\root.sqf"
 #include "jip\root.sqf"
 #include "marker_control\root.sqf"
@@ -36,6 +35,7 @@
 //#include "call_mission\root.sqf"
 //#include "capture_zone\root.sqf"
 //#include "cover_map_multiple\root.sqf"
+//#include "EG_Spectator_Mode\root.sqf"
 //#include "extract\root.sqf"
 //#include "firemission\root.sqf"
 //#include "hostage\root.sqf"
