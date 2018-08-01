@@ -19,12 +19,12 @@
     //target03WEST = "marker_5";
 
     // WEST/Blufor
-    target01WEST = "marker_17";
-    target02WEST = "marker_17";
-    target03WEST = "marker_17";
-    target04WEST = "marker_17";
-    target05WEST = "marker_17";
-    target06WEST = "marker_17";
+    target01WEST = "";
+    target02WEST = "";
+    target03WEST = "";
+    target04WEST = "";
+    target05WEST = "";
+    target06WEST = "";
 
     // East/Opfor
     target01EAST = "";
@@ -111,9 +111,9 @@
     // If fewer than 5 rounds are available then no interaction for that ammo will show up.
 
     // WEST/Blufor
-    shellsHE_AmmoCountWEST = 250;
-    shellsSmoke_AmmoCountWEST = 250;
-    shellsFlare_AmmoCountWEST = 250;
+    shellsHE_AmmoCountWEST = 0;
+    shellsSmoke_AmmoCountWEST = 0;
+    shellsFlare_AmmoCountWEST = 0;
 
     // East/Opfor
     shellsHE_AmmoCountEAST = 0;
@@ -129,14 +129,13 @@
     // Sets, per side, how close to the target the fire mission impact area be in metres, using RNG.
     // Higher number means less accurate.
     // 0 means the fire mission will always be centered directly on target.
-    // 50 means the fire mission could be centered up to 50m away.
+    // 100 means the fire mission could be centered up to 100m away.
     // This should be adjusted based on the the skill of the units who would be doing the shooting
     // as well as the distance from the shooters to the target
-    // I would say 25 is exceptionally accurate, 50 is well trained, 100 is badly trained.
-    shellAccuracyWEST = 50;
-    shellAccuracyEAST = 50;
-    shellAccuracyGUER = 50;
-
+    // I would say 50 is very good, 100 is normal, 150 is bad.
+    shellAccuracyWEST = 100;
+    shellAccuracyEAST = 100;
+    shellAccuracyGUER = 100;
 
 // FIRE MISSION DISPERSION
     // Sets, per side, the maximum distance (in metres) a shell can land from the centre of the impact area, using RNG.

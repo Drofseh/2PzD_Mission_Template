@@ -34,12 +34,15 @@
         <br/> \
         <br/>Rounds fired at a Visual Location target will take longer to arrive, as the supporting unit needs time to calculate the fire mission. \
         <br/> \
-        <br/><font color='#70db70' size='14'>5. Repeat Fire Mission</font> \
+        <br/><font color='#70db70' size='14'>5. Repeat Last Target</font> \
         <br/>This calls a new fire mission on the exact same target as the previous fire mission.\
         <br/> \
         <br/>It will have increased accuracy, and will arrive as quickly as if it was a pre-planned target.\
         <br/> \
-        <br/>This is especially helpful if you are calling a second or third fire mission on a Visual Location Target.\
+        <br/>The accuracy increase represents the observer telling the artillery battery how to adjust their fire. \
+        <br/> \
+        <br/>The speed increase represents that the artillery doesn't have to completely recalculate their angles and re-lay their guns. \
+        <br/>This is especially helpful if you are calling a second or third fire mission on a Visual Location Target. \
         <br/> \
         <br/><font color='#70db70' size='14'>6. The Fire Mission</font> \
         <br/>Once a target and rounds are selected the fire mission will begin automatically. \
@@ -59,53 +62,11 @@
         <br/>The fire will be reasonably realistic, it will arrive in barrages of 5 rounds on or nearby the target, simulating human timing for loading and firing, and well as a human level of accuracy. \
     "]];
 
+#include "functions.sqf"
+
+#include "settings.sqf"
+
 if (isServer) then {
-    #include "settings.sqf"
-
-    publicVariable "target01WEST";
-    publicVariable "target02WEST";
-    publicVariable "target03WEST";
-    publicVariable "target04WEST";
-    publicVariable "target05WEST";
-    publicVariable "target06WEST";
-    publicVariable "target01EAST";
-    publicVariable "target02EAST";
-    publicVariable "target03EAST";
-    publicVariable "target04EAST";
-    publicVariable "target05EAST";
-    publicVariable "target06EAST";
-    publicVariable "target01GUER";
-    publicVariable "target02GUER";
-    publicVariable "target03GUER";
-    publicVariable "target04GUER";
-    publicVariable "target05GUER";
-    publicVariable "target06GUER";
-
-    publicVariable "target01WEST_Name";
-    publicVariable "target02WEST_Name";
-    publicVariable "target03WEST_Name";
-    publicVariable "target04WEST_Name";
-    publicVariable "target05WEST_Name";
-    publicVariable "target06WEST_Name";
-    publicVariable "target01EAST_Name";
-    publicVariable "target02EAST_Name";
-    publicVariable "target03EAST_Name";
-    publicVariable "target04EAST_Name";
-    publicVariable "target05EAST_Name";
-    publicVariable "target06EAST_Name";
-    publicVariable "target01GUER_Name";
-    publicVariable "target02GUER_Name";
-    publicVariable "target03GUER_Name";
-    publicVariable "target04GUER_Name";
-    publicVariable "target05GUER_Name";
-    publicVariable "target06GUER_Name";
-
-    publicVariable "shellsHE_TypeWEST";
-    publicVariable "shellsHE_TypeEAST";
-    publicVariable "shellsHE_TypeGUER";
-    publicVariable "shellsSmoke_TypeWEST";
-    publicVariable "shellsSmoke_TypeEAST";
-    publicVariable "shellsSmoke_TypeGUER";
 
     publicVariable "shellsHE_AmmoCountWEST";
     publicVariable "shellsHE_AmmoCountEAST";
@@ -113,14 +74,9 @@ if (isServer) then {
     publicVariable "shellsSmoke_AmmoCountWEST";
     publicVariable "shellsSmoke_AmmoCountEAST";
     publicVariable "shellsSmoke_AmmoCountGUER";
-
-    publicVariable "shellDispersionWEST";
-    publicVariable "shellDispersionEAST";
-    publicVariable "shellDispersionGUER";
-
-    publicVariable "shellAccuracyWEST";
-    publicVariable "shellAccuracyEAST";
-    publicVariable "shellAccuracyGUER";
+    publicVariable "shellsFlare_AmmoCountWEST";
+    publicVariable "shellsFlare_AmmoCountEAST";
+    publicVariable "shellsFlare_AmmoCountGUER";
 
     fireMissionAvailableWEST = True;
     fireMissionAvailableEAST = True;
@@ -130,100 +86,114 @@ if (isServer) then {
     publicVariable "fireMissionAvailableGUER";
 };
 
-/*
-if (hasInterface && !isServer) then {
-    waitUntil {!isNil target01WEST};
-    waitUntil {!isNil target02WEST};
-    waitUntil {!isNil target03WEST};
-    waitUntil {!isNil target04WEST};
-    waitUntil {!isNil target05WEST};
-    waitUntil {!isNil target06WEST};
-    waitUntil {!isNil target01EAST};
-    waitUntil {!isNil target02EAST};
-    waitUntil {!isNil target03EAST};
-    waitUntil {!isNil target04EAST};
-    waitUntil {!isNil target05EAST};
-    waitUntil {!isNil target06EAST};
-    waitUntil {!isNil target01GUER};
-    waitUntil {!isNil target02GUER};
-    waitUntil {!isNil target03GUER};
-    waitUntil {!isNil target04GUER};
-    waitUntil {!isNil target05GUER};
-    waitUntil {!isNil target06GUER};
+previousTarget = [];
 
-    waitUntil {!isNil target01WEST_Name};
-    waitUntil {!isNil target02WEST_Name};
-    waitUntil {!isNil target03WEST_Name};
-    waitUntil {!isNil target04WEST_Name};
-    waitUntil {!isNil target05WEST_Name};
-    waitUntil {!isNil target06WEST_Name};
-    waitUntil {!isNil target01EAST_Name};
-    waitUntil {!isNil target02EAST_Name};
-    waitUntil {!isNil target03EAST_Name};
-    waitUntil {!isNil target04EAST_Name};
-    waitUntil {!isNil target05EAST_Name};
-    waitUntil {!isNil target06EAST_Name};
-    waitUntil {!isNil target01GUER_Name};
-    waitUntil {!isNil target02GUER_Name};
-    waitUntil {!isNil target03GUER_Name};
-    waitUntil {!isNil target04GUER_Name};
-    waitUntil {!isNil target05GUER_Name};
-    waitUntil {!isNil target06GUER_Name};
+target01 = "";
+target02 = "";
+target03 = "";
+target04 = "";
+target05 = "";
+target06 = "";
 
-    waitUntil {!isNil shellsHE_TypeWEST};
-    waitUntil {!isNil shellsHE_TypeEAST};
-    waitUntil {!isNil shellsHE_TypeGUER};
-    waitUntil {!isNil shellsSmoke_TypeWEST};
-    waitUntil {!isNil shellsSmoke_TypeEAST};
-    waitUntil {!isNil shellsSmoke_TypeGUER};
-
-    waitUntil {!isNil shellsHE_AmmoCountWEST};
-    waitUntil {!isNil shellsHE_AmmoCountEAST};
-    waitUntil {!isNil shellsHE_AmmoCountGUER};
-    waitUntil {!isNil shellsSmoke_AmmoCountWEST};
-    waitUntil {!isNil shellsSmoke_AmmoCountEAST};
-    waitUntil {!isNil shellsSmoke_AmmoCountGUER};
-
-    waitUntil {!isNil shellDispersionWEST};
-    waitUntil {!isNil shellDispersionEAST};
-    waitUntil {!isNil shellDispersionGUER};
-
-    waitUntil {!isNil shellAccuracyWEST};
-    waitUntil {!isNil shellAccuracyEAST};
-    waitUntil {!isNil shellAccuracyGUER};
-
-    waitUntil {!isNil fireMissionAvailableWEST};
-    waitUntil {!isNil fireMissionAvailableEAST};
-    waitUntil {!isNil fireMissionAvailableGUER};
-};
-*/
+target01_Name = "";
+target02_Name = "";
+target03_Name = "";
+target04_Name = "";
+target05_Name = "";
+target06_Name = "";
 
 if (side player == WEST) then {
-    previousTarget = [];
-    originalShellDispersionWEST = shellDispersionWEST;
-    originalShellAccuracyWEST = shellAccuracyWEST;
-    #include "actionsWEST.sqf"
-    if (shellsHE_AmmoCountWEST >= 5 || shellsSmoke_AmmoCountWEST >= 5 || shellsFlare_AmmoCountWEST >= 1) then {
+    target01 = target01WEST;
+    target02 = target02WEST;
+    target03 = target03WEST;
+    target04 = target04WEST;
+    target05 = target05WEST;
+    target06 = target06WEST;
+
+    target01_Name = target01WEST_Name;
+    target02_Name = target02WEST_Name;
+    target03_Name = target03WEST_Name;
+    target04_Name = target04WEST_Name;
+    target05_Name = target05WEST_Name;
+    target06_Name = target06WEST_Name;
+
+    shellsHE_Type = shellsHE_TypeWEST;
+    shellsSmoke_Type = shellsSmoke_TypeWEST;
+    shellsFlare_Type = shellsFlare_TypeWEST;
+
+    shellDispersion = shellDispersionWEST;
+    shellAccuracy = shellAccuracyWEST;
+    
+    originalShellDispersion = shellDispersionWEST;
+    originalShellAccuracy = shellAccuracy;
+    
+    #include "actions.sqf"
+    
+    if (shellsHE_AmmoCountWEST >= 1 || shellsSmoke_AmmoCountWEST >= 1 || shellsFlare_AmmoCountWEST >= 1) then {
         def_fireMissionBriefingMessage;
     };
 };
 
 if (side player == EAST) then {
-    previousTarget = [];
-    originalShellDispersionEAST = shellDispersionEAST;
-    originalShellAccuracyEAST = shellAccuracyEAST;
-    #include "actionsEast.sqf"
-    if (shellsHE_AmmoCountEAST >= 5 || shellsSmoke_AmmoCountEAST >= 5 || shellsFlare_AmmoCountEAST >= 1) then {
+    target01 = target01EAST;
+    target02 = target02EAST;
+    target03 = target03EAST;
+    target04 = target04EAST;
+    target05 = target05EAST;
+    target06 = target06EAST;
+
+    target01_Name = target01EAST_Name;
+    target02_Name = target02EAST_Name;
+    target03_Name = target03EAST_Name;
+    target04_Name = target04EAST_Name;
+    target05_Name = target05EAST_Name;
+    target06_Name = target06EAST_Name;
+
+    shellsHE_Type = shellsHE_TypeEAST;
+    shellsSmoke_Type = shellsSmoke_TypeEAST;
+    shellsFlare_Type = shellsFlare_TypeEAST;
+
+    shellDispersion = shellDispersionEAST;
+    shellAccuracy = shellAccuracyEAST;
+    
+    originalShellDispersion = shellDispersionEAST;
+    originalShellAccuracy = shellAccuracyEAST;
+    
+    #include "actions.sqf"
+    
+    if (shellsHE_AmmoCountEAST >= 1 || shellsSmoke_AmmoCountEAST >= 1 || shellsFlare_AmmoCountEAST >= 1) then {
         def_fireMissionBriefingMessage;
     };
 };
 
 if (side player == independent) then {
-    previousTarget = [];
-    originalShellDispersionGUER = shellDispersionGUER;
-    originalShellAccuracyGUER = shellAccuracyGUER;
-    #include "actionsGuer.sqf"
-    if (shellsHE_AmmoCountGUER >= 5 || shellsSmoke_AmmoCountGUER >= 5 || shellsFlare_AmmoCountGUER >= 1) then {
+    target01 = target01GUER;
+    target02 = target02GUER;
+    target03 = target03GUER;
+    target04 = target04GUER;
+    target05 = target05GUER;
+    target06 = target06GUER;
+
+    target01_Name = target01GUER_Name;
+    target02_Name = target02GUER_Name;
+    target03_Name = target03GUER_Name;
+    target04_Name = target04GUER_Name;
+    target05_Name = target05GUER_Name;
+    target06_Name = target06GUER_Name;
+
+    shellsHE_Type = shellsHE_TypeGUER;
+    shellsSmoke_Type = shellsSmoke_TypeGUER;
+    shellsFlare_Type = shellsFlare_TypeGUER;
+
+    shellDispersion = shellDispersionGUER;
+    shellAccuracy = shellAccuracyGUER;
+    
+    originalShellDispersion = shellDispersionGUER;
+    originalShellAccuracy = shellAccuracyGUER;
+    
+    #include "actions.sqf"
+    
+    if (shellsHE_AmmoCountGUER >= 1 || shellsSmoke_AmmoCountGUER >= 1 || shellsFlare_AmmoCountGUER >= 1) then {
         def_fireMissionBriefingMessage;
     };
 };
