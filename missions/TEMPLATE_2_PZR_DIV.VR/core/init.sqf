@@ -72,7 +72,7 @@ if (!isDedicated) then {
     FW_EndMissionEh = ["FW_EndMission", {_this execVM "core\dia\endscreen\dia_endscreen.sqf";}] call CBA_fnc_addEventHandler;
 
     //Various settings
-    enableEngineArtillery false; //Disable Arma 3 artillery computer
+    enableEngineArtillery true; //Enable Arma 3 artillery computer
     enableRadio false; //Disable Arma 3 regular radio
     enableSentences false; //Disable Arma 3 regular radio chatter
     0 fadeRadio 0; //Lower radio volume to 0

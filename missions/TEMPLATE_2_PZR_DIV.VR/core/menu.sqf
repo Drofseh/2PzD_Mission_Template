@@ -10,8 +10,8 @@ Find out more about the framework on GitHub.<br/>
 github.com/dklollol/Olsen-Framework-Arma-3<br/>
 <br/>
 Current Versions:
-    Oslen Framework v3.3.2
-    2PzD Template   v2.17.0
+<br/>    Oslen Framework v3.3.2
+<br/>    2PzD Template   v2.18.0
 ";
 
 player createDiaryRecord ["FW_Menu", ["Framework Info", _info]];

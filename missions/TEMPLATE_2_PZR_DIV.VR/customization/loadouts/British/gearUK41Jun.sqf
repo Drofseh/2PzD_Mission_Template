@@ -316,6 +316,7 @@
 
         //Assigned Items
         UK_default_equipment;
+        [GEN_BinoR] call FNC_AddItem;
 
         //Primary Weapon
         UK41Jun_LeeEn;

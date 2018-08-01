@@ -25,9 +25,14 @@ if (!isDedicated) then { //This scope is for the player & the Headless Clients
 
     FW_DebugMessagesEnabled = true;//Only disable debug messages when the mission is released - to disable messages, set this to false
 
-    player switchMove "AmovPercMstpSlowWrflDnon_AmovPknlMstpSlowWrflDnon"; //This moves all players to the kneeling position at mission start
+    if ((vehicle player) == player) then {
+        player switchMove "AmovPercMstpSlowWrflDnon_AmovPknlMstpSlowWrflDnon"; //This moves all players to the kneeling position at mission start, unless they start inside a vehicle
+    };
 
     setViewDistance 2000; //View distance for the player and any AI controlled by the Headless Clients (which is normally all the AI) - set lower on urbanised map to increase player performance
+
+    //[[1,2], [0]] call ace_spectator_fnc_updateCameraModes; //Set ACE Spectator camera modes. Should only be enabled for TvT. See https://ace3mod.com/wiki/framework/spectator-framework.html#44-addremove-available-camera-modes
+    //[[-2], [-1,0,1,2,3,4,5,6,7]] call ace_spectator_fnc_updateVisionModes; //Set ACE Spectator camera vision mods. Should only be enabled for TvT. See https://ace3mod.com/wiki/framework/spectator-framework.html#45-addremove-available-vision-modes
     
     switch (side player) do { // Sets respawn tickets and sides visible in spectator, based on player side.
         case west: {
@@ -39,7 +44,7 @@ if (!isDedicated) then { //This scope is for the player & the Headless Clients
             FW_SpectatorSides = [[east], [west,independent,civilian]];
         };
         case resistance: {
-            FW_RespawnTickets = 0; //If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_resistance_respawn
+            FW_RespawnTickets = 0; //If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_guer_respawn
             FW_SpectatorSides = [[independent], [west,east,civilian]];
         };
         case civilian: {

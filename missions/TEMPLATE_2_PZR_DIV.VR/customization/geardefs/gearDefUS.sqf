@@ -223,9 +223,9 @@
 #define US_Helm_r               ["fow_h_us_m1"],["fow_h_us_m1"],["fow_h_us_m1"],["fow_h_us_m1_closed"],["fow_h_us_m1_closed"],["fow_h_us_m1_closed"],["fow_h_us_m1_folded"],["fow_h_us_m1_folded"],["fow_h_us_m1_folded"],["fow_h_us_m1_net"],["fow_h_us_m1_net"],["fow_h_us_m1_net"],["H_LIB_US_Helmet"],["H_LIB_US_Helmet_os"],["H_LIB_US_Helmet_ns"],["H_LIB_US_Helmet_Net"],["H_LIB_US_Helmet_Net_os"],["H_LIB_US_Helmet_Net_ns"]
 #define US_Helm_Med_r           ["fow_h_us_m1_medic"],["fow_h_us_m1_medic"],["H_LIB_US_Helmet_Med"],["H_LIB_US_Helmet_Med_os"],["H_LIB_US_Helmet_Med_ns"]
 
-#define US_Hat_DM               "fow_h_us_daisy_mae_01",
-#define US_Hat_DM_f             "fow_h_us_daisy_mae_03",
-#define US_Hat_DM_fF            "fow_h_us_daisy_mae_02",
+#define US_Hat_DM               "fow_h_us_daisy_mae_01"
+#define US_Hat_DM_f             "fow_h_us_daisy_mae_03"
+#define US_Hat_DM_fF            "fow_h_us_daisy_mae_02"
 
 #define US_Helm_VCrew           "H_LIB_US_Helmet_Tank"
 #define US_Helm_Air             "fow_h_us_flight_helmet"

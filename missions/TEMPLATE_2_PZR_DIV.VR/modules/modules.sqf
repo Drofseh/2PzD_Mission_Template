@@ -43,4 +43,5 @@
 //#include "setup_timer\root.sqf"
 //#include "start_in_parachute\root.sqf"
 //#include "start_text\root.sqf"
+//#include "supporting_fires\root.sqf"
 //#include "task_control\root.sqf"

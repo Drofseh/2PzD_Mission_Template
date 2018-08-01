@@ -251,6 +251,7 @@
 
         //Assigned Items
         UK_default_equipment;
+        UK_leader_equipment;
 
         [//Primary Weapon
         [//Sten MkII

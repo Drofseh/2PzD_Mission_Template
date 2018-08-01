@@ -92,9 +92,9 @@
         [Ger_Mag_PPK,2]
         ],[10],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -140,9 +140,9 @@
         [Ger_Mag_P08,2]
         ],[35],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -195,9 +195,9 @@
         [Ger_Mag_PPK,2]
         ],[10],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -330,9 +330,9 @@
         [Ger_Mag_P08,2]
         ],[35],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -484,9 +484,9 @@
         [Ger_Mag_P08,2]
         ],[35],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -706,9 +706,9 @@
         [Ger_Mag_P08,2]
         ],[35],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -750,9 +750,9 @@
         [Ger_Mag_P08,2]
         ],[35],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -858,9 +858,9 @@
         [Ger_Mag_P08,2]
         ],[35],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -972,9 +972,9 @@
         [Ger_Mag_P08,2]
         ],[35],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -1026,7 +1026,7 @@
         [Ger_Vest_PC] call FNC_AddItem;
         [Ger_BP_VCrew] call FNC_AddItem;
         [Ger_Hat_VCom] call FNC_AddItemRandom;
-        [Ger_Face_Tank_r] call FNC_AddItemRandom;
+        [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
         Ger_default_equipment;
@@ -1062,9 +1062,9 @@
         [Ger_Mag_PPK,2]
         ],[10],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -1080,7 +1080,7 @@
         [Ger_Vest_VCrew] call FNC_AddItem;
         [Ger_BP_VCrew] call FNC_AddItem;
         [Ger_Hat_VCrew] call FNC_AddItemRandom;
-        [Ger_Face_Tank_r] call FNC_AddItemRandom;
+        [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
         Ger_default_equipment;
@@ -1097,9 +1097,9 @@
         [Ger_Mag_P08,2]
         ],[35],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],

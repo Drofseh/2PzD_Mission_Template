@@ -12,6 +12,14 @@
  * Public: No
  */
 
+// Fade the screen to black and then fade it back in.
+_null = [] spawn {
+    [0,"BLACK",0,1] call BIS_fnc_fadeEffect; 
+    sleep 5; 
+    [1,"BLACK",5,1] call BIS_fnc_fadeEffect; 
+};
+
+// Check if tickets remain and play dead message
 if (FW_RespawnTickets > 0) then {
 
     ["<t color='#ff0000' size = '1.25'><br/>You are dead.<br/><br/>Respawning", 0, 0.2, 5, 0.5, 0, 1000] spawn BIS_fnc_dynamicText;
@@ -29,6 +37,8 @@ if (FW_RespawnTickets > 0) then {
     //"DeadText" cutText ["<t size = '2'>You are dead.</t>", "BLACK", 0.1, true, true];
     //"DeadText" cutFadeOut 5;
 };
+
+// force into ACE Spectator and update visible sides based on mission setting
 
 [true] call acre_api_fnc_setSpectator; //Enable this if using ACRE2
 // systemChat "Acre Spec Set";

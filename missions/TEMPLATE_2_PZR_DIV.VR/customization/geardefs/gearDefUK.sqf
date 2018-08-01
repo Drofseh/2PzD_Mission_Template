@@ -99,10 +99,12 @@
 #define UK_VestParaK_LeeEn      "fow_v_uk_para_base"
 #define UK_VestParaK_Sten       "fow_v_uk_para_sten"
 #define UK_VestParaK_Bren       "fow_v_uk_para_bren"
+#define UK_VestParaK_O          "fow_v_uk_officer"
 
 #define UK_VestParaG_LeeEn      "fow_v_uk_para_base_green"
 #define UK_VestParaG_Sten       "fow_v_uk_para_sten_green"
 #define UK_VestParaG_Bren       "fow_v_uk_para_bren_green"
+#define UK_VestParaG_O          "fow_v_uk_officer_green"
 
 //Backpack
 #define UK_BPK                  "fow_b_uk_p37"
@@ -126,7 +128,7 @@
 #define UK_Helm_Mk2_NetF        "fow_h_uk_mk2_net_foliage"
 #define UK_Helm_Mk3             "fow_h_uk_mk3"
 #define UK_Helm_Mk3_Net         "fow_h_uk_mk3_net_camo"
-#define UK_Helm_P_Mk2           "fow_h_uk_mk2_para";
+#define UK_Helm_P_Mk2           "fow_h_uk_mk2_para"
 #define UK_Helm_P_Mk2_Fol       "fow_h_uk_mk2_para_foliage"
 
 #define UK_Woolie               "fow_h_uk_woolen_hat"
@@ -136,6 +138,7 @@
 #define UK_Hat_J                "fow_h_uk_jungle_hat_03"
 #define UK_Hat_J_S              "fow_h_uk_jungle_hat_01"
 #define UK_Hat_J_Sf             "fow_h_uk_jungle_hat_02"
+#define UK_Hat_J_r              ["fow_h_uk_jungle_hat_01"],["fow_h_uk_jungle_hat_02"],["fow_h_uk_jungle_hat_03"]
 #define UK_Beret_Com            "fow_h_uk_beret_commando"
 #define UK_Beret_Para_P         "fow_h_uk_beret_para"
 #define UK_Beret_Para_R         "fow_h_uk_beret_para_2"

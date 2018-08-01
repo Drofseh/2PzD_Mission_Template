@@ -32,37 +32,40 @@ case "FSJ_DC_CHQ": {
 
     { //start of forEach _squad
 
-    _inventory = magazines _x;
+        _inventory = toUpper str magazines _x;
 
-        if (_inventory select 1 == Ger_Mag_K98) then {
-        [Ger_Weap_K98] call FNC_AddItemVehicle;
-        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_FG42) then {
-        [Ger_Weap_FG42] call FNC_AddItemVehicle;
-        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_G43) then {
-        [Ger_Weap_G43] call FNC_AddItemVehicle;
-        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_StG44) then {
-        [Ger_Weap_StG44] call FNC_AddItemVehicle;
-        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_MP40) then {
-        [Ger_Weap_MP40] call FNC_AddItemVehicle;
-        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
-         } else {};
+        if (_inventory find toUpper Ger_Mag_K98 >= 1) then {
+            [Ger_Weap_K98] call FNC_AddItemVehicle;
+            [Ger_Mag_K98,13] call FNC_AddItemVehicle;
+        } else {
+            if (_inventory find toUpper Ger_Mag_G43 >= 1) then {
+                [Ger_Weap_G43] call FNC_AddItemVehicle;
+                [Ger_Mag_G43,7] call FNC_AddItemVehicle;
+            } else {
+                if (_inventory find toUpper Ger_Mag_StG44 >= 1) then {
+                    [Ger_Weap_StG44] call FNC_AddItemVehicle;
+                    [Ger_Mag_StG44,7] call FNC_AddItemVehicle;
+                } else {
+                    if (_inventory find toUpper Ger_Mag_FG42 >= 1) then {
+                        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+                        [Ger_Mag_FG42,7] call FNC_AddItemVehicle;
+                    };
+                };
+            };
+        };
+        if (_inventory find toUpper Ger_Mag_MP40 >= 1) then {
+            [Ger_Weap_MP40] call FNC_AddItemVehicle;
+            [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
+        };
 
     } forEach _squad; //end of weapon matching
 
     //extra items
-    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
+    [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
 
     [Ger_BP_T34, 5] call FNC_AddItemVehicle;
     [Ger_BP_Radio, 1] call FNC_AddItemVehicle;
-    [GEN_Radio] call FNC_AddItemVehicle;
 
     [GEN_Flare_Pistol, 2] call FNC_AddItemVehicle;
     [GEN_Flare_W, 6] call FNC_AddItemVehicle;
@@ -89,37 +92,40 @@ case "FSJ_DC_Z1HQ": {
 
     { //start of forEach _squad
 
-    _inventory = magazines _x;
+        _inventory = toUpper (str (magazines _x));
 
-        if (_inventory select 1 == Ger_Mag_K98) then {
-        [Ger_Weap_K98] call FNC_AddItemVehicle;
-        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_FG42) then {
-        [Ger_Weap_FG42] call FNC_AddItemVehicle;
-        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_G43) then {
-        [Ger_Weap_G43] call FNC_AddItemVehicle;
-        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_StG44) then {
-        [Ger_Weap_StG44] call FNC_AddItemVehicle;
-        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_MP40) then {
-        [Ger_Weap_MP40] call FNC_AddItemVehicle;
-        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
-         } else {};
+        if (_inventory find toUpper Ger_Mag_K98 >= 1) then {
+            [Ger_Weap_K98] call FNC_AddItemVehicle;
+            [Ger_Mag_K98,13] call FNC_AddItemVehicle;
+        } else {
+            if (_inventory find toUpper Ger_Mag_G43 >= 1) then {
+                [Ger_Weap_G43] call FNC_AddItemVehicle;
+                [Ger_Mag_G43,7] call FNC_AddItemVehicle;
+            } else {
+                if (_inventory find toUpper Ger_Mag_StG44 >= 1) then {
+                    [Ger_Weap_StG44] call FNC_AddItemVehicle;
+                    [Ger_Mag_StG44,7] call FNC_AddItemVehicle;
+                } else {
+                    if (_inventory find toUpper Ger_Mag_FG42 >= 1) then {
+                        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+                        [Ger_Mag_FG42,7] call FNC_AddItemVehicle;
+                    };
+                };
+            };
+        };
+        if (_inventory find toUpper Ger_Mag_MP40 >= 1) then {
+            [Ger_Weap_MP40] call FNC_AddItemVehicle;
+            [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
+        };
 
     } forEach _squad; //end of weapon matching
 
     //extra items
-    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
+    [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
 
     [Ger_BP_T34, 5] call FNC_AddItemVehicle;
     [Ger_BP_Radio, 1] call FNC_AddItemVehicle;
-    [GEN_Radio] call FNC_AddItemVehicle;
 
     [GEN_Flare_Pistol, 2] call FNC_AddItemVehicle;
     [GEN_Flare_W, 6] call FNC_AddItemVehicle;
@@ -152,37 +158,40 @@ case "FSJ_DC_Z2HQ": {
 
     { //start of forEach _squad
 
-    _inventory = magazines _x;
+        _inventory = toUpper (str (magazines _x));
 
-        if (_inventory select 1 == Ger_Mag_K98) then {
-        [Ger_Weap_K98] call FNC_AddItemVehicle;
-        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_FG42) then {
-        [Ger_Weap_FG42] call FNC_AddItemVehicle;
-        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_G43) then {
-        [Ger_Weap_G43] call FNC_AddItemVehicle;
-        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_StG44) then {
-        [Ger_Weap_StG44] call FNC_AddItemVehicle;
-        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_MP40) then {
-        [Ger_Weap_MP40] call FNC_AddItemVehicle;
-        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
-         } else {};
+        if (_inventory find toUpper Ger_Mag_K98 >= 1) then {
+            [Ger_Weap_K98] call FNC_AddItemVehicle;
+            [Ger_Mag_K98,13] call FNC_AddItemVehicle;
+        } else {
+            if (_inventory find toUpper Ger_Mag_G43 >= 1) then {
+                [Ger_Weap_G43] call FNC_AddItemVehicle;
+                [Ger_Mag_G43,7] call FNC_AddItemVehicle;
+            } else {
+                if (_inventory find toUpper Ger_Mag_StG44 >= 1) then {
+                    [Ger_Weap_StG44] call FNC_AddItemVehicle;
+                    [Ger_Mag_StG44,7] call FNC_AddItemVehicle;
+                } else {
+                    if (_inventory find toUpper Ger_Mag_FG42 >= 1) then {
+                        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+                        [Ger_Mag_FG42,7] call FNC_AddItemVehicle;
+                    };
+                };
+            };
+        };
+        if (_inventory find toUpper Ger_Mag_MP40 >= 1) then {
+            [Ger_Weap_MP40] call FNC_AddItemVehicle;
+            [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
+        };
 
     } forEach _squad; //end of weapon matching
 
     //extra items
-    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
+    [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
 
     [Ger_BP_T34, 5] call FNC_AddItemVehicle;
     [Ger_BP_Radio, 1] call FNC_AddItemVehicle;
-    [GEN_Radio] call FNC_AddItemVehicle;
 
     [GEN_Flare_Pistol, 2] call FNC_AddItemVehicle;
     [GEN_Flare_W, 6] call FNC_AddItemVehicle;
@@ -216,42 +225,45 @@ case "FSJ_DC_Z1G1W": {
 
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1G1;
-
+    
     { //start of forEach _squad
 
-    _inventory = magazines _x;
+        _inventory = toUpper (str (magazines _x));
 
-        if (_inventory select 1 == Ger_Mag_K98) then {
-        [Ger_Weap_K98] call FNC_AddItemVehicle;
-        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_FG42) then {
-        [Ger_Weap_FG42] call FNC_AddItemVehicle;
-        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_G43) then {
-        [Ger_Weap_G43] call FNC_AddItemVehicle;
-        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_StG44) then {
-        [Ger_Weap_StG44] call FNC_AddItemVehicle;
-        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_MP40) then {
-        [Ger_Weap_MP40] call FNC_AddItemVehicle;
-        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
-         } else {};
+        if (_inventory find toUpper Ger_Mag_K98 >= 1) then {
+            [Ger_Weap_K98] call FNC_AddItemVehicle;
+            [Ger_Mag_K98,13] call FNC_AddItemVehicle;
+        } else {
+            if (_inventory find toUpper Ger_Mag_G43 >= 1) then {
+                [Ger_Weap_G43] call FNC_AddItemVehicle;
+                [Ger_Mag_G43,7] call FNC_AddItemVehicle;
+            } else {
+                if (_inventory find toUpper Ger_Mag_StG44 >= 1) then {
+                    [Ger_Weap_StG44] call FNC_AddItemVehicle;
+                    [Ger_Mag_StG44,7] call FNC_AddItemVehicle;
+                } else {
+                    if (_inventory find toUpper Ger_Mag_FG42 >= 1) then {
+                        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+                        [Ger_Mag_FG42,7] call FNC_AddItemVehicle;
+                    };
+                };
+            };
+        };
+        if (_inventory find toUpper Ger_Mag_MP40 >= 1) then {
+            [Ger_Weap_MP40] call FNC_AddItemVehicle;
+            [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
+        };
 
     } forEach _squad; //end of weapon matching
 
     //extra items
     [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
-    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
+    [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
     [Ger_Mag_RGrn_ATS, 8] call FNC_AddItemVehicle;
     [Ger_Mag_RGrn_HE, 8] call FNC_AddItemVehicle;
-    [Ger_Weap_MG34, 1] call FNC_AddItemVehicle;
-    [Ger_Weap_MG42, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_MG34, 2] call FNC_AddItemVehicle;
     [GEN_ace_sparebarrel, 2] call FNC_AddItemVehicle;
     [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
 
@@ -283,39 +295,42 @@ case "FSJ_DC_Z1G2W": {
 
     { //start of forEach _squad
 
-    _inventory = magazines _x;
+        _inventory = toUpper (str (magazines _x));
 
-        if (_inventory select 1 == Ger_Mag_K98) then {
-        [Ger_Weap_K98] call FNC_AddItemVehicle;
-        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_FG42) then {
-        [Ger_Weap_FG42] call FNC_AddItemVehicle;
-        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_G43) then {
-        [Ger_Weap_G43] call FNC_AddItemVehicle;
-        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_StG44) then {
-        [Ger_Weap_StG44] call FNC_AddItemVehicle;
-        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_MP40) then {
-        [Ger_Weap_MP40] call FNC_AddItemVehicle;
-        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
-         } else {};
+        if (_inventory find toUpper Ger_Mag_K98 >= 1) then {
+            [Ger_Weap_K98] call FNC_AddItemVehicle;
+            [Ger_Mag_K98,13] call FNC_AddItemVehicle;
+        } else {
+            if (_inventory find toUpper Ger_Mag_G43 >= 1) then {
+                [Ger_Weap_G43] call FNC_AddItemVehicle;
+                [Ger_Mag_G43,7] call FNC_AddItemVehicle;
+            } else {
+                if (_inventory find toUpper Ger_Mag_StG44 >= 1) then {
+                    [Ger_Weap_StG44] call FNC_AddItemVehicle;
+                    [Ger_Mag_StG44,7] call FNC_AddItemVehicle;
+                } else {
+                    if (_inventory find toUpper Ger_Mag_FG42 >= 1) then {
+                        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+                        [Ger_Mag_FG42,7] call FNC_AddItemVehicle;
+                    };
+                };
+            };
+        };
+        if (_inventory find toUpper Ger_Mag_MP40 >= 1) then {
+            [Ger_Weap_MP40] call FNC_AddItemVehicle;
+            [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
+        };
 
     } forEach _squad; //end of weapon matching
 
     //extra items
     [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
-    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
+    [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
     [Ger_Mag_RGrn_ATS, 8] call FNC_AddItemVehicle;
     [Ger_Mag_RGrn_HE, 8] call FNC_AddItemVehicle;
-    [Ger_Weap_MG34, 1] call FNC_AddItemVehicle;
-    [Ger_Weap_MG42, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_MG34, 2] call FNC_AddItemVehicle;
     [GEN_ace_sparebarrel, 2] call FNC_AddItemVehicle;
     [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
 
@@ -347,39 +362,42 @@ case "FSJ_DC_Z1G3W": {
 
     { //start of forEach _squad
 
-    _inventory = magazines _x;
+        _inventory = toUpper (str (magazines _x));
 
-        if (_inventory select 1 == Ger_Mag_K98) then {
-        [Ger_Weap_K98] call FNC_AddItemVehicle;
-        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_FG42) then {
-        [Ger_Weap_FG42] call FNC_AddItemVehicle;
-        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_G43) then {
-        [Ger_Weap_G43] call FNC_AddItemVehicle;
-        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_StG44) then {
-        [Ger_Weap_StG44] call FNC_AddItemVehicle;
-        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_MP40) then {
-        [Ger_Weap_MP40] call FNC_AddItemVehicle;
-        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
-         } else {};
+        if (_inventory find toUpper Ger_Mag_K98 >= 1) then {
+            [Ger_Weap_K98] call FNC_AddItemVehicle;
+            [Ger_Mag_K98,13] call FNC_AddItemVehicle;
+        } else {
+            if (_inventory find toUpper Ger_Mag_G43 >= 1) then {
+                [Ger_Weap_G43] call FNC_AddItemVehicle;
+                [Ger_Mag_G43,7] call FNC_AddItemVehicle;
+            } else {
+                if (_inventory find toUpper Ger_Mag_StG44 >= 1) then {
+                    [Ger_Weap_StG44] call FNC_AddItemVehicle;
+                    [Ger_Mag_StG44,7] call FNC_AddItemVehicle;
+                } else {
+                    if (_inventory find toUpper Ger_Mag_FG42 >= 1) then {
+                        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+                        [Ger_Mag_FG42,7] call FNC_AddItemVehicle;
+                    };
+                };
+            };
+        };
+        if (_inventory find toUpper Ger_Mag_MP40 >= 1) then {
+            [Ger_Weap_MP40] call FNC_AddItemVehicle;
+            [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
+        };
 
     } forEach _squad; //end of weapon matching
 
     //extra items
     [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
-    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
+    [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
     [Ger_Mag_RGrn_ATS, 8] call FNC_AddItemVehicle;
     [Ger_Mag_RGrn_HE, 8] call FNC_AddItemVehicle;
-    [Ger_Weap_MG34, 1] call FNC_AddItemVehicle;
-    [Ger_Weap_MG42, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_MG34, 2] call FNC_AddItemVehicle;
     [GEN_ace_sparebarrel, 2] call FNC_AddItemVehicle;
     [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
 
@@ -415,39 +433,42 @@ case "FSJ_DC_Z2G1W": {
 
     { //start of forEach _squad
 
-    _inventory = magazines _x;
+        _inventory = toUpper (str (magazines _x));
 
-        if (_inventory select 1 == Ger_Mag_K98) then {
-        [Ger_Weap_K98] call FNC_AddItemVehicle;
-        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_FG42) then {
-        [Ger_Weap_FG42] call FNC_AddItemVehicle;
-        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_G43) then {
-        [Ger_Weap_G43] call FNC_AddItemVehicle;
-        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_StG44) then {
-        [Ger_Weap_StG44] call FNC_AddItemVehicle;
-        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_MP40) then {
-        [Ger_Weap_MP40] call FNC_AddItemVehicle;
-        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
-         } else {};
+        if (_inventory find toUpper Ger_Mag_K98 >= 1) then {
+            [Ger_Weap_K98] call FNC_AddItemVehicle;
+            [Ger_Mag_K98,13] call FNC_AddItemVehicle;
+        } else {
+            if (_inventory find toUpper Ger_Mag_G43 >= 1) then {
+                [Ger_Weap_G43] call FNC_AddItemVehicle;
+                [Ger_Mag_G43,7] call FNC_AddItemVehicle;
+            } else {
+                if (_inventory find toUpper Ger_Mag_StG44 >= 1) then {
+                    [Ger_Weap_StG44] call FNC_AddItemVehicle;
+                    [Ger_Mag_StG44,7] call FNC_AddItemVehicle;
+                } else {
+                    if (_inventory find toUpper Ger_Mag_FG42 >= 1) then {
+                        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+                        [Ger_Mag_FG42,7] call FNC_AddItemVehicle;
+                    };
+                };
+            };
+        };
+        if (_inventory find toUpper Ger_Mag_MP40 >= 1) then {
+            [Ger_Weap_MP40] call FNC_AddItemVehicle;
+            [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
+        };
 
     } forEach _squad; //end of weapon matching
 
     //extra items
     [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
-    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
+    [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
     [Ger_Mag_RGrn_ATS, 8] call FNC_AddItemVehicle;
     [Ger_Mag_RGrn_HE, 8] call FNC_AddItemVehicle;
-    [Ger_Weap_MG34, 1] call FNC_AddItemVehicle;
-    [Ger_Weap_MG42, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_MG34, 2] call FNC_AddItemVehicle;
     [GEN_ace_sparebarrel, 2] call FNC_AddItemVehicle;
     [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
 
@@ -479,39 +500,42 @@ case "FSJ_DC_Z2G2W": {
 
     { //start of forEach _squad
 
-    _inventory = magazines _x;
+        _inventory = toUpper (str (magazines _x));
 
-        if (_inventory select 1 == Ger_Mag_K98) then {
-        [Ger_Weap_K98] call FNC_AddItemVehicle;
-        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_FG42) then {
-        [Ger_Weap_FG42] call FNC_AddItemVehicle;
-        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_G43) then {
-        [Ger_Weap_G43] call FNC_AddItemVehicle;
-        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_StG44) then {
-        [Ger_Weap_StG44] call FNC_AddItemVehicle;
-        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_MP40) then {
-        [Ger_Weap_MP40] call FNC_AddItemVehicle;
-        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
-         } else {};
+        if (_inventory find toUpper Ger_Mag_K98 >= 1) then {
+            [Ger_Weap_K98] call FNC_AddItemVehicle;
+            [Ger_Mag_K98,13] call FNC_AddItemVehicle;
+        } else {
+            if (_inventory find toUpper Ger_Mag_G43 >= 1) then {
+                [Ger_Weap_G43] call FNC_AddItemVehicle;
+                [Ger_Mag_G43,7] call FNC_AddItemVehicle;
+            } else {
+                if (_inventory find toUpper Ger_Mag_StG44 >= 1) then {
+                    [Ger_Weap_StG44] call FNC_AddItemVehicle;
+                    [Ger_Mag_StG44,7] call FNC_AddItemVehicle;
+                } else {
+                    if (_inventory find toUpper Ger_Mag_FG42 >= 1) then {
+                        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+                        [Ger_Mag_FG42,7] call FNC_AddItemVehicle;
+                    };
+                };
+            };
+        };
+        if (_inventory find toUpper Ger_Mag_MP40 >= 1) then {
+            [Ger_Weap_MP40] call FNC_AddItemVehicle;
+            [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
+        };
 
     } forEach _squad; //end of weapon matching
 
     //extra items
     [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
-    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
+    [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
     [Ger_Mag_RGrn_ATS, 8] call FNC_AddItemVehicle;
     [Ger_Mag_RGrn_HE, 8] call FNC_AddItemVehicle;
-    [Ger_Weap_MG34, 1] call FNC_AddItemVehicle;
-    [Ger_Weap_MG42, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_MG34, 2] call FNC_AddItemVehicle;
     [GEN_ace_sparebarrel, 2] call FNC_AddItemVehicle;
     [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
 
@@ -543,39 +567,42 @@ case "FSJ_DC_Z2G3W": {
 
     { //start of forEach _squad
 
-    _inventory = magazines _x;
+        _inventory = toUpper (str (magazines _x));
 
-        if (_inventory select 1 == Ger_Mag_K98) then {
-        [Ger_Weap_K98] call FNC_AddItemVehicle;
-        [Ger_Mag_K98,12] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_FG42) then {
-        [Ger_Weap_FG42] call FNC_AddItemVehicle;
-        [Ger_Mag_FG42,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_G43) then {
-        [Ger_Weap_G43] call FNC_AddItemVehicle;
-        [Ger_Mag_G43,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_StG44) then {
-        [Ger_Weap_StG44] call FNC_AddItemVehicle;
-        [Ger_Mag_StG44,6] call FNC_AddItemVehicle;
-         } else {};
-        if (_inventory select 1 == Ger_Mag_MP40) then {
-        [Ger_Weap_MP40] call FNC_AddItemVehicle;
-        [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
-         } else {};
+        if (_inventory find toUpper Ger_Mag_K98 >= 1) then {
+            [Ger_Weap_K98] call FNC_AddItemVehicle;
+            [Ger_Mag_K98,13] call FNC_AddItemVehicle;
+        } else {
+            if (_inventory find toUpper Ger_Mag_G43 >= 1) then {
+                [Ger_Weap_G43] call FNC_AddItemVehicle;
+                [Ger_Mag_G43,7] call FNC_AddItemVehicle;
+            } else {
+                if (_inventory find toUpper Ger_Mag_StG44 >= 1) then {
+                    [Ger_Weap_StG44] call FNC_AddItemVehicle;
+                    [Ger_Mag_StG44,7] call FNC_AddItemVehicle;
+                } else {
+                    if (_inventory find toUpper Ger_Mag_FG42 >= 1) then {
+                        [Ger_Weap_FG42] call FNC_AddItemVehicle;
+                        [Ger_Mag_FG42,7] call FNC_AddItemVehicle;
+                    };
+                };
+            };
+        };
+        if (_inventory find toUpper Ger_Mag_MP40 >= 1) then {
+            [Ger_Weap_MP40] call FNC_AddItemVehicle;
+            [Ger_Mag_MP40,6] call FNC_AddItemVehicle;
+        };
 
     } forEach _squad; //end of weapon matching
 
     //extra items
     [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
-    [Ger_Weap_K98, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
+    [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
     [Ger_Mag_RGrn_ATS, 8] call FNC_AddItemVehicle;
     [Ger_Mag_RGrn_HE, 8] call FNC_AddItemVehicle;
-    [Ger_Weap_MG34, 1] call FNC_AddItemVehicle;
-    [Ger_Weap_MG42, 1] call FNC_AddItemVehicle;
+    [Ger_Weap_MG34, 2] call FNC_AddItemVehicle;
     [GEN_ace_sparebarrel, 2] call FNC_AddItemVehicle;
     [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
 

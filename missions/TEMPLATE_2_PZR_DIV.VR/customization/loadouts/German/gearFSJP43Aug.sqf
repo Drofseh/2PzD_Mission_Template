@@ -62,9 +62,9 @@
         [Ger_Mag_PPK,2]
         ],[10],
         [//PPK
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -101,9 +101,9 @@
         [Ger_Mag_P08,2]
         ],[32],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -150,9 +150,9 @@
         [Ger_Mag_PPK,2]
         ],[10],
         [//PPK
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -189,9 +189,9 @@
         [Ger_Mag_P08,2]
         ],[32],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -238,9 +238,9 @@
         [Ger_Mag_P08,2]
         ],[32],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -287,9 +287,9 @@
         [Ger_Mag_P08,2]
         ],[32],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -336,9 +336,9 @@
         [Ger_Mag_P08,2]
         ],[32],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -389,9 +389,9 @@
         [Ger_Mag_P08,2]
         ],[32],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -438,9 +438,9 @@
         [Ger_Mag_P08,2]
         ],[32],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -481,9 +481,9 @@
         [Ger_Mag_P08,2]
         ],[32],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -529,9 +529,9 @@
         [Ger_Mag_P08,2]
         ],[32],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -571,9 +571,9 @@
         [Ger_Mag_P08,2]
         ],[32],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -613,9 +613,9 @@
         [Ger_Mag_P08,2]
         ],[32],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],
@@ -664,9 +664,9 @@
         [Ger_Mag_P08,2]
         ],[32],
         [//Radom
-        [PHA_Mag_Radom,1],
-        [PHA_Weap_Radom],
-        [PHA_Mag_Radom,2]
+        [Pol_Mag_Radom,1],
+        [Pol_Weap_Radom],
+        [Pol_Mag_Radom,2]
         ],[2],
         [//BHP
         [UK_Mag_HiPower,1],

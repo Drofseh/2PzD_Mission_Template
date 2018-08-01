@@ -658,7 +658,7 @@
         [Ger_Uni_VCom] call FNC_AddItem;
         [Ger_BP_VCrew] call FNC_AddItem;
         [Ger_Hat_VCom] call FNC_AddItemRandom;
-        [Ger_Face_Tank_r] call FNC_AddItemRandom;
+        [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
         Ger_default_equipment;
@@ -685,7 +685,7 @@
         [Ger_Vest_VCrew] call FNC_AddItem;
         [Ger_BP_VCrew] call FNC_AddItem;
         [Ger_Hat_VCrew] call FNC_AddItemRandom;
-        [Ger_Face_Tank_r] call FNC_AddItemRandom;
+        [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
         Ger_default_equipment;

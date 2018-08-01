@@ -3,6 +3,8 @@
 //You can script an AO change using [MARKERNAMEINQUOTES,ISCENTERED,ZOOMLEVEL,NAME VISIBLE IN SELF INTERACT, AO NUMBER] call FNC_AOCoverAndCenterMap;
 //You could have different groups/teams with different AOs, or a briefing AO different from specific AOs in game if needed.
 
+//Note that this currently has problems with units that have no map.
+
 //_AOMarkers = [MARKERNAMEINQUOTES,ISCENTERED,ZOOMLEVEL,NAME VISIBLE IN SELF INTERACT, AO NUMBER];
 //_AOMarkers = [["AOMarker_1",true,0.4,"Bahnhof",1]];
 _AOMarkers = [

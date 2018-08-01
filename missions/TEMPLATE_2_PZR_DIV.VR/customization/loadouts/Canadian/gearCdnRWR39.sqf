@@ -188,6 +188,7 @@
 
         //Assigned Items
         UK_default_equipment;
+        UK_leader_equipment
 
         //Primary Weapon
         [UK_Mag_LeeEn,1] call FNC_AddItem;

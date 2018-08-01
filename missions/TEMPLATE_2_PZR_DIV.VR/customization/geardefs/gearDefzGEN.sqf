@@ -52,7 +52,7 @@
                                 ["G_LIB_Watch2"],["G_LIB_Watch1"], \
                                 ["G_LIB_Watch2"],["G_LIB_Watch1"]
 
-#define GEN_Face_Tank_r         ["G_LIB_Headwrap"],["G_LIB_Headwrap_gloves"],["ACE_Banana"],["ACE_Banana"]
+#define GEN_Face_Tank_r         ["G_LIB_Headwrap"],["G_LIB_Headwrap_gloves"]
 #define GEN_Face_Bino           "G_LIB_Binoculars"
 
 //=== MISC ===
@@ -78,6 +78,7 @@
 #define GEN_BandageP            "ACE_packingBandage"
 #define GEN_BandageQ            "ACE_quikclot"
 #define GEN_TQ                  "ACE_tourniquet"
+#define GEN_Pain                "ACE_painkillers"
 #define GEN_Morp                "ACE_morphine"
 #define GEN_Epi                 "ACE_epinephrine"
 #define GEN_SurgKit             "ACE_surgicalKit"

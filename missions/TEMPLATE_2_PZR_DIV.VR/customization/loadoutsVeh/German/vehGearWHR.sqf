@@ -85,7 +85,8 @@
         [GEN_Bandage, 40] call FNC_AddItemVehicle;
         [GEN_BandageE, 20] call FNC_AddItemVehicle;
         [GEN_BandageP, 40] call FNC_AddItemVehicle;
-        [GEN_Morp, 20] call FNC_AddItemVehicle;
+        [GEN_Pain, 20] call FNC_AddItemVehicle;
+        [GEN_Morp, 10] call FNC_AddItemVehicle;
         [GEN_Saline500, 15] call FNC_AddItemVehicle;
         [GEN_TQ, 20] call FNC_AddItemVehicle;
         [GEN_Epi, 20] call FNC_AddItemVehicle;
@@ -141,7 +142,7 @@
         [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
         [GEN_BandageE, 12] call FNC_AddItemVehicle;
         [GEN_BandageE, 4] call FNC_AddItemVehicle;
-        [GEN_Morp, 4] call FNC_AddItemVehicle;
+        [GEN_Pain, 4] call FNC_AddItemVehicle;
         [GEN_TQ, 4] call FNC_AddItemVehicle;
         [GEN_Epi, 4] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
@@ -201,7 +202,8 @@
         [GEN_Bandage, 40] call FNC_AddItemVehicle;
         [GEN_BandageE, 20] call FNC_AddItemVehicle;
         [GEN_BandageP, 40] call FNC_AddItemVehicle;
-        [GEN_Morp, 20] call FNC_AddItemVehicle;
+        [GEN_Pain, 20] call FNC_AddItemVehicle;
+        [GEN_Morp, 10] call FNC_AddItemVehicle;
         [GEN_Saline500, 15] call FNC_AddItemVehicle;
         [GEN_TQ, 20] call FNC_AddItemVehicle;
         [GEN_Epi, 20] call FNC_AddItemVehicle;
@@ -259,7 +261,7 @@
         [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
         [GEN_Bandage, 12] call FNC_AddItemVehicle;
         [GEN_BandageE, 4] call FNC_AddItemVehicle;
-        [GEN_Morp, 4] call FNC_AddItemVehicle;
+        [GEN_Pain, 4] call FNC_AddItemVehicle;
         [GEN_TQ, 4] call FNC_AddItemVehicle;
         [GEN_Epi, 4] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
@@ -329,7 +331,8 @@
         [GEN_Bandage, 40] call FNC_AddItemVehicle;
         [GEN_BandageE, 20] call FNC_AddItemVehicle;
         [GEN_BandageP, 40] call FNC_AddItemVehicle;
-        [GEN_Morp, 20] call FNC_AddItemVehicle;
+        [GEN_Pain, 20] call FNC_AddItemVehicle;
+        [GEN_Morp, 10] call FNC_AddItemVehicle;
         [GEN_Saline500, 15] call FNC_AddItemVehicle;
         [GEN_TQ, 20] call FNC_AddItemVehicle;
         [GEN_Epi, 20] call FNC_AddItemVehicle;
@@ -408,7 +411,7 @@
         [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
         [GEN_Bandage, 12] call FNC_AddItemVehicle;
         [GEN_BandageE, 4] call FNC_AddItemVehicle;
-        [GEN_Morp, 4] call FNC_AddItemVehicle;
+        [GEN_Pain, 4] call FNC_AddItemVehicle;
         [GEN_TQ, 4] call FNC_AddItemVehicle;
         [GEN_Epi, 4] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
@@ -479,7 +482,8 @@
         [GEN_Bandage, 40] call FNC_AddItemVehicle;
         [GEN_BandageE, 20] call FNC_AddItemVehicle;
         [GEN_BandageP, 40] call FNC_AddItemVehicle;
-        [GEN_Morp, 20] call FNC_AddItemVehicle;
+        [GEN_Pain, 20] call FNC_AddItemVehicle;
+        [GEN_Morp, 10] call FNC_AddItemVehicle;
         [GEN_Saline500, 15] call FNC_AddItemVehicle;
         [GEN_TQ, 20] call FNC_AddItemVehicle;
         [GEN_Epi, 20] call FNC_AddItemVehicle;
@@ -550,7 +554,7 @@
         [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
         [GEN_Bandage, 12] call FNC_AddItemVehicle;
         [GEN_BandageE, 4] call FNC_AddItemVehicle;
-        [GEN_Morp, 4] call FNC_AddItemVehicle;
+        [GEN_Pain, 4] call FNC_AddItemVehicle;
         [GEN_TQ, 4] call FNC_AddItemVehicle;
         [GEN_Epi, 4] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;

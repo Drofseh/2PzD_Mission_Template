@@ -270,9 +270,9 @@ NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
 <br/><font color='#70db70' size='14'>2. Radio Frequencies:</font>
 //Include others as needed
 <br/>
-<br/>Frequency 51.70 mhz - Kompanie Net
-<br/>Frequency 31.70 mhz - 1 Zug Sub-Net
-<br/>Frequency 54.70 mhz - 2 Zug Sub-Net
+<br/>Frequency 51.00 mhz - Kompanie Net
+<br/>Frequency 31.00 mhz - 1 Zug Sub-Net
+<br/>Frequency 54.00 mhz - 2 Zug Sub-Net
 <br/>
 <br/><font color='#70db70' size='14'>3. Special Signals</font>
 //Include others as needed
@@ -533,9 +533,9 @@ NEWTAB("VI. Командная и сигнальная (Command & Signal):")
 <br/><font color='#70db70' size='14'>2. Radio Frequencies:</font>
 //Include others as needed
 <br/>
-<br/>Frequency 53.20 mhz - Company Net
-<br/>Frequency 33.20 mhz - 1 Platoon Sub-Net
-<br/>Frequency 56.20 mhz - 2 Platoon Sub-Net
+<br/>Frequency 53.00 mhz - Company Net
+<br/>Frequency 33.00 mhz - 1 Platoon Sub-Net
+<br/>Frequency 56.00 mhz - 2 Platoon Sub-Net
 <br/>
 <br/><font color='#70db70' size='14'>3. Special Signals</font>
 //Include others as needed
@@ -796,9 +796,9 @@ NEWTAB("VI. Command & Signal:")
 <br/><font color='#70db70' size='14'>2. Radio Frequencies:</font>
 //Include others as needed
 <br/>
-<br/>Frequency 55.35 mhz - Company Net
-<br/>Frequency 35.35 mhz - 1 Platoon Sub-Net
-<br/>Frequency 58.35 mhz - 2 Platoon Sub-Net
+<br/>Frequency 55.00 mhz - Company Net
+<br/>Frequency 35.00 mhz - 1 Platoon Sub-Net
+<br/>Frequency 58.00 mhz - 2 Platoon Sub-Net
 <br/>
 <br/><font color='#70db70' size='14'>3. Special Signals</font>
 //Include others as needed

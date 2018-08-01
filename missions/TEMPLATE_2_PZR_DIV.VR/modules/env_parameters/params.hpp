@@ -18,7 +18,7 @@ class Wind {
     title = "Wind";
     texts[] = {"Mission default", "No Wind", "Light breeze", "Moderate breeze", "Strong breeze", "Strong gale", "Violent storm", "Random"};
     values[] = {-1, 0, 2, 4, 6, 8, 10, -10};
-    default = 0;
+    default = -1;
 };
 
 class Fog {

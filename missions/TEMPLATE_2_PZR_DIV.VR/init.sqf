@@ -1,6 +1,10 @@
 
 #define framework
 
+if (isDedicated) then {
+    ['Mission Started', 'info'] call MAR_fnc_log;
+};
+
 loggingEnabled = 0; // Set this to 1 to enable inventory logging for players and named vehicles. See scripts\gearLog.sqf for more requirements.
 loggingTime = 60; // How often (in seconds) an inventory log will be created during play. I do not recommend changing this except when doing testing and diagnostics.
 
@@ -43,4 +47,4 @@ if (!isDedicated) then { //This scope is for the player & the Headless Clients
 
 LIB_GLOBAL_ENABLE_RADIO_IN_VEHICLE = false;
 
-#include "scripts\gearLog.sqf"
+//#include "scripts\gearLog.sqf"

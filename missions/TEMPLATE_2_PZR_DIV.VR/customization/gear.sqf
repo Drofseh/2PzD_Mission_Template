@@ -17,6 +17,8 @@ switch (_type) do {
 
 //All definitions are in the geardefs folder. These should be always be in your mission.
 
+#include "geardefs\gearDefAus.sqf"
+
 #include "geardefs\gearDefBel.sqf"
 
 #include "geardefs\gearDefCdn.sqf"

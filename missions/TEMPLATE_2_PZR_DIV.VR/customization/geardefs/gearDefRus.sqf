@@ -64,6 +64,7 @@
 //=== Clothes ===
 
 //Uniform
+#define Rus_Uni_BC              "U_LIB_SOV_Kapitan"
 #define Rus_Uni_CC              "U_LIB_SOV_Stleutenant"
 #define Rus_Uni_CSgt            "U_LIB_SOV_Starshina"
 #define Rus_Uni_PC              ["U_LIB_SOV_Leutenant"],["U_LIB_SOV_Leutenant_inset_pocket"]

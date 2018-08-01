@@ -236,6 +236,7 @@
 
         //Assigned Items
         UK_default_equipment;
+        UK_leader_equipment;
 
         //Primary Weapon
         UK40Sep_M1928;
@@ -292,6 +293,7 @@
 
         //Assigned Items
         UK_default_equipment;
+        [GEN_BinoR] call FNC_AddItem;
 
         //Primary Weapon
         UK40Sep_LeeEn;

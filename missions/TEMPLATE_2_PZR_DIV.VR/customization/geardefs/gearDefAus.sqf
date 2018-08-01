@@ -31,6 +31,7 @@
 //Backpack
 
 //Headgear
+#define Aus_Headgear_r              ["fow_h_uk_mk2"],["fow_h_uk_mk2_net"],["fow_h_uk_mk2_net_camo"],["fow_h_uk_mk2_net_foliage"],["fow_h_uk_mk3"],["fow_h_uk_mk3_net_camo"],["fow_h_uk_jungle_hat_01"],["fow_h_uk_jungle_hat_02"],["fow_h_uk_jungle_hat_03"]
 
 //Radio
 

@@ -149,6 +149,35 @@ if (!isDedicated && hasInterface) then
             aCount_textBLU = "BLUFOR Munitions Expended:<br/>";
             aCount_textRED = "REDFOR Munitions Expended:<br/>";
             aCount_textRES = "RESISTANCE Munitions Expended:<br/>";
+
+            if ((FW_Teams select 0) select 1 == west) then {
+                aCount_textBLU = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 0) select 0)];
+            };
+            if ((FW_Teams select 0) select 1 == east) then {
+                aCount_textRED = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 0) select 0)];
+            };
+            if ((FW_Teams select 0) select 1 == resistance) then {
+                aCount_textRES = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 0) select 0)];
+            };
+            if ((FW_Teams select 1) select 1 == west) then {
+                aCount_textBLU = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 1) select 0)];
+            };
+            if ((FW_Teams select 1) select 1 == east) then {
+                aCount_textRED = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 1) select 0)];
+            };
+            if ((FW_Teams select 1) select 1 == resistance) then {
+                aCount_textRES = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 1) select 0)];
+            };
+            if ((FW_Teams select 2) select 1 == west) then {
+                aCount_textBLU = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 2) select 0)];
+            };
+            if ((FW_Teams select 2) select 1 == east) then {
+                aCount_textRED = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 2) select 0)];
+            };
+            if ((FW_Teams select 2) select 1 == resistance) then {
+                aCount_textRES = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 2) select 0)];
+            };
+
             for [{ _i = 0}, {_i < count _arrayBLU}, {_i = _i + 2}] do
             {
                 _label = _arrayBLU select (_i);

@@ -933,7 +933,7 @@
         [Rus_Uni_VCrew] call FNC_AddItem;
         [Rus_Vest_PC] call FNC_AddItem;
         [Rus_Hat_VCrew] call FNC_AddItem;
-        [Rus_Face_Tank_r] call FNC_AddItemRandom;
+        [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
         Rus_default_equipment;
@@ -972,7 +972,7 @@
         [Rus_Vest_VCrew] call FNC_AddItem;
         [Rus_BP_r] call FNC_AddItemRandom;
         [Rus_Hat_VCrew] call FNC_AddItem;
-        [Rus_Face_Tank_r] call FNC_AddItemRandom;
+        [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
         Rus_default_equipment;
