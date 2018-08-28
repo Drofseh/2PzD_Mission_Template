@@ -114,7 +114,7 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
 
 //Platoon HQ
@@ -202,7 +202,7 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
 
     //Funker
@@ -251,7 +251,7 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
 
     //Melder
@@ -300,7 +300,7 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
 
     //Krankenträger
@@ -401,7 +401,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -450,7 +450,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -584,7 +584,7 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
 
     //Grenadier
@@ -677,5 +677,5 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };

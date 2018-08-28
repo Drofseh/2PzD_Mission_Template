@@ -46,7 +46,7 @@
     // These are the names for the targets that appear in the self interaction menu.
     // They should match (or at least be very similar to) the visible text for the target they go with.
     // See https://gyazo.com/d66a1b6559f60e0fcf969165c93efeeb for an example
-    
+
     //Examples:
     //target01WEST_Name = "Target Alpha";
     //target02WEST_Name = "Eggwil";
@@ -59,7 +59,7 @@
     target04WEST_Name = "Target Delta";
     target05WEST_Name = "Target Echo";
     target06WEST_Name = "Target Foxtrot";
-    
+
     // East/Opfor
     target01EAST_Name = "Target Alpha";
     target02EAST_Name = "Target Bravo";
@@ -67,7 +67,7 @@
     target04EAST_Name = "Target Delta";
     target05EAST_Name = "Target Echo";
     target06EAST_Name = "Target Foxtrot";
-    
+
     // Resistance/Independent/Indfor
     target01GUER_Name = "Target Alpha";
     target02GUER_Name = "Target Bravo";
@@ -77,13 +77,14 @@
     target06GUER_Name = "Target Foxtrot";
 
 // AMMUNITION TYPE
-    // There are two types of ammunition available, High Explosive and Smoke.
+    // There are three types of ammunition available, High Explosive, Smoke, and Flare.
     // By default these are mortar shells, but you can change the classNames (Type) to some other kind of ammo if desired.
+
     // They must be a CfgAmmo class.
+    // I recommend not changing the Smoke or Flare classes. Smoke effect will be the same, or flares will be too dim.
+
     // Make sure to test whatever className you pick. Not all of them will work.
-    
-    // Don't change the Flare type.
-    
+
     // Suggested Classes
         // Mortar:      HE
             //          Sh_82mm_AMOS
@@ -141,13 +142,12 @@
     // Sets, per side, the maximum distance (in metres) a shell can land from the centre of the impact area, using RNG.
     // Higher number means more dispersion.
     // 0 means the shells will all land exactly in the centre.
-    // 200 means that no shell will land farther than 200m from the centre.
+    // 100 means that no shell will land farther than 100m from the centre.
     // This should be adjusted based on the type of weapon that is supposed to be shooting and the distance they are shooting from.
     // Nearby mortars will be more accurate than distant artillery, and rocket artillery will be the least accurate
-    // For mortars I would say 100 - exceptionally accurate, 200 - normal, and 300 - inaccurate
-    // For artillery I would say 150 - exceptionally accurate, 300 - normal, and 400 - inaccurate
-    // For rocket artillery I would say 200 - exceptionally accurate, 400 - normal, and 600 - inaccurate
-    shellDispersionWEST = 200;
-    shellDispersionEAST = 200;
-    shellDispersionGUER = 200;
-    
+    // For mortars I would say 50 - exceptionally accurate, 100 - normal, and 150 - inaccurate
+    // For artillery I would say 100 - exceptionally accurate, 200 - normal, and 300 - inaccurate
+    // For rocket artillery I would say 200 - exceptionally accurate, 300 - normal, and 400 - inaccurate
+    shellDispersionWEST = 100;
+    shellDispersionEAST = 100;
+    shellDispersionGUER = 100;

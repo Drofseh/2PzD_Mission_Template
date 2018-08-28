@@ -22,7 +22,6 @@
 //!!Some of them require changing settings in their settings.sqf file!!
 
 //#include "a3_endscreen\root.sqf"
-//#include "ace_medical\root.sqf"
 //#include "ai_attack\root.sqf"
 //#include "ai_behaviour\root.sqf"
 //#include "ai_drivers\root.sqf"
@@ -32,12 +31,9 @@
 //#include "ambient_effects\root.sqf"
 //#include "ao_limit\root.sqf"
 //#include "ao_limit_soft\root.sqf"
-//#include "call_mission\root.sqf"
 //#include "capture_zone\root.sqf"
 //#include "cover_map_multiple\root.sqf"
-//#include "EG_Spectator_Mode\root.sqf"
 //#include "extract\root.sqf"
-//#include "firemission\root.sqf"
 //#include "hostage\root.sqf"
 //#include "in_game_briefing_utilities\root.sqf"
 //#include "setup_timer\root.sqf"

@@ -43,36 +43,36 @@
 //======================== Definitions ========================
 
 #define UK41Jun_LeeEn \
-        [
-            [
-                [UK_Mag_LeeEn,1],
-                [UK_Weap_LeeEnNo1],
-                [UK_Mag_LeeEn,5,"vest"]
-            ],[90],
-            [
-                [UK_Mag_LeeEn,1],
-                [UK_Weap_LeeEnNo4_1],
-                [UK_Mag_LeeEn,5,"vest"]
-            ],[5],
-            [
-                [UK_Mag_LeeEn,1],
-                [UK_Weap_LeeEnNo4_2],
-                [UK_Mag_LeeEn,5,"vest"]
-            ],[5]
+        [ \
+            [ \
+                [UK_Mag_LeeEn,1], \
+                [UK_Weap_LeeEnNo1], \
+                [UK_Mag_LeeEn,5,"vest"] \
+            ],[90], \
+            [ \
+                [UK_Mag_LeeEn,1], \
+                [UK_Weap_LeeEnNo4_1], \
+                [UK_Mag_LeeEn,5,"vest"] \
+            ],[5], \
+            [ \
+                [UK_Mag_LeeEn,1], \
+                [UK_Weap_LeeEnNo4_2], \
+                [UK_Mag_LeeEn,5,"vest"] \
+            ],[5] \
         ] call FNC_AddItemRandomPercent;
 
 #define UK41Jun_SMG \
-        [
-            [
-                [US_Mag_M1T_2,1],
-                [US_Weap_M1928],
-                [US_Mag_M1T_2,6,"vest"]
-            ],[95],
-            [
-                [UK_Mag_Sten,1],
-                [UK_Weap_StenMkI],
-                [UK_Mag_Sten,6,"vest"]
-            ],[5]
+        [ \
+            [ \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1928], \
+                [US_Mag_M1T_2,6,"vest"] \
+            ],[95], \
+            [ \
+                [UK_Mag_Sten,1], \
+                [UK_Weap_StenMkI], \
+                [UK_Mag_Sten,6,"vest"] \
+            ],[5] \
         ] call FNC_AddItemRandomPercent;
 
 #define UK41Jun_Bren_Gun \

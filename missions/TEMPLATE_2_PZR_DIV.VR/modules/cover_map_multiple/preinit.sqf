@@ -8,6 +8,11 @@
 //Covers Map outside marker and centers map on marker center
 FNC_AOCoverAndCenterMap = {
     if (!hasinterface) exitwith {};
+
+    //sleep 1;
+
+    //waitUntil {"ItemMap" in (assignedItems player)};
+
     params ["_marker",["_centered",true],["_zoomlevel",0.4],"_name","_AOnumber"];
 
     //delete old markers if present
@@ -119,20 +124,22 @@ FNC_AOCoverAndCenterMap = {
             params [["_zoomlevel",0.4],"_p"];
             waitUntil {time > 0.5};
             disableSerialization;
-            //if map already open dont close it, just move it
-            if (!visibleMap) then {
-                sleep 0.01;
-                showMap true;
-                openMap [true, true];
-                waitUntil {!isNull ((findDisplay 12) displayCtrl 51)};
-                ((findDisplay 12) displayCtrl 51) ctrlMapAnimAdd [0, _zoomlevel, _p];
-                ctrlMapAnimCommit ((findDisplay 12) displayCtrl 51);
-                waitUntil {ctrlMapAnimDone ((findDisplay 12) displayCtrl 51);};
-                sleep 0.01;
-                openMap [false, false];
-            } else {
-                ((findDisplay 12) displayCtrl 51) ctrlMapAnimAdd [0, _zoomlevel, _p];
-                ctrlMapAnimCommit ((findDisplay 12) displayCtrl 51);
+            if ("ItemMap" in (assignedItems player)) then{
+                //if map already open dont close it, just move it
+                if (!visibleMap) then {
+                    sleep 0.01;
+                    showMap true;
+                    openMap [true, true];
+                    waitUntil {!isNull ((findDisplay 12) displayCtrl 51)};
+                    ((findDisplay 12) displayCtrl 51) ctrlMapAnimAdd [0, _zoomlevel, _p];
+                    ctrlMapAnimCommit ((findDisplay 12) displayCtrl 51);
+                    waitUntil {ctrlMapAnimDone ((findDisplay 12) displayCtrl 51);};
+                    sleep 0.01;
+                    openMap [false, false];
+                } else {
+                    ((findDisplay 12) displayCtrl 51) ctrlMapAnimAdd [0, _zoomlevel, _p];
+                    ctrlMapAnimCommit ((findDisplay 12) displayCtrl 51);
+                };
             };
         };
 

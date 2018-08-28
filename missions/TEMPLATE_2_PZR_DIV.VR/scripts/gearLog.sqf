@@ -1,5 +1,5 @@
 ﻿
-// Logs all player and named vehicle loadouts to the computers of Haas, Madsen, Schuttler, Sauer, Schmidt, and Brauer
+// Logs all player and named vehicle loadouts to the computers of Haas, Madsen, Schuttler, Sauer, and Brauer
 // Logs are localed in your root ARMA folder with a name like debug_console_x64_2018-01-29_19-26-42.txt
 // If you want to log to your own computer as well then you need to do two things:
     // 1) download Killzone Kid's debug extension, place the .dll file in your ARMA root folder
@@ -25,12 +25,11 @@
 _uid = getPlayerUID player;
     // note that the UID won't match in single player, so this will only log in multiplayer
 if (
-        ((_uid == "76561197970317496") && (loggingEnabled == 1)) ||
-        ((_uid == "76561197983143701") && (loggingEnabled == 1)) ||
-        ((_uid == "76561198096113294") && (loggingEnabled == 1)) ||
-        ((_uid == "76561197985738940") && (loggingEnabled == 1)) ||
-        ((_uid == "76561198007878058") && (loggingEnabled == 1)) ||
-        ((_uid == "76561198006804011") && (loggingEnabled == 1))
+        ((_uid == "76561197970317496") && (loggingEnabled == 1)) || // Haas
+        ((_uid == "76561197983143701") && (loggingEnabled == 1)) || // Madsen
+        ((_uid == "76561198096113294") && (loggingEnabled == 1)) || // Schuttler
+        ((_uid == "76561197985738940") && (loggingEnabled == 1)) || // Sauer
+        ((_uid == "76561198006804011") && (loggingEnabled == 1))    // Brauer
     ) then {
 
     #include "debug_console.hpp"

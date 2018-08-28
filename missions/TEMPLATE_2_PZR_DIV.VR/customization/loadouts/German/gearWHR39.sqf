@@ -224,7 +224,7 @@
         //Extra
         [Ger_Gren_Frag_SC,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
 
     //Funker
@@ -435,7 +435,7 @@
 
         //Extra
         [Ger_Gren_Frag_SC,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
 
     //Gewehrschütze
@@ -453,7 +453,7 @@
 
         //Extra
         [Ger_Gren_Frag_SC,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Mag_MG_50,1] call FNC_AddItem;
     };
 
@@ -609,7 +609,7 @@
 
         //Extra
         [Ger_Mag_PzB39,20,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -648,7 +648,7 @@
 
         //Extra
         [Ger_Mag_PzB39,20,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
 
 //Tank Crew

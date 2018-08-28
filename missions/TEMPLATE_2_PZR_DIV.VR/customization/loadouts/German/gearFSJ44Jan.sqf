@@ -140,7 +140,7 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [
         [//M24
         [Ger_Gren_Frag_SC,1]
@@ -263,7 +263,7 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [
         [//M24
         [Ger_Gren_Frag_SC,1]
@@ -313,7 +313,7 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [
         [//M24
         [Ger_Gren_Frag_SC,1]
@@ -363,7 +363,7 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [
         [//M24
         [Ger_Gren_Frag_SC,1]
@@ -446,7 +446,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
         [Ger_Mag_MG_50,1] call FNC_AddItem;
     };
@@ -477,7 +477,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
         [Ger_Mag_MG_50,1] call FNC_AddItem;
     };
@@ -604,7 +604,7 @@
         [Ger_Gren_Frag_SF,1]
         ],[34]
         ] call FNC_AddItemRandomPercent;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
 
     //Grenadier
@@ -690,5 +690,5 @@
         [Ger_Gren_Frag_SF,1]
         ],[34]
         ] call FNC_AddItemRandomPercent;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };

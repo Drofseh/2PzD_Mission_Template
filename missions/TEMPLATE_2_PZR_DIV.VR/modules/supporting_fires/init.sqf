@@ -123,12 +123,12 @@ if (side player == WEST) then {
 
     shellDispersion = shellDispersionWEST;
     shellAccuracy = shellAccuracyWEST;
-    
+
     originalShellDispersion = shellDispersionWEST;
     originalShellAccuracy = shellAccuracy;
-    
+
     #include "actions.sqf"
-    
+
     if (shellsHE_AmmoCountWEST >= 1 || shellsSmoke_AmmoCountWEST >= 1 || shellsFlare_AmmoCountWEST >= 1) then {
         def_fireMissionBriefingMessage;
     };
@@ -155,12 +155,12 @@ if (side player == EAST) then {
 
     shellDispersion = shellDispersionEAST;
     shellAccuracy = shellAccuracyEAST;
-    
+
     originalShellDispersion = shellDispersionEAST;
     originalShellAccuracy = shellAccuracyEAST;
-    
+
     #include "actions.sqf"
-    
+
     if (shellsHE_AmmoCountEAST >= 1 || shellsSmoke_AmmoCountEAST >= 1 || shellsFlare_AmmoCountEAST >= 1) then {
         def_fireMissionBriefingMessage;
     };
@@ -187,12 +187,12 @@ if (side player == independent) then {
 
     shellDispersion = shellDispersionGUER;
     shellAccuracy = shellAccuracyGUER;
-    
+
     originalShellDispersion = shellDispersionGUER;
     originalShellAccuracy = shellAccuracyGUER;
-    
+
     #include "actions.sqf"
-    
+
     if (shellsHE_AmmoCountGUER >= 1 || shellsSmoke_AmmoCountGUER >= 1 || shellsFlare_AmmoCountGUER >= 1) then {
         def_fireMissionBriefingMessage;
     };

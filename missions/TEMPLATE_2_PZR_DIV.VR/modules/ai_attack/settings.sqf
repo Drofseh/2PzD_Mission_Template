@@ -41,10 +41,10 @@ Register Unit:
     gearscript -String - olsen framework gearscript identifier : "" for none
     skill - float(0,1) - skill level of unit
 
-    Notes:  for standard west use     "B_Soldier_F"
-            for standard guer use     "I_G_Soldier_F"
-            for standard guer use     "O_G_Soldier_F"
-    Do not mix standard classname side with the spawned side as they will shoot each other. Example which is wrong    B_Soldier_F and resistance. This will make shoot them each other;
+    Notes:  for standard west use    "B_Soldier_F"
+            for standard guer use    "I_G_Soldier_F"
+            for standard guer use    "O_G_Soldier_F"
+    Do not mix standard classname side with the spawned side as they will shoot each other. Example which is wrong  B_Soldier_F and resistance. This will make shoot them each other;
     ["Ins_Rif","B_Soldier_F"] call FNC_AtkRegisterUnit; WRONG if used together
     [["path1"],["Ins_Rif"],resistance,3,5,20,10,60,true] call FNC_AtkRandomStart; WRONG if used together
 

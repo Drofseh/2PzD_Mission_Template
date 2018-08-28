@@ -246,7 +246,7 @@
         ],[34]
         ] call FNC_AddItemRandomPercent;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
 
     //Funker
@@ -722,7 +722,7 @@
         [Ger_Gren_Frag_SF,1]
         ],[34]
         ] call FNC_AddItemRandomPercent;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
 
     //Gewehrschütze
@@ -783,7 +783,7 @@
         [Ger_Gren_Frag_SF,1]
         ],[34]
         ] call FNC_AddItemRandomPercent;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Mag_MG_50,3] call FNC_AddItem;
     };
 
@@ -1092,7 +1092,7 @@
 
         //Extra
         [Ger_Mag_PzB39,20,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -1176,7 +1176,7 @@
 
         //Extra
         [Ger_Mag_PzB39,20,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
 
     //Panzerschreck Team

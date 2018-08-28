@@ -19,23 +19,16 @@ _null = [] spawn {
     [1,"BLACK",5,1] call BIS_fnc_fadeEffect; 
 };
 
-// Check if tickets remain and play dead message
+// Check if tickets remain and play appropriate dead message
 if (FW_RespawnTickets > 0) then {
-
     ["<t color='#ff0000' size = '1.25'><br/>You are dead.<br/><br/>Respawning", 0, 0.2, 5, 0.5, 0, 1000] spawn BIS_fnc_dynamicText;
-
 } else {
-
     setPlayerRespawnTime 10e10;
-    
     //systemChat str playerRespawnTime;
 
     ["<t color='#ff0000' size = '1.25'>You are dead.", 0, 0.2, 5, 0.5, 0, 1000] spawn BIS_fnc_dynamicText;
 
     player setVariable ["FW_Dead", true, true]; //Tells the framework the player is dead
-
-    //"DeadText" cutText ["<t size = '2'>You are dead.</t>", "BLACK", 0.1, true, true];
-    //"DeadText" cutFadeOut 5;
 };
 
 // force into ACE Spectator and update visible sides based on mission setting

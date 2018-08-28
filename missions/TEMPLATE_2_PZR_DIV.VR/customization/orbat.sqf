@@ -59,14 +59,19 @@ _groups = _groups - _hiddenGroups;
             _leaderPrep04 = _leaderPrep02 select 1;
             _leaderRole = [_leaderPrep04,_leaderPrep03] joinString " | ";
             _orbatText = _orbatText + format ["<font color='%3' size='16'>%1 - %2</font>", _leaderRole, name leader _x,_color] + "<br />";
-        } else {
-            // If no @ is found, then it will just use the description string as written
-            _leaderRole = roleDescription _groupleader;
+    } else {
+        // If no @ is found, then it will just use the description string as written
+        _leaderRole = roleDescription _groupleader;
 
-            // If the any of the above variables are nil then things break (either because the leader is AI or because it wasn't slotted)
-            // This will force _leaderRole to a value that can be output as part of _orbatText
-            if (isNil _leaderRole) then { _leaderRole = "Leader" };
-            _orbatText = _orbatText + format ["<font color='%3' size='16'>%1 - %2</font>", _leaderRole, name leader _x,_color] + "<br />";
+        // If the any of the above variables are nil then things break (either because the leader is AI or because it wasn't slotted)
+        // This will force _leaderRole to a value that can be output as part of _orbatText
+        if (isNil _leaderRole) then {
+            _leaderRole = "Leader";
+        };
+        if (_leaderRole == "") then {
+            _roleRole = "Leader";
+        };
+        _orbatText = _orbatText + format ["<font color='%3' size='16'>%1 - %2</font>", _leaderRole, name leader _x,_color] + "<br />";
     }; // End Leader
 
     // Group members - This will take the name and description of each group member and place them under the leader.
@@ -80,8 +85,12 @@ _groups = _groups - _hiddenGroups;
                 _orbatText = _orbatText + format["<font size='14'>    |--- %1 | %2</font>", _roleRole, name _x] + "<br />";
             } else {
                 _roleRole = roleDescription _x;
-                if (isNil _roleRole) then { _roleRole = "Group Member" };
-                if (_roleRole == "") then { _roleRole = "Group Member" };
+                if (isNil _roleRole) then {
+                    _roleRole = "Group Member";
+                };
+                if (_roleRole == "") then {
+                    _roleRole = "Group Member";
+                };
                 _orbatText = _orbatText + format ["<font size='14'>    |--- %1 | %2</font>", _roleRole, name _x] + "<br />";
             };
         };

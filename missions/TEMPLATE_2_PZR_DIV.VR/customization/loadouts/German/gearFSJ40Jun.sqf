@@ -111,7 +111,7 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Frag_SC,1] call FNC_AddItem;
     };
 
@@ -197,7 +197,7 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Frag_SC,1] call FNC_AddItem;
     };
 
@@ -219,7 +219,7 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Frag_SC,1] call FNC_AddItem;
     };
 
@@ -241,7 +241,7 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Frag_SC,1] call FNC_AddItem;
     };
 
@@ -286,7 +286,7 @@
         [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
         [Ger_Mag_MG_50,1] call FNC_AddItem;
     };
@@ -308,7 +308,7 @@
         [Ger_Mag_MP40,6,"vest"] call FNC_AddItem;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
         [Ger_Mag_MG_50,1] call FNC_AddItem;
     };
@@ -397,7 +397,7 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
         [Ger_Gren_Frag_SC,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
 
     //Grenadier
@@ -443,5 +443,5 @@
         [Ger_Mag_MG_50,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
         [Ger_Gren_Frag_SC,1] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };

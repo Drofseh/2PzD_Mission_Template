@@ -5,6 +5,14 @@ switch (side player) do { // Checks what team the player is on
 
 // use </br> to make a line break, if you don't do this your briefing will all be on one line.
 
+/* Heading convensions are as follows:
+I. Main Briefing Sections - Captial Roman Numerals, I, II, III, IV, etc
+  A. Main Sub-sections - Capital Latin Letters, A, B, C, D, etc
+    1. Second Order Sub-sections, Arabic Numerals, 1, 2, 3, 4, etc
+      a. Third Order Sub-sections, Lowercase Latin Letters, a, b, c, d, etc
+        i. Forth order Sub-sections, Lowercase Roman Numerals, i, ii, iii, iv, etc
+*/
+
 // Other formatting may be used on text by including it inside <font> </font> tags.
 // For example:
 // <font color='#BBBBBB' size='16' face='PuristaBold'>This example formats the colour, size, and font of the text.</font><br/>
@@ -65,7 +73,7 @@ NEWTAB("III. Aufklärung (Intelligence):")
 <br/>
 ENDTAB;
 
-NEWTAB("B. Feindliche Kräfte (Enemy Forces):")
+NEWTAB("III. B. Feindliche Kräfte (Enemy Forces):")
 // Name of the enemy force(s) here.
 // Ex. Armed Forces of the Russian Federation (MSV)
 <br/><font size='14'>Red Army</font>
@@ -106,7 +114,7 @@ NEWTAB("B. Feindliche Kräfte (Enemy Forces):")
 <br/>
 ENDTAB;
 
-NEWTAB("C. Eigene Kräfte (Friendly Forces):")
+NEWTAB("III. C. Eigene Kräfte (Friendly Forces):")
 // Name of friendly force(s) here.
 <br/><font size='14'>2. Panzer Division</font>
 <br/>
@@ -186,26 +194,31 @@ ENDTAB;
 NEWTAB("V. Logistik (Sustainment):")
 <font color='#FF8C00' size='16'>A. Equipment Variations</font>
 // Any changes from standard to any of the following.
-<br/>1. Dress: None
+<br/><font color='#70db70' size='14'>1. Dress:</font>
+<br/>None
 <br/>
-<br/>2. Equipment: None
+<br/><font color='#70db70' size='14'>2. Equipment:</font>
+<br/>None
 <br/>
-<br/>3. Weapons: None
+<br/><font color='#70db70' size='14'>3. Weapons:</font>
+<br/>None
 <br/>
-<br/>4. Vehicle Loading: None
+<br/><font color='#70db70' size='14'>4. Vehicle Loading:</font>
+<br/>None
 <br/>
 <br/><font color='#FF8C00' size='16'>B. Logistic Support</font>
 // Any special re-supply plans put here, example - Helicopters will bring a crate of ammunition after ....
-<br/>1. Replen Plan: Supplies for each Gruppe are carried in their Schützenpanzerwagen.
+<br/><font color='#70db70' size='14'>1. Replen Plan:</font>
+<br/>Supplies for each Gruppe are carried in their Schützenpanzerwagen.
 <br/>
-<br/>2. Ammunition: Each man carries his own ammunition.
+<br/><font color='#70db70' size='14'>2. Ammunition:</font>
+<br/>Each man carries his own ammunition.
 <br/>
-<br/>3. Protective Equipment: Helmets are to be worn at all times.
+<br/><font color='#70db70' size='14'>3. Protective Equipment:</font>
+<br/>Helmets are to be worn at all times.
 <br/>
 <br/><font color='#FF8C00' size='16'>C. Medical</font>
-<br/>1. Stretchers: None
-<br/>
-<br/>2. Med Packs and Morphine: Supplies for each Gruppe are carried in their Schützenpanzerwagen.
+<br/>Medical supplies for each Zug are carried in their Zugtrupp Schützenpanzerwagen.
 ENDTAB;
 
 NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
@@ -213,29 +226,29 @@ NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
 <br/>
 <br/><font color='#70db70' size='14'>1. Succession of Command:</font>
 //Who will take over when casualties occur among leadership elements
-<br/>1 Kompanieführer
+<br/>Kompanieführer
 <br/>1 Zug Zugführer
-<br/>   1 Zug Stellver. Zugführer
-<br/>       1 Gruppe Gruppenführer
-<br/>           1 Gruppe Stellver. Gruppenführer
-<br/>           1 Gruppe Gefreiter
-<br/>       2 Gruppe Gruppenführer
-<br/>           2 Gruppe Stellver. Gruppenführer
-<br/>           2 Gruppe Gefreiter
-<br/>       3 Gruppe Gruppenführer
-<br/>           3 Gruppe Stellver. Gruppenführer
-<br/>           3 Gruppe Gefreiter
+//<br/>  1 Zug Stellver. Zugführer
+<br/>    1 Gruppe Gruppenführer
+//<br/>      1 Gruppe Stellver. Gruppenführer
+//<br/>      1 Gruppe Gefreiter
+<br/>    2 Gruppe Gruppenführer
+//<br/>      2 Gruppe Stellver. Gruppenführer
+//<br/>      2 Gruppe Gefreiter
+<br/>    3 Gruppe Gruppenführer
+//<br/>      3 Gruppe Stellver. Gruppenführer
+//<br/>      3 Gruppe Gefreiter
 <br/>2 Zug Zugführer
-<br/>   2 Zug Stellver. Zugführer
-<br/>       1 Gruppe Gruppenführer
-<br/>           1 Gruppe Stellver. Gruppenführer
-<br/>           1 Gruppe Gefreiter
-<br/>       2 Gruppe Gruppenführer
-<br/>           2 Gruppe Stellver. Gruppenführer
-<br/>           2 Gruppe Gefreiter
-<br/>       3 Gruppe Gruppenführer
-<br/>           3 Gruppe Stellver. Gruppenführer
-<br/>           3 Gruppe Gefreiter
+//<br/>  2 Zug Stellver. Zugführer
+<br/>    1 Gruppe Gruppenführer
+//<br/>      1 Gruppe Stellver. Gruppenführer
+//<br/>      1 Gruppe Gefreiter
+<br/>    2 Gruppe Gruppenführer
+//<br/>      2 Gruppe Stellver. Gruppenführer
+//<br/>      2 Gruppe Gefreiter
+<br/>    3 Gruppe Gruppenführer
+//<br/>      3 Gruppe Stellver. Gruppenführer
+//<br/>      3 Gruppe Gefreiter
 <br/>
 <br/><font color='#70db70' size='14'>2. Higher Level Command Post:</font>
 // Company or Division HQ location, mostly useful for campaign so comment it out with // if not needed.
@@ -249,19 +262,19 @@ NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
 <br/>HQ - Kompanietrupp
 <br/>
 <br/>1'0 - 1 Zug Zugtrupp
-<br/>    1'1 - 1 Zug 1 Gruppe
-<br/>    1'2 - 1 Zug 2 Gruppe
-<br/>    1'3 - 1 Zug 3 Gruppe
+<br/>  1'1 - 1 Zug 1 Gruppe
+<br/>  1'2 - 1 Zug 2 Gruppe
+<br/>  1'3 - 1 Zug 3 Gruppe
 <br/>
 <br/>2'0 - 2 Zug Zugtrupp
-<br/>    2'1 - 2 Zug 1 Gruppe
-<br/>    2'2 - 2 Zug 2 Gruppe
-<br/>    2'3 - 2 Zug 3 Gruppe
+<br/>  2'1 - 2 Zug 1 Gruppe
+<br/>  2'2 - 2 Zug 2 Gruppe
+<br/>  2'3 - 2 Zug 3 Gruppe
 <br/>
 <br/>Eva - The tank.
 <br/>
 <br/>Actual - Used for the actual commander of the unit.
-<br/>   For example 1 Actual would be the 1 Zug Zugführer personally, not his radio operator. //'
+<br/>For example 1 Actual would be the 1 Zug Zugführer personally, not his Funker.
 <br/>
 <br/>Ende - Out, reply not required.
 <br/>
@@ -269,17 +282,17 @@ NEWTAB("VI. Führung & Gefechtssignale (Command & Signal):")
 <br/>
 <br/><font color='#70db70' size='14'>2. Radio Frequencies:</font>
 //Include others as needed
-<br/>
 <br/>Frequency 51.00 mhz - Kompanie Net
 <br/>Frequency 31.00 mhz - 1 Zug Sub-Net
 <br/>Frequency 54.00 mhz - 2 Zug Sub-Net
 <br/>
 <br/><font color='#70db70' size='14'>3. Special Signals</font>
 //Include others as needed
+<br/>a. Hand Signals
 <br/>Waving like a idiot - Don't shoot me //'
 <br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me //'
 <br/>
-<br/>Smoke:
+<br/>b. Smoke Signals:
 <br/>Green - Go signal
 <br/>Red - Stop/halt signal
 <br/>Purple - Request support
@@ -341,7 +354,7 @@ NEWTAB("III. Разведка (Intelligence):")
 <br/>
 ENDTAB;
 
-NEWTAB("B. Вражеские Силы (Enemy Forces):")
+NEWTAB("III. B. Вражеские Силы (Enemy Forces):")
 // Name of the enemy force(s) here.
 // Ex. Armed Forces of the Russian Federation (MSV)
 <br/><br/><font size='14'>German Wehrmacht</font>
@@ -382,7 +395,7 @@ NEWTAB("B. Вражеские Силы (Enemy Forces):")
 <br/>
 ENDTAB;
 
-NEWTAB("C. Дружественные Силы (Friendly Forces):")
+NEWTAB("III. C. Дружественные Силы (Friendly Forces):")
 // Name of friendly force(s) here.
 <br/><font size='14'>The Red Army</font>
 <br/>
@@ -462,27 +475,31 @@ ENDTAB;
 NEWTAB("V. поддержка (Sustainment):")
 <font color='#FF8C00' size='16'>A. Equipment Variations</font>
 // Any changes from standard to any of the following.
-<br/>1. Dress: None
+<br/><font color='#70db70' size='14'>1. Dress:</font>
+<br/>None
 <br/>
-<br/>2. Equipment: None
+<br/><font color='#70db70' size='14'>2. Equipment:</font>
+<br/>None
 <br/>
-<br/>3. Weapons: None
+<br/><font color='#70db70' size='14'>3. Weapons:</font>
+<br/>None
 <br/>
-<br/>4. Vehicle Loading: None
+<br/><font color='#70db70' size='14'>4. Vehicle Loading:</font>
+<br/>None
 <br/>
 <br/><font color='#FF8C00' size='16'>B. Logistic Support</font>
 // Any special re-supply plans put here, example - Helicopters will bring a crate of ammunition after ....
-<br/>1. Replen Plan: Supplies for each squad are carried in their own truck.
+<br/><font color='#70db70' size='14'>1. Replen Plan:</font>
+<br/>Supplies for each squad are carried in their own truck.
 <br/>
-<br/>2. Ammunition: Each man carries his own ammunition.
+<br/><font color='#70db70' size='14'>2. Ammunition:</font>
+<br/>Each man carries his own ammunition.
 <br/>
-<br/>3. Protective Equipment: Helmets are to be worn at all times.
+<br/><font color='#70db70' size='14'>3. Protective Equipment:</font>
+<br/>Helmets are to be worn at all times.
 <br/>
 <br/><font color='#FF8C00' size='16'>C. Medical</font>
-<br/>1. Stretchers: None
-<br/>
-<br/>2. Med Packs and Morphine: Supplies for each squad are carried in their own truck.
-<br/>
+<br/>Medical supplies for each platoon are carried in their platoon HQ truck.
 ENDTAB;
 
 NEWTAB("VI. Командная и сигнальная (Command & Signal):")
@@ -490,17 +507,17 @@ NEWTAB("VI. Командная и сигнальная (Command & Signal):")
 <br/>
 <br/><font color='#70db70' size='14'>1. Succession of Command:</font>
 //Who will take over when casualties occur among leadership elements
-<br/>1 Company Commander
-<br/>1 Platoon, Platoon Commander
-<br/>2 Platoon, Platoon Commander
-//<br/>1 Platoon, Platoon Sergeant
-//<br/>2 Platoon, Platoon Sergeant
-<br/>1 Platoon, 1 Squad, Squad Leader
-<br/>2 Platoon, 1 Squad, Squad Leader
-<br/>1 Platoon, 2 Squad, Squad Leader
-<br/>2 Platoon, 2 Squad, Squad Leader
-<br/>1 Platoon, 3 Squad, Squad Leader
-<br/>2 Platoon, 3 Squad, Squad Leader
+<br/>Company Commander
+<br/>  1 Platoon, Platoon Commander
+//<br/>  1 Platoon, Platoon Sergeant
+<br/>    1 Platoon, 1 Squad, Squad Leader
+<br/>    1 Platoon, 2 Squad, Squad Leader
+<br/>    1 Platoon, 3 Squad, Squad Leader
+<br/>  2 Platoon, Platoon Commander
+//<br/>  2 Platoon, Platoon Sergeant
+<br/>    2 Platoon, 1 Squad, Squad Leader
+<br/>    2 Platoon, 2 Squad, Squad Leader
+<br/>    2 Platoon, 3 Squad, Squad Leader
 <br/>
 <br/><font color='#70db70' size='14'>2. Higher Level Command Post:</font>
 // Company or Division HQ location, mostly useful for campaign so comment it out with // if not needed.
@@ -511,20 +528,20 @@ NEWTAB("VI. Командная и сигнальная (Command & Signal):")
 <br/><font color='#70db70' size='14'>1. Call Signs:</font>
 //Include others as needed
 <br/>
-<br/>HQ - 1 Company HQ
+<br/>HQ - Company HQ
 <br/>
 <br/>1'0 - 1 Platoon, Platoon HQ
-<br/>1'1 - 1 Platoon, 1 Squad
-<br/>1'2 - 1 Platoon, 2 Squad
-<br/>1'3 - 1 Platoon, 3 Squad
+<br/>  1'1 - 1 Platoon, 1 Squad
+<br/>  1'2 - 1 Platoon, 2 Squad
+<br/>  1'3 - 1 Platoon, 3 Squad
 <br/>
 <br/>2'0 - 2 Platoon, Platoon HQ
-<br/>2'1 - 2 Platoon, 1 Squad
-<br/>2'2 - 2 Platoon, 2 Squad
-<br/>2'3 - 2 Platoon, 3 Squad
+<br/>  2'1 - 2 Platoon, 1 Squad
+<br/>  2'2 - 2 Platoon, 2 Squad
+<br/>  2'3 - 2 Platoon, 3 Squad
 <br/>
 <br/>Actual - Used for the actual commander of the unit.
-<br/>   For example 1 Actual would be 1 Platoon, Platoon Commander personally, not his radio operator. //'
+<br/>For example 1 Actual would be 1 Platoon, Platoon Commander personally, not his radio operator.
 <br/>
 <br/>Out - Reply not required.
 <br/>
@@ -532,17 +549,17 @@ NEWTAB("VI. Командная и сигнальная (Command & Signal):")
 <br/>
 <br/><font color='#70db70' size='14'>2. Radio Frequencies:</font>
 //Include others as needed
-<br/>
 <br/>Frequency 53.00 mhz - Company Net
 <br/>Frequency 33.00 mhz - 1 Platoon Sub-Net
 <br/>Frequency 56.00 mhz - 2 Platoon Sub-Net
 <br/>
 <br/><font color='#70db70' size='14'>3. Special Signals</font>
 //Include others as needed
+<br/>a. Hand Signals
 <br/>Waving like a idiot - Don't shoot me //'
 <br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me //'
 <br/>
-<br/>Smoke:
+<br/>b. Smoke Signals:
 <br/>Green - Go signal
 <br/>Red - Stop/halt signal
 <br/>Purple - Request support
@@ -604,7 +621,7 @@ NEWTAB("III. Intelligence:")
 <br/>
 ENDTAB;
 
-NEWTAB("B. Enemy Forces:")
+NEWTAB("III. B. Enemy Forces:")
 // Name of the enemy force(s) here.
 // Ex. Armed Forces of the Russian Federation (MSV)
 <br/><br/><font size='14'>German Wehrmacht</font>
@@ -645,7 +662,7 @@ NEWTAB("B. Enemy Forces:")
 <br/>
 ENDTAB;
 
-NEWTAB("C. Friendly Forces:")
+NEWTAB("III. C. Friendly Forces:")
 // Name of friendly force(s) here.
 <br/><font size='14'>The British Army and Allied Forces</font>
 <br/>
@@ -725,27 +742,35 @@ ENDTAB;
 NEWTAB("V. Sustainment:")
 <font color='#FF8C00' size='16'>A. Equipment Variations</font>
 // Any changes from standard to any of the following.
-<br/>1. Dress: None
+<br/><font color='#70db70' size='14'>1. Dress:</font>
+<br/>None
 <br/>
-<br/>2. Equipment: None
+<br/><font color='#70db70' size='14'>2. Equipment:</font>
+<br/>None
 <br/>
-<br/>3. Weapons: None
+<br/><font color='#70db70' size='14'>3. Weapons:</font>
+<br/>None
 <br/>
-<br/>4. Vehicle Loading: None
+<br/><font color='#70db70' size='14'>4. Vehicle Loading:</font>
+<br/>None
 <br/>
 <br/><font color='#FF8C00' size='16'>B. Logistic Support</font>
 // Any special re-supply plans put here, example - Helicopters will bring a crate of ammunition after ....
-<br/>1. Replen Plan: Supplies for each squad are carried in their own truck.
+<br/><font color='#70db70' size='14'>1. Replen Plan:</font>
+<br/>Supplies for each section are carried in their own truck.
 <br/>
-<br/>2. Ammunition: Each man carries his own ammunition.
+<br/><font color='#70db70' size='14'>2. Ammunition:</font>
+<br/>Each man carries his own ammunition.
 <br/>
-<br/>3. Protective Equipment: Helmets are to be worn at all times.
+<br/><font color='#70db70' size='14'>3. Protective Equipment:</font>
+<br/>Helmets are to be worn at all times.
 <br/>
 <br/><font color='#FF8C00' size='16'>C. Medical</font>
-<br/>1. Stretchers: None
+<br/><font color='#70db70' size='14'>1. Stretchers:</font>
+<br/>None
 <br/>
-<br/>2. Med Packs and Morphine: Supplies for each squad are carried in their own truck.
-<br/>
+<br/><font color='#70db70' size='14'>2. Med Packs and Morphine:</font>
+<br/>Supplies for each section are carried in their own truck.
 ENDTAB;
 
 NEWTAB("VI. Command & Signal:")
@@ -753,17 +778,17 @@ NEWTAB("VI. Command & Signal:")
 <br/>
 <br/><font color='#70db70' size='14'>1. Succession of Command:</font>
 //Who will take over when casualties occur among leadership elements
-<br/>1 Company Commander
-<br/>1 Platoon, Platoon Commander
-<br/>2 Platoon, Platoon Commander
-//<br/>1 Platoon, Platoon Sergeant
-//<br/>2 Platoon, Platoon Sergeant
-<br/>1 Platoon, 1 Section, Section Leader
-<br/>2 Platoon, 1 Section, Section Leader
-<br/>1 Platoon, 2 Section, Section Leader
-<br/>2 Platoon, 2 Section, Section Leader
-<br/>1 Platoon, 3 Section, Section Leader
-<br/>2 Platoon, 3 Section, Section Leader
+<br/>Company Commander
+<br/>  1 Platoon, Platoon Commander
+//<br/>  1 Platoon, Platoon Sergeant
+<br/>    1 Platoon, 1 Section, Section Leader
+<br/>    1 Platoon, 2 Section, Section Leader
+<br/>    1 Platoon, 3 Section, Section Leader
+<br/>  2 Platoon, Platoon Commander
+//<br/>  2 Platoon, Platoon Sergeant
+<br/>    2 Platoon, 1 Section, Section Leader
+<br/>    2 Platoon, 2 Section, Section Leader
+<br/>    2 Platoon, 3 Section, Section Leader
 <br/>
 <br/><font color='#70db70' size='14'>2. Higher Level Command Post:</font>
 // Company or Division HQ location, mostly useful for campaign so comment it out with // if not needed.
@@ -774,20 +799,20 @@ NEWTAB("VI. Command & Signal:")
 <br/><font color='#70db70' size='14'>1. Call Signs:</font>
 //Include others as needed
 <br/>
-<br/>HQ - 1 Company HQ
+<br/>HQ - Company HQ
 <br/>
 <br/>1'0 - 1 Platoon, Platoon HQ
-<br/>1'1 - 1 Platoon, 1 Section
-<br/>1'2 - 1 Platoon, 2 Section
-<br/>1'3 - 1 Platoon, 3 Section
+<br/>  1'1 - 1 Platoon, 1 Section
+<br/>  1'2 - 1 Platoon, 2 Section
+<br/>  1'3 - 1 Platoon, 3 Section
 <br/>
 <br/>2'0 - 2 Platoon, Platoon HQ
-<br/>2'1 - 2 Platoon, 1 Section
-<br/>2'2 - 2 Platoon, 2 Section
-<br/>2'3 - 2 Platoon, 3 Section
+<br/>  2'1 - 2 Platoon, 1 Section
+<br/>  2'2 - 2 Platoon, 2 Section
+<br/>  2'3 - 2 Platoon, 3 Section
 <br/>
 <br/>Actual - Used for the actual commander of the unit.
-<br/>   For example 1 Actual would be 1 Platoon, Platoon Commander personally, not his radio operator. //'
+<br/>For example 1 Actual would be 1 Platoon, Platoon Commander personally, not his radio operator.
 <br/>
 <br/>Out - Reply not required.
 <br/>
@@ -795,17 +820,17 @@ NEWTAB("VI. Command & Signal:")
 <br/>
 <br/><font color='#70db70' size='14'>2. Radio Frequencies:</font>
 //Include others as needed
-<br/>
 <br/>Frequency 55.00 mhz - Company Net
 <br/>Frequency 35.00 mhz - 1 Platoon Sub-Net
 <br/>Frequency 58.00 mhz - 2 Platoon Sub-Net
 <br/>
 <br/><font color='#70db70' size='14'>3. Special Signals</font>
 //Include others as needed
+<br/>a. Hand Signals
 <br/>Waving like a idiot - Don't shoot me //'
 <br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me //'
 <br/>
-<br/>Smoke:
+<br/>b. Smoke Signals:
 <br/>Green - Go signal
 <br/>Red - Stop/halt signal
 <br/>Purple - Request support
@@ -867,11 +892,10 @@ ENDTAB;
 // The Zeus unit in the Essentials composition is currently set to this variable name.
 // If you wish to use a different Zeus unit then you will need to set its Variable Name yourself.
 // I strongly suggest keeping the Zeus on the Civilian side however, so they can't see any of the marks or lines the players draw on the map.
-// If no unit is named God then every player will see the first message below.
+// If no Zeus is slotted then the God variable is set to 0 and no message is shown.
+// Note, non-Zeus players will never see the Zeus Notes tab either way
+// Once a Zeus is slotted then the if statement below will take effect for them.
 if (isNil {God}) then {
-    //If no Zeus is slotted then the God variable is set to 0 and no message is shown.
-    //Note, non-Zeus players will never see the Zeus Notes tab either way
-    //Once a Zeus is slotted then the if statement below will take effect for them.
     God = 0;
 };
 if (God isEqualTo player) then {
@@ -885,28 +909,48 @@ if (God isEqualTo player) then {
     <br/>
     ENDTAB;
 };
-
 //Displays the Admin Tab for the admin, the Zeus, Haas, Madsen, Schuttler, Sauer, Schmidt, and Brauer
 _adminState = call BIS_fnc_admin;
 _uid = getPlayerUID player;
-if ((_adminState != 0) || (God isEqualTo player) || (_uid == "76561197970317496") || (_uid == "76561197983143701") || (_uid == "76561198096113294") || (_uid == "76561197985738940") || (_uid == "76561198007878058") || (_uid == "76561198006804011")) then {
+if (
+    (_adminState != 0) ||
+    (God isEqualTo player) ||
+    (_uid == "76561197970317496") || // Haas
+    (_uid == "76561197983143701") || // Madsen
+    (_uid == "76561198096113294") || // Schuttler
+    (_uid == "76561197985738940") || // Sauer
+    (_uid == "76561198006804011")    // Brauer
+) then {
     //This tab has clickable commands to allow the admin or zeus to end the mission.
     //More may be added by makin an entry here and adding a corresponding entry in the settings.sqf
     NEWTAB("Admin Tab")
-    <br/>The server admin and the zeus (if present) both have access to these options.
+    <br/>The server admin, the zeus (if present), and all Council members have access to these options.
     <br/>
-    <br/>This is used to call mission endings, please be careful since if you press it once it will end the mission.
+    <br/><font color='#70db70' size='14'>Respawn Wave:</font>
+    <br/>This is used to call a respawn wave on demand, it will give the players in spectator a single respawn with a 10 second timer.
     <br/>
-    <br/><execute expression='victoryMessage call FNC_EndMissionRequest'>Call Mission Victory</execute>
+    <br/>If the admin is dead and in spectator they can also trigger a respawn by typing the command <font color='#FF8C00'>#respawnWave</font> in spectator chat.
     <br/>
-    <br/><execute expression='failureMessage call FNC_EndMissionRequest'>Call Mission Failure</execute>
+    <br/>This must NOT be used in missions that already have respawning enabled.
+    <br/>    <execute expression='FW_RespawnTickets = 1; publicVariable ""FW_RespawnTickets""; 10 remoteExec [""setPlayerRespawnTime""]; [] spawn { sleep 30; FW_RespawnTickets = 0; publicVariable ""FW_RespawnTickets""; 10e10 remoteExec [""setPlayerRespawnTime""];};'>Call Respawn Wave</execute>
     <br/>
-    <br/>Helper checks are: //Server vars
-    <br/><execute expression='systemChat str westCasualty'>Check Bluefor Casualty Percentage</execute>
-    <br/><execute expression='systemChat str eastCasualty'>Check Opfor Casualty Percentage</execute>
-    //<br/><execute expression='systemChat str resistanceCasualty'>Check Indfor Casualty Percentage</execute>
-    //<br/><execute expression='systemChat str civilianCasualty'>Check Civilian Casualty Percentage</execute>
-    <br/><execute expression='systemChat str testVar'>Test Boolean Handling</execute>
+    <br/><font color='#70db70' size='14'>Mission Ending:</font>
+    <br/>These are used to call the mission endings that the mission maker has set up
+    <br/>
+    <br/>Please be careful as a single click will end the mission immediately.
+    <br/>
+    <br/>    <execute expression='victoryMessage call FNC_EndMissionRequest'>Call Mission Victory</execute>
+    <br/>
+    <br/>    <execute expression='failureMessage call FNC_EndMissionRequest'>Call Mission Failure</execute>
+    <br/>
+    <br/><font color='#70db70' size='14'>Helper Checks:</font>//Server vars
+    <br/>These are anything the mission maker wants to be able to check in game.
+    <br/>
+    <br/>    <execute expression='systemChat str westCasualty'>Check Bluefor Casualty Percentage</execute>
+    <br/>    <execute expression='systemChat str eastCasualty'>Check Opfor Casualty Percentage</execute>
+    //<br/>    <execute expression='systemChat str resistanceCasualty'>Check Indfor Casualty Percentage</execute>
+    //<br/>    <execute expression='systemChat str civilianCasualty'>Check Civilian Casualty Percentage</execute>
+    <br/>    <execute expression='systemChat str testVar'>Test Boolean Handling</execute>
     ENDTAB;
 };
 

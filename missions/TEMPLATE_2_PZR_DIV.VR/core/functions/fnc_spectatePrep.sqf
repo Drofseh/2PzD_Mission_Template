@@ -16,7 +16,7 @@ if (FW_RespawnTickets > 0) then {
 
     [false] call acre_api_fnc_setSpectator;
     // systemChat "Acre Spec UnSet";
-    
+
     [false] call ace_spectator_fnc_setSpectator;
     // systemChat "ACE Spec UnSet";
 
@@ -26,15 +26,11 @@ if (FW_RespawnTickets > 0) then {
     private _loadout = (player getVariable ["FW_Loadout", ""]);
 
     if (_loadout != "") then {
-
         [player, _loadout] call FNC_GearScript;
-
     };
 
     if (!isNull(_respawnPoint)) then {
-
         player setPos getPosATL _respawnPoint;
-
     };
 
     FW_RespawnTickets = FW_RespawnTickets - 1;
@@ -42,32 +38,29 @@ if (FW_RespawnTickets > 0) then {
     private _text = "respawns left";
 
     if (FW_RespawnTickets == 1) then {
-
         _text = "respawn left";
-
     };
 
     cutText [format ['%1 %2', FW_RespawnTickets, _text], 'PLAIN DOWN'];
 
-    player setVariable ["FW_Body", player, true];
+    player setVariable ["FW_Dead", false, true]; //Tells the framework the player is alive
+    player setVariable ["FW_Body", player, true]; //Remembers his old body for spectating his dead body
 
 } else {
 
     player setVariable ["FW_Dead", true, true]; //Tells the framework the player is dead
 
-    //player setCaptive true;
+    player setCaptive true;
+
     player allowdamage false;
 
     player call FNC_RemoveAllGear;
 
     player addWeapon "itemMap";
 
-    //player setPos [0, 0, 0];
+    player setPos [0, 0, 0];
+
     [player] join grpNull;
 
     hideObjectGlobal player;
-
-    player setVariable ["FW_Spectating", true, true];
-
-    //"" execVM "core\spectate.sqf"; //This is the frameworks original spectator script
 };

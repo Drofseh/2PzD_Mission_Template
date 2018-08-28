@@ -69,13 +69,6 @@ class Params {
 
 #undef description_params
 
-//This ensures that accidental friendly fire won't prevent players from getting into vehicles with each other and other similar FF related issues
-class Extended_InitPost_EventHandlers {
-  class CAManBase {
-    class FixFriendlyFire { init = "if (local (_this select 0)) then {(_this select 0) addRating 100000;};";};
-  };
-};
-
 //This adds mARMAcp server performance reporting for http://marma.io/
 class mARMADebug {
     // Returns the world name every 60 seconds

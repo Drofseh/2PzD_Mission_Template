@@ -57,7 +57,7 @@
         [Ger_Mag_K98, 50] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 20] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 10] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SC, 20] call FNC_AddItemVehicle;
         [Ger_Mag_RGrn_ATS, 5] call FNC_AddItemVehicle;
         [Ger_Mag_RGrn_ATL, 5] call FNC_AddItemVehicle;
@@ -93,7 +93,7 @@
         [Ger_Mag_K98, 15] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 10] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 10] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 10] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SC, 20] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P08, 5] call FNC_AddItemVehicle;
@@ -117,7 +117,7 @@
         [Ger_Mag_K98, 10] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 5] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 10] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SC, 20] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 15] call FNC_AddItemVehicle;
         [Ger_Mag_P08, 5] call FNC_AddItemVehicle;
@@ -147,7 +147,7 @@
         [GEN_Epi, 4] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 5] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 5] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 5] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SC, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 12] call FNC_AddItemVehicle;
         [Ger_Mag_P08, 5] call FNC_AddItemVehicle;
@@ -173,7 +173,7 @@
         [Ger_Mag_K98, 50] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 20] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 10] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SF, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SC, 10] call FNC_AddItemVehicle;
         [Ger_Mag_RGrn_ATS, 5] call FNC_AddItemVehicle;
@@ -210,7 +210,7 @@
         [Ger_Mag_K98, 15] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 10] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 10] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 10] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SF, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SC, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 10] call FNC_AddItemVehicle;
@@ -235,7 +235,7 @@
         [Ger_Mag_K98, 10] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 5] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 10] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SF, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SC, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 10] call FNC_AddItemVehicle;
@@ -266,7 +266,7 @@
         [GEN_Epi, 4] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 5] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 5] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 5] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SF, 5] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SC, 5] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 12] call FNC_AddItemVehicle;
@@ -294,7 +294,7 @@
         [Ger_Mag_K98, 50] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 20] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 10] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SKF, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SKC, 10] call FNC_AddItemVehicle;
         [Ger_Mag_RGrn_ATS, 5] call FNC_AddItemVehicle;
@@ -340,7 +340,7 @@
         [Ger_Mag_K98, 15] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 10] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 10] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 10] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SKF, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SKC, 10] call FNC_AddItemVehicle;
         [Ger_Mag_RGrn_ATS, 5] call FNC_AddItemVehicle;
@@ -377,7 +377,7 @@
         [Ger_Mag_K98, 10] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 5] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 10] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SKF, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SKC, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 10] call FNC_AddItemVehicle;
@@ -416,7 +416,7 @@
         [GEN_Epi, 4] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 5] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 5] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 5] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SKF, 5] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SKC, 5] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 12] call FNC_AddItemVehicle;
@@ -450,7 +450,7 @@
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 20] call FNC_AddItemVehicle;
         [Ger_Mag_StG44, 10] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 10] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SF, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SC, 10] call FNC_AddItemVehicle;
         [Ger_Mag_RGrn_ATS, 5] call FNC_AddItemVehicle;
@@ -492,7 +492,7 @@
         [Ger_Mag_MG_50, 10] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 10] call FNC_AddItemVehicle;
         [Ger_Mag_StG44, 5] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 10] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SF, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SC, 10] call FNC_AddItemVehicle;
         [Ger_Mag_RGrn_ATS, 5] call FNC_AddItemVehicle;
@@ -525,7 +525,7 @@
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 5] call FNC_AddItemVehicle;
         [Ger_Mag_StG44, 5] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 10] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SF, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SC, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 10] call FNC_AddItemVehicle;
@@ -559,7 +559,7 @@
         [GEN_Epi, 4] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 5] call FNC_AddItemVehicle;
-        [GEN_Gren_Frag_P, 5] call FNC_AddItemVehicle;
+        [Ger_Gren_Frag_P, 5] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SF, 5] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_SC, 5] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 12] call FNC_AddItemVehicle;

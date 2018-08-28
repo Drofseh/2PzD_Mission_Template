@@ -52,8 +52,9 @@ if (!isDedicated) then {
                     } forEach _markers;
 
                     if (_outside) then {
-                        if (!(_allowedOutside) && (_vehicle call FNC_Alive)) then {
-                            _vehicle setPos _pos;
+                        if (!(_allowedOutside) && (_vehicle call FNC_Alive) && local _vehicle) then {
+                            _vehicle setPosATL _pos;
+                            _vehicle setVelocity (velocity _vehicle apply {- _x});
                         };
                     } else {
                         _allowedOutside = false;
@@ -64,7 +65,7 @@ if (!isDedicated) then {
                     _allowedOutside = true;
                 };
 
-                sleep(0.1);
+                sleep 0.1;
 
             };
 

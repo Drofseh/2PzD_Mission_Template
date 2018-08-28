@@ -51,6 +51,7 @@
         [UK_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
+
         //Assigned Items
         UK_default_equipment;
         UK_leader_equipment;

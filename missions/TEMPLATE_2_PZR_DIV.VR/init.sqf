@@ -34,7 +34,36 @@ if (isServer) then {
             };
         };
     };
+
+    [] spawn {
+        sleep 1;
+        {
+            _callsignPrep01 = roleDescription (leader _x);
+            //systemChat str _callsignPrep01;
+            if (["@",_callsignPrep01] call BIS_fnc_inString) then {
+                _callsignPrep02 = _callsignPrep01 splitString "@";
+                //systemChat str _callsignPrep02;
+                _callsignValue = _callsignPrep02 select 1;
+                //systemChat str _callsignValue;
+                [_x, _callsignValue] call CBA_fnc_setCallsign;
+                //systemChat ((str _callsignValue) + "done.");
+            };
+        } forEach allGroups;
+    };
 };
+
+["respawnWave", {
+    FW_RespawnTickets = 1;
+    publicVariable "FW_RespawnTickets";
+    10 remoteExec ["setPlayerRespawnTime"];
+    [] spawn {
+        sleep 30;
+        FW_RespawnTickets = 0;
+        publicVariable "FW_RespawnTickets";
+        10e10 remoteExec ["setPlayerRespawnTime"];
+    };
+}, "admin"] call CBA_fnc_registerChatCommand;
+
 /*
 if (!isDedicated) then { //This scope is for the player & the Headless Clients
     if (FW_RespawnTickets > 0) then {

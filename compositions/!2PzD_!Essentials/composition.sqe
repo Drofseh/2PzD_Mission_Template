@@ -1,12 +1,12 @@
 version=53;
-center[]={443.82916,5,694.44714};
+center[]={444.14862,5,695.29706};
 class items
 {
-	items=12;
+	items=11;
 	class Item0
 	{
 		dataType="Marker";
-		position[]={0.09677124,0,4.1065674};
+		position[]={-0.22268677,0,3.2566528};
 		name="AO";
 		markerType="RECTANGLE";
 		type="Empty";
@@ -20,7 +20,7 @@ class items
 	class Item1
 	{
 		dataType="Marker";
-		position[]={0.086090088,0,5.1477661};
+		position[]={-0.23336792,0,4.2978516};
 		name="SpectatorMarker";
 		type="Empty";
 		id=1;
@@ -30,7 +30,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.1741943,0,1.5862427};
+			position[]={1.8547363,0,0.73632813};
 		};
 		id=2643;
 		type="ModuleCurator_F";
@@ -139,7 +139,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-1.8692627,0,1.5718384};
+			position[]={-2.1887207,0,0.72192383};
 		};
 		id=2741;
 		type="acex_headless_module";
@@ -229,7 +229,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.16638184,0,2.085083};
+			position[]={-0.15307617,0,1.2351685};
 		};
 		name="HC";
 		init="call{this setGroupId [""Headless Client 01""];}";
@@ -243,7 +243,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.0996094,0,-0.49951172};
+			position[]={1.7801514,0,-1.3494263};
 		};
 		id=9628;
 		type="ModuleCurator_F";
@@ -359,7 +359,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.12911987,0.0014390945,-0.40081787};
+					position[]={-0.19061279,0.0014390945,-1.2510986};
 				};
 				side="Civilian";
 				flags=6;
@@ -369,6 +369,7 @@ class items
 					init="call{this setVariable [""ace_w_allow_dam"",false,true];" \n "this allowDamage false; " \n "this addItemToUniform ""NVGoggles_OPFOR""; " \n "this linkItem ""ItemWatch"";}";
 					name="God";
 					description="Zeus@Mount Olympus";
+					isPlayer=1;
 					isPlayable=1;
 				};
 				id=30778;
@@ -712,7 +713,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.16638184,0,1.585083};
+			position[]={-0.15307617,0,0.73516846};
 		};
 		name="HC_1";
 		init="call{this setGroupId [""Headless Client 02""];}";
@@ -726,7 +727,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.16638184,0,1.085083};
+			position[]={-0.15307617,0,0.23516846};
 		};
 		name="HC_2";
 		init="call{this setGroupId [""Headless Client 03""];}";
@@ -737,899 +738,26 @@ class items
 	};
 	class Item9
 	{
-		dataType="Group";
-		side="Civilian";
-		class Entities
+		dataType="Logic";
+		class PositionInfo
 		{
-			items=2;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={0.14736938,0.0014390945,-2.3952637};
-				};
-				side="Civilian";
-				flags=6;
-				class Attributes
-				{
-					rank="CAPTAIN";
-					init="call{this setVariable [""ace_w_allow_dam"",false,true];" \n "this allowDamage false; " \n "this addItemToUniform ""NVGoggles_OPFOR""; " \n "this linkItem ""ItemWatch"";}";
-					name="CameraMan_01";
-					description="Camera Man@Media Team";
-					isPlayable=1;
-				};
-				id=43482;
-				type="LIB_CIV_Functionary_4";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_animCombEquipment";
-						expression="_this setVariable ['Enh_animCombEquipment',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="ASIS";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="allowDamage";
-						expression="_this allowdamage _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="Enh_onRespawnEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="enableStamina";
-						expression="_this enablestamina _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="acex_headless_blacklist";
-						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="Enh_taskPatrol_formation";
-						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
-						class Value
-						{
-							class data
-							{
-								nil=1;
-								class type
-								{
-									type[]=
-									{
-										"ANY"
-									};
-								};
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="Enh_onDamagedEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="Enh_taskPatrol_speed";
-						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="LIMITED";
-							};
-						};
-					};
-					class Attribute8
-					{
-						property="Enh_animCombType";
-						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					class Attribute9
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male01SU";
-							};
-						};
-					};
-					class Attribute10
-					{
-						property="Enh_animEquipment";
-						expression="_this setVariable ['Enh_animEquipment',_value];";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="ASIS";
-							};
-						};
-					};
-					class Attribute11
-					{
-						property="hideObject";
-						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute12
-					{
-						property="Enh_onKilledEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute13
-					{
-						property="Enh_removeWeapon";
-						expression="		removeAllWeapons _this;		_this switchMove 'AmovPercMstpSnonWnonDnon'	";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute14
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.03;
-							};
-						};
-					};
-					class Attribute15
-					{
-						property="Enh_taskPatrol_behaviour";
-						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="SAFE";
-							};
-						};
-					};
-					class Attribute16
-					{
-						property="Enh_taskPatrol_combatMode";
-						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					class Attribute17
-					{
-						property="Enh_animType";
-						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					nAttributes=18;
-				};
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={0.1472168,0.0014390945,-4.3829956};
-				};
-				side="Civilian";
-				flags=4;
-				class Attributes
-				{
-					rank="CAPTAIN";
-					init="call{this setVariable [""ace_w_allow_dam"",false,true];" \n "this allowDamage false; " \n "this addItemToUniform ""NVGoggles_OPFOR""; " \n "this linkItem ""ItemWatch"";}";
-					name="CameraMan_02";
-					description="Camera Man@Media Team";
-					isPlayable=1;
-				};
-				id=43484;
-				type="LIB_CIV_Functionary_4";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_animCombEquipment";
-						expression="_this setVariable ['Enh_animCombEquipment',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="ASIS";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="allowDamage";
-						expression="_this allowdamage _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
-						property="Enh_onRespawnEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="enableStamina";
-						expression="_this enablestamina _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="acex_headless_blacklist";
-						expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="Enh_taskPatrol_formation";
-						expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
-						class Value
-						{
-							class data
-							{
-								nil=1;
-								class type
-								{
-									type[]=
-									{
-										"ANY"
-									};
-								};
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="Enh_onDamagedEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="Enh_taskPatrol_speed";
-						expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="LIMITED";
-							};
-						};
-					};
-					class Attribute8
-					{
-						property="Enh_animCombType";
-						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					class Attribute9
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male01SU";
-							};
-						};
-					};
-					class Attribute10
-					{
-						property="Enh_animEquipment";
-						expression="_this setVariable ['Enh_animEquipment',_value];";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="ASIS";
-							};
-						};
-					};
-					class Attribute11
-					{
-						property="hideObject";
-						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute12
-					{
-						property="Enh_onKilledEvent";
-						expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="false";
-							};
-						};
-					};
-					class Attribute13
-					{
-						property="Enh_removeWeapon";
-						expression="		removeAllWeapons _this;		_this switchMove 'AmovPercMstpSnonWnonDnon'	";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute14
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.03;
-							};
-						};
-					};
-					class Attribute15
-					{
-						property="Enh_taskPatrol_behaviour";
-						expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="SAFE";
-							};
-						};
-					};
-					class Attribute16
-					{
-						property="Enh_taskPatrol_combatMode";
-						expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					class Attribute17
-					{
-						property="Enh_animType";
-						expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					nAttributes=18;
-				};
-			};
+			position[]={-0.17163086,0,-3.2940674};
 		};
-		class Attributes
-		{
-		};
-		id=43481;
+		isPlayable=1;
+		description="Camera Man@Media Team";
+		id=44247;
+		type="ace_spectator_virtual";
 	};
 	class Item10
 	{
-		dataType="Object";
+		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-1.8117371,0.94023561,-4.4471436};
+			position[]={-0.16860962,0,-5.2740479};
 		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-		};
-		id=43486;
-		type="fow_v_truppenfahrrad_ger_heer";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="Enh_onKilledEvent";
-				expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="false";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="Enh_onRespawnEvent";
-				expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="false";
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="Enh_onDamagedEvent";
-				expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="false";
-					};
-				};
-			};
-			nAttributes=3;
-		};
-	};
-	class Item11
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={-1.8117371,0.94023561,-2.4471436};
-		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-		};
-		id=43487;
-		type="fow_v_truppenfahrrad_ger_heer";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="Enh_onKilledEvent";
-				expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="false";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="Enh_onRespawnEvent";
-				expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="false";
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="Enh_onDamagedEvent";
-				expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="false";
-					};
-				};
-			};
-			nAttributes=3;
-		};
+		isPlayable=1;
+		description="Camera Man@Media Team";
+		id=44248;
+		type="ace_spectator_virtual";
 	};
 };
