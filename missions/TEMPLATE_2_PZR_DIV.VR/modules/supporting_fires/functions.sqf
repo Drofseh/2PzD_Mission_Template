@@ -74,8 +74,8 @@ FNC_SupportFire_FireMission = {
             // systemChat "Fire missions enabled";
         };
         if (_supportFire_side isEqualTo RESISTANCE) then {
-            fireMissionAvailableWEST = True;
-            publicVariable "fireMissionAvailableWEST";
+            fireMissionAvailableGUER = True;
+            publicVariable "fireMissionAvailableGUER";
             // systemChat "Fire missions enabled";
         };
 
