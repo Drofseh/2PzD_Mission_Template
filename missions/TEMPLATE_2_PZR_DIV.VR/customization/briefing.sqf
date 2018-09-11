@@ -915,11 +915,12 @@ _uid = getPlayerUID player;
 if (
     (_adminState != 0) ||
     (God isEqualTo player) ||
+    (_uid == "76561198006804011") || // Brauer
+    (_uid == "76561197989925440") || // Falk
     (_uid == "76561197970317496") || // Haas
     (_uid == "76561197983143701") || // Madsen
-    (_uid == "76561198096113294") || // Schuttler
     (_uid == "76561197985738940") || // Sauer
-    (_uid == "76561198006804011")    // Brauer
+    (_uid == "76561198096113294")    // Schuttler
 ) then {
     //This tab has clickable commands to allow the admin or zeus to end the mission.
     //More may be added by makin an entry here and adding a corresponding entry in the settings.sqf
