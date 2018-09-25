@@ -43,6 +43,13 @@ if (FW_RespawnTickets > 0) then {
 
     cutText [format ['%1 %2', FW_RespawnTickets, _text], 'PLAIN DOWN'];
 
+    if (isNil {FW_mapRemoved}) then {
+        FW_mapRemoved = 0;
+    };
+    if (FW_mapRemoved == 1) then {
+        nul = [player] execVM "scripts\removeMap.sqf";
+    };
+
     player setVariable ["FW_Dead", false, true]; //Tells the framework the player is alive
     player setVariable ["FW_Body", player, true]; //Remembers his old body for spectating his dead body
 
