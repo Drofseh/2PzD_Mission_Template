@@ -943,6 +943,8 @@ if (
     <br/>    <execute expression='victoryMessage call FNC_EndMissionRequest'>Call Mission Victory</execute>
     <br/>
     <br/>    <execute expression='failureMessage call FNC_EndMissionRequest'>Call Mission Failure</execute>
+    //An example of a custom ending
+    //<br/>    <execute expression='myCustomMessage call FNC_EndMissionRequest'>Call My Custom Ending Example</execute>
     <br/>
     <br/><font color='#70db70' size='14'>Helper Checks:</font>//Server vars
     <br/>These are anything the mission maker wants to be able to check in game.

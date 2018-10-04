@@ -3,7 +3,6 @@ if (isServer) then { //This scope is only for the server
     setViewDistance 2000; //View distance for the server and any AI controlled by the server (Note - the server does not normally control the AI, instead the Headless Clients do)
 
     FW_TimeLimit = 4*60; //Time limit in minutes, to disable the time limit set it to 0 - Is is strongly recommended that every mission has a time limit simply to force the mission to end if it is accidentally left running.
-    FW_TimeLimitMessage = "TIME LIMIT REACHED!"; //This message displayed when the time runs out
 
     // Teams, used for the end screen and to calculate casualties on each side
     // The names in endConditions.sqf used in the casualty calls MUST match these names.
@@ -53,15 +52,3 @@ if (!isDedicated) then { //This scope is for the player & the Headless Clients
         };
     };
 };
-
-//End messages to be used with the in briefing Admin Tab end mission options.
-//Change the messages to reflect your mission and add additional messages as required.
-    victoryMessage = "
-    <br/>The Admin or Zeus has ended the mission.
-    <br/>
-    <br/>Victory";
-
-    failureMessage = "
-    <br/>The Admin or Zeus has ended the mission.
-    <br/>
-    <br/>Defeat";
