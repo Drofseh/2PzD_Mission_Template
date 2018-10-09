@@ -36,10 +36,13 @@
     };
 
     if (_totalRandom > 100 or _totalRandom < 100) exitWith {
-        (format ["AddItemRandomPercent: Warning Random Percentage total is not equal to 100 it is %3 for unit %1 , in loadout %2. It needs to be 100 exactly.", _unit, _loadoutType, _totalRandom]) call FNC_DebugMessage;
+        (format ["AddItemRandomPercent: Warning Random Percentage total is not equal to 100 it is %3 for unit %1 , in loadout %2. It must be 100 exactly.", _unit, _loadoutType, _totalRandom]) call FNC_DebugMessage;
+        if (_totalRandom != floor _totalRandom or _totalRandom != ceil _totalRandom) then {
+            "If the loadout uses a repeating decimal it must have at least 5 significant figures after the decimal point." call FNC_DebugMessage;
+        };
     };
 
-    _randomResult = [0,100] call FNC_RandomRange;
+    _randomResult = random 100;
 
     for "_i" from 1 to _itemCount step 2 do {
         _getArray = _items select _i;
@@ -52,6 +55,3 @@
 
         _randomResult = _randomResult - _check;
     };
-
-
-

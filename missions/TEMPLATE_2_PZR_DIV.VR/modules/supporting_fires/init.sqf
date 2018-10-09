@@ -42,9 +42,19 @@
         <br/>The accuracy increase represents the observer telling the artillery battery how to adjust their fire. \
         <br/> \
         <br/>The speed increase represents that the artillery doesn't have to completely recalculate their angles and re-lay their guns. \
-        <br/>This is especially helpful if you are calling a second or third fire mission on a Visual Location Target. \
+        <br/>This is helpful if you are calling a second or third fire mission on a Visual Location Target. \
         <br/> \
-        <br/><font color='#70db70' size='14'>6. The Fire Mission</font> \
+        <br/><font color='#70db70' size='14'>6. Adjust Fire</font> \
+        <br/>This calls a repeats the last fire mission (type and number of rounds), with an adjusted point of impact to bring the rounds closer to the target.\
+        <br/> \
+        <br/>It will have increased accuracy, and will arrive as quickly as if it was a pre-planned target.\
+        <br/> \
+        <br/>The accuracy increase represents the observer telling the artillery battery how to adjust their fire. \
+        <br/> \
+        <br/>The speed increase represents that the artillery doesn't have to completely recalculate their angles and re-lay their guns. \
+        <br/>This is helpful if you want to move your fire a small distance while keeping accuracy and speed. \
+        <br/> \
+        <br/><font color='#70db70' size='14'>7. The Fire Mission</font> \
         <br/>Once a target and rounds are selected the fire mission will begin automatically. \
         <br/> \
         <br/>Hints will be displayed in the top right corner of your screen (by default) to update you on the progress of the fire mission. \
@@ -103,19 +113,19 @@ target05_Name = "";
 target06_Name = "";
 
 if (side player == WEST) then {
-    target01 = target01WEST;
-    target02 = target02WEST;
-    target03 = target03WEST;
-    target04 = target04WEST;
-    target05 = target05WEST;
-    target06 = target06WEST;
+    supportFire_target01 = supportFire_target01WEST;
+    supportFire_target02 = supportFire_target02WEST;
+    supportFire_target03 = supportFire_target03WEST;
+    supportFire_target04 = supportFire_target04WEST;
+    supportFire_target05 = supportFire_target05WEST;
+    supportFire_target06 = supportFire_target06WEST;
 
-    target01_Name = target01WEST_Name;
-    target02_Name = target02WEST_Name;
-    target03_Name = target03WEST_Name;
-    target04_Name = target04WEST_Name;
-    target05_Name = target05WEST_Name;
-    target06_Name = target06WEST_Name;
+    supportFire_target01_Name = supportFire_target01WEST_Name;
+    supportFire_target02_Name = supportFire_target02WEST_Name;
+    supportFire_target03_Name = supportFire_target03WEST_Name;
+    supportFire_target04_Name = supportFire_target04WEST_Name;
+    supportFire_target05_Name = supportFire_target05WEST_Name;
+    supportFire_target06_Name = supportFire_target06WEST_Name;
 
     shellsHE_Type = shellsHE_TypeWEST;
     shellsSmoke_Type = shellsSmoke_TypeWEST;
@@ -135,19 +145,19 @@ if (side player == WEST) then {
 };
 
 if (side player == EAST) then {
-    target01 = target01EAST;
-    target02 = target02EAST;
-    target03 = target03EAST;
-    target04 = target04EAST;
-    target05 = target05EAST;
-    target06 = target06EAST;
+    supportFire_target01 = supportFire_target01EAST;
+    supportFire_target02 = supportFire_target02EAST;
+    supportFire_target03 = supportFire_target03EAST;
+    supportFire_target04 = supportFire_target04EAST;
+    supportFire_target05 = supportFire_target05EAST;
+    supportFire_target06 = supportFire_target06EAST;
 
-    target01_Name = target01EAST_Name;
-    target02_Name = target02EAST_Name;
-    target03_Name = target03EAST_Name;
-    target04_Name = target04EAST_Name;
-    target05_Name = target05EAST_Name;
-    target06_Name = target06EAST_Name;
+    supportFire_target01_Name = supportFire_target01EAST_Name;
+    supportFire_target02_Name = supportFire_target02EAST_Name;
+    supportFire_target03_Name = supportFire_target03EAST_Name;
+    supportFire_target04_Name = supportFire_target04EAST_Name;
+    supportFire_target05_Name = supportFire_target05EAST_Name;
+    supportFire_target06_Name = supportFire_target06EAST_Name;
 
     shellsHE_Type = shellsHE_TypeEAST;
     shellsSmoke_Type = shellsSmoke_TypeEAST;
@@ -167,19 +177,19 @@ if (side player == EAST) then {
 };
 
 if (side player == independent) then {
-    target01 = target01GUER;
-    target02 = target02GUER;
-    target03 = target03GUER;
-    target04 = target04GUER;
-    target05 = target05GUER;
-    target06 = target06GUER;
+    supportFire_target01 = supportFire_target01GUER;
+    supportFire_target02 = supportFire_target02GUER;
+    supportFire_target03 = supportFire_target03GUER;
+    supportFire_target04 = supportFire_target04GUER;
+    supportFire_target05 = supportFire_target05GUER;
+    supportFire_target06 = supportFire_target06GUER;
 
-    target01_Name = target01GUER_Name;
-    target02_Name = target02GUER_Name;
-    target03_Name = target03GUER_Name;
-    target04_Name = target04GUER_Name;
-    target05_Name = target05GUER_Name;
-    target06_Name = target06GUER_Name;
+    supportFire_target01_Name = supportFire_target01GUER_Name;
+    supportFire_target02_Name = supportFire_target02GUER_Name;
+    supportFire_target03_Name = supportFire_target03GUER_Name;
+    supportFire_target04_Name = supportFire_target04GUER_Name;
+    supportFire_target05_Name = supportFire_target05GUER_Name;
+    supportFire_target06_Name = supportFire_target06GUER_Name;
 
     shellsHE_Type = shellsHE_TypeGUER;
     shellsSmoke_Type = shellsSmoke_TypeGUER;

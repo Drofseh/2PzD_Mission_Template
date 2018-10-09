@@ -10,37 +10,37 @@
 //TARGETS
     // Set pre-sighted targets for each side.
     // Each target MUST be the variable name of a marker you have placed in the mission
-    // If you wish to use less than 6 targets, leave the unused targets with an empty string, ei. target06 = "";
+    // If you wish to use less than 6 targets, leave the unused targets with an empty string, ei. supportFire_target06 = "";
     // See https://gyazo.com/d66a1b6559f60e0fcf969165c93efeeb for an example
 
     //Examples:
-    //target01WEST = "marker_1";
-    //target02WEST = "marker_12";
-    //target03WEST = "marker_5";
+    //supportFire_target01WEST = "marker_1";
+    //supportFire_target02WEST = "marker_12";
+    //supportFire_target03WEST = "marker_5";
 
     // WEST/Blufor
-    target01WEST = "";
-    target02WEST = "";
-    target03WEST = "";
-    target04WEST = "";
-    target05WEST = "";
-    target06WEST = "";
+    supportFire_target01WEST = "";
+    supportFire_target02WEST = "";
+    supportFire_target03WEST = "";
+    supportFire_target04WEST = "";
+    supportFire_target05WEST = "";
+    supportFire_target06WEST = "";
 
     // East/Opfor
-    target01EAST = "";
-    target02EAST = "";
-    target03EAST = "";
-    target04EAST = "";
-    target05EAST = "";
-    target06EAST = "";
+    supportFire_target01EAST = "";
+    supportFire_target02EAST = "";
+    supportFire_target03EAST = "";
+    supportFire_target04EAST = "";
+    supportFire_target05EAST = "";
+    supportFire_target06EAST = "";
 
     // Resistance/Independent/Indfor
-    target01GUER = "";
-    target02GUER = "";
-    target03GUER = "";
-    target04GUER = "";
-    target05GUER = "";
-    target06GUER = "";
+    supportFire_target01GUER = "";
+    supportFire_target02GUER = "";
+    supportFire_target03GUER = "";
+    supportFire_target04GUER = "";
+    supportFire_target05GUER = "";
+    supportFire_target06GUER = "";
 
 //TARGET NAMES
     // These are the names for the targets that appear in the self interaction menu.
@@ -48,33 +48,33 @@
     // See https://gyazo.com/d66a1b6559f60e0fcf969165c93efeeb for an example
 
     //Examples:
-    //target01WEST_Name = "Target Alpha";
-    //target02WEST_Name = "Eggwil";
-    //target03WEST_Name = "Worb Docks";
+    //supportFire_target01WEST_Name = "Target Alpha";
+    //supportFire_target02WEST_Name = "Eggwil";
+    //supportFire_target03WEST_Name = "Worb Docks";
 
     // WEST/Blufor
-    target01WEST_Name = "Target Alpha";
-    target02WEST_Name = "Target Bravo";
-    target03WEST_Name = "Target Charlie";
-    target04WEST_Name = "Target Delta";
-    target05WEST_Name = "Target Echo";
-    target06WEST_Name = "Target Foxtrot";
+    supportFire_target01WEST_Name = "Target Alpha";
+    supportFire_target02WEST_Name = "Target Bravo";
+    supportFire_target03WEST_Name = "Target Charlie";
+    supportFire_target04WEST_Name = "Target Delta";
+    supportFire_target05WEST_Name = "Target Echo";
+    supportFire_target06WEST_Name = "Target Foxtrot";
 
     // East/Opfor
-    target01EAST_Name = "Target Alpha";
-    target02EAST_Name = "Target Bravo";
-    target03EAST_Name = "Target Charlie";
-    target04EAST_Name = "Target Delta";
-    target05EAST_Name = "Target Echo";
-    target06EAST_Name = "Target Foxtrot";
+    supportFire_target01EAST_Name = "Target Alpha";
+    supportFire_target02EAST_Name = "Target Bravo";
+    supportFire_target03EAST_Name = "Target Charlie";
+    supportFire_target04EAST_Name = "Target Delta";
+    supportFire_target05EAST_Name = "Target Echo";
+    supportFire_target06EAST_Name = "Target Foxtrot";
 
     // Resistance/Independent/Indfor
-    target01GUER_Name = "Target Alpha";
-    target02GUER_Name = "Target Bravo";
-    target03GUER_Name = "Target Charlie";
-    target04GUER_Name = "Target Delta";
-    target05GUER_Name = "Target Echo";
-    target06GUER_Name = "Target Foxtrot";
+    supportFire_target01GUER_Name = "Target Alpha";
+    supportFire_target02GUER_Name = "Target Bravo";
+    supportFire_target03GUER_Name = "Target Charlie";
+    supportFire_target04GUER_Name = "Target Delta";
+    supportFire_target05GUER_Name = "Target Echo";
+    supportFire_target06GUER_Name = "Target Foxtrot";
 
 // AMMUNITION TYPE
     // There are three types of ammunition available, High Explosive, Smoke, and Flare.
@@ -112,9 +112,9 @@
     // If fewer than 5 rounds are available then no interaction for that ammo will show up.
 
     // WEST/Blufor
-    shellsHE_AmmoCountWEST = 0;
-    shellsSmoke_AmmoCountWEST = 0;
-    shellsFlare_AmmoCountWEST = 0;
+    shellsHE_AmmoCountWEST = 100;
+    shellsSmoke_AmmoCountWEST = 100;
+    shellsFlare_AmmoCountWEST = 100;
 
     // East/Opfor
     shellsHE_AmmoCountEAST = 0;
