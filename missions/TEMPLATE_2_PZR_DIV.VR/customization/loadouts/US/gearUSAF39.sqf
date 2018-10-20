@@ -25,8 +25,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USAF_default_equipment;
-        USAF_leader_equipment;
+        USAF_Default_Equipment;
+        USAF_Leader_Equipment;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
@@ -42,8 +42,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USAF_default_equipment;
-        USAF_leader_equipment;
+        USAF_Default_Equipment;
+        USAF_Leader_Equipment;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
@@ -59,5 +59,5 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USAF_default_equipment;
+        USAF_Default_Equipment;
     };

@@ -61,5 +61,5 @@
 
 //=== EQUIPMENT ===
 
-#define Civ_default_equipment \
+#define Civ_Default_Equipment \
 ["ItemWatch"]call FNC_AddItem;

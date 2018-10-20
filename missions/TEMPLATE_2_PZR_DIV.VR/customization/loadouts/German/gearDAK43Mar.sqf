@@ -46,6 +46,113 @@
 [this,"DAK43Mar_VCrew"] call FNC_GearScript;    Besatzung
 */
 
+//======================== Definitions ========================
+
+#define DAK43Mar_Weapon_SMG_Off         \
+        [                               \
+            [                           \
+                [Ger_Mag_MP40,1],       \
+                [Ger_Weap_MP40],        \
+                [Ger_Mag_MP40,3,"vest"] \
+            ],[95],                     \
+            [                           \
+                [Ger_Mag_MP40,1],       \
+                [Ger_Weap_MP38],        \
+                [Ger_Mag_MP40,3,"vest"] \
+            ],[5]                       \
+        ] call FNC_AddItemRandomPercent;
+
+#define DAK43Mar_Weapon_SMG_Enl         \
+        [                               \
+            [                           \
+                [Ger_Mag_MP40,1],       \
+                [Ger_Weap_MP40],        \
+                [Ger_Mag_MP40,6,"vest"] \
+            ],[95],                     \
+            [                           \
+                [Ger_Mag_MP40,1],       \
+                [Ger_Weap_MP38],        \
+                [Ger_Mag_MP40,6,"vest"] \
+            ],[5]                       \
+        ] call FNC_AddItemRandomPercent;
+
+#define DAK43Mar_Weapon_Rifle           \
+        [                               \
+            [                           \
+                [Ger_Mag_K98,1],        \
+                [Ger_Weap_K98],         \
+                [Ger_Mag_K98,12,"vest"] \
+            ],[96],                     \
+            [                           \
+                [Ger_Mag_K98,1],        \
+                [Ger_Weap_K98_E],       \
+                [Ger_Mag_K98,12,"vest"] \
+            ],[4]                       \
+        ] call FNC_AddItemRandomPercent;
+
+#define DAK43Mar_Weapon_MG       \
+        [                        \
+            [                    \
+                [Ger_Weap_MG42]  \
+            ],[85],              \
+            [                    \
+                [Ger_Weap_MG34]  \
+            ],[15]               \
+        ] call FNC_AddItemRandomPercent;
+
+#define DAK43Mar_Weapon_Pistol_Off  \
+        [                           \
+            [                       \
+                [Ger_Mag_P38,1],    \
+                [Ger_Weap_P38],     \
+                [Ger_Mag_P38,2]     \
+            ],[59],                 \
+            [                       \
+                [Ger_Mag_P08,1],    \
+                [Ger_Weap_P08],     \
+                [Ger_Mag_P08,2]     \
+            ],[27],                 \
+            [                       \
+                [Ger_Mag_PPK,1],    \
+                [Ger_Weap_PPK],     \
+                [Ger_Mag_PPK,2]     \
+            ],[10],                 \
+            [                       \
+                [Pol_Mag_Radom,1],  \
+                [Pol_Weap_Radom],   \
+                [Pol_Mag_Radom,2]   \
+            ],[2],                  \
+            [                       \
+                [UK_Mag_HiPower,1], \
+                [UK_Weap_HiPower],  \
+                [UK_Mag_HiPower,2]  \
+            ],[2]                   \
+        ] call FNC_AddItemRandomPercent;
+
+#define DAK43Mar_Weapon_Pistol_Enl  \
+        [                           \
+            [                       \
+                [Ger_Mag_P38,1],    \
+                [Ger_Weap_P38],     \
+                [Ger_Mag_P38,2]     \
+            ],[61],                 \
+            [                       \
+                [Ger_Mag_P08,1],    \
+                [Ger_Weap_P08],     \
+                [Ger_Mag_P08,2]     \
+            ],[35],                 \
+            [                       \
+                [Pol_Mag_Radom,1],  \
+                [Pol_Weap_Radom],   \
+                [Pol_Mag_Radom,2]   \
+            ],[2],                  \
+            [                       \
+                [UK_Mag_HiPower,1], \
+                [UK_Weap_HiPower],  \
+                [UK_Mag_HiPower,2]  \
+            ],[2]                   \
+        ] call FNC_AddItemRandomPercent;
+
 //======================== Loadouts ========================
 
 //Company HQ
@@ -59,49 +166,14 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
-        [//Primary Weapon
-        [//MP40
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP40],
-        [Ger_Mag_MP40,3,"vest"]
-        ],[99],
-        [//MP38
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP38],
-        [Ger_Mag_MP40,3,"vest"]
-        ],[1]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_SMG_Off;
 
-        [//Secondary Weapon
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[59],
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[27],
-        [//PPK
-        [Ger_Mag_PPK,1],
-        [Ger_Weap_PPK],
-        [Ger_Mag_PPK,2]
-        ],[10],
-        [//PPK
-        [Pol_Mag_Radom,1],
-        [Pol_Weap_Radom],
-        [Pol_Mag_Radom,2]
-        ],[2],
-        [//BHP
-        [UK_Mag_HiPower,1],
-        [UK_Weap_HiPower],
-        [UK_Mag_HiPower,2]
-        ],[2]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        DAK43Mar_Weapon_Pistol_Off;
     };
 
     //Kompanietruppführer
@@ -112,44 +184,14 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
-        [//Primary Weapon
-        [//MP40
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP40],
-        [Ger_Mag_MP40,3,"vest"]
-        ],[99],
-        [//MP38
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP38],
-        [Ger_Mag_MP40,3,"vest"]
-        ],[1]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_SMG_Off;
 
-        [//Secondary Weapon
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[61],
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[35],
-        [//Radom
-        [Pol_Mag_Radom,1],
-        [Pol_Weap_Radom],
-        [Pol_Mag_Radom,2]
-        ],[2],
-        [//BHP
-        [UK_Mag_HiPower,1],
-        [UK_Weap_HiPower],
-        [UK_Mag_HiPower,2]
-        ],[2]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        DAK43Mar_Weapon_Pistol_Enl;
     };
 
 //Platoon HQ
@@ -162,49 +204,14 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
-        [//Primary Weapon
-        [//MP40
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP40],
-        [Ger_Mag_MP40,3,"vest"]
-        ],[99],
-        [//MP38
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP38],
-        [Ger_Mag_MP40,3,"vest"]
-        ],[1]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_SMG_Off;
 
-        [//Secondary Weapon
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[59],
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[27],
-        [//PPK
-        [Ger_Mag_PPK,1],
-        [Ger_Weap_PPK],
-        [Ger_Mag_PPK,2]
-        ],[10],
-        [//PPK
-        [Pol_Mag_Radom,1],
-        [Pol_Weap_Radom],
-        [Pol_Mag_Radom,2]
-        ],[2],
-        [//BHP
-        [UK_Mag_HiPower,1],
-        [UK_Weap_HiPower],
-        [UK_Mag_HiPower,2]
-        ],[2]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        DAK43Mar_Weapon_Pistol_Off;
     };
 
     //Zugtruppführer
@@ -216,33 +223,23 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
-        [//Primary Weapon
-        [//MP40
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP40],
-        [Ger_Mag_MP40,3,"vest"]
-        ],[99],
-        [//MP38
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP38],
-        [Ger_Mag_MP40,3,"vest"]
-        ],[1]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_SMG_Off;
 
         //Extra
         [
-        [//M24
-        [Ger_Gren_Frag_SC,1]
-        ],[66],
-        [//M24 Splittering
-        [Ger_Gren_Frag_SF,1]
-        ],[34]
+            [
+                [Ger_Gren_HE_SC,1]
+            ],[66],
+            [
+                [Ger_Gren_Frag_SF,1]
+            ],[34]
         ] call FNC_AddItemRandomPercent;
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Funker
@@ -254,21 +251,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
         [GEN_Headset] call FNC_AddItem;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[97],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_Rifle;
     };
 
     //Melder
@@ -280,29 +267,19 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[97],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_Rifle;
 
         //Extra
         [
-        [//M24
-        [Ger_Gren_Frag_SC,1]
-        ],[66],
-        [//M24 Splittering
-        [Ger_Gren_Frag_SF,1]
-        ],[34]
+            [
+                [Ger_Gren_HE_SC,1]
+            ],[66],
+            [
+                [Ger_Gren_Frag_SF,1]
+            ],[34]
         ] call FNC_AddItemRandomPercent;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
@@ -316,34 +293,14 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
-        [//Secondary Weapon
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[61],
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[35],
-        [//Radom
-        [Pol_Mag_Radom,1],
-        [Pol_Weap_Radom],
-        [Pol_Mag_Radom,2]
-        ],[2],
-        [//BHP
-        [UK_Mag_HiPower,1],
-        [UK_Weap_HiPower],
-        [UK_Mag_HiPower,2]
-        ],[2]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        DAK43Mar_Weapon_Pistol_Enl;
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        Ger_medicP_equipment;
+        Ger_MedicP_Equipment;
     };
 
 //Squad
@@ -357,33 +314,23 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
-        [//Primary Weapon
-        [//MP40
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP40],
-        [Ger_Mag_MP40,6,"vest"]
-        ],[99],
-        [//MP38
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP38],
-        [Ger_Mag_MP40,6,"vest"]
-        ],[1]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_SMG_Enl;
 
         //Extra
         [
-        [//M24
-        [Ger_Gren_Frag_SC,1]
-        ],[66],
-        [//M24 Splittering
-        [Ger_Gren_Frag_SF,1]
-        ],[34]
+            [
+                [Ger_Gren_HE_SC,1]
+            ],[66],
+            [
+                [Ger_Gren_Frag_SF,1]
+            ],[34]
         ] call FNC_AddItemRandomPercent;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Mag_MG_50,1] call FNC_AddItem;
     };
 
     //Stellvertretender Gruppenführer
@@ -395,32 +342,23 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
+        [GEN_BinoG] call FNC_AddItem;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[97],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_Rifle;
 
         //Extra
         [
-        [//M24
-        [Ger_Gren_Frag_SC,1]
-        ],[66],
-        [//M24 Splittering
-        [Ger_Gren_Frag_SF,1]
-        ],[34]
+            [
+                [Ger_Gren_HE_SC,1]
+            ],[66],
+            [
+                [Ger_Gren_Frag_SF,1]
+            ],[34]
         ] call FNC_AddItemRandomPercent;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Mag_MG_50,1] call FNC_AddItem;
     };
 
     //Gefreiter
@@ -432,32 +370,22 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
-        [//Primary Weapon
-        [//MP40
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP40],
-        [Ger_Mag_MP40,6,"vest"]
-        ],[99],
-        [//MP38
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP38],
-        [Ger_Mag_MP40,6,"vest"]
-        ],[1]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_SMG_Enl;
 
         //Extra
         [
-        [//M24
-        [Ger_Gren_Frag_SC,1]
-        ],[66],
-        [//M24 Splittering
-        [Ger_Gren_Frag_SF,1]
-        ],[34]
+            [
+                [Ger_Gren_HE_SC,1]
+            ],[66],
+            [
+                [Ger_Gren_Frag_SF,1]
+            ],[34]
         ] call FNC_AddItemRandomPercent;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Mag_MG_50,1] call FNC_AddItem;
     };
 
     //MG-Richtschütze
@@ -470,41 +398,14 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
-        [//Secondary Weapon
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[61],
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[35],
-        [//Radom
-        [Pol_Mag_Radom,1],
-        [Pol_Weap_Radom],
-        [Pol_Mag_Radom,2]
-        ],[2],
-        [//BHP
-        [UK_Mag_HiPower,1],
-        [UK_Weap_HiPower],
-        [UK_Mag_HiPower,2]
-        ],[2]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        DAK43Mar_Weapon_Pistol_Enl;
 
         //Primary Weapon
         [Ger_Mag_MG_50,1] call FNC_AddItem;
-        [//Random MG
-        [//MG34
-        [Ger_Weap_MG34]
-        ],[85],
-        [//MG42
-        [Ger_Weap_MG42]
-        ],[15]
-        ] call FNC_AddItemRandomPercent;
+        DAK43Mar_Weapon_MG;
         [Ger_Mag_MG_50,4,"vest"] call FNC_AddItem;
 
         //Extra
@@ -521,22 +422,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        [GEN_BinoG] call FNC_AddItem;
+        Ger_Default_Equipment;
         [GEN_ace_sparebarrel] call FNC_AddItem;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[97],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_Rifle;
 
         //Extra
         [Ger_Mag_MG_50,3] call FNC_AddItem;
@@ -552,20 +442,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[97],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_Rifle;
 
         //Extra
         [Ger_Mag_MG_50,5] call FNC_AddItem;
@@ -580,28 +460,16 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Weap_K98_RG],
-        [Ger_Mag_K98,12,"vest"],
-        [Ger_Mag_RGrn_HE,4],
-        [Ger_Mag_RGrn_ATS,2],
-        [Ger_Mag_RGrn_ATL,2]
-        ],[97],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Weap_K98_RG],
-        [Ger_Mag_K98,12,"vest"],
-        [Ger_Mag_RGrn_HE,4],
-        [Ger_Mag_RGrn_ATS,2],
-        [Ger_Mag_RGrn_ATL,2]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_Rifle;
+
+        //Extra
+        [Ger_Weap_K98_RG] call FNC_AddItem;
+        [Ger_Mag_RGrn_HE,4] call FNC_AddItem;
+        [Ger_Mag_RGrn_ATS,2] call FNC_AddItem;
+        [Ger_Mag_RGrn_ATL,2] call FNC_AddItem;
     };
 
     //Hilfs-Krankenträger
@@ -613,30 +481,20 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_medicS_equipment;
+        Ger_Default_Equipment;
+        Ger_MedicS_Equipment;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[97],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_Rifle;
 
         //Extra
         [
-        [//M24
-        [Ger_Gren_Frag_SC,1]
-        ],[66],
-        [//M24 Splittering
-        [Ger_Gren_Frag_SF,1]
-        ],[34]
+            [
+                [Ger_Gren_HE_SC,1]
+            ],[66],
+            [
+                [Ger_Gren_Frag_SF,1]
+            ],[34]
         ] call FNC_AddItemRandomPercent;
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
     };
@@ -650,32 +508,22 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[97],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_Rifle;
 
         //Extra
         [
-        [//M24
-        [Ger_Gren_Frag_SC,1]
-        ],[66],
-        [//M24 Splittering
-        [Ger_Gren_Frag_SF,1]
-        ],[34]
+            [
+                [Ger_Gren_HE_SC,1]
+            ],[66],
+            [
+                [Ger_Gren_Frag_SF,1]
+            ],[34]
         ] call FNC_AddItemRandomPercent;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Mag_MG_50,1,"backpack"] call FNC_AddItem;
     };
 
 //Weapon Truppen
@@ -690,32 +538,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
-        [GEN_ace_rangetable,1] call FNC_AddItem;
+        Ger_Default_Equipment;
+        GEN_Mortar_Equipment;
 
-        [//Secondary Weapon
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[61],
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[35],
-        [//Radom
-        [Pol_Mag_Radom,1],
-        [Pol_Weap_Radom],
-        [Pol_Mag_Radom,2]
-        ],[2],
-        [//BHP
-        [UK_Mag_HiPower,1],
-        [UK_Weap_HiPower],
-        [UK_Mag_HiPower,2]
-        ],[2]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        DAK43Mar_Weapon_Pistol_Enl;
 
         //Launcher
         [Ger_Weap_MortB,1] call FNC_AddItem;
@@ -734,32 +561,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        [GEN_ace_maptools,1] call FNC_AddItem;
-        [GEN_ace_rangetable,1] call FNC_AddItem;
+        Ger_Default_Equipment;
+        GEN_Mortar_Equipment;
 
-        [//Secondary Weapon
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[61],
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[35],
-        [//Radom
-        [Pol_Mag_Radom,1],
-        [Pol_Weap_Radom],
-        [Pol_Mag_Radom,2]
-        ],[2],
-        [//BHP
-        [UK_Mag_HiPower,1],
-        [UK_Weap_HiPower],
-        [UK_Mag_HiPower,2]
-        ],[2]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        DAK43Mar_Weapon_Pistol_Enl;
 
         //Launcher
         [Ger_Weap_MortT,1] call FNC_AddItem;
@@ -777,22 +583,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        [GEN_ace_maptools,1] call FNC_AddItem;
-        [GEN_ace_rangetable,1] call FNC_AddItem;
+        Ger_Default_Equipment;
+        GEN_Mortar_Equipment;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[97],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_Rifle;
 
         //Extra
         [Ger_Mag_Mort_HE,4] call FNC_AddItem;
@@ -809,22 +604,12 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
         [GEN_ace_sparebarrel] call FNC_AddItem;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[97],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_Rifle;
 
         //Launcher
         [Ger_Weap_MG_T,1] call FNC_AddItem;
@@ -843,42 +628,15 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
-        [//Secondary Weapon
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[61],
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[35],
-        [//Radom
-        [Pol_Mag_Radom,1],
-        [Pol_Weap_Radom],
-        [Pol_Mag_Radom,2]
-        ],[2],
-        [//BHP
-        [UK_Mag_HiPower,1],
-        [UK_Weap_HiPower],
-        [UK_Mag_HiPower,2]
-        ],[2]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        DAK43Mar_Weapon_Pistol_Enl;
 
         //Primary Weapon
         [Ger_Mag_MG_250,1] call FNC_AddItem;
-        [//Random MG
-        [//MG34
-        [Ger_Weap_MG34]
-        ],[85],
-        [//MG42
-        [Ger_Weap_MG42]
-        ],[15]
-        ] call FNC_AddItemRandomPercent;
+        DAK43Mar_Weapon_MG;
         [Ger_Mag_MG_250,1] call FNC_AddItem;
         [Ger_Mag_MG_150,1] call FNC_AddItem;
 
@@ -896,20 +654,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[97],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_Rifle;
 
         //Extra
         [Ger_Mag_MG_250,2] call FNC_AddItem;
@@ -926,21 +674,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[97],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_Rifle;
 
         //Extra
         [Ger_Mag_PzB39,20,"backpack"] call FNC_AddItem;
@@ -957,31 +695,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
-        [//Secondary Weapon
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[61],
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[35],
-        [//Radom
-        [Pol_Mag_Radom,1],
-        [Pol_Weap_Radom],
-        [Pol_Mag_Radom,2]
-        ],[2],
-        [//BHP
-        [UK_Mag_HiPower,1],
-        [UK_Weap_HiPower],
-        [UK_Mag_HiPower,2]
-        ],[2]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        DAK43Mar_Weapon_Pistol_Enl;
 
         //Primary Weapon
         [Ger_Mag_PzB39,1] call FNC_AddItem;
@@ -998,20 +716,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
-        [//Primary Weapon
-        [//K98k
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98],
-        [Ger_Mag_K98,12,"vest"]
-        ],[97],
-        [//K98k Pre-War
-        [Ger_Mag_K98,1],
-        [Ger_Weap_K98_E],
-        [Ger_Mag_K98,12,"vest"]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_Rifle;
 
         //Extra
         [Ger_Mag_PzB39,20,"backpack"] call FNC_AddItem;
@@ -1029,49 +737,14 @@
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
-        [//Primary Weapon
-        [//MP40
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP40],
-        [Ger_Mag_MP40,3,"vest"]
-        ],[99],
-        [//MP38
-        [Ger_Mag_MP40,1],
-        [Ger_Weap_MP38],
-        [Ger_Mag_MP40,3,"vest"]
-        ],[1]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        DAK43Mar_Weapon_SMG_Off;
 
-        [//Secondary Weapon
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[59],
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[27],
-        [//PPK
-        [Ger_Mag_PPK,1],
-        [Ger_Weap_PPK],
-        [Ger_Mag_PPK,2]
-        ],[10],
-        [//PPK
-        [Pol_Mag_Radom,1],
-        [Pol_Weap_Radom],
-        [Pol_Mag_Radom,2]
-        ],[2],
-        [//BHP
-        [UK_Mag_HiPower,1],
-        [UK_Weap_HiPower],
-        [UK_Mag_HiPower,2]
-        ],[2]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        DAK43Mar_Weapon_Pistol_Off;
     };
 
     //Besatzung
@@ -1083,30 +756,10 @@
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
-        [//Secondary Weapon
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[61],
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[35],
-        [//Radom
-        [Pol_Mag_Radom,1],
-        [Pol_Weap_Radom],
-        [Pol_Mag_Radom,2]
-        ],[2],
-        [//BHP
-        [UK_Mag_HiPower,1],
-        [UK_Weap_HiPower],
-        [UK_Mag_HiPower,2]
-        ],[2]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        DAK43Mar_Weapon_Pistol_Enl;
 
         //Extra
         [GEN_Toolkit] call FNC_AddItem;

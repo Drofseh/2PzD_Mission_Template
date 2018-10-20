@@ -88,7 +88,7 @@
 
 //=== EQUIPMENT ===
 
-#define IJA_default_equipment \
+#define IJA_Default_Equipment \
 ["ItemMap"] call FNC_AddItem; \
 ["ItemCompass"] call FNC_AddItem; \
 ["ItemWatch"]call FNC_AddItem; \
@@ -99,11 +99,11 @@
 ["ACE_Flashlight_KSF1"]call FNC_AddItem; \
 ["ACE_CableTie"]call FNC_AddItem;
 
-#define IJA_leader_equipment \
+#define IJA_Leader_Equipment \
 ["LIB_Binocular_GER"] call FNC_AddItem; \
 ["ACE_MapTools"] call FNC_AddItem;
 
-#define IJA_medic_equipment \
+#define IJA_Medic_Equipment \
 ["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
 ["ACE_elasticBandage",20,"backpack"] call FNC_AddItem; \
 ["ACE_packingBandage",20,"backpack"] call FNC_AddItem; \

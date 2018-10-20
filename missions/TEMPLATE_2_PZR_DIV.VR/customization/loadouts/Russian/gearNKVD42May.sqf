@@ -30,8 +30,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         //Primary Weapon
         [
@@ -79,8 +79,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         //Primary Weapon
         [
@@ -126,7 +126,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         //Primary Weapon
         [
@@ -171,7 +171,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         //Primary Weapon
         [
@@ -208,7 +208,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        Rus_medic_equipment;
+        Rus_Medic_Equipment;
     };
 
     //Sergeant
@@ -218,7 +218,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         //Primary Weapon
         [
@@ -244,7 +244,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         //Primary Weapon
         [
@@ -272,7 +272,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         //Primary Weapon
         [Rus_Mag_DP,1] call FNC_AddItem;
@@ -307,7 +307,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
         [GEN_BinoR] call FNC_AddItem;
 
         //Primary Weapon
@@ -355,7 +355,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         //Primary Weapon
         [

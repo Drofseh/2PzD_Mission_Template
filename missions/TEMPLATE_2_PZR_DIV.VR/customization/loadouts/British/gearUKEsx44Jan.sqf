@@ -7,42 +7,94 @@
 /*Loadouts
 
     Platoon
-[this,"UKEsx44Jan_Lt"] call FNC_GearScript;     Lieutenant
-[this,"UKEsx44Jan_Sgt"] call FNC_GearScript;        Sergeant
-[this,"UKEsx44Jan_Med"] call FNC_GearScript;        Medic
-[this,"UKEsx44Jan_Sig"] call FNC_GearScript;        Signaller
-[this,"UKEsx44Jan_LMortG"] call FNC_GearScript; Light Mortar Gunner
-[this,"UKEsx44Jan_LMortA"] call FNC_GearScript; Light Mortar Assistant
-[this,"UKEsx44Jan_Cpl"] call FNC_GearScript;        Corporal
-[this,"UKEsx44Jan_LCpl"] call FNC_GearScript;       Lance Corporal
-[this,"UKEsx44Jan_AR"] call FNC_GearScript;     Bren Gunner
-[this,"UKEsx44Jan_AAR"] call FNC_GearScript;        Bren Gun Assistant
-[this,"UKEsx44Jan_AAB"] call FNC_GearScript;        Bren Gun Ammo Bearer
-[this,"UKEsx44Jan_Rif"] call FNC_GearScript;        Rifleman
+[this,"UKEsx44Jan_Lt"] call FNC_GearScript;        Lieutenant
+[this,"UKEsx44Jan_Sgt"] call FNC_GearScript;       Sergeant
+[this,"UKEsx44Jan_Med"] call FNC_GearScript;       Medic
+[this,"UKEsx44Jan_Sig"] call FNC_GearScript;       Signaller
+[this,"UKEsx44Jan_LMortG"] call FNC_GearScript;    Light Mortar Gunner
+[this,"UKEsx44Jan_LMortA"] call FNC_GearScript;    Light Mortar Assistant
+[this,"UKEsx44Jan_Cpl"] call FNC_GearScript;       Corporal
+[this,"UKEsx44Jan_LCpl"] call FNC_GearScript;      Lance Corporal
+[this,"UKEsx44Jan_AR"] call FNC_GearScript;        Bren Gunner
+[this,"UKEsx44Jan_AAR"] call FNC_GearScript;       Bren Gun Assistant
+[this,"UKEsx44Jan_AAB"] call FNC_GearScript;       Bren Gun Ammo Bearer
+[this,"UKEsx44Jan_Rif"] call FNC_GearScript;       Rifleman
 
     Weapons Teams
-[this,"UKEsx44Jan_MGTL"] call FNC_GearScript;       Machine Gun Team Leader
-[this,"UKEsx44Jan_MG"] call FNC_GearScript;     Machine Gunner
-[this,"UKEsx44Jan_MGA"] call FNC_GearScript;        Machine Gun Assistant
-[this,"UKEsx44Jan_MGAB"] call FNC_GearScript;       Machine Gun Ammo Bearer
+[this,"UKEsx44Jan_MGTL"] call FNC_GearScript;      Machine Gun Team Leader
+[this,"UKEsx44Jan_MG"] call FNC_GearScript;        Machine Gunner
+[this,"UKEsx44Jan_MGA"] call FNC_GearScript;       Machine Gun Assistant
+[this,"UKEsx44Jan_MGAB"] call FNC_GearScript;      Machine Gun Ammo Bearer
 
-[this,"UKEsx44Jan_MortTL"] call FNC_GearScript; Mortar Team Leader
-[this,"UKEsx44Jan_MortG"] call FNC_GearScript;      Mortar Gunner
-[this,"UKEsx44Jan_MortA"] call FNC_GearScript;      Mortar Assistant
-[this,"UKEsx44Jan_MortAB"] call FNC_GearScript; Mortar Ammo Bearer
+[this,"UKEsx44Jan_MortTL"] call FNC_GearScript;    Mortar Team Leader
+[this,"UKEsx44Jan_MortG"] call FNC_GearScript;     Mortar Gunner
+[this,"UKEsx44Jan_MortA"] call FNC_GearScript;     Mortar Assistant
+[this,"UKEsx44Jan_MortAB"] call FNC_GearScript;    Mortar Ammo Bearer
 
-[this,"UKEsx44Jan_ATRTL"] call FNC_GearScript;      Boys Rifle Team Leader
-[this,"UKEsx44Jan_ATRG"] call FNC_GearScript;       Boys Rifle Gunner
-[this,"UKEsx44Jan_ATRAB"] call FNC_GearScript;      Boys Rifle Ammo Bearer
+[this,"UKEsx44Jan_ATRTL"] call FNC_GearScript;     Boys Rifle Team Leader
+[this,"UKEsx44Jan_ATRG"] call FNC_GearScript;      Boys Rifle Gunner
+[this,"UKEsx44Jan_ATRAB"] call FNC_GearScript;     Boys Rifle Ammo Bearer
 
-[this,"UKEsx44Jan_ATTL"] call FNC_GearScript;       PIAT Team Leader
-[this,"UKEsx44Jan_ATG"] call FNC_GearScript;        PIAT Gunner
-[this,"UKEsx44Jan_ATAB"] call FNC_GearScript;       PIAT Ammo Bearer
+[this,"UKEsx44Jan_ATTL"] call FNC_GearScript;      PIAT Team Leader
+[this,"UKEsx44Jan_ATG"] call FNC_GearScript;       PIAT Gunner
+[this,"UKEsx44Jan_ATAB"] call FNC_GearScript;      PIAT Ammo Bearer
 
     Vehicle Crew
-[this,"UKEsx44Jan_VCom"] call FNC_GearScript;       Tank Commander
-[this,"UKEsx44Jan_VCrew"] call FNC_GearScript;      Tank Crew
+[this,"UKEsx44Jan_VCom"] call FNC_GearScript;      Tank Commander
+[this,"UKEsx44Jan_VCrew"] call FNC_GearScript;     Tank Crew
 */
+
+//======================== Definitions ========================
+
+#define UKEsx44Jan_LeeEn                \
+        [                               \
+            [                           \
+                [UK_Mag_LeeEn,1],       \
+                [UK_Weap_LeeEnNo1],     \
+                [UK_Mag_LeeEn,5,"vest"] \
+            ],[50],                     \
+            [                           \
+                [UK_Mag_LeeEn,1],       \
+                [UK_Weap_LeeEnNo4_1],   \
+                [UK_Mag_LeeEn,5,"vest"] \
+            ],[25],                     \
+            [                           \
+                [UK_Mag_LeeEn,1],       \
+                [UK_Weap_LeeEnNo4_2],   \
+                [UK_Mag_LeeEn,5,"vest"] \
+            ],[25]                      \
+        ] call FNC_AddItemRandomPercent;
+
+#define UKEsx44Jan_SMG                   \
+        [                                \
+            [                            \
+                [US_Mag_M1T_1,1],        \
+                [US_Weap_M1928],         \
+                [US_Mag_M1T_1,2,"vest"], \
+                [US_Mag_M1T_2,4,"vest"]  \
+            ],[35],                      \
+            [                            \
+                [UK_Mag_Sten,1],         \
+                [UK_Weap_StenMkII],      \
+                [UK_Mag_Sten,6,"vest"]   \
+            ],[35],                      \
+            [                            \
+                [US_Mag_M1T_1,1],        \
+                [US_Weap_M1T],           \
+                [US_Mag_M1T_1,3,"vest"], \
+                [US_Mag_M1T_2,3,"vest"]  \
+            ],[25],                      \
+            [                            \
+                [UK_Mag_Sten,1],         \
+                [UK_Weap_StenMkI],       \
+                [UK_Mag_Sten,6,"vest"]   \
+            ],[5]                        \
+        ] call FNC_AddItemRandomPercent;
+
+#define UKEsx44Jan_Webley \
+        [UK_Mag_Webley455,1] call FNC_AddItem; \
+        [UK_Weap_Webley455] call FNC_AddItem; \
+        [UK_Mag_Webley455,3] call FNC_AddItem;
 
 //======================== Loadouts ========================
 
@@ -56,13 +108,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
-        UK_leader_equipment;
+        UK_Default_Equipment;
+        UK_Leader_Equipment;
 
         //Secondary Weapon
-        [UK_Mag_Webley455,1] call FNC_AddItem;
-        [UK_Weap_Webley455] call FNC_AddItem;
-        [UK_Mag_Webley455,3] call FNC_AddItem;
+        UKEsx44Jan_Webley;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -78,33 +128,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
-        UK_leader_equipment;
+        UK_Default_Equipment;
+        UK_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1928 Thompson
-        [US_Mag_M1T_1,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_1,4,"vest"],
-        [US_Mag_M1T_2,2,"vest"]
-        ],[35],
-        [//Sten MkII
-        [UK_Mag_Sten,1],
-        [UK_Weap_StenMkII],
-        [UK_Mag_Sten,6,"vest"]
-        ],[35],
-        [//M1 Thompson
-        [US_Mag_M1T_1,1],
-        [US_Weap_M1T],
-        [US_Mag_M1T_1,5,"vest"],
-        [US_Mag_M1T_2,1,"vest"]
-        ],[25],
-        [//Sten MkI
-        [UK_Mag_Sten,1],
-        [UK_Weap_StenMkI],
-        [UK_Mag_Sten,6,"vest"]
-        ],[5]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_SMG;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -121,28 +149,13 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
-        [//Primary Weapon
-        [//Lee Enfield No1
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[50],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_2],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_LeeEn;
 
         //Extra
-        UK_medic_equipment;
+        UK_Medic_Equipment;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -155,25 +168,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
-        [//Primary Weapon
-        [//Lee Enfield No1
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[50],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_2],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_LeeEn;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -189,14 +187,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
-        [GEN_ace_maptools] call FNC_AddItem;
-        [GEN_ace_rangetable] call FNC_AddItem;
+        UK_Default_Equipment;
+        GEN_Mortar_Equipment;
 
         //Secondary Weapon
-        [UK_Mag_Webley455,1] call FNC_AddItem;
-        [UK_Weap_Webley455] call FNC_AddItem;
-        [UK_Mag_Webley455,3] call FNC_AddItem;
+        UKEsx44Jan_Webley;
 
         //Extra
         [US_Weap_MortB] call FNC_AddItem;
@@ -212,14 +207,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
-        [GEN_ace_maptools] call FNC_AddItem;
-        [GEN_ace_rangetable] call FNC_AddItem;
+        UK_Default_Equipment;
+        GEN_Mortar_Equipment;
 
         //Secondary Weapon
-        [UK_Mag_Webley455,1] call FNC_AddItem;
-        [UK_Weap_Webley455] call FNC_AddItem;
-        [UK_Mag_Webley455,3] call FNC_AddItem;
+        UKEsx44Jan_Webley;
 
         //Extra
         [US_Weap_MortT] call FNC_AddItem;
@@ -237,33 +229,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
-        UK_leader_equipment;
+        UK_Default_Equipment;
+        UK_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1928 Thompson
-        [US_Mag_M1T_1,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_1,4,"vest"],
-        [US_Mag_M1T_2,2,"vest"]
-        ],[35],
-        [//Sten MkII
-        [UK_Mag_Sten,1],
-        [UK_Weap_StenMkII],
-        [UK_Mag_Sten,6,"vest"]
-        ],[35],
-        [//M1 Thompson
-        [US_Mag_M1T_1,1],
-        [US_Weap_M1T],
-        [US_Mag_M1T_1,5,"vest"],
-        [US_Mag_M1T_2,1,"vest"]
-        ],[25],
-        [//Sten MkI
-        [UK_Mag_Sten,1],
-        [UK_Weap_StenMkI],
-        [UK_Mag_Sten,6,"vest"]
-        ],[5]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_SMG;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -280,32 +250,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
-        [//Primary Weapon
-        [//M1928 Thompson
-        [US_Mag_M1T_1,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_1,4,"vest"],
-        [US_Mag_M1T_2,2,"vest"]
-        ],[35],
-        [//Sten MkII
-        [UK_Mag_Sten,1],
-        [UK_Weap_StenMkII],
-        [UK_Mag_Sten,6,"vest"]
-        ],[35],
-        [//M1 Thompson
-        [US_Mag_M1T_1,1],
-        [US_Weap_M1T],
-        [US_Mag_M1T_1,5,"vest"],
-        [US_Mag_M1T_2,1,"vest"]
-        ],[25],
-        [//Sten MkI
-        [UK_Mag_Sten,1],
-        [UK_Weap_StenMkI],
-        [UK_Mag_Sten,6,"vest"]
-        ],[5]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_SMG;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -322,7 +270,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
         //Primary Weapon
         [UK_Mag_Bren,1] call FNC_AddItem;
@@ -330,9 +278,7 @@
         [UK_Mag_Bren,10,"vest"] call FNC_AddItem;
 
         //Secondary Weapon
-        [UK_Mag_Webley455,1] call FNC_AddItem;
-        [UK_Weap_Webley455] call FNC_AddItem;
-        [UK_Mag_Webley455,3] call FNC_AddItem;
+        UKEsx44Jan_Webley;
     };
 
     //Bren Gun Assistant
@@ -344,31 +290,16 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
         [GEN_BinoR] call FNC_AddItem;
 
-        [//Primary Weapon
-        [//Lee Enfield No1
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[50],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_2],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_ace_sparebarrel,1,"backpack"] call FNC_AddItem;
         [UK_Mag_Bren,4,"backpack"] call FNC_AddItem;
+        [GEN_Gren_Frag_P,1] call FNC_AddItem;
     };
 
     //Bren Gun Ammo Bearer
@@ -380,25 +311,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
-        [//Primary Weapon
-        [//Lee Enfield No1
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[50],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_2],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_LeeEn;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -414,25 +330,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
-        [//Primary Weapon
-        [//Lee Enfield No1
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[50],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_2],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_LeeEn;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -450,26 +351,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
-        UK_leader_equipment;
+        UK_Default_Equipment;
+        UK_Leader_Equipment;
 
-        [//Primary Weapon
-        [//Lee Enfield No1
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[50],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_2],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_LeeEn;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -485,12 +371,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
         //Secondary Weapon
-        [UK_Mag_Webley455,1] call FNC_AddItem;
-        [UK_Weap_Webley455] call FNC_AddItem;
-        [UK_Mag_Webley455,3] call FNC_AddItem;
+        UKEsx44Jan_Webley;
     };
 
     //Machine Gun Assistant
@@ -502,13 +386,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
-        UK_leader_equipment;
+        UK_Default_Equipment;
+        UK_Leader_Equipment;
 
         //Secondary Weapon
-        [UK_Mag_Webley455,1] call FNC_AddItem;
-        [UK_Weap_Webley455] call FNC_AddItem;
-        [UK_Mag_Webley455,3] call FNC_AddItem;
+        UKEsx44Jan_Webley;
 
         //Extra
     };
@@ -522,25 +404,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
-        [//Primary Weapon
-        [//Lee Enfield No1
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[50],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_2],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_LeeEn;
 
         //Extra
     };
@@ -556,26 +423,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
-        UK_leader_equipment;
+        UK_Default_Equipment;
+        UK_Leader_Equipment;
 
-        [//Primary Weapon
-        [//Lee Enfield No1
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[50],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_2],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_LeeEn;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -592,18 +444,15 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
         [Rus_Weap_MortB] call FNC_AddItem;
 
         //Secondary Weapon
-        [UK_Mag_Webley455,1] call FNC_AddItem;
-        [UK_Weap_Webley455] call FNC_AddItem;
-        [UK_Mag_Webley455,3] call FNC_AddItem;
+        UKEsx44Jan_Webley;
 
         //Extra
         [Rus_Mag_Mort_HE,3,"backpack"] call FNC_AddItem;
-        [GEN_ace_rangetable] call FNC_AddItem;
-        [GEN_ace_maptools] call FNC_AddItem;
+        GEN_Mortar_Equipment;
     };
 
     //Mortar Assistant
@@ -615,18 +464,15 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
         [Rus_Weap_MortT] call FNC_AddItem;
 
         //Secondary Weapon
-        [UK_Mag_Webley455,1] call FNC_AddItem;
-        [UK_Weap_Webley455] call FNC_AddItem;
-        [UK_Mag_Webley455,3] call FNC_AddItem;
+        UKEsx44Jan_Webley;
 
         //Extra
         [Rus_Mag_Mort_HE,3,"backpack"] call FNC_AddItem;
-        [GEN_ace_rangetable] call FNC_AddItem;
-        [GEN_ace_maptools] call FNC_AddItem;
+        GEN_Mortar_Equipment;
     };
 
     //Mortar Ammo Bearer
@@ -638,25 +484,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
-        [//Primary Weapon
-        [//Lee Enfield No1
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[50],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_2],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_LeeEn;
 
         //Extra
         [Rus_Mag_Mort_HE,5,"backpack"] call FNC_AddItem;
@@ -673,26 +504,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
-        UK_leader_equipment;
+        UK_Default_Equipment;
+        UK_Leader_Equipment;
 
-        [//Primary Weapon
-        [//Lee Enfield No1
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[50],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_2],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_LeeEn;
 
         //Extra
         [UK_Mag_Boys,20,"backpack"] call FNC_AddItem;
@@ -709,12 +525,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
         //Secondary Weapon
-        [UK_Mag_Webley455,1] call FNC_AddItem;
-        [UK_Weap_Webley455] call FNC_AddItem;
-        [UK_Mag_Webley455,3] call FNC_AddItem;
+        UKEsx44Jan_Webley;
 
         //Primary Weapon
         [UK_Mag_Boys,1] call FNC_AddItem;
@@ -731,25 +545,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
-        [//Primary Weapon
-        [//Lee Enfield No1
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[50],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_2],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_LeeEn;
 
         //Extra
         [UK_Mag_Boys,20,"backpack"] call FNC_AddItem;
@@ -767,26 +566,11 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
-        UK_leader_equipment;
+        UK_Default_Equipment;
+        UK_Leader_Equipment;
 
-        [//Primary Weapon
-        [//Lee Enfield No1
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[50],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_2],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_LeeEn;
 
         //Extra
         [UK_Mag_Piat_HEAT,3,"backpack"] call FNC_AddItem;
@@ -803,12 +587,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
         //Secondary Weapon
-        [UK_Mag_Webley455,1] call FNC_AddItem;
-        [UK_Weap_Webley455] call FNC_AddItem;
-        [UK_Mag_Webley455,3] call FNC_AddItem;
+        UKEsx44Jan_Webley;
 
         //Primary Weapon
         [UK_Weap_Piat] call FNC_AddItem;
@@ -824,25 +606,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
-        [//Primary Weapon
-        [//Lee Enfield No1
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[50],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_1],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25],
-        [//Lee Enfield No4
-        [UK_Mag_LeeEn,1],
-        [UK_Weap_LeeEnNo4_2],
-        [UK_Mag_LeeEn,5,"vest"]
-        ],[25]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_LeeEn;
 
         //Extra
         [UK_Mag_Piat_HEAT,3,"backpack"] call FNC_AddItem;
@@ -860,38 +627,14 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
-        UK_leader_equipment;
+        UK_Default_Equipment;
+        UK_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1928 Thompson
-        [US_Mag_M1T_1,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_1,4,"vest"],
-        [US_Mag_M1T_2,2,"vest"]
-        ],[35],
-        [//Sten MkII
-        [UK_Mag_Sten,1],
-        [UK_Weap_StenMkII],
-        [UK_Mag_Sten,6,"vest"]
-        ],[35],
-        [//M1 Thompson
-        [US_Mag_M1T_1,1],
-        [US_Weap_M1T],
-        [US_Mag_M1T_1,5,"vest"],
-        [US_Mag_M1T_2,1,"vest"]
-        ],[25],
-        [//Sten MkI
-        [UK_Mag_Sten,1],
-        [UK_Weap_StenMkI],
-        [UK_Mag_Sten,6,"vest"]
-        ],[5]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_SMG;
 
         //Secondary Weapon
-        [UK_Mag_Webley455,1] call FNC_AddItem;
-        [UK_Weap_Webley455] call FNC_AddItem;
-        [UK_Mag_Webley455,3] call FNC_AddItem;
+        UKEsx44Jan_Webley;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -907,37 +650,13 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        UK_default_equipment;
+        UK_Default_Equipment;
 
-        [//Primary Weapon
-        [//M1928 Thompson
-        [US_Mag_M1T_1,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_1,4,"vest"],
-        [US_Mag_M1T_2,2,"vest"]
-        ],[35],
-        [//Sten MkII
-        [UK_Mag_Sten,1],
-        [UK_Weap_StenMkII],
-        [UK_Mag_Sten,6,"vest"]
-        ],[35],
-        [//M1 Thompson
-        [US_Mag_M1T_1,1],
-        [US_Weap_M1T],
-        [US_Mag_M1T_1,5,"vest"],
-        [US_Mag_M1T_2,1,"vest"]
-        ],[25],
-        [//Sten MkI
-        [UK_Mag_Sten,1],
-        [UK_Weap_StenMkI],
-        [UK_Mag_Sten,6,"vest"]
-        ],[5]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        UKEsx44Jan_SMG;
 
         //Secondary Weapon
-        [UK_Mag_Webley455,1] call FNC_AddItem;
-        [UK_Weap_Webley455] call FNC_AddItem;
-        [UK_Mag_Webley455,3] call FNC_AddItem;
+        UKEsx44Jan_Webley;
 
         //Extra
         [GEN_Toolkit] call FNC_AddItem;

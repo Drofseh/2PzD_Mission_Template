@@ -8,6 +8,9 @@
 #define GEN_Flare_R             "LIB_1Rnd_flare_red"
 #define GEN_Flare_G             "LIB_1Rnd_flare_green"
 #define GEN_Flare_Y             "LIB_1Rnd_flare_yellow"
+#define GEN_Flare_B             "LIB_1Rnd_flare_blue"
+#define GEN_Flare_O             "LIB_1Rnd_flare_orange"
+#define GEN_Flare_P             "LIB_1Rnd_flare_purple"
 
 //Mortar
 
@@ -70,6 +73,11 @@
 #define GEN_ace_maptools        "ACE_MapTools"
 #define GEN_ace_rangetable      "ACE_RangeTable_82mm"
 #define GEN_rangetable          "fow_i_rangeTables_m2"
+#define GEN_key_master          "ACE_key_master"
+#define GEN_key_west            "ACE_key_west"
+#define GEN_key_east            "ACE_key_east"
+#define GEN_key_indp            "ACE_key_indp"
+#define GEN_key_civ             "ACE_key_civ"
 #define GEN_nada                "ACE_Banana"
 
 //Medical
@@ -108,7 +116,7 @@
 
 //=== EQUIPMENT ===
 
-#define GEN_default_equipment \
+#define GEN_Default_Equipment \
 ["ItemMap"] call FNC_AddItem; \
 ["ItemCompass"] call FNC_AddItem; \
 ["ItemWatch"]call FNC_AddItem; \
@@ -119,12 +127,16 @@
 ["ACE_Flashlight_MX991"]call FNC_AddItem; \
 ["ACE_CableTie"]call FNC_AddItem;
 
-#define GEN_leader_equipment \
+#define GEN_Mortar_Equipment \
+[GEN_ace_maptools] call FNC_AddItem; \
+[GEN_ace_rangetable] call FNC_AddItem;
+
+#define GEN_Leader_Equipment \
 ["LIB_Binocular_SU"] call FNC_AddItem; \
 ["ACE_MapTools"] call FNC_AddItem; \
 ["fow_i_whistle"] call FNC_AddItem;
 
-#define GEN_medic_equipment \
+#define GEN_Medic_Equipment \
 ["ACE_fieldDressing",5,"backpack"] call FNC_AddItem; \
 ["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
 ["ACE_packingBandage",10,"backpack"] call FNC_AddItem; \

@@ -37,8 +37,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        IJA_default_equipment;
-        IJA_leader_equipment;
+        IJA_Default_Equipment;
+        IJA_Leader_Equipment;
 
         [//Weapons
             [//Type 14 Pistol Only
@@ -72,7 +72,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        IJA_default_equipment;
+        IJA_Default_Equipment;
 
         //Primary Weapon
         [IJA_Mag_Type99_R,1] call FNC_AddItem;
@@ -81,7 +81,7 @@
         [IJA_Mag_Type99_R,6,"vest"] call FNC_AddItem;
 
         //Extra
-        IJA_medic_equipment;
+        IJA_Medic_Equipment;
     };
 
     //Marksman
@@ -92,7 +92,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        IJA_default_equipment;
+        IJA_Default_Equipment;
 
         //Primary Weapon
         [IJA_Mag_Type99_R,1] call FNC_AddItem;
@@ -121,8 +121,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        IJA_default_equipment;
-        IJA_leader_equipment;
+        IJA_Default_Equipment;
+        IJA_Leader_Equipment;
 
         [//Primary Weapon
             [//Type 99 Arisaka
@@ -164,7 +164,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        IJA_default_equipment;
+        IJA_Default_Equipment;
 
         //Primary Weapon
         [IJA_Mag_Type99_R,1] call FNC_AddItem;
@@ -199,7 +199,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        IJA_default_equipment;
+        IJA_Default_Equipment;
 
         //Primary Weapon
         [IJA_Mag_Type99_M,1] call FNC_AddItem;
@@ -232,7 +232,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        IJA_default_equipment;
+        IJA_Default_Equipment;
 
         //Primary Weapon
         [IJA_Mag_Type99_R,1] call FNC_AddItem;
@@ -263,7 +263,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        IJA_default_equipment;
+        IJA_Default_Equipment;
 
         //Primary Weapon
         [IJA_Mag_Type99_R,1] call FNC_AddItem;
@@ -292,7 +292,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        IJA_default_equipment;
+        IJA_Default_Equipment;
 
         //Primary Weapon
         [IJA_Mag_Type99_R,1] call FNC_AddItem;
@@ -321,7 +321,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        IJA_default_equipment;
+        IJA_Default_Equipment;
 
         //Primary Weapon
         [IJA_Mag_Type99_R,1] call FNC_AddItem;
@@ -351,7 +351,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        IJA_default_equipment;
+        IJA_Default_Equipment;
 
         //Primary Weapon
         [IJA_Mag_Type99_R,1] call FNC_AddItem;
@@ -379,7 +379,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        IJA_default_equipment;
+        IJA_Default_Equipment;
 
         //Primary Weapon
         [IJA_Mag_Type99_R,1] call FNC_AddItem;
@@ -388,8 +388,7 @@
         [IJA_Mag_Type99_R,6,"vest"] call FNC_AddItem;
 
         //Extra
-        [GEN_ace_rangetable] call FNC_AddItem;
-        [GEN_ace_maptools] call FNC_AddItem;
+        GEN_Mortar_Equipment;
         [IJA_Gren_Frag,2] call FNC_AddItem;
     };
 
@@ -410,7 +409,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        IJA_default_equipment;
+        IJA_Default_Equipment;
 
         //Primary Weapon
         [IJA_Mag_Type99_R,1] call FNC_AddItem;

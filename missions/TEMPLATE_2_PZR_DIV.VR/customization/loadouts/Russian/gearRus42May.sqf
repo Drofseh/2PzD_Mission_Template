@@ -56,8 +56,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         [//Primary Weapon
         [//PPD-40
@@ -95,8 +95,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         [//Primary Weapon
         [//PPD-40
@@ -167,7 +167,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
         [GEN_Headset] call FNC_AddItem;
     };
 
@@ -181,8 +181,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         [//Primary Weapon
         [//PPD-40
@@ -220,8 +220,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         [//Primary Weapon
         [//PPD-40
@@ -292,10 +292,10 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         //Extra
-        Rus_medic_equipment;
+        Rus_Medic_Equipment;
     };
 
     //Messenger
@@ -348,7 +348,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         [//Primary Weapon
         [//PPD-40
@@ -404,7 +404,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         //Extra
         [Rus_Gren_Frag_S,1] call FNC_AddItem;
@@ -447,7 +447,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         //Extra
         [Rus_Gren_Frag_S,1] call FNC_AddItem;
@@ -463,7 +463,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         //Primary Weapon & Vest
         [Rus_Mag_Mosin,1] call FNC_AddItem;
@@ -536,7 +536,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         //Extra
         [Rus_Gren_Frag_S,1] call FNC_AddItem;
@@ -553,7 +553,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         //Primary Weapon
         [Rus_Mag_DP,1] call FNC_AddItem;
@@ -587,7 +587,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
         [Rus_Gren_Frag_S,1] call FNC_AddItem;
 
         //Extra
@@ -605,8 +605,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         [//Secondary Weapon
         [//TT-33
@@ -637,8 +637,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         [//Secondary Weapon
         [//TT-33
@@ -697,8 +697,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         //Extra
         [Rus_Mag_Mort_HE,4] call FNC_AddItem;
@@ -713,8 +713,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         [//Secondary Weapon
         [//TT-33
@@ -743,8 +743,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         [//Secondary Weapon
         [//TT-33
@@ -801,8 +801,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         //Extra
     };
@@ -843,8 +843,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         //Extra
         [Rus_Mag_PTRD,20,"backpack"] call FNC_AddItem;
@@ -860,8 +860,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         [//Secondary Weapon
         [//TT-33
@@ -919,8 +919,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         //Extra
         [Rus_Mag_PTRD,20,"backpack"] call FNC_AddItem;
@@ -936,8 +936,8 @@
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
-        Rus_leader_equipment;
+        Rus_Default_Equipment;
+        Rus_Leader_Equipment;
 
         [//Primary Weapon
         [//PPD-40
@@ -975,7 +975,7 @@
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Rus_default_equipment;
+        Rus_Default_Equipment;
 
         [//Secondary Weapon
         [//TT-33
