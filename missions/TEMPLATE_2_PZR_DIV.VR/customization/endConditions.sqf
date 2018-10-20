@@ -14,13 +14,13 @@ eastCasualty = "Red Army" call FNC_CasualtyPercentage; //Gets the casualty perce
     publicVariable "testVar";
 
 
-//=== Time Limit End Message
+//=== Time Limit End Message ===
 //This message displayed when the time runs out
 //The time limit is set in customization/settings.sqf
     FW_TimeLimitMessage = "TIME LIMIT REACHED!";
 
 
-//=== Admin/Zeus End Messages
+//=== Admin/Zeus End Messages ===
 //End messages to be used with the in briefing Admin Tab end mission options.
 //These ending must be triggered manually by someone with access to the Admin Tab.
 //Change the messages to reflect your mission and add additional messages as required.
@@ -41,7 +41,7 @@ eastCasualty = "Red Army" call FNC_CasualtyPercentage; //Gets the casualty perce
     <br/>Defeat/Victory";
 */
 
-//=== Scripted End Conditions
+//=== Scripted End Conditions ===
 //Scripted end conditions allow you to end the mission automatically based on the state of the mission.
 //You can make your own based on basically whatever ARMA will support.
 
@@ -71,7 +71,6 @@ Alternative methods of counting casualties
         this will check how many players are remaining in a team
         be careful as using this method will end the mission instantly if
         not enough players are present in the team
-
 
 Adding extraction
     ["2 Panzer Division", "ExtractionAreaMarker", 0.8] call FNC_hasExtracted;

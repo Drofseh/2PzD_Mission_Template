@@ -138,12 +138,9 @@ if (
 // The Zeus unit in the Essentials composition is currently set to this variable name.
 // If you wish to use a different Zeus unit then you will need to set its Variable Name yourself.
 
-// I strongly suggest keeping the Zeus on the Civilian side however, so they can't see any of the marks or lines the players draw on the map.
+// I strongly suggest keeping the Zeus on the Civilian side, or at least on a different side from the players, so they can't see any of the marks or lines the players draw on the map.
 
-if (isNil {God}) then {
-    God = 0;
-};
-if (God isEqualTo player) then {
+if (!isNil "God" && {God isEqualTo player}) then {
     //All Zeus Notes should go in this tab, only the Zeus player will see them.
     NEWTAB("Zeus Notes")
     <br/><font color='#FF8C00' size='20'>If you are not going to Zeus this mission, do not read this tab.</font>
