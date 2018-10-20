@@ -1,12 +1,12 @@
 version=53;
-center[]={443.89822,5,694.99835};
+center[]={3774.3127,5,4064.8733};
 class items
 {
 	items=13;
 	class Item0
 	{
 		dataType="Marker";
-		position[]={0.37677002,0,-6.5533447};
+		position[]={0.35546875,0,-6.6032715};
 		name="AO";
 		text="!Area of Operations";
 		markerType="RECTANGLE";
@@ -16,16 +16,17 @@ class items
 		a=3000;
 		b=3000;
 		drawBorder=1;
-		id=44381;
+		id=0;
 	};
 	class Item1
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.3375854,0,2.730896};
+			position[]={2.3161621,0,2.6806641};
 		};
-		id=44382;
+		name="zeusAdmin";
+		id=1;
 		type="ModuleCurator_F";
 		class CustomAttributes
 		{
@@ -132,9 +133,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-1.7058716,0,2.7164917};
+			position[]={-1.7270508,0,2.6665039};
 		};
-		id=44383;
+		id=2;
 		type="acex_headless_module";
 		class CustomAttributes
 		{
@@ -222,13 +223,13 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.32977295,0,3.2296753};
+			position[]={0.30859375,0,3.1796875};
 		};
 		name="HC";
 		init="call{this setGroupId [""Headless Client 01""];}";
 		isPlayable=1;
 		description="Headless Client 01";
-		id=44384;
+		id=3;
 		type="HeadlessClient_F";
 	};
 	class Item4
@@ -236,9 +237,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.2628784,0,0.64520264};
+			position[]={2.2412109,0,0.59570313};
 		};
-		id=44385;
+		name="zeusCommander";
+		id=4;
 		type="ModuleCurator_F";
 		class CustomAttributes
 		{
@@ -352,7 +354,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.29241943,0.0014390945,0.74285889};
+					position[]={0.27124023,0.0014390945,0.69287109};
 				};
 				side="Civilian";
 				flags=6;
@@ -365,7 +367,7 @@ class items
 					isPlayer=1;
 					isPlayable=1;
 				};
-				id=44387;
+				id=6;
 				type="LIB_CIV_Functionary_4";
 				class CustomAttributes
 				{
@@ -699,20 +701,20 @@ class items
 		class Attributes
 		{
 		};
-		id=44386;
+		id=5;
 	};
 	class Item6
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.32977295,0,2.7296753};
+			position[]={0.30859375,0,2.6796875};
 		};
 		name="HC_1";
 		init="call{this setGroupId [""Headless Client 02""];}";
 		isPlayable=1;
 		description="Headless Client 02";
-		id=44388;
+		id=7;
 		type="HeadlessClient_F";
 	};
 	class Item7
@@ -720,13 +722,13 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.32977295,0,2.2296753};
+			position[]={0.30859375,0,2.1796875};
 		};
 		name="HC_2";
 		init="call{this setGroupId [""Headless Client 03""];}";
 		isPlayable=1;
 		description="Headless Client 03";
-		id=44389;
+		id=8;
 		type="HeadlessClient_F";
 	};
 	class Item8
@@ -734,11 +736,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.31121826,0,-1.2993774};
+			position[]={0.29003906,0,-1.3493652};
 		};
 		isPlayable=1;
 		description="Camera Man@Media Team";
-		id=44390;
+		id=9;
 		type="ace_spectator_virtual";
 	};
 	class Item9
@@ -746,11 +748,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.31414795,0,-3.2793579};
+			position[]={0.29296875,0,-3.3293457};
 		};
 		isPlayable=1;
 		description="Camera Man@Media Team";
-		id=44391;
+		id=10;
 		type="ace_spectator_virtual";
 	};
 	class Item10
@@ -758,11 +760,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-1.7271118,0,0.7177124};
+			position[]={-1.748291,0,0.66772461};
 			angles[]={0,0.81370723,0};
 		};
 		name="fw_guer_respawn";
-		id=44392;
+		id=11;
 		type="Logic";
 	};
 	class Item11
@@ -770,11 +772,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-1.7300415,0,-1.2703247};
+			position[]={-1.7512207,0,-1.3203125};
 			angles[]={0,1.0976419,0};
 		};
 		name="fw_west_respawn";
-		id=44393;
+		id=12;
 		type="Logic";
 	};
 	class Item12
@@ -782,11 +784,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-1.7207642,0,-3.2891235};
+			position[]={-1.7419434,0,-3.3391113};
 			angles[]={0,1.0976375,0};
 		};
 		name="fw_east_respawn";
-		id=44394;
+		id=13;
 		type="Logic";
 	};
 };
