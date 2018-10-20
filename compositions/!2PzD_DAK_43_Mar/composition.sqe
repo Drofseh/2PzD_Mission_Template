@@ -599,7 +599,7 @@ class items
 				class Attributes
 				{
 					ammo=0.7751143;
-					init="[this,""DAK43Mar_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""DAK43Mar_RTO""] call FNC_GearScript;";
 					name="G_613";
 					description="Funker@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
@@ -5894,7 +5894,7 @@ class items
 				class Attributes
 				{
 					ammo=0.7751143;
-					init="[this,""DAK43Mar_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""DAK43Mar_RTO""] call FNC_GearScript;";
 					name="G_1613";
 					description="Funker@1. Zug | Zugtrupp";
 					isPlayable=1;
@@ -15627,7 +15627,7 @@ class items
 				class Attributes
 				{
 					ammo=0.7751143;
-					init="[this,""DAK43Mar_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""DAK43Mar_RTO""] call FNC_GearScript;";
 					name="G_2613";
 					description="Funker@2. Zug | Zugtrupp";
 					isPlayable=1;

@@ -560,7 +560,7 @@ class items
 				class Attributes
 				{
 					ammo=0.7751143;
-					init="[this,""FSJ44Jan_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""FSJ44Jan_RTO""] call FNC_GearScript;";
 					description="Funker@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
 					class Inventory
@@ -1932,7 +1932,7 @@ class items
 				class Attributes
 				{
 					ammo=0.7751143;
-					init="[this,""FSJ44Jan_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""FSJ44Jan_RTO""] call FNC_GearScript;";
 					description="Funker@1. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
@@ -11521,7 +11521,7 @@ class items
 				class Attributes
 				{
 					ammo=0.7751143;
-					init="[this,""FSJ44Jan_RTO""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""FSJ44Jan_RTO""] call FNC_GearScript;";
 					description="Funker@2. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
