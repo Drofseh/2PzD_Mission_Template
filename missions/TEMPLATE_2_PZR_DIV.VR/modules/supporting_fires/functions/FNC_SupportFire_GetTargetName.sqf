@@ -1,7 +1,4 @@
 
-
-
-
 FNC_SupportFire_GetTargetName = {
 
     private _supportFire_target = _this select 0;

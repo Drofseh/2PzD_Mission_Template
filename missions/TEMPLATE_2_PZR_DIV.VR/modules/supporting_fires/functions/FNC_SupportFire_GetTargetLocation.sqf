@@ -1,6 +1,4 @@
 
-
-
 FNC_SupportFire_GetTargetLocation = {
 
     private _supportFire_target   = _this select 0;
@@ -20,18 +18,18 @@ FNC_SupportFire_GetTargetLocation = {
     // else reset accuracy and calculate the new target
     if (_supportFire_target isEqualTo "TargetLast") then {
 
-        _supportFire_targetLoc = previousTargetLoc;
+        _supportFire_targetLoc = supportFire_previousTargetLoc;
 
-        if (repeatFireBonus < 1) then {repeatFireBonus = 1};
-        repeatFireBonus = repeatFireBonus + 0.25;
-        if (repeatFireBonus >= 3) then {repeatFireBonus = 3};
+        if (supportFire_repeatFireBonus < 1) then {supportFire_repeatFireBonus = 1};
+        supportFire_repeatFireBonus = supportFire_repeatFireBonus + 0.25;
+        if (supportFire_repeatFireBonus >= 3) then {supportFire_repeatFireBonus = 3};
 
-        shellDispersion = originalshellDispersion / repeatFireBonus;
-        shellAccuracy = originalshellAccuracy / repeatFireBonus;
-        _supportFire_accuracy = shellAccuracy;
+        supportFire_shellDispersion = supportFire_originalShellDispersion / supportFire_repeatFireBonus;
+        supportFire_shellAccuracy = supportFire_originalShellAccuracy / supportFire_repeatFireBonus;
+        _supportFire_accuracy = supportFire_shellAccuracy;
 
-        // systemChat ("shellDispersion - " + str shellDispersion);
-        // systemChat ("shellAccuracy - " + str shellAccuracy);
+        // systemChat ("supportFire_shellDispersion - " + str supportFire_shellDispersion);
+        // systemChat ("supportFire_shellAccuracy - " + str supportFire_shellAccuracy);
         // systemChat ("_supportFire_accuracy - " + str _supportFire_accuracy);
 
         _supportFire_targetX = (supportFire_lastTargetX) + (random [-_supportFire_accuracy, 0, _supportFire_accuracy]);
@@ -44,18 +42,18 @@ FNC_SupportFire_GetTargetLocation = {
 
         if (_supportFire_target isEqualTo "AdjustFire") then {
 
-            _supportFire_targetLoc = previousTargetLoc;
+            _supportFire_targetLoc = supportFire_previousTargetLoc;
 
-        if (repeatFireBonus < 1) then {repeatFireBonus = 1};
-        repeatFireBonus = repeatFireBonus + 0.25;
-        if (repeatFireBonus >= 3) then {repeatFireBonus = 3};
+            if (supportFire_repeatFireBonus < 1) then {supportFire_repeatFireBonus = 1};
+            supportFire_repeatFireBonus = supportFire_repeatFireBonus + 0.25;
+            if (supportFire_repeatFireBonus >= 3) then {supportFire_repeatFireBonus = 3};
 
-            shellDispersion = originalshellDispersion / repeatFireBonus;
-            shellAccuracy = originalshellAccuracy / repeatFireBonus;
-            _supportFire_accuracy = shellAccuracy;
+            supportFire_shellDispersion = supportFire_originalShellDispersion / supportFire_repeatFireBonus;
+            supportFire_shellAccuracy = supportFire_originalShellAccuracy / supportFire_repeatFireBonus;
+            _supportFire_accuracy = supportFire_shellAccuracy;
 
-            // systemChat ("shellDispersion - " + str shellDispersion);
-            // systemChat ("shellAccuracy - " + str shellAccuracy);
+            // systemChat ("supportFire_shellDispersion - " + str supportFire_shellDispersion);
+            // systemChat ("supportFire_shellAccuracy - " + str supportFire_shellAccuracy);
             // systemChat ("_supportFire_accuracy - " + str _supportFire_accuracy);
 
             _supportFire_targetX = (supportFire_lastTargetX) + _supportFire_adjustX + (random [-_supportFire_accuracy, 0, _supportFire_accuracy]);
@@ -67,12 +65,12 @@ FNC_SupportFire_GetTargetLocation = {
         } else {
 
             // resets dispesion and accuracy to original values
-            shellDispersion = originalshellDispersion;
-            shellAccuracy = originalshellAccuracy;
-            _supportFire_accuracy = shellAccuracy;
+            supportFire_shellDispersion = supportFire_originalShellDispersion;
+            supportFire_shellAccuracy = supportFire_originalShellAccuracy;
+            _supportFire_accuracy = supportFire_shellAccuracy;
 
-            // systemChat ("shellDispersion - " + str shellDispersion);
-            // systemChat ("shellAccuracy - " + str shellAccuracy);
+            // systemChat ("supportFire_shellDispersion - " + str supportFire_shellDispersion);
+            // systemChat ("supportFire_shellAccuracy - " + str supportFire_shellAccuracy);
             // systemChat ("_supportFire_accuracy - " + str _supportFire_accuracy);
 
             // gets new target location
@@ -100,13 +98,13 @@ FNC_SupportFire_GetTargetLocation = {
             // systemChat ("_supportFire_targetLoc - " + str _supportFire_targetLoc);
 
             // sets newest target as repeat target and resets accuracy/dispersion bonus
-            previousTarget = _supportFire_target;
-            previousTargetLoc = _supportFire_targetLoc;
-            repeatFireBonus = 1;
+            supportFire_previousTarget = _supportFire_target;
+            supportFire_previousTargetLoc = _supportFire_targetLoc;
+            supportFire_repeatFireBonus = 1;
 
-            // systemChat ("previousTarget - " + str previousTarget);
-            // systemChat ("previousTargetLoc - " + str previousTargetLoc);
-            // systemChat ("repeatFireBonus - " + str repeatFireBonus);
+            // systemChat ("supportFire_previousTarget - " + str supportFire_previousTarget);
+            // systemChat ("supportFire_previousTargetLoc - " + str supportFire_previousTargetLoc);
+            // systemChat ("supportFire_repeatFireBonus - " + str supportFire_repeatFireBonus);
 
             _supportFire_targetX = (_supportFire_targetLoc select 0) + (random [-_supportFire_accuracy, 0, _supportFire_accuracy]);
             _supportFire_targetY = (_supportFire_targetLoc select 1) + (random [-_supportFire_accuracy, 0, _supportFire_accuracy]);

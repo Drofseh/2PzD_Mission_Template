@@ -1,6 +1,4 @@
 
-
-
 // [side player] call FNC_SupportFire_AmmoCheck;
 FNC_SupportFire_AmmoCheck = {
 
@@ -15,23 +13,23 @@ FNC_SupportFire_AmmoCheck = {
 
     if (_supportFire_side isEqualTo WEST) then {
         // systemChat "west ammo counted";
-        _supportFire_ammoCountHE = shellsHE_AmmoCountWEST;
-        _supportFire_ammoCountSmoke = shellsSmoke_AmmoCountWEST;
-        _supportFire_ammoCountFlare = shellsFlare_AmmoCountWEST;
+        _supportFire_ammoCountHE = supportFire_shellsHE_AmmoCountWEST;
+        _supportFire_ammoCountSmoke = supportFire_shellsSmoke_AmmoCountWEST;
+        _supportFire_ammoCountFlare = supportFire_shellsFlare_AmmoCountWEST;
     };
 
     if (_supportFire_side isEqualTo EAST) then {
         // systemChat "east ammo counted";
-        _supportFire_ammoCountHE = shellsHE_AmmoCountEAST;
-        _supportFire_ammoCountSmoke = shellsSmoke_AmmoCountEAST;
-        _supportFire_ammoCountFlare = shellsFlare_AmmoCountEAST;
+        _supportFire_ammoCountHE = supportFire_shellsHE_AmmoCountEAST;
+        _supportFire_ammoCountSmoke = supportFire_shellsSmoke_AmmoCountEAST;
+        _supportFire_ammoCountFlare = supportFire_shellsFlare_AmmoCountEAST;
     };
 
     if (_supportFire_side isEqualTo RESISTANCE) then {
         // systemChat "resistance ammo counted";
-        _supportFire_ammoCountHE = shellsHE_AmmoCountGUER;
-        _supportFire_ammoCountSmoke = shellsSmoke_AmmoCountGUER;
-        _supportFire_ammoCountFlare = shellsFlare_AmmoCountGUER;
+        _supportFire_ammoCountHE = supportFire_shellsHE_AmmoCountGUER;
+        _supportFire_ammoCountSmoke = supportFire_shellsSmoke_AmmoCountGUER;
+        _supportFire_ammoCountFlare = supportFire_shellsFlare_AmmoCountGUER;
     };
 
     // systemChat (str _supportFire_ammoCountHE);

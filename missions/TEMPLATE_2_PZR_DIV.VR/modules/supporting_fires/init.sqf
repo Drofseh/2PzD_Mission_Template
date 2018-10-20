@@ -1,3 +1,4 @@
+
 ["Supporting Fires", "Allows radio operators to call in fire support using Ace interaction.", "Wilhelm Haas (Drofseh)"] call FNC_RegisterModule;
 #define def_fireMissionBriefingMessage player createDiarySubject ["Supporting Fires", "Supporting Fires"]; \
     player createDiaryRecord ["Supporting Fires",["How To Use"," \
@@ -78,39 +79,39 @@
 
 if (isServer) then {
 
-    publicVariable "shellsHE_AmmoCountWEST";
-    publicVariable "shellsHE_AmmoCountEAST";
-    publicVariable "shellsHE_AmmoCountGUER";
-    publicVariable "shellsSmoke_AmmoCountWEST";
-    publicVariable "shellsSmoke_AmmoCountEAST";
-    publicVariable "shellsSmoke_AmmoCountGUER";
-    publicVariable "shellsFlare_AmmoCountWEST";
-    publicVariable "shellsFlare_AmmoCountEAST";
-    publicVariable "shellsFlare_AmmoCountGUER";
+    publicVariable "supportFire_shellsHE_AmmoCountWEST";
+    publicVariable "supportFire_shellsHE_AmmoCountEAST";
+    publicVariable "supportFire_shellsHE_AmmoCountGUER";
+    publicVariable "supportFire_shellsSmoke_AmmoCountWEST";
+    publicVariable "supportFire_shellsSmoke_AmmoCountEAST";
+    publicVariable "supportFire_shellsSmoke_AmmoCountGUER";
+    publicVariable "supportFire_shellsFlare_AmmoCountWEST";
+    publicVariable "supportFire_shellsFlare_AmmoCountEAST";
+    publicVariable "supportFire_shellsFlare_AmmoCountGUER";
 
-    fireMissionAvailableWEST = True;
-    fireMissionAvailableEAST = True;
-    fireMissionAvailableGUER = True;
-    publicVariable "fireMissionAvailableWEST";
-    publicVariable "fireMissionAvailableEAST";
-    publicVariable "fireMissionAvailableGUER";
+    supportFire_fireMissionAvailableWEST = True;
+    supportFire_fireMissionAvailableEAST = True;
+    supportFire_fireMissionAvailableGUER = True;
+    publicVariable "supportFire_fireMissionAvailableWEST";
+    publicVariable "supportFire_fireMissionAvailableEAST";
+    publicVariable "supportFire_fireMissionAvailableGUER";
 };
 
-previousTarget = [];
+supportFire_previousTarget = [];
 
-target01 = "";
-target02 = "";
-target03 = "";
-target04 = "";
-target05 = "";
-target06 = "";
+supportFire_target01 = "";
+supportFire_target02 = "";
+supportFire_target03 = "";
+supportFire_target04 = "";
+supportFire_target05 = "";
+supportFire_target06 = "";
 
-target01_Name = "";
-target02_Name = "";
-target03_Name = "";
-target04_Name = "";
-target05_Name = "";
-target06_Name = "";
+supportFire_target01_Name = "";
+supportFire_target02_Name = "";
+supportFire_target03_Name = "";
+supportFire_target04_Name = "";
+supportFire_target05_Name = "";
+supportFire_target06_Name = "";
 
 if (side player == WEST) then {
     supportFire_target01 = supportFire_target01WEST;
@@ -127,19 +128,19 @@ if (side player == WEST) then {
     supportFire_target05_Name = supportFire_target05WEST_Name;
     supportFire_target06_Name = supportFire_target06WEST_Name;
 
-    shellsHE_Type = shellsHE_TypeWEST;
-    shellsSmoke_Type = shellsSmoke_TypeWEST;
-    shellsFlare_Type = shellsFlare_TypeWEST;
+    supportFire_shellsHE_Type = supportFire_shellsHE_TypeWEST;
+    supportFire_shellsSmoke_Type = supportFire_shellsSmoke_TypeWEST;
+    supportFire_shellsFlare_Type = supportFire_shellsFlare_TypeWEST;
 
-    shellDispersion = shellDispersionWEST;
-    shellAccuracy = shellAccuracyWEST;
+    supportFire_shellDispersion = supportFire_shellDispersionWEST;
+    supportFire_shellAccuracy = supportFire_shellAccuracyWEST;
 
-    originalShellDispersion = shellDispersionWEST;
-    originalShellAccuracy = shellAccuracy;
+    supportFire_originalShellDispersion = supportFire_shellDispersionWEST;
+    supportFire_originalShellAccuracy = supportFire_shellAccuracy;
 
     #include "actions.sqf"
 
-    if (shellsHE_AmmoCountWEST >= 1 || shellsSmoke_AmmoCountWEST >= 1 || shellsFlare_AmmoCountWEST >= 1) then {
+    if (supportFire_shellsHE_AmmoCountWEST >= 1 || supportFire_shellsSmoke_AmmoCountWEST >= 1 || supportFire_shellsFlare_AmmoCountWEST >= 1) then {
         def_fireMissionBriefingMessage;
     };
 };
@@ -159,19 +160,19 @@ if (side player == EAST) then {
     supportFire_target05_Name = supportFire_target05EAST_Name;
     supportFire_target06_Name = supportFire_target06EAST_Name;
 
-    shellsHE_Type = shellsHE_TypeEAST;
-    shellsSmoke_Type = shellsSmoke_TypeEAST;
-    shellsFlare_Type = shellsFlare_TypeEAST;
+    supportFire_shellsHE_Type = supportFire_shellsHE_TypeEAST;
+    supportFire_shellsSmoke_Type = supportFire_shellsSmoke_TypeEAST;
+    supportFire_shellsFlare_Type = supportFire_shellsFlare_TypeEAST;
 
-    shellDispersion = shellDispersionEAST;
-    shellAccuracy = shellAccuracyEAST;
+    supportFire_shellDispersion = supportFire_shellDispersionEAST;
+    supportFire_shellAccuracy = supportFire_shellAccuracyEAST;
 
-    originalShellDispersion = shellDispersionEAST;
-    originalShellAccuracy = shellAccuracyEAST;
+    supportFire_originalShellDispersion = supportFire_shellDispersionEAST;
+    supportFire_originalShellAccuracy = supportFire_shellAccuracyEAST;
 
     #include "actions.sqf"
 
-    if (shellsHE_AmmoCountEAST >= 1 || shellsSmoke_AmmoCountEAST >= 1 || shellsFlare_AmmoCountEAST >= 1) then {
+    if (supportFire_shellsHE_AmmoCountEAST >= 1 || supportFire_shellsSmoke_AmmoCountEAST >= 1 || supportFire_shellsFlare_AmmoCountEAST >= 1) then {
         def_fireMissionBriefingMessage;
     };
 };
@@ -191,19 +192,19 @@ if (side player == independent) then {
     supportFire_target05_Name = supportFire_target05GUER_Name;
     supportFire_target06_Name = supportFire_target06GUER_Name;
 
-    shellsHE_Type = shellsHE_TypeGUER;
-    shellsSmoke_Type = shellsSmoke_TypeGUER;
-    shellsFlare_Type = shellsFlare_TypeGUER;
+    supportFire_shellsHE_Type = supportFire_shellsHE_TypeGUER;
+    supportFire_shellsSmoke_Type = supportFire_shellsSmoke_TypeGUER;
+    supportFire_shellsFlare_Type = supportFire_shellsFlare_TypeGUER;
 
-    shellDispersion = shellDispersionGUER;
-    shellAccuracy = shellAccuracyGUER;
+    supportFire_shellDispersion = supportFire_shellDispersionGUER;
+    supportFire_shellAccuracy = supportFire_shellAccuracyGUER;
 
-    originalShellDispersion = shellDispersionGUER;
-    originalShellAccuracy = shellAccuracyGUER;
+    supportFire_originalShellDispersion = supportFire_shellDispersionGUER;
+    supportFire_originalShellAccuracy = supportFire_shellAccuracyGUER;
 
     #include "actions.sqf"
 
-    if (shellsHE_AmmoCountGUER >= 1 || shellsSmoke_AmmoCountGUER >= 1 || shellsFlare_AmmoCountGUER >= 1) then {
+    if (supportFire_shellsHE_AmmoCountGUER >= 1 || supportFire_shellsSmoke_AmmoCountGUER >= 1 || supportFire_shellsFlare_AmmoCountGUER >= 1) then {
         def_fireMissionBriefingMessage;
     };
 };

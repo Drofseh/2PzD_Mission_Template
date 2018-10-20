@@ -1,6 +1,4 @@
 
-
-
 FNC_SupportFire_Barrage = {
 
     _this spawn {
@@ -11,6 +9,7 @@ FNC_SupportFire_Barrage = {
         private _supportFire_number     = _this select 1;
         private _supportFire_targetX    = (_this select 2) select 0;
         private _supportFire_targetY    = (_this select 2) select 1;
+        private _supportFire_dispersion = _this select 3;
         private _supportFire_rounds_fired = 0;
 
         // systemChat ("_supportFire_type - " + str _supportFire_type);
@@ -25,22 +24,21 @@ FNC_SupportFire_Barrage = {
 
             private "_supportFire_bomb";
             private "_supportFire_bombPosition";
-            private _supportFire_dispersion = shellDispersion;
             private "_supportFire_bombPositionX";
             private "_supportFire_bombPositionY";
 
             // systemChat ("_supportFire_rounds_fired - " + str _supportFire_rounds_fired);
 
             if (_supportFire_type isEqualTo "HE") then {
-                _supportFire_bomb = shellsHE_Type createVehicle [_supportFire_targetX, _supportFire_targetY, 300];
+                _supportFire_bomb = supportFire_shellsHE_Type createVehicle [_supportFire_targetX, _supportFire_targetY, 300];
                 // systemChat "_supportFire_bomb HE";
             };
             if (_supportFire_type isEqualTo "Smoke") then {
-                _supportFire_bomb = shellsSmoke_Type createVehicle [_supportFire_targetX, _supportFire_targetY, 300];
+                _supportFire_bomb = supportFire_shellsSmoke_Type createVehicle [_supportFire_targetX, _supportFire_targetY, 300];
                 // systemChat "_supportFire_bomb Smoke";
             };
             if (_supportFire_type isEqualTo "Flare") then {
-                _supportFire_bomb = shellsFlare_Type createVehicle [_supportFire_targetX, _supportFire_targetY, 300];
+                _supportFire_bomb = supportFire_shellsFlare_Type createVehicle [_supportFire_targetX, _supportFire_targetY, 300];
                 // systemChat "_supportFire_bomb Smoke";
             };
 

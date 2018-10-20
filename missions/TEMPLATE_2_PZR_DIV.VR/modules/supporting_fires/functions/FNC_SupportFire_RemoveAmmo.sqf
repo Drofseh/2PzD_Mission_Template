@@ -1,6 +1,4 @@
 
-
-
 FNC_SupportFire_RemoveAmmo = {
 
     private _supportFire_side   = _this select 0;
@@ -15,21 +13,21 @@ FNC_SupportFire_RemoveAmmo = {
     if (_supportFire_side isEqualTo WEST) then {
         // systemChat "side WEST";
         if (_supportFire_type isEqualTo "HE") then {
-            shellsHE_AmmoCountWEST = shellsHE_AmmoCountWEST - _supportFire_number;
-            publicVariable "shellsHE_AmmoCountWEST";
-            _supportFire_ammoCount = shellsHE_AmmoCountWEST;
+            supportFire_shellsHE_AmmoCountWEST = supportFire_shellsHE_AmmoCountWEST - _supportFire_number;
+            publicVariable "supportFire_shellsHE_AmmoCountWEST";
+            _supportFire_ammoCount = supportFire_shellsHE_AmmoCountWEST;
             // systemChat "HE removed";
         };
         if (_supportFire_type isEqualTo "Smoke") then {
-            shellsSmoke_AmmoCountWEST = shellsSmoke_AmmoCountWEST - _supportFire_number;
-            publicVariable "shellsSmoke_AmmoCountWEST";
-            _supportFire_ammoCount = shellsSmoke_AmmoCountWEST;
+            supportFire_shellsSmoke_AmmoCountWEST = supportFire_shellsSmoke_AmmoCountWEST - _supportFire_number;
+            publicVariable "supportFire_shellsSmoke_AmmoCountWEST";
+            _supportFire_ammoCount = supportFire_shellsSmoke_AmmoCountWEST;
             // systemChat "Smoke removed";
         };
         if (_supportFire_type isEqualTo "Flare") then {
-            shellsFlare_AmmoCountWEST = shellsFlare_AmmoCountWEST - _supportFire_number;
-            publicVariable "shellsFlare_AmmoCountWEST";
-            _supportFire_ammoCount = shellsFlare_AmmoCountWEST;
+            supportFire_shellsFlare_AmmoCountWEST = supportFire_shellsFlare_AmmoCountWEST - _supportFire_number;
+            publicVariable "supportFire_shellsFlare_AmmoCountWEST";
+            _supportFire_ammoCount = supportFire_shellsFlare_AmmoCountWEST;
             // systemChat "Flare removed";
         };
     };
@@ -37,21 +35,21 @@ FNC_SupportFire_RemoveAmmo = {
     if (_supportFire_side isEqualTo EAST) then {
         // systemChat "side EAST";
         if (_supportFire_type isEqualTo "HE") then {
-            shellsHE_AmmoCountEAST = shellsHE_AmmoCountEAST - _supportFire_number;
-            publicVariable "shellsHE_AmmoCountEAST";
-            _supportFire_ammoCount = shellsHE_AmmoCountEAST;
+            supportFire_shellsHE_AmmoCountEAST = supportFire_shellsHE_AmmoCountEAST - _supportFire_number;
+            publicVariable "supportFire_shellsHE_AmmoCountEAST";
+            _supportFire_ammoCount = supportFire_shellsHE_AmmoCountEAST;
             // systemChat "HE removed";
         };
         if (_supportFire_type isEqualTo "Smoke") then {
-            shellsSmoke_AmmoCountEAST = shellsSmoke_AmmoCountEAST - _supportFire_number;
-            publicVariable "shellsSmoke_AmmoCountEAST";
-            _supportFire_ammoCount = shellsSmoke_AmmoCountEAST;
+            supportFire_shellsSmoke_AmmoCountEAST = supportFire_shellsSmoke_AmmoCountEAST - _supportFire_number;
+            publicVariable "supportFire_shellsSmoke_AmmoCountEAST";
+            _supportFire_ammoCount = supportFire_shellsSmoke_AmmoCountEAST;
             // systemChat "Smoke removed";
         };
         if (_supportFire_type isEqualTo "Flare") then {
-            shellsFlare_AmmoCountEAST = shellsFlare_AmmoCountEAST - _supportFire_number;
-            publicVariable "shellsFlare_AmmoCountEAST";
-            _supportFire_ammoCount = shellsFlare_AmmoCountEAST;
+            supportFire_shellsFlare_AmmoCountEAST = supportFire_shellsFlare_AmmoCountEAST - _supportFire_number;
+            publicVariable "supportFire_shellsFlare_AmmoCountEAST";
+            _supportFire_ammoCount = supportFire_shellsFlare_AmmoCountEAST;
             // systemChat "Flare removed";
         };
     };
@@ -59,21 +57,21 @@ FNC_SupportFire_RemoveAmmo = {
     if (_supportFire_side isEqualTo RESISTANCE) then {
         // systemChat "side RESISTANCE";
         if (_supportFire_type isEqualTo "HE") then {
-            shellsHE_AmmoCountGUER = shellsHE_AmmoCountGUER - _supportFire_number;
-            publicVariable "shellsHE_AmmoCountGUER";
-            _supportFire_ammoCount = shellsHE_AmmoCountGUER;
+            supportFire_shellsHE_AmmoCountGUER = supportFire_shellsHE_AmmoCountGUER - _supportFire_number;
+            publicVariable "supportFire_shellsHE_AmmoCountGUER";
+            _supportFire_ammoCount = supportFire_shellsHE_AmmoCountGUER;
             // systemChat "HE removed";
         };
         if (_supportFire_type isEqualTo "Smoke") then {
-            shellsSmoke_AmmoCountGUER = shellsSmoke_AmmoCountGUER - _supportFire_number;
-            publicVariable "shellsSmoke_AmmoCountGUER";
-            _supportFire_ammoCount = shellsSmoke_AmmoCountGUER;
+            supportFire_shellsSmoke_AmmoCountGUER = supportFire_shellsSmoke_AmmoCountGUER - _supportFire_number;
+            publicVariable "supportFire_shellsSmoke_AmmoCountGUER";
+            _supportFire_ammoCount = supportFire_shellsSmoke_AmmoCountGUER;
             // systemChat "Smoke removed";
         };
         if (_supportFire_type isEqualTo "Flare") then {
-            shellsFlare_AmmoCountGUER = shellsFlare_AmmoCountGUER - _supportFire_number;
-            publicVariable "shellsFlare_AmmoCountGUER";
-            _supportFire_ammoCount = shellsFlare_AmmoCountGUER;
+            supportFire_shellsFlare_AmmoCountGUER = supportFire_shellsFlare_AmmoCountGUER - _supportFire_number;
+            publicVariable "supportFire_shellsFlare_AmmoCountGUER";
+            _supportFire_ammoCount = supportFire_shellsFlare_AmmoCountGUER;
             // systemChat "Flare removed";
         };
     };

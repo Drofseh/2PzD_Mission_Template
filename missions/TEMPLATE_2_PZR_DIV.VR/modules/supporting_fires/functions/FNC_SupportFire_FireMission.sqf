@@ -1,6 +1,4 @@
 
-
-
 // [side, type, number, target, [adjustmentX,Y]]
 // [(side player), "HE", 5, "Target01", [0,0]] call FNC_SupportFire_FireMission;
 FNC_SupportFire_FireMission = {
@@ -14,8 +12,7 @@ FNC_SupportFire_FireMission = {
         private _supportFire_number     = _this select 2;
         private _supportFire_target     = _this select 3;
         private _supportFire_adjust     = _this select 4;
-        private _supportFire_accuracy   = shellAccuracy;
-        private _supportFire_dispersion = shellDispersion;
+        private _supportFire_accuracy   = supportFire_shellAccuracy;
 
         // systemChat ("_supportFire_side - " + str _supportFire_side);
         // systemChat ("_supportFire_type - " + str _supportFire_type);
@@ -23,7 +20,6 @@ FNC_SupportFire_FireMission = {
         // systemChat ("_supportFire_target - " + str _supportFire_target);
         // systemChat ("_supportFire_adjust - " + str _supportFire_adjust);
         // systemChat ("_supportFire_accuracy - " + str _supportFire_accuracy);
-        // systemChat ("_supportFire_dispersion - " + str _supportFire_dispersion);
 
         // exit if the player managed to call a fire mission even if no ammo was avaiable.
         if (_supportFire_number <= 0) exitWith {
@@ -33,18 +29,18 @@ FNC_SupportFire_FireMission = {
         // get accuracy and dispersion values for players side
         // make fire missions unavailable for that side
         if (_supportFire_side isEqualTo WEST) then {
-            fireMissionAvailableWEST = False;
-            publicVariable "fireMissionAvailableWEST";
+            supportFire_fireMissionAvailableWEST = False;
+            publicVariable "supportFire_fireMissionAvailableWEST";
             // systemChat "Fire missions disabled";
         };
         if (_supportFire_side isEqualTo EAST) then {
-            fireMissionAvailableEAST = False;
-            publicVariable "fireMissionAvailableEAST";
+            supportFire_fireMissionAvailableEAST = False;
+            publicVariable "supportFire_fireMissionAvailableEAST";
             // systemChat "Fire missions disabled";
         };
         if (_supportFire_side isEqualTo RESISTANCE) then {
-            fireMissionAvailableGUER = False;
-            publicVariable "fireMissionAvailableGUER";
+            supportFire_fireMissionAvailableGUER = False;
+            publicVariable "supportFire_fireMissionAvailableGUER";
             // systemChat "Fire missions disabled";
         };
 
@@ -53,6 +49,9 @@ FNC_SupportFire_FireMission = {
 
         private _supportFire_targetXY = [_supportFire_target, _supportFire_accuracy, _supportFire_adjust] call FNC_SupportFire_GetTargetLocation;
         // systemChat ("_supportFire_targetXY - " + str _supportFire_targetXY);
+
+        private _supportFire_dispersion = supportFire_shellDispersion;
+        // systemChat ("_supportFire_dispersion - " + str _supportFire_dispersion);
 
         private _supportFire_targetName = [_supportFire_target] call FNC_SupportFire_GetTargetName;
         // systemChat ("supportFire_targetName - " + str supportFire_targetName);
@@ -78,22 +77,22 @@ FNC_SupportFire_FireMission = {
 
         // make fire missions available again for the players side
         if (_supportFire_side isEqualTo WEST) then {
-            fireMissionAvailableWEST = True;
-            publicVariable "fireMissionAvailableWEST";
+            supportFire_fireMissionAvailableWEST = True;
+            publicVariable "supportFire_fireMissionAvailableWEST";
             // systemChat "Fire missions enabled";
         };
         if (_supportFire_side isEqualTo EAST) then {
-            fireMissionAvailableEAST = True;
-            publicVariable "fireMissionAvailableEAST";
+            supportFire_fireMissionAvailableEAST = True;
+            publicVariable "supportFire_fireMissionAvailableEAST";
             // systemChat "Fire missions enabled";
         };
         if (_supportFire_side isEqualTo RESISTANCE) then {
-            fireMissionAvailableGUER = True;
-            publicVariable "fireMissionAvailableGUER";
+            supportFire_fireMissionAvailableGUER = True;
+            publicVariable "supportFire_fireMissionAvailableGUER";
             // systemChat "Fire missions enabled";
         };
 
-        [_supportFire_type, _supportFire_number, _supportFire_targetXY] call FNC_SupportFire_Barrage;
+        [_supportFire_type, _supportFire_number, _supportFire_targetXY, _supportFire_dispersion] call FNC_SupportFire_Barrage;
 
     };
 };
