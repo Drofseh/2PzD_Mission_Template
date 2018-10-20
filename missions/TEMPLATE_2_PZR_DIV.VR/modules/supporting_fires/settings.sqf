@@ -1,3 +1,4 @@
+
 //This module allows radio operators call in mortar or artillery fire missions using the Ace interation menu.
 //The radio operator requires an ACRE AN/PRC-77 radio in their Backpack. Vehicle radios or other portable radios will not work.
 //They will be able to call fire missions on up to six pre-sighted targets based on markers placed by the mission maker.
@@ -10,71 +11,72 @@
 //TARGETS
     // Set pre-sighted targets for each side.
     // Each target MUST be the variable name of a marker you have placed in the mission
-    // If you wish to use less than 6 targets, leave the unused targets with an empty string, ei. target06 = "";
+    // If you wish to use less than 6 targets, leave the unused targets with an empty string, ei. supportFire_target06 = "";
     // See https://gyazo.com/d66a1b6559f60e0fcf969165c93efeeb for an example
 
     //Examples:
-    //target01WEST = "marker_1";
-    //target02WEST = "marker_12";
-    //target03WEST = "marker_5";
+    //supportFire_target01WEST = "marker_1";
+    //supportFire_target02WEST = "marker_12";
+    //supportFire_target03WEST = "marker_5";
 
     // WEST/Blufor
-    target01WEST = "";
-    target02WEST = "";
-    target03WEST = "";
-    target04WEST = "";
-    target05WEST = "";
-    target06WEST = "";
+    supportFire_target01WEST = "";
+    supportFire_target02WEST = "";
+    supportFire_target03WEST = "";
+    supportFire_target04WEST = "";
+    supportFire_target05WEST = "";
+    supportFire_target06WEST = "";
 
     // East/Opfor
-    target01EAST = "";
-    target02EAST = "";
-    target03EAST = "";
-    target04EAST = "";
-    target05EAST = "";
-    target06EAST = "";
+    supportFire_target01EAST = "";
+    supportFire_target02EAST = "";
+    supportFire_target03EAST = "";
+    supportFire_target04EAST = "";
+    supportFire_target05EAST = "";
+    supportFire_target06EAST = "";
 
     // Resistance/Independent/Indfor
-    target01GUER = "";
-    target02GUER = "";
-    target03GUER = "";
-    target04GUER = "";
-    target05GUER = "";
-    target06GUER = "";
+    supportFire_target01GUER = "";
+    supportFire_target02GUER = "";
+    supportFire_target03GUER = "";
+    supportFire_target04GUER = "";
+    supportFire_target05GUER = "";
+    supportFire_target06GUER = "";
 
 //TARGET NAMES
     // These are the names for the targets that appear in the self interaction menu.
     // They should match (or at least be very similar to) the visible text for the target they go with.
+    // Try to keep them reasonably short, so that people who have their ACE menu set to radial won't have too much overlap.
     // See https://gyazo.com/d66a1b6559f60e0fcf969165c93efeeb for an example
 
     //Examples:
-    //target01WEST_Name = "Target Alpha";
-    //target02WEST_Name = "Eggwil";
-    //target03WEST_Name = "Worb Docks";
+    //supportFire_target01WEST_Name = "Target Alpha";
+    //supportFire_target02WEST_Name = "Eggwil";
+    //supportFire_target03WEST_Name = "Worb Docks";
 
     // WEST/Blufor
-    target01WEST_Name = "Target Alpha";
-    target02WEST_Name = "Target Bravo";
-    target03WEST_Name = "Target Charlie";
-    target04WEST_Name = "Target Delta";
-    target05WEST_Name = "Target Echo";
-    target06WEST_Name = "Target Foxtrot";
+    supportFire_target01WEST_Name = "Alpha";
+    supportFire_target02WEST_Name = "Bravo";
+    supportFire_target03WEST_Name = "Charlie";
+    supportFire_target04WEST_Name = "Delta";
+    supportFire_target05WEST_Name = "Echo";
+    supportFire_target06WEST_Name = "Foxtrot";
 
     // East/Opfor
-    target01EAST_Name = "Target Alpha";
-    target02EAST_Name = "Target Bravo";
-    target03EAST_Name = "Target Charlie";
-    target04EAST_Name = "Target Delta";
-    target05EAST_Name = "Target Echo";
-    target06EAST_Name = "Target Foxtrot";
+    supportFire_target01EAST_Name = "Alpha";
+    supportFire_target02EAST_Name = "Bravo";
+    supportFire_target03EAST_Name = "Charlie";
+    supportFire_target04EAST_Name = "Delta";
+    supportFire_target05EAST_Name = "Echo";
+    supportFire_target06EAST_Name = "Foxtrot";
 
     // Resistance/Independent/Indfor
-    target01GUER_Name = "Target Alpha";
-    target02GUER_Name = "Target Bravo";
-    target03GUER_Name = "Target Charlie";
-    target04GUER_Name = "Target Delta";
-    target05GUER_Name = "Target Echo";
-    target06GUER_Name = "Target Foxtrot";
+    supportFire_target01GUER_Name = "Alpha";
+    supportFire_target02GUER_Name = "Bravo";
+    supportFire_target03GUER_Name = "Charlie";
+    supportFire_target04GUER_Name = "Delta";
+    supportFire_target05GUER_Name = "Echo";
+    supportFire_target06GUER_Name = "Foxtrot";
 
 // AMMUNITION TYPE
     // There are three types of ammunition available, High Explosive, Smoke, and Flare.
@@ -92,39 +94,39 @@
             //          Sh_155mm_AMOS
 
     // WEST/Blufor
-    shellsHE_TypeWEST = "Sh_82mm_AMOS";
-    shellsSmoke_TypeWEST = "Smoke_82mm_AMOS_White";
-    shellsFlare_TypeWEST = "LIB_40mm_White";
+    supportFire_shellsHE_TypeWEST = "Sh_82mm_AMOS";
+    supportFire_shellsSmoke_TypeWEST = "Smoke_82mm_AMOS_White";
+    supportFire_shellsFlare_TypeWEST = "LIB_40mm_White";
 
     // East/Opfor
-    shellsHE_TypeEAST = "Sh_82mm_AMOS";
-    shellsSmoke_TypeEAST = "Smoke_82mm_AMOS_White";
-    shellsFlare_TypeEAST = "LIB_40mm_White";
+    supportFire_shellsHE_TypeEAST = "Sh_82mm_AMOS";
+    supportFire_shellsSmoke_TypeEAST = "Smoke_82mm_AMOS_White";
+    supportFire_shellsFlare_TypeEAST = "LIB_40mm_White";
 
     // Resistance/Independent/Indfor
-    shellsHE_TypeGUER = "Sh_82mm_AMOS";
-    shellsSmoke_TypeGUER = "Smoke_82mm_AMOS_White";
-    shellsFlare_TypeGUER = "LIB_40mm_White";
+    supportFire_shellsHE_TypeGUER = "Sh_82mm_AMOS";
+    supportFire_shellsSmoke_TypeGUER = "Smoke_82mm_AMOS_White";
+    supportFire_shellsFlare_TypeGUER = "LIB_40mm_White";
 
 // AMMUNITION AMOUNT
     // This allows you to set the amount of ammunition available to each side.
     // Note that HE and Smoke rounds are always fired in volleys of 5.
-    // If fewer than 5 rounds are available then no interaction for that ammo will show up.
+    // If fewer than 5 rounds are available for those types then no interaction for that ammo will show up.
 
     // WEST/Blufor
-    shellsHE_AmmoCountWEST = 0;
-    shellsSmoke_AmmoCountWEST = 0;
-    shellsFlare_AmmoCountWEST = 0;
+    supportFire_shellsHE_AmmoCountWEST = 0;
+    supportFire_shellsSmoke_AmmoCountWEST = 0;
+    supportFire_shellsFlare_AmmoCountWEST = 0;
 
     // East/Opfor
-    shellsHE_AmmoCountEAST = 0;
-    shellsSmoke_AmmoCountEAST = 0;
-    shellsFlare_AmmoCountEAST = 0;
+    supportFire_shellsHE_AmmoCountEAST = 0;
+    supportFire_shellsSmoke_AmmoCountEAST = 0;
+    supportFire_shellsFlare_AmmoCountEAST = 0;
 
     // Resistance/Independent/Indfor
-    shellsHE_AmmoCountGUER = 0;
-    shellsSmoke_AmmoCountGUER = 0;
-    shellsFlare_AmmoCountGUER = 0;
+    supportFire_shellsHE_AmmoCountGUER = 0;
+    supportFire_shellsSmoke_AmmoCountGUER = 0;
+    supportFire_shellsFlare_AmmoCountGUER = 0;
 
 // FIRE MISSION ACCURACY
     // Sets, per side, how close to the target the fire mission impact area be in metres, using RNG.
@@ -134,9 +136,9 @@
     // This should be adjusted based on the the skill of the units who would be doing the shooting
     // as well as the distance from the shooters to the target
     // I would say 50 is very good, 100 is normal, 150 is bad.
-    shellAccuracyWEST = 100;
-    shellAccuracyEAST = 100;
-    shellAccuracyGUER = 100;
+    supportFire_shellAccuracyWEST = 100;
+    supportFire_shellAccuracyEAST = 100;
+    supportFire_shellAccuracyGUER = 100;
 
 // FIRE MISSION DISPERSION
     // Sets, per side, the maximum distance (in metres) a shell can land from the centre of the impact area, using RNG.
@@ -148,6 +150,6 @@
     // For mortars I would say 50 - exceptionally accurate, 100 - normal, and 150 - inaccurate
     // For artillery I would say 100 - exceptionally accurate, 200 - normal, and 300 - inaccurate
     // For rocket artillery I would say 200 - exceptionally accurate, 300 - normal, and 400 - inaccurate
-    shellDispersionWEST = 100;
-    shellDispersionEAST = 100;
-    shellDispersionGUER = 100;
+    supportFire_shellDispersionWEST = 100;
+    supportFire_shellDispersionEAST = 100;
+    supportFire_shellDispersionGUER = 100;

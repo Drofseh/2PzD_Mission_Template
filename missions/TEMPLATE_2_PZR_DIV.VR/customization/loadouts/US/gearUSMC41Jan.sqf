@@ -57,8 +57,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
-        USMC_leader_equipment;
+        USMC_Default_Equipment;
+        USMC_Leader_Equipment;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
@@ -79,8 +79,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
-        USMC_leader_equipment;
+        USMC_Default_Equipment;
+        USMC_Leader_Equipment;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
@@ -101,8 +101,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
-        USMC_leader_equipment;
+        USMC_Default_Equipment;
+        USMC_Leader_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -128,7 +128,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
+        USMC_Default_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -151,8 +151,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
-        USMC_leader_equipment;
+        USMC_Default_Equipment;
+        USMC_Leader_Equipment;
 
         [//Primary Weapon
         [//M1928A1 Thompson
@@ -186,8 +186,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
-        USMC_leader_equipment;
+        USMC_Default_Equipment;
+        USMC_Leader_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -212,7 +212,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
+        USMC_Default_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -233,7 +233,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
+        USMC_Default_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -242,7 +242,7 @@
 
         //Extra
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
-        USMC_medic_equipment;
+        USMC_Medic_Equipment;
     };
 
 //Squad
@@ -256,8 +256,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
-        USMC_leader_equipment;
+        USMC_Default_Equipment;
+        USMC_Leader_Equipment;
 
         [//Primary Weapon
         [//M1928A1 Thompson
@@ -286,7 +286,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
+        USMC_Default_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -314,7 +314,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
+        USMC_Default_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -335,7 +335,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
+        USMC_Default_Equipment;
 
         //Primary Weapon
         [US_Mag_BAR,1] call FNC_AddItem;
@@ -357,8 +357,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
-        USMC_leader_equipment;
+        USMC_Default_Equipment;
+        USMC_Leader_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -386,7 +386,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
+        USMC_Default_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -414,7 +414,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
+        USMC_Default_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -438,8 +438,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
-        USMC_leader_equipment;
+        USMC_Default_Equipment;
+        USMC_Leader_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -461,7 +461,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
+        USMC_Default_Equipment;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
@@ -483,8 +483,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
-        USMC_leader_equipment;
+        USMC_Default_Equipment;
+        USMC_Leader_Equipment;
         [US_Weap_M1919A4_T] call FNC_AddItem;
 
         //Primary Weapon
@@ -512,7 +512,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
+        USMC_Default_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -534,8 +534,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
-        USMC_leader_equipment;
+        USMC_Default_Equipment;
+        USMC_Leader_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -558,8 +558,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
-        USMC_leader_equipment;
+        USMC_Default_Equipment;
+        USMC_Leader_Equipment;
         [US_Weap_MortB] call FNC_AddItem;
 
         //Secondary Weapon
@@ -582,8 +582,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
-        USMC_leader_equipment;
+        USMC_Default_Equipment;
+        USMC_Leader_Equipment;
         [US_Weap_MortT] call FNC_AddItem;
 
         //Secondary Weapon
@@ -613,7 +613,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        USMC_default_equipment;
+        USMC_Default_Equipment;
 
         //Primary Weapon
         [US_Mag_M1903,1] call FNC_AddItem;
@@ -635,8 +635,8 @@
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        US_default_equipment;
-        US_leader_equipment;
+        US_Default_Equipment;
+        US_Leader_Equipment;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
@@ -653,8 +653,8 @@
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        US_default_equipment;
-        US_leader_equipment;
+        US_Default_Equipment;
+        US_Leader_Equipment;
 
         [//Primary Weapon
         [//M1928A1 Thompson
@@ -693,7 +693,7 @@
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        US_default_equipment;
+        US_Default_Equipment;
 
         [//Weapon
         [//M1911 Only

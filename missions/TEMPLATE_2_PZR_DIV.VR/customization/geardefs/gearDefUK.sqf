@@ -154,7 +154,7 @@
 
 //=== EQUIPMENT ===
 
-#define UK_default_equipment \
+#define UK_Default_Equipment \
 ["ItemMap"] call FNC_AddItem; \
 ["ItemCompass"] call FNC_AddItem; \
 ["ItemWatch"]call FNC_AddItem; \
@@ -165,12 +165,12 @@
 ["ACE_Flashlight_MX991"] call FNC_AddItem; \
 ["ACE_CableTie"] call FNC_AddItem;
 
-#define UK_leader_equipment \
+#define UK_Leader_Equipment \
 ["LIB_Binocular_SU"] call FNC_AddItem; \
 ["ACE_MapTools"] call FNC_AddItem; \
 ["fow_i_whistle"] call FNC_AddItem;
 
-#define UK_medic_equipment \
+#define UK_Medic_Equipment \
 ["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
 ["ACE_elasticBandage",20,"backpack"] call FNC_AddItem; \
 ["ACE_packingBandage",20,"backpack"] call FNC_AddItem; \

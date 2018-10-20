@@ -48,35 +48,112 @@
 
 //======================== Definitions ========================
 
-//For Kompanieführer, Kompanietruppführer, Zugführer, Zugtruppführer, and Besatzungsführer
+//For Kompanieführer and Zugführer
 #define WHR40Jun_Weapon_Officer_Primary \
         [                               \
             [                           \
+                [Ger_Vest_PC],          \
                 [Ger_Mag_MP40,1],       \
                 [Ger_Weap_MP38],        \
                 [Ger_Mag_MP40,3,"vest"] \
-            ],[80],                     \
+            ],[60],                     \
             [                           \
+                [Ger_Vest_C2]           \
+            ],[20],                     \
+            [                           \
+                [Ger_Vest_PC],          \
                 [Ger_Mag_MP40,1],       \
                 [Ger_Weap_MP40],        \
                 [Ger_Mag_MP40,3,"vest"] \
             ],[20]                      \
         ] call FNC_AddItemRandomPercent;
 
-// For Gruppenführer and Gefreiter
-#define WHR40Jun_Weapon_Gruppe_SMG      \
+//For Besatzungsführer
+#define WHR40Jun_Weapon_BF_Primary      \
         [                               \
+            [                           \
+                [Ger_Vest_PC],          \
+                [Ger_Mag_MP40,1],       \
+                [Ger_Weap_MP38],        \
+                [Ger_Mag_MP40,3,"vest"] \
+            ],[60],                     \
+            [                           \
+                [Ger_Vest_VCrew]        \
+            ],[20],                     \
+            [                           \
+                [Ger_Vest_PC],          \
+                [Ger_Mag_MP40,1],       \
+                [Ger_Weap_MP38],        \
+                [Ger_Mag_MP40,3,"vest"] \
+            ],[20]                      \
+        ] call FNC_AddItemRandomPercent;
+
+//For Kompanietruppführer and Zugtruppführer
+#define WHR40Jun_Weapon_TF_Primary      \
+        [                               \
+            [                           \
+                [Ger_Vest_SL],          \
+                [Ger_Mag_MP40,1],       \
+                [Ger_Weap_MP38],        \
+                [Ger_Mag_MP40,6,"vest"] \
+            ],[60],                     \
             [                           \
                 [Ger_Vest_K98IFA],      \
                 [Ger_Mag_K98,1],        \
                 [Ger_Weap_K98_E],       \
                 [Ger_Mag_K98,12,"vest"] \
-            ],[80],                     \
+            ],[20],                     \
+            [                           \
+                [Ger_Vest_PC],          \
+                [Ger_Mag_MP40,1],       \
+                [Ger_Weap_MP38],        \
+                [Ger_Mag_MP40,3,"vest"] \
+            ],[20]                      \
+        ] call FNC_AddItemRandomPercent;
+
+// For Gruppenführer
+#define WHR40Jun_Weapon_GF              \
+        [                               \
             [                           \
                 [Ger_Vest_SL],          \
                 [Ger_Mag_MP40,1],       \
                 [Ger_Weap_MP38],        \
-                [Ger_Mag_MP40,3,"vest"] \
+                [Ger_Mag_MP40,6,"vest"] \
+            ],[90],                     \
+            [                           \
+                [Ger_Vest_K98IFA],      \
+                [Ger_Mag_K98,1],        \
+                [Ger_Weap_K98_E],       \
+                [Ger_Mag_K98,12,"vest"] \
+            ],[20],                     \
+            [                           \
+                [Ger_Vest_SL],          \
+                [Ger_Mag_MP40,1],       \
+                [Ger_Weap_MP38],        \
+                [Ger_Mag_MP40,6,"vest"] \
+            ],[20]                      \
+        ] call FNC_AddItemRandomPercent;
+
+// For Gefreiter
+#define WHR40Jun_Weapon_Gef             \
+        [                               \
+            [                           \
+                [Ger_Vest_MP40],        \
+                [Ger_Mag_MP40,1],       \
+                [Ger_Weap_MP38],        \
+                [Ger_Mag_MP40,6,"vest"] \
+            ],[60],                     \
+            [                           \
+                [Ger_Vest_K98],         \
+                [Ger_Mag_K98,1],        \
+                [Ger_Weap_K98_E],       \
+                [Ger_Mag_K98,12,"vest"] \
+            ],[20],                     \
+            [                           \
+                [Ger_Vest_MP40],        \
+                [Ger_Mag_MP40,1],       \
+                [Ger_Weap_MP38],        \
+                [Ger_Mag_MP40,6,"vest"] \
             ],[20]                      \
         ] call FNC_AddItemRandomPercent;
 
@@ -94,7 +171,7 @@
                 [Ger_Mag_K98,12,"vest"]  \
             ],[40]                       \
         ] call FNC_AddItemRandomPercent;
-        
+
 //For Kompanieführer, Zugführer and Besatzungsführer
 #define WHR40Jun_Weapon_Officer_Secondary \
         [                                 \
@@ -158,14 +235,13 @@
     //Kompanieführer
     case "WHR40Jun_CC" : {
         [Ger_Uni_CC] call FNC_AddItem;
-        [Ger_Vest_PC] call FNC_AddItem;
         [Ger_BP_Radio] call FNC_AddItem;
         [Ger_Hat_Officer] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
         //Primary Weapon
         WHR40Jun_Weapon_Officer_Primary;
@@ -177,16 +253,15 @@
     //Kompanietruppführer
     case "WHR40Jun_C2" : {
         [Ger_Uni_SL] call FNC_AddItem;
-        [Ger_Vest_PC] call FNC_AddItem;
         [Ger_Hat] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
         //Primary Weapon
-        WHR40Jun_Weapon_Officer_Primary;
+        WHR40Jun_Weapon_TF_Primary;
 
         //Secondary Weapon
         WHR40Jun_Weapon_Enlisted_Secondary;
@@ -197,13 +272,12 @@
     //Zugführer
     case "WHR40Jun_PC" : {
         [Ger_Uni_PC] call FNC_AddItem;
-        [Ger_Vest_PC] call FNC_AddItem;
         [Ger_Hat_Officer] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
         //Primary Weapon
         WHR40Jun_Weapon_Officer_Primary;
@@ -215,22 +289,21 @@
     //Zugtruppführer
     case "WHR40Jun_P2" : {
         [Ger_Uni_SL] call FNC_AddItem;
-        [Ger_Vest_SL] call FNC_AddItem;
         [Ger_BP_AF] call FNC_AddItem;
         [Ger_Hat] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
         //Primary Weapon
-        WHR40Jun_Weapon_Officer_Primary;
+        WHR40Jun_Weapon_TF_Primary;
 
         //Extra
-        [Ger_Gren_Frag_SC,1] call FNC_AddItem;
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_HE_SC,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Funker
@@ -242,7 +315,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
         [GEN_Headset] call FNC_AddItem;
 
         //Primary Weapon
@@ -258,13 +331,13 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
         WHR40Jun_Weapon_Rifleman_Primary;
 
         //Extra
-        [Ger_Gren_Frag_SC,1] call FNC_AddItem;
+        [Ger_Gren_HE_SC,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -277,14 +350,14 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
         WHR40Jun_Weapon_Enlisted_Secondary;
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        Ger_medicP_equipment;
+        Ger_MedicP_Equipment;
     };
 
 //Squad
@@ -292,22 +365,21 @@
     //Gruppenführer
     case "WHR40Jun_SL" : {
         [Ger_Uni_SL] call FNC_AddItem;
-        [Ger_Vest_SL] call FNC_AddItem;
         [Ger_BP_AF] call FNC_AddItem;
         [Ger_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
         //Primary Weapon
-        WHR40Jun_Weapon_Gruppe_SMG;
+        WHR40Jun_Weapon_GF;
 
         //Extra
-        [Ger_Gren_Frag_SC,1] call FNC_AddItem;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
+        [Ger_Gren_HE_SC,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Mag_MG_50,1] call FNC_AddItem;
     };
 
     //Stellvertretender Gruppenführer
@@ -319,35 +391,35 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
+        [GEN_BinoG] call FNC_AddItem;
 
         //Primary Weapon
         WHR40Jun_Weapon_Rifleman_Primary;
 
         //Extra
-        [Ger_Gren_Frag_SC,1] call FNC_AddItem;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
+        [Ger_Gren_HE_SC,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Mag_MG_50,1] call FNC_AddItem;
     };
 
     //Gefreiter
     case "WHR40Jun_S3" : {
         [Ger_Uni_S3_E] call FNC_AddItem;
-        [Ger_Vest_MP40] call FNC_AddItem;
         [Ger_BP_T34] call FNC_AddItem;
         [Ger_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
-        WHR40Jun_Weapon_Gruppe_SMG;
+        WHR40Jun_Weapon_Gef;
 
         //Extra
-        [Ger_Gren_Frag_SC,1] call FNC_AddItem;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
+        [Ger_Gren_HE_SC,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Mag_MG_50,1] call FNC_AddItem;
     };
 
     //MG-Richtschütze
@@ -360,7 +432,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Secondary Weapon
         WHR40Jun_Weapon_Enlisted_Secondary;
@@ -384,8 +456,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        [GEN_BinoG] call FNC_AddItem;
+        Ger_Default_Equipment;
         [GEN_ace_sparebarrel] call FNC_AddItem;
 
         //Primary Weapon
@@ -405,7 +476,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
         WHR40Jun_Weapon_Rifleman_Primary;
@@ -423,7 +494,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
         WHR40Jun_Weapon_Rifleman_Primary;
@@ -443,15 +514,15 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_medicS_equipment;
+        Ger_Default_Equipment;
+        Ger_MedicS_Equipment;
 
         //Primary Weapon
         WHR40Jun_Weapon_Rifleman_Primary;
 
         //Extra
-        [Ger_Gren_Frag_SC,1] call FNC_AddItem;
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_HE_SC,1] call FNC_AddItem;
     };
 
     //Gewehrschütze
@@ -463,15 +534,15 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
         WHR40Jun_Weapon_Rifleman_Primary;
 
         //Extra
-        [Ger_Gren_Frag_SC,1] call FNC_AddItem;
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
+        [Ger_Gren_HE_SC,1] call FNC_AddItem;
+        [Ger_Mag_MG_50,1,"backpack"] call FNC_AddItem;
     };
 
 //Weapon Truppen
@@ -486,9 +557,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
-        [GEN_ace_rangetable,1] call FNC_AddItem;
+        Ger_Default_Equipment;
+        GEN_Mortar_Equipment;
 
         //Secondary Weapon
         WHR40Jun_Weapon_Officer_Secondary;
@@ -510,9 +580,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        [GEN_ace_maptools,1] call FNC_AddItem;
-        [GEN_ace_rangetable,1] call FNC_AddItem;
+        Ger_Default_Equipment;
+        GEN_Mortar_Equipment;
 
         //Secondary Weapon
         WHR40Jun_Weapon_Officer_Secondary;
@@ -533,9 +602,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        [GEN_ace_maptools,1] call FNC_AddItem;
-        [GEN_ace_rangetable,1] call FNC_AddItem;
+        Ger_Default_Equipment;
+        GEN_Mortar_Equipment;
 
         //Primary Weapon
         WHR40Jun_Weapon_Rifleman_Primary;
@@ -555,8 +623,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
         [GEN_ace_sparebarrel] call FNC_AddItem;
 
         //Primary Weapon
@@ -579,8 +647,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
         //Secondary Weapon
         WHR40Jun_Weapon_Officer_Secondary;
@@ -605,7 +673,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
         WHR40Jun_Weapon_Rifleman_Primary;
@@ -625,8 +693,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
         //Primary Weapon
         WHR40Jun_Weapon_Rifleman_Primary;
@@ -646,8 +714,8 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
         //Secondary Weapon
         WHR40Jun_Weapon_Officer_Secondary;
@@ -667,7 +735,7 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
         WHR40Jun_Weapon_Rifleman_Primary;
@@ -682,17 +750,16 @@
     //Besatzungsführer
     case "WHR40Jun_VCom" : {
         [Ger_Uni_VCom] call FNC_AddItem;
-        [Ger_Vest_PC] call FNC_AddItem;
         [Ger_BP_VCrew] call FNC_AddItem;
         [Ger_Hat_VCom] call FNC_AddItemRandom;
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
         //Primary Weapon
-        WHR40Jun_Weapon_Officer_Primary;
+        WHR40Jun_Weapon_BF_Primary;
 
         //Secondary Weapon
         WHR40Jun_Weapon_Officer_Secondary;
@@ -707,7 +774,7 @@
         [GEN_Face_Tank_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Secondary Weapon
         WHR40Jun_Weapon_Officer_Secondary;

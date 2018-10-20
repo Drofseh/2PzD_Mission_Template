@@ -73,7 +73,7 @@ case "FSJ_DC_CHQ": {
     [GEN_Flare_R, 2] call FNC_AddItemVehicle;
     [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    [Ger_Gren_Frag_SC, 15] call FNC_AddItemVehicle;
+    [Ger_Gren_HE_SC, 15] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_W, 5] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
@@ -133,7 +133,7 @@ case "FSJ_DC_Z1HQ": {
     [GEN_Flare_R, 2] call FNC_AddItemVehicle;
     [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    [Ger_Gren_Frag_SC, 15] call FNC_AddItemVehicle;
+    [Ger_Gren_HE_SC, 15] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_W, 5] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
@@ -199,7 +199,7 @@ case "FSJ_DC_Z2HQ": {
     [GEN_Flare_R, 2] call FNC_AddItemVehicle;
     [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    [Ger_Gren_Frag_SC, 15] call FNC_AddItemVehicle;
+    [Ger_Gren_HE_SC, 15] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_W, 5] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
@@ -275,7 +275,7 @@ case "FSJ_DC_Z1G1W": {
     [GEN_Flare_R, 2] call FNC_AddItemVehicle;
     [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    [Ger_Gren_Frag_SC, 30] call FNC_AddItemVehicle;
+    [Ger_Gren_HE_SC, 30] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
@@ -342,7 +342,7 @@ case "FSJ_DC_Z1G2W": {
     [GEN_Flare_R, 2] call FNC_AddItemVehicle;
     [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    [Ger_Gren_Frag_SC, 30] call FNC_AddItemVehicle;
+    [Ger_Gren_HE_SC, 30] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
@@ -409,7 +409,7 @@ case "FSJ_DC_Z1G3W": {
     [GEN_Flare_R, 2] call FNC_AddItemVehicle;
     [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    [Ger_Gren_Frag_SC, 30] call FNC_AddItemVehicle;
+    [Ger_Gren_HE_SC, 30] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
@@ -480,7 +480,7 @@ case "FSJ_DC_Z2G1W": {
     [GEN_Flare_R, 2] call FNC_AddItemVehicle;
     [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    [Ger_Gren_Frag_SC, 30] call FNC_AddItemVehicle;
+    [Ger_Gren_HE_SC, 30] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
@@ -547,7 +547,7 @@ case "FSJ_DC_Z2G2W": {
     [GEN_Flare_R, 2] call FNC_AddItemVehicle;
     [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    [Ger_Gren_Frag_SC, 30] call FNC_AddItemVehicle;
+    [Ger_Gren_HE_SC, 30] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
@@ -614,7 +614,7 @@ case "FSJ_DC_Z2G3W": {
     [GEN_Flare_R, 2] call FNC_AddItemVehicle;
     [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
 
-    [Ger_Gren_Frag_SC, 30] call FNC_AddItemVehicle;
+    [Ger_Gren_HE_SC, 30] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
     [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;

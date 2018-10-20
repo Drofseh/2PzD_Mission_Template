@@ -10,7 +10,7 @@
 #define Ger_Weap_K98_Zf39       "LIB_K98ZF39"
 #define Ger_Weap_K98_Zf41       "fow_w_k98_scoped"
 #define Ger_Weap_G3340          "LIB_G3340"
-#define Ger_Weap_G43            "LIB_G41"
+#define Ger_Weap_G41W           "LIB_G41"
 #define Ger_Weap_G43            "fow_w_g43"
 #define Ger_Weap_MP38           "LIB_MP38"
 #define Ger_Weap_MP40           "fow_w_mp40"
@@ -78,9 +78,10 @@
 #define Ger_Mag_Mort_Illum      "LIB_1Rnd_81mm_Mo_Illum"
 
 //Grenades
-#define Ger_Gren_Frag_SC        "fow_e_m24"
+#define Ger_Gren_Frag_P         "LIB_M39"
+#define Ger_Gren_HE_SC          "fow_e_m24"
 #define Ger_Gren_Frag_SF        "fow_e_m24_spli"
-#define Ger_Gren_Frag_SKC       "fow_e_m24K"
+#define Ger_Gren_HE_SCK         "fow_e_m24K"
 #define Ger_Gren_Frag_SKF       "fow_e_m24K_spli"
 #define Ger_Gren_Smoke_W        "fow_e_nb39b"
 
@@ -256,7 +257,7 @@
 
 //=== EQUIPMENT ===
 
-#define Ger_default_equipment \
+#define Ger_Default_Equipment \
 ["ItemMap"] call FNC_AddItem; \
 ["ItemCompass"] call FNC_AddItem; \
 ["ItemWatch"]call FNC_AddItem; \
@@ -267,12 +268,12 @@
 ["ACE_Flashlight_KSF1"]call FNC_AddItem; \
 ["ACE_CableTie"]call FNC_AddItem;
 
-#define Ger_leader_equipment \
+#define Ger_Leader_Equipment \
 ["LIB_Binocular_GER"] call FNC_AddItem; \
 ["ACE_MapTools"] call FNC_AddItem; \
 ["fow_i_whistle"] call FNC_AddItem;
 
-#define Ger_medicP_equipment \
+#define Ger_MedicP_Equipment \
 ["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
 ["ACE_elasticBandage",20,"backpack"] call FNC_AddItem; \
 ["ACE_packingBandage",20,"backpack"] call FNC_AddItem; \
@@ -284,7 +285,7 @@
 ["ACE_salineIV",5,"backpack"] call FNC_AddItem; \
 ["ACE_salineIV_500",10,"vest"] call FNC_AddItem;
 
-#define Ger_medicS_equipment \
+#define Ger_MedicS_Equipment \
 ["ACE_fieldDressing",5,"backpack"] call FNC_AddItem; \
 ["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
 ["ACE_packingBandage",10,"backpack"] call FNC_AddItem; \
@@ -399,7 +400,7 @@
 
 //=== EQUIPMENT ===
 
-#define FSJ_medic_equipment \
+#define FSJ_Medic_Equipment \
 ["ACE_elasticBandage",8] call FNC_AddItem; \
 ["ACE_packingBandage",8] call FNC_AddItem; \
 ["ACE_morphine",5] call FNC_AddItem; \

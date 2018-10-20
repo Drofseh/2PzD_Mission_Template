@@ -8,8 +8,8 @@
     respawnButton = 0; //Disables the respawn button
     respawnDialog = 0; //Disables the score screen while respawning
     respawnTemplates[] = {"ace_spectator","Base","Counter"}; //Disables respawn countdown // "ace_spectator","Base","Counter","Tickets","Wave",
-    enableDebugConsole[] = {"76561197970317496","76561197983143701","76561198096113294","76561197985738940","76561198006804011"};
-    // debug console is enabled for Haas, Madsen, Schuttler, Sauer, and Brauer by default. Add your UID to the list if you want to access the debug console during your mission
+    enableDebugConsole[] = {"76561198006804011","76561197989925440","76561197970317496","76561197983143701","76561197985738940","76561198096113294"};
+    // debug console is enabled for Brauer, Falk, Haas, Madsen, Sauer, and Schuttler by default. Add your UID to the list if you want to access the debug console during your mission
     // enableDebugConsole = 1; // 1 = Only for logged-in admins - This setting is superseded by the array above.
     enableTargetDebug = 1; //Enable CBA Target Debugging - This allows debugging on non-local machines.
 

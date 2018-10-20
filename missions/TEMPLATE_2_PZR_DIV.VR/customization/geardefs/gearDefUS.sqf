@@ -51,7 +51,7 @@
 #define US_Mag_M1T_1            "LIB_30Rnd_45ACP"
 #define US_Mag_M1T_2            "LIB_20Rnd_45ACP_M1_2PzD"
 #define US_Mag_M1T_3            "LIB_50Rnd_45ACP"
-#define US_Mag_M3GG             "fow_30Rnd_45acp_M3_2PzD"
+#define US_Mag_M3GG             "LIB_30Rnd_M3_GreaseGun_45ACP"
 #define US_Mag_M50_1            "fow_20Rnd_45acp"
 #define US_Mag_M50_2            "fow_12Rnd_45acp_2PzD"
 #define US_Mag_BAR              "LIB_20Rnd_762x63"
@@ -266,7 +266,7 @@
 
 //=== EQUIPMENT ===
 
-#define US_default_equipment \
+#define US_Default_Equipment \
 ["ItemMap"] call FNC_AddItem; \
 ["ItemCompass"] call FNC_AddItem; \
 ["ItemWatch"]call FNC_AddItem; \
@@ -277,12 +277,12 @@
 ["ACE_Flashlight_MX991"]call FNC_AddItem; \
 ["ACE_CableTie"]call FNC_AddItem;
 
-#define US_leader_equipment \
+#define US_Leader_Equipment \
 ["LIB_Binocular_SU"] call FNC_AddItem; \
 ["ACE_MapTools"] call FNC_AddItem; \
 ["fow_i_whistle"] call FNC_AddItem;
 
-#define US_medic_equipment \
+#define US_Medic_Equipment \
 ["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
 ["ACE_elasticBandage",20,"backpack"] call FNC_AddItem; \
 ["ACE_packingBandage",20,"backpack"] call FNC_AddItem; \
@@ -504,7 +504,7 @@
 
 //=== EQUIPMENT ===
 
-#define USMC_default_equipment \
+#define USMC_Default_Equipment \
 ["ItemMap"] call FNC_AddItem; \
 ["ItemCompass"] call FNC_AddItem; \
 ["ItemWatch"]call FNC_AddItem; \
@@ -515,12 +515,12 @@
 ["ACE_Flashlight_MX991"]call FNC_AddItem; \
 ["ACE_CableTie"]call FNC_AddItem;
 
-#define USMC_leader_equipment \
+#define USMC_Leader_Equipment \
 ["LIB_Binocular_SU"] call FNC_AddItem; \
 ["ACE_MapTools"] call FNC_AddItem; \
 ["fow_i_whistle"] call FNC_AddItem;
 
-#define USMC_medic_equipment \
+#define USMC_Medic_Equipment \
 ["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
 ["ACE_elasticBandage",20,"backpack"] call FNC_AddItem; \
 ["ACE_packingBandage",20,"backpack"] call FNC_AddItem; \
@@ -541,7 +541,7 @@
 //Headgear
 #define USAF_Helm               "H_LIB_US_Helmet_Pilot"
 
-#define USAF_default_equipment \
+#define USAF_Default_Equipment \
 ["ItemMap"] call FNC_AddItem; \
 ["ItemCompass"] call FNC_AddItem; \
 ["ItemWatch"]call FNC_AddItem; \
@@ -550,7 +550,7 @@
 ["ACE_tourniquet",1] call FNC_AddItem; \
 ["ACE_Flashlight_MX991"]call FNC_AddItem;
 
-#define USAF_leader_equipment \
+#define USAF_Leader_Equipment \
 ["LIB_Binocular_SU"] call FNC_AddItem; \
 ["ACE_MapTools"] call FNC_AddItem; \
 ["fow_i_whistle"] call FNC_AddItem;

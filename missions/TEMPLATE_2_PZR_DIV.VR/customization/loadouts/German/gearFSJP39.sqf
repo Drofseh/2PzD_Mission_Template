@@ -4,27 +4,116 @@
 // - ALWAYS ADD SHORT-RANGE RADIO FIRST
 // - On any random equipment definition remember to use FNC_AddItemRandom
 
-//Loadouts
+/*Loadouts
 
     //Kompanietrupp
-//[this,"FSJP39_CC"] call FNC_GearScript;     Kompanieführer
-//[this,"FSJP39_C2"] call FNC_GearScript;     Kompanietruppführer
+[this,"FSJP39_CC"] call FNC_GearScript;      Kompanieführer
+[this,"FSJP39_C2"] call FNC_GearScript;      Kompanietruppführer
 
     //Zugtrupp
-//[this,"FSJP39_PC"] call FNC_GearScript;     Zugführer
-//[this,"FSJP39_P2"] call FNC_GearScript;     Zugtruppführer
-//[this,"FSJP39_RTO"] call FNC_GearScript;        Funker
-//[this,"FSJP39_Mess"] call FNC_GearScript;       Melder
-//[this,"FSJP39_Med"] call FNC_GearScript;        Krankenträger
+[this,"FSJP39_PC"] call FNC_GearScript;      Zugführer
+[this,"FSJP39_P2"] call FNC_GearScript;      Zugtruppführer
+[this,"FSJP39_RTO"] call FNC_GearScript;     Funker
+[this,"FSJP39_Mess"] call FNC_GearScript;    Melder
+[this,"FSJP39_Med"] call FNC_GearScript;     Krankenträger
 
     //Gruppe
-//[this,"FSJP39_SL"] call FNC_GearScript;     Gruppenführer
-//[this,"FSJP39_S2"] call FNC_GearScript;     Stellvertretender Gruppenführer
-//[this,"FSJP39_MG"] call FNC_GearScript;     MG-Richtschütze
-//[this,"FSJP39_MGA"] call FNC_GearScript;        MG-Hilfsschütze
-//[this,"FSJP39_Gren"] call FNC_GearScript;       Grenadier
-//[this,"FSJP39_Mark"] call FNC_GearScript;       Scharfschütze
-//[this,"FSJP39_Rif"] call FNC_GearScript;        Gewehrschütze
+[this,"FSJP39_SL"] call FNC_GearScript;      Gruppenführer
+[this,"FSJP39_S2"] call FNC_GearScript;      Stellvertretender Gruppenführer
+[this,"FSJP39_MG"] call FNC_GearScript;      MG-Richtschütze
+[this,"FSJP39_MGA"] call FNC_GearScript;     MG-Hilfsschütze
+[this,"FSJP39_Gren"] call FNC_GearScript;    Grenadier
+[this,"FSJP39_Mark"] call FNC_GearScript;    Scharfschütze
+[this,"FSJP39_Rif"] call FNC_GearScript;     Gewehrschütze
+*/
+
+//======================== Definitions ========================
+
+// For Kompanieführer and Zugführer
+#define FSJP39_Weapon_Officer_Primary   \
+        [                               \
+            [                           \
+                [FSJ_Vest_CC]           \
+            ],[80],                     \
+            [                           \
+                [FSJ_Vest_PC],          \
+                [Ger_Mag_MP40,3,"vest"] \
+            ],[20]                      \
+        ] call FNC_AddItemRandomPercent;
+
+// For Kompanietruppführer and Zugtruppführer
+#define FSJP39_Weapon_TF_Primary        \
+        [                               \
+            [                           \
+                [FSJ_Vest_Band],        \
+                [Ger_Mag_K98,24,"vest"] \
+            ],[80],                     \
+            [                           \
+                [FSJ_Vest_PC],          \
+                [Ger_Mag_MP40,3,"vest"] \
+            ],[20]                      \
+        ] call FNC_AddItemRandomPercent;
+
+// For Gruppenführer
+#define FSJP39_Weapon_GF                \
+        [                               \
+            [                           \
+                [FSJ_Vest_Band],        \
+                [Ger_Mag_K98,24,"vest"] \
+            ],[80],                     \
+            [                           \
+                [FSJ_Vest_PC],          \
+                [Ger_Mag_MP40,3,"vest"] \
+            ],[20]                      \
+        ] call FNC_AddItemRandomPercent;
+
+// For Stellvertretender Gruppenführer
+#define FSJP39_Weapon_SGf               \
+        [                               \
+            [                           \
+                [FSJ_Vest_Band],        \
+                [Ger_Mag_K98,24,"vest"] \
+            ],[80],                     \
+            [                           \
+                [Ger_Vest_MP40],        \
+                [Ger_Mag_MP40,6,"vest"] \
+            ],[20]                      \
+        ] call FNC_AddItemRandomPercent;
+
+// For Kompanieführer, Zugführer
+#define FSJP39_Weapon_Officer_Secondary \
+        [                               \
+            [                           \
+                [Ger_Mag_P08,1],        \
+                [Ger_Weap_P08],         \
+                [Ger_Mag_P08,2]         \
+            ],[53],                     \
+            [                           \
+                [Ger_Mag_P38,1],        \
+                [Ger_Weap_P38],         \
+                [Ger_Mag_P38,2]         \
+            ],[37],                     \
+            [                           \
+                [Ger_Mag_PPK,1],        \
+                [Ger_Weap_PPK],         \
+                [Ger_Mag_PPK,2]         \
+            ],[10]                      \
+        ] call FNC_AddItemRandomPercent;
+
+// For all enlisted men
+#define FSJP39_Weapon_Enlisted_Secondary \
+        [                                \
+            [                            \
+                [Ger_Mag_P08,1],         \
+                [Ger_Weap_P08],          \
+                [Ger_Mag_P08,2]          \
+            ],[58],                      \
+            [                            \
+                [Ger_Mag_P38,1],         \
+                [Ger_Weap_P38],          \
+                [Ger_Mag_P38,2]          \
+            ],[42]                       \
+        ] call FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================
 
@@ -33,63 +122,37 @@
     //Kompanieführer
     case "FSJP39_CC" : {
         [FSJ_Uni_NI] call FNC_AddItem;
-        [FSJ_Vest_CC] call FNC_AddItem;
         [GEN_BP_Para] call FNC_AddItem;
         [FSJ_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
         //Primary Weapon
+        FSJP39_Weapon_Officer_Primary;
 
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[53],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[37],
-        [//PPK
-        [Ger_Mag_PPK,1],
-        [Ger_Weap_PPK],
-        [Ger_Mag_PPK,2]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        FSJP39_Weapon_Officer_Secondary;
     };
 
     //Kompanietruppführer
     case "FSJP39_C2" : {
         [FSJ_Uni_NI] call FNC_AddItem;
-        [FSJ_Vest_Band] call FNC_AddItem;
         [GEN_BP_Para] call FNC_AddItem;
         [FSJ_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
+        FSJP39_Weapon_TF_Primary;
 
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[58],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[42]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        FSJP39_Weapon_Enlisted_Secondary;
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
@@ -101,62 +164,37 @@
     //Zugführer
     case "FSJP39_PC" : {
         [FSJ_Uni_NI] call FNC_AddItem;
-        [FSJ_Vest_CC] call FNC_AddItem;
-        [FSJ_Helmet] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
-
-        //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
-
-        //Primary Weapon
-
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[53],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[37],
-        [//PPK
-        [Ger_Mag_PPK,1],
-        [Ger_Weap_PPK],
-        [Ger_Mag_PPK,2]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
-    };
-
-    //Zugtruppführer
-    case "FSJP39_P2" : {
-        [FSJ_Uni_SL] call FNC_AddItem;
-        [FSJ_Vest_Band] call FNC_AddItem;
         [GEN_BP_Para] call FNC_AddItem;
         [FSJ_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
+        FSJP39_Weapon_Officer_Primary;
 
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[58],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[42]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        FSJP39_Weapon_Officer_Secondary;
+    };
+
+    //Zugtruppführer
+    case "FSJP39_P2" : {
+        [FSJ_Uni_SL] call FNC_AddItem;
+        [GEN_BP_Para] call FNC_AddItem;
+        [FSJ_Helmet] call FNC_AddItem;
+        [GEN_Face_r] call FNC_AddItemRandom;
+
+        //Assigned Items
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
+
+        //Primary Weapon
+        FSJP39_Weapon_TF_Primary;
+
+        //Secondary Weapon
+        FSJP39_Weapon_Enlisted_Secondary;
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
@@ -172,23 +210,13 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[58],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[42]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        FSJP39_Weapon_Enlisted_Secondary;
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
@@ -204,23 +232,13 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[58],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[42]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        FSJP39_Weapon_Enlisted_Secondary;
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
@@ -236,27 +254,17 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
+        [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[58],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[42]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        FSJP39_Weapon_Enlisted_Secondary;
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        FSJ_medic_equipment;
+        FSJ_Medic_Equipment;
     };
 
 //Squad
@@ -270,24 +278,14 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
-        Ger_leader_equipment;
+        Ger_Default_Equipment;
+        Ger_Leader_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
+        FSJP39_Weapon_GF;
 
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[58],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[42]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        FSJP39_Weapon_Enlisted_Secondary;
 
         //Extra
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
@@ -303,23 +301,13 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_MP40,6,"vest"] call FNC_AddItem;
+        FSJP39_Weapon_SGf;
 
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[58],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[42]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        FSJP39_Weapon_Enlisted_Secondary;
 
         //Extra
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
@@ -335,24 +323,14 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
         [GEN_BinoG] call FNC_AddItem;
+
+        //Secondary Weapon
+        FSJP39_Weapon_Enlisted_Secondary;
 
         //Primary Weapon
         [Ger_Mag_MG_50,5,"vest"] call FNC_AddItem;
-
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[58],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[42]
-        ] call FNC_AddItemRandomPercent;
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
@@ -367,24 +345,14 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
         [GEN_BinoG] call FNC_AddItem;
 
         //Primary Weapon
-        [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
+        [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[58],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[42]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        FSJP39_Weapon_Enlisted_Secondary;
 
         //Extra
         [GEN_ace_sparebarrel] call FNC_AddItem;
@@ -400,23 +368,13 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[58],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[42]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        FSJP39_Weapon_Enlisted_Secondary;
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
@@ -432,23 +390,13 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[58],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[42]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        FSJP39_Weapon_Enlisted_Secondary;
 
         //Extra
         [Ger_Mag_RGrn_HE,4] call FNC_AddItem;
@@ -465,23 +413,13 @@
         [GEN_Face_r] call FNC_AddItemRandom;
 
         //Assigned Items
-        Ger_default_equipment;
+        Ger_Default_Equipment;
 
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
-        [//P08
-        [Ger_Mag_P08,1],
-        [Ger_Weap_P08],
-        [Ger_Mag_P08,2]
-        ],[58],
-        [//P38
-        [Ger_Mag_P38,1],
-        [Ger_Weap_P38],
-        [Ger_Mag_P38,2]
-        ],[42]
-        ] call FNC_AddItemRandomPercent;
+        //Secondary Weapon
+        FSJP39_Weapon_Enlisted_Secondary;
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;

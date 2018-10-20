@@ -5,6 +5,10 @@ if (isDedicated) then {
     ['Mission Started', 'info'] call MAR_fnc_log;
 };
 
+if (isNil {God}) then {
+    God = 0;
+};
+
 loggingEnabled = 0; // Set this to 1 to enable inventory logging for players and named vehicles. See scripts\gearLog.sqf for more requirements.
 loggingTime = 60; // How often (in seconds) an inventory log will be created during play. I do not recommend changing this except when doing testing and diagnostics.
 
@@ -64,16 +68,11 @@ if (isServer) then {
     };
 }, "admin"] call CBA_fnc_registerChatCommand;
 
-/*
-if (!isDedicated) then { //This scope is for the player & the Headless Clients
-    if (FW_RespawnTickets > 0) then {
-        [player, FW_RespawnTickets] call BIS_fnc_respawnTickets;
-    };
-};
-*/
 #include "modules\modules.sqf" //DO NOT REMOVE
 #include "core\postChecks.sqf" //DO NOT REMOVE
 
 LIB_GLOBAL_ENABLE_RADIO_IN_VEHICLE = false;
+LIB_System_Tanks_f_Unflip_Active = false;
 
 //#include "scripts\gearLog.sqf"
+//#include "scripts\zeusFOW.sqf"

@@ -44,7 +44,7 @@
 
 //=== EQUIPMENT ===
 
-#define Parti_default_equipment \
+#define Parti_Default_Equipment \
 ["ItemMap"] call FNC_AddItem; \
 ["ItemCompass"] call FNC_AddItem; \
 ["ItemWatch"]call FNC_AddItem; \
@@ -52,13 +52,13 @@
 ["ACE_tourniquet",1] call FNC_AddItem; \
 ["ACE_CableTie"]call FNC_AddItem;
 
-#define Parti_leader_equipment \
+#define Parti_Leader_Equipment \
 ["ACE_Flashlight_KSF1"]call FNC_AddItem; \
 ["LIB_Binocular_GER"] call FNC_AddItem; \
 ["ACE_MapTools"] call FNC_AddItem; \
 ["fow_i_whistle"] call FNC_AddItem;
 
-#define Parti_medic_equipment \
+#define Parti_Medic_Equipment \
 ["ACE_fieldDressing",5,"backpack"] call FNC_AddItem; \
 ["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
 ["ACE_packingBandage",15,"backpack"] call FNC_AddItem; \

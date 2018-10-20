@@ -28,7 +28,7 @@
         [Civ_Face_r] call FNC_addItemRandom;
 
         //Assigned Items
-        Civ_default_equipment;
+        Civ_Default_Equipment;
     };
 
     //Random Civs with Leather Jackets, Turtlenecks, Slacks
@@ -39,7 +39,7 @@
         [Civ_Face_r] call FNC_addItemRandom;
 
         //Assigned Items
-        Civ_default_equipment;
+        Civ_Default_Equipment;
     };
 
     //Random Civs with Fat button up shirt, slacks, rubber boots
@@ -50,7 +50,7 @@
         [Civ_Face_r] call FNC_addItemRandom;
 
         //Assigned Items
-        Civ_default_equipment;
+        Civ_Default_Equipment;
     };
 
     //Random Civs with Suits, Fedora, no backpack
@@ -60,7 +60,7 @@
         [Civ_Face_r] call FNC_addItemRandom;
 
         //Assigned Items
-        Civ_default_equipment;
+        Civ_Default_Equipment;
     };
 
     //Random Civs with Lab Coats
@@ -69,7 +69,7 @@
         [Civ_Face_r] call FNC_addItemRandom;
 
         //Assigned Items
-        Civ_default_equipment;
+        Civ_Default_Equipment;
     };
 
     //Orthodox Priest
@@ -78,6 +78,6 @@
         [Civ_Face_r] call FNC_addItemRandom;
 
         //Assigned Items
-        Civ_default_equipment;
+        Civ_Default_Equipment;
     };
     

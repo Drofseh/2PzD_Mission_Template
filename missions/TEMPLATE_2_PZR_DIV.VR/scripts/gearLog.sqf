@@ -25,11 +25,12 @@
 _uid = getPlayerUID player;
     // note that the UID won't match in single player, so this will only log in multiplayer
 if (
+        ((_uid == "76561198006804011") && (loggingEnabled == 1)) || // Brauer
+        ((_uid == "76561197989925440") && (loggingEnabled == 1)) || // Falk
         ((_uid == "76561197970317496") && (loggingEnabled == 1)) || // Haas
         ((_uid == "76561197983143701") && (loggingEnabled == 1)) || // Madsen
-        ((_uid == "76561198096113294") && (loggingEnabled == 1)) || // Schuttler
         ((_uid == "76561197985738940") && (loggingEnabled == 1)) || // Sauer
-        ((_uid == "76561198006804011") && (loggingEnabled == 1))    // Brauer
+        ((_uid == "76561198096113294") && (loggingEnabled == 1))    // Schuttler
     ) then {
 
     #include "debug_console.hpp"

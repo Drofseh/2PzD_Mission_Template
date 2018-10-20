@@ -27,8 +27,8 @@
         [Civ_Face_Bino] call FNC_addItem;
 
         //Assigned Items
-        Parti_default_equipment;
-        Parti_leader_equipment;
+        Parti_Default_Equipment;
+        Parti_Leader_Equipment;
 
         //Primary Weapon
         [
@@ -70,8 +70,8 @@
         [Civ_Face_Bino] call FNC_addItem;
 
         //Assigned Items
-        Parti_default_equipment;
-        Parti_leader_equipment;
+        Parti_Default_Equipment;
+        Parti_Leader_Equipment;
 
         //Primary Weapon
         [
@@ -124,7 +124,7 @@
         [Civ_Face_r] call FNC_addItemRandom;
 
         //Assigned Items
-        Parti_default_equipment;
+        Parti_Default_Equipment;
 
         //Primary Weapon
         [Rus_Mag_DP,1] call FNC_addItem;
@@ -169,8 +169,8 @@
         [Civ_Face_Bino] call FNC_addItem;
 
         //Assigned Items
-        Parti_default_equipment;
-        Parti_leader_equipment;
+        Parti_Default_Equipment;
+        Parti_Leader_Equipment;
 
         //Primary Weapon
         [
@@ -417,7 +417,7 @@
         [Civ_Face_r] call FNC_addItemRandom;
 
         //Assigned Items
-        Parti_default_equipment;
+        Parti_Default_Equipment;
 
         //Primary Weapon
         [
@@ -687,7 +687,7 @@
                         [Ger_Gren_Frag_SF,1]
                     ],[19],
                     [
-                        [Ger_Gren_Frag_SC,1]
+                        [Ger_Gren_HE_SC,1]
                     ],[15]
                 ] call FNC_AddItemRandomPercent;
                 [Rus_Mag_DP,1] call FNC_addItem;
