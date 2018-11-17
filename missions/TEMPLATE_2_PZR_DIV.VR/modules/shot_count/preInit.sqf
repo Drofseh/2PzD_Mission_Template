@@ -4,8 +4,7 @@
 //Much script by beta, some script by TinfoilHate
 //Sets up ammo counting
 /*  It's dangerous to go alone, take this:
-    _ammoArray = [];
-    {
+    _ammoArray = []; {
         {
             _ammoClass = getText (configFile >> "CfgMagazines" >> _x >> "ammo");
             if !(_ammoClass in _ammoArray) then {
@@ -16,51 +15,54 @@
     diag_log _ammoArray;
 */
 
-if (isServer) then
-{
+if (isServer) then {
     aCount_west_ExpendedAmmunition = [];
     aCount_resistance_ExpendedAmmunition = [];
     aCount_east_ExpendedAmmunition = [];
 
     aCount_classNames = [];
-    aCount_getDisplayName =
-    {
+
+    aCount_getDisplayName = {
+
         private["_className","_displayName","_foundClass","_ret"];
         _className = _this;
         _ret = "Error";
         _foundClass = aCount_classNames find _className;
-        if(_foundClass < 0) then
-        {
-            _cfg = (configFile >> "CfgMagazines" >> _className);
-            _ret =  getText(_cfg >> "displayName");
+
+        if (_foundClass < 0) then {
+            _cfgMag = (configFile >> "CfgMagazines" >> _className);
+            _retMag =  getText(_cfgMag >> "displayName");
+
+            _cfgAmmo = (configFile >> "CfgAmmo" >> _className);
+            _retAmmo =  getText(_cfgAmmo >> "displayName");
+
+            if (_retAmmo == "") then {
+                _ret = _retMag;
+            } else {
+                _ret = _retAmmo;
+            };
+
             aCount_classNames pushBack _className;
             aCount_classNames pushBack _ret;
-        }
-        else
-        {
+        } else {
             _ret = aCount_classNames select( _foundClass + 1);
         };
 
         _ret
     };
 
-    aCount_addEH =
-    {   //If units are spawned, this should be run on them: ["aCount_event_addEH", UNIT] call CBA_fnc_serverEvent;
-        _obj = param [0];
+    aCount_addEH = { //If units are spawned, this should be run on them: ["aCount_event_addEH", UNIT] call CBA_fnc_serverEvent;
 
+        _obj = param [0];
         _obj setVariable ["aCount_originalSide",side _obj,false];
 
-        if (_obj isKindOf "Man") then
-        {
+        if (_obj isKindOf "Man") then {
             _obj addEventHandler ["fired", {[side ( _this select 0),(_this select 5) call aCount_getDisplayName] call aCount_shotCount;}];
             _obj setVariable ["aCount_firedEh", true, false];
         };
 
-        if (((_obj isKindOf "Land") && !(_obj isKindOf "Man")) || (_obj isKindOf "Air") || (_obj isKindOf "Ship")) then
-        {
-            if (count crew _obj > 0) then
-                {
-                {
+        if (((_obj isKindOf "Land") && !(_obj isKindOf "Man")) || {_obj isKindOf "Air" || {_obj isKindOf "Ship"}}) then {
+            if (count crew _obj > 0) then { {
                     _x setVariable ["aCount_firedEh", true, false];
                     _x setVariable ["aCount_originalSide",side _obj,false];
                 } forEach crew _obj;
@@ -72,62 +74,48 @@ if (isServer) then
     };
     ["aCount_event_addEH",aCount_addEH] call CBA_fnc_addEventHandler;
 
-    aCount_shotCount =
-    {
+    aCount_shotCount = {
 
-        switch (_this select 0) do
-        {
-            case west:
-            {
+        switch (_this select 0) do {
+            case west: {
 
                 _found = aCount_west_ExpendedAmmunition find (_this select 1);
-                if(_found < 0) then
-                {
+
+                if (_found < 0) then {
                     aCount_west_ExpendedAmmunition pushBack (_this select 1) ;
                     aCount_west_ExpendedAmmunition pushBack 1;
-                }
-                else
-                {
+                } else {
                     aCount_west_ExpendedAmmunition set [_found + 1,(aCount_west_ExpendedAmmunition select _found + 1) + 1 ];
-                }
-
+                };
             };
 
-            case east:
-            {
+            case east: {
 
                 _found = aCount_east_ExpendedAmmunition find (_this select 1);
-                if(_found < 0) then
-                {
 
+                if (_found < 0) then {
                     aCount_east_ExpendedAmmunition pushBack  (_this select 1);
                     aCount_east_ExpendedAmmunition pushBack 1;
-                }
-                else
-                {
+                } else {
                     aCount_east_ExpendedAmmunition set [_found + 1,(aCount_east_ExpendedAmmunition select _found + 1) + 1 ];
-                }
+                };
             };
-            case resistance:
-            {
+
+            case resistance: {
 
                 _found = aCount_resistance_ExpendedAmmunition find (_this select 1);
-                if(_found < 0) then
-                {
 
+                if (_found < 0) then {
                     aCount_resistance_ExpendedAmmunition pushBack  (_this select 1);
                     aCount_resistance_ExpendedAmmunition pushBack 1;
-                }
-                else
-                {
+                } else {
                     aCount_resistance_ExpendedAmmunition set [_found + 1,(aCount_resistance_ExpendedAmmunition select _found + 1) + 1 ];
-                }
+                };
             };
         };
     };
 
-    aCount_endCount =
-    {
+    aCount_endCount = {
         _munitionsBLU = aCount_west_ExpendedAmmunition;
         _munitionsRED = aCount_east_ExpendedAmmunition;
         _munitionsRES = aCount_resistance_ExpendedAmmunition;
@@ -136,12 +124,11 @@ if (isServer) then
     };
 };
 
-if (!isDedicated && hasInterface) then
-{
-    aCount_shotDisplay =
-    {
-        _this spawn
-        {
+if (hasInterface) then {
+
+    aCount_shotDisplay = {
+
+        _this spawn {
 
             _arrayBLU = param [0];
             _arrayRED = param [1];
@@ -150,50 +137,78 @@ if (!isDedicated && hasInterface) then
             aCount_textRED = "REDFOR Munitions Expended:<br/>";
             aCount_textRES = "RESISTANCE Munitions Expended:<br/>";
 
-            if ((FW_Teams select 0) select 1 == west) then {
-                aCount_textBLU = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 0) select 0)];
-            };
-            if ((FW_Teams select 0) select 1 == east) then {
-                aCount_textRED = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 0) select 0)];
-            };
-            if ((FW_Teams select 0) select 1 == resistance) then {
-                aCount_textRES = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 0) select 0)];
-            };
-            if ((FW_Teams select 1) select 1 == west) then {
-                aCount_textBLU = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 1) select 0)];
-            };
-            if ((FW_Teams select 1) select 1 == east) then {
-                aCount_textRED = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 1) select 0)];
-            };
-            if ((FW_Teams select 1) select 1 == resistance) then {
-                aCount_textRES = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 1) select 0)];
-            };
-            if ((FW_Teams select 2) select 1 == west) then {
-                aCount_textBLU = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 2) select 0)];
-            };
-            if ((FW_Teams select 2) select 1 == east) then {
-                aCount_textRED = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 2) select 0)];
-            };
-            if ((FW_Teams select 2) select 1 == resistance) then {
-                aCount_textRES = format ["%1 - Munitions Expended:<br/>", ((FW_Teams select 2) select 0)];
+            //Get the custom names of each side's team and use them instead of generic names above ^
+            if !(isNil {FW_Teams select 0}) then {
+
+                aCount_Side0 = FW_Teams select 0;
+                aCount_Side0_Side = aCount_Side0 select 1;
+                aCount_Side0_Name = aCount_Side0 select 0;
+
+                if (aCount_Side0_Side == west) then {
+                    aCount_textBLU = format ["%1 - Munitions Expended:<br/>", aCount_Side0_Name];
+                } else {
+                    if (aCount_Side0_Side == east) then {
+                        aCount_textRED = format ["%1 - Munitions Expended:<br/>", aCount_Side0_Name];
+                    } else {
+                        if (aCount_Side0_Side == resistance) then {
+                            aCount_textRES = format ["%1 - Munitions Expended:<br/>", aCount_Side0_Name];
+                        };
+                    };
+                };
             };
 
-            for [{ _i = 0}, {_i < count _arrayBLU}, {_i = _i + 2}] do
-            {
+            if !(isNil {FW_Teams select 1}) then {
+
+                aCount_Side1 = FW_Teams select 1;
+                aCount_Side1_Side = aCount_Side1 select 1;
+                aCount_Side1_Name = aCount_Side1 select 0;
+
+                if (aCount_Side1_Side == west) then {
+                    aCount_textBLU = format ["%1 - Munitions Expended:<br/>", aCount_Side1_Name];
+                } else {
+                    if (aCount_Side1_Side == east) then {
+                        aCount_textRED = format ["%1 - Munitions Expended:<br/>", aCount_Side1_Name];
+                    } else {
+                        if (aCount_Side1_Side == resistance) then {
+                            aCount_textRES = format ["%1 - Munitions Expended:<br/>", aCount_Side1_Name];
+                        };
+                    };
+                };
+            };
+
+            if !(isNil {FW_Teams select 2}) then {
+
+                aCount_Side2 = FW_Teams select 2;
+                aCount_Side2_Side = aCount_Side2 select 1;
+                aCount_Side2_Name = aCount_Side2 select 0;
+
+                if (aCount_Side2_Side == west) then {
+                    aCount_textBLU = format ["%1 - Munitions Expended:<br/>", aCount_Side2_Name];
+                } else {
+                    if (aCount_Side2_Side == east) then {
+                        aCount_textRED = format ["%1 - Munitions Expended:<br/>", aCount_Side2_Name];
+                    } else {
+                        if (aCount_Side2_Side == resistance) then {
+                            aCount_textRES = format ["%1 - Munitions Expended:<br/>", aCount_Side2_Name];
+                        };
+                    };
+                };
+            };
+
+            // Build each side's total ammunition count.
+            for [{ _i = 0}, {_i < count _arrayBLU}, {_i = _i + 2}] do {
                 _label = _arrayBLU select (_i);
                 _count = _arrayBLU select (_i + 1);
                 aCount_textBLU = aCount_textBLU + _label + ": " + str(_count) + " Rounds" + "<br/>";
             };
 
-            for [{ _i = 0}, {_i < count _arrayRED}, {_i = _i + 2}] do
-            {
+            for [{ _i = 0}, {_i < count _arrayRED}, {_i = _i + 2}] do {
                 _label = _arrayRED select (_i);
                 _count = _arrayRED select (_i + 1);
                 aCount_textRED = aCount_textRED + _label + ": " + str(_count) + " Rounds" + "<br/>";
             };
 
-            for [{ _i = 0}, {_i < count _arrayRES}, {_i = _i + 2}] do
-            {
+            for [{ _i = 0}, {_i < count _arrayRES}, {_i = _i + 2}] do {
                 _label = _arrayRES select (_i);
                 _count = _arrayRES select (_i + 1);
                 aCount_textRES = aCount_textRES + _label + ": " + str(_count) + " Rounds" + "<br/>";

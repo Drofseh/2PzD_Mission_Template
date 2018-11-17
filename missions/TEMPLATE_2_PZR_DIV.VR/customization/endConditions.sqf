@@ -24,21 +24,30 @@ eastCasualty = "Red Army" call FNC_CasualtyPercentage; //Gets the casualty perce
 //End messages to be used with the in briefing Admin Tab end mission options.
 //These ending must be triggered manually by someone with access to the Admin Tab.
 //Change the messages to reflect your mission and add additional messages as required.
+//Each End Message variable must be declared as a public variable using the publicVariable command.
     victoryMessage = "
     <br/>The Admin or Zeus has ended the mission.
     <br/>
     <br/>Victory";
+
+    publicVariable "victoryMessage";
 
     failureMessage = "
     <br/>The Admin or Zeus has ended the mission.
     <br/>
     <br/>Defeat";
 
+    publicVariable "failureMessage";
+
 /*
+//Example:
+
     myCustomMessage = "
     <br/>This is an example of a custom message.
     <br/>Make sure you add the ability to call it to the admin tab in the briefing.sqf
     <br/>Defeat/Victory";
+
+    publicVariable "myCustomMessage";
 */
 
 //=== Scripted End Conditions ===

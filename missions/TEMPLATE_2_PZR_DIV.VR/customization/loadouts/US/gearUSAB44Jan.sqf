@@ -373,7 +373,7 @@
         USAB44Jan_Weapon_Rifle_Light;
 
         //Extra
-        [GEN_Radio_HH,"vest"] call FNC_AddItem;
+        [GEN_Radio_HH] call FNC_AddItem;
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
     };
@@ -430,7 +430,7 @@
     //Radio Operator
     case "USAB44Jan_PRTO" : {
         [USAB_UniG_CPL] call FNC_AddItem;
-        [USAB_BP_Radio] call FNC_AddItem;
+        [USAB_BP_r] call FNC_AddItemRandom;
         [USAB_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
@@ -441,7 +441,7 @@
         USAB44Jan_Weapon_Rifle_Light;
 
         //Extra
-        [GEN_Radio_HH,"vest"] call FNC_AddItem;
+        [GEN_Radio_HH] call FNC_AddItem;
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
     };
