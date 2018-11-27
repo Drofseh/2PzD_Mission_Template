@@ -108,13 +108,13 @@
             ],[8],                       \
             [                            \
                 [US_Vest_M1G],           \
-                [US_Mag_M1903,1],        \
+                [US_Mag_M1G,1],          \
                 [US_Weap_M1G_2],         \
                 [US_Mag_M1G,10,"vest"]   \
             ],[8],                       \
             [                            \
                 [US_Vest_M1G],           \
-                [US_Mag_M1903,1],        \
+                [US_Mag_M1G,1],          \
                 [US_Weap_M1G_3],         \
                 [US_Mag_M1G,10,"vest"]   \
             ],[8],                       \
@@ -140,12 +140,12 @@
                 [US_Mag_M1G,10,"vest"]   \
             ],[8],                       \
             [                            \
-                [US_Mag_M1903,1],        \
+                [US_Mag_M1G,1],          \
                 [US_Weap_M1G_2],         \
                 [US_Mag_M1G,10,"vest"]   \
             ],[8],                       \
             [                            \
-                [US_Mag_M1903,1],        \
+                [US_Mag_M1G,1],          \
                 [US_Weap_M1G_3],         \
                 [US_Mag_M1G,10,"vest"]   \
             ],[8],                       \
@@ -244,7 +244,7 @@
                 [US_Mag_M1G,10,"vest"]   \
             ],[33],                      \
             [                            \
-                [US_Mag_M1903,1],        \
+                [US_Mag_M1G,1],          \
                 [US_Weap_M1G_2],         \
                 [US_Mag_M1G,10,"vest"]   \
             ],[33],                      \
@@ -448,7 +448,7 @@
         US44May_Weapon_Rifle_Light;
 
         //Extra
-        [GEN_Radio_HH,"vest"] call FNC_AddItem;
+        [GEN_Radio_HH] call FNC_AddItem;
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
     };
@@ -505,7 +505,7 @@
     //Radio Operator
     case "US44May_PRTO" : {
         [US_Uni_CPL] call FNC_AddItem;
-        [US_BP_Radio] call FNC_AddItem;
+        [US_BP_M1928] call FNC_AddItem;
         [US_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
 
@@ -516,7 +516,7 @@
         US44May_Weapon_Rifle_Light;
 
         //Extra
-        [GEN_Radio_HH,"vest"] call FNC_AddItem;
+        [GEN_Radio_HH] call FNC_AddItem;
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
     };

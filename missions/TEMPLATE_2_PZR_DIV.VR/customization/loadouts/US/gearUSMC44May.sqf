@@ -330,7 +330,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [GEN_Radio_HH,"vest"] call FNC_AddItem;
+        [GEN_Radio_HH] call FNC_AddItem;
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
     };
@@ -537,7 +537,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [GEN_Radio_HH,"vest"] call FNC_AddItem;
+        [GEN_Radio_HH] call FNC_AddItem;
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
     };
