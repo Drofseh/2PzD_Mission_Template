@@ -46,17 +46,24 @@
 //Headgear
 
 //Face
-#define GEN_Face_r              ["G_LIB_Dienst_Brille"],["G_LIB_Dienst_Brille2"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"]
-
-#define GEN_Face_Tank_r         ["G_LIB_Headwrap"],["G_LIB_Headwrap_gloves"]
 #define GEN_Face_Bino           "G_LIB_Binoculars"
+#define GEN_Face_GlassesBlack   "G_LIB_Dienst_Brille2"
+#define GEN_Face_GlassesSilver  "G_LIB_Dienst_Brille"
+#define GEN_Face_GlassesUS      "fow_g_glasses4"
+#define GEN_Face_WatchBrown     "G_LIB_Watch1"
+#define GEN_Face_WatchBlack     "G_LIB_Watch2"
+#define GEN_Face_Tank_r         ["G_LIB_Headwrap"],["G_LIB_Headwrap_gloves"]
+#define GEN_Face_r              [GEN_Face_GlassesSilver],[GEN_Face_GlassesBlack], \
+                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
+                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
+                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
+                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
+                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
+                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
+                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
+                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
+                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
+                                [GEN_Face_WatchBlack],[G_LIB_Watch1]
 
 //=== MISC ===
 //ACE
@@ -66,6 +73,7 @@
 #define GEN_ace_flashlightEU    "ACE_Flashlight_KSF1"
 #define GEN_ace_flashlightNA    "ACE_Flashlight_MX991"
 #define GEN_ace_shovel          "ACE_EntrenchingTool"
+#define GEN_ace_hammer          "ACE_Fortify"
 #define GEN_ace_sparebarrel     "ACE_SpareBarrel"
 #define GEN_ace_wirecutters     "ACE_wirecutter"
 #define GEN_ace_carpick         "ACE_key_lockpick"
@@ -81,10 +89,10 @@
 #define GEN_nada                "ACE_Banana"
 
 //Medical
-#define GEN_Bandage             "ACE_fieldDressing"
-#define GEN_BandageE            "ACE_elasticBandage"
-#define GEN_BandageP            "ACE_packingBandage"
-#define GEN_BandageQ            "ACE_quikclot"
+#define GEN_BandageField        "ACE_fieldDressing"
+#define GEN_BandageElastic      "ACE_elasticBandage"
+#define GEN_BandagePacking      "ACE_packingBandage"
+#define GEN_BandageQClot        "ACE_quikclot"
 #define GEN_TQ                  "ACE_tourniquet"
 #define GEN_Pain                "ACE_painkillers"
 #define GEN_Morp                "ACE_morphine"
@@ -104,11 +112,16 @@
 //Double Misc
 #define GEN_BinoG               "LIB_Binocular_GER"
 #define GEN_BinoR               "LIB_Binocular_SU"
-#define GEN_Headset             "LIB_GER_Headset"
-#define GEN_DemoSmall           "DemoCharge_Remote_Mag"
+#define GEN_BinoUS              "LIB_Binocular_US"
+#define GEN_Compass             "ItemCompass"
 #define GEN_DemoLarge           "SatchelCharge_Remote_Mag"
+#define GEN_DemoSmall           "DemoCharge_Remote_Mag"
+#define GEN_Headset             "LIB_GER_Headset"
+#define GEN_Map                 "ItemMap"
 #define GEN_Minedetector        "MineDetector"
 #define GEN_Toolkit             "ToolKit"
+#define GEN_Watch               "ItemWatch"
+#define GEN_Whistle             "fow_i_whistle"
 
 //Radio
 #define GEN_Radio_HH            "ACRE_PRC343"
@@ -116,32 +129,42 @@
 
 //=== EQUIPMENT ===
 
-#define GEN_Default_Equipment \
-["ItemMap"] call FNC_AddItem; \
-["ItemCompass"] call FNC_AddItem; \
-["ItemWatch"]call FNC_AddItem; \
-["ACE_Fortify"]call FNC_AddItem; \
-["ACE_EntrenchingTool"]call FNC_AddItem; \
-["ACE_fieldDressing",4] call FNC_AddItem; \
-["ACE_tourniquet",1] call FNC_AddItem; \
-["ACE_Flashlight_MX991"]call FNC_AddItem; \
-["ACE_CableTie"]call FNC_AddItem;
+#define GEN_Default_Equipment                \
+    [GEN_Map] call FNC_AddItem;              \
+    [GEN_Compass] call FNC_AddItem;          \
+    [GEN_Watch] call FNC_AddItem;            \
+    [GEN_ace_hammer] call FNC_AddItem;       \
+    [GEN_ace_shovel] call FNC_AddItem;       \
+    [GEN_BandageField,4] call FNC_AddItem;   \
+    [GEN_TQ,1] call FNC_AddItem;             \
+    [GEN_ace_flashlightNA] call FNC_AddItem; \
+    [GEN_ace_cabletie] call FNC_AddItem;
 
-#define GEN_Mortar_Equipment \
-[GEN_ace_maptools] call FNC_AddItem; \
-[GEN_ace_rangetable] call FNC_AddItem;
+#define GEN_Leader_Equipment             \
+    [                                    \
+        [                                \
+            [GEN_BinoG]                  \
+        ],[33],                          \
+        [                                \
+            [GEN_BinoR]                  \
+        ],[33],                          \
+        [                                \
+            [GEN_BinoUS]                 \
+        ],[33]                           \
+    ] call FNC_AddItemRandomPercent;     \
+    [GEN_ace_maptools] call FNC_AddItem; \
+    [GEN_Whistle] call FNC_AddItem;
 
-#define GEN_Leader_Equipment \
-["LIB_Binocular_SU"] call FNC_AddItem; \
-["ACE_MapTools"] call FNC_AddItem; \
-["fow_i_whistle"] call FNC_AddItem;
+#define GEN_Medic_Equipment                              \
+    [GEN_BandageField,5,"backpack"] call FNC_AddItem;    \
+    [GEN_BandageElastic,10,"backpack"] call FNC_AddItem; \
+    [GEN_BandagePacking,10,"backpack"] call FNC_AddItem; \
+    [GEN_Morp,5,"backpack"] call FNC_AddItem;            \
+    [GEN_Epi,2,"backpack"] call FNC_AddItem;             \
+    [GEN_TQ,2,"backpack"] call FNC_AddItem;              \
+    [GEN_SurgKit,1,"backpack"] call FNC_AddItem;         \
+    [GEN_Saline500,4,"backpack"] call FNC_AddItem;
 
-#define GEN_Medic_Equipment \
-["ACE_fieldDressing",5,"backpack"] call FNC_AddItem; \
-["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
-["ACE_packingBandage",10,"backpack"] call FNC_AddItem; \
-["ACE_morphine",5,"backpack"] call FNC_AddItem; \
-["ACE_epinephrine",2,"backpack"] call FNC_AddItem; \
-["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
-["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
-["ACE_salineIV_500",4,"backpack"] call FNC_AddItem;
+#define GEN_Mortar_Equipment             \
+    [GEN_ace_maptools] call FNC_AddItem; \
+    [GEN_ace_rangetable] call FNC_AddItem;

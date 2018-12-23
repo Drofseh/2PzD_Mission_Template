@@ -81,13 +81,13 @@
                 [US_Mag_M1T_1,1],       \
                 [US_Weap_M1928A1],      \
                 [US_Mag_M1T_1,5,"vest"] \
-            ],[3],                      \
+            ],[2],                      \
             [                           \
                 [US_Vest_M1T],          \
                 [US_Mag_M1T_1,1],       \
                 [US_Weap_M1928],        \
                 [US_Mag_M1T_1,5,"vest"] \
-            ],[2]                       \
+            ],[1]                       \
         ] call FNC_AddItemRandomPercent;
 
 // For light riflemen
@@ -104,19 +104,19 @@
                 [US_Mag_M1G,1],          \
                 [US_Weap_M1G_1],         \
                 [US_Mag_M1G,10,"vest"]   \
-            ],[11.33333333333333333333], \
+            ],[11.3333334],              \
             [                            \
                 [US_Vest_M1G],           \
                 [US_Mag_M1G,1],          \
                 [US_Weap_M1G_2],         \
                 [US_Mag_M1G,10,"vest"]   \
-            ],[11.33333333333333333333], \
+            ],[11.3333334],              \
             [                            \
                 [US_Vest_M1G],           \
                 [US_Mag_M1G,1],          \
                 [US_Weap_M1G_3],         \
                 [US_Mag_M1G,10,"vest"]   \
-            ],[11.33333333333333333333], \
+            ],[11.3333334],              \
             [                            \
                 [US_Vest_M1G],           \
                 [US_Mag_M1903,1],        \

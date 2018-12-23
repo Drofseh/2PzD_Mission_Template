@@ -47,14 +47,15 @@
 //Black Beret for irregulars
 
 //Face
-#define Civ_Face_r             ["G_LIB_Dienst_Brille"],["G_LIB_Dienst_Brille2"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
-                                ["G_LIB_Watch2"],["G_LIB_Watch1"]
+#define Civ_Face_r             [GEN_Face_GlassesSilver],[GEN_Face_GlassesBlack], \
+                               [GEN_Face_GlassesSilver],[GEN_Face_GlassesBlack], \
+                               [GEN_Face_WatchBlack],[G_LIB_Watch1],                \
+                               [GEN_Face_WatchBlack],[G_LIB_Watch1],                \
+                               [GEN_Face_WatchBlack],[G_LIB_Watch1],                \
+                               [GEN_Face_WatchBlack],[G_LIB_Watch1],                \
+                               [GEN_Face_WatchBlack],[G_LIB_Watch1],                \
+                               [GEN_Face_WatchBlack],[G_LIB_Watch1],                \
+                               [GEN_Face_WatchBlack],[G_LIB_Watch1]
 #define Civ_Face_Bino          "G_LIB_Binoculars"
 
 //=== MISC ===
@@ -62,4 +63,4 @@
 //=== EQUIPMENT ===
 
 #define Civ_Default_Equipment \
-["ItemWatch"]call FNC_AddItem;
+    [GEN_Watch] call FNC_AddItem;

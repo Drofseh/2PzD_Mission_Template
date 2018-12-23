@@ -154,29 +154,29 @@
 
 //=== EQUIPMENT ===
 
-#define UK_Default_Equipment \
-["ItemMap"] call FNC_AddItem; \
-["ItemCompass"] call FNC_AddItem; \
-["ItemWatch"]call FNC_AddItem; \
-["ACE_Fortify"]call FNC_AddItem; \
-["ACE_EntrenchingTool"] call FNC_AddItem; \
-["ACE_fieldDressing",4] call FNC_AddItem; \
-["ACE_tourniquet",1] call FNC_AddItem; \
-["ACE_Flashlight_MX991"] call FNC_AddItem; \
-["ACE_CableTie"] call FNC_AddItem;
+#define UK_Default_Equipment                 \
+    [GEN_Map] call FNC_AddItem;              \
+    [GEN_Compass] call FNC_AddItem;          \
+    [GEN_Watch] call FNC_AddItem;            \
+    [GEN_ace_hammer] call FNC_AddItem;       \
+    [GEN_ace_shovel] call FNC_AddItem;       \
+    [GEN_BandageField,4] call FNC_AddItem;   \
+    [GEN_TQ,1] call FNC_AddItem;             \
+    [GEN_ace_flashlightNA] call FNC_AddItem; \
+    [GEN_ace_cabletie] call FNC_AddItem;
 
-#define UK_Leader_Equipment \
-["LIB_Binocular_SU"] call FNC_AddItem; \
-["ACE_MapTools"] call FNC_AddItem; \
-["fow_i_whistle"] call FNC_AddItem;
+#define UK_Leader_Equipment              \
+    [GEN_BinoUS] call FNC_AddItem;       \
+    [GEN_ace_maptools] call FNC_AddItem; \
+    [GEN_Whistle] call FNC_AddItem;
 
-#define UK_Medic_Equipment \
-["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
-["ACE_elasticBandage",20,"backpack"] call FNC_AddItem; \
-["ACE_packingBandage",20,"backpack"] call FNC_AddItem; \
-["ACE_morphine",5,"backpack"] call FNC_AddItem; \
-["ACE_painkillers",10,"backpack"] call FNC_AddItem; \
-["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
-["ACE_tourniquet",2,"backpack"] call FNC_AddItem; \
-["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
-["ACE_salineIV_500",14,"backpack"] call FNC_AddItem;
+#define UK_Medic_Equipment                               \
+    [GEN_BandageField,10,"backpack"] call FNC_AddItem;   \
+    [GEN_BandageElastic,20,"backpack"] call FNC_AddItem; \
+    [GEN_BandagePacking,20,"backpack"] call FNC_AddItem; \
+    [GEN_Morp,5,"backpack"] call FNC_AddItem;            \
+    [GEN_Pain,10,"backpack"] call FNC_AddItem;           \
+    [GEN_Epi,5,"backpack"] call FNC_AddItem;             \
+    [GEN_TQ,2,"backpack"] call FNC_AddItem;              \
+    [GEN_SurgKit,1,"backpack"] call FNC_AddItem;         \
+    [GEN_Saline500,14,"backpack"] call FNC_AddItem;

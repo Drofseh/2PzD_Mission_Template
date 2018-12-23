@@ -17,6 +17,8 @@ switch (_type) do {
 
 //All definitions are in the geardefs folder. These should be always be in your mission.
 
+#include "geardefs\gearDefzGEN.sqf"
+
 #include "geardefs\gearDefAus.sqf"
 
 #include "geardefs\gearDefBel.sqf"
@@ -42,8 +44,6 @@ switch (_type) do {
 #include "geardefs\gearDefUK.sqf"
 
 #include "geardefs\gearDefUS.sqf"
-
-#include "geardefs\gearDefzGEN.sqf"
 
 //=== Loadouts ===
 

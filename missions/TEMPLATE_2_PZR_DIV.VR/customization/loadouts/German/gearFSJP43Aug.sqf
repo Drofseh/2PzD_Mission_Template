@@ -38,7 +38,7 @@
             ],[94],                     \
             [                           \
                 [FSJ_Vest_Band],        \
-                [Ger_Mag_FG42,8,"vest"] \
+                [Ger_Mag_FG42,12,"vest"] \
             ],[5],                      \
             [                           \
                 [FSJ_Vest_Band],        \

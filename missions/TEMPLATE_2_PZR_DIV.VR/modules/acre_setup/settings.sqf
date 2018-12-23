@@ -42,41 +42,41 @@ FW_enable_channel_names = false;
 //don't change "label" value!
 
 FW_ChannelNames = [
-    [//DEFAULT - USE THIS IF SCRAMBLE IS OFF
-        ["1", "label", "PLTNET 1"],
-        ["2", "label", "PLTNET 2"],
-        ["3", "label", "PLTNET 3"],
-        ["4", "label", "PLTNET 4"],
-        ["5", "label", "COY"],
-        ["6", "label", "CAS"],
-        ["7", "label", "FIRES"]
-    ],
     [//WEST - USE SIDE SETTINGS ONLY IF SCRAMBLE IS ON
-        ["1", "label", "PLTNET 1"],
-        ["2", "label", "PLTNET 2"],
-        ["3", "label", "PLTNET 3"],
-        ["4", "label", "PLTNET 4"],
-        ["5", "label", "COY"],
-        ["6", "label", "CAS"],
-        ["7", "label", "FIRES"]
+        [1, "label", "PLTNET 1"],
+        [2, "label", "PLTNET 2"],
+        [3, "label", "PLTNET 3"],
+        [4, "label", "PLTNET 4"],
+        [5, "label", "COY"],
+        [6, "label", "CAS"],
+        [7, "label", "FIRES"]
     ],
     [//EAST
-        ["1", "label", "PLTNET 1"],
-        ["2", "label", "PLTNET 2"],
-        ["3", "label", "PLTNET 3"],
-        ["4", "label", "PLTNET 4"],
-        ["5", "label", "COY"],
-        ["6", "label", "CAS"],
-        ["7", "label", "FIRES"]
+        [1, "label", "PLTNET 1"],
+        [2, "label", "PLTNET 2"],
+        [3, "label", "PLTNET 3"],
+        [4, "label", "PLTNET 4"],
+        [5, "label", "COY"],
+        [6, "label", "CAS"],
+        [7, "label", "FIRES"]
     ],
     [//INDEPENDENT
-        ["1", "label", "PLTNET 1"],
-        ["2", "label", "PLTNET 2"],
-        ["3", "label", "PLTNET 3"],
-        ["4", "label", "PLTNET 4"],
-        ["5", "label", "COY"],
-        ["6", "label", "CAS"],
-        ["7", "label", "FIRES"]
+        [1, "label", "PLTNET 1"],
+        [2, "label", "PLTNET 2"],
+        [3, "label", "PLTNET 3"],
+        [4, "label", "PLTNET 4"],
+        [5, "label", "COY"],
+        [6, "label", "CAS"],
+        [7, "label", "FIRES"]
+    ],
+    [//DEFAULT - USE THIS IF SCRAMBLE IS OFF
+        [1, "label", "PLTNET 1"],
+        [2, "label", "PLTNET 2"],
+        [3, "label", "PLTNET 3"],
+        [4, "label", "PLTNET 4"],
+        [5, "label", "COY"],
+        [6, "label", "CAS"],
+        [7, "label", "FIRES"]
     ]
 ];
 

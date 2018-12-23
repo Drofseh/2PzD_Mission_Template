@@ -73,7 +73,7 @@
             ],[20],                      \
             [                            \
                 [FSJ_Vest_Band],         \
-                [Ger_Mag_FG42,24,"vest"] \
+                [Ger_Mag_FG42,12,"vest"] \
             ],[10]                       \
         ] call FNC_AddItemRandomPercent;
 

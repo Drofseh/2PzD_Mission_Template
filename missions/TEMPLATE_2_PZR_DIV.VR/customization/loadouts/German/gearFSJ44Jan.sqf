@@ -104,7 +104,7 @@
                 [FSJ_Vest_Band],         \
                 [Ger_Mag_FG42,1],        \
                 [Ger_Weap_FG42],         \
-                [Ger_Mag_FG42,24,"vest"] \
+                [Ger_Mag_FG42,12,"vest"] \
             ],[8]                        \
         ] call FNC_AddItemRandomPercent;
 
@@ -178,7 +178,7 @@
 #define FSJ44Jan_Weapon_PzFaust        \
         [                              \
             [                          \
-                [Ger_Weap_PzFaust_30] \
+                [Ger_Weap_PzFaust_30]  \
             ],[50],                    \
             [                          \
                 [Ger_Weap_PzFaust_60]  \

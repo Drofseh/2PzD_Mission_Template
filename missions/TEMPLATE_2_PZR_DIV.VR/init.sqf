@@ -54,54 +54,6 @@ if (isServer) then {
     };
 };
 
-["respawnWave", {
-    FW_RespawnTickets = 1;
-    publicVariable "FW_RespawnTickets";
-    10 remoteExec ["setPlayerRespawnTime"];
-    [] spawn {
-        sleep 30;
-        FW_RespawnTickets = 0;
-        publicVariable "FW_RespawnTickets";
-        10e10 remoteExec ["setPlayerRespawnTime"];
-    };
-}, "admin"] call CBA_fnc_registerChatCommand;
-
-LIB_GLOBAL_ENABLE_RADIO_IN_VEHICLE = false;
-LIB_System_Tanks_f_Unflip_Active = false;
-
-// Add action to check remaining ammunition in vehicle
-call {
-    _conditionCheck = {True};
-
-    _statementCheck = {
-        _magList = magazinesAllTurrets this;
-        
-        if (_magList isEqualTo []) then {
-            hint "This vehicle is unarmed";
-        } else {
-            _magAmmoList = "Vehicle Ammuntion Remaining:\n";
-    
-            {
-                _magClass = _x select 0;
-                _magName = getText (configFile >> "CfgMagazines" >> _magClass >> "DisplayName");
-                _magRounds = str (_x select 2);
-                _magAmmoList = _magAmmoList + "\n" + _magName + " (" + _magRounds + ")";
-                
-            } forEach (_magList);
-    
-            hint _magAmmoList;
-        };
-    };
-
-    _actionCheck = ["Check Vehicle Ammunition","Check Vehicle Ammunition","",_statementCheck,_conditionCheck] call ace_interact_menu_fnc_createAction;
-
-    ["LandVehicle", 1, ["ACE_SelfActions"], _actionCheck,true] call ace_interact_menu_fnc_addActionToClass;
-    ["Air", 1, ["ACE_SelfActions"], _actionCheck,true] call ace_interact_menu_fnc_addActionToClass;
-    ["Ship", 1, ["ACE_SelfActions"], _actionCheck,true] call ace_interact_menu_fnc_addActionToClass;
-};
-
+#include "scripts\Scripts.sqf"
 #include "modules\modules.sqf" //DO NOT REMOVE
 #include "core\postChecks.sqf" //DO NOT REMOVE
-
-//#include "scripts\gearLog.sqf"
-//#include "scripts\zeusFOW.sqf"

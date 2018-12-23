@@ -30,7 +30,8 @@ if (FW_RespawnTickets > 0) then {
     };
 
     if (!isNull(_respawnPoint)) then {
-        player setPos getPosATL _respawnPoint;
+        _respawnPosition = getPosATL _respawnPoint;
+        player setPosATL ([[[_respawnPosition, 7]]] call BIS_fnc_randomPos); //yes this needs all three square brackets on each side.
     };
 
     FW_RespawnTickets = FW_RespawnTickets - 1;
@@ -43,11 +44,12 @@ if (FW_RespawnTickets > 0) then {
 
     cutText [format ['%1 %2', FW_RespawnTickets, _text], 'PLAIN DOWN'];
 
-    if (isNil {FW_mapRemoved}) then {
+    if (isNil "FW_mapRemoved") then {
         FW_mapRemoved = 0;
-    };
-    if (FW_mapRemoved == 1) then {
-        nul = [player] execVM "scripts\removeMap.sqf";
+    } else {
+        if (FW_mapRemoved == 1) then {
+            nul = [player] execVM "scripts\removeMap.sqf";
+        };
     };
 
     player setVariable ["FW_Dead", false, true]; //Tells the framework the player is alive
@@ -70,4 +72,8 @@ if (FW_RespawnTickets > 0) then {
     [player] join grpNull;
 
     hideObjectGlobal player;
+
+    [true] call acre_api_fnc_setSpectator;
+
+    [true] call ace_spectator_fnc_setSpectator;
 };

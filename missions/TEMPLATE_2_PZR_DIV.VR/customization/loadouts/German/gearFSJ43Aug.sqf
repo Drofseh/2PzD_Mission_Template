@@ -72,7 +72,7 @@
                 [FSJ_Vest_Band],        \
                 [Ger_Mag_FG42,1],       \
                 [Ger_Weap_FG42],        \
-                [Ger_Mag_FG42,8,"vest"] \
+                [Ger_Mag_FG42,12,"vest"] \
             ],[5],                      \
             [                           \
                 [FSJ_Vest_Band],        \
@@ -152,7 +152,7 @@
 #define FSJ43Aug_Weapon_PzFaust        \
         [                              \
             [                          \
-                [Ger_Weap_PzFaust_30] \
+                [Ger_Weap_PzFaust_30]  \
             ],[50],                    \
             [                          \
                 [Ger_Weap_PzFaust_K]   \

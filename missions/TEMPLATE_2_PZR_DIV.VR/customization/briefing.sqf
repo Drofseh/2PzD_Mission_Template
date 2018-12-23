@@ -106,7 +106,7 @@ if (
     <br/>If the admin is dead and in spectator they can also trigger a respawn by typing the command <font color='#FF8C00'>#respawnWave</font> in spectator chat.
     <br/>
     <br/>This must NOT be used in missions that already have respawning enabled.
-    <br/>    <execute expression='FW_RespawnTickets = 1; publicVariable ""FW_RespawnTickets""; 10 remoteExec [""setPlayerRespawnTime""]; [] spawn { sleep 30; FW_RespawnTickets = 0; publicVariable ""FW_RespawnTickets""; 10e10 remoteExec [""setPlayerRespawnTime""];};'>Call Respawn Wave</execute>
+    <br/>    <execute expression='FW_RespawnTickets = 1; publicVariable ""FW_RespawnTickets""; {setPlayerRespawnTime random 10;} remoteExec [""call""]; [{FW_RespawnTickets = 0; publicVariable ""FW_RespawnTickets""; 10e10 remoteExec [""setPlayerRespawnTime""]; },[],30] call CBA_fnc_waitAndExecute;'>Call Respawn Wave</execute>
     <br/>
     <br/><font color='#70db70' size='14'>Mission Ending:</font>
     <br/>These are used to call the mission endings that the mission maker has set up

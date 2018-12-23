@@ -1,0 +1,8 @@
+#include "actions.sqf"
+#include "chatCommands.sqf"
+//#include "Dropcan.sqf"
+//#include "gearLog.sqf"
+//#include "gearPersistent.sqf"
+#include "IFA3_variables.sqf"
+//#include "vehGearPersistent.sqf"
+//#include "zeusFOW.sqf"

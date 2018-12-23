@@ -31,19 +31,16 @@ if (isServer) then {
 
         if (_foundClass < 0) then {
             _cfgMag = (configFile >> "CfgMagazines" >> _className);
-            _retMag =  getText(_cfgMag >> "displayName");
+            _ret =  getText(_cfgMag >> "displayName");
 
-            _cfgAmmo = (configFile >> "CfgAmmo" >> _className);
-            _retAmmo =  getText(_cfgAmmo >> "displayName");
-
-            if (_retAmmo == "") then {
-                _ret = _retMag;
-            } else {
-                _ret = _retAmmo;
+            if (_ret == "") then {
+                _ret = (str _className);
+                diag_log "displayName entry is blank for " + _ret;
             };
 
             aCount_classNames pushBack _className;
             aCount_classNames pushBack _ret;
+
         } else {
             _ret = aCount_classNames select( _foundClass + 1);
         };

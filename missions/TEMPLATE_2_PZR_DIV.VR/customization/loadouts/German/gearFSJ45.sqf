@@ -104,7 +104,7 @@
                 [FSJ_Vest_Band],         \
                 [Ger_Mag_FG42,1],        \
                 [Ger_Weap_FG42],         \
-                [Ger_Mag_FG42,24,"vest"] \
+                [Ger_Mag_FG42,12,"vest"] \
             ],[10]                       \
         ] call FNC_AddItemRandomPercent;
 
@@ -175,20 +175,20 @@
         ] call FNC_AddItemRandomPercent;
 
 // Panzerfaust
-#define FSJ45Jan_Weapon_PzFaust         \
-        [                               \
-            [                           \
-                [Ger_Weap_PzFaust_60]   \
-            ],[50],                     \
-            [                           \
+#define FSJ45Jan_Weapon_PzFaust        \
+        [                              \
+            [                          \
+                [Ger_Weap_PzFaust_60]  \
+            ],[50],                    \
+            [                          \
                 [Ger_Weap_PzFaust_30]  \
-            ],[25],                     \
-            [                           \
-                [Ger_Weap_PzFaust_100], \
-            ],[15],                     \
-            [                           \
-                [Ger_Weap_PzFaust_K]    \
-            ],[10]                      \
+            ],[25],                    \
+            [                          \
+                [Ger_Weap_PzFaust_100] \
+            ],[15],                    \
+            [                          \
+                [Ger_Weap_PzFaust_K]   \
+            ],[10]                     \
         ] call FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================

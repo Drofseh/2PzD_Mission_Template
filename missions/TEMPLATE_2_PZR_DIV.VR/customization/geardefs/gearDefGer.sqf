@@ -48,7 +48,7 @@
 #define Ger_Mag_G43             "LIB_10Rnd_792x57"
 #define Ger_Mag_MP40            "LIB_32Rnd_9x19"
 #define Ger_Mag_StG44           "LIB_30Rnd_792x33"
-#define Ger_Mag_FG42            "LEN_20Rnd_792x57"
+#define Ger_Mag_FG42            "LIB_20Rnd_792x57"
 #define Ger_Mag_PzB39           "LIB_1Rnd_145x114"
 #define Ger_Mag_MG_50           "LIB_50Rnd_792x57"
 #define Ger_Mag_MG_100          "LIB_100Rnd_792x57"
@@ -68,7 +68,7 @@
 #define Ger_Mag_MG34_PT         "LIB_75Rnd_792x57"
 #define Ger_Mag_P38             "LIB_8Rnd_9x19"
 #define Ger_Mag_P08             "LIB_8Rnd_9x19_P08"
-#define Ger_Mag_PPK             "LEN_7Rnd_765x17"
+#define Ger_Mag_PPK             "LIB_7Rnd_9x19"
 #define Ger_Mag_RGrn_ATS        "LIB_1Rnd_G_PZGR_30"
 #define Ger_Mag_RGrn_ATL        "LIB_1Rnd_G_PZGR_40"
 #define Ger_Mag_RGrn_HE         "LIB_1Rnd_G_SPRGR_30"
@@ -257,40 +257,40 @@
 
 //=== EQUIPMENT ===
 
-#define Ger_Default_Equipment \
-["ItemMap"] call FNC_AddItem; \
-["ItemCompass"] call FNC_AddItem; \
-["ItemWatch"]call FNC_AddItem; \
-["ACE_Fortify"]call FNC_AddItem; \
-["ACE_EntrenchingTool"]call FNC_AddItem; \
-["ACE_fieldDressing",4] call FNC_AddItem; \
-["ACE_tourniquet",1] call FNC_AddItem; \
-["ACE_Flashlight_KSF1"]call FNC_AddItem; \
-["ACE_CableTie"]call FNC_AddItem;
+#define Ger_Default_Equipment                \
+    [GEN_Map] call FNC_AddItem;              \
+    [GEN_Compass] call FNC_AddItem;          \
+    [GEN_Watch] call FNC_AddItem;            \
+    [GEN_ace_hammer] call FNC_AddItem;       \
+    [GEN_ace_shovel] call FNC_AddItem;       \
+    [GEN_BandageField,4] call FNC_AddItem;   \
+    [GEN_TQ,1] call FNC_AddItem;             \
+    [GEN_ace_flashlightEU] call FNC_AddItem; \
+    [GEN_ace_cabletie] call FNC_AddItem;
 
-#define Ger_Leader_Equipment \
-["LIB_Binocular_GER"] call FNC_AddItem; \
-["ACE_MapTools"] call FNC_AddItem; \
-["fow_i_whistle"] call FNC_AddItem;
+#define Ger_Leader_Equipment             \
+    [GEN_BinoG] call FNC_AddItem;        \
+    [GEN_ace_maptools] call FNC_AddItem; \
+    [GEN_Whistle] call FNC_AddItem;
 
-#define Ger_MedicP_Equipment \
-["ACE_fieldDressing",10,"backpack"] call FNC_AddItem; \
-["ACE_elasticBandage",20,"backpack"] call FNC_AddItem; \
-["ACE_packingBandage",20,"backpack"] call FNC_AddItem; \
-["ACE_morphine",5,"backpack"] call FNC_AddItem; \
-["ACE_painkillers",10,"backpack"] call FNC_AddItem; \
-["ACE_epinephrine",5,"backpack"] call FNC_AddItem; \
-["ACE_tourniquet",4,"backpack"] call FNC_AddItem; \
-["ACE_surgicalKit",1,"backpack"] call FNC_AddItem; \
-["ACE_salineIV",5,"backpack"] call FNC_AddItem; \
-["ACE_salineIV_500",10,"vest"] call FNC_AddItem;
+#define Ger_MedicP_Equipment                             \
+    [GEN_BandageField,10,"backpack"] call FNC_AddItem;   \
+    [GEN_BandageElastic,20,"backpack"] call FNC_AddItem; \
+    [GEN_BandagePacking,20,"backpack"] call FNC_AddItem; \
+    [GEN_Morp,5,"backpack"] call FNC_AddItem;            \
+    [GEN_Pain,10,"backpack"] call FNC_AddItem;           \
+    [GEN_Epi,5,"backpack"] call FNC_AddItem;             \
+    [GEN_TQ,4,"backpack"] call FNC_AddItem;              \
+    [GEN_SurgKit,1,"backpack"] call FNC_AddItem;         \
+    [GEN_Saline1000,5,"backpack"] call FNC_AddItem;      \
+    [GEN_Saline500,10,"vest"] call FNC_AddItem;
 
-#define Ger_MedicS_Equipment \
-["ACE_fieldDressing",5,"backpack"] call FNC_AddItem; \
-["ACE_elasticBandage",10,"backpack"] call FNC_AddItem; \
-["ACE_packingBandage",10,"backpack"] call FNC_AddItem; \
-["ACE_painkillers",10,"backpack"] call FNC_AddItem; \
-["ACE_tourniquet",5,"backpack"] call FNC_AddItem;
+#define Ger_MedicS_Equipment                             \
+    [GEN_BandageField,5,"backpack"] call FNC_AddItem;    \
+    [GEN_BandageElastic,10,"backpack"] call FNC_AddItem; \
+    [GEN_BandagePacking,10,"backpack"] call FNC_AddItem; \
+    [GEN_Pain,10,"backpack"] call FNC_AddItem;           \
+    [GEN_TQ,5,"backpack"] call FNC_AddItem;
 
 //===== Deutsches Afrikakorps Equipment Definitions =====
 
@@ -339,12 +339,15 @@
 //=== Clothes ===
 
 //Uniform
+#define Luft_Uni_Pilot          "U_LIB_GER_LW_pilot"
 
 //Vests
+#define Luft_Vest_Pilot         "V_LIB_GER_TankPrivateBelt"
 
 //Headgear
-#define Lft_Helmet              "fow_h_ger_m40_luftwaffe_01"
-#define Lft_Helmet_n            "fow_h_ger_m40_luftwaffe_02"
+#define Luft_Helmet             "fow_h_ger_m40_luftwaffe_01"
+#define Luft_Helmet_n           "fow_h_ger_m40_luftwaffe_02"
+#define Luft_Helmet_Pilot       "H_LIB_GER_LW_PilotHelmet"
 
 //=== EQUIPMENT ===
 
@@ -400,12 +403,12 @@
 
 //=== EQUIPMENT ===
 
-#define FSJ_Medic_Equipment \
-["ACE_elasticBandage",8] call FNC_AddItem; \
-["ACE_packingBandage",8] call FNC_AddItem; \
-["ACE_morphine",5] call FNC_AddItem; \
-["ACE_epinephrine",4] call FNC_AddItem; \
-["ACE_salineIV_500",3] call FNC_AddItem;
+#define FSJ_Medic_Equipment                  \
+    [GEN_BandageElastic,8] call FNC_AddItem; \
+    [GEN_BandagePacking,8] call FNC_AddItem; \
+    [GEN_Morp,5] call FNC_AddItem;           \
+    [GEN_Epi,4] call FNC_AddItem;            \
+    [GEN_Saline500,3] call FNC_AddItem;
 
 //===== SS Equipment Definitions =====
 

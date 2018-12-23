@@ -60,11 +60,11 @@
 
     //Pilot
     case "Luft40_Pilot" : {
-        ["U_LIB_GER_LW_pilot"] call FNC_AddItem;
-        ["V_LIB_GER_TankPrivateBelt"] call FNC_AddItem;
-        ["ACE_NonSteerableParachute"] call FNC_AddItem;
-        ["H_LIB_GER_LW_PilotHelmet"] call FNC_AddItem;
-        ["G_LIB_Watch1"] call FNC_AddItem;
+        [Luft_Uni_Pilot] call FNC_AddItem;
+        [Luft_Vest_Pilot] call FNC_AddItem;
+        [GEN_BP_Para] call FNC_AddItem;
+        [Luft_Helmet_Pilot] call FNC_AddItem;
+        [G_LIB_Watch1] call FNC_AddItem;
 
         //Assigned Items
         Ger_Default_Equipment;
