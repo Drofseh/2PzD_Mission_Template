@@ -266,32 +266,43 @@
 
 //=== EQUIPMENT ===
 
-#define US_Default_Equipment \
-[GEN_Map] call FNC_AddItem; \
-[GEN_Compass] call FNC_AddItem; \
-[GEN_Watch] call FNC_AddItem; \
-[GEN_ace_hammer] call FNC_AddItem; \
-[GEN_ace_shovel] call FNC_AddItem; \
-[GEN_BandageField,4] call FNC_AddItem; \
-[GEN_TQ,1] call FNC_AddItem; \
-[GEN_ace_flashlightNA] call FNC_AddItem; \
-[GEN_ace_cabletie] call FNC_AddItem;
+#define US_Default_Equipment                 \
+    [GEN_Map] call FNC_AddItem;              \
+    [GEN_Compass] call FNC_AddItem;          \
+    [GEN_Watch] call FNC_AddItem;            \
+    [GEN_ace_hammer] call FNC_AddItem;       \
+    [GEN_ace_shovel] call FNC_AddItem;       \
+    [GEN_BandageField,4] call FNC_AddItem;   \
+    [GEN_TQ,1] call FNC_AddItem;             \
+    [GEN_ace_flashlightNA] call FNC_AddItem; \
+    [GEN_ace_cabletie] call FNC_AddItem;     \
+    [GEN_ace_canteen_F] call FNC_AddItem;    \
+    [                                        \
+        [[GEN_ace_ration_Lamb]],[1],         \
+        [[GEN_ace_ration_Beef]],[1],         \
+        [[GEN_ace_ration_TSoup]],[1],        \
+        [[GEN_ace_ration_CSoup]],[1],        \
+        [[GEN_ace_ration_Tikka]],[1],        \
+        [[GEN_ace_ration_Steak]],[1],        \
+        [[GEN_ace_ration_Pasta]],[1],        \
+        [[GEN_ace_ration_Dumpling]],[1]      \
+    ] call FNC_AddItemRandomPercent;
 
-#define US_Leader_Equipment \
-[GEN_BinoUS] call FNC_AddItem; \
-[GEN_ace_maptools] call FNC_AddItem; \
-[GEN_Whistle] call FNC_AddItem;
+#define US_Leader_Equipment              \
+    [GEN_BinoUS] call FNC_AddItem;       \
+    [GEN_ace_maptools] call FNC_AddItem; \
+    [GEN_Whistle] call FNC_AddItem;
 
-#define US_Medic_Equipment \
-[GEN_BandageField,10,"backpack"] call FNC_AddItem; \
-[GEN_BandageElastic,20,"backpack"] call FNC_AddItem; \
-[GEN_BandagePacking,20,"backpack"] call FNC_AddItem; \
-[GEN_Morp,5,"backpack"] call FNC_AddItem; \
-[GEN_Pain,10,"backpack"] call FNC_AddItem; \
-[GEN_Epi,5,"backpack"] call FNC_AddItem; \
-[GEN_TQ,2,"backpack"] call FNC_AddItem; \
-[GEN_SurgKit,1,"backpack"] call FNC_AddItem; \
-[GEN_Saline500,14,"backpack"] call FNC_AddItem;
+#define US_Medic_Equipment                               \
+    [GEN_BandageField,10,"backpack"] call FNC_AddItem;   \
+    [GEN_BandageElastic,20,"backpack"] call FNC_AddItem; \
+    [GEN_BandagePacking,20,"backpack"] call FNC_AddItem; \
+    [GEN_Morp,5,"backpack"] call FNC_AddItem;            \
+    [GEN_Pain,10,"backpack"] call FNC_AddItem;           \
+    [GEN_Epi,5,"backpack"] call FNC_AddItem;             \
+    [GEN_TQ,2,"backpack"] call FNC_AddItem;              \
+    [GEN_SurgKit,1,"backpack"] call FNC_AddItem;         \
+    [GEN_Saline500,14,"backpack"] call FNC_AddItem;
 
 //===== US Army Airborne Equipment Definitions =====
 
@@ -513,7 +524,18 @@
     [GEN_BandageField,4] call FNC_AddItem;   \
     [GEN_TQ,1] call FNC_AddItem;             \
     [GEN_ace_flashlightNA] call FNC_AddItem; \
-    [GEN_ace_cabletie] call FNC_AddItem;
+    [GEN_ace_cabletie] call FNC_AddItem;     \
+    [GEN_ace_canteen_F] call FNC_AddItem;    \
+    [                                        \
+        [[GEN_ace_ration_Lamb]],[1],         \
+        [[GEN_ace_ration_Beef]],[1],         \
+        [[GEN_ace_ration_TSoup]],[1],        \
+        [[GEN_ace_ration_CSoup]],[1],        \
+        [[GEN_ace_ration_Tikka]],[1],        \
+        [[GEN_ace_ration_Steak]],[1],        \
+        [[GEN_ace_ration_Pasta]],[1],        \
+        [[GEN_ace_ration_Dumpling]],[1]      \
+    ] call FNC_AddItemRandomPercent;
 
 #define USMC_Leader_Equipment            \
     [GEN_BinoUS] call FNC_AddItem;       \
@@ -541,14 +563,26 @@
 //Headgear
 #define USAF_Helm               "H_LIB_US_Helmet_Pilot"
 
-#define USAF_Default_Equipment             \
-    [GEN_Map] call FNC_AddItem;            \
-    [GEN_Compass] call FNC_AddItem;        \
-    [GEN_Watch] call FNC_AddItem;          \
-    [GEN_ace_hammer] call FNC_AddItem;     \
-    [GEN_BandageField,4] call FNC_AddItem; \
-    [GEN_TQ,1] call FNC_AddItem;           \
-    [GEN_ace_flashlightNA] call FNC_AddItem;
+#define USAF_Default_Equipment               \
+    [GEN_Map] call FNC_AddItem;              \
+    [GEN_Compass] call FNC_AddItem;          \
+    [GEN_Watch] call FNC_AddItem;            \
+    [GEN_ace_hammer] call FNC_AddItem;       \
+    [GEN_BandageField,4] call FNC_AddItem;   \
+    [GEN_TQ,1] call FNC_AddItem;             \
+    [GEN_ace_flashlightNA] call FNC_AddItem; \
+    [GEN_ace_cabletie] call FNC_AddItem;     \
+    [GEN_ace_canteen_F] call FNC_AddItem;    \
+    [                                        \
+        [[GEN_ace_ration_Lamb]],[1],         \
+        [[GEN_ace_ration_Beef]],[1],         \
+        [[GEN_ace_ration_TSoup]],[1],        \
+        [[GEN_ace_ration_CSoup]],[1],        \
+        [[GEN_ace_ration_Tikka]],[1],        \
+        [[GEN_ace_ration_Steak]],[1],        \
+        [[GEN_ace_ration_Pasta]],[1],        \
+        [[GEN_ace_ration_Dumpling]],[1]      \
+    ] call FNC_AddItemRandomPercent;
 
 #define USAF_Leader_Equipment            \
     [GEN_BinoUS] call FNC_AddItem;       \

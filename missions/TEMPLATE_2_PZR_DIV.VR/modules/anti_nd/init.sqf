@@ -41,7 +41,7 @@ if (!isDedicated) then {
                 if ((FW_SpawnPos distance player) <= ANTI_ND_DIST) then {
                     _msg2 = "\nFiring is not allowed at the start location, you must move away from the spawn.\nDistance from spawn: " + str round (FW_SpawnPos distance player) + " out of " + str (round ANTI_ND_DIST) + " meters.\n";
                 };
-                hintC format ["You are firing without approval. Cease your actions Immediately!%1%2", _msg1, _msg2];
+                hintC format ["You are firing without approval. Cease your actions immediately!%1%2", _msg1, _msg2];
                 if ((_this select 5) call BIS_fnc_isThrowable) then {
                     player addMagazine (_this select 5);
                 }

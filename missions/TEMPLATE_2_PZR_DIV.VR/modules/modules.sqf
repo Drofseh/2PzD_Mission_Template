@@ -14,6 +14,7 @@
 #include "jip\root.sqf"
 #include "marker_control\root.sqf"
 #include "shot_count\root.sqf"
+#include "stamina_boost\root.sqf"
 #include "start_on_safe\root.sqf"
 #include "start_on_team_color\root.sqf"
 #include "start_with_earplugs\root.sqf"

@@ -96,7 +96,7 @@
                 [Ger_Mag_StG44,1],       \
                 [Ger_Weap_StG44],        \
                 [Ger_Mag_StG44,6,"vest"] \
-            ],[10],                       \
+            ],[10],                      \
             [                            \
                 [Ger_Vest_MP40],         \
                 [Ger_Mag_MP40,1],        \
@@ -166,7 +166,17 @@
                 [UK_Mag_HiPower,1],       \
                 [UK_Weap_HiPower],        \
                 [UK_Mag_HiPower,2]        \
-            ],[2]                         \
+            ],[2],                        \
+            [                             \
+                [Ger_Mag_M1916,1],        \
+                [Ger_Weap_M1916],         \
+                [Ger_Mag_M1916,2]         \
+            ],[1],                        \
+            [                             \
+                [Ger_Mag_M172_10,1],      \
+                [Ger_Weap_M172],          \
+                [Ger_Mag_M172_20,2]       \
+            ],[0.5]                       \
         ] call FNC_AddItemRandomPercent;
 
 //For Kompanietruppführer, MG-Richtschütze, Mortar Truppführer, Mortar Granatwerferschützen,
@@ -192,7 +202,17 @@
                 [UK_Mag_HiPower,1],        \
                 [UK_Weap_HiPower],         \
                 [UK_Mag_HiPower,2]         \
-            ],[2]                          \
+            ],[2],                         \
+            [                              \
+                [Ger_Mag_M1916,1],         \
+                [Ger_Weap_M1916],          \
+                [Ger_Mag_M1916,2]          \
+            ],[1],                         \
+            [                              \
+                [Ger_Mag_M172_10,1],       \
+                [Ger_Weap_M172],           \
+                [Ger_Mag_M172_20,2]        \
+            ],[0.5]                        \
         ] call FNC_AddItemRandomPercent;
 
 // Panzerfaust

@@ -163,7 +163,18 @@
     [GEN_BandageField,4] call FNC_AddItem;   \
     [GEN_TQ,1] call FNC_AddItem;             \
     [GEN_ace_flashlightNA] call FNC_AddItem; \
-    [GEN_ace_cabletie] call FNC_AddItem;
+    [GEN_ace_cabletie] call FNC_AddItem;     \
+    [GEN_ace_canteen_F] call FNC_AddItem;    \
+    [                                        \
+        [[GEN_ace_ration_Lamb]],[1],         \
+        [[GEN_ace_ration_Beef]],[1],         \
+        [[GEN_ace_ration_TSoup]],[1],        \
+        [[GEN_ace_ration_CSoup]],[1],        \
+        [[GEN_ace_ration_Tikka]],[1],        \
+        [[GEN_ace_ration_Steak]],[1],        \
+        [[GEN_ace_ration_Pasta]],[1],        \
+        [[GEN_ace_ration_Dumpling]],[1]      \
+    ] call FNC_AddItemRandomPercent;
 
 #define UK_Leader_Equipment              \
     [GEN_BinoUS] call FNC_AddItem;       \

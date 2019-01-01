@@ -29,5 +29,5 @@ _unit setVariable ["BIS_enableRandomization", false];
 _unit setVariable ["FW_Loadout", _type, true];
 
 FNC_AddItem = {([_unit, _type] + _this) call FNC_AddItemOrg;};
-FNC_AddItemRandom = {([[_unit, _type]] + [_this]) call FNC_AddItemRandomOrg;};
-FNC_AddItemRandomPercent = {([[_unit, _type]] + [_this]) call FNC_AddItemRandomOrgPercent;};
+FNC_AddItemRandom = {([_unit, _type] + [_this]) call FNC_AddItemRandomOrg;};
+FNC_AddItemRandomPercent = {([_unit, _type] + [_this]) call FNC_AddItemRandomOrgPercent;};

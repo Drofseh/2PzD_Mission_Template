@@ -80,7 +80,17 @@
 #define GEN_ace_cabletie        "ACE_CableTie"
 #define GEN_ace_maptools        "ACE_MapTools"
 #define GEN_ace_rangetable      "ACE_RangeTable_82mm"
-#define GEN_rangetable          "fow_i_rangeTables_m2"
+#define GEN_ace_ration_Lamb     "ACE_MRE_LambCurry"
+#define GEN_ace_ration_Beef     "ACE_MRE_BeefStew"
+#define GEN_ace_ration_TSoup    "ACE_MRE_CreamTomatoSoup"
+#define GEN_ace_ration_CSoup    "ACE_MRE_CreamChickenSoup"
+#define GEN_ace_ration_Tikka    "ACE_MRE_ChickenTikkaMasala"
+#define GEN_ace_ration_Steak    "ACE_MRE_SteakVegetables"
+#define GEN_ace_ration_Pasta    "ACE_MRE_MeatballsPasta"
+#define GEN_ace_ration_Dumpling "ACE_MRE_ChickenHerbDumplings"
+#define GEN_ace_canteen_F       "ACE_Canteen"
+#define GEN_ace_canteen_H       "ACE_Canteen_Half"
+#define GEN_ace_canteen_E       "ACE_Canteen_Empty"
 #define GEN_key_master          "ACE_key_master"
 #define GEN_key_west            "ACE_key_west"
 #define GEN_key_east            "ACE_key_east"
@@ -119,6 +129,7 @@
 #define GEN_Headset             "LIB_GER_Headset"
 #define GEN_Map                 "ItemMap"
 #define GEN_Minedetector        "MineDetector"
+#define GEN_rangetable          "fow_i_rangeTables_m2"
 #define GEN_Toolkit             "ToolKit"
 #define GEN_Watch               "ItemWatch"
 #define GEN_Whistle             "fow_i_whistle"
@@ -138,19 +149,24 @@
     [GEN_BandageField,4] call FNC_AddItem;   \
     [GEN_TQ,1] call FNC_AddItem;             \
     [GEN_ace_flashlightNA] call FNC_AddItem; \
-    [GEN_ace_cabletie] call FNC_AddItem;
+    [GEN_ace_cabletie] call FNC_AddItem;     \
+    [GEN_ace_canteen_F] call FNC_AddItem;    \
+    [                                        \
+        [[GEN_ace_ration_Lamb]],[1],         \
+        [[GEN_ace_ration_Beef]],[1],         \
+        [[GEN_ace_ration_TSoup]],[1],        \
+        [[GEN_ace_ration_CSoup]],[1],        \
+        [[GEN_ace_ration_Tikka]],[1],        \
+        [[GEN_ace_ration_Steak]],[1],        \
+        [[GEN_ace_ration_Pasta]],[1],        \
+        [[GEN_ace_ration_Dumpling]],[1]      \
+    ] call FNC_AddItemRandomPercent;
 
 #define GEN_Leader_Equipment             \
     [                                    \
-        [                                \
-            [GEN_BinoG]                  \
-        ],[33],                          \
-        [                                \
-            [GEN_BinoR]                  \
-        ],[33],                          \
-        [                                \
-            [GEN_BinoUS]                 \
-        ],[33]                           \
+        [[GEN_BinoG]],[33],              \
+        [[GEN_BinoR]],[33],              \
+        [[GEN_BinoUS]],[33]              \
     ] call FNC_AddItemRandomPercent;     \
     [GEN_ace_maptools] call FNC_AddItem; \
     [GEN_Whistle] call FNC_AddItem;

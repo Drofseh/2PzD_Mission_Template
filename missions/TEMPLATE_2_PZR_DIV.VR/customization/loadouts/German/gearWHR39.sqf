@@ -150,7 +150,17 @@
                 [Ger_Mag_PPK,1],       \
                 [Ger_Weap_PPK],        \
                 [Ger_Mag_PPK,2]        \
-            ],[10]                     \
+            ],[10],                    \
+            [                          \
+                [Ger_Mag_M1916,1],     \
+                [Ger_Weap_M1916],      \
+                [Ger_Mag_M1916,2]      \
+            ],[2],                     \
+            [                          \
+                [Ger_Mag_M172_10,1],   \
+                [Ger_Weap_M172],       \
+                [Ger_Mag_M172_20,2]    \
+            ],[0.5]                    \
         ] call FNC_AddItemRandomPercent;
 
 //For Kompanietruppführer, MG-Richtschütze, Mortar Truppführer, Mortar Granatwerferschützen,
@@ -166,7 +176,17 @@
                 [Ger_Mag_P38,1],        \
                 [Ger_Weap_P38],         \
                 [Ger_Mag_P38,2]         \
-            ],[42]                      \
+            ],[42],                     \
+            [                           \
+                [Ger_Mag_M1916,1],      \
+                [Ger_Weap_M1916],       \
+                [Ger_Mag_M1916,2]       \
+            ],[2],                      \
+            [                           \
+                [Ger_Mag_M172_10,1],    \
+                [Ger_Weap_M172],        \
+                [Ger_Mag_M172_20,2]     \
+            ],[0.5]                     \
         ] call FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================

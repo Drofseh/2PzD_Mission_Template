@@ -97,7 +97,14 @@
     [GEN_BandageField,4] call FNC_AddItem;   \
     [GEN_TQ,1] call FNC_AddItem;             \
     [GEN_ace_flashlightEU] call FNC_AddItem; \
-    [GEN_ace_cabletie] call FNC_AddItem;
+    [GEN_ace_cabletie] call FNC_AddItem;     \
+    [GEN_ace_canteen_F] call FNC_AddItem;    \
+    [                                        \
+        [[GEN_ace_ration_Lamb]],[1],         \
+        [[GEN_ace_ration_Beef]],[1],         \
+        [[GEN_ace_ration_CSoup]],[1],        \
+        [[GEN_ace_ration_Dumpling]],[1]      \
+    ] call FNC_AddItemRandomPercent;
 
 #define IJA_Leader_Equipment      \
     [GEN_BinoG] call FNC_AddItem; \

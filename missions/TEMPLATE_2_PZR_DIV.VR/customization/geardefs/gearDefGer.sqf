@@ -22,6 +22,8 @@
 #define Ger_Weap_MG42           "LIB_MG42"
 
 //Secondary
+#define Ger_Weap_M1916          "LIB_M1896"
+#define Ger_Weap_M172           "LIB_M712_2PzD"
 #define Ger_Weap_P38            "LIB_P38"
 #define Ger_Weap_P08            "fow_w_p08"
 #define Ger_Weap_PPK            "fow_w_ppk"
@@ -66,6 +68,9 @@
 #define Ger_Mag_MG_SmE200       "LIB_200Rnd_792x57_sS_2PzD"
 #define Ger_Mag_MG_SmE250       "LIB_250Rnd_792x57_sS_2PzD"
 #define Ger_Mag_MG34_PT         "LIB_75Rnd_792x57"
+#define Ger_Mag_M1916           "LIB_10Rnd_9x19_M1896"
+#define Ger_Mag_M172_10         "LIB_10Rnd_763x25_2PzD"
+#define Ger_Mag_M172_20         "LIB_20Rnd_763x25_2PzD"
 #define Ger_Mag_P38             "LIB_8Rnd_9x19"
 #define Ger_Mag_P08             "LIB_8Rnd_9x19_P08"
 #define Ger_Mag_PPK             "LIB_7Rnd_9x19"
@@ -266,7 +271,15 @@
     [GEN_BandageField,4] call FNC_AddItem;   \
     [GEN_TQ,1] call FNC_AddItem;             \
     [GEN_ace_flashlightEU] call FNC_AddItem; \
-    [GEN_ace_cabletie] call FNC_AddItem;
+    [GEN_ace_cabletie] call FNC_AddItem;     \
+    [GEN_ace_canteen_F] call FNC_AddItem;    \
+    [                                        \
+        [[GEN_ace_ration_Beef]],[1],         \
+        [[GEN_ace_ration_TSoup]],[1],        \
+        [[GEN_ace_ration_CSoup]],[1],        \
+        [[GEN_ace_ration_Steak]],[1],        \
+        [[GEN_ace_ration_Pasta]],[1]         \
+    ] call FNC_AddItemRandomPercent;
 
 #define Ger_Leader_Equipment             \
     [GEN_BinoG] call FNC_AddItem;        \

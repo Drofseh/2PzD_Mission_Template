@@ -56,7 +56,17 @@
                 [UK_Mag_HiPower,1],        \
                 [UK_Weap_HiPower],         \
                 [UK_Mag_HiPower,2]         \
-            ],[2]                          \
+            ],[2],                         \
+            [                              \
+                [Ger_Mag_M1916,1],         \
+                [Ger_Weap_M1916],          \
+                [Ger_Mag_M1916,2]          \
+            ],[1],                         \
+            [                              \
+                [Ger_Mag_M172_10,1],       \
+                [Ger_Weap_M172],           \
+                [Ger_Mag_M172_20,2]        \
+            ],[0.5]                        \
         ] call FNC_AddItemRandomPercent;
 
 // For all enlisted men
@@ -81,7 +91,17 @@
                 [UK_Mag_HiPower,1],         \
                 [UK_Weap_HiPower],          \
                 [UK_Mag_HiPower,2]          \
-            ],[2]                           \
+            ],[2],                          \
+            [                               \
+                [Ger_Mag_M1916,1],          \
+                [Ger_Weap_M1916],           \
+                [Ger_Mag_M1916,2]           \
+            ],[1],                          \
+            [                               \
+                [Ger_Mag_M172_10,1],        \
+                [Ger_Weap_M172],            \
+                [Ger_Mag_M172_20,2]         \
+            ],[0.5]                         \
         ] call FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================

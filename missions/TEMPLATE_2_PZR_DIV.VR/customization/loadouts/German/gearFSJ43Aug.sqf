@@ -60,26 +60,26 @@
         ] call FNC_AddItemRandomPercent;
 
 // For all men with rifles
-#define FSJ43Aug_Weapon_Rifle           \
-        [                               \
-            [                           \
-                [FSJ_Vest_Band],        \
-                [Ger_Mag_K98,1],        \
-                [Ger_Weap_K98],         \
-                [Ger_Mag_K98,24,"vest"] \
-            ],[94],                     \
-            [                           \
-                [FSJ_Vest_Band],        \
-                [Ger_Mag_FG42,1],       \
-                [Ger_Weap_FG42],        \
+#define FSJ43Aug_Weapon_Rifle            \
+        [                                \
+            [                            \
+                [FSJ_Vest_Band],         \
+                [Ger_Mag_K98,1],         \
+                [Ger_Weap_K98],          \
+                [Ger_Mag_K98,24,"vest"]  \
+            ],[94],                      \
+            [                            \
+                [FSJ_Vest_Band],         \
+                [Ger_Mag_FG42,1],        \
+                [Ger_Weap_FG42],         \
                 [Ger_Mag_FG42,12,"vest"] \
-            ],[5],                      \
-            [                           \
-                [FSJ_Vest_Band],        \
-                [Ger_Mag_K98,1],        \
-                [Ger_Weap_K98_E],       \
-                [Ger_Mag_K98,24,"vest"] \
-            ],[1]                       \
+            ],[5],                       \
+            [                            \
+                [FSJ_Vest_Band],         \
+                [Ger_Mag_K98,1],         \
+                [Ger_Weap_K98_E],        \
+                [Ger_Mag_K98,24,"vest"]  \
+            ],[1]                        \
         ] call FNC_AddItemRandomPercent;
 
 // For MG-Richtschütze
@@ -120,7 +120,17 @@
                 [UK_Mag_HiPower,1],       \
                 [UK_Weap_HiPower],        \
                 [UK_Mag_HiPower,2]        \
-            ],[2]                         \
+            ],[2],                        \
+            [                             \
+                [Ger_Mag_M1916,1],        \
+                [Ger_Weap_M1916],         \
+                [Ger_Mag_M1916,2]         \
+            ],[1],                        \
+            [                             \
+                [Ger_Mag_M172_10,1],      \
+                [Ger_Weap_M172],          \
+                [Ger_Mag_M172_20,2]       \
+            ],[0.5]                       \
         ] call FNC_AddItemRandomPercent;
 
 // For Kompanietruppführer, Zugtruppführer, MG-Richtschütze
@@ -145,7 +155,17 @@
                 [UK_Mag_HiPower,1],        \
                 [UK_Weap_HiPower],         \
                 [UK_Mag_HiPower,2]         \
-            ],[2]                          \
+            ],[2],                         \
+            [                              \
+                [Ger_Mag_M1916,1],         \
+                [Ger_Weap_M1916],          \
+                [Ger_Mag_M1916,2]          \
+            ],[1],                         \
+            [                              \
+                [Ger_Mag_M172_10,1],       \
+                [Ger_Weap_M172],           \
+                [Ger_Mag_M172_20,2]        \
+            ],[0.5]                        \
         ] call FNC_AddItemRandomPercent;
 
 // Panzerfaust

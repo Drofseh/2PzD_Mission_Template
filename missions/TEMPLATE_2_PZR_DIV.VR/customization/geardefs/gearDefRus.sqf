@@ -133,7 +133,15 @@
     [GEN_BandageField,4] call FNC_AddItem;   \
     [GEN_TQ,1] call FNC_AddItem;             \
     [GEN_ace_flashlightEU] call FNC_AddItem; \
-    [GEN_ace_cabletie] call FNC_AddItem;
+    [GEN_ace_cabletie] call FNC_AddItem;     \
+    [GEN_ace_canteen_F] call FNC_AddItem;    \
+    [                                        \
+        [[GEN_ace_ration_Beef]],[1],         \
+        [[GEN_ace_ration_TSoup]],[1],        \
+        [[GEN_ace_ration_CSoup]],[1],        \
+        [[GEN_ace_ration_Steak]],[1],        \
+        [[GEN_ace_ration_Dumpling]],[1]      \
+    ] call FNC_AddItemRandomPercent;
 
 #define Rus_Leader_Equipment               \
     [GEN_BinoR] call FNC_AddItem;          \
@@ -164,7 +172,15 @@
     [GEN_BandageField,4] call FNC_AddItem;   \
     [GEN_TQ,1] call FNC_AddItem;             \
     [GEN_ace_flashlightEU] call FNC_AddItem; \
-    [GEN_ace_cabletie] call FNC_AddItem;
+    [GEN_ace_cabletie] call FNC_AddItem;     \
+    [GEN_ace_canteen_F] call FNC_AddItem;    \
+    [                                        \
+        [[GEN_ace_ration_Beef]],[1],         \
+        [[GEN_ace_ration_TSoup]],[1],        \
+        [[GEN_ace_ration_CSoup]],[1],        \
+        [[GEN_ace_ration_Steak]],[1],        \
+        [[GEN_ace_ration_Dumpling]],[1]      \
+    ] call FNC_AddItemRandomPercent;
 
 #define VDV_Leader_Equipment               \
     [GEN_BinoR] call FNC_AddItem;          \
