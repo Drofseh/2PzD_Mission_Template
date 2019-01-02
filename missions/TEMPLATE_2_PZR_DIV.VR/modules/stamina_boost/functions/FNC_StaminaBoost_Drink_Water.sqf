@@ -3,9 +3,9 @@
 */
 
 FNC_StaminaBoost_Drink_Water = {
-    params ["_drinkItem", "_addItem"];
+    params ["_drinkItem", "_newItem"];
     //private _drinkItem = _this select 0;
-    //private _addItem = _this select 1;
+    //private _newItem = _this select 1;
 
     //Both Ace drinking sounds are very very similar, no reason to randomize it right now
     //private _drinkSound = ["acex_field_rations_drink1","acex_field_rations_drink2"] selectRandomWeighted [1,1];
