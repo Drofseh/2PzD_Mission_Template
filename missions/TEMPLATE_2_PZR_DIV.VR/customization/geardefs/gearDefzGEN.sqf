@@ -54,16 +54,16 @@
 #define GEN_Face_WatchBlack     "G_LIB_Watch2"
 #define GEN_Face_Tank_r         ["G_LIB_Headwrap"],["G_LIB_Headwrap_gloves"]
 #define GEN_Face_r              [GEN_Face_GlassesSilver],[GEN_Face_GlassesBlack], \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],             \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1]
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown]
 
 //=== MISC ===
 //ACE

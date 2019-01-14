@@ -56,7 +56,7 @@
             ],[10]                       \
         ] call FNC_AddItemRandomPercent;
 
-// For all men with rifles
+// For all men with rifles except the MG-Hilfsschütze
 #define FSJP43Oct_Weapon_Rifle           \
         [                                \
             [                            \
@@ -69,10 +69,27 @@
             ],[10],                      \
             [                            \
                 [Ger_Vest_StG44],        \
-                [Ger_Mag_StG44,8,"vest"] \
+                [Ger_Mag_StG44,6,"vest"] \
             ],[5],                       \
             [                            \
                 [FSJ_Vest_Band],         \
+                [Ger_Mag_FG42,12,"vest"] \
+            ],[5]                        \
+        ] call FNC_AddItemRandomPercent;
+
+// For the MG-Hilfsschütze
+#define FSJP43Oct_Weapon_MGA             \
+        [                                \
+            [                            \
+                [Ger_Mag_K98,24,"vest"]  \
+            ],[80],                      \
+            [                            \
+                [Ger_Mag_G43,6,"vest"]   \
+            ],[10],                      \
+            [                            \
+                [Ger_Mag_StG44,6,"vest"] \
+            ],[5],                       \
+            [                            \
                 [Ger_Mag_FG42,12,"vest"] \
             ],[5]                        \
         ] call FNC_AddItemRandomPercent;
@@ -385,7 +402,7 @@
         [GEN_BinoG] call FNC_AddItem;
 
         //Primary Weapon
-        FSJP43Oct_Weapon_Rifle;
+        FSJP43Oct_Weapon_MGA;
 
         //Secondary Weapon
         FSJP43Oct_Weapon_Enlisted_Secondary;

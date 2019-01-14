@@ -56,7 +56,7 @@
             ],[15]                       \
         ] call FNC_AddItemRandomPercent;
 
-// For all men with rifles
+// For all men with rifles except the MG-Hilfsschütze
 #define FSJP44Jan_Weapon_Rifle           \
         [                                \
             [                            \
@@ -69,10 +69,27 @@
             ],[15],                      \
             [                            \
                 [Ger_Vest_StG44],        \
-                [Ger_Mag_StG44,8,"vest"] \
+                [Ger_Mag_StG44,6,"vest"] \
             ],[12],                      \
             [                            \
                 [FSJ_Vest_Band],         \
+                [Ger_Mag_FG42,12,"vest"] \
+            ],[8]                        \
+        ] call FNC_AddItemRandomPercent;
+
+// For the MG-Hilfsschütze
+#define FSJP44Jan_Weapon_MGA             \
+        [                                \
+            [                            \
+                [Ger_Mag_K98,24,"vest"]  \
+            ],[65],                      \
+            [                            \
+                [Ger_Mag_G43,6,"vest"]   \
+            ],[15],                      \
+            [                            \
+                [Ger_Mag_StG44,6,"vest"] \
+            ],[12],                      \
+            [                            \
                 [Ger_Mag_FG42,12,"vest"] \
             ],[8]                        \
         ] call FNC_AddItemRandomPercent;
@@ -389,6 +406,7 @@
     //MG-Hilfsschütze
     case "FSJP44Jan_MGA" : {
         [FSJ_UniC_Rif] call FNC_AddItem;
+        [Ger_Vest_MGA] call FNC_AddItem;
         [GEN_BP_Para] call FNC_AddItem;
         [FSJ_Helmet_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -398,7 +416,7 @@
         [GEN_BinoG] call FNC_AddItem;
 
         //Primary Weapon
-        FSJP44Jan_Weapon_Rifle;
+        FSJP44Jan_Weapon_MGA;
 
         //Secondary Weapon
         FSJP44Jan_Weapon_Enlisted_Secondary;

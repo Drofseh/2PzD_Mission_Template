@@ -58,7 +58,7 @@
 
     //Lieutenant
     case "CdnRWR39_Lt" : {
-        [UK_UniEsx_Lt] call FNC_AddItem;
+        [CDN_UniRWR_Lt] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -71,13 +71,13 @@
         CdnRWR39_Webley;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Sergeant
     case "CdnRWR39_Sgt" : {
-        [UK_UniEsx_Sgt] call FNC_AddItem;
+        [CDN_UniRWR_Sgt] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -91,14 +91,15 @@
         CdnRWR39_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [UK_Gren_Smoke_W,2] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
+        [UK_Gren_Smoke_W,1] call FNC_AddItem;
+        [UK_Gren_WP,1] call FNC_AddItem;
         [US_Mag_Mort_HE,5,"backpack"] call FNC_AddItem;
     };
 
     //Medic
     case "CdnRWR39_Med" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -117,7 +118,7 @@
 
     //Signaller
     case "CdnRWR39_Sig" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK_Radio] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -130,13 +131,13 @@
         CdnRWR39_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Light Mortar Gunner
     case "CdnRWR39_LMortG" : {
-        [UK_UniEsx_LCpl] call FNC_AddItem;
+        [CDN_UniRWR_LCpl] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -156,7 +157,7 @@
 
     //Light Mortar Assistant
     case "CdnRWR39_LMortA" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -178,7 +179,7 @@
 
     //Corporal
     case "CdnRWR39_Cpl" : {
-        [UK_UniEsx_Cpl] call FNC_AddItem;
+        [CDN_UniRWR_Cpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -192,14 +193,15 @@
         CdnRWR39_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [UK_Gren_Smoke_W,2] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
+        [UK_Gren_Smoke_W,1] call FNC_AddItem;
+        [UK_Gren_WP,1] call FNC_AddItem;
         [UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
     };
 
     //Lance Corporal
     case "CdnRWR39_LCpl" : {
-        [UK_UniEsx_LCpl] call FNC_AddItem;
+        [CDN_UniRWR_LCpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -212,14 +214,15 @@
         CdnRWR39_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [UK_Gren_Smoke_W,2] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
+        [UK_Gren_Smoke_W,1] call FNC_AddItem;
+        [UK_Gren_WP,1] call FNC_AddItem;
         [UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
     };
 
     //Bren Gunner
     case "CdnRWR39_AR" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -239,7 +242,7 @@
 
     //Bren Gun Assistant
     case "CdnRWR39_AAR" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -255,12 +258,12 @@
         //Extra
         [GEN_ace_sparebarrel,1,"backpack"] call FNC_AddItem;
         [UK_Mag_Bren,4,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
     };
 
     //Bren Gun Ammo Bearer
     case "CdnRWR39_AAB" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -273,13 +276,13 @@
         CdnRWR39_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Mag_Bren,10,"backpack"] call FNC_AddItem;
     };
 
     //Rifleman
     case "CdnRWR39_Rif" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -292,7 +295,7 @@
         CdnRWR39_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
     };
 
@@ -300,7 +303,7 @@
 
     //Machine Gun Team Leader
     case "CdnRWR39_MGTL" : {
-        [UK_UniEsx_LCpl] call FNC_AddItem;
+        [CDN_UniRWR_LCpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -314,13 +317,13 @@
         CdnRWR39_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Machine Gunner
     case "CdnRWR39_MG" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestG_Bren] call FNC_AddItem;
         [UK_Weap_HMG_G] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -335,7 +338,7 @@
 
     //Machine Gun Assistant
     case "CdnRWR39_MGA" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestG_Bren] call FNC_AddItem;
         [UK_Weap_HMG_T] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -353,7 +356,7 @@
 
     //Machine Gun Ammo Bearer
     case "CdnRWR39_MGAB" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -372,7 +375,7 @@
 
     //Mortar Team Leader
     case "CdnRWR39_MortTL" : {
-        [UK_UniEsx_Cpl] call FNC_AddItem;
+        [CDN_UniRWR_Cpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -386,14 +389,14 @@
         CdnRWR39_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
         [Rus_Mag_Mort_HE,5,"backpack"] call FNC_AddItem;
     };
 
     //Mortar Gunner
     case "CdnRWR39_MortG" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -413,7 +416,7 @@
 
     //Mortar Assistant
     case "CdnRWR39_MortA" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -433,7 +436,7 @@
 
     //Mortar Ammo Bearer
     case "CdnRWR39_MortAB" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -453,7 +456,7 @@
 
     //Boys Rifle Team Leader
     case "CdnRWR39_ATRTL" : {
-        [UK_UniEsx_Cpl] call FNC_AddItem;
+        [CDN_UniRWR_Cpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -468,13 +471,13 @@
 
         //Extra
         [UK_Mag_Boys,20,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Boys Rifle Gunner
     case "CdnRWR39_ATRG" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -494,7 +497,7 @@
 
     //Boys Rifle Ammo Bearer
     case "CdnRWR39_ATRAB" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -508,14 +511,14 @@
 
         //Extra
         [UK_Mag_Boys,20,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
     };
 
 //Vehicle Crew
 
     //Tank Commander
     case "CdnRWR39_VCom" : {
-        [UK_UniEsx_Sgt] call FNC_AddItem;
+        [CDN_UniRWR_Sgt] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;
@@ -529,13 +532,14 @@
         CdnRWR39_Webley;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [UK_Gren_Smoke_W,2] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
+        [UK_Gren_Smoke_W,1] call FNC_AddItem;
+        [UK_Gren_WP,1] call FNC_AddItem;
     };
 
     //Tank Crew
     case "CdnRWR39_VCrew" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_Mk2] call FNC_AddItem;

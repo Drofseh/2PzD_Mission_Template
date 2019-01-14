@@ -98,7 +98,7 @@
                 [Ger_Vest_StG44],        \
                 [Ger_Mag_StG44,1],       \
                 [Ger_Weap_StG44],        \
-                [Ger_Mag_StG44,8,"vest"] \
+                [Ger_Mag_StG44,6,"vest"] \
             ],[5],                       \
             [                            \
                 [FSJ_Vest_Band],         \

@@ -165,7 +165,7 @@
             [                             \
                 [UK_Mag_HiPower,1],       \
                 [UK_Weap_HiPower],        \
-                [UK_Mag_HiPower,2]        \ 
+                [UK_Mag_HiPower,2]        \
             ],[2],                        \
             [                             \
                 [Ger_Mag_M1916,1],        \

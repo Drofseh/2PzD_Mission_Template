@@ -60,8 +60,8 @@
 #define US_Mag_M1919_150        "LIB_150Rnd_762x63_2PzD"
 #define US_Mag_M1919_200        "LIB_200Rnd_762x63_2PzD"
 #define US_Mag_M1919_250        "LIB_250Rnd_762x63_2PzD"
-#define US_Mag_M12_Buck         "LEN_6Rnd_12G_Pellets"
-#define US_Mag_M12_Slug         "LEN_6Rnd_12G_Slug"
+#define US_Mag_M12_Buck         "fow_6Rnd_12G_Pellets"
+#define US_Mag_M12_Slug         "fow_6Rnd_12G_Slug"
 #define US_Mag_M37_Buck         "fow_5Rnd_12G_Pellets"
 #define US_Mag_M37_Slug         "fow_5Rnd_12G_Slug"
 #define US_Mag_M1911            "LIB_7Rnd_45ACP"
@@ -96,16 +96,16 @@
 #define US_Uni_VCrew2           "fow_u_us_m41_01_private"
 
 //Early Uniform
-#define US_UniE_CPT              "fow_u_us_m37_01_private"
-#define US_UniE_LT               "fow_u_us_m37_01_private"
-#define US_UniE_SGT              "fow_u_us_m37_01_private"
-#define US_UniE_CPL              "fow_u_us_m37_01_private"
-#define US_UniE_PFC              "fow_u_us_m37_01_private"
-#define US_UniE_PVT              "fow_u_us_m37_01_private"
-#define US_UniE_Med              "fow_u_us_m37_01_private"
-#define US_UniE_Tec5             "fow_u_us_m37_01_private"
-#define US_UniE_VCrew1           "fow_u_us_m37_01_private"
-#define US_UniE_VCrew2           "fow_u_us_m37_01_private"
+#define US_UniE_CPT             "fow_u_us_m37_01_private"
+#define US_UniE_LT              "fow_u_us_m37_01_private"
+#define US_UniE_SGT             "fow_u_us_m37_01_private"
+#define US_UniE_CPL             "fow_u_us_m37_01_private"
+#define US_UniE_PFC             "fow_u_us_m37_01_private"
+#define US_UniE_PVT             "fow_u_us_m37_01_private"
+#define US_UniE_Med             "fow_u_us_m37_01_private"
+#define US_UniE_Tec5            "fow_u_us_m37_01_private"
+#define US_UniE_VCrew1          "fow_u_us_m37_01_private"
+#define US_UniE_VCrew2          "fow_u_us_m37_01_private"
 
     //North Africa Uniform
 #define US_UniNA_CPT            "fow_u_us_m41_01_private"
@@ -255,14 +255,6 @@
 #define US_HelmW_Air            "fow_h_us_flight_helmet"
 
 //Face
-#define GEN_Face_r              [GEN_Face_GlassesUS],[GEN_Face_GlassesUS], \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],      \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],      \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],      \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],      \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],      \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1],      \
-                                [GEN_Face_WatchBlack],[G_LIB_Watch1]
 
 //=== EQUIPMENT ===
 

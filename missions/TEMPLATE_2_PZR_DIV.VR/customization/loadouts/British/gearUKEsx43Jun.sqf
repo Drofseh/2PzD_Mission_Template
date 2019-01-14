@@ -116,7 +116,7 @@
         UKEsx43Jun_Webley;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -136,8 +136,9 @@
         UK43Jan_SMG;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [UK_Gren_Smoke_W,2] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
+        [UK_Gren_Smoke_W,1] call FNC_AddItem;
+        [UK_Gren_WP,1] call FNC_AddItem;
         [US_Mag_Mort_HE,5,"backpack"] call FNC_AddItem;
     };
 
@@ -175,7 +176,7 @@
         UK43Jan_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -237,8 +238,9 @@
         UK43Jan_SMG;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [UK_Gren_Smoke_W,2] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
+        [UK_Gren_Smoke_W,1] call FNC_AddItem;
+        [UK_Gren_WP,1] call FNC_AddItem;
         [UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
     };
 
@@ -257,8 +259,9 @@
         UK43Jan_SMG;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [UK_Gren_Smoke_W,2] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
+        [UK_Gren_Smoke_W,1] call FNC_AddItem;
+        [UK_Gren_WP,1] call FNC_AddItem;
         [UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
     };
 
@@ -300,7 +303,7 @@
         //Extra
         [GEN_ace_sparebarrel,1,"backpack"] call FNC_AddItem;
         [UK_Mag_Bren,4,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
     };
 
     //Bren Gun Ammo Bearer
@@ -318,7 +321,7 @@
         UK43Jan_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Mag_Bren,10,"backpack"] call FNC_AddItem;
     };
 
@@ -337,7 +340,7 @@
         UK43Jan_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
     };
 
@@ -359,7 +362,7 @@
         UK43Jan_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -431,7 +434,7 @@
         UK43Jan_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
         [Rus_Mag_Mort_HE,5,"backpack"] call FNC_AddItem;
     };
@@ -513,7 +516,7 @@
 
         //Extra
         [UK_Mag_Boys,20,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -553,7 +556,7 @@
 
         //Extra
         [UK_Mag_Boys,20,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
     };
 
 //PIAT Team
@@ -575,7 +578,7 @@
 
         //Extra
         [UK_Mag_Piat_HEAT,3,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -614,7 +617,7 @@
 
         //Extra
         [UK_Mag_Piat_HEAT,3,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
     };
 
 //Vehicle Crew
@@ -638,8 +641,9 @@
         UKEsx43Jun_Webley;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [UK_Gren_Smoke_W,2] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
+        [UK_Gren_Smoke_W,1] call FNC_AddItem;
+        [UK_Gren_WP,1] call FNC_AddItem;
     };
 
     //Tank Crew

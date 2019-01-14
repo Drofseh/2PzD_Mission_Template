@@ -1,5 +1,6 @@
 
 ["Supporting Fires", "Allows radio operators to call in fire support using Ace interaction.", "Wilhelm Haas (Drofseh)"] call FNC_RegisterModule;
+
 #define def_fireMissionBriefingMessage player createDiarySubject ["Supporting Fires", "Supporting Fires"]; \
     player createDiaryRecord ["Supporting Fires",["How To Use"," \
         <br/><font color='#FF8C00' size='16'>How To Use</font> \

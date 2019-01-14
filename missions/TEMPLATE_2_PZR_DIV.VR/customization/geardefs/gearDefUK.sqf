@@ -35,14 +35,14 @@
 
 //Ammo
 #define UK_Mag_LeeEn            "fow_10Rnd_303"
-#define UK_Mag_Sten             "LEN_32Rnd_9x19"
+#define UK_Mag_Sten             "fow_32Rnd_9x19_sten"
 #define UK_Mag_Bren             "fow_30Rnd_303_bren"
 #define UK_Mag_Boys             "LIB_1Rnd_145x114"
 #define UK_Mag_DeLisle          "LIB_11Rnd_45ACP_2PzD"
-#define UK_Mag_HiPower          "LEN_13Rnd_9x19"
+#define UK_Mag_HiPower          "fow_13Rnd_9x19"
 #define UK_Mag_Webley455        "fow_6Rnd_455"
 #define UK_Mag_Welrod_1         "LEN_8Rnd_765x17_2PzD"
-#define UK_Mag_Piat_HEAT        "fow_1Rnd_piat"
+#define UK_Mag_Piat_HEAT        "fow_1Rnd_piat_HEAT"
 #define UK_Mag_Piat_HE          "fow_1Rnd_piat_HE"
 
 //Grenades

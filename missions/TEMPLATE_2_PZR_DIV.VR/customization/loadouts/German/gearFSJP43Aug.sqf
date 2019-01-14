@@ -29,7 +29,7 @@
 
 //======================== Definitions ========================
 
-// For all men with rifles
+// For all men with rifles except the MG-Hilfsschütze
 #define FSJP43Aug_Weapon_Rifle           \
         [                                \
             [                            \
@@ -42,6 +42,20 @@
             ],[5],                       \
             [                            \
                 [FSJ_Vest_Band],         \
+                [Ger_Mag_K98,24,"vest"]  \
+            ],[1]                        \
+        ] call FNC_AddItemRandomPercent;
+
+// For the MG-Hilfsschütze
+#define FSJP43Aug_Weapon_MGA             \
+        [                                \
+            [                            \
+                [Ger_Mag_K98,24,"vest"]  \
+            ],[94],                      \
+            [                            \
+                [Ger_Mag_FG42,12,"vest"] \
+            ],[5],                       \
+            [                            \
                 [Ger_Mag_K98,24,"vest"]  \
             ],[1]                        \
         ] call FNC_AddItemRandomPercent;
@@ -312,6 +326,7 @@
     //Stellvertretender Gruppenführer
     case "FSJP43Aug_S2" : {
         [FSJ_UniC_S2] call FNC_AddItem;
+        [Ger_Vest_MP40] call FNC_AddItem;
         [GEN_BP_Para] call FNC_AddItem;
         [FSJ_Helmet_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -365,7 +380,7 @@
         [GEN_BinoG] call FNC_AddItem;
 
         //Primary Weapon
-        FSJP43Aug_Weapon_Rifle;
+        FSJP43Aug_Weapon_MGA;
 
         //Secondary Weapon
         FSJP43Aug_Weapon_Enlisted_Secondary;

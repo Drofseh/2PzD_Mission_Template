@@ -158,7 +158,7 @@ FW_languages_babel = [
 //  Antenna Direction
 /*This setting can be used to disable the simulation of antenna radiation patterns for both the transmitting and receiving radios.
   It will make all antennas act with perfect omni-directional behaviour. (true/false)*/
-//[true] call acre_api_fnc_ignoreAntennaDirection;
+[false] call acre_api_fnc_ignoreAntennaDirection;
 
 
 //  Direct Speach Starting Volume

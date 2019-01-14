@@ -49,13 +49,13 @@
 //Face
 #define Civ_Face_r             [GEN_Face_GlassesSilver],[GEN_Face_GlassesBlack], \
                                [GEN_Face_GlassesSilver],[GEN_Face_GlassesBlack], \
-                               [GEN_Face_WatchBlack],[G_LIB_Watch1],                \
-                               [GEN_Face_WatchBlack],[G_LIB_Watch1],                \
-                               [GEN_Face_WatchBlack],[G_LIB_Watch1],                \
-                               [GEN_Face_WatchBlack],[G_LIB_Watch1],                \
-                               [GEN_Face_WatchBlack],[G_LIB_Watch1],                \
-                               [GEN_Face_WatchBlack],[G_LIB_Watch1],                \
-                               [GEN_Face_WatchBlack],[G_LIB_Watch1]
+                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown]       
 #define Civ_Face_Bino          "G_LIB_Binoculars"
 
 //=== MISC ===

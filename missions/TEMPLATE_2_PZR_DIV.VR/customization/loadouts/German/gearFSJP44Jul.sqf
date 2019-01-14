@@ -67,7 +67,7 @@
             ],[20]                       \
         ] call FNC_AddItemRandomPercent;
 
-// For all men with rifles
+// For all men with rifles except the MG-Hilfsschütze
 #define FSJP44Jul_Weapon_Rifle           \
         [                                \
             [                            \
@@ -80,10 +80,27 @@
             ],[20],                      \
             [                            \
                 [Ger_Vest_StG44],        \
-                [Ger_Mag_StG44,8,"vest"] \
+                [Ger_Mag_StG44,6,"vest"] \
             ],[15],                      \
             [                            \
                 [FSJ_Vest_Band],         \
+                [Ger_Mag_FG42,12,"vest"] \
+            ],[10]                       \
+        ] call FNC_AddItemRandomPercent;
+
+// For the MG-Hilfsschütze
+#define FSJP44Jul_Weapon_MGA             \
+        [                                \
+            [                            \
+                [Ger_Mag_K98,24,"vest"]  \
+            ],[55],                      \
+            [                            \
+                [Ger_Mag_G43,6,"vest"]   \
+            ],[20],                      \
+            [                            \
+                [Ger_Mag_StG44,6,"vest"] \
+            ],[15],                      \
+            [                            \
                 [Ger_Mag_FG42,12,"vest"] \
             ],[10]                       \
         ] call FNC_AddItemRandomPercent;
@@ -182,7 +199,7 @@
         //Primary Weapon
         [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Officer_Secondary;
     };
 
@@ -201,7 +218,7 @@
         //Primary Weapon
         [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -226,7 +243,7 @@
         //Primary Weapon
         [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Officer_Secondary;
     };
 
@@ -245,7 +262,7 @@
         //Primary Weapon
         [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -266,7 +283,7 @@
         //Primary Weapon
         FSJP44Jul_Weapon_Rifle;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -287,7 +304,7 @@
         //Primary Weapon
         FSJP44Jul_Weapon_Rifle;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -308,7 +325,7 @@
         //Primary Weapon
         FSJP44Jul_Weapon_Rifle;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -332,7 +349,7 @@
         //Primary Weapon
         FSJP44Jul_Weapon_GF;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -353,7 +370,7 @@
         //Primary Weapon
         FSJP44Jul_Weapon_SGf;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -373,7 +390,7 @@
         Ger_Default_Equipment;
         [GEN_BinoG] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Enlisted_Secondary;
 
         //Primary Weapon
@@ -386,6 +403,7 @@
     //MG-Hilfsschütze
     case "FSJP44Jul_MGA" : {
         [FSJ_UniC_Rif] call FNC_AddItem;
+        [Ger_Vest_MGA] call FNC_AddItem;
         [GEN_BP_Para] call FNC_AddItem;
         [FSJ_Helmet_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -395,9 +413,9 @@
         [GEN_BinoG] call FNC_AddItem;
 
         //Primary Weapon
-        FSJP44Jul_Weapon_Rifle;
+        FSJP44Jul_Weapon_MGA;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -419,7 +437,7 @@
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -441,7 +459,7 @@
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -463,7 +481,7 @@
         //Primary Weapon
         FSJP44Jul_Weapon_Rifle;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP44Jul_Weapon_Enlisted_Secondary;
 
         //Extra

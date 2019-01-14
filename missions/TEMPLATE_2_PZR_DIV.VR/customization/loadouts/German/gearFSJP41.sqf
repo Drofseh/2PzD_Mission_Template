@@ -123,7 +123,7 @@
         //Primary Weapon
         [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Officer_Secondary;
     };
 
@@ -142,7 +142,7 @@
         //Primary Weapon
         [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -167,7 +167,7 @@
         //Primary Weapon
         [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Officer_Secondary;
     };
 
@@ -186,7 +186,7 @@
         //Primary Weapon
         [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -208,7 +208,7 @@
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -230,7 +230,7 @@
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -252,7 +252,7 @@
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -277,7 +277,7 @@
         //Primary Weapon
         [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -299,7 +299,7 @@
         //Primary Weapon
         [Ger_Mag_MP40,6,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -319,7 +319,7 @@
         Ger_Default_Equipment;
         [GEN_BinoG] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Enlisted_Secondary;
 
         //Primary Weapon
@@ -344,7 +344,7 @@
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -366,7 +366,7 @@
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -388,7 +388,7 @@
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Enlisted_Secondary;
 
         //Extra
@@ -411,7 +411,7 @@
         //Primary Weapon
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
-        [//Secondary Weapon
+        //Secondary Weapon
         FSJP41_Weapon_Enlisted_Secondary;
 
         //Extra

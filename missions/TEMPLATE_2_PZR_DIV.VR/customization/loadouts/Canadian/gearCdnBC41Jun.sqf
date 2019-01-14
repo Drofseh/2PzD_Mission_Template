@@ -86,7 +86,7 @@
 
     //Lieutenant
     case "CdnBC41Jun_Lt" : {
-        [UK_UniEsx_Lt] call FNC_AddItem;
+        [CDN_UniBCR_Lt] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -99,13 +99,13 @@
         CdnBC41Jun_Webley;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Sergeant
     case "CdnBC41Jun_Sgt" : {
-        [UK_UniEsx_Sgt] call FNC_AddItem;
+        [CDN_UniBCR_Sgt] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -119,14 +119,15 @@
         CdnBC41Jun_SMG;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [UK_Gren_Smoke_W,2] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
+        [UK_Gren_Smoke_W,1] call FNC_AddItem;
+        [UK_Gren_WP,1] call FNC_AddItem;
         [US_Mag_Mort_HE,5,"backpack"] call FNC_AddItem;
     };
 
     //Medic
     case "CdnBC41Jun_Med" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -145,7 +146,7 @@
 
     //Signaller
     case "CdnBC41Jun_Sig" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK_Radio] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -158,13 +159,13 @@
         CdnBC41Jun_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Light Mortar Gunner
     case "CdnBC41Jun_LMortG" : {
-        [UK_UniEsx_LCpl] call FNC_AddItem;
+        [CDN_UniBCR_LCpl] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -184,7 +185,7 @@
 
     //Light Mortar Assistant
     case "CdnBC41Jun_LMortA" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -206,7 +207,7 @@
 
     //Corporal
     case "CdnBC41Jun_Cpl" : {
-        [UK_UniEsx_Cpl] call FNC_AddItem;
+        [CDN_UniBCR_Cpl] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -219,14 +220,15 @@
         CdnBC41Jun_SMG;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [UK_Gren_Smoke_W,2] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
+        [UK_Gren_Smoke_W,1] call FNC_AddItem;
+        [UK_Gren_WP,1] call FNC_AddItem;
         [UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
     };
 
     //Lance Corporal
     case "CdnBC41Jun_LCpl" : {
-        [UK_UniEsx_LCpl] call FNC_AddItem;
+        [CDN_UniBCR_LCpl] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -239,14 +241,15 @@
         CdnBC41Jun_SMG;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [UK_Gren_Smoke_W,2] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
+        [UK_Gren_Smoke_W,1] call FNC_AddItem;
+        [UK_Gren_WP,1] call FNC_AddItem;
         [UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
     };
 
     //Bren Gunner
     case "CdnBC41Jun_AR" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -266,7 +269,7 @@
 
     //Bren Gun Assistant
     case "CdnBC41Jun_AAR" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -282,12 +285,12 @@
         //Extra
         [GEN_ace_sparebarrel,1,"backpack"] call FNC_AddItem;
         [UK_Mag_Bren,4,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
     };
 
     //Bren Gun Ammo Bearer
     case "CdnBC41Jun_AAB" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -300,13 +303,13 @@
         CdnBC41Jun_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Mag_Bren,10,"backpack"] call FNC_AddItem;
     };
 
     //Rifleman
     case "CdnBC41Jun_Rif" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -319,7 +322,7 @@
         CdnBC41Jun_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
     };
 
@@ -327,7 +330,7 @@
 
     //Machine Gun Team Leader
     case "CdnBC41Jun_MGTL" : {
-        [UK_UniEsx_LCpl] call FNC_AddItem;
+        [CDN_UniBCR_LCpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -341,13 +344,13 @@
         CdnBC41Jun_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Machine Gunner
     case "CdnBC41Jun_MG" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestG_Bren] call FNC_AddItem;
         [UK_Weap_HMG_G] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -362,7 +365,7 @@
 
     //Machine Gun Assistant
     case "CdnBC41Jun_MGA" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestG_Bren] call FNC_AddItem;
         [UK_Weap_HMG_T] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -380,7 +383,7 @@
 
     //Machine Gun Ammo Bearer
     case "CdnBC41Jun_MGAB" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -399,7 +402,7 @@
 
     //Mortar Team Leader
     case "CdnBC41Jun_MortTL" : {
-        [UK_UniEsx_Cpl] call FNC_AddItem;
+        [CDN_UniBCR_Cpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -413,14 +416,14 @@
         CdnBC41Jun_LeeEn;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
         [Rus_Mag_Mort_HE,5,"backpack"] call FNC_AddItem;
     };
 
     //Mortar Gunner
     case "CdnBC41Jun_MortG" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -440,7 +443,7 @@
 
     //Mortar Assistant
     case "CdnBC41Jun_MortA" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -460,7 +463,7 @@
 
     //Mortar Ammo Bearer
     case "CdnBC41Jun_MortAB" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPG_L] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -480,7 +483,7 @@
 
     //Boys Rifle Team Leader
     case "CdnBC41Jun_ATRTL" : {
-        [UK_UniEsx_Cpl] call FNC_AddItem;
+        [CDN_UniBCR_Cpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -495,13 +498,13 @@
 
         //Extra
         [UK_Mag_Boys,20,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
     //Boys Rifle Gunner
     case "CdnBC41Jun_ATRG" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -521,7 +524,7 @@
 
     //Boys Rifle Ammo Bearer
     case "CdnBC41Jun_ATRAB" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -535,14 +538,14 @@
 
         //Extra
         [UK_Mag_Boys,20,"backpack"] call FNC_AddItem;
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
     };
 
 //Vehicle Crew
 
     //Tank Commander
     case "CdnBC41Jun_VCom" : {
-        [UK_UniEsx_Sgt] call FNC_AddItem;
+        [CDN_UniBCR_Sgt] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
@@ -559,13 +562,14 @@
         CdnBC41Jun_Webley;
 
         //Extra
-        [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [UK_Gren_Smoke_W,2] call FNC_AddItem;
+        [UK_Gren_Frag,1] call FNC_AddItem;
+        [UK_Gren_Smoke_W,1] call FNC_AddItem;
+        [UK_Gren_WP,1] call FNC_AddItem;
     };
 
     //Tank Crew
     case "CdnBC41Jun_VCrew" : {
-        [UK_UniEsx_Pte] call FNC_AddItem;
+        [CDN_UniBCR_Pte] call FNC_AddItem;
         [UK_VestK_Sten] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
         [UK_Helm_r] call FNC_AddItemRandom;
