@@ -5,7 +5,7 @@
 #define S 20000
 #define BS 50
 
-if (!isDedicated) then {
+if (hasInterface) then {
     _marker setMarkerAlphaLocal 0;
 
     FW_map_cover = [];

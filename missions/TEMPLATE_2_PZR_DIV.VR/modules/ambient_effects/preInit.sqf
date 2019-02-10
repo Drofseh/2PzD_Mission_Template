@@ -1,4 +1,3 @@
-["Ambient Effects", "Fire and Particles!", "TinfoilHate"] call FNC_RegisterModule;
 
     FNC_hideHelperObject = {
         _this hideObject true

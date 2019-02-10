@@ -5,6 +5,7 @@
 
 //Enabled modules by default, disable them by adding // in front.
 
+#include "marker_control\root.sqf"
 #include "acre_setup\root.sqf"
 #include "anti_nd\root.sqf"
 #include "auto_track_assets\root.sqf"
@@ -12,7 +13,6 @@
 #include "disconnect_control\root.sqf"
 #include "env_parameters\root.sqf"
 #include "jip\root.sqf"
-#include "marker_control\root.sqf"
 #include "shot_count\root.sqf"
 #include "stamina_boost\root.sqf"
 #include "start_on_safe\root.sqf"

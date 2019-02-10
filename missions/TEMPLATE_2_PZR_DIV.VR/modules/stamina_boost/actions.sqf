@@ -34,7 +34,7 @@ _statementDrink = {
     };
 };
 
-_actionDrink = ["Drink from Canteen","Drink from Canteen","modules\stamina_boost\icons\icon_stamina_boost_drink.paa",_statementDrink,_conditionDrink] call ace_interact_menu_fnc_createAction;
+_actionDrink = ["Drink from Canteen","Drink from Canteen","Haas_WWII_Rebalance\UI\icon_stamina_boost_drink.paa",_statementDrink,_conditionDrink] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions","ACE_Equipment","Eat or Drink"], _actionDrink] call ace_interact_menu_fnc_addActionToObject;
 
 
@@ -97,7 +97,7 @@ _statementEat = {
     };
 };
 
-_actionEat = ["Eat Food","Eat Food","modules\stamina_boost\icons\icon_stamina_boost_eat.paa",_statementEat,_conditionEat] call ace_interact_menu_fnc_createAction;
+_actionEat = ["Eat Food","Eat Food","Haas_WWII_Rebalance\UI\icon_stamina_boost_eat.paa",_statementEat,_conditionEat] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions","ACE_Equipment","Eat or Drink"], _actionEat] call ace_interact_menu_fnc_addActionToObject;
 
 
@@ -122,5 +122,5 @@ _statementCombine = {
     ] call ace_common_fnc_progressBar;
 };
 
-_actionCombine = ["Combine Half Full Canteens","Combine Half Full Canteens","modules\stamina_boost\icons\icon_stamina_boost_drink.paa",_statementCombine,_conditionCombine] call ace_interact_menu_fnc_createAction;
+_actionCombine = ["Combine Half Full Canteens","Combine Half Full Canteens","Haas_WWII_Rebalance\UI\icon_stamina_boost_drink.paa",_statementCombine,_conditionCombine] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions","ACE_Equipment","Eat or Drink"], _actionCombine] call ace_interact_menu_fnc_addActionToObject;

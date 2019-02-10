@@ -22,7 +22,7 @@ if (isServer) then {
     };
 };
 
-if (!isDedicated && !_aborted) then {
+if (hasInterface && !_aborted) then {
 
     private ["_markers", "_pos", "_timeLeft", "_string", "_displayed"];
 

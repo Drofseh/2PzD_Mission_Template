@@ -49,17 +49,13 @@ if (isServer) then {
 
 };
 
-if (!isDedicated) then {
+if (hasInterface) then {
 
     //Anything done using "player" must be past this line for JIP compatibility
     waitUntil {!(isNull player)};
 
-    if (!isServer) then {
-
-        //Tells the server the player has spawned
-        ["FW_PlayerSpawned", player] call CBA_fnc_serverEvent;
-
-    };
+    //Tells the server the player has spawned
+    ["FW_PlayerSpawned", player] call CBA_fnc_serverEvent;
 
     //"FW_EndMission" player event sends the received variables to the end screen
     FW_EndMissionEh = ["FW_EndMission", {_this execVM "core\dia\endscreen\dia_endscreen.sqf";}] call CBA_fnc_addEventHandler;

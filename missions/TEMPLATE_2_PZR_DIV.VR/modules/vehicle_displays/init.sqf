@@ -1,3 +1,5 @@
+["Vehicle Displays", "Selectively disables the displays for the left and right info panels in vehicles.", "Wilhelm Haas (Drofseh) &amp; Jonpas"] call FNC_RegisterModule;
+
 #include "settings.sqf"
 
 vicDisplay_StringArray = [];

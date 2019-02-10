@@ -1,4 +1,4 @@
-if (!isDedicated) then {
+if (hasInterface) then {
 
     private ["_modules", "_module"];
 
@@ -41,12 +41,7 @@ if (!isDedicated) then {
 
         };
 
-        _text spawn {
-
-            sleep 5;
-            cutText [format ['%1 %2', FW_RespawnTickets, _this], 'PLAIN DOWN'];
-
-        };
+        [{cutText [format ['%1 %2', FW_RespawnTickets, _this], 'PLAIN DOWN'];}, _text, 5] call CBA_fnc_waitAndExecute;
 
     };
 };

@@ -181,7 +181,7 @@ NEWTAB("II. Auftrag (Mission):")
 <br/>
 <br/>
 <br/>
-<font color='#FF8C00' size='16'>A. Concept of the Operation</font>
+<br/><font color='#FF8C00' size='16'>A. Concept of the Operation</font>
 // A description of the way the operation should unfold.
 // Example:
 // 1 Kompanie will embark in their trucks and travel east to Medenine.
@@ -432,7 +432,7 @@ ENDTAB;
 NEWTAB("II. Задача (Mission):")
 <br/>
 <br/>
-<font color='#FF8C00' size='16'>A. Concept of the Operation</font>
+<br/><font color='#FF8C00' size='16'>A. Concept of the Operation</font>
 <br/>
 <br/>
 <br/><font color='#FF8C00' size='16'>B. Coordinating Instructions</font>
@@ -445,7 +445,7 @@ NEWTAB("II. Задача (Mission):")
 <br/>
 <br/><font color='#70db70' size='14'>3. Rules of Engagement:</font>
 <br/>No one is to engage a target except under the following conditions:
-<br/>  You or your Gruppe is being actively engaged by identified enemy targets;
+<br/>  You or your squad is being actively engaged by identified enemy targets;
 <br/>  Your well being or that of a friendly unit is in imminent danger;
 <br/>  You are ordered to by a superior.
 ENDTAB;
@@ -585,7 +585,7 @@ ENDTAB;
 NEWTAB("II. Mission:")
 <br/>
 <br/>
-<font color='#FF8C00' size='16'>A. Concept of the Operation</font>
+<br/><font color='#FF8C00' size='16'>A. Concept of the Operation</font>
 <br/>
 <br/>
 <br/><font color='#FF8C00' size='16'>B. Coordinating Instructions</font>
@@ -598,7 +598,7 @@ NEWTAB("II. Mission:")
 <br/>
 <br/><font color='#70db70' size='14'>3. Rules of Engagement:</font>
 <br/>No one is to engage a target except under the following conditions:
-<br/>  You or your Gruppe is being actively engaged by identified enemy targets;
+<br/>  You or your section is being actively engaged by identified enemy targets;
 <br/>  Your well being or that of a friendly unit is in imminent danger;
 <br/>  You are ordered to by a superior.
 ENDTAB;

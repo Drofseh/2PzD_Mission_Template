@@ -15,16 +15,14 @@ params ["_scenario", "_timeLimit", "_teams"];
 
 } forEach vehicles;
 
-[] spawn {
-
-    sleep 1;
+[
     {
-
-        _x enableSimulation false;
-        removeAllWeapons _x;
-
-    } forEach allPlayers;
-};
+        {
+            _x enableSimulation false;
+            removeAllWeapons _x;
+        } forEach allPlayers;
+    }, [], 1
+] call CBA_fnc_waitAndExecute;
 
 _leftText = "";
 _rightText = "";
@@ -118,5 +116,8 @@ for "_x" from 1 to 120 do {
 
 };
 
-sleep (15);
-endMission "END1";
+[
+    {
+        endMission "END1";
+    }, [], 15
+] call CBA_fnc_waitAndExecute;

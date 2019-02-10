@@ -9,9 +9,6 @@ if (isNil {God}) then {
     God = 0;
 };
 
-loggingEnabled = 0; // Set this to 1 to enable inventory logging for players and named vehicles. See scripts\gearLog.sqf for more requirements.
-loggingTime = 60; // How often (in seconds) an inventory log will be created during play. I do not recommend changing this except when doing testing and diagnostics.
-
 #include "core\script_macros.hpp"
 #include "core\init.sqf" //DO NOT REMOVE
 #include "customization\settings.sqf" //DO NOT REMOVE
@@ -21,38 +18,45 @@ if (isServer) then {
 
     "" call FNC_StartingCount; //DO NOT REMOVE
 
-    [] spawn { //Spawns code running in parallel
+    FNC_EndConditions = { //create and end condition fuction that loops by calling itself using CBA_fnc_waitAndExecute.
+        persistantJipTime = time;
+        publicVariable "persistantJipTime";
 
-        while {!FW_MissionEnded} do { //Loops while the mission is not ended
+        #include "customization\endConditions.sqf" //DO NOT REMOVE
 
-            persistantJipTime = time;
-            publicVariable "persistantJipTime";
-
-            #include "customization\endConditions.sqf" //DO NOT REMOVE
-
-            //The time limit in minutes variable called FW_TimeLimit is set in customization/settings.sqf, to disable the time limit set it to 0
-            if ((time / 60) >= FW_TimeLimit && FW_TimeLimit != 0) exitWith { //It is recommended that you do not remove the time limit end condition
-                FW_TimeLimitMessage call FNC_EndMission;
-            };
+        //The time limit in minutes variable called FW_TimeLimit is set in customization/settings.sqf, to disable the time limit set it to 0
+        //Do not remove this time limit end condition
+        if ((time / 60) >= FW_TimeLimit && FW_TimeLimit != 0) exitWith {
+            FW_TimeLimitMessage call FNC_EndMission;
         };
+
+        if (FW_MissionEnded) exitWith {}; //stop the end condition loop once the mission is ended.
+
+        //call the end condition function again to restart the loop, it's called every 10 seconds by default.
+        [{
+            call FNC_EndConditions;
+        }, [], 10] call CBA_fnc_waitAndExecute;
     };
 
-    [] spawn {
-        sleep 1;
+    call FNC_EndConditions; //start the end condition function loop by calling it for the first time.
+
+    [{
         {
             _callsignPrep01 = roleDescription (leader _x);
-            //systemChat str _callsignPrep01;
             if (["@",_callsignPrep01] call BIS_fnc_inString) then {
                 _callsignPrep02 = _callsignPrep01 splitString "@";
-                //systemChat str _callsignPrep02;
                 _callsignValue = _callsignPrep02 select 1;
-                //systemChat str _callsignValue;
                 [_x, _callsignValue] call CBA_fnc_setCallsign;
-                //systemChat ((str _callsignValue) + "done.");
             };
         } forEach allGroups;
-    };
+    }, [], 1] call CBA_fnc_waitAndExecute;
 };
+
+/*
+if (!hasInterface) then { //temp fix for AI not detecting players speaking with acre local voice
+    ["acre_sys_core_onRevealUnit", { _this call acre_sys_core_fnc_onRevealUnit }] call CBA_fnc_addEventHandler;
+};
+*/
 
 #include "scripts\Scripts.sqf"
 #include "modules\modules.sqf" //DO NOT REMOVE

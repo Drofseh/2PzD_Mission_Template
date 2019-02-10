@@ -13,11 +13,8 @@
  */
 
 // Fade the screen to black and then fade it back in.
-_null = [] spawn {
-    [0,"BLACK",0,1] call BIS_fnc_fadeEffect; 
-    sleep 5; 
-    [1,"BLACK",5,1] call BIS_fnc_fadeEffect; 
-};
+[0,"BLACK",0,1] call BIS_fnc_fadeEffect;
+[{[1,"BLACK",5,1] call BIS_fnc_fadeEffect;}, [], 5] call CBA_fnc_waitAndExecute;
 
 // Check if tickets remain and play appropriate dead message
 if (FW_RespawnTickets > 0) then {

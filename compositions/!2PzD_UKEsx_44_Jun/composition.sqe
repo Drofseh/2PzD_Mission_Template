@@ -29475,7 +29475,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx44Jun_ATRTL""] call FNC_GearScript;" \n "{ group _x setGroupId [""Boys Rifle Team""]} foreach units group this;";
+					init="[this,""UKEsx44Jun_ATTL""] call FNC_GearScript;" \n "{ group _x setGroupId [""PIAT Team""]} foreach units group this;";
 					description="Team Leader@PIAT Team";
 					isPlayable=1;
 					class Inventory
@@ -29848,7 +29848,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx44Jun_ATRG""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""UKEsx44Jun_ATG""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="PIAT Gunner@PIAT Team";
 					isPlayable=1;
 					class Inventory
@@ -30221,7 +30221,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx44Jun_ATRG""] call FNC_GearScript;";
+					init="[this,""UKEsx44Jun_ATG""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="PIAT Gunner@PIAT Team";
 					isPlayable=1;
 					class Inventory
@@ -30594,7 +30594,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx44Jun_ATRAB""] call FNC_GearScript;";
+					init="[this,""UKEsx44Jun_ATAB""] call FNC_GearScript;";
 					description="Ammo Bearer@PIAT Team";
 					isPlayable=1;
 					class Inventory

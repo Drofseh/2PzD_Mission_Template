@@ -1,6 +1,6 @@
 FNC_DebugMessage = {};
 
-if (!isDedicated) then {
+if (hasInterface) then {
 
     if (FW_DebugMessagesEnabled) then {
 

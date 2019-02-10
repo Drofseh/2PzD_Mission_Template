@@ -3,7 +3,6 @@
 
     This module allows easy control of local ARMA 3 task in a multiplayer environment.
 
-
     ADD a task with:
     ADDTASK(TARGET, POSITION, TITLE, DESCRIPTION, WPTITLE);
 

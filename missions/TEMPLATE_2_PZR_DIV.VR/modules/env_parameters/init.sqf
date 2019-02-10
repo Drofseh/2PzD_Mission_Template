@@ -1,3 +1,5 @@
+["Environment / Mission Parameters", "Allows the admin to choose between different weather parameters.", "Starfox64, Olsen"] call FNC_RegisterModule;
+
 if ((isServer) and (isMultiplayer)) then {
 
     private ["_TimeLimitParam"];

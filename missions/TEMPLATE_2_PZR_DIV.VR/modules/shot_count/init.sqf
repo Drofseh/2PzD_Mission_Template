@@ -1,3 +1,5 @@
+["Ammo Counter", "Counts ammunition types fired and displays it in the mission endscreen.", "TinfoilHate &amp; Wilhelm Haas (Drofseh)"] call FNC_RegisterModule;
+
 if (isServer) then {
 
     ["All", "init", {
@@ -15,7 +17,6 @@ if (isServer) then {
             };
         } forEach allMissionObjects "All";
     }] call CBA_fnc_waitUntilAndExecute;
-
 };
 
 if (hasInterface) then {

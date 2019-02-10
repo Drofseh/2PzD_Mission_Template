@@ -6,6 +6,7 @@ zFOW_allowedAddons = [];
 // zFOW_allowedSide = west;
 // zFOW_allowedSide = east;
 // zFOW_allowedSide = resistance;
+// zFOW_allowedSide = civilian;
 
 if (isNil "zFOW_allowedSide") then {
     "Zeus Fog of War system has no zFOW_allowedSide declared so civilian will be used by default. This must be done in scripts\zeusFOW.sqf." call FNC_DebugMessage;
@@ -83,7 +84,7 @@ if (isServer) then {
                         _target hideObject true;
                         _target setVariable ["Zeus_FOW_hidden", true, true];
 
-                        _curknowledge = GodSide knowsAbout _target;
+                        _curknowledge = zFOW_allowedSide knowsAbout _target;
                         // systemChat ((str _target) + " _curknowledge - " + (str _curknowledge));
 
                         if (_curknowledge > 1.6) then { // if an ai unit is shot then their knowledge of the shooter will be at least 1.5, using 1.6 means a player won't be revealed just for hitting an enemy

@@ -83,17 +83,17 @@ _supportingFireActions = call {
             hint "Select a Target to be shelled."
         };
     };
-    _actionFires = ["Supporting Fires","Supporting Fires","modules\supporting_fires\icons\icon_supporting_fires.paa",_statementFires,_conditionFires] call ace_interact_menu_fnc_createAction;
+    _actionFires = ["Supporting Fires","Supporting Fires","Haas_WWII_Rebalance\UI\icon_supporting_fires.paa",_statementFires,_conditionFires] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions"], _actionFires] call ace_interact_menu_fnc_addActionToObject;
 
     // ===== Add action to check remaining ammunition
     _statementRounds = { [side player] call FNC_SupportFire_AmmoCheck; };
-    _actionRounds = ["Check Remaining Ammunition","Check Remaining Ammunition","modules\supporting_fires\icons\icon_supporting_fires_ammo.paa",_statementRounds,_conditionCheck] call ace_interact_menu_fnc_createAction;
+    _actionRounds = ["Check Remaining Ammunition","Check Remaining Ammunition","Haas_WWII_Rebalance\UI\icon_supporting_fires_ammo.paa",_statementRounds,_conditionCheck] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires"], _actionRounds] call ace_interact_menu_fnc_addActionToObject;
 
     // ===== Add action to to indicate fire mission is in progress.
     _statementFiring = { hint "Fire mission is already underway."; };
-    _actionFiring = ["Fire Mission In Progress","Fire Mission In Progress","modules\supporting_fires\icons\icon_supporting_fires.paa",_statementFiring,_conditionFiring] call ace_interact_menu_fnc_createAction;
+    _actionFiring = ["Fire Mission In Progress","Fire Mission In Progress","Haas_WWII_Rebalance\UI\icon_supporting_fires.paa",_statementFiring,_conditionFiring] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires"], _actionFiring] call ace_interact_menu_fnc_addActionToObject;
 
     // ===== Add generic Target statement for all target interation points
@@ -102,9 +102,9 @@ _supportingFireActions = call {
 
     // ===== Add Target Base Actions
 
-    _actionBaseHE = ["HE","HE","modules\supporting_fires\icons\icon_supporting_fires_he.paa",_statementTargets,_conditionFiresHE5] call ace_interact_menu_fnc_createAction;
-    _actionBaseSmoke = ["Smoke","Smoke","modules\supporting_fires\icons\icon_supporting_fires_smoke.paa",_statementTargets,_conditionFiresSmoke5] call ace_interact_menu_fnc_createAction;
-    _actionBaseFlare = ["Flare","Flare","modules\supporting_fires\icons\icon_supporting_fires_flare.paa",_statementTargets,_conditionFiresFlare1] call ace_interact_menu_fnc_createAction;
+    _actionBaseHE = ["HE","HE","Haas_WWII_Rebalance\UI\icon_supporting_fires_he.paa",_statementTargets,_conditionFiresHE5] call ace_interact_menu_fnc_createAction;
+    _actionBaseSmoke = ["Smoke","Smoke","Haas_WWII_Rebalance\UI\icon_supporting_fires_smoke.paa",_statementTargets,_conditionFiresSmoke5] call ace_interact_menu_fnc_createAction;
+    _actionBaseFlare = ["Flare","Flare","Haas_WWII_Rebalance\UI\icon_supporting_fires_flare.paa",_statementTargets,_conditionFiresFlare1] call ace_interact_menu_fnc_createAction;
 
     // ===== Add Targets
     #include "actions\Target01.sqf"

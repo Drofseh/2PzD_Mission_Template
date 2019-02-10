@@ -15,7 +15,7 @@ eastCasualty = "Red Army" call FNC_CasualtyPercentage; //Gets the casualty perce
 
 
 //=== Time Limit End Message ===
-//This message displayed when the time runs out
+//This message displayed when the time runs out, you can change it to something else if you want.
 //The time limit is set in customization/settings.sqf
     FW_TimeLimitMessage = "TIME LIMIT REACHED!";
 
@@ -85,5 +85,3 @@ Adding extraction
     ["2 Panzer Division", "ExtractionAreaMarker", 0.8] call FNC_hasExtracted;
         this will check if at least 80% of remaining forces are present in extraction area
 */
-
-sleep (10); //This determines how frequently the end conditions should be checked in seconds

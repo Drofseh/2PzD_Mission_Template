@@ -17,7 +17,7 @@ if (isServer && FW_enable_channel_names) then {
     } foreach FW_ChannelNames;
 };
 
-if(!isDedicated && hasInterface) then {
+if(hasInterface) then {
     [] spawn {
         waitUntil { !isNull acre_player };
 
@@ -40,10 +40,9 @@ if(!isDedicated && hasInterface) then {
             [_v] call acre_api_fnc_setSelectableVoiceCurve;
             acre_sys_gui_VolumeControl_Level = FW_Acre_Volume_Value;
 
-            [] spawn {
-                sleep 1;
+            [{
                 acre_sys_gui_VolumeControl_Level = FW_Acre_Volume_Value;
-            };
+            }, [], 1] call CBA_fnc_waitAndExecute;
         };
 
 

@@ -8,7 +8,7 @@ FNC_DOPARACHUTE = {
 
         _target = _this select 0;
         _elev = _this select 1;
-        _rand = 100;
+        _rand = 50;
         _stear = false;
         _class = "NonSteerable_Parachute_F";
         _doPara = false;
@@ -66,22 +66,27 @@ FNC_DOPARACHUTE = {
 
         if (!_doPara) exitwith {};
 
-        [_elev, _rand, _class] spawn {
+        _openingHeight = _elev + (floor (random _rand));
 
-            _elevation = _this select 0;
-            _randelev = _this select 1;
-            _classname = _this select 2;
-
-            waitUntil {!isnull player};
-            _random = floor (random _randelev);
-            _chute = _classname createVehicle [0,0,0];
-            _chute setPosATL [getPosatl player select 0, getPosatl player select 1, _elevation + _random];
-            player moveIndriver _chute;
-
+        _playerPos = getPosATL player;
+        if (_playerPos select 2 <= _openingHeight) then {
+            player setPosATL [(_playerPos select 0), (_playerPos select 1), (_openingHeight)];
         };
 
+        [
+            {
+                ((getPosATL player) select 2) <= (_this select 0);
+            },
+            {
+                private _classname = _this select 1;
+                private _playerPos = getPosATL player;
+                private _chute = createVehicle [_classname, _playerPos];
+                player moveIndriver _chute;
+                
+            },
+            [_openingHeight, _class]
+        ] call CBA_fnc_waitUntilAndExecute;
     };
-
 };
 
 #define DOPARACHUTE(TARGET, ELEVATION, RAND, STEAR) \

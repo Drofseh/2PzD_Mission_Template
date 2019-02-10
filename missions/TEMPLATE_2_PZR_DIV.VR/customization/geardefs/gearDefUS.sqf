@@ -28,6 +28,19 @@
 #define US_Weap_M12             "fow_w_M1912"
 #define US_Weap_M37             "fow_w_ithaca37"
 #define US_Weap_Flame           "LIB_M2_Flamethrower"
+/* To use the flamethrower weapon, ammo, and backpack use this code:
+
+        //Primary Weapon
+        [US_BP_Flame] call FNC_AddItem;
+        [US_Mag_Flame,1,"backpack"] call FNC_AddItem;
+        [US_Weap_Flame] call FNC_AddItem;
+        _unit removeItem US_BP_Flame;
+        [US_BP_Flame_Final] call FNC_AddItem;
+
+This will give them a backpack large enough to hold the ammo, which is very large, then give them the mag and the weapon (which will automatically load the mag)
+Then it removes the large backpack and gives them a backpack that can't hold anything extra,
+Letting them keep the large backpack would allow them to put other items in the backpack, since the ammo is a 'magazine' and gets loaded into the weapon.
+*/
 
 //Secondary
 #define US_Weap_M1911           "LIB_Colt_M1911"
@@ -212,6 +225,7 @@
 #define US_BP_MG                "B_LIB_US_MGbag_Big_Empty"
 #define US_BP_Radio             "fow_b_US_Radio"
 #define US_BP_Flame             "B_LIB_US_M2Flamethrower"
+#define US_BP_Flame_Final       "B_LIB_US_M2Flamethrower_noLoad"
 #define US_Bando                "fow_b_us_bandoleer"
 
 //Headgear

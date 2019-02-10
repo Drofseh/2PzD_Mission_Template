@@ -10,7 +10,7 @@ if !(markerType NAME == "") then { \
     _temp call FNC_DebugMessage; \
 };
 
-if (!isDedicated) then {
+if (hasInterface) then {
 
     private ["_markers"];
 

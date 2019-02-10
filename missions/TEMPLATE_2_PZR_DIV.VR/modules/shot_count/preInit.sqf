@@ -1,10 +1,9 @@
-["Ammo Counter", "Counts ammunition types fired and displays it in the mission endscreen.", "TinfoilHate"] call FNC_RegisterModule;
-
 //Ammo Counter Initilization
 //Much script by beta, some script by TinfoilHate
 //Sets up ammo counting
 /*  It's dangerous to go alone, take this:
-    _ammoArray = []; {
+    _ammoArray = [];
+    {
         {
             _ammoClass = getText (configFile >> "CfgMagazines" >> _x >> "ammo");
             if !(_ammoClass in _ammoArray) then {
@@ -54,7 +53,11 @@ if (isServer) then {
         _obj setVariable ["aCount_originalSide",side _obj,false];
 
         if (_obj isKindOf "Man") then {
-            _obj addEventHandler ["fired", {[side ( _this select 0),(_this select 5) call aCount_getDisplayName] call aCount_shotCount;}];
+            _obj addEventHandler ["fired", {
+                params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+                [side _unit,_magazine call aCount_getDisplayName] call aCount_shotCount;
+            }];
+
             _obj setVariable ["aCount_firedEh", true, false];
         };
 
@@ -65,21 +68,25 @@ if (isServer) then {
                 } forEach crew _obj;
             };
 
-            _obj addEventHandler ["fired", {[side ( _this select 0),(_this select 5) call aCount_getDisplayName] call aCount_shotCount;}];
+            _obj addEventHandler ["fired", {
+                params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+                [side _unit,_magazine call aCount_getDisplayName] call aCount_shotCount;
+            }];
             _obj setVariable ["aCount_firedEh", true, false];
         };
     };
     ["aCount_event_addEH",aCount_addEH] call CBA_fnc_addEventHandler;
 
     aCount_shotCount = {
+        params ["_side", "_magazineName"];
 
-        switch (_this select 0) do {
+        switch (_side) do {
             case west: {
 
-                _found = aCount_west_ExpendedAmmunition find (_this select 1);
+                _found = aCount_west_ExpendedAmmunition find _magazineName;
 
                 if (_found < 0) then {
-                    aCount_west_ExpendedAmmunition pushBack (_this select 1) ;
+                    aCount_west_ExpendedAmmunition pushBack _magazineName ;
                     aCount_west_ExpendedAmmunition pushBack 1;
                 } else {
                     aCount_west_ExpendedAmmunition set [_found + 1,(aCount_west_ExpendedAmmunition select _found + 1) + 1 ];
@@ -88,10 +95,10 @@ if (isServer) then {
 
             case east: {
 
-                _found = aCount_east_ExpendedAmmunition find (_this select 1);
+                _found = aCount_east_ExpendedAmmunition find _magazineName;
 
                 if (_found < 0) then {
-                    aCount_east_ExpendedAmmunition pushBack  (_this select 1);
+                    aCount_east_ExpendedAmmunition pushBack  _magazineName;
                     aCount_east_ExpendedAmmunition pushBack 1;
                 } else {
                     aCount_east_ExpendedAmmunition set [_found + 1,(aCount_east_ExpendedAmmunition select _found + 1) + 1 ];
@@ -100,10 +107,10 @@ if (isServer) then {
 
             case resistance: {
 
-                _found = aCount_resistance_ExpendedAmmunition find (_this select 1);
+                _found = aCount_resistance_ExpendedAmmunition find _magazineName;
 
                 if (_found < 0) then {
-                    aCount_resistance_ExpendedAmmunition pushBack  (_this select 1);
+                    aCount_resistance_ExpendedAmmunition pushBack  _magazineName;
                     aCount_resistance_ExpendedAmmunition pushBack 1;
                 } else {
                     aCount_resistance_ExpendedAmmunition set [_found + 1,(aCount_resistance_ExpendedAmmunition select _found + 1) + 1 ];
@@ -193,24 +200,35 @@ if (hasInterface) then {
             };
 
             // Build each side's total ammunition count.
-            for [{ _i = 0}, {_i < count _arrayBLU}, {_i = _i + 2}] do {
-                _label = _arrayBLU select (_i);
-                _count = _arrayBLU select (_i + 1);
-                aCount_textBLU = aCount_textBLU + _label + ": " + str(_count) + " Rounds" + "<br/>";
+            if (count _arrayBLU > 0) then {
+                for [{ _i = 0}, {_i < count _arrayBLU}, {_i = _i + 2}] do {
+                    _label = _arrayBLU select (_i);
+                    _count = _arrayBLU select (_i + 1);
+                    aCount_textBLU = aCount_textBLU + _label + ": " + str(_count) + " Rounds" + "<br/>";
+                };
+            } else {
+                aCount_textBLU = "";
             };
 
-            for [{ _i = 0}, {_i < count _arrayRED}, {_i = _i + 2}] do {
-                _label = _arrayRED select (_i);
-                _count = _arrayRED select (_i + 1);
-                aCount_textRED = aCount_textRED + _label + ": " + str(_count) + " Rounds" + "<br/>";
+            if (count _arrayRED > 0) then {
+                for [{ _i = 0}, {_i < count _arrayRED}, {_i = _i + 2}] do {
+                    _label = _arrayRED select (_i);
+                    _count = _arrayRED select (_i + 1);
+                    aCount_textRED = aCount_textRED + _label + ": " + str(_count) + " Rounds" + "<br/>";
+                };
+            } else {
+                aCount_textRED = "";
             };
 
-            for [{ _i = 0}, {_i < count _arrayRES}, {_i = _i + 2}] do {
-                _label = _arrayRES select (_i);
-                _count = _arrayRES select (_i + 1);
-                aCount_textRES = aCount_textRES + _label + ": " + str(_count) + " Rounds" + "<br/>";
+            if (count _arrayRES > 0) then {
+                for [{ _i = 0}, {_i < count _arrayRES}, {_i = _i + 2}] do {
+                    _label = _arrayRES select (_i);
+                    _count = _arrayRES select (_i + 1);
+                    aCount_textRES = aCount_textRES + _label + ": " + str(_count) + " Rounds" + "<br/>";
+                };
+            } else {
+                aCount_textRES = "";
             };
-
         };
     };
 
