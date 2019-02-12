@@ -5,4 +5,3 @@
 //#include "gearPersistent.sqf"
 #include "IFA3_variables.sqf"
 //#include "vehGearPersistent.sqf"
-//#include "zeusFOW.sqf"

@@ -45,3 +45,4 @@
 //#include "start_text\root.sqf"
 //#include "supporting_fires\root.sqf"
 //#include "task_control\root.sqf"
+//#include "zeus_fog\root.sqf"
