@@ -12,6 +12,6 @@ if (isServer) then {
         [DC_Z2G1W, "FSJ_DC_Z2G1W"] call FNC_VehicleGearScript;
         [DC_Z2G2W, "FSJ_DC_Z2G2W"] call FNC_VehicleGearScript;
         [DC_Z2G3W, "FSJ_DC_Z2G3W"] call FNC_VehicleGearScript;
-    }, [], 1] call CBA_fnc_waitAndExecute;
+    }, [], 5] call CBA_fnc_waitAndExecute;
 
 };

@@ -25,7 +25,6 @@ if (!hasInterface && !isDedicated) then { //This scope is only for the Headless 
     setViewDistance 1000;
     //View distance for any AI controlled by the Headless Clients (which is normally all the AI)
     //Do not change this without Council permission.
-
 };
 
 if (hasInterface) then { //This scope is for the players
