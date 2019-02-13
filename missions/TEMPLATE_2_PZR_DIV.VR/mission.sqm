@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=44592;
+		nextID=44668;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={436.63062,47.871845,744.66443};
-		dir[]={-0.0329028,-0.46505266,-0.88469797};
-		up[]={-0.017285189,0.88526583,-0.46475831};
-		aside[]={-0.99932843,-8.1796315e-008,0.037166778};
+		pos[]={436.29071,12.511862,713.31952};
+		dir[]={-0.0060978695,-0.24971066,-0.96831173};
+		up[]={-0.0015724589,0.96831989,-0.24971539};
+		aside[]={-0.99998951,-2.4427936e-007,0.0062979124};
 	};
 };
 binarizationWanted=0;
@@ -156,7 +156,7 @@ class AddonsMetaData
 		{
 			className="Haas_WWII_Rebalance";
 			name="Haas_WWII_Rebalance";
-			author="Wilhelm Haas";
+			author="Wilhelm Haas (Drofseh)";
 		};
 		class Item12
 		{
@@ -523,7 +523,8 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="2 Panzer Division Mission Template v2.19.1";
+		briefingName="2 Panzer Division Mission Template v2.23.0";
+		resistanceWest=0;
 		resistanceEast=1;
 		timeOfChanges=1800.0002;
 		startWeather=0;
@@ -8852,7 +8853,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={436.87918,5.0014391,698.36963};
+						position[]={436.879,5.0014391,698.37};
 					};
 					side="Civilian";
 					flags=6;

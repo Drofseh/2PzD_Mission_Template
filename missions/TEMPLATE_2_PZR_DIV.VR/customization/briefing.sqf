@@ -739,7 +739,7 @@ case civilian : {
 
 }; // End of switch
 
-if (loggingEnabled == 1) then {
+if (!isNil "loggingEnabled" && {loggingEnabled == 1}) then {
     //Persistance system information should go in this tab.
     NEWTAB("Persistence System")
     <br/><font color='#70db70'>To ensure accurate logging of data follow these steps:</font>
