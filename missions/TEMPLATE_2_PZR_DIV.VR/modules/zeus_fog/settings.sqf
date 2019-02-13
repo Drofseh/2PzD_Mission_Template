@@ -22,7 +22,7 @@ zeusFog_zeusSides = [resistance]; // The Resistance side will be used to spot th
 zeusFog_visibleSides = [civilian]; // Civilians will also always be visible to the Zeus, even if no Resistance units can see the civilians.
 */
 
-// Vehicles that should be checked in addition to units.
+// Vehicles that should be hidden in addition to units.
 // Any preplaced player vehicles should be given a variable name and added to this list.
 zeusFog_vicList = [];
 
@@ -32,17 +32,19 @@ zeusFog_vicList = [];
 // Leave empty to allow the Zeus to spawn any unit from any addon.
 zeusFog_allowedAddons = [];
 
-// The Zeus will always be able to give units orders but editing/spawning area will be limited to 300m around where the Zeus spawns.
+// The Zeus will, by default, be able to give units orders but editing/spawning area will be limited to 300m around where the Zeus spawns.
 // You can add additional areas where the zeus can edit/spawn units by adding them to this array.
+// If one or more areas are added hear then the Zeus will not get the default area at their start position
 // Each area will need an array that includes a position and a radius, [location,number].
 // The location can be a position array, or it can be the location of a unit or marker.
 // The number will be the radius of the editing area in meters.
 zeusFog_editingAreas = [];
-/*Example:
+/*Examples:
+zeusFog_editingAreas = [[[1000,3000,0],300]]; // An single editing area with a radius of 300m located at 1000,3000
+
 zeusFog_editingAreas = [
-    [[1000,3000,0],300], // An editing area with a radius of 300m located at 1000,3000
-    [(getPosATL Bob),100], // An editing area with a 100m radius at the location of an object called Bob.
-    [(getMarkerPos "marker_1"),200] // An editing area with a 200m radius at the location of marker_1.
+    [(getPosATL Bob),100],              // An editing area with a 100m radius at the location of an object called Bob.
+    [(getMarkerPos "marker_1"),200]     // Another editing area with a 200m radius at the location of marker_1.
 ];
 */
 
@@ -54,18 +56,19 @@ zeusFog_editingAreas = [
 // Add position and radius arrays to this array just like with zeusFog_editingAreas to limit the Zeus camera to those areas.
 // Use the same format as zeusFog_editingAreas, [location,number].
 zeusFog_cameraAreas = [];
-/*Example:
+/*Examples:
+zeusFog_cameraAreas = [[[1000,3000,0],300]]; // An single camera area with a radius of 300m located at 1000,3000
+
 zeusFog_cameraAreas = [
-    [[1000,3000,0],300], // An camera area with a radius of 300m located at 1000,3000
-    [(getPosATL Bob),100], // An camera area with a 100m radius at the location of an object called Bob.
-    [(getMarkerPos "marker_1"),200] // An camera area with a 200m radius at the location of marker_1.
+    [(getPosATL Bob),100],              // An camera area with a 100m radius at the location of an object called Bob.
+    [(getMarkerPos "marker_1"),200]     // Another camera area with a 200m radius at the location of marker_1.
 ];
 */
 
 // Camera Ceiling
 // It's possible to limit the height the Zeus can raise their camera to.
 // Set this to a value greater than 0 to set the maximum height of the zeus camera in meters.
-// It may not be less that 50m.
+// It may not be less than 50m.
 // Leave as -1 for no height limit.
 zeusFog_cameraHeight = -1;
 

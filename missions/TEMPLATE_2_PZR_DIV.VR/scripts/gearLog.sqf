@@ -1,6 +1,7 @@
 ﻿
-// Logs all player and named vehicle loadouts to the computers of Haas, Madsen, Schuttler, Sauer, and Brauer
-// Logs are localed in your root ARMA folder with a name like debug_console_x64_2018-01-29_19-26-42.txt
+// Logs all player and named vehicle loadouts to the computers of Brauer, Falk, Haas, Madsen, Sauer, Schuttler
+// Logs are localed in the root ARMA folder with a name like debug_console_x64_2018-01-29_19-26-42.txt
+// A live console is also opened that will update whenever info is logged.
 // If you want to log to your own computer as well then you need to do two things:
     // 1) download Killzone Kid's debug extension, place the .dll file in your ARMA root folder
     // http://killzonekid.com/pub/debug_console_v3.0.zip
@@ -18,9 +19,8 @@
     // This includes things like cars and tanks, as well as other things like AT guns, containers, etc.
     // Everything that a player can get into, carry, drag, or that contains items.
 
-// this will also open a live console that will update whenever info is logged
-
-// uncomment this if needed for mission by deleting the / * at the front and the * / at the end
+loggingEnabled = 0; // Set this to 1 to enable inventory logging for players and named vehicles. See scripts\gearLog.sqf for more requirements.
+loggingTime = 60; // How often (in seconds) an inventory log will be created during play. I do not recommend changing this except when doing testing and diagnostics.
 
 _uid = getPlayerUID player;
     // note that the UID won't match in single player, so this will only log in multiplayer
@@ -124,8 +124,9 @@ if (
                         _playa = _this;
                         if (alive _playa) then {
                             _playaUID = getPlayerUID _playa;
+                            _playaName = name _playa;
                             _playaLoad = getUnitLoadout _playa;
-                            _playaSlotOut = format ["Player: %1 | Slot %2", _playaUID, _playa];
+                            _playaSlotOut = format ["Player ID %1 | Slot %2 | Name: %3", _playaUID, _playa, _playaName];
                             conFile(_playaSlotOut);
                             _playaLoadOut = format ["Player Case: case ( ""%1"" ) : { _playa setUnitLoadout %2; };", _playaUID, _playaLoad];
                             conFile(_playaLoadOut);
