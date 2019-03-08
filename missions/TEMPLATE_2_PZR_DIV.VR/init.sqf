@@ -20,7 +20,7 @@ if (isServer) then {
 
     "" call FNC_StartingCount; //DO NOT REMOVE
 
-    FNC_EndConditions = { //create and end condition fuction that loops by calling itself using CBA_fnc_waitAndExecute.
+    FNC_EndConditions = { //create an end condition fuction that loops by calling itself using CBA_fnc_waitAndExecute.
         persistantJipTime = time;
         publicVariable "persistantJipTime";
 

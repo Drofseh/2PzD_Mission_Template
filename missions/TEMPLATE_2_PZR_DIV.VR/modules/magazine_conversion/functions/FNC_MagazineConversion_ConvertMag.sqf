@@ -11,6 +11,10 @@ FNC_MagazineConversion_ConvertMag = {
     _OldMag = _this select 0;
     _NewMag = _this select 1;
 
+    if !(_OldMag in magazines player) exitWith {
+        hint "You don't have any of those to convert.";
+    };
+
     // This gets all the players magazines classnames and their current ammo counts.
     _allMags = magazinesAmmo player;
 
@@ -20,11 +24,12 @@ FNC_MagazineConversion_ConvertMag = {
     // Go through the players magazines until a match for the OLD MAG classname is found.
     // Get the ammo count of that magazine and then remove a magazine of that class (which should be same one as mention above) and set the removed variable to prevent any other mags being removed.
     // Get the `count` of the NEW MAG and call the function to add the NEW MAG.
-    // `then` should probably be replaced with `exitWith` to revmove the need for the `magRemoved` var, but thought I was getting bugs when `exitWith` was used.
     {
+        if (magazine_conversion_nameSpace getVariable ["magRemoved", false]) exitWith {};
+
         private _thisMagClass = _x select 0;
 
-        if ((_OldMag == _thisMagClass) && !(magazine_conversion_nameSpace getVariable ["magRemoved", false])) then {
+        if (_OldMag == _thisMagClass) exitWith {
 
             private _oldMagCountCurrent = _x select 1;
             private _newMagCountMax = getNumber (configFile >> "CfgMagazines" >> _NewMag >> "count");

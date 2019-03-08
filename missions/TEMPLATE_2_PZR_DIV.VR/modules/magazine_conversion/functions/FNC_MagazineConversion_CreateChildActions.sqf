@@ -11,7 +11,7 @@ FNC_MagazineConversion_CreateChildActions = {
 
     // start of the `forEach magazine_conversion_playerMagazines` loop
     {
-        _OldMag = _x;
+        private _OldMag = _x;
 
         // check if the OLD MAG interaction point has been created, TRUE if no interaction point, FALSE if already extant.
         private _OldMag_Action_Missing = magazine_conversion_nameSpace getVariable [(_OldMag + "_parent_action_missing"), true];
@@ -21,7 +21,7 @@ FNC_MagazineConversion_CreateChildActions = {
             // Skip OLD MAG magazines for the following reasons and do not create interaction points for them.
             // Scope 1 is allowed as they may be in inventory from scripts or similar
             // Count > 1 and initSpeed >= 180 should filter most non-bullet magazines such as grenades and launcher mags.
-            // 180 was chosen for minimum initSpeed as that was the lowest speed I could find on a bullet magazine. fow_6Rnd_455 from the Faces of War mod
+            // 180 was chosen for minimum initSpeed as that was the lowest speed I could find on a bullet magazine, fow_6Rnd_455 from the Faces of War mod
             // If an undesirable type slips through those then additional hard checks by kind should catch the rest.
             if (((getNumber (configFile >> "CfgMagazines" >> _OldMag >> "scope")) > 0)
                 && {getNumber (configFile >> "CfgMagazines" >> _OldMag >> "count") > 1}
@@ -41,6 +41,10 @@ FNC_MagazineConversion_CreateChildActions = {
                 private _pictureOldMagazine = getText (configFile >> "CfgMagazines" >> _OldMag >> "picture");
                 private _ammoClass = getText (configFile >> "CfgMagazines" >> _OldMag >> "ammo");
 
+                if ((player getVariable ["ace_interact_menu_selfactions",  []]) findIf {(_x select 0 select 0 ) isEqualTo _actionNameOldMag} >= 0) then {
+                    _actionNameOldMag = _actionNameOldMag + " ";
+                };
+
                 // This is a workaround for some IFA3 ammo that uses a special ammo with no `cartrige` model entry but should otherwise interchange.
                 if (_ammoClass == "") then {
                     _ammoClass = "No_Ammo_Class";
@@ -59,7 +63,7 @@ FNC_MagazineConversion_CreateChildActions = {
                 private _conditionOldMagazine = {(_this select 2 select 0) in magazine_conversion_playerMagazines;};
                 private _statementOldMagazine = {hint "Select a magazine type to convert this magazine into.\nIf there are no options then it can't be converted into anything else.";};
                 private _parametersOldMagazine = [_OldMag];
-                private _actionOldMagazine = [_actionNameOldMag,_actionNameOldMag,_pictureOldMagazine,_statementOldMagazine,_conditionOldMagazine,{},_parametersOldMagazine] call ace_interact_menu_fnc_createAction;
+                private _actionOldMagazine = [_OldMag,_actionNameOldMag,_pictureOldMagazine,_statementOldMagazine,_conditionOldMagazine,{},_parametersOldMagazine] call ace_interact_menu_fnc_createAction;
                 [player, 1, ["ACE_SelfActions","ACE_Equipment","Magazine Conversion"], _actionOldMagazine] call ace_interact_menu_fnc_addActionToObject;
 
                 private _ammoClassMagazines = magazine_conversion_nameSpace getVariable [("magazine_conversion_" + _ammoClass), []];
@@ -69,53 +73,48 @@ FNC_MagazineConversion_CreateChildActions = {
                     private _NewMag = _x;
 
                     // Check if the NEW MAG interaction point has been created, TRUE if no interaction point, FALSE if already extant.
-                    // Skip if vehicle mag or if scope not public
                     private _NewMag_ChildAction_Missing = magazine_conversion_nameSpace getVariable [(_OldMag + "_child_action_" + _NewMag + "_missing"), true];
-                    private _NewMagazineScope = ((getNumber (configFile >> "CfgMagazines" >> _NewMag >> "scope")) > 1);
-                    private _notVehicleMag = !(_NewMag isKindOf ["VehicleMagazine", configFile >> "CfgMagazines"]);
 
-                    if (_NewMag_ChildAction_Missing && (_notVehicleMag) && (_NewMagazineScope))then {
+                    if (_NewMag_ChildAction_Missing)then {
 
                         // Skip if OLD MAG mag and NEW MAG mag are the same class
+                        // Skip if NEW MAG mag is a vehicle magazine.
                         // Skip if NEW MAG mag scope is not public.
-                        private _NewMagScope = getNumber (configFile >> "CfgMagazines" >> _NewMag >> "scope");
+                        if (_OldMag == _NewMag) exitWith {};
+                        if (_NewMag isKindOf ["VehicleMagazine", configFile >> "CfgMagazines"]) exitWith {};
+                        if ((getNumber (configFile >> "CfgMagazines" >> _NewMag >> "scope")) != 2) exitWith {};
 
                         // Skip if NEW MAG magazine has more tracers than OLD MAG magazine to keep some tracer continuity
                         // It will also prevent most rifle magazines from being turned into any machine gun magazine that uses tracers.
                         // I'm not sure if this is a good solution, as it prevents converting rifle mags into MG mags and similar, but it could be worked around by creating new mag classes with no tracers.
                         // It might not be worth bothering at all, as tracer mags don't have much extra utility and the time it takes to convert should generally prevent abuse.
                         /*
-                        private _NewMagTraceCount = 1 min (getNumber (configFile >> "CfgMagazines" >> _NewMag >> "tracersEvery"));
-                        private _OldMagTraceCount = 1 min (getNumber (configFile >> "CfgMagazines" >> _OldMag >> "tracersEvery"));
-
-                        if ((_NewMagScope == 2) && (_OldMag != _NewMag) && {_OldMagTraceCount >= _NewMagTraceCount}) then {
+                        if (1 min (getNumber (configFile >> "CfgMagazines" >> _OldMag >> "tracersEvery")) < (1 min (getNumber (configFile >> "CfgMagazines" >> _NewMag >> "tracersEvery")))) exitWith {};
                         */
 
-                        if ((_NewMagScope == 2) && (_OldMag != _NewMag)) then {
-                        
-                            // Get the NEW MAG magazine's display name, make the interaction point name based on it.
-                            // Get the invetory icon to use as the interaction point icon, and get the ammunition class the OLD MAG magazine uses.
-                            private _nameNewMagazine = getText (configFile >> "CfgMagazines" >> _NewMag >> "displayName");
-                            private _actionNameNewMag = (format ["into %1",_nameNewMagazine]);
-                            private _pictureNewMagazine = getText (configFile >> "CfgMagazines" >> _NewMag >> "picture");
+                        // Get the NEW MAG magazine's display name, make the interaction point name based on it.
+                        // Get the invetory icon to use as the interaction point icon, and get the ammunition class the OLD MAG magazine uses.
+                        private _nameNewMagazine = getText (configFile >> "CfgMagazines" >> _NewMag >> "displayName");
+                        private _actionNameNewMag = (format ["into %1",_nameNewMagazine]);
+                        private _pictureNewMagazine = getText (configFile >> "CfgMagazines" >> _NewMag >> "picture");
 
-                            // Create NEW MAG the action and assign it to the player and a child of the OLD MAG mag action
-                            // Condition true so it always shows as long as the parent point is showing
-                            // Call the magazine conversion with the OLD MAG and NEW MAG magazines in the action's parameters
-                            private _conditionNewMagazine = {(_this select 2 select 0) in magazine_conversion_playerMagazines;};
-                            private _statementNewMagazine = {
-                                _OldMag = _this select 2 select 0;
-                                _NewMag = _this select 2 select 1;
-                                [_OldMag,_NewMag] call FNC_MagazineConversion_ConvertMag;
-                            };
-                            private _parametersNewMagazine = [_OldMag,_NewMag];
-                            private _actionNewMagazine = [_actionNameNewMag,_actionNameNewMag,_pictureNewMagazine,_statementNewMagazine,_conditionNewMagazine,{},_parametersNewMagazine] call ace_interact_menu_fnc_createAction;
-                            [player, 1, ["ACE_SelfActions","ACE_Equipment","Magazine Conversion", _actionNameOldMag], _actionNewMagazine] call ace_interact_menu_fnc_addActionToObject;
+                        // Create NEW MAG the action and assign it to the player and a child of the OLD MAG mag action
+                        // Condition true so it always shows as long as the parent point is showing
+                        // Call the magazine conversion with the OLD MAG and NEW MAG magazines in the action's parameters
+                        private _conditionNewMagazine = {(_this select 2 select 0) in magazine_conversion_playerMagazines;};
+                        private _statementNewMagazine = {
+                            _OldMag = _this select 2 select 0;
+                            _NewMag = _this select 2 select 1;
+                            [_OldMag,_NewMag] call FNC_MagazineConversion_ConvertMag;
                         };
-
-                        // set that the NEW MAG interaction point has been created for this magazine so it doesn't create them again
-                        magazine_conversion_nameSpace setVariable [(_OldMag + "_child_action_" + _NewMag + "_missing"), false];
+                        private _parametersNewMagazine = [_OldMag,_NewMag];
+                        private _actionNewMagazine = [_NewMag,_actionNameNewMag,_pictureNewMagazine,_statementNewMagazine,_conditionNewMagazine,{},_parametersNewMagazine] call ace_interact_menu_fnc_createAction;
+                        
+                        [player, 1, ["ACE_SelfActions","ACE_Equipment","Magazine Conversion", _OldMag], _actionNewMagazine] call ace_interact_menu_fnc_addActionToObject;
                     };
+
+                    // set that the NEW MAG interaction point has been created for this magazine so it doesn't create them again
+                    magazine_conversion_nameSpace setVariable [(_OldMag + "_child_action_" + _NewMag + "_missing"), false];
                 } forEach _ammoClassMagazines;
             };
         };

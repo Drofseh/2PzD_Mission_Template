@@ -43,7 +43,7 @@ FNC_MagazineConversion_AddNewMags = {
             // Subtract the number of rounds removed from the OLD MAG
             _oldMagCountCurrent = _oldMagCountCurrent - (_newMagCountMax min _oldMagCountCurrent);
 
-            // If any rounds are left over, call this function again to put them into another NEW MAG. Repeats until all 
+            // If any rounds are left over, call this function again to put them into another NEW MAG. Repeats until all rounds are removed from the old magazine.
             if (_oldMagCountCurrent > 0) then {
                 [_OldMag,_NewMag,_oldMagCountCurrent,_newMagCountMax] call FNC_MagazineConversion_AddNewMags;
                 hint ("Converting partially complete.\n" + (str _oldMagCountCurrent) + " rounds remaining");

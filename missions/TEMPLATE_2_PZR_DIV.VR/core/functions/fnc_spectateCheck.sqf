@@ -12,18 +12,34 @@
  * Public: No
  */
 
+params ["_unit", "_killer", "_instigator", "_useEffects"];
+
+private _nameKiller = name _killer;
+
+if (!isNil "God" && {God == _killer) then {
+    _nameKiller = "someone or something";
+} else {
+    [0, _killer] call ace_spectator_fnc_setCameraAttributes;
+    if (_nameKiller == "Error: No vehicle") then {
+        _nameKiller = name (player getVariable ["ace_medical_lastDamageSource", objNull]);
+        if (_nameKiller == "Error: No vehicle") then {
+            _nameKiller = "someone or something";
+        };
+    };
+};
+
 // Fade the screen to black and then fade it back in.
 [0,"BLACK",0,1] call BIS_fnc_fadeEffect;
 [{[1,"BLACK",5,1] call BIS_fnc_fadeEffect;}, [], 5] call CBA_fnc_waitAndExecute;
 
 // Check if tickets remain and play appropriate dead message
 if (FW_RespawnTickets > 0) then {
-    ["<t color='#ff0000' size = '1.25'><br/>You are dead.<br/><br/>Respawning", 0, 0.2, 5, 0.5, 0, 1000] spawn BIS_fnc_dynamicText;
+    ["<t color='#ff0000' size = '1.25'><br/>You are dead.<br/><br/>" + (format ["You were killed by %1.", _nameKiller]) + "<br/><br/>Respawning", 0, 0.2, 5, 0.5, 0, 1000] spawn BIS_fnc_dynamicText;
 } else {
     setPlayerRespawnTime 10e10;
     //systemChat str playerRespawnTime;
 
-    ["<t color='#ff0000' size = '1.25'>You are dead.", 0, 0.2, 5, 0.5, 0, 1000] spawn BIS_fnc_dynamicText;
+    ["<t color='#ff0000' size = '1.25'>You are dead." + (format ["You were killed by %1.", _nameKiller]), 0, 0.2, 5, 0.5, 0, 1000] spawn BIS_fnc_dynamicText;
 
     player setVariable ["FW_Dead", true, true]; //Tells the framework the player is dead
 };

@@ -13,13 +13,14 @@
 #include "disconnect_control\root.sqf"
 #include "env_parameters\root.sqf"
 #include "jip\root.sqf"
+#include "magazine_conversion\root.sqf"
 #include "shot_count\root.sqf"
+#include "squad_vics\root.sqf"
 #include "stamina_boost\root.sqf"
 #include "start_on_safe\root.sqf"
 #include "start_on_team_color\root.sqf"
 #include "start_with_earplugs\root.sqf"
 #include "vehicle_displays\root.sqf"
-
 
 //Additional modules that can be enabled by removing the //
 //!!Some of them require changing settings in their settings.sqf file!!
@@ -35,11 +36,11 @@
 //#include "ao_limit_soft\root.sqf"
 //#include "capture_zone\root.sqf"
 //#include "cover_map_multiple\root.sqf"
+//#include "covert\root.sqf"
 //#include "extract\root.sqf"
 //#include "familiar_weapons\root.sqf"
 //#include "hostage\root.sqf"
 //#include "in_game_briefing_utilities\root.sqf"
-//#include "magazine_conversion\root.sqf"
 //#include "setup_timer\root.sqf"
 //#include "start_in_parachute\root.sqf"
 //#include "start_text\root.sqf"

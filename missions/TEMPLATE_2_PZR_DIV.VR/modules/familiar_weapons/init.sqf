@@ -1,9 +1,12 @@
 
-["Foreign Weapons", "Gives a penalty to using unfamiliar weapons.", "Wilhelm Haas (Drofseh)"] call FNC_RegisterModule;
+["Foreign Weapons", "Gives a penalty when using unfamiliar weapons which goes away with enough use.", "Wilhelm Haas (Drofseh)"] call FNC_RegisterModule;
 
-#include "white_lists.sqf"
+#include "default_whitelists.sqf"
 #include "settings.sqf"
 #include "functions.sqf"
+
+// This CBA namespace is used to store all the arrays of compatible magazines and ammo
+familiarWeapons_nameSpace = true call CBA_fnc_createNamespace;
 
 if (familiarWeapons_accuracyPenalty < 1) then {
     familiarWeapons_accuracyPenalty = 1;
@@ -17,26 +20,24 @@ if (familiarWeapons_recoilPenalty < 1) then {
     familiarWeapons_recoilPenalty = 1;
 };
 
+familiarWeapons_familiarWeapons = [];
+
 if (side player == WEST) then {
-    familiarWeapons_familiarWeapons = [];
     {
         familiarWeapons_familiarWeapons pushBackUnique (toLower _x);
     } forEach familiarWeapons_weaponWhiteList_west;
 } else {
     if (side player == EAST) then {
-        familiarWeapons_familiarWeapons = [];
         {
             familiarWeapons_familiarWeapons pushBackUnique (toLower _x);
         } forEach familiarWeapons_weaponWhiteList_east;
     } else {
         if (side player == independent) then {
-            familiarWeapons_familiarWeapons = [];
             {
                 familiarWeapons_familiarWeapons pushBackUnique (toLower _x);
             } forEach familiarWeapons_weaponWhiteList_ind;
         } else {
             if (side player == civilian) then {
-                familiarWeapons_familiarWeapons = [];
                 {
                     familiarWeapons_familiarWeapons pushBackUnique (toLower _x);
                 } forEach familiarWeapons_weaponWhiteList_civ;
@@ -45,44 +46,38 @@ if (side player == WEST) then {
     };
 };
 
-if (isNil "familiarWeapons_assignedPrimaryWeapon") then {
-    private _weaponPrep = getUnitLoadout player select 0;
+[{
+    private _primary = primaryWeapon player;
+    private _launcher = secondaryWeapon player;
+    private _pistol = handgunWeapon player;
 
-    if (_weaponPrep isEqualTo []) then {
-        familiarWeapons_assignedPrimaryWeapon = "";
-    } else {
-        familiarWeapons_assignedPrimaryWeapon = toLower (_weaponPrep select 0);
+    if (_primary != "") then {
+        familiarWeapons_familiarWeapons pushBackUnique (toLower _primary);
     };
-};
 
-if (isNil "familiarWeapons_assignedLauncherWeapon") then {
-    private _weaponPrep = getUnitLoadout player select 1;
-
-    if (_weaponPrep isEqualTo []) then {
-        familiarWeapons_assignedLauncherWeapon = "";
-    } else {
-        familiarWeapons_assignedLauncherWeapon = toLower (_weaponPrep select 0);
+    if (_launcher  != "") then {
+        familiarWeapons_familiarWeapons pushBackUnique (toLower _launcher);
     };
-};
 
-if (isNil "familiarWeapons_assignedPistolWeapon") then {
-    private _weaponPrep = getUnitLoadout player select 2;
-
-    if (_weaponPrep isEqualTo []) then {
-        familiarWeapons_assignedPistolWeapon = "";
-    } else {
-        familiarWeapons_assignedPistolWeapon = toLower (_weaponPrep select 0);
+    if (_pistol != "") then {
+        familiarWeapons_familiarWeapons pushBackUnique (toLower _pistol);
     };
-};
 
-player addEventHandler["Fired",{
-    _this call FNC_Foreign_Weapons_firedEh;
-}];
+    {
+        private _nameWeapon = getText (configFile >> "CfgWeapons" >> _x >> "displayName");
+        familiarWeapons_nameSpace setVariable [("familiarWeapons" + _nameWeapon), 100];
+    } forEach familiarWeapons_familiarWeapons;
 
-player addEventHandler["Reloaded", {
-    _this call FNC_Foreign_Weapons_reloadedEh;
-}];
+    player addEventHandler ["Fired",{
+        _this call FNC_Foreign_Weapons_firedEh;
+    }];
 
-["weapon", {
-    _this call FNC_Foreign_Weapons_weaponChangedEh;
-}] call CBA_fnc_addPlayerEventHandler;
+    player addEventHandler ["Reloaded", {
+        _this call FNC_Foreign_Weapons_reloadedEh;
+    }];
+
+    ["weapon", {
+        _this call FNC_Foreign_Weapons_weaponChangedEh;
+    }] call CBA_fnc_addPlayerEventHandler;
+
+}, [], 2] call CBA_fnc_waitAndExecute;
