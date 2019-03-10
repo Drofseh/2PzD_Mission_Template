@@ -41,9 +41,12 @@ FNC_MagazineConversion_CreateChildActions = {
                 private _pictureOldMagazine = getText (configFile >> "CfgMagazines" >> _OldMag >> "picture");
                 private _ammoClass = getText (configFile >> "CfgMagazines" >> _OldMag >> "ammo");
 
+                /*
+                //this was used to prevent duplicate interaction points due to same display name, but now the interaction point is based on the classname it's no longer needed.
                 if ((player getVariable ["ace_interact_menu_selfactions",  []]) findIf {(_x select 0 select 0 ) isEqualTo _actionNameOldMag} >= 0) then {
                     _actionNameOldMag = _actionNameOldMag + " ";
                 };
+                */
 
                 // This is a workaround for some IFA3 ammo that uses a special ammo with no `cartrige` model entry but should otherwise interchange.
                 if (_ammoClass == "") then {
