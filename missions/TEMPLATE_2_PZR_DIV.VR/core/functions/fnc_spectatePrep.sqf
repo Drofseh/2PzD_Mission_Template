@@ -12,13 +12,15 @@
  * Public: No
  */
 
+[false] call acre_api_fnc_setSpectator;
+// systemChat "Acre Spec UnSet";
+
+[false] call ace_spectator_fnc_setSpectator;
+// systemChat "ACE Spec UnSet";
+
 if (FW_RespawnTickets > 0) then {
 
-    [false] call acre_api_fnc_setSpectator;
-    // systemChat "Acre Spec UnSet";
-
-    [false] call ace_spectator_fnc_setSpectator;
-    // systemChat "ACE Spec UnSet";
+    player setVariable ["FW_Dead", false, true]; //Tells the framework the player is alive
 
     private _respawnName = toLower(format ["fw_%1_respawn", side player]);
     private _respawnPoint = missionNamespace getVariable [_respawnName, objNull];
@@ -51,9 +53,6 @@ if (FW_RespawnTickets > 0) then {
             nul = [player] execVM "scripts\removeMap.sqf";
         };
     };
-
-    player setVariable ["FW_Dead", false, true]; //Tells the framework the player is alive
-    player setVariable ["FW_Body", player, true]; //Remembers his old body for spectating his dead body
 
 } else {
 

@@ -73,7 +73,6 @@ if (hasInterface) then {
     FW_RespawnTickets = 0; //Initialize respawn tickets to 0
 
     player setVariable ["FW_Dead", false, true]; //Tells the framework the player is alive
-    player setVariable ["FW_Body", player, true]; //Remembers his old body for spectating his dead body
 
     //Makes the player go into spectator mode when dead or respawn if he has respawn tickets
     FW_KilledEh = player addEventHandler ["Killed", {_this call FNC_SpectateCheck;}];

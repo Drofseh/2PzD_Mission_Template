@@ -2517,7 +2517,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""SNLF39_Med""] call FNC_GearScript;";
+					init="[this,""SNLF39_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Medic@1 Platoon | HQ";
 					isPlayable=1;
 					class Inventory
@@ -21374,7 +21374,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""SNLF39_Med""] call FNC_GearScript;";
+					init="[this,""SNLF39_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Medic@2 Platoon | HQ";
 					isPlayable=1;
 					class Inventory

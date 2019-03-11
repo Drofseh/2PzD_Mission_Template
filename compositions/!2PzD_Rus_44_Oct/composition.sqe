@@ -2760,7 +2760,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R44Oct_Med""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this,""R44Oct_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Medic@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -15662,7 +15662,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R44Oct_Med""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this,""R44Oct_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Medic@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory

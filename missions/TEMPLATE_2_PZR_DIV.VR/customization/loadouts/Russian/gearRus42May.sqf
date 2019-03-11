@@ -317,6 +317,9 @@
     case "R42May_Mess" : {
         [Rus_Uni_Rif] call FNC_AddItem;
 
+        //Assigned Items
+        Rus_Default_Equipment;
+
         //Primary Weapon & Vest
         R42May_Weapon_Rifleman_Light;
 
