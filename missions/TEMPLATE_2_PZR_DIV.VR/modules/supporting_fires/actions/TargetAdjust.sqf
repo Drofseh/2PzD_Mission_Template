@@ -1,6 +1,6 @@
 
     // ===== Add Adjust Fire on Last Target
-    _statementAdjust = { hint "Select the direction and distance to adjust fire." };
+    _statementAdjust = { "Select the direction and distance to adjust fire." call CBA_fnc_notify;};
     _actionAdjust = ["Adjust Fire","Adjust Fire","Haas_WWII_Rebalance\UI\icon_supporting_fires_adjust.paa",_statementAdjust,_conditionRepeat] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires"], _actionAdjust] call ace_interact_menu_fnc_addActionToObject;
 

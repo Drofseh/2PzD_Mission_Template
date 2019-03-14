@@ -142,7 +142,8 @@ if (hasInterface) then {
             aCount_textRES = "RESISTANCE Munitions Expended:<br/>";
 
             //Get the custom names of each side's team and use them instead of generic names above ^
-            if !(isNil {FW_Teams select 0}) then {
+            _numberOfTeams = count FW_Teams;
+            if (_numberOfTeams > 0) then {
 
                 aCount_Side0 = FW_Teams select 0;
                 aCount_Side0_Side = aCount_Side0 select 1;
@@ -161,7 +162,7 @@ if (hasInterface) then {
                 };
             };
 
-            if !(isNil {FW_Teams select 1}) then {
+            if (_numberOfTeams > 1) then {
 
                 aCount_Side1 = FW_Teams select 1;
                 aCount_Side1_Side = aCount_Side1 select 1;
@@ -180,7 +181,7 @@ if (hasInterface) then {
                 };
             };
 
-            if !(isNil {FW_Teams select 2}) then {
+            if (_numberOfTeams > 2) then {
 
                 aCount_Side2 = FW_Teams select 2;
                 aCount_Side2_Side = aCount_Side2 select 1;

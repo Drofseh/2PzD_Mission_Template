@@ -683,7 +683,7 @@
     //Mortar Granatwerferschützen
     case "WHR45_MortG" : {
         [Ger_Uni_Rif_L] call FNC_AddItem;
-        [Ger_Vest_HGun] call FNC_AddItemRandom;
+        [Ger_Vest_HGun] call FNC_AddItem;
         [Ger_BP_T34] call FNC_AddItem;
         [Ger_Helmet_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -871,7 +871,7 @@
     //Panzerschreck Richtschütze
     case "WHR45_ATG" : {
         [Ger_Uni_Rif_L] call FNC_AddItem;
-        [Ger_Vest_HGun] call FNC_AddItemRandom;
+        [Ger_Vest_HGun] call FNC_AddItem;
         [Ger_BP_Pzr] call FNC_AddItem;
         [Ger_Helmet_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;

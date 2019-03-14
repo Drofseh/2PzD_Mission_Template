@@ -15,8 +15,8 @@ FNC_Foreign_Weapons_weaponChangedEh = {
         };
 
         private _nameWeapon = getText (configFile >> "CfgWeapons" >> _weapon >> "displayName");
-
-        hint format ["You're unfamiliar with the %1 and won't be able to use it as well as a weapon you are trained with.", _nameWeapon,];
+        (format ["You're unfamiliar with the %1 and won't be able to use it as well as a weapon you are trained with.", _nameWeapon]) call CBA_fnc_notify;
+    
         player setCustomAimCoef (1 * familiarWeapons_swayPenalty);
         player setUnitRecoilCoefficient (1 * familiarWeapons_recoilPenalty);
     };

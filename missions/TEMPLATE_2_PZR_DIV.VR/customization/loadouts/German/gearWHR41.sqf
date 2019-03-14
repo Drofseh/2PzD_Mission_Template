@@ -521,7 +521,7 @@
     //Mortar Granatwerferschützen
     case "WHR41_MortG" : {
         [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_HGun] call FNC_AddItemRandom;
+        [Ger_Vest_HGun] call FNC_AddItem;
         [Ger_BP_T34] call FNC_AddItem;
         [Ger_Helmet] call FNC_AddItem;
         [GEN_Face_r] call FNC_AddItemRandom;

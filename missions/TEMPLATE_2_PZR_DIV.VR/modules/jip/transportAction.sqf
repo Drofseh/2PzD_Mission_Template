@@ -11,6 +11,6 @@ _targets = [];
 
 } forEach playableUnits;
 
-[format ["%1 joined the mission and is requesting transport.", name player], "hint", _targets] call BIS_fnc_MP;
+{format ["%1 joined the mission and is requesting transport.", name player] call CBA_fnc_notify;} remoteExec ["call", _targets];
 
 player removeAction _id;

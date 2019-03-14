@@ -59,7 +59,7 @@
         <br/><font color='#70db70' size='14'>7. The Fire Mission</font> \
         <br/>Once a target and rounds are selected the fire mission will begin automatically. \
         <br/> \
-        <br/>Hints will be displayed in the top right corner of your screen (by default) to update you on the progress of the fire mission. \
+        <br/>Hints will be displayed to update you on the progress of the fire mission. \
         <br/>These will include the status of fire mission, rounds remaining, and similar messages. \
         <br/> \
         <br/>While a fire mission is in progress no other fire mission may be called, and the target interaction points will be temporarily removed. \

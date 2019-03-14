@@ -4,20 +4,20 @@ call {
 
     private _statementCheck = {
         private _magList = magazinesAllTurrets this;
-        
+
         if (_magList isEqualTo []) then {
-            hint "This vehicle is unarmed";
+            "This vehicle is unarmed" call CBA_fnc_notify;
         } else {
             _magAmmoList = "Vehicle Ammuntion Remaining:\n";
-    
+
             {
                 private _magClass = _x select 0;
                 private _magName = getText (configFile >> "CfgMagazines" >> _magClass >> "DisplayName");
                 private _magRounds = str (_x select 2);
                 private _magAmmoList = _magAmmoList + "\n" + _magName + " (" + _magRounds + ")";
             } forEach (_magList);
-    
-            hint _magAmmoList;
+
+            _magAmmoList call CBA_fnc_notify;
         };
     };
 

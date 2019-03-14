@@ -25,7 +25,7 @@ aidrivers_removeUnit = {
     };
     FW_AiDriverVehicle = objNull;
     false call FNC_toggleDriverCam;
-    hint "Driver removed";
+    "Driver removed" call CBA_fnc_notify;
 };
 
 aidrivers_createUnit = {
@@ -86,7 +86,7 @@ aidrivers_createUnit = {
     }, [_unit, _target, _caller]] call CBA_fnc_WaitUntilAndExecute;
 
     FW_AiDriverVehicle = _target;
-    hint "Driver added";
+    "Driver added" call CBA_fnc_notify;
 
 };
 

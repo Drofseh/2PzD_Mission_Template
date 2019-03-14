@@ -42,9 +42,9 @@ FNC_StaminaBoost_Drink_Water = {
                 };
             };
 
-            hint ("You had a refreshing drink from your " + _drinkName + _drinkLeft);
+            ("You had a refreshing drink from your " + _drinkName + _drinkLeft) call CBA_fnc_notify;
         },
-        {hint "Drinking interupted!"},
+        {"Drinking interupted!" call CBA_fnc_notify;},
         "Drinking..."
     ] call ace_common_fnc_progressBar;
 };

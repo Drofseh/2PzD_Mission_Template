@@ -27,7 +27,7 @@ if (hasInterface) then {
 _conditionSquadVicMain = {True};
 
 _statementSquadVicMain = {
-    hint "Add or remove the vehicle from your squad compass.";
+    "Add or remove the vehicle from your squad compass." call CBA_fnc_notify;
 };
 _actionSquadVicMain = ["Squad Vehicle","Squad Vehicle","",_statementSquadVicMain,_conditionSquadVicMain] call ace_interact_menu_fnc_createAction;
 

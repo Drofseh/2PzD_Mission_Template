@@ -7,7 +7,7 @@ _conditionMagazineConversion = {
     true;
 };
 _statementMagazineConversion = {
-    hint "Select a magazine type to convert.\nIf no magazines are visible you have nothing that can be converted.";
+    "Select a magazine type to convert.\nIf no magazines are visible you have nothing that can be converted." call CBA_fnc_notify;
 };
 _actionMagazineConversion = ["Magazine Conversion","Magazine Conversion","",_statementMagazineConversion,_conditionMagazineConversion] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions","ACE_Equipment"], _actionMagazineConversion] call ace_interact_menu_fnc_addActionToObject;

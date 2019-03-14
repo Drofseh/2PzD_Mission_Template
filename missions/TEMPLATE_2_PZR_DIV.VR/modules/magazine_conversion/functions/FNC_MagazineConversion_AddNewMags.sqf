@@ -46,9 +46,9 @@ FNC_MagazineConversion_AddNewMags = {
             // If any rounds are left over, call this function again to put them into another NEW MAG. Repeats until all rounds are removed from the old magazine.
             if (_oldMagCountCurrent > 0) then {
                 [_OldMag,_NewMag,_oldMagCountCurrent,_newMagCountMax] call FNC_MagazineConversion_AddNewMags;
-                hint ("Converting partially complete.\n" + (str _oldMagCountCurrent) + " rounds remaining");
+                ("Converting partially complete.\n" + (str _oldMagCountCurrent) + " rounds remaining") call CBA_fnc_notify;
             } else {
-                hint "Converting complete.";
+                "Converting complete." call CBA_fnc_notify;
             };
         },
         {
@@ -62,7 +62,7 @@ FNC_MagazineConversion_AddNewMags = {
                 player addMagazine [_OldMag, _oldMagCountCurrent];
             };
 
-            hint ("Converting interupted!\n" + (str _oldMagCountCurrent) + " rounds remaining");
+            ("Converting interupted!\n" + (str _oldMagCountCurrent) + " rounds remaining") call CBA_fnc_notify;
         },
         "Converting..."
     ] call ace_common_fnc_progressBar;

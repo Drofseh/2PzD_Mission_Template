@@ -78,9 +78,9 @@ _supportingFireActions = call {
     // ===== Add supporting fires interaction
     _statementFires = {
         if (_side isEqualTo civilian) then {
-            hint "Return possession of the radio to the appropriate military authorities.";
+            "Return possession of the radio to the appropriate military authorities." call CBA_fnc_notify;
         } else {
-            hint "Select a Target to be shelled."
+            "Select a Target to be shelled." call CBA_fnc_notify;
         };
     };
     _actionFires = ["Supporting Fires","Supporting Fires","Haas_WWII_Rebalance\UI\icon_supporting_fires.paa",_statementFires,_conditionFires] call ace_interact_menu_fnc_createAction;
@@ -92,12 +92,12 @@ _supportingFireActions = call {
     [player, 1, ["ACE_SelfActions","Supporting Fires"], _actionRounds] call ace_interact_menu_fnc_addActionToObject;
 
     // ===== Add action to to indicate fire mission is in progress.
-    _statementFiring = { hint "Fire mission is already underway."; };
+    _statementFiring = { "Fire mission is already underway." call CBA_fnc_notify;};
     _actionFiring = ["Fire Mission In Progress","Fire Mission In Progress","Haas_WWII_Rebalance\UI\icon_supporting_fires.paa",_statementFiring,_conditionFiring] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires"], _actionFiring] call ace_interact_menu_fnc_addActionToObject;
 
     // ===== Add generic Target statement for all target interation points
-    _statementTargets = { hint "Select the number and type of rounds to fire." };
+    _statementTargets = { "Select the number and type of rounds to fire." call CBA_fnc_notify;};
 
 
     // ===== Add Target Base Actions

@@ -16,7 +16,7 @@ FNC_Foreign_Weapons_reloadedEh = {
         if (_reloadFailed) then {
             ace_player addMagazine [_newMagazine select 0, _newMagazine select 1];
             ace_player setAmmo [_weapon, 0];
-            hint "Failed to reload this unfamiliar weapon!";
+            "Failed to reload this unfamiliar weapon!" call CBA_fnc_notify;
         };
 
         private _nameWeapon = getText (configFile >> "CfgWeapons" >> _weapon >> "displayName");
@@ -28,7 +28,7 @@ FNC_Foreign_Weapons_reloadedEh = {
         };
 
         if (_weaponLearning >= 100) then {
-            hint format ["You've used the %1 to become familiar with it.", _nameWeapon,];
+            (format ["You've used the %1 enough to become familiar with it.", _nameWeapon]) call CBA_fnc_notify;
             familiarWeapons_familiarWeapons pushBackUnique (toLower _weapon);
             familiarWeapons_nameSpace setVariable [("familiarWeapons" + _nameWeapon), _weaponLearning];
         };

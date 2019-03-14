@@ -45,9 +45,9 @@ FNC_SupportFire_AmmoCheck = {
         // systemChat (str _supportFire_ammoCountHE);
         // systemChat (str _supportFire_ammoCountSmoke);
         // systemChat (str _supportFire_ammoCountFlare);
-        hint "Roger, checking ammunition.";
+        "Roger, checking ammunition." call CBA_fnc_notify;
         sleep 5;
-        hint format ["%1 Rounds, HE, \n%2 rounds Smoke, \n%3 rounds Flare, \nremaining.", _supportFire_ammoCountHE, _supportFire_ammoCountSmoke, _supportFire_ammoCountFlare];
+        (format ["%1 Rounds, HE, \n%2 rounds Smoke, \n%3 rounds Flare, \nremaining.", _supportFire_ammoCountHE, _supportFire_ammoCountSmoke, _supportFire_ammoCountFlare]) call CBA_fnc_notify;
         // systemChat "ammo hint spawn finished";
     };
     // systemChat "ammo check finshed";

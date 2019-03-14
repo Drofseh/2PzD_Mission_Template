@@ -16,7 +16,7 @@ params ["_unit", "_killer", "_instigator", "_useEffects"];
 
 private _nameKiller = name _killer;
 
-if (!isNil "God" && {God == _killer) then {
+if (!isNil "God" && {God isEqualTo _killer}) then {
     _nameKiller = "someone or something";
 } else {
     [0, _killer] call ace_spectator_fnc_setCameraAttributes;

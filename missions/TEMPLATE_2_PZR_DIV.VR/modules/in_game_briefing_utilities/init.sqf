@@ -54,15 +54,14 @@ if (!(serverCommandAvailable "#kick")) exitWith {
 
 
 _hintFunc = {
-    [] spawn {
-        sleep 0.5;
+    [{
         "Instructions" hintC [
             "'Lower ACRE volume' will reset ACRE volume to selected value until canceled",
             "'Freeze movement' will prevent players from doing anything other than staring in one spot",
             "Walk up to a player and use whitelist options to add/remove that player from whitelist",
             "Enabled Anti-ND has to be turned off manually"
         ];
-    };
+    }, [], 0.5] call CBA_fnc_waitAndExecute;
 };
 
 //functions used for interactive display name
@@ -83,7 +82,7 @@ _displayWhisperInfo = {
 FW_bu_fnc_whitelist = {
     params ["_add", "_tgt"];
     _tgt setVariable ["FW_bu_whitelisted", _add, true];
-    hint format ["%1 was %2 whitelist", name _tgt, (["removed from", "added to"] select _add)];
+    (format ["%1 was %2 whitelist", name _tgt, (["removed from", "added to"] select _add)]) call CBA_fnc_notify;
 };
 
 FW_bu_fnc_lower_volume = {
