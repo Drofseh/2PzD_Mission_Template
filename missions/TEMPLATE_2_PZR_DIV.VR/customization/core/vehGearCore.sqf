@@ -9,4 +9,4 @@ _type = _this select 1;
 if (!local _vehicle) exitWith {};
 
 FNC_AddItemVehicle = {([_vehicle, _type] + _this) call FNC_AddItemVehicleOrg;};
-FNC_AddItemVehicleRandom = {([[_vehicle, _type]] + [_this]) call FNC_AddItemVehicleRandomOrg;};
+FNC_AddItemVehicleRandom = {([_vehicle, _type] + [_this]) call FNC_AddItemVehicleRandomOrg;};

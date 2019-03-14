@@ -15,11 +15,8 @@
  * Public: No
  */
 
-private ["_vehicle", "_loadoutType", "_item", "_amount", "_type"];
+params ["_vehicle", "_loadoutType", "_item", "_amount", "_type"];
 
-_vehicle = _this select 0;
-_loadoutType = _this select 1;
-_item = _this select 2;
 _amount = 1;
 _type = (_item call BIS_fnc_itemType) select 1;
 
