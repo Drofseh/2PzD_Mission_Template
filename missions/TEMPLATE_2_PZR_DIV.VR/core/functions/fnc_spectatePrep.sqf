@@ -18,6 +18,12 @@
 [false] call ace_spectator_fnc_setSpectator;
 // systemChat "ACE Spec UnSet";
 
+ace_nametags_showPlayerNames = 0;
+
+[{
+    ace_nametags_showPlayerNames = 1;
+}, [], 5] call CBA_fnc_waitAndExecute;
+
 if (FW_RespawnTickets > 0) then {
 
     player setVariable ["FW_Dead", false, true]; //Tells the framework the player is alive
