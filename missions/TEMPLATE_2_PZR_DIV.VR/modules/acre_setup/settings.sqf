@@ -132,33 +132,33 @@ FW_languages_babel = [
  * Remove // to enable a setting.
 */
 
-/*Specify and value between 1.0 and 0.0 Setting it to 0.0 means the terrain loss model is disabled, 1.0 is default.
+/*Specify and value between 1.0 and 0.0 Setting it to 0.0 means the terrain loss model is disabled, 0.5 is default.
   Note this setting only effects loss caused by terrain, loss due to power dissipation over range will always occur.*/
-//[1.0] call acre_api_fnc_setLossModelScale;
+//acre_sys_core_terrainLoss = 0.5;
 
 //  RADIO DUPLEX
 /*Sets the duplex of radio transmissions.
   If set to true, it means that you will receive transmissions even while talking and multiple people can speak at the same time.
   If false then when you are speaking you cannot receive.*/
-[false] call acre_api_fnc_setFullDuplex;
+acre_sys_core_fullDuplex = false;
 
 
 //  Signal Interference
 /*Sets whether transmissions will interfere with each other.
   This, by default, causes signal loss when multiple people are transmitting on the same frequency.*/
-[true] call acre_api_fnc_setInterference;
+acre_sys_core_interference = true;
 
 
 /*Sets whether AI can detect players speaking.
   This utilizes an advanced model of inverse-square volume detection and randomization against the range of the unit, and duration and quantity of speaking.
   In a nutshell, the closer you are to an AI unit and the more you speak - the better chance he has of hearing you.*/
-[true] call acre_api_fnc_setRevealToAI;
+acre_sys_core_revealToAI = true;
 
 
 //  Antenna Direction
 /*This setting can be used to disable the simulation of antenna radiation patterns for both the transmitting and receiving radios.
   It will make all antennas act with perfect omni-directional behaviour. (true/false)*/
-[false] call acre_api_fnc_ignoreAntennaDirection;
+acre_sys_core_interference = true;
 
 
 //  Direct Speach Starting Volume
