@@ -5841,7 +5841,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R43Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R43Jan_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
 					description="2nd Team | Machine Gunner@1 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
