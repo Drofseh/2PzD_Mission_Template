@@ -1,4 +1,4 @@
-["JIP Manager", "Handles JIPs in different ways depending on the module's settings.", "Olsen &amp; Starfox64"] call FNC_RegisterModule;
+["JIP Manager", "Handles JIPs in different ways depending on the module's settings.", "Olsen, Starfox64, and Wilhelm Haas (Drofseh)"] call FNC_RegisterModule;
 
 #include "settings.sqf"
 
@@ -19,6 +19,7 @@ if (hasInterface && str side player != "LOGIC") then {
 
         [{
             player call FNC_UntrackUnit;
+            player setPlayerRespawnTime 10e10;
             player setDamage 1;
 
             [{
@@ -29,11 +30,11 @@ if (hasInterface && str side player != "LOGIC") then {
 
     };
 
-    _target = leader player;
+    private _target = leader player;
 
     if (player == _target || !(_target call FNC_Alive)) then {
 
-        _rank = -1;
+        private _rank = -1;
 
         {
 
@@ -47,56 +48,33 @@ if (hasInterface && str side player != "LOGIC") then {
 
     if ((_target distance player) >  FW_JIPDISTANCE) then {
 
+        private _spawnPos = getPosATL player;
+
         switch (FW_JIPTYPE) do {
 
             case "TELEPORT": {
 
-                _teleportAction = player addAction ["Teleport to Squad", "modules\jip\teleportAction.sqf", _target];
+                #include "teleportAction.sqf"
 
-                [_teleportAction] spawn { //Spawns code running in parallel
-
-                    _spawnPos = getPosATL player;
-
-                    while {true} do {
-
-                        if (player distance _spawnPos > FW_SPAWNDISTANCE) exitWith { //Exitwith ends the loop
-
-                            player removeAction (_this select 0);
-                            cutText [format ["JIP teleport option lost, you went beyond %1 meters from your spawn location", FW_SPAWNDISTANCE], 'PLAIN DOWN'];
-
-                        };
-
-                        sleep (60); //Runs every min
-
-                    };
-                };
-
+                [{
+                    player distance _this > FW_SPAWNDISTANCE;
+                },{
+                    [player, 1, ["ACE_SelfActions","JIP_Teleport"]] call ace_interact_menu_fnc_removeActionFromObject;
+                    (format ["JIP teleport option lost, you went beyond %1 meters from your spawn location", FW_SPAWNDISTANCE]) call CBA_fnc_notify;
+                }, _spawnPos] call CBA_fnc_waitUntilAndExecute;
             };
 
             case "TRANSPORT": {
 
-                _transportAction = player addAction ["Request Transport", "modules\jip\transportAction.sqf"];
+                #include "transportAction.sqf"
 
-                [_transportAction] spawn { //Spawns code running in parallel
-
-                    _spawnPos = getPosATL player;
-
-                    while {true} do {
-
-                        if (player distance _spawnPos > FW_SPAWNDISTANCE) exitWith { //Exitwith ends the loop
-
-                            player removeAction (_this select 0);
-                            cutText [format ["JIP transport request option lost, you went beyond %1 meters from your spawn location", FW_SPAWNDISTANCE], 'PLAIN DOWN'];
-
-                        };
-
-                        sleep (60); //Runs every min
-
-                    };
-                };
-
+                [{
+                    player distance _this > FW_SPAWNDISTANCE;
+                },{
+                    [player, 1, ["ACE_SelfActions","JIP_Transport"]] call ace_interact_menu_fnc_removeActionFromObject;
+                    (format ["JIP teleport option lost, you went beyond %1 meters from your spawn location", FW_SPAWNDISTANCE]) call CBA_fnc_notify;
+                }, _spawnPos] call CBA_fnc_waitUntilAndExecute;
             };
-
         };
     };
 };

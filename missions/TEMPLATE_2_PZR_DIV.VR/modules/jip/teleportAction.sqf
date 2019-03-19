@@ -1,59 +1,47 @@
-_id = _this select 2;
-_target = _this select 3;
+_conditionJIP_Teleport = {
+    player distance _spawnPos < FW_SPAWNDISTANCE;
+};
+_statementJIP_Teleport = {
+    params ["_target"];
+    if (!((_target call FNC_Alive) && (!(_target call FNC_InVehicle) || ((vehicle _target) call FNC_HasEmptyPositions)))) then {
+        private _rank = -1;
+        private _count = 0;
 
-if (!((_target call FNC_Alive) && (!(_target call FNC_InVehicle) || ((vehicle _target) call FNC_HasEmptyPositions)))) then {
+        {
+            if (_x call FNC_Alive) then {
+                _count = _count + 1;
 
-    _rank = -1;
-    _count = 0;
+                if ((rankId _x > _rank) && (!(_x call FNC_InVehicle) || ((vehicle _x) call FNC_HasEmptyPositions))) then {
+                    _rank = rankId _x;
+                    _target = _x;
+                };
+            };
+        } forEach ((units group player) - [player]);
 
-    {
-        if (_x call FNC_Alive) then {
+        if (_rank == -1) then {
+            _target = objNull;
 
-            _count = _count + 1;
-
-            if ((rankId _x > _rank) && (!(_x call FNC_InVehicle) || ((vehicle _x) call FNC_HasEmptyPositions))) then {
-
-                _rank = rankId _x;
-                _target = _x;
-
+            if (_count == 0) then {
+                [player, 1, ["ACE_SelfActions","JIP_Teleport"]] call ace_interact_menu_fnc_removeActionFromObject;
+                "No one left in the squad" call CBA_fnc_notify;
+            } else {
+                "Not possible to JIP teleport to anyone, please try again later" call CBA_fnc_notify;
             };
         };
+    };
 
-    } forEach ((units group player) - [player]);
+    if (!isNull(_target)) then {
 
-    if (_rank == -1) then {
-
-        _target = objNull;
-
-        if (_count == 0) then {
-
-            player removeAction _id;
-            cutText ["No one left in the squad", 'PLAIN DOWN'];
-
+        if (_target call FNC_InVehicle) then {
+            player moveInAny (vehicle _target);
         } else {
-
-            cutText ["Not possible to JIP teleport to anyone, please try again later", 'PLAIN DOWN'];
-
+            player setPos (getPos _target);
         };
-    };
-};
 
-if (!isNull(_target)) then {
-
-    if (_target call FNC_InVehicle) then {
-
-        player moveInAny (vehicle _target);
-
+        [player, 1, ["ACE_SelfActions","JIP_Teleport"]] call ace_interact_menu_fnc_removeActionFromObject;
     } else {
-
-        player setPos (getPos _target);
-
+        "Something went wrong, target doesn't exist." call CBA_fnc_notify;
     };
-
-    player removeAction _id;
-
-} else {
-
-    cutText ["Something went wrong, target doesn't exist.", 'PLAIN DOWN'];
-
 };
+_actionJIP_Teleport = ["JIP_Teleport","Teleport to Squad","",_statementJIP_Teleport,_conditionJIP_Teleport,{},_target] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions"], _actionJIP_Teleport] call ace_interact_menu_fnc_addActionToObject;
