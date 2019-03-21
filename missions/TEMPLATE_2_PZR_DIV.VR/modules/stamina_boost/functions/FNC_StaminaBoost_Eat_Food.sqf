@@ -21,7 +21,10 @@ FNC_StaminaBoost_Eat_Food = {
             [stamina_boost_staminaFoodCool] call FNC_StaminaBoost_RaiseStamina;
 
             if (_food == "ACE_Banana") then {
-                ("You ate a banana.\nDelicious!") call CBA_fnc_notify;
+                [
+                    ["You ate a banana."],
+                    ["Delicious!"]
+                ] call CBA_fnc_notify;
             } else {
 
                 _foodNamePrep1 = ((getText (configFile >> "CfgWeapons" >> _food >> "displayName")) splitString " ");
@@ -32,7 +35,10 @@ FNC_StaminaBoost_Eat_Food = {
 
                 _foodName = (_foodNamePrep1 joinString " ");
 
-                ("You ate a " + _foodName + " ration" + "\nDelicious!") call CBA_fnc_notify;
+                [
+                    [("You ate a " + _foodName + " ration")],
+                    ["Delicious!"]
+                ] call CBA_fnc_notify;
             };
         },
         {"Eating interupted!" call CBA_fnc_notify;},

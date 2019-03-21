@@ -19,7 +19,8 @@ if (hasInterface && str side player != "LOGIC") then {
 
         [{
             player call FNC_UntrackUnit;
-            player setPlayerRespawnTime 10e10;
+            setPlayerRespawnTime 10e10;
+            FW_RespawnTickets = 0;
             player setDamage 1;
 
             [{

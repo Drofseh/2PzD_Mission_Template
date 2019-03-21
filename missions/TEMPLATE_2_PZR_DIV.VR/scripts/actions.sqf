@@ -8,14 +8,22 @@ call {
         if (_magList isEqualTo []) then {
             "This vehicle is unarmed" call CBA_fnc_notify;
         } else {
-            _magAmmoList = "Vehicle Ammuntion Remaining:\n";
+            _magAmmoList = [["Vehicle Ammuntion Remaining:"]];
 
             {
-                private _magClass = _x select 0;
-                private _magName = getText (configFile >> "CfgMagazines" >> _magClass >> "DisplayName");
-                private _magRounds = str (_x select 2);
-                private _magAmmoList = _magAmmoList + "\n" + _magName + " (" + _magRounds + ")";
-            } forEach (_magList);
+                private _magRounds = _x select 2;
+                if (_magRounds isEqualTo 0) then {
+                    //ignore the mag if it has no ammo
+                } else {
+                    private _magClass = _x select 0;
+                    private _turret = _x select 1;
+
+                    private _magName = getText (configFile >> "CfgMagazines" >> _magClass >> "DisplayName");
+                    private _magCount = getNumber (configFile >> "CfgMagazines" >> _magClass >> "count");
+
+                    _magAmmoList = _magAmmoList + [(format ["%1 (%2/%3)", _magName, _magRounds, _magCount])];
+                };
+            } forEach _magList;
 
             _magAmmoList call CBA_fnc_notify;
         };

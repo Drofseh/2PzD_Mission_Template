@@ -64,7 +64,12 @@ FNC_MagazineConversion_CreateChildActions = {
                 // Create the interaction point only when the mag is in the inventory.
                 // Give a hint if the OLD MAG interaction point is activated to prompt the player to select one of the NEW MAG interaction points to begin coverting.
                 private _conditionOldMagazine = {(_this select 2 select 0) in magazine_conversion_playerMagazines;};
-                private _statementOldMagazine = {"Select a magazine type to convert this magazine into.\nIf there are no options then it can't be converted into anything else." call CBA_fnc_notify;};
+                private _statementOldMagazine = {
+                    [
+                        ["Select a magazine type to convert this magazine into."],
+                        ["If there are no options then it can't be converted into anything else."]
+                    ] call CBA_fnc_notify;
+                };
                 private _parametersOldMagazine = [_OldMag];
                 private _actionOldMagazine = [_OldMag,_actionNameOldMag,_pictureOldMagazine,_statementOldMagazine,_conditionOldMagazine,{},_parametersOldMagazine] call ace_interact_menu_fnc_createAction;
                 [player, 1, ["ACE_SelfActions","ACE_Equipment","Magazine Conversion"], _actionOldMagazine] call ace_interact_menu_fnc_addActionToObject;

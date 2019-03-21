@@ -23,7 +23,7 @@ FNC_SupportFire_FireMission = {
 
         // exit if the player managed to call a fire mission even if no ammo was avaiable.
         if (_supportFire_number <= 0) exitWith {
-            (format ["Negative, No more\n%1 rounds available.", _supportFire_type]) call CBA_fnc_notify;
+            (format ["Negative, No more %1 rounds available.", _supportFire_type]) call CBA_fnc_notify;
         };
 
         // get accuracy and dispersion values for players side
@@ -56,7 +56,7 @@ FNC_SupportFire_FireMission = {
         private _supportFire_targetName = [_supportFire_target] call FNC_SupportFire_GetTargetName;
         // systemChat ("supportFire_targetName - " + str supportFire_targetName);
 
-        (format ["Roger, Fire Mission, \n%1 Rounds, %2, \n%3.", _supportFire_number, _supportFire_type, _supportFire_targetName]) call CBA_fnc_notify;
+        (format ["Roger, Fire Mission, %1 Rounds, %2, %3.", _supportFire_number, _supportFire_type, _supportFire_targetName]) call CBA_fnc_notify;
 
         supportFire_lastType = _supportFire_type;
         supportFire_lastNumber = _supportFire_number;
@@ -71,7 +71,11 @@ FNC_SupportFire_FireMission = {
         };
         // systemChat "fake firing sleep over";
 
-        (format ["Rounds complete.\n30 seconds to impact.\n%1 rounds remaining.", _supportFire_ammoLeft]) call CBA_fnc_notify;
+        [
+            ["Rounds complete."],
+            ["30 seconds to impact."],
+            [(format ["%1 rounds remaining.", _supportFire_ammoLeft])]
+        ] call CBA_fnc_notify;
 
         // systemChat "Mission over";
 

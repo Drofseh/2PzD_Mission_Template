@@ -5,7 +5,10 @@ _conditionStaminaBoost = {
     True;
 };
 _statementStaminaBoost = {
-    "Eat or drink to boost your stamina.\nIf neither option was visible you have nothing to eat or drink." call CBA_fnc_notify;
+    [
+        ["Eat or drink to boost your stamina."],
+        ["If neither option was visible you have nothing to eat or drink."]
+    ] call CBA_fnc_notify;
 };
 _actionStaminaBoost = ["Eat or Drink","Eat or Drink","",_statementStaminaBoost,_conditionStaminaBoost] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions","ACE_Equipment"], _actionStaminaBoost] call ace_interact_menu_fnc_addActionToObject;
