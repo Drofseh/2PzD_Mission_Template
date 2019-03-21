@@ -56,7 +56,7 @@ FNC_SupportFire_FireMission = {
         private _supportFire_targetName = [_supportFire_target] call FNC_SupportFire_GetTargetName;
         // systemChat ("supportFire_targetName - " + str supportFire_targetName);
 
-        (format ["Roger, Fire Mission, %1 Rounds, %2, %3.", _supportFire_number, _supportFire_type, _supportFire_targetName]) call CBA_fnc_notify;
+        (format ["Roger, Fire Mission, %1 rounds %2, %3.", _supportFire_number, _supportFire_type, _supportFire_targetName]) call CBA_fnc_notify;
 
         supportFire_lastType = _supportFire_type;
         supportFire_lastNumber = _supportFire_number;

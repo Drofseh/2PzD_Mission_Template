@@ -17,7 +17,6 @@ call {
                 } else {
                     private _magClass = _x select 0;
                     private _turret = _x select 1;
-
                     private _magName = getText (configFile >> "CfgMagazines" >> _magClass >> "DisplayName");
                     private _magCount = getNumber (configFile >> "CfgMagazines" >> _magClass >> "count");
 

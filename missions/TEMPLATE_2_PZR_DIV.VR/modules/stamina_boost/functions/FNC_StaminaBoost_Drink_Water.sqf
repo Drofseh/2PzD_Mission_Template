@@ -34,15 +34,15 @@ FNC_StaminaBoost_Drink_Water = {
 
             if (_oldItem == "ACE_Canteen") then {
                 _drinkName = "full canteen.";
-                _drinkLeft = "\nIt's now half full.";
+                _drinkLeft = "It's now half full.";
             } else {
                 if (_oldItem == "ACE_Canteen_Half") then {
                     _drinkName = "half full canteen.";
-                    _drinkLeft = "\nIt's now empty.";
+                    _drinkLeft = "It's now empty.";
                 };
             };
 
-            ("You had a refreshing drink from your " + _drinkName + _drinkLeft) call CBA_fnc_notify;
+            [[("You had a refreshing drink from your " + _drinkName)],[_drinkLeft]] call CBA_fnc_notify;
         },
         {"Drinking interupted!" call CBA_fnc_notify;},
         "Drinking..."
