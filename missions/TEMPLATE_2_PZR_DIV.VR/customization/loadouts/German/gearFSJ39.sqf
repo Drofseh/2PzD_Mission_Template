@@ -30,7 +30,7 @@
 //======================== Definitions ========================
 
 // For Kompanieführer and Zugführer
-#define FSJ39_Weapon_Officer_Primary    \
+#define FSJ39_Weapon_Officer            \
         [                               \
             [                           \
                 [FSJ_Vest_CC]           \
@@ -44,7 +44,7 @@
         ] call FNC_AddItemRandomPercent;
 
 // For Kompanietruppführer and Zugtruppführer
-#define FSJ39_Weapon_TF_Primary         \
+#define FSJ39_Weapon_TF                 \
         [                               \
             [                           \
                 [FSJ_Vest_Band],        \
@@ -113,7 +113,7 @@
                 [Ger_Mag_PPK,2]        \
             ],[10],                    \
             [                          \
-                [Ger_Mag_M172_10,1],   \
+                [Ger_Mag_M172_20,1],   \
                 [Ger_Weap_M172],       \
                 [Ger_Mag_M172_20,2]    \
             ],[1]                      \
@@ -133,7 +133,7 @@
                 [Ger_Mag_P38,2]         \
             ],[42],                     \
             [                           \
-                [Ger_Mag_M172_10,1],    \
+                [Ger_Mag_M172_20,1],    \
                 [Ger_Weap_M172],        \
                 [Ger_Mag_M172_20,2]     \
             ],[1]                       \
@@ -155,7 +155,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        FSJ39_Weapon_Officer_Primary;
+        FSJ39_Weapon_Officer;
 
         //Secondary Weapon
         FSJ39_Weapon_Officer_Secondary;
@@ -176,7 +176,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        FSJ39_Weapon_TF_Primary;
+        FSJ39_Weapon_TF;
 
         //Secondary Weapon
         FSJ39_Weapon_Enlisted_Secondary;
@@ -200,7 +200,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        FSJ39_Weapon_Officer_Primary;
+        FSJ39_Weapon_Officer;
 
         //Secondary Weapon
         FSJ39_Weapon_Officer_Secondary;
@@ -221,7 +221,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        FSJ39_Weapon_TF_Primary;
+        FSJ39_Weapon_TF;
 
         //Secondary Weapon
         FSJ39_Weapon_Enlisted_Secondary;
@@ -427,7 +427,7 @@
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
         //Extra
-        [Ger_Weap_K98_RG] call FNC_AddItem;
+        [Ger_Acc_K98_GL,1,"vest"] call FNC_AddItem;
         [Ger_Mag_RGrn_HE,4] call FNC_AddItem;
         [Ger_Mag_RGrn_ATS,4] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;

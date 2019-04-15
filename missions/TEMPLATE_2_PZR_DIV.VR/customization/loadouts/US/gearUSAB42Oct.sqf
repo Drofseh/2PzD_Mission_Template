@@ -90,29 +90,17 @@
 #define USAB42Oct_Weapon_Rifle_Light     \
         [                                \
             [                            \
+                [USAB_Vest_M1G],         \
+                [US_Mag_M1G,1],          \
+                [US_Weap_M1G],           \
+                [US_Mag_M1G,10,"vest"]   \
+            ],[56],                      \
+            [                            \
                 [USAB_Vest_M1C],         \
                 [US_Mag_M1C,1],          \
                 [US_Weap_M1C],           \
                 [US_Mag_M1C,4,"vest"]    \
             ],[25],                      \
-            [                            \
-                [USAB_Vest_M1G],         \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_1],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[18.66666666666666666667], \
-            [                            \
-                [USAB_Vest_M1G],         \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_2],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[18.66666666666666666667], \
-            [                            \
-                [USAB_Vest_M1G],         \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_3],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[18.66666666666666666667], \
             [                            \
                 [USAB_Vest_M1G],         \
                 [US_Mag_M1903,1],        \
@@ -137,25 +125,15 @@
 #define USAB42Oct_Weapon_Rifle_Medic     \
         [                                \
             [                            \
+                [US_Mag_M1G,1],          \
+                [US_Weap_M1G],           \
+                [US_Mag_M1G,10,"vest"]   \
+            ],[56],                      \
+            [                            \
                 [US_Mag_M1C,1],          \
                 [US_Weap_M1C],           \
                 [US_Mag_M1C,4,"vest"]    \
             ],[25],                      \
-            [                            \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_1],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[18.66666666666666666667], \
-            [                            \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_2],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[18.66666666666666666667], \
-            [                            \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_3],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[18.66666666666666666667], \
             [                            \
                 [US_Mag_M1903,1],        \
                 [US_Weap_M1903A1],       \
@@ -178,19 +156,9 @@
         [                                \
             [                            \
                 [US_Mag_M1G,1],          \
-                [US_Weap_M1G_1],         \
+                [US_Weap_M1G],           \
                 [US_Mag_M1G,10,"vest"]   \
-            ],[26.66666666666666666667], \
-            [                            \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_2],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[26.66666666666666666667], \
-            [                            \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_3],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[26.66666666666666666667], \
+            ],[80],                      \
             [                            \
                 [US_Mag_M1903,1],        \
                 [US_Weap_M1903A1],       \

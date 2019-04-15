@@ -94,29 +94,17 @@
 #define US43Jan_Weapon_Rifle_Light       \
         [                                \
             [                            \
+                [US_Vest_M1G],           \
+                [US_Mag_M1G,1],          \
+                [US_Weap_M1G],           \
+                [US_Mag_M1G,10,"vest"]   \
+            ],[54],                      \
+            [                            \
                 [US_Vest_M1C],           \
                 [US_Mag_M1C,1],          \
                 [US_Weap_M1C],           \
                 [US_Mag_M1C,4,"vest"]    \
             ],[45],                      \
-            [                            \
-                [US_Vest_M1G],           \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_1],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[18],                      \
-            [                            \
-                [US_Vest_M1G],           \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_2],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[18],                      \
-            [                            \
-                [US_Vest_M1G],           \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_3],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[18],                      \
             [                            \
                 [US_Vest_M1G],           \
                 [US_Mag_M1903,1],        \
@@ -129,25 +117,15 @@
 #define US43Jan_Weapon_Rifle_Medic       \
         [                                \
             [                            \
+                [US_Mag_M1G,1],          \
+                [US_Weap_M1G],           \
+                [US_Mag_M1G,10,"vest"]   \
+            ],[54],                      \
+            [                            \
                 [US_Mag_M1C,1],          \
                 [US_Weap_M1C],           \
                 [US_Mag_M1C,4,"vest"]    \
             ],[45],                      \
-            [                            \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_1],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[18],                      \
-            [                            \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_2],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[18],                      \
-            [                            \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_3],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[18],                      \
             [                            \
                 [US_Mag_M1903,1],        \
                 [US_Weap_M1903A3],       \
@@ -156,41 +134,28 @@
         ] call FNC_AddItemRandomPercent;
 
 // For Assistant Squad Leader
-#define US43Jan_Weapon_ASL               \
-        [                                \
-            [                            \
-                [US_Vest_M1C],           \
-                [US_Mag_M1C,1],          \
-                [US_Weap_M1C],           \
-                [US_Mag_M1C,4,"vest"]    \
-            ],[35],                      \
-            [                            \
-                [US_Vest_M1G_Gren],      \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_1],         \
-                [US_Mag_M1G,10,"vest"],  \
-                [US_Mag_RGrn_AT,10]      \
-            ],[21.33333333333333333333], \
-            [                            \
-                [US_Vest_M1G_Gren],      \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_2],         \
-                [US_Mag_M1G,10,"vest"],  \
-                [US_Mag_RGrn_AT,10]      \
-            ],[21.33333333333333333333], \
-            [                            \
-                [US_Vest_M1G_Gren],      \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_3],         \
-                [US_Mag_M1G,10,"vest"],  \
-                [US_Mag_RGrn_AT,10]      \
-            ],[21.33333333333333333333], \
-            [                            \
-                [US_Vest_M1G],           \
-                [US_Mag_M1903,1],        \
-                [US_Weap_M1903A3],       \
-                [US_Mag_M1903,20,"vest"] \
-            ],[1]                        \
+#define US43Jan_Weapon_ASL                \
+        [                                 \
+            [                             \
+                [US_Vest_M1G_Gren],       \
+                [US_Mag_M1G,1],           \
+                [US_Weap_M1G],            \
+                [US_Acc_M1G_GL,1,"vest"], \
+                [US_Mag_M1G,10,"vest"],   \
+                [US_Mag_RGrn_AT,10]       \
+            ],[64],                       \
+            [                             \
+                [US_Vest_M1C],            \
+                [US_Mag_M1C,1],           \
+                [US_Weap_M1C],            \
+                [US_Mag_M1C,4,"vest"]     \
+            ],[35],                       \
+            [                             \
+                [US_Vest_M1G],            \
+                [US_Mag_M1903,1],         \
+                [US_Weap_M1903A3],        \
+                [US_Mag_M1903,20,"vest"]  \
+            ],[1]                         \
         ] call FNC_AddItemRandomPercent;
 
 // For riflemen
@@ -198,19 +163,9 @@
         [                                \
             [                            \
                 [US_Mag_M1G,1],          \
-                [US_Weap_M1G_1],         \
+                [US_Weap_M1G],           \
                 [US_Mag_M1G,10,"vest"]   \
-            ],[33],                      \
-            [                            \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_2],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[33],                      \
-            [                            \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G_3],         \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[33],                      \
+            ],[99],                      \
             [                            \
                 [US_Mag_M1G,1],          \
                 [US_Weap_M1903A3],       \

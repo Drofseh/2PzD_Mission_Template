@@ -3,6 +3,11 @@
 //=== Weapons ===
 
 //Primary
+#define Pol_Weap_wz28           "w39_wz28"
+#define Pol_Weap_wz29           "w39_wz29"
+#define Pol_Weap_wz35           "w39_urwz35"
+#define Pol_Weap_wz38           "w39_wz38m"
+#define Pol_Weap_wz3p           "w39_mors"
 
 //Secondary
 #define Pol_Weap_Radom          "fow_w_p35"
@@ -12,7 +17,14 @@
 //Attachments
 
 //Ammo
-#define Pol_Mag_Radom           "LEN_8Rnd_9x19_2PzD"
+#define Pol_Mag_Radom           "w39_9mm_8xPARAVIS"
+#define Pol_Mag_wz28            "w39_7_92_20xMauserS"
+#define Pol_Mag_wz28_AP         "w39_7_92_20xMauserP"
+#define Pol_Mag_wz29            "w39_7_92_5xMauserS"
+#define Pol_Mag_wz35            "w39_7_92_4x107DS"
+#define Pol_Mag_wz38            "w39_7_92_10xMauserS"
+#define Pol_Mag_wz38_AP         "w39_7_92_10xMauserP"
+#define Pol_Mag_wz39            "w39_9_MM_24xPARA"
 
 //Grenades
 

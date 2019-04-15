@@ -10,14 +10,14 @@ FNC_Foreign_Weapons_weaponChangedEh = {
     ) then {
 
         if (_weapon in familiarWeapons_familiarWeapons) exitWith {
-            player setCustomAimCoef 1;
-            player setUnitRecoilCoefficient 1;
+            player setCustomAimCoef familiarWeapons_originalAimCoef;
+            player setUnitRecoilCoefficient familiarWeapons_originalRecoilCoef;
         };
 
         private _nameWeapon = getText (configFile >> "CfgWeapons" >> _weapon >> "displayName");
         (format ["You're unfamiliar with the %1 and won't be able to use it as well as a weapon you are trained with.", _nameWeapon]) call CBA_fnc_notify;
     
-        player setCustomAimCoef (1 * familiarWeapons_swayPenalty);
-        player setUnitRecoilCoefficient (1 * familiarWeapons_recoilPenalty);
+        player setCustomAimCoef (familiarWeapons_originalAimCoef * familiarWeapons_swayPenalty);
+        player setUnitRecoilCoefficient (familiarWeapons_originalRecoilCoef * familiarWeapons_recoilPenalty);
     };
 };

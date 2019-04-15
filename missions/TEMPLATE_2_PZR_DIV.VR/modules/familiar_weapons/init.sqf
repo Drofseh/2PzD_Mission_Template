@@ -8,19 +8,21 @@
 // This CBA namespace is used to store all the arrays of compatible magazines and ammo
 familiarWeapons_nameSpace = true call CBA_fnc_createNamespace;
 
-if (familiarWeapons_accuracyPenalty < 1) then {
-    familiarWeapons_accuracyPenalty = 1;
+if (familiarWeapons_accuracyPenalty < 1.05) then {
+    familiarWeapons_accuracyPenalty = 1.05;
 };
 
-if (familiarWeapons_swayPenalty < 1) then {
-    familiarWeapons_swayPenalty = 1;
+if (familiarWeapons_swayPenalty < 1.05) then {
+    familiarWeapons_swayPenalty = 1.05;
 };
 
-if (familiarWeapons_recoilPenalty < 1) then {
-    familiarWeapons_recoilPenalty = 1;
+if (familiarWeapons_recoilPenalty < 1.05) then {
+    familiarWeapons_recoilPenalty = 1.05;
 };
 
 familiarWeapons_familiarWeapons = [];
+familiarWeapons_originalRecoilCoef = unitRecoilCoefficient player;
+familiarWeapons_originalAimCoef = getCustomAimCoef player;
 
 if (side player == WEST) then {
     {

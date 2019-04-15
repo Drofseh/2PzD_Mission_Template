@@ -1,5 +1,6 @@
 #include "actions.sqf"
 #include "chatCommands.sqf"
+#include "Diwako_Variables.sqf"
 //#include "Dropcan.sqf"
 //#include "gearLog.sqf"
 //#include "gearPersistent.sqf"

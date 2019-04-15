@@ -30,7 +30,7 @@
 //======================== Definitions ========================
 
 // For Kompanieführer and Zugführer
-#define FSJP40Jun_Weapon_Officer_Primary \
+#define FSJP40Jun_Weapon_Officer         \
         [                                \
             [                            \
                 [FSJ_Vest_PC],           \
@@ -46,7 +46,7 @@
         ] call FNC_AddItemRandomPercent;
 
 // For Kompanietruppführer and Zugtruppführer
-#define FSJP40Jun_Weapon_TF_Primary     \
+#define FSJP40Jun_Weapon_TF             \
         [                               \
             [                           \
                 [FSJ_Vest_PC],          \
@@ -96,7 +96,7 @@
                 [Ger_Mag_M1916,2]          \
             ],[1],                         \
             [                              \
-                [Ger_Mag_M172_10,1],       \
+                [Ger_Mag_M172_20,1],       \
                 [Ger_Weap_M172],           \
                 [Ger_Mag_M172_20,2]        \
             ],[1]                          \
@@ -131,7 +131,7 @@
                 [Ger_Mag_M1916,2]           \
             ],[1],                          \
             [                               \
-                [Ger_Mag_M172_10,1],        \
+                [Ger_Mag_M172_20,1],        \
                 [Ger_Weap_M172],            \
                 [Ger_Mag_M172_20,2]         \
             ],[1]                           \
@@ -153,7 +153,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        FSJP40Jun_Weapon_Officer_Primary;
+        FSJP40Jun_Weapon_Officer;
 
         //Secondary Weapon
         FSJP40Jun_Weapon_Officer_Secondary;
@@ -171,7 +171,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        FSJP40Jun_Weapon_TF_Primary;
+        FSJP40Jun_Weapon_TF;
 
         //Secondary Weapon
         FSJP40Jun_Weapon_Enlisted_Secondary;
@@ -195,7 +195,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        FSJP40Jun_Weapon_Officer_Primary;
+        FSJP40Jun_Weapon_Officer;
 
         //Secondary Weapon
         FSJP40Jun_Weapon_Officer_Secondary;
@@ -213,7 +213,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        FSJP40Jun_Weapon_TF_Primary;
+        FSJP40Jun_Weapon_TF;
 
         //Secondary Weapon
         FSJP40Jun_Weapon_Enlisted_Secondary;

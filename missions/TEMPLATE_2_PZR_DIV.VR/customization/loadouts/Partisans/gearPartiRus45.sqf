@@ -671,7 +671,7 @@
                     ],[50],
                     [//Yes!
                         [Civ_BP],
-                        [Ger_Weap_K98_RG],
+                        [Ger_Acc_K98_GL],
                         [Ger_Weap_K98_Grn_ATS,2],
                         [Ger_Weap_K98_Grn_AP,2],
                         [Ger_Weap_K98_Grn_ATL,1]

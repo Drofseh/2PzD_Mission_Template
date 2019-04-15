@@ -222,19 +222,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[14],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M12 Shotgun
@@ -288,19 +288,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[14],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M12 Shotgun
@@ -427,19 +427,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[14],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M12 Shotgun
@@ -493,19 +493,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[14],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M12 Shotgun
@@ -554,19 +554,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[14],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M12 Shotgun
@@ -614,17 +614,17 @@
         ],[40],
         [//M1 Garand
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[14],
         [//M1 Garand
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M1 Garand
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M12 Shotgun
@@ -816,19 +816,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1903
@@ -900,19 +900,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[20],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[19],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[19],
         [//M1903
@@ -968,19 +968,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[20],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[19],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[19],
         [//M1903
@@ -1036,19 +1036,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[20],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[19],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[19],
         [//M1903
@@ -1101,19 +1101,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1903
@@ -1187,19 +1187,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[14],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M12 Shotgun
@@ -1253,17 +1253,17 @@
         ],[30],
         [//M1 Garand
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[20],
         [//M1 Garand
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[19],
         [//M1 Garand
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[19],
         [//M1903
@@ -1311,19 +1311,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1903
@@ -1428,17 +1428,17 @@
         ],[30],
         [//M1 Garand
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[20],
         [//M1 Garand
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[19],
         [//M1 Garand
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[19],
         [//M1903
@@ -1486,19 +1486,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1903
@@ -1548,19 +1548,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[18],
         [//M1903
@@ -1617,19 +1617,19 @@
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_1],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[20],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_2],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[19],
         [//M1 Garand
         [USMC_Vest_M1G],
         [US_Mag_M1G,1],
-        [US_Weap_M1G_3],
+        [US_Weap_M1G],
         [US_Mag_M1G,10,"vest"]
         ],[19],
         [//M1903

@@ -2,6 +2,14 @@
 
 //=== Weapons ===
 
+//Primary
+#define Frn_Weap_MAS36          "CSA38_MAS36"
+#define Frn_Weap_MAS38          "csa38_mas38"
+
+//Ammo
+#define Frn_Ammo_MAS36          "CSA38_7_5_5xMAS"
+#define Frn_Ammo_MAS38          "CSA38_mas38mag"
+
 //=== Clothes ===
 
 //Uniform

@@ -1028,7 +1028,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Mess""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Mess""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="Messenger@Company HQ";
 					isPlayable=1;
 					class Inventory
@@ -1382,7 +1382,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Mess""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Mess""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="Messenger@Company HQ";
 					isPlayable=1;
 					class Inventory
@@ -3115,7 +3115,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Mess""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Mess""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="Messenger@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -3824,7 +3824,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Submachine Gunner@1 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -4160,7 +4160,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Submachine Gunner@1 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -4496,7 +4496,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Grenadier@1 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -4832,7 +4832,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Grenadier@1 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -5504,7 +5504,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@1 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -5840,7 +5840,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@1 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -6176,7 +6176,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@1 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -6512,7 +6512,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Machine Gunner@1 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -6848,7 +6848,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Machine Gun Assistant@1 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -7538,7 +7538,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Submachine Gunner@1 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -7875,7 +7875,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Submachine Gunner@1 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -8212,7 +8212,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Grenadier@1 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -8549,7 +8549,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Grenadier@1 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -9222,7 +9222,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@1 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -9558,7 +9558,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@1 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -9894,7 +9894,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@1 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -10230,7 +10230,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Machine Gunner@1 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -10566,7 +10566,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Machine Gun Assistant@1 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -11256,7 +11256,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Submachine Gunner@1 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -11593,7 +11593,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Submachine Gunner@1 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -11930,7 +11930,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Grenadier@1 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -12267,7 +12267,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Grenadier@1 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -12940,7 +12940,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@1 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -13276,7 +13276,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@1 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -13612,7 +13612,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@1 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -13948,7 +13948,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Machine Gunner@1 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -14284,7 +14284,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Machine Gun Assistant@1 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -15998,7 +15998,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Mess""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Mess""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="Messenger@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -16707,7 +16707,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Submachine Gunner@2 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -17062,7 +17062,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Submachine Gunner@2 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -17399,7 +17399,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Grenadier@2 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -17736,7 +17736,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Grenadier@2 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -18410,7 +18410,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@2 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -18746,7 +18746,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@2 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -19082,7 +19082,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@2 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -19418,7 +19418,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Machine Gunner@2 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -19754,7 +19754,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Machine Gun Assistant@2 Platoon | 1st Squad";
 					isPlayable=1;
 					class Inventory
@@ -20444,7 +20444,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Submachine Gunner@2 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -20780,7 +20780,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Submachine Gunner@2 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -21116,7 +21116,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Grenadier@2 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -21452,7 +21452,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Grenadier@2 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -22124,7 +22124,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@2 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -22460,7 +22460,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@2 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -22796,7 +22796,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@2 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -23132,7 +23132,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Machine Gunner@2 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -23468,7 +23468,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Machine Gun Assistant@2 Platoon | 2nd Squad";
 					isPlayable=1;
 					class Inventory
@@ -24158,7 +24158,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Submachine Gunner@2 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -24495,7 +24495,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_SMG""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Submachine Gunner@2 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -24832,7 +24832,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Grenadier@2 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -25169,7 +25169,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="1st Team | Grenadier@2 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -25842,7 +25842,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@2 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -26178,7 +26178,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@2 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -26514,7 +26514,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Rifleman@2 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -26850,7 +26850,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_MG""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Machine Gunner@2 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory
@@ -27186,7 +27186,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""R41Jan_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""R41Jan_MGA""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					description="2nd Team | Machine Gun Assistant@2 Platoon | 3rd Squad";
 					isPlayable=1;
 					class Inventory

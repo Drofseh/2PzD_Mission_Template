@@ -7,7 +7,7 @@
     //These are special and the won't work properly if you just put them in the init of the container.
     //If you're going to make an FSJ mission where the FSJ paradrop let Haas know and he will advise you.
     /*
-    null = [this] execVM "DropCan.sqf";
+    call compile preprocessFileLineNumbers "scripts\DropCan.sqf";
 
 [DC_CHQ, "FSJ_DC_CHQ"] call FNC_VehicleGearScript;          Cannister for Kompanietrupp
 [DC_Z1HQ, "FSJ_DC_Z1HQ"] call FNC_VehicleGearScript;            Cannister for 1 Zugtruppen
@@ -32,7 +32,7 @@ case "FSJ_DC_CHQ": {
 
     { //start of forEach _squad
 
-        _inventory = toUpper str magazines _x;
+        _inventory = toUpper (str (magazines _x));
 
         if (_inventory find toUpper Ger_Mag_K98 >= 1) then {
             [Ger_Weap_K98] call FNC_AddItemVehicle;
@@ -86,7 +86,6 @@ case "FSJ_DC_CHQ": {
 }; //end of case FSJ_DC_CHQ
 
 case "FSJ_DC_Z1HQ": {
-
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1HQ;
 
@@ -152,7 +151,6 @@ case "FSJ_DC_Z1HQ": {
 }; //end of case FSJ_DC_Z1HQ
 
 case "FSJ_DC_Z2HQ": {
-
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z2HQ;
 
@@ -216,16 +214,13 @@ case "FSJ_DC_Z2HQ": {
     [GEN_Epi,8] call FNC_AddItemVehicle;
     [GEN_Saline500,15] call FNC_AddItemVehicle;
 }; //end of case FSJ_DC_Z2HQ
-
 //End HQs
 
-//Start 1 Zug
-
+//Start 1 Zug Gruppen
 case "FSJ_DC_Z1G1W": {
-
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1G1;
-    
+
     { //start of forEach _squad
 
         _inventory = toUpper (str (magazines _x));
@@ -257,7 +252,7 @@ case "FSJ_DC_Z1G1W": {
     } forEach _squad; //end of weapon matching
 
     //extra items
-    [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
+    [Ger_Acc_K98_GL, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
     [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
@@ -289,7 +284,6 @@ case "FSJ_DC_Z1G1W": {
 }; //end of case FSJ_DC_Z1G1W
 
 case "FSJ_DC_Z1G2W": {
-
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1G2;
 
@@ -324,7 +318,7 @@ case "FSJ_DC_Z1G2W": {
     } forEach _squad; //end of weapon matching
 
     //extra items
-    [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
+    [Ger_Acc_K98_GL, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
     [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
@@ -356,7 +350,6 @@ case "FSJ_DC_Z1G2W": {
 }; //end of case FSJ_DC_Z1G2W
 
 case "FSJ_DC_Z1G3W": {
-
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1G3;
 
@@ -391,7 +384,7 @@ case "FSJ_DC_Z1G3W": {
     } forEach _squad; //end of weapon matching
 
     //extra items
-    [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
+    [Ger_Acc_K98_GL, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
     [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
@@ -421,13 +414,10 @@ case "FSJ_DC_Z1G3W": {
     [GEN_BandageP, 10] call FNC_AddItemVehicle;
     [GEN_TQ, 10] call FNC_AddItemVehicle;
 }; //end of case FSJ_DC_Z1G3W
+//End 1 Zug Gruppen
 
-//End 1 Zug
-
-//Start 2 Zug
-
+//Start 2 Zug Gruppen
 case "FSJ_DC_Z2G1W": {
-
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1G1;
 
@@ -462,7 +452,7 @@ case "FSJ_DC_Z2G1W": {
     } forEach _squad; //end of weapon matching
 
     //extra items
-    [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
+    [Ger_Acc_K98_GL, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
     [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
@@ -494,7 +484,6 @@ case "FSJ_DC_Z2G1W": {
 }; //end of case FSJ_DC_Z2G1W
 
 case "FSJ_DC_Z2G2W": {
-
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1G2;
 
@@ -529,7 +518,7 @@ case "FSJ_DC_Z2G2W": {
     } forEach _squad; //end of weapon matching
 
     //extra items
-    [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
+    [Ger_Acc_K98_GL, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
     [Ger_Mag_K98, 60] call FNC_AddItemVehicle;
@@ -561,7 +550,6 @@ case "FSJ_DC_Z2G2W": {
 }; //end of case FSJ_DC_Z2G2W
 
 case "FSJ_DC_Z2G3W": {
-
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1G3;
 
@@ -596,7 +584,7 @@ case "FSJ_DC_Z2G3W": {
     } forEach _squad; //end of weapon matching
 
     //extra items
-    [Ger_Weap_K98_RG, 1] call FNC_AddItemVehicle;
+    [Ger_Acc_K98_GL, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98_Zf39, 1] call FNC_AddItemVehicle;
     [Ger_Weap_K98, 5] call FNC_AddItemVehicle;
     [Ger_Mag_K98, 60] call FNC_AddItemVehicle;

@@ -48,7 +48,7 @@
 
 //======================== Definitions ========================
 
-#define WHREF42Oct_Weapon_Officer_Primary \
+#define WHREF42Oct_Weapon_Officer         \
         [                                 \
             [                             \
                 [Ger_Mag_MP40,1],         \
@@ -67,7 +67,7 @@
             ],[12]                        \
         ] call FNC_AddItemRandomPercent;
 
-#define WHREF42Jan_Weapon_Gruppe_Primary  \
+#define WHREF42Jan_Weapon_Gruppe          \
         [                                 \
             [                             \
                 [Ger_Mag_MP40,1],         \
@@ -86,7 +86,7 @@
             ],[12]                        \
         ] call FNC_AddItemRandomPercent;
 
-#define WHREF42Oct_Weapon_Rifleman_Primary \
+#define WHREF42Oct_Weapon_Rifleman         \
         [                                  \
             [                              \
                 [Ger_Mag_K98,1],           \
@@ -96,7 +96,7 @@
             [                              \
                 [Rus_Mag_Mosin,1],         \
                 [Rus_Weap_MosM9130],       \
-                [Rus_Weap_Mos_Bayo],       \
+                [Rus_Acc_Mos_Bayo],       \
                 [Rus_Mag_Mosin,12,"vest"]  \
             ],[20],                        \
             [                              \
@@ -105,9 +105,9 @@
                 [Rus_Mag_SVT40,6,"vest"]  \
             ],[9],                         \
             [                              \
-                [Ger_Mag_G41,1],           \
-                [Ger_Weap_G41W],           \
-                [Ger_Mag_G41,6,"vest"]    \
+                [Ger_Mag_G41w,1],           \
+                [Ger_Weap_G41w],           \
+                [Ger_Mag_G41w,6,"vest"]    \
             ],[1],                         \
             [                              \
                 [Rus_Mag_Mosin,1],         \
@@ -116,7 +116,7 @@
             ],[1]                          \
         ] call FNC_AddItemRandomPercent;
 
-#define WHREF42Oct_Weapon_MG_Primary      \
+#define WHREF42Oct_Weapon_MG              \
         [                                 \
             [                             \
                 [Ger_Mag_MG_50,1],        \
@@ -155,32 +155,35 @@
         ] call FNC_AddItemRandomPercent;
 
 //1 for Gruppe leaders, 2 for Gewehrschütze, 3 for MG-Hilfsschütze, 5 for MG-Munitionsträger
-#define WHREF42Oct_Weapon_MG_Ammo(COUNT)                    \
-        _weaponsArray = [];                                 \
-        {                                                   \
-            _weapon = primaryWeapon _x;                     \
-            if (                                            \
-                _weapon == Ger_Weap_MG34 ||                 \
-                _weapon == Rus_Weap_DP ||                   \
-                _weapon == Ger_Weap_MG42                    \
-            ) then {                                        \
-                _weaponsArray pushBack _weapon;             \
-            };                                              \
-        } forEach units group _unit;                        \
-                                                            \
-        if (count _weaponsArray != 0) then {                \
-            _ammobearer = selectRandom _weaponsArray;       \
-            switch (_ammobearer) do {                       \
-                case Ger_Weap_MG34: {                       \
-                    [Ger_Mag_MG_50,COUNT] call FNC_AddItem; \
-                };                                          \
-                case Rus_Weap_DP: {                         \
-                    [Rus_Mag_DP,COUNT] call FNC_AddItem;    \
-                };                                          \
-                case Ger_Weap_MG42: {                       \
-                    [Ger_Mag_MG_50,COUNT] call FNC_AddItem; \
-                };                                          \
-            };                                              \
+#define WHREF42Oct_Weapon_MG_Ammo(COUNT)                               \
+        _weaponsArray = [];                                            \
+        {                                                              \
+            _weapon = primaryWeapon _x;                                \
+            if (                                                       \
+                _weapon == Ger_Weap_MG34 ||                            \
+                _weapon == Rus_Weap_DP ||                              \
+                _weapon == Ger_Weap_MG42                               \
+            ) then {                                                   \
+                _weaponsArray pushBack _weapon;                        \
+            };                                                         \
+        } forEach units group _unit;                                   \
+                                                                       \
+        if (count _weaponsArray != 0) then {                           \
+            _ammobearer = selectRandom _weaponsArray;                  \
+            switch (_ammobearer) do {                                  \
+                case Ger_Weap_MG34: {                                  \
+                    [Ger_Mag_MG_50,COUNT,"backpack"] call FNC_AddItem; \
+                };                                                     \
+                case Rus_Weap_DP: {                                    \
+                    [Rus_Mag_DP,COUNT,"backpack"] call FNC_AddItem;    \
+                };                                                     \
+                case Ger_Weap_MG42: {                                  \
+                    [Ger_Mag_MG_50,COUNT,"backpack"] call FNC_AddItem; \
+                };                                                     \
+                case Ger_Weap_MG30: {                                  \
+                    [Ger_Mag_MG30,COUNT,"backpack"] call FNC_AddItem;  \
+                };                                                     \
+            };                                                         \
         };
 
 #define WHREF42Oct_Weapon_Officer_Secondary \
@@ -226,7 +229,7 @@
                 [Ger_Mag_M1916,2]           \
             ],[1],                          \
             [                               \
-                [Ger_Mag_M172_10,1],        \
+                [Ger_Mag_M172_20,1],        \
                 [Ger_Weap_M172],            \
                 [Ger_Mag_M172_20,2]         \
             ],[0.5]                         \
@@ -271,7 +274,7 @@
                 [Ger_Mag_M1916,2]            \
             ],[1],                           \
             [                                \
-                [Ger_Mag_M172_10,1],         \
+                [Ger_Mag_M172_20,1],         \
                 [Ger_Weap_M172],             \
                 [Ger_Mag_M172_20,2]          \
             ],[0.5]                          \
@@ -295,7 +298,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Officer_Primary;
+        WHREF42Oct_Weapon_Officer;
 
         //Secondary Weapon
         WHREF42Oct_Weapon_Officer_Secondary;
@@ -313,7 +316,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Officer_Primary;
+        WHREF42Oct_Weapon_Officer;
 
         //Secondary Weapon
         WHREF42Oct_Weapon_Enlisted_Secondary;
@@ -333,7 +336,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Officer_Primary;
+        WHREF42Oct_Weapon_Officer;
 
         //Secondary Weapon
         WHREF42Oct_Weapon_Officer_Secondary;
@@ -352,7 +355,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Officer_Primary;
+        WHREF42Oct_Weapon_Officer;
 
         //Extra
         [Ger_Gren_HE_SC,1] call FNC_AddItem;
@@ -373,7 +376,7 @@
         [GEN_Headset] call FNC_AddItem;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Rifleman_Primary;
+        WHREF42Oct_Weapon_Rifleman;
     };
 
     //Melder
@@ -388,7 +391,7 @@
         Ger_Default_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Rifleman_Primary;
+        WHREF42Oct_Weapon_Rifleman;
 
         //Extra
         [Ger_Gren_HE_SC,1] call FNC_AddItem;
@@ -407,7 +410,7 @@
         Ger_Default_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Rifleman_Primary;
+        WHREF42Oct_Weapon_Rifleman;
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
@@ -429,7 +432,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        WHREF42Jan_Weapon_Gruppe_Primary;
+        WHREF42Jan_Weapon_Gruppe;
 
         //Extra
         [Ger_Gren_HE_SC,1] call FNC_AddItem;
@@ -450,7 +453,7 @@
         [GEN_BinoG] call FNC_AddItem;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Rifleman_Primary;
+        WHREF42Oct_Weapon_Rifleman;
 
         //Extra
         [Ger_Gren_HE_SC,1] call FNC_AddItem;
@@ -470,7 +473,7 @@
         Ger_Default_Equipment;
 
         //Primary Weapon
-        WHREF42Jan_Weapon_Gruppe_Primary;
+        WHREF42Jan_Weapon_Gruppe;
 
         //Extra
         [Ger_Gren_HE_SC,1] call FNC_AddItem;
@@ -494,7 +497,7 @@
         WHREF42Oct_Weapon_Enlisted_Secondary;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_MG_Primary;
+        WHREF42Oct_Weapon_MG;
     };
 
     //MG-Hilfsschütze
@@ -511,7 +514,7 @@
         [GEN_ace_sparebarrel] call FNC_AddItem;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Rifleman_Primary;
+        WHREF42Oct_Weapon_Rifleman;
 
         //Extra
         WHREF42Oct_Weapon_MG_Ammo(3);
@@ -530,7 +533,7 @@
         Ger_Default_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Rifleman_Primary;
+        WHREF42Oct_Weapon_Rifleman;
 
         //Extra
         WHREF42Oct_Weapon_MG_Ammo(5);
@@ -550,7 +553,7 @@
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
         [Ger_Weap_K98] call FNC_AddItem;
-        [Ger_Weap_K98_RG] call FNC_AddItem;
+        [Ger_Acc_K98_GL,1,"vest"] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
         [Ger_Mag_RGrn_HE,4] call FNC_AddItem;
         [Ger_Mag_RGrn_ATS,3] call FNC_AddItem;
@@ -570,7 +573,7 @@
         Ger_MedicS_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Rifleman_Primary;
+        WHREF42Oct_Weapon_Rifleman;
 
         //Extra
         [Ger_Gren_HE_SC,1] call FNC_AddItem;
@@ -589,7 +592,7 @@
         Ger_Default_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Rifleman_Primary;
+        WHREF42Oct_Weapon_Rifleman;
 
         //Extra
         [Ger_Gren_HE_SC,1] call FNC_AddItem;
@@ -658,7 +661,7 @@
         GEN_Mortar_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Rifleman_Primary;
+        WHREF42Oct_Weapon_Rifleman;
 
         //Extra
         [Ger_Mag_Mort_HE,4] call FNC_AddItem;
@@ -680,7 +683,7 @@
         [GEN_ace_sparebarrel] call FNC_AddItem;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Rifleman_Primary;
+        WHREF42Oct_Weapon_Rifleman;
 
         //Launcher
         [Ger_Weap_MG_T,1] call FNC_AddItem;
@@ -728,7 +731,7 @@
         Ger_Default_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Rifleman_Primary;
+        WHREF42Oct_Weapon_Rifleman;
 
         //Extra
         [Ger_Mag_MG_250,2] call FNC_AddItem;
@@ -749,7 +752,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Rifleman_Primary;
+        WHREF42Oct_Weapon_Rifleman;
 
         //Extra
         [Ger_Mag_PzB39,20,"backpack"] call FNC_AddItem;
@@ -790,7 +793,7 @@
         Ger_Default_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Rifleman_Primary;
+        WHREF42Oct_Weapon_Rifleman;
 
         //Extra
         [Ger_Mag_PzB39,20,"backpack"] call FNC_AddItem;
@@ -812,7 +815,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        WHREF42Oct_Weapon_Officer_Primary;
+        WHREF42Oct_Weapon_Officer;
 
         //Secondary Weapon
         WHREF42Oct_Weapon_Officer_Secondary;

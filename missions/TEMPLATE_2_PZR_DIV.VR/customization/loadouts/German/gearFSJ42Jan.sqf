@@ -30,7 +30,7 @@
 //======================== Definitions ========================
 
 // For Kompanieführer, Zugführer, Kompanietruppführer, Zugtruppführer, Gruppenführer
-#define FSJ42Jan_Weapon_Officer_Primary \
+#define FSJ42Jan_Weapon_Officer         \
         [                               \
             [                           \
                 [Ger_Mag_MP40,1],       \
@@ -108,7 +108,7 @@
                 [Ger_Mag_M1916,2]         \
             ],[1],                        \
             [                             \
-                [Ger_Mag_M172_10,1],      \
+                [Ger_Mag_M172_20,1],      \
                 [Ger_Weap_M172],          \
                 [Ger_Mag_M172_20,2]       \
             ],[0.5]                       \
@@ -143,7 +143,7 @@
                 [Ger_Mag_M1916,2]          \
             ],[1],                         \
             [                              \
-                [Ger_Mag_M172_10,1],       \
+                [Ger_Mag_M172_20,1],       \
                 [Ger_Weap_M172],           \
                 [Ger_Mag_M172_20,2]        \
             ],[0.5]                        \
@@ -166,7 +166,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        FSJ42Jan_Weapon_Officer_Primary;
+        FSJ42Jan_Weapon_Officer;
 
         //Secondary Weapon
         FSJ42Jan_Weapon_Officer_Secondary;
@@ -188,7 +188,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        FSJ42Jan_Weapon_Officer_Primary;
+        FSJ42Jan_Weapon_Officer;
 
         //Secondary Weapon
         FSJ42Jan_Weapon_Enlisted_Secondary;
@@ -213,7 +213,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        FSJ42Jan_Weapon_Officer_Primary;
+        FSJ42Jan_Weapon_Officer;
 
         //Secondary Weapon
         FSJ42Jan_Weapon_Officer_Secondary;
@@ -235,7 +235,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        FSJ42Jan_Weapon_Officer_Primary;
+        FSJ42Jan_Weapon_Officer;
 
         //Secondary Weapon
         FSJ42Jan_Weapon_Enlisted_Secondary;
@@ -320,7 +320,7 @@
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        FSJ42Jan_Weapon_Officer_Primary;
+        FSJ42Jan_Weapon_Officer;
 
         //Extra
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
@@ -433,7 +433,7 @@
         FSJ42Jan_Weapon_Rifle;
 
         //Extra
-        [Ger_Weap_K98_RG] call FNC_AddItem;
+        [Ger_Acc_K98_GL,1,"vest"] call FNC_AddItem;
         [Ger_Mag_RGrn_HE,4] call FNC_AddItem;
         [Ger_Mag_RGrn_ATS,4] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;

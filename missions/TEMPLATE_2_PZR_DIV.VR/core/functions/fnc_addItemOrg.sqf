@@ -164,16 +164,16 @@ for "_x" from 1 to _amount do {
     };
 
     if (!_succes) then {
-        if (_unit canAdd _item && _type != "Backpack") then {
+        if (_unit canAdd _item && _type != "backpack" && _type != "vest" && _type != "uniform" && _type != "Headgear" && _type != "Glasses" && _type != "Binocular") then {
             _unit addItem _item;
             _succes = true;
         } else {
             _message = "FNC_AddItem: Warning couldn't fit %1 anywhere, originally intended for %2, in %3, case %4";
 
             if (_position == "none") then {
-                _message = "FNC_AddItem: Warning couldn't fit %1 anywhere, in %3, case %4";
+                _message = "FNC_AddItem: Warning couldn't fit %1 (type %5) anywhere, in %3, case %4";
             };
-            (format [_message, _item, _position, _unit, _loadoutType]) call FNC_DebugMessage;
+            (format [_message, _item, _position, _unit, _loadoutType, _type]) call FNC_DebugMessage;
         };
     };
 };

@@ -5,89 +5,134 @@
 //=== Weapons ===
 
 //Primary
-#define Ger_Weap_K98_E          "LIB_K98"
-#define Ger_Weap_K98            "LIB_K98_Late"
-#define Ger_Weap_K98_Zf39       "LIB_K98ZF39"
-#define Ger_Weap_K98_Zf41       "fow_w_k98_scoped"
+#define Ger_Weap_FG42           "LIB_FG42G"
 #define Ger_Weap_G3340          "LIB_G3340"
-#define Ger_Weap_G41W           "LIB_G41"
-#define Ger_Weap_G43            "fow_w_g43"
-#define Ger_Weap_MP38           "LIB_MP38"
-#define Ger_Weap_MP40           "fow_w_mp40"
-#define Ger_Weap_StG44          "fow_w_stg44"
-#define Ger_Weap_FG42           "fow_w_fg42"
-#define Ger_Weap_PzB39          "LIB_PTRD"
+#define Ger_Weap_G3340_T        "CSA38_vz33_40ii"
+#define Ger_Weap_G41w           "LIB_G41"
+#define Ger_Weap_G43            "LIB_G43"
+#define Ger_Weap_G98            "CSA38_g98i"
+#define Ger_Weap_G98_S          "CSA38_g98ii"
+#define Ger_Weap_G98_S_T        "CSA38_g98iv"
+#define Ger_Weap_G98_T          "CSA38_g98iii"
+#define Ger_Weap_K98            "LIB_K98_Late"
+#define Ger_Weap_K98_E          "LIB_K98"
+#define Ger_Weap_K98_E_T        "CSA38_kar98k3"
+#define Ger_Weap_K98_E_T_Zf39   "CSA38_kar98k4"
+#define Ger_Weap_K98_E_Zf39     "CSA38_kar98k2"
+#define Ger_Weap_K98_T          "CSA38_kar98k6"
+#define Ger_Weap_K98_Zf39       "LIB_K98ZF39"
+#define Ger_Weap_K98_Zf41       "LIB_K98ZF39"
+#define Ger_Weap_K98b           "CSA38_g98"
+#define Ger_Weap_M1895          "CSA38_M1895"
+#define Ger_Weap_M1895_GL       "csa38_gvz23"
+#define Ger_Weap_M1895k         "CSA38_M1895k"
+
+#define Ger_Weap_MG30           "CSA38_MG30"
 #define Ger_Weap_MG34           "LIB_MG34"
 #define Ger_Weap_MG34_PT        "LIB_MG34_PT"
 #define Ger_Weap_MG42           "LIB_MG42"
+#define Ger_Weap_S31M           "CSA38_31m"
+
+#define Ger_Weap_MP18           "CSA38_Mp18"
+#define Ger_Weap_MP28           "CSA38_Mp28"
+#define Ger_Weap_MP35           "CSA38_Mp35"
+#define Ger_Weap_MP38           "LIB_MP38"
+#define Ger_Weap_MP38_F         "CSA38_Mp38"
+#define Ger_Weap_MP40           "fow_w_mp40"
+#define Ger_Weap_MP40_F         "CSA38_Mp40"
+
+#define Ger_Weap_PzB39          "LIB_PTRD"
 
 //Secondary
-#define Ger_Weap_M1916          "LIB_M1896"
+#define Ger_Weap_LP08           "csa38_lp08"
 #define Ger_Weap_M172           "LIB_M712_2PzD"
-#define Ger_Weap_P38            "LIB_P38"
+#define Ger_Weap_M1916          "LIB_M1896"
+#define Ger_Weap_M1930          "csa38_m1896"
 #define Ger_Weap_P08            "fow_w_p08"
-#define Ger_Weap_PPK            "fow_w_ppk"
+#define Ger_Weap_P38            "LIB_P38"
+#define Ger_Weap_PP             "CSA38_WaltherPP"
+#define Ger_Weap_PPK            "CSA38_WaltherPPK"
 
 //Launcher
-#define Ger_Weap_PzFaust_K      "LIB_Faustpatrone"
-#define Ger_Weap_PzFaust_30     "LIB_PzFaust_30m"
-#define Ger_Weap_PzFaust_60     "LIB_PzFaust_60m"
-#define Ger_Weap_PzFaust_100    "fow_w_pzfaust_100"
-#define Ger_Weap_Pzschrck       "LIB_RPzB"
-#define Ger_Weap_Pzschrck_W     "LIB_RPzB_w"
+#define Ger_Weap_MG_T           "LIB_Laffete_Tripod"
 #define Ger_Weap_MortB          "LIB_GrWr34_Barrel"
 #define Ger_Weap_MortT          "LIB_GrWr34_Tripod"
-#define Ger_Weap_MG_T           "LIB_Laffete_Tripod"
+#define Ger_Weap_PzFaust_100    "fow_w_pzfaust_100"
+#define Ger_Weap_PzFaust_30     "LIB_PzFaust_30m"
+#define Ger_Weap_PzFaust_60     "LIB_PzFaust_60m"
+#define Ger_Weap_PzFaust_K      "LIB_Faustpatrone"
+#define Ger_Weap_Pzschrck       "LIB_RPzB"
+#define Ger_Weap_Pzschrck_W     "LIB_RPzB_w"
 
 //Attachments
-#define Ger_Weap_K98_RG         "LIB_ACC_GW_SB_Empty"
-#define Ger_Weap_K98_Bay        "LIB_ACC_K98_Bayo"
-#define Ger_Weap_FG42_Bay       "fow_w_acc_fg42_bayo"
+#define Ger_Acc_K98_GL          "LIB_ACC_GW_SB_Empty"
+#define Ger_Acc_K98_Bayo        "LIB_ACC_K98_Bayo"
 
 //Ammo
-#define Ger_Mag_K98             "LIB_5Rnd_792x57"
-#define Ger_Mag_G41             "LIB_10Rnd_792x57_clip"
-#define Ger_Mag_G43             "LIB_10Rnd_792x57"
-#define Ger_Mag_MP40            "LIB_32Rnd_9x19"
-#define Ger_Mag_StG44           "LIB_30Rnd_792x33"
 #define Ger_Mag_FG42            "LIB_20Rnd_792x57"
+#define Ger_Mag_G41w            "LIB_10Rnd_792x57_clip"
+#define Ger_Mag_G43             "LIB_10Rnd_792x57"
+#define Ger_Mag_M1895           "CSA38_8_00_5xMannlicher"
+#define Ger_Mag_K98             "LIB_5Rnd_792x57"
+#define Ger_Mag_K98_Trench      "csa38_7_92_20xMauserKAR"
+#define Ger_Mag_StG44           "LIB_30Rnd_792x33"
+
+#define Ger_Mag_MP28_32         "csa38_9_MM_32xMP28"
+#define Ger_Mag_MP28_20         "csa38_9_MM_20xMP28"
+#define Ger_Mag_MP35_32         "csa38_9_MM_32xMP35"
+#define Ger_Mag_MP35_24         "csa38_9_MM_24xMP35"
+#define Ger_Mag_MP35_20         "csa38_9_MM_20xMP35"
+#define Ger_Mag_MP40            "LIB_32Rnd_9x19"
+
 #define Ger_Mag_PzB39           "LIB_1Rnd_145x114"
-#define Ger_Mag_MG_50           "LIB_50Rnd_792x57"
+
 #define Ger_Mag_MG_100          "LIB_100Rnd_792x57"
 #define Ger_Mag_MG_150          "LIB_150Rnd_792x57_2PzD"
 #define Ger_Mag_MG_200          "LIB_200Rnd_792x57_2PzD"
 #define Ger_Mag_MG_250          "LIB_250Rnd_792x57_2PzD"
-#define Ger_Mag_MG_SMK50        "LIB_50Rnd_792x57_SMK"
+#define Ger_Mag_MG_50           "LIB_50Rnd_792x57"
 #define Ger_Mag_MG_SMK100       "LIB_100Rnd_792x57_SMK_2PzD"
 #define Ger_Mag_MG_SMK150       "LIB_150Rnd_792x57_SMK_2PzD"
 #define Ger_Mag_MG_SMK200       "LIB_200Rnd_792x57_SMK_2PzD"
 #define Ger_Mag_MG_SMK250       "LIB_250Rnd_792x57_SMK_2PzD"
-#define Ger_Mag_MG_SmE50        "LIB_50Rnd_792x57_sS"
+#define Ger_Mag_MG_SMK50        "LIB_50Rnd_792x57_SMK"
 #define Ger_Mag_MG_SmE100       "LIB_100Rnd_792x57_sS_2PzD"
 #define Ger_Mag_MG_SmE150       "LIB_150Rnd_792x57_sS_2PzD"
 #define Ger_Mag_MG_SmE200       "LIB_200Rnd_792x57_sS_2PzD"
 #define Ger_Mag_MG_SmE250       "LIB_250Rnd_792x57_sS_2PzD"
+#define Ger_Mag_MG_SmE50        "LIB_50Rnd_792x57_sS"
+#define Ger_Mag_MG30            "CSA38_7_92_30xMauserMG"
+#define Ger_Mag_MG30_SMK        "CSA38_7_92_30xMauserMGAP"
 #define Ger_Mag_MG34_PT         "LIB_75Rnd_792x57"
-#define Ger_Mag_M1916           "LIB_10Rnd_9x19_M1896"
-#define Ger_Mag_M172_10         "LIB_10Rnd_763x25_2PzD"
+#define Ger_Mag_S31M            "csa38_8x56_25xMannlicherMG"
+
 #define Ger_Mag_M172_20         "LIB_20Rnd_763x25_2PzD"
-#define Ger_Mag_P38             "LIB_8Rnd_9x19"
+#define Ger_Mag_M172_40         "LIB_40Rnd_763x25_2PzD"
+#define Ger_Mag_M1916           "LIB_10Rnd_9x19_M1896"
+#define Ger_Mag_M1930           "csa38_7_63mm_10xMauser"
 #define Ger_Mag_P08             "LIB_8Rnd_9x19_P08"
-#define Ger_Mag_PPK             "LIB_7Rnd_9x19"
+#define Ger_Mag_P08_D           "csa38_9_MM_32xMP18"
+#define Ger_Mag_P38             "LIB_8Rnd_9x19"
+#define Ger_Mag_PP              "csa38_7_65mm_8xBrow"
+#define Ger_Mag_PPK             "csa38_7_65mm_7xBrow"
+
 #define Ger_Mag_RGrn_ATS        "LIB_1Rnd_G_PZGR_30"
 #define Ger_Mag_RGrn_ATL        "LIB_1Rnd_G_PZGR_40"
 #define Ger_Mag_RGrn_HE         "LIB_1Rnd_G_SPRGR_30"
+#define Ger_Mag_RGrn_M1895      "CSA38_Grg21"
+
 #define Ger_Mag_Pzschrck        "LIB_1Rnd_RPzB"
+
 #define Ger_Mag_Mort_HE         "LIB_1Rnd_81mm_Mo_HE"
 #define Ger_Mag_Mort_Smoke      "LIB_1Rnd_81mm_Mo_Smoke"
 #define Ger_Mag_Mort_Illum      "LIB_1Rnd_81mm_Mo_Illum"
 
 //Grenades
 #define Ger_Gren_Frag_P         "LIB_M39"
-#define Ger_Gren_HE_SC          "fow_e_m24"
 #define Ger_Gren_Frag_SF        "fow_e_m24_spli"
-#define Ger_Gren_HE_SCK         "fow_e_m24K"
 #define Ger_Gren_Frag_SKF       "fow_e_m24K_spli"
+#define Ger_Gren_HE_SC          "fow_e_m24"
+#define Ger_Gren_HE_SCK         "fow_e_m24K"
 #define Ger_Gren_Smoke_W        "fow_e_nb39b"
 
 //=== Clothes ===
@@ -207,7 +252,7 @@
 #define Ger_VestW_VCrew         "fow_v_heer_tankcrew_p38"
 
 //Backpack
-#define Ger_BP_r                ["B_LIB_GER_A_frame"],["B_LIB_GER_A_frame_kit"],["B_LIB_GER_A_frame_zeltbahn"],["B_LIB_GER_Tonister34_cowhide"]
+#define Ger_BP_r                ["B_LIB_GER_A_frame"],["B_LIB_GER_A_frame_kit"],["B_LIB_GER_A_frame_zeltbahn"],["csa38_GEBatoh5"],["B_LIB_GER_Tonister34_cowhide"]
 #define Ger_BP_AF               "B_LIB_GER_A_frame"
 #define Ger_BP_AF_Kit           "B_LIB_GER_A_frame_kit"
 #define Ger_BP_AF_ZB            "B_LIB_GER_A_frame_zeltbahn"
@@ -262,29 +307,29 @@
 
 //=== EQUIPMENT ===
 
-#define Ger_Default_Equipment                \
-    [GEN_Map] call FNC_AddItem;              \
-    [GEN_Compass] call FNC_AddItem;          \
-    [GEN_Watch] call FNC_AddItem;            \
-    [GEN_ace_hammer] call FNC_AddItem;       \
-    [GEN_ace_shovel] call FNC_AddItem;       \
-    [GEN_BandageField,4] call FNC_AddItem;   \
-    [GEN_TQ,1] call FNC_AddItem;             \
-    [GEN_ace_flashlightEU] call FNC_AddItem; \
-    [GEN_ace_cabletie] call FNC_AddItem;     \
-    [GEN_ace_canteen_F] call FNC_AddItem;    \
-    [                                        \
-        [[GEN_ace_ration_Beef]],[1],         \
-        [[GEN_ace_ration_TSoup]],[1],        \
-        [[GEN_ace_ration_CSoup]],[1],        \
-        [[GEN_ace_ration_Steak]],[1],        \
-        [[GEN_ace_ration_Pasta]],[1]         \
-    ] call FNC_AddItemRandomPercent;
+#define Ger_Default_Equipment                          \
+    [                                                  \
+        [[GEN_ace_ration_Beef]],[1],                   \
+        [[GEN_ace_ration_TSoup]],[1],                  \
+        [[GEN_ace_ration_CSoup]],[1],                  \
+        [[GEN_ace_ration_Steak]],[1],                  \
+        [[GEN_ace_ration_Pasta]],[1]                   \
+    ] call FNC_AddItemRandomPercent;                   \
+    [GEN_Map,"uniform"] call FNC_AddItem;              \
+    [GEN_Compass,"uniform"] call FNC_AddItem;          \
+    [GEN_Watch,"uniform"] call FNC_AddItem;            \
+    [GEN_ace_hammer,"uniform"] call FNC_AddItem;       \
+    [GEN_ace_shovel,"uniform"] call FNC_AddItem;       \
+    [GEN_BandageField,4,"uniform"] call FNC_AddItem;   \
+    [GEN_TQ,1,"uniform"] call FNC_AddItem;             \
+    [GEN_ace_flashlightEU,"uniform"] call FNC_AddItem; \
+    [GEN_ace_cabletie,"uniform"] call FNC_AddItem;     \
+    [GEN_ace_canteen_F,"uniform"] call FNC_AddItem;
 
-#define Ger_Leader_Equipment             \
-    [GEN_BinoG] call FNC_AddItem;        \
-    [GEN_ace_maptools] call FNC_AddItem; \
-    [GEN_Whistle] call FNC_AddItem;
+#define Ger_Leader_Equipment                       \
+    [GEN_BinoG,"uniform"] call FNC_AddItem;        \
+    [GEN_ace_maptools,"uniform"] call FNC_AddItem; \
+    [GEN_Whistle,"uniform"] call FNC_AddItem;
 
 #define Ger_MedicP_Equipment                             \
     [GEN_BandageField,10,"backpack"] call FNC_AddItem;   \

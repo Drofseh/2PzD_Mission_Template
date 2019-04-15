@@ -133,7 +133,7 @@
                 [Ger_Mag_M1916,2]    \
             ],[1],                   \
             [                        \
-                [Ger_Mag_M172_10,1], \
+                [Ger_Mag_M172_20,1], \
                 [Ger_Weap_M172],     \
                 [Ger_Mag_M172_20,2]  \
             ],[0.5]                  \
@@ -167,7 +167,7 @@
                 [Ger_Mag_M1916,2]    \
             ],[1],                   \
             [                        \
-                [Ger_Mag_M172_10,1], \
+                [Ger_Mag_M172_20,1], \
                 [Ger_Weap_M172],     \
                 [Ger_Mag_M172_20,2]  \
             ],[0.5]                  \
@@ -450,7 +450,7 @@
         DAK42Oct_Weapon_Rifle;
 
         //Extra
-        [Ger_Weap_K98_RG] call FNC_AddItem;
+        [Ger_Acc_K98_GL,1,"vest"] call FNC_AddItem;
         [Ger_Mag_RGrn_HE,4] call FNC_AddItem;
         [Ger_Mag_RGrn_ATS,3] call FNC_AddItem;
         [Ger_Mag_RGrn_ATL,1] call FNC_AddItem;

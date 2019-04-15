@@ -95,7 +95,7 @@
                 [Rus_Vest_Mosin],         \
                 [Rus_Mag_Mosin,1],        \
                 [Rus_Weap_MosM9130],      \
-                [Rus_Weap_Mos_Bayo],      \
+                [Rus_Acc_Mos_Bayo],      \
                 [Rus_Mag_Mosin,12,"vest"] \
             ],[63],                       \
             [/*SVT*/                      \
@@ -119,7 +119,7 @@
                 [Rus_Vest_Mosin],         \
                 [Rus_Mag_Mosin,1],        \
                 [Rus_Weap_MosM9130],      \
-                [Rus_Weap_Mos_Bayo],      \
+                [Rus_Acc_Mos_Bayo],      \
                 [Rus_Mag_Mosin,12,"vest"] \
             ],[60],                       \
             [/*SVT*/                      \
@@ -365,11 +365,11 @@
         //Primary Weapon & Vest
         [Rus_Mag_Mosin,1] call FNC_AddItem;
         [Rus_Weap_MosM9130] call FNC_AddItem;
-        [Rus_Weap_Mos_GL] call FNC_AddItem;
+        [Rus_Acc_Mos_GL] call FNC_AddItem;
         [Rus_Mag_Mosin,12,"vest"] call FNC_AddItem;
 
         //Extra
-        [Rus_Mag_RGrn_HE,6] call FNC_AddItem;
+        [Rus_Mag_RGrn_HE,8] call FNC_AddItem;
     };
 
     //Rifleman

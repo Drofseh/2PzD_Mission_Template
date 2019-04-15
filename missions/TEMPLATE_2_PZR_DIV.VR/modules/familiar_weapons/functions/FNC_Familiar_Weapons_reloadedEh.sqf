@@ -24,6 +24,8 @@ FNC_Foreign_Weapons_reloadedEh = {
 
         if (_weaponLearning < 100) exitWith {
             _weaponLearning = _weaponLearning + 10;
+            familiarWeapons_reloadSuccessChance = familiarWeapons_reloadSuccessChance + (familiarWeapons_reloadSuccessChance / 500 * _weaponLearning));
+            familiarWeapons_reloadFailureChance = familiarWeapons_reloadFailureChance - (familiarWeapons_reloadFailureChance / 500 * _weaponLearning));
             familiarWeapons_nameSpace setVariable [("familiarWeapons" + _nameWeapon), _weaponLearning];
         };
 

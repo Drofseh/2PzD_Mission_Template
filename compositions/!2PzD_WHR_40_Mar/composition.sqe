@@ -858,7 +858,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_614";
 					description="Gewehrschütze@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
@@ -1136,7 +1136,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_615";
 					description="Gewehrschütze@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
@@ -1691,7 +1691,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_R06_2";
 					description="MG-Richtschütze@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
@@ -1969,7 +1969,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_R07_2";
 					description="MG-Hilfsschütze@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
@@ -2247,7 +2247,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_R09_2";
 					description="MG-Munitionsträger@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
@@ -2525,7 +2525,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_R10_2";
 					description="MG-Munitionsträger@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
@@ -2803,7 +2803,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_R10_3";
 					description="Hilfs-Krankenträger@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
@@ -3082,7 +3082,7 @@ class items
 				class Attributes
 				{
 					rank="CORPORAL";
-					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_R03_2";
 					description="Gefreiter@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
@@ -3341,7 +3341,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Gren""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_R04_2";
 					description="Grenadier@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
@@ -3620,7 +3620,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_R05_2";
 					description="Gewehrschütze@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
@@ -3898,7 +3898,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_R08_2";
 					description="Gewehrschütze@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
@@ -4176,7 +4176,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_R11_2";
 					description="Gewehrschütze@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
@@ -4454,7 +4454,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_R11_3";
 					description="Gewehrschütze@1. Kompanie | Ersatztruppen";
 					isPlayable=1;
@@ -5309,7 +5309,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_VCrew""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_T102_2";
 					description="Panzerbesatzung@Eva";
 					isPlayable=1;
@@ -5589,7 +5589,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_VCrew""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_T103_2";
 					description="Panzerbesatzung@Eva";
 					isPlayable=1;
@@ -5869,7 +5869,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_VCrew""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_VCrew""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_T104_2";
 					description="Panzerbesatzung@Eva";
 					isPlayable=1;
@@ -7267,7 +7267,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Mess""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Mess""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1615";
 					description="Melder@1. Zug | Zugtrupp";
 					isPlayable=1;
@@ -7805,7 +7805,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1124";
 					description="MG-Richtschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -8084,7 +8084,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1125";
 					description="MG-Hilfsschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -8363,7 +8363,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1126";
 					description="MG-Munitionsträger@1. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -8642,7 +8642,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1127";
 					description="MG-Munitionsträger@1. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -8921,7 +8921,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1134";
 					description="Hilfs-Krankenträger@1. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -9201,7 +9201,7 @@ class items
 				class Attributes
 				{
 					rank="CORPORAL";
-					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1128";
 					description="Gefreiter@1. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -9461,7 +9461,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1129";
 					description="Grenadier@1. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -9740,7 +9740,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1130";
 					description="Gewehrschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -10019,7 +10019,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1131";
 					description="Gewehrschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -10298,7 +10298,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1132";
 					description="Gewehrschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -10577,7 +10577,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1135";
 					description="Gewehrschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -11414,7 +11414,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1224";
 					description="MG-Richtschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -11693,7 +11693,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1225";
 					description="MG-Hilfsschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -11972,7 +11972,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1226";
 					description="MG-Munitionsträger@1. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -12251,7 +12251,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1227";
 					description="MG-Munitionsträger@1. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -12530,7 +12530,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1235";
 					description="Hilfs-Krankenträger@1. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -12810,7 +12810,7 @@ class items
 				class Attributes
 				{
 					rank="CORPORAL";
-					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1228";
 					description="Gefreiter@1. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -13070,7 +13070,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1229";
 					description="Grenadier@1. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -13349,7 +13349,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1230";
 					description="Gewehrschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -13628,7 +13628,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1231";
 					description="Gewehrschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -13907,7 +13907,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1232";
 					description="Gewehrschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -14186,7 +14186,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1234";
 					description="Gewehrschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -15043,7 +15043,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1237";
 					description="MG-Richtschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -15322,7 +15322,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1238";
 					description="MG-Hilfsschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -15601,7 +15601,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1239";
 					description="MG-Munitionsträger@1. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -15880,7 +15880,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1240";
 					description="MG-Munitionsträger@1. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -16159,7 +16159,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1241";
 					description="Hilfs-Krankenträger@1. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -16439,7 +16439,7 @@ class items
 				class Attributes
 				{
 					rank="CORPORAL";
-					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1242";
 					description="Gefreiter@1. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -16718,7 +16718,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1243";
 					description="Grenadier@1. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -16997,7 +16997,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1244";
 					description="Gewehrschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -17276,7 +17276,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1245";
 					description="Gewehrschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -17555,7 +17555,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1246";
 					description="Gewehrschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -17834,7 +17834,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_1247";
 					description="Gewehrschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -19492,7 +19492,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Mess""] call FNC_GearScript;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Mess""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2615";
 					description="Melder@2. Zug | Zugtrupp";
 					isPlayable=1;
@@ -20026,7 +20026,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2224";
 					description="MG-Richtschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -20305,7 +20305,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2225";
 					description="MG-Hilfsschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -20584,7 +20584,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2226";
 					description="MG-Munitionsträger@2. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -20863,7 +20863,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2227";
 					description="MG-Munitionsträger@2. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -21143,7 +21143,7 @@ class items
 				class Attributes
 				{
 					rank="CORPORAL";
-					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2228";
 					description="Gefreiter@2. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -21422,7 +21422,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2229";
 					description="Grenadier@2. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -21701,7 +21701,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2230";
 					description="Gewehrschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -21980,7 +21980,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2231";
 					description="Gewehrschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -22259,7 +22259,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2232";
 					description="Gewehrschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -22538,7 +22538,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2235";
 					description="Gewehrschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -23097,7 +23097,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2234";
 					description="Hilfs-Krankenträger@2. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -23650,7 +23650,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_218";
 					description="MG-Richtschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -23929,7 +23929,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2122";
 					description="MG-Hilfsschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -24208,7 +24208,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2123";
 					description="MG-Munitionsträger@2. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -24487,7 +24487,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2124";
 					description="MG-Munitionsträger@2. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -24766,7 +24766,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2131";
 					description="Hilfs-Krankenträger@2. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -25046,7 +25046,7 @@ class items
 				class Attributes
 				{
 					rank="CORPORAL";
-					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2125";
 					description="Gefreiter@2. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -25325,7 +25325,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2126";
 					description="Grenadier@2. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -25604,7 +25604,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2127";
 					description="Gewehrschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -25883,7 +25883,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2128";
 					description="Gewehrschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -26162,7 +26162,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2129";
 					description="Gewehrschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -26441,7 +26441,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2132";
 					description="Gewehrschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -27275,7 +27275,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_219";
 					description="MG-Richtschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -27554,7 +27554,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2134";
 					description="MG-Hilfsschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -27833,7 +27833,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2135";
 					description="MG-Munitionsträger@2. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -28112,7 +28112,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MGAB""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2136";
 					description="MG-Munitionsträger@2. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -28391,7 +28391,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_MedS""] call FNC_GearScript;  " \n "[this, ""RED""] call FNC_SetTeamColor; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2137";
 					description="Hilfs-Krankenträger@2. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -28671,7 +28671,7 @@ class items
 				class Attributes
 				{
 					rank="CORPORAL";
-					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_S3""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2138";
 					description="Gefreiter@2. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -28950,7 +28950,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2139";
 					description="Grenadier@2. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -29229,7 +29229,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2140";
 					description="Gewehrschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -29508,7 +29508,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2141";
 					description="Gewehrschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -29787,7 +29787,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2142";
 					description="Gewehrschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -30066,7 +30066,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "nul = [this] execVM ""scripts\removeMap.sqf"";";
+					init="[this,""WHR40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
 					name="G_2143";
 					description="Gewehrschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;

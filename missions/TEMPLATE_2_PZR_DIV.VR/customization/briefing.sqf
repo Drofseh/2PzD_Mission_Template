@@ -12,7 +12,8 @@ Don't use "double quotes" unless you escape them with more ""double quotes"".
 These 'single quotes' are ok, but might break clickable markers.
 */
 
-/* Heading convensions are as follows:
+/*
+Heading convensions are as follows:
 I. Main Briefing Sections - Captial Roman Numerals, I, II, III, IV, etc
   A. Main Sub-sections - Capital Latin Letters, A, B, C, D, etc
     1. Second Order Sub-sections, Arabic Numerals, 1, 2, 3, 4, etc
@@ -20,19 +21,32 @@ I. Main Briefing Sections - Captial Roman Numerals, I, II, III, IV, etc
         i. Forth order Sub-sections, Lowercase Roman Numerals, i, ii, iii, iv, etc
 */
 
-/*Other formatting may be used on text by including it inside <font> </font> tags.
+/*
+Other formatting may be used on text by including it inside <font> </font> tags.
 For example:
-<font color='#BBBBBB' size='16' face='PuristaBold'>This example formats the colour, size, and font of the text.</font><br/>
+<font color='#BBBBBB' size='16' face='PuristaBold'>This example formats the colour, size, and font of this text.</font><br/>
     Colour accepts HTML colour codes.
     Size 12 is the default text size.
     When changing the face, the fonts must be available in game.
         Available fonts can be found the in config viewer under configfile >> "CfgFontFamilies"
         EtelkaNarrowMediumPro is broken and should not be used.
+*/
 
+/*
 To make a word clickable, in order to auto move and zoom the map, you can tie it to a map marker
 Example:
 <marker name='markername'>description(words or numbers)</marker>
 <marker name='obja'>Objective Alpha</marker>
+*/
+
+/*
+To add an image to the briefing place the image in the customization folder with briefing.sqf
+Include the image using the image tag
+<img image='ImageName.jpg'/>
+
+Make sure the filesize of your image isn't too large. You don't want to create a huge mission for the players to download.
+Don't use too many images or your mission filesize will be too large.
+Make sure to put the images in a new annex tab instead of cluttering the normal tabs.
 */
 
 //======================== Important Sections Not Specific to Side ========================

@@ -88,27 +88,27 @@
 
 //=== EQUIPMENT ===
 
-#define IJA_Default_Equipment                \
-    [GEN_Map] call FNC_AddItem;              \
-    [GEN_Compass] call FNC_AddItem;          \
-    [GEN_Watch] call FNC_AddItem;            \
-    [GEN_ace_hammer] call FNC_AddItem;       \
-    [GEN_ace_shovel] call FNC_AddItem;       \
-    [GEN_BandageField,4] call FNC_AddItem;   \
-    [GEN_TQ,1] call FNC_AddItem;             \
-    [GEN_ace_flashlightEU] call FNC_AddItem; \
-    [GEN_ace_cabletie] call FNC_AddItem;     \
-    [GEN_ace_canteen_F] call FNC_AddItem;    \
-    [                                        \
-        [[GEN_ace_ration_Lamb]],[1],         \
-        [[GEN_ace_ration_Beef]],[1],         \
-        [[GEN_ace_ration_CSoup]],[1],        \
-        [[GEN_ace_ration_Dumpling]],[1]      \
-    ] call FNC_AddItemRandomPercent;
+#define IJA_Default_Equipment                          \
+    [                                                  \
+        [[GEN_ace_ration_Lamb]],[1],                   \
+        [[GEN_ace_ration_Beef]],[1],                   \
+        [[GEN_ace_ration_CSoup]],[1],                  \
+        [[GEN_ace_ration_Dumpling]],[1]                \
+    ] call FNC_AddItemRandomPercent;                   \
+    [GEN_Map,"uniform"] call FNC_AddItem;              \
+    [GEN_Compass,"uniform"] call FNC_AddItem;          \
+    [GEN_Watch,"uniform"] call FNC_AddItem;            \
+    [GEN_ace_hammer,"uniform"] call FNC_AddItem;       \
+    [GEN_ace_shovel,"uniform"] call FNC_AddItem;       \
+    [GEN_BandageField,4,"uniform"] call FNC_AddItem;   \
+    [GEN_TQ,1,"uniform"] call FNC_AddItem;             \
+    [GEN_ace_flashlightEU,"uniform"] call FNC_AddItem; \
+    [GEN_ace_cabletie,"uniform"] call FNC_AddItem;     \
+    [GEN_ace_canteen_F,"uniform"] call FNC_AddItem;
 
-#define IJA_Leader_Equipment      \
-    [GEN_BinoG] call FNC_AddItem; \
-    [GEN_ace_maptools] call FNC_AddItem;
+#define IJA_Leader_Equipment                \
+    [GEN_BinoG,"uniform"] call FNC_AddItem; \
+    [GEN_ace_maptools,"uniform"] call FNC_AddItem;
 
 #define IJA_Medic_Equipment                              \
     [GEN_BandageField,10,"backpack"] call FNC_AddItem;   \

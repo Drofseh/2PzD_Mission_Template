@@ -8,8 +8,6 @@
 
 //Launcher
 
-//Vickers Backpack
-
 //Attachments
 
 //Ammo

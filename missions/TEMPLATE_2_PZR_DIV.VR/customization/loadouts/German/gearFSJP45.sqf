@@ -56,7 +56,7 @@
             ],[25]                       \
         ] call FNC_AddItemRandomPercent;
 
-// For all men with rifles
+// For all men with rifles except the MG-Hilfsschütze & Grenadier
 #define FSJP45Jan_Weapon_Rifle           \
         [                                \
             [                            \
@@ -77,7 +77,7 @@
             ],[10]                       \
         ] call FNC_AddItemRandomPercent;
 
-// For all men with rifles
+// For the MG-Hilfsschütze
 #define FSJP45Jan_Weapon_MGA             \
         [                                \
             [                            \
@@ -92,6 +92,25 @@
             [                            \
                 [Ger_Mag_FG42,12,"vest"] \
             ],[10]                       \
+        ] call FNC_AddItemRandomPercent;
+
+// For Grenadier
+#define FSJP45Jan_Weapon_Grenadier        \
+        [                                 \
+            [                             \
+                [FSJ_Vest_Band],          \
+                [Ger_Acc_K98_GL,1,"vest"] \
+                [Ger_Mag_K98,24,"vest"]   \
+                [Ger_Mag_RGrn_HE,4]       \
+                [Ger_Mag_RGrn_ATL,4]      \
+            ],[80],                       \
+            [                             \
+                [Ger_Vest_StG44],         \
+                [Ger_Acc_K98_GL,1,"vest"] \
+                [Ger_Mag_StG44,6,"vest"]  \
+                [Ger_Mag_RGrn_HE,4]       \
+                [Ger_Mag_RGrn_ATL,4]      \
+            ],[20]                        \
         ] call FNC_AddItemRandomPercent;
 
 // For Kompanieführer, Zugführer
@@ -128,7 +147,7 @@
                 [Ger_Mag_M1916,2]          \
             ],[1],                         \
             [                              \
-                [Ger_Mag_M172_10,1],       \
+                [Ger_Mag_M172_20,1],       \
                 [Ger_Weap_M172],           \
                 [Ger_Mag_M172_20,2]        \
             ],[0.5]                        \
@@ -163,7 +182,7 @@
                 [Ger_Mag_M1916,2]           \
             ],[1],                          \
             [                               \
-                [Ger_Mag_M172_10,1],        \
+                [Ger_Mag_M172_20,1],        \
                 [Ger_Weap_M172],            \
                 [Ger_Mag_M172_20,2]         \
             ],[0.5]                         \
@@ -447,14 +466,12 @@
         Ger_Default_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
+        FSJP45Jan_Weapon_Grenadier;
 
         //Secondary Weapon
         FSJP45Jan_Weapon_Enlisted_Secondary;
 
         //Extra
-        [Ger_Mag_RGrn_HE,4] call FNC_AddItem;
-        [Ger_Mag_RGrn_ATL,4] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 

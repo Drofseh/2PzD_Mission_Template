@@ -50,7 +50,7 @@
         [                               \
             [                           \
                 [UK_Mag_LeeEn,1],       \
-                [UK_Weap_LeeEnNo1],     \
+                [UK_Weap_LeeEnNo1Mk3s],     \
                 [UK_Mag_LeeEn,5,"vest"] \
             ],[70],                     \
             [                           \
@@ -92,9 +92,9 @@
         ] call FNC_AddItemRandomPercent;
 
 #define UKEsx43Jan_Webley \
-        [UK_Mag_Webley455,1] call FNC_AddItem; \
-        [UK_Weap_Webley455] call FNC_AddItem; \
-        [UK_Mag_Webley455,3] call FNC_AddItem;
+        [UK_Mag_EnfieldNo2,1] call FNC_AddItem; \
+        [UK_Weap_EnfieldNo2] call FNC_AddItem; \
+        [UK_Mag_EnfieldNo2,3] call FNC_AddItem;
 
 //======================== Loadouts ========================
 
@@ -240,7 +240,7 @@
         [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
         [UK_Gren_WP,1] call FNC_AddItem;
-        [UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
+        [UK_Mag_Bren_30,2,"backpack"] call FNC_AddItem;
     };
 
     //Lance Corporal
@@ -261,7 +261,7 @@
         [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
         [UK_Gren_WP,1] call FNC_AddItem;
-        [UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
+        [UK_Mag_Bren_30,2,"backpack"] call FNC_AddItem;
     };
 
     //Bren Gunner
@@ -276,9 +276,9 @@
         UK_Default_Equipment;
 
         //Primary Weapon
-        [UK_Mag_Bren,1] call FNC_AddItem;
-        [UK_Weap_Bren] call FNC_AddItem;
-        [UK_Mag_Bren,10,"vest"] call FNC_AddItem;
+        [UK_Mag_Bren_30,1] call FNC_AddItem;
+        [UK_Weap_BrenMkII] call FNC_AddItem;
+        [UK_Mag_Bren_30,10,"vest"] call FNC_AddItem;
 
         //Secondary Weapon
         UKEsx43Jan_Webley;
@@ -301,7 +301,7 @@
 
         //Extra
         [GEN_ace_sparebarrel,1,"backpack"] call FNC_AddItem;
-        [UK_Mag_Bren,4,"backpack"] call FNC_AddItem;
+        [UK_Mag_Bren_30,4,"backpack"] call FNC_AddItem;
         [UK_Gren_Frag,1] call FNC_AddItem;
     };
 
@@ -321,7 +321,7 @@
 
         //Extra
         [UK_Gren_Frag,1] call FNC_AddItem;
-        [UK_Mag_Bren,10,"backpack"] call FNC_AddItem;
+        [UK_Mag_Bren_30,10,"backpack"] call FNC_AddItem;
     };
 
     //Rifleman
@@ -340,7 +340,7 @@
 
         //Extra
         [UK_Gren_Frag,1] call FNC_AddItem;
-        [UK_Mag_Bren,2,"backpack"] call FNC_AddItem;
+        [UK_Mag_Bren_30,2,"backpack"] call FNC_AddItem;
     };
 
 //Machine Gun Team
@@ -514,7 +514,7 @@
         UKEsx43Jan_LeeEn;
 
         //Extra
-        [UK_Mag_Boys,20,"backpack"] call FNC_AddItem;
+        [UK_Mag_Boys,5,"backpack"] call FNC_AddItem;
         [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
     };
@@ -536,7 +536,7 @@
         //Primary Weapon
         [UK_Mag_Boys,1] call FNC_AddItem;
         [UK_Weap_Boys] call FNC_AddItem;
-        [UK_Mag_Boys,20] call FNC_AddItem;
+        [UK_Mag_Boys,5] call FNC_AddItem;
     };
 
     //Boys Rifle Ammo Bearer
@@ -554,7 +554,7 @@
         UKEsx43Jan_LeeEn;
 
         //Extra
-        [UK_Mag_Boys,20,"backpack"] call FNC_AddItem;
+        [UK_Mag_Boys,5,"backpack"] call FNC_AddItem;
         [UK_Gren_Frag,1] call FNC_AddItem;
     };
 

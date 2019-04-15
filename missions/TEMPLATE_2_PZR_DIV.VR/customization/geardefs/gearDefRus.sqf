@@ -19,6 +19,7 @@
 #define Rus_Weap_DT             "LIB_DT"
 #define Rus_Weap_DT_O           "LIB_DT_OPTIC"
 #define Rus_Weap_PTRD           "LIB_PTRD"
+#define Rus_Weap_PTRS           "w39_urwz35"
 
 //Secondary
 #define Rus_Weap_TT33           "LIB_TT33"
@@ -33,8 +34,8 @@
 #define Rus_Weap_HMG_T          "LIB_Maxim_Bag"
 
 //Attachments
-#define Rus_Weap_Mos_Bayo       "LIB_ACC_M1891_Bayo"
-#define Rus_Weap_Mos_GL         "LIB_ACC_GL_DYAKONOV_Empty"
+#define Rus_Acc_Mos_Bayo        "LIB_ACC_M1891_Bayo"
+#define Rus_Acc_Mos_GL          "LIB_ACC_GL_DYAKONOV_Empty"
 #define Rus_Weap_SVT40_Optic    "LEN_optic_SVT_PU"
 
 //Ammo
@@ -51,6 +52,7 @@
 #define Rus_Mag_TT33            "LIB_8Rnd_762x25"
 #define Rus_Mag_M1895           "LIB_7Rnd_762x38"
 #define Rus_Mag_PTRD            "LIB_1Rnd_145x114"
+#define Rus_Mag_PTRS            "w39_7_92_4x107DS"
 #define Rus_Mag_RGrn_HE         "LIB_1Rnd_G_DYAKONOV"
 #define Rus_Mag_Mort_HE         "LIB_1Rnd_82mm_Mo_HE"
 #define Rus_Mag_Mort_Smoke      "LIB_1Rnd_82mm_Mo_Smoke"
@@ -124,29 +126,29 @@
 
 //=== EQUIPMENT ===
 
-#define Rus_Default_Equipment                \
-    [GEN_Map] call FNC_AddItem;              \
-    [GEN_Compass] call FNC_AddItem;          \
-    [GEN_Watch] call FNC_AddItem;            \
-    [GEN_ace_hammer] call FNC_AddItem;       \
-    [GEN_ace_shovel] call FNC_AddItem;       \
-    [GEN_BandageField,4] call FNC_AddItem;   \
-    [GEN_TQ,1] call FNC_AddItem;             \
-    [GEN_ace_flashlightEU] call FNC_AddItem; \
-    [GEN_ace_cabletie] call FNC_AddItem;     \
-    [GEN_ace_canteen_F] call FNC_AddItem;    \
-    [                                        \
-        [[GEN_ace_ration_Beef]],[1],         \
-        [[GEN_ace_ration_TSoup]],[1],        \
-        [[GEN_ace_ration_CSoup]],[1],        \
-        [[GEN_ace_ration_Steak]],[1],        \
-        [[GEN_ace_ration_Dumpling]],[1]      \
-    ] call FNC_AddItemRandomPercent;
+#define Rus_Default_Equipment                          \
+    [                                                  \
+        [[GEN_ace_ration_Beef]],[1],                   \
+        [[GEN_ace_ration_TSoup]],[1],                  \
+        [[GEN_ace_ration_CSoup]],[1],                  \
+        [[GEN_ace_ration_Steak]],[1],                  \
+        [[GEN_ace_ration_Dumpling]],[1]                \
+    ] call FNC_AddItemRandomPercent;                   \
+    [GEN_Map,"uniform"] call FNC_AddItem;              \
+    [GEN_Compass,"uniform"] call FNC_AddItem;          \
+    [GEN_Watch,"uniform"] call FNC_AddItem;            \
+    [GEN_ace_hammer,"uniform"] call FNC_AddItem;       \
+    [GEN_ace_shovel,"uniform"] call FNC_AddItem;       \
+    [GEN_BandageField,4,"uniform"] call FNC_AddItem;   \
+    [GEN_TQ,1,"uniform"] call FNC_AddItem;             \
+    [GEN_ace_flashlightEU,"uniform"] call FNC_AddItem; \
+    [GEN_ace_cabletie,"uniform"] call FNC_AddItem;     \
+    [GEN_ace_canteen_F,"uniform"] call FNC_AddItem;
 
-#define Rus_Leader_Equipment               \
-    [GEN_BinoR] call FNC_AddItem;          \
-    [GEN_ace_maptools] call FNC_AddItem;   \
-    [GEN_Whistle] call FNC_AddItem;
+#define Rus_Leader_Equipment                         \
+    [GEN_BinoR,"uniform"] call FNC_AddItem;          \
+    [GEN_ace_maptools,"uniform"] call FNC_AddItem;   \
+    [GEN_Whistle,"uniform"] call FNC_AddItem;
 
 #define Rus_Medic_Equipment                              \
     [GEN_BandageField,10,"backpack"] call FNC_AddItem;   \
@@ -163,29 +165,29 @@
 
 //=== EQUIPMENT ===
 
-#define VDV_Default_Equipment                \
-    [GEN_Map] call FNC_AddItem;              \
-    [GEN_Compass] call FNC_AddItem;          \
-    [GEN_Watch] call FNC_AddItem;            \
-    [GEN_ace_hammer] call FNC_AddItem;       \
-    [GEN_ace_shovel] call FNC_AddItem;       \
-    [GEN_BandageField,4] call FNC_AddItem;   \
-    [GEN_TQ,1] call FNC_AddItem;             \
-    [GEN_ace_flashlightEU] call FNC_AddItem; \
-    [GEN_ace_cabletie] call FNC_AddItem;     \
-    [GEN_ace_canteen_F] call FNC_AddItem;    \
-    [                                        \
-        [[GEN_ace_ration_Beef]],[1],         \
-        [[GEN_ace_ration_TSoup]],[1],        \
-        [[GEN_ace_ration_CSoup]],[1],        \
-        [[GEN_ace_ration_Steak]],[1],        \
-        [[GEN_ace_ration_Dumpling]],[1]      \
-    ] call FNC_AddItemRandomPercent;
+#define VDV_Default_Equipment                          \
+    [                                                  \
+        [[GEN_ace_ration_Beef]],[1],                   \
+        [[GEN_ace_ration_TSoup]],[1],                  \
+        [[GEN_ace_ration_CSoup]],[1],                  \
+        [[GEN_ace_ration_Steak]],[1],                  \
+        [[GEN_ace_ration_Dumpling]],[1]                \
+    ] call FNC_AddItemRandomPercent;                   \
+    [GEN_Map,"uniform"] call FNC_AddItem;              \
+    [GEN_Compass,"uniform"] call FNC_AddItem;          \
+    [GEN_Watch,"uniform"] call FNC_AddItem;            \
+    [GEN_ace_hammer,"uniform"] call FNC_AddItem;       \
+    [GEN_ace_shovel,"uniform"] call FNC_AddItem;       \
+    [GEN_BandageField,4,"uniform"] call FNC_AddItem;   \
+    [GEN_TQ,1,"uniform"] call FNC_AddItem;             \
+    [GEN_ace_flashlightEU,"uniform"] call FNC_AddItem; \
+    [GEN_ace_cabletie,"uniform"] call FNC_AddItem;     \
+    [GEN_ace_canteen_F,"uniform"] call FNC_AddItem;
 
-#define VDV_Leader_Equipment               \
-    [GEN_BinoR] call FNC_AddItem;          \
-    [GEN_ace_maptools] call FNC_AddItem;   \
-    [GEN_Whistle] call FNC_AddItem;
+#define VDV_Leader_Equipment                         \
+    [GEN_BinoR,"uniform"] call FNC_AddItem;          \
+    [GEN_ace_maptools,"uniform"] call FNC_AddItem;   \
+    [GEN_Whistle,"uniform"] call FNC_AddItem;
 
 #define VDV_Medic_Equipment                              \
     [GEN_BandageField,5,"backpack"] call FNC_AddItem;    \
@@ -202,7 +204,7 @@
 //=== Clothes ===
 
 //Uniform
-#define NKVD_Uni_LT         "U_LIB_NKVD_StLeutenant"
+#define NKVD_Uni_LT             "U_LIB_NKVD_StLeutenant"
 #define NKVD_Uni_Star           "U_LIB_NKVD_Starshina"
 #define NKVD_Uni_Sgt            "U_LIB_NKVD_Sergeant"
 #define NKVD_Uni_Efr            "U_LIB_NKVD_Efreitor"

@@ -3,25 +3,26 @@
 // ====== General Settings
 
 // Accuracy penalty represents how unfamiliar the character is with aiming the weapon.
-// Cannot be less than 1.
+// Cannot not be less than 1.05
 // 1 represents someone who is familiar with the weapon. A value of 2 is twice as inaccurate.
 familiarWeapons_accuracyPenalty = 1.1;
 
 // Sway penalty represents how unfamiliar the character is with the handling characteristics of the weapon.
-// Cannot be less than 1.
+// Cannot not be less than 1.05
 // 1 represents someone who is familiar with the weapon. A value of 2 is twice the amount of sway.
 familiarWeapons_swayPenalty = 1.1;
 
 // Recoil penalty represents how unfamiliar the character is with the recoil characteristics of the weapon.
-// Cannot be less than 1.
+// Cannot not be less than 1.05
 // 1 represents someone who is familiar with the weapon. A value of 2 is twice the recoil.
 familiarWeapons_recoilPenalty = 1.1;
 
 // Reload success and failure chances represent how often the character will screw up when reloading the weapon.
+// Must be positive numbers
 // They are relative and do not have to add to 100.
 // 3:1, 45:15, and 75:25 all produce the same odds.
-familiarWeapons_reloadSuccessChance = 75;
-familiarWeapons_reloadFailureChance = 25;
+familiarWeapons_reloadSuccessChance = 66;
+familiarWeapons_reloadFailureChance = 33;
 
 // ====== Whitelists
 

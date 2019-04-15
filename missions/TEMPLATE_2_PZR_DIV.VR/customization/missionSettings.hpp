@@ -1,11 +1,25 @@
-author = "PUT_YOUR_NAME_HERE"; //Author of the mission
-onLoadName = "PUT_YOUR_MISSION_NAME_HERE"; //Mission Name on loading screen
-loadScreen = "Logo.jpg"; //Sets the image displayed during the loading screen, make sure you make an image, or the default template image will appear
-onLoadMission = "PUT_YOUR_LOADING_TEXT_HERE"; //Text displayed under the image during the loading screen
-overviewPicture = "Logo.jpg"; //Sets the image displayed on the mission selection screen.
+//Author of the mission
+author = "PUT_YOUR_NAME_HERE";
 
-// overviewText = "Russians cross a bridge to capture a German HQ. Rus/Ger, 8:1"; //Text displayed on the mission selection screen that describes the mission.
-// overviewText doesn't appear to work, must be set in the editor Multiplayer settings.
+//Mission Name on loading screen
+onLoadName = "PUT_YOUR_MISSION_NAME_HERE";
+
+//Sets the image displayed during the loading screen, make sure you make an image, or the default template image will appear
+//Must be a .jpg or .paa file
+//Dimensions should be equal to a power of 2 on each side (256, 512, 1024, etc) and the aspect ratio should be 2:1 (512x256, 1024x512, etc)
+loadScreen = "Logo.jpg";
+
+//Text displayed under the image during the loading screen
+onLoadMission = "PUT_YOUR_LOADING_TEXT_HERE";
+
+//Sets the image displayed on the mission selection screen.
+//By default the template uses the same image as for the loading screen.
+//Must be a .jpg or .paa file
+//If you want to make a seperate overview picture then make sure it follows the same dimensional rules as the loading image
+overviewPicture = "Logo.jpg";
+
+//Text displayed on the mission selection screen that describes the mission.
+overviewText = "MY_COOL_MISSION_DESCRIPTION";
 
 class Header {
 

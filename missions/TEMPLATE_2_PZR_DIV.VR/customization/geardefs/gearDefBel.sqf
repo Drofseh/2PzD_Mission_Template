@@ -1,5 +1,12 @@
 //========================Belgian Equipment Definitions========================
 
+//=== Weapons ===
+
+//Primary
+#define Bel_Weap_M24            "CSA38_sm1924"
+
+//Ammo
+
 //=== Clothes ===
 
 //Uniform

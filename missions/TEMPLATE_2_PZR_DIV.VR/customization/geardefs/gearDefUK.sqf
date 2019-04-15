@@ -3,10 +3,11 @@
 //=== Weapons ===
 
 //Primary
-#define UK_Weap_LeeEnNo1        "fow_w_leeenfield_no4mk1"
-#define UK_Weap_LeeEnNo4_1      "fow_w_leeenfield_no4mk1"
-#define UK_Weap_LeeEnNo4_2      "fow_w_leeenfield_no4mk1_redwood"
-#define UK_Weap_LeeEnNo4T       "LEN_SMLE_No4Mk1T"
+#define UK_Weap_LeeEnNo1Mk3     "CSA38_SMLE"
+#define UK_Weap_LeeEnNo1Mk3s    "LIB_LeeEnfield_No1"
+#define UK_Weap_LeeEnNo4_1      "LIB_LeeEnfield_No4"
+#define UK_Weap_LeeEnNo4_2      "LIB_LeeEnfield_No4"
+#define UK_Weap_LeeEnNo4T       "LIB_LeeEnfield_No4_Scoped"
 #define UK_Weap_LeeEnNo5        "fow_w_leeenfield_no5mk1_junglecarbine"
 #define UK_Weap_StenMkI         "LEN_StenMk5"
 #define UK_Weap_StenMkII        "fow_w_sten_mk2"
@@ -14,14 +15,17 @@
 #define UK_Weap_StenMkIII       "fow_w_sten_mk2"
 #define UK_Weap_StenMkV         "LEN_StenMk5"
 #define UK_Weap_StenMkVI        "fow_w_sten_mk5"
-#define UK_Weap_Bren            "fow_w_bren"
-#define UK_Weap_Boys            "LIB_PTRD"
+#define UK_Weap_BrenMkI         "CSA38_BRENMKI"
+#define UK_Weap_BrenMkII        "fow_w_bren"
+#define UK_Weap_Boys            "w39_urwz35"
 #define UK_Weap_DeLisle         "LIB_DELISLE"
 
 //Secondary
+#define UK_Weap_EnfieldNo2      "fow_w_webley"
 #define UK_Weap_HiPower         "fow_w_p640p"
-#define UK_Weap_Webley455       "fow_w_webley"
-#define UK_Weap_Welrod_1        "fow_w_welrod_mkii"
+#define UK_Weap_Webley455       "LIB_Webley_mk6"
+#define UK_Weap_WelrodMk1       "LIB_Welrod_mk1"
+#define UK_Weap_WelrodMk2       "fow_w_welrod_mkii"
 
 //Launcher
 #define UK_Weap_Piat            "fow_w_piat"
@@ -31,17 +35,22 @@
 #define UK_Weap_HMG_T           "fow_b_uk_vickers_support"
 
 //Attachments
-#define UK_Weap_LeeEnNo4_Bay    "fow_w_acc_no4_bayo"
+#define UK_Acc_LeeEnNo1_Bayo    "LIB_ACC_P1903_Bayo"
+#define UK_Acc_LeeEnNo4_Bayo    "LIB_ACC_No4_Mk2_Bayo"
+#define UK_Acc_LeeEn_GL         "LIB_ACC_GL_Enfield_CUP"
 
 //Ammo
 #define UK_Mag_LeeEn            "fow_10Rnd_303"
 #define UK_Mag_Sten             "fow_32Rnd_9x19_sten"
-#define UK_Mag_Bren             "fow_30Rnd_303_bren"
-#define UK_Mag_Boys             "LIB_1Rnd_145x114"
+#define UK_Mag_Bren_30          "fow_30Rnd_303_bren"
+#define UK_Mag_Bren_100         "CSA38_7_7_100x56R"
+#define UK_Mag_Boys             "w39_7_92_4x107DS"
 #define UK_Mag_DeLisle          "LIB_11Rnd_45ACP_2PzD"
+#define UK_Mag_EnfieldNo2       "fow_6Rnd_455"
 #define UK_Mag_HiPower          "fow_13Rnd_9x19"
-#define UK_Mag_Webley455        "fow_6Rnd_455"
-#define UK_Mag_Welrod_1         "LEN_8Rnd_765x17_2PzD"
+#define UK_Mag_Webley455        "LIB_6Rnd_455"
+#define UK_Mag_WelrodMk1        "LIB_6Rnd_9x19_Welrod"
+#define UK_Mag_WelrodMk2        "fow_8Rnd_765x17"
 #define UK_Mag_Piat_HEAT        "fow_1Rnd_piat_HEAT"
 #define UK_Mag_Piat_HE          "fow_1Rnd_piat_HE"
 
@@ -154,32 +163,32 @@
 
 //=== EQUIPMENT ===
 
-#define UK_Default_Equipment                 \
-    [GEN_Map] call FNC_AddItem;              \
-    [GEN_Compass] call FNC_AddItem;          \
-    [GEN_Watch] call FNC_AddItem;            \
-    [GEN_ace_hammer] call FNC_AddItem;       \
-    [GEN_ace_shovel] call FNC_AddItem;       \
-    [GEN_BandageField,4] call FNC_AddItem;   \
-    [GEN_TQ,1] call FNC_AddItem;             \
-    [GEN_ace_flashlightNA] call FNC_AddItem; \
-    [GEN_ace_cabletie] call FNC_AddItem;     \
-    [GEN_ace_canteen_F] call FNC_AddItem;    \
-    [                                        \
-        [[GEN_ace_ration_Lamb]],[1],         \
-        [[GEN_ace_ration_Beef]],[1],         \
-        [[GEN_ace_ration_TSoup]],[1],        \
-        [[GEN_ace_ration_CSoup]],[1],        \
-        [[GEN_ace_ration_Tikka]],[1],        \
-        [[GEN_ace_ration_Steak]],[1],        \
-        [[GEN_ace_ration_Pasta]],[1],        \
-        [[GEN_ace_ration_Dumpling]],[1]      \
-    ] call FNC_AddItemRandomPercent;
+#define UK_Default_Equipment                           \
+    [                                                  \
+        [[GEN_ace_ration_Lamb]],[1],                   \
+        [[GEN_ace_ration_Beef]],[1],                   \
+        [[GEN_ace_ration_TSoup]],[1],                  \
+        [[GEN_ace_ration_CSoup]],[1],                  \
+        [[GEN_ace_ration_Tikka]],[1],                  \
+        [[GEN_ace_ration_Steak]],[1],                  \
+        [[GEN_ace_ration_Pasta]],[1],                  \
+        [[GEN_ace_ration_Dumpling]],[1]                \
+    ] call FNC_AddItemRandomPercent;                   \
+    [GEN_Map,"uniform"] call FNC_AddItem;              \
+    [GEN_Compass,"uniform"] call FNC_AddItem;          \
+    [GEN_Watch,"uniform"] call FNC_AddItem;            \
+    [GEN_ace_hammer,"uniform"] call FNC_AddItem;       \
+    [GEN_ace_shovel,"uniform"] call FNC_AddItem;       \
+    [GEN_BandageField,4,"uniform"] call FNC_AddItem;   \
+    [GEN_TQ,1,"uniform"] call FNC_AddItem;             \
+    [GEN_ace_flashlightNA,"uniform"] call FNC_AddItem; \
+    [GEN_ace_cabletie,"uniform"] call FNC_AddItem;     \
+    [GEN_ace_canteen_F,"uniform"] call FNC_AddItem;
 
-#define UK_Leader_Equipment              \
-    [GEN_BinoUS] call FNC_AddItem;       \
-    [GEN_ace_maptools] call FNC_AddItem; \
-    [GEN_Whistle] call FNC_AddItem;
+#define UK_Leader_Equipment                        \
+    [GEN_BinoUS] call FNC_AddItem;                 \
+    [GEN_ace_maptools,"uniform"] call FNC_AddItem; \
+    [GEN_Whistle,"uniform"] call FNC_AddItem;
 
 #define UK_Medic_Equipment                               \
     [GEN_BandageField,10,"backpack"] call FNC_AddItem;   \
