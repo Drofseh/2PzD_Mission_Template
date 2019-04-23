@@ -64,7 +64,7 @@
                 [Ger_Vest_PC],             \
                 [Ger_Mag_MP35_32,1],       \
                 [Ger_Weap_MP35],           \
-                [Ger_Mag_MP35_32,3,"vest"  \
+                [Ger_Mag_MP35_32,3,"vest"] \
             ],[10],                        \
             [                              \
                 [Ger_Vest_PC],             \
@@ -100,7 +100,7 @@
             [                               \
                 [Ger_Vest_K98IFA],          \
                 [Ger_Mag_K98,1],            \
-                [Ger_Acc_K98_Bayo,1,"vest"] \
+                [Ger_Acc_K98_Bayo,1,"vest"], \
                 [Ger_Weap_K98_E],           \
                 [Ger_Mag_K98,12,"vest"]     \
             ],[60],                         \
@@ -126,7 +126,7 @@
                 [Ger_Vest_PC],              \
                 [Ger_Mag_MP35_32,1],        \
                 [Ger_Weap_MP35],            \
-                [Ger_Mag_MP35_32,3,"vest"   \
+                [Ger_Mag_MP35_32,3,"vest"]  \
             ],[10],                         \
             [                               \
                 [Ger_Vest_PC],              \
@@ -148,7 +148,7 @@
             [                               \
                 [Ger_Vest_K98IFA],          \
                 [Ger_Mag_K98,1],            \
-                [Ger_Acc_K98_Bayo,1,"vest"] \
+                [Ger_Acc_K98_Bayo,1,"vest"], \
                 [Ger_Weap_K98_E],           \
                 [Ger_Mag_K98,12,"vest"]     \
             ],[60],                         \
@@ -174,7 +174,7 @@
                 [Ger_Vest_SL],              \
                 [Ger_Mag_MP35_32,1],        \
                 [Ger_Weap_MP35],            \
-                [Ger_Mag_MP35_32,3,"vest"   \
+                [Ger_Mag_MP35_32,3,"vest"]  \
             ],[10],                         \
             [                               \
                 [Ger_Vest_SL],              \
@@ -196,7 +196,7 @@
             [                               \
                 [Ger_Vest_K98],             \
                 [Ger_Mag_K98,1],            \
-                [Ger_Acc_K98_Bayo,1,"vest"] \
+                [Ger_Acc_K98_Bayo,1,"vest"], \
                 [Ger_Weap_K98_E],           \
                 [Ger_Mag_K98,12,"vest"]     \
             ],[60],                         \
@@ -222,7 +222,7 @@
                 [Ger_Vest_MP40],            \
                 [Ger_Mag_MP35_32,1],        \
                 [Ger_Weap_MP35],            \
-                [Ger_Mag_MP35_32,6,"vest"   \
+                [Ger_Mag_MP35_32,6,"vest"]  \
             ],[10],                         \
             [                               \
                 [Ger_Vest_MP40],            \
@@ -243,7 +243,7 @@
         [                                   \
             [                               \
                 [Ger_Mag_K98,1],            \
-                [Ger_Acc_K98_Bayo,1,"vest"] \
+                [Ger_Acc_K98_Bayo,1,"vest"], \
                 [Ger_Weap_K98_E],           \
                 [Ger_Mag_K98,12,"vest"]     \
             ],[60],                         \

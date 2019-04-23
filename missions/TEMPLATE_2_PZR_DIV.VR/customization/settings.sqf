@@ -36,6 +36,7 @@ if (hasInterface) then { //This scope is for the players
     };
 
     setViewDistance 2000; //View distance for the player set lower on urbanised map to increase player performance
+    setTerrainGrid  50;   //Set grass to none
 
     //[[1,2], [0]] call ace_spectator_fnc_updateCameraModes; //Set ACE Spectator camera modes. Should only be enabled for TvT. See https://ace3mod.com/wiki/framework/spectator-framework.html#44-addremove-available-camera-modes
     //[[-2], [-1,0,1,2,3,4,5,6,7]] call ace_spectator_fnc_updateVisionModes; //Set ACE Spectator camera vision mods. Should only be enabled for TvT. See https://ace3mod.com/wiki/framework/spectator-framework.html#45-addremove-available-vision-modes

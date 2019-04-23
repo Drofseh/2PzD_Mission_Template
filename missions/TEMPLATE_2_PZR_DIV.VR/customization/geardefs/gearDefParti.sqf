@@ -55,23 +55,23 @@
         [[GEN_ace_ration_Pasta]],[1],                \
         [[GEN_ace_ration_Dumpling]],[1]              \
     ] call FNC_AddItemRandomPercent;                 \
-    [GEN_Map,"uniform"] call FNC_AddItem;            \
-    [GEN_Compass,"uniform"] call FNC_AddItem;        \
-    [GEN_Watch,"uniform"] call FNC_AddItem;          \
+    [GEN_Map] call FNC_AddItem;                      \
+    [GEN_Compass] call FNC_AddItem;                  \
+    [GEN_Watch] call FNC_AddItem;                    \
     [GEN_BandageField,2,"uniform"] call FNC_AddItem; \
     [GEN_TQ,1,"uniform"] call FNC_AddItem;           \
-    [GEN_ace_cabletie,"uniform"] call FNC_AddItem;   \
-    [GEN_ace_canteen_F,"uniform"] call FNC_AddItem;
+    [GEN_ace_cabletie,1,"uniform"] call FNC_AddItem; \
+    [GEN_ace_canteen_F,1,"uniform"] call FNC_AddItem;
 
-#define Parti_Leader_Equipment                         \
-    [                                                  \
-        [[GEN_BinoG]],[33],                            \
-        [[GEN_BinoR]],[33],                            \
-        [[GEN_BinoUS]],[33]                            \
-    ] call FNC_AddItemRandomPercent;                   \
-    [GEN_ace_flashlightEU,"uniform"] call FNC_AddItem; \
-    [GEN_ace_maptools,"uniform"] call FNC_AddItem;     \
-    [GEN_Whistle,"uniform"] call FNC_AddItem;
+#define Parti_Leader_Equipment                           \
+    [                                                    \
+        [[GEN_BinoG]],[33],                              \
+        [[GEN_BinoR]],[33],                              \
+        [[GEN_BinoUS]],[33]                              \
+    ] call FNC_AddItemRandomPercent;                     \
+    [GEN_ace_flashlightEU,1,"uniform"] call FNC_AddItem; \
+    [GEN_ace_maptools,1,"uniform"] call FNC_AddItem;     \
+    [GEN_Whistle,1,"uniform"] call FNC_AddItem;
 
 #define Parti_Medic_Equipment                            \
     [GEN_BandageField,5,"backpack"] call FNC_AddItem;    \

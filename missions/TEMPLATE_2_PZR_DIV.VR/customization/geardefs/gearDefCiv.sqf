@@ -63,4 +63,4 @@
 //=== EQUIPMENT ===
 
 #define Civ_Default_Equipment \
-    [GEN_Watch,"uniform"] call FNC_AddItem;
+    [GEN_Watch] call FNC_AddItem;

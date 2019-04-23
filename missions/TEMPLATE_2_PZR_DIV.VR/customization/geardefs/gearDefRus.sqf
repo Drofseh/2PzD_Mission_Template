@@ -126,29 +126,29 @@
 
 //=== EQUIPMENT ===
 
-#define Rus_Default_Equipment                          \
-    [                                                  \
-        [[GEN_ace_ration_Beef]],[1],                   \
-        [[GEN_ace_ration_TSoup]],[1],                  \
-        [[GEN_ace_ration_CSoup]],[1],                  \
-        [[GEN_ace_ration_Steak]],[1],                  \
-        [[GEN_ace_ration_Dumpling]],[1]                \
-    ] call FNC_AddItemRandomPercent;                   \
-    [GEN_Map,"uniform"] call FNC_AddItem;              \
-    [GEN_Compass,"uniform"] call FNC_AddItem;          \
-    [GEN_Watch,"uniform"] call FNC_AddItem;            \
-    [GEN_ace_hammer,"uniform"] call FNC_AddItem;       \
-    [GEN_ace_shovel,"uniform"] call FNC_AddItem;       \
-    [GEN_BandageField,4,"uniform"] call FNC_AddItem;   \
-    [GEN_TQ,1,"uniform"] call FNC_AddItem;             \
-    [GEN_ace_flashlightEU,"uniform"] call FNC_AddItem; \
-    [GEN_ace_cabletie,"uniform"] call FNC_AddItem;     \
-    [GEN_ace_canteen_F,"uniform"] call FNC_AddItem;
+#define Rus_Default_Equipment                            \
+    [                                                    \
+        [[GEN_ace_ration_Beef]],[1],                     \
+        [[GEN_ace_ration_TSoup]],[1],                    \
+        [[GEN_ace_ration_CSoup]],[1],                    \
+        [[GEN_ace_ration_Steak]],[1],                    \
+        [[GEN_ace_ration_Dumpling]],[1]                  \
+    ] call FNC_AddItemRandomPercent;                     \
+    [GEN_Map] call FNC_AddItem;                          \
+    [GEN_Compass] call FNC_AddItem;                      \
+    [GEN_Watch] call FNC_AddItem;                        \
+    [GEN_ace_hammer,1,"uniform"] call FNC_AddItem;       \
+    [GEN_ace_shovel,1,"uniform"] call FNC_AddItem;       \
+    [GEN_BandageField,4,"uniform"] call FNC_AddItem;     \
+    [GEN_TQ,1,"uniform"] call FNC_AddItem;               \
+    [GEN_ace_flashlightEU,1,"uniform"] call FNC_AddItem; \
+    [GEN_ace_cabletie,1,"uniform"] call FNC_AddItem;     \
+    [GEN_ace_canteen_F,1,"uniform"] call FNC_AddItem;
 
 #define Rus_Leader_Equipment                         \
-    [GEN_BinoR,"uniform"] call FNC_AddItem;          \
-    [GEN_ace_maptools,"uniform"] call FNC_AddItem;   \
-    [GEN_Whistle,"uniform"] call FNC_AddItem;
+    [GEN_BinoR] call FNC_AddItem;                    \
+    [GEN_ace_maptools,1,"uniform"] call FNC_AddItem; \
+    [GEN_Whistle,1,"uniform"] call FNC_AddItem;
 
 #define Rus_Medic_Equipment                              \
     [GEN_BandageField,10,"backpack"] call FNC_AddItem;   \
@@ -165,29 +165,29 @@
 
 //=== EQUIPMENT ===
 
-#define VDV_Default_Equipment                          \
-    [                                                  \
-        [[GEN_ace_ration_Beef]],[1],                   \
-        [[GEN_ace_ration_TSoup]],[1],                  \
-        [[GEN_ace_ration_CSoup]],[1],                  \
-        [[GEN_ace_ration_Steak]],[1],                  \
-        [[GEN_ace_ration_Dumpling]],[1]                \
-    ] call FNC_AddItemRandomPercent;                   \
-    [GEN_Map,"uniform"] call FNC_AddItem;              \
-    [GEN_Compass,"uniform"] call FNC_AddItem;          \
-    [GEN_Watch,"uniform"] call FNC_AddItem;            \
-    [GEN_ace_hammer,"uniform"] call FNC_AddItem;       \
-    [GEN_ace_shovel,"uniform"] call FNC_AddItem;       \
-    [GEN_BandageField,4,"uniform"] call FNC_AddItem;   \
-    [GEN_TQ,1,"uniform"] call FNC_AddItem;             \
-    [GEN_ace_flashlightEU,"uniform"] call FNC_AddItem; \
-    [GEN_ace_cabletie,"uniform"] call FNC_AddItem;     \
-    [GEN_ace_canteen_F,"uniform"] call FNC_AddItem;
+#define VDV_Default_Equipment                            \
+    [                                                    \
+        [[GEN_ace_ration_Beef]],[1],                     \
+        [[GEN_ace_ration_TSoup]],[1],                    \
+        [[GEN_ace_ration_CSoup]],[1],                    \
+        [[GEN_ace_ration_Steak]],[1],                    \
+        [[GEN_ace_ration_Dumpling]],[1]                  \
+    ] call FNC_AddItemRandomPercent;                     \
+    [GEN_Map] call FNC_AddItem;                          \
+    [GEN_Compass] call FNC_AddItem;                      \
+    [GEN_Watch] call FNC_AddItem;                        \
+    [GEN_ace_hammer,1,"uniform"] call FNC_AddItem;       \
+    [GEN_ace_shovel,1,"uniform"] call FNC_AddItem;       \
+    [GEN_BandageField,4,"uniform"] call FNC_AddItem;     \
+    [GEN_TQ,1,"uniform"] call FNC_AddItem;               \
+    [GEN_ace_flashlightEU,1,"uniform"] call FNC_AddItem; \
+    [GEN_ace_cabletie,1,"uniform"] call FNC_AddItem;     \
+    [GEN_ace_canteen_F,1,"uniform"] call FNC_AddItem;
 
 #define VDV_Leader_Equipment                         \
-    [GEN_BinoR,"uniform"] call FNC_AddItem;          \
-    [GEN_ace_maptools,"uniform"] call FNC_AddItem;   \
-    [GEN_Whistle,"uniform"] call FNC_AddItem;
+    [GEN_BinoR] call FNC_AddItem;                    \
+    [GEN_ace_maptools,1,"uniform"] call FNC_AddItem; \
+    [GEN_Whistle,1,"uniform"] call FNC_AddItem;
 
 #define VDV_Medic_Equipment                              \
     [GEN_BandageField,5,"backpack"] call FNC_AddItem;    \

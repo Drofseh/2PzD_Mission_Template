@@ -49,9 +49,9 @@ FNC_SupportFire_AmmoCheck = {
         sleep 5;
         [
             [(format ["%1 Rounds, HE,", _supportFire_ammoCountHE])],
-            [(format ["%1 rounds Smoke,", _supportFire_ammoCountSmoke, ])],
+            [(format ["%1 rounds Smoke,", _supportFire_ammoCountSmoke])],
             [(format ["%1 rounds Flare,", _supportFire_ammoCountFlare])],
-            ["remaining."],
+            ["remaining."]
         ] call CBA_fnc_notify;
         // systemChat "ammo hint spawn finished";
     };
