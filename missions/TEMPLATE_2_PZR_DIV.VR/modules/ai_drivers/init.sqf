@@ -63,7 +63,7 @@ aidrivers_createUnit = {
 
     doStop _unit;
 
-    FW_AidriverLastTimeIn = time;
+    FW_AidriverLastTimeIn = CBA_missionTime;
 
     [{vehicle (_this select 0) != _this select 0}, { //waiting for spawned unit to get into vehicle
         private _pfhID = [{
@@ -76,9 +76,9 @@ aidrivers_createUnit = {
                 doStop _unit;
             } else {
                 _unit enableAI "PATH";
-                FW_AidriverLastTimeIn = time;
+                FW_AidriverLastTimeIn = CBA_missionTime;
             };
-            if (time > 120 + FW_AidriverLastTimeIn || !alive _target || !alive _caller || !alive _unit || (vehicle _unit) != _target || (driver _target) != _unit) then {
+            if (CBA_missionTime > 120 + FW_AidriverLastTimeIn || !alive _target || !alive _caller || !alive _unit || (vehicle _unit) != _target || (driver _target) != _unit) then {
                 [_target, _caller] call aidrivers_removeUnit;
             };
         }, 1, _this] call CBA_fnc_addPerFrameHandler;

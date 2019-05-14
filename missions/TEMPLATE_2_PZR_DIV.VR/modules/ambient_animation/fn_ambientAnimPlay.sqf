@@ -15,7 +15,7 @@
     //find animations that are being played on linked units
     _linkedAnims = [];
 
-    _time = time - 10;
+    _time = CBA_missionTime - 10;
 
     {
         _xTime = _x getVariable ["ambientAnimMonitor_time",_time];

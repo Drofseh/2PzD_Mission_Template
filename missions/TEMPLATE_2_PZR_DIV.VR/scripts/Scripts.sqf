@@ -5,4 +5,5 @@
 //#include "gearLog.sqf"
 //#include "gearPersistent.sqf"
 #include "IFA3_variables.sqf"
+#include "mapTextures.sqf"
 //#include "vehGearPersistent.sqf"

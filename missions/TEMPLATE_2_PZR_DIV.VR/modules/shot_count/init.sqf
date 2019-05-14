@@ -9,7 +9,7 @@ if (isServer) then {
         };
     }] call CBA_fnc_addClassEventHandler;
 
-    [{ time > 0 }, {
+    [{ CBA_missionTime > 0 }, {
         {
             if ((_x getVariable ["added_shotCount",false]) isEqualTo false) then {
                 _x setVariable ["added_shotCount",true];

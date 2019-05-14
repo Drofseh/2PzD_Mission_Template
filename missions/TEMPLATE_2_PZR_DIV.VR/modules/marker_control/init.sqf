@@ -24,7 +24,7 @@ if (hasInterface) then {
         };
     } forEach _markers;
 
-    [{time > 0},
+    [{CBA_missionTime > 0},
     {
         {
             if (_x select 2) then {

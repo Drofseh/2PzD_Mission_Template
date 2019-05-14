@@ -1,5 +1,5 @@
 _conditionJIP_Teleport = {
-    player distance _spawnPos < FW_SPAWNDISTANCE;
+    player distance FW_JIP_spawnPos < FW_SPAWNDISTANCE;
 };
 
 _statementJIP_Teleport = {

@@ -21,7 +21,7 @@ if (!isNil "God" && {God isEqualTo _killer}) then {
 } else {
     [0, _killer] call ace_spectator_fnc_setCameraAttributes;
     if (_nameKiller == "Error: No vehicle") then {
-        _nameKiller = name (player getVariable ["ace_medical_lastDamageSource", objNull]);
+        _nameKiller = name (player getVariable ["ace_medical_lastDamageSource", _killer]);
         if (_nameKiller == "Error: No vehicle") then {
             _nameKiller = "someone or something";
         };

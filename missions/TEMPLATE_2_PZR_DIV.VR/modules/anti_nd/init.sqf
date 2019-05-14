@@ -7,7 +7,7 @@ if (isServer) then {
     missionNamespace setVariable ["FW_ND_Active", true];
     publicVariable "FW_ND_Active";
 
-    [{time > ANTI_ND_TIME}, {
+    [{CBA_missionTime > ANTI_ND_TIME}, {
         missionNamespace setVariable ["FW_ND_Active", false];
         publicVariable "FW_ND_Active";
     }, []] call CBA_fnc_waitUntilAndExecute;
@@ -27,7 +27,7 @@ if (hasInterface) then {
                 _msg1 = "";
                 _msg2 = "";
                 if (missionNamespace getVariable ["FW_ND_Active", false]) then {
-                    _msg1 = "\nFiring will be allowed after the timer expires.\nTime remaining: " + str round (ANTI_ND_TIME - time) + " seconds.\n";
+                    _msg1 = "\nFiring will be allowed after the timer expires.\nTime remaining: " + str round (ANTI_ND_TIME - CBA_missionTime) + " seconds.\n";
                 };
                 if (_distance <= ANTI_ND_DIST) then {
                     _msg2 = "\nFiring is not allowed at the start location, you must move away from the spawn.\nDistance from spawn: " + str (round _distance) + " out of " + str (round ANTI_ND_DIST) + " meters.\n";

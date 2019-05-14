@@ -2,7 +2,7 @@
 
 if (local _unit) then {
     [
-        {time > 5},
+        {CBA_missionTime > 5},
         {
             FW_mapRemoved = 1;
             _this removeWeapon "ItemMap";

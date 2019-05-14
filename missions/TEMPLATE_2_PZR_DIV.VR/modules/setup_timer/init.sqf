@@ -16,7 +16,7 @@ if (!isMultiplayer) then {
 
 if (isServer) then {
     [] spawn {
-        waitUntil {time > 0};
+        waitUntil {CBA_missionTime > 0};
         FW_setup_start_time = serverTime;
         publicVariable "FW_setup_start_time";
     };

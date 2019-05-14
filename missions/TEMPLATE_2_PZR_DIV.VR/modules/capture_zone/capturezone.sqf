@@ -26,7 +26,7 @@ _update = true;
 _updateContested  = true;
 _updateUncontested = true;
 _start = 0;
-_end = time;
+_end = CBA_missionTime;
 _delta = 0;
 _timer = 0;
  //ident,count,win
@@ -38,7 +38,7 @@ _contester = "NONE";
 while{_run} do
 {
 
-    _start = time;
+    _start = CBA_missionTime;
     _delta = _start - _end;
     //count all units in area n special format [_marker,[[_side,count,win],[_side,count,win]]];
 
@@ -89,7 +89,7 @@ while{_run} do
                     //can probaply be done better
                     if(_contester != "WEST") then
                     {
-                        _timer = time;
+                        _timer = CBA_missionTime;
                         _contester = "WEST";
                     };
                     [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
@@ -103,7 +103,7 @@ while{_run} do
                     //can probaply be done better
                     if(_contester != "EAST") then
                     {
-                        _timer = time;
+                        _timer = CBA_missionTime;
                         _contester = "EAST";
                     };
                     [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
@@ -117,7 +117,7 @@ while{_run} do
                     //can probaply be done better
                     if(_contester != "GUER") then
                     {
-                        _timer = time;
+                        _timer = CBA_missionTime;
                         _contester = "GUER";
                     };
                     [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
@@ -132,7 +132,7 @@ while{_run} do
                     //can probaply be done better
                     if(_contester != "RESISTANCE") then
                     {
-                        _timer = time;
+                        _timer = CBA_missionTime;
                         _contester = "RESISTANCE";
                     };
                     [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
@@ -146,7 +146,7 @@ while{_run} do
                     //can probaply be done better
                     if(_contester != "CIVILIAN") then
                     {
-                        _timer = time;
+                        _timer = CBA_missionTime;
                         _contester = "CIVILIAN";
                     };
                     [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
@@ -159,7 +159,7 @@ while{_run} do
                     [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
                     [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 5]] call CBA_fnc_globalExecute;
                     sleep(_intervall);
-                    _timer = time;
+                    _timer = CBA_missionTime;
                     _contester = "NONE";
             };
             case "CONTESTED":
@@ -179,7 +179,7 @@ while{_run} do
     {
         if(_marker  == _x select 1) then
         {
-            if((time - _timer) >= _currentOwner select 2) then
+            if((CBA_missionTime - _timer) >= _currentOwner select 2) then
             {
                 _temp = true;
 

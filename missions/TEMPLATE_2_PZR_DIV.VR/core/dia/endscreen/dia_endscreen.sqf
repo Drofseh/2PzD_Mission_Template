@@ -79,7 +79,7 @@ _endTitleText = _scenario;
 
 if (_timeLimit != 0) then {
 
-    _time = ceil(time / 60);
+    _time = ceil(CBA_missionTime / 60);
 
     if (_time >= _timeLimit) then {
 

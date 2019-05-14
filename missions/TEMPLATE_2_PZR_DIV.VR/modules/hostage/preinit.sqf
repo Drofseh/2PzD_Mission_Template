@@ -19,7 +19,7 @@ FNC_SetHostage = {
         _unit = _this select 0;
         _marker = _this select 1;
 
-        waitUntil {time > 0.1};
+        waitUntil {CBA_missionTime > 0.1};
 
         _unit setBehaviour "CARELESS";
         _unit allowFleeing 0;

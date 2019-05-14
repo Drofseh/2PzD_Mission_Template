@@ -1,6 +1,6 @@
 if (isServer) then {
     [
-        {time > 5},
+        {CBA_missionTime > 5},
         {
             [DC_CHQ, "FSJ_DC_CHQ"] call FNC_VehicleGearScript;
             [DC_Z1HQ, "FSJ_DC_Z1HQ"] call FNC_VehicleGearScript;

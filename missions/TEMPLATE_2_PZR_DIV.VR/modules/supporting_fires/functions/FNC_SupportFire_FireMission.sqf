@@ -13,6 +13,7 @@ FNC_SupportFire_FireMission = {
         private _supportFire_target     = _this select 3;
         private _supportFire_adjust     = _this select 4;
         private _supportFire_accuracy   = supportFire_shellAccuracy;
+        private _supportFire_canceled  = false;
 
         // systemChat ("_supportFire_side - " + str _supportFire_side);
         // systemChat ("_supportFire_type - " + str _supportFire_type);
@@ -21,27 +22,61 @@ FNC_SupportFire_FireMission = {
         // systemChat ("_supportFire_adjust - " + str _supportFire_adjust);
         // systemChat ("_supportFire_accuracy - " + str _supportFire_accuracy);
 
-        // exit if the player managed to call a fire mission even if no ammo was avaiable.
-        if (_supportFire_number <= 0) exitWith {
-            (format ["Negative, No more %1 rounds available.", _supportFire_type]) call CBA_fnc_notify;
-        };
-
         // get accuracy and dispersion values for players side
         // make fire missions unavailable for that side
         if (_supportFire_side isEqualTo WEST) then {
             supportFire_fireMissionAvailableWEST = False;
             publicVariable "supportFire_fireMissionAvailableWEST";
             // systemChat "Fire missions disabled";
+
+            // cancel if the player managed to call a fire mission even if no ammo was avaiable.
+            if (_supportFire_number > supportFire_shellsFlare_AmmoCountWEST) then {
+                (format ["Negative, Not enough %1 rounds available.", _supportFire_type]) call CBA_fnc_notify;
+                _supportFire_canceled  = true;
+            };
         };
         if (_supportFire_side isEqualTo EAST) then {
             supportFire_fireMissionAvailableEAST = False;
             publicVariable "supportFire_fireMissionAvailableEAST";
             // systemChat "Fire missions disabled";
+
+            // cancel if the player managed to call a fire mission even if no ammo was avaiable.
+            if (_supportFire_number > supportFire_shellsFlare_AmmoCountWEST) then {
+                (format ["Negative, Not enough %1 rounds available.", _supportFire_type]) call CBA_fnc_notify;
+                _supportFire_canceled  = true;
+            };
         };
         if (_supportFire_side isEqualTo RESISTANCE) then {
             supportFire_fireMissionAvailableGUER = False;
             publicVariable "supportFire_fireMissionAvailableGUER";
             // systemChat "Fire missions disabled";
+
+            // cancel if the player managed to call a fire mission even if no ammo was avaiable.
+            if (_supportFire_number > supportFire_shellsFlare_AmmoCountWEST) then {
+                (format ["Negative, Not enough %1 rounds available.", _supportFire_type]) call CBA_fnc_notify;
+                _supportFire_canceled  = true;
+            };
+        };
+
+
+        // exit if the fire mission even was canceled.
+        if (_supportFire_canceled) exitWith {
+            // systemChat "Fire missions canceled";
+            if (_supportFire_side isEqualTo WEST) then {
+                supportFire_fireMissionAvailableWEST = True;
+                publicVariable "supportFire_fireMissionAvailableWEST";
+                // systemChat "Fire missions enabled";
+            };
+            if (_supportFire_side isEqualTo EAST) then {
+                supportFire_fireMissionAvailableEAST = True;
+                publicVariable "supportFire_fireMissionAvailableEAST";
+                // systemChat "Fire missions enabled";
+            };
+            if (_supportFire_side isEqualTo RESISTANCE) then {
+                supportFire_fireMissionAvailableGUER = True;
+                publicVariable "supportFire_fireMissionAvailableGUER";
+                // systemChat "Fire missions enabled";
+            };
         };
 
         private _supportFire_ammoLeft = [_supportFire_side, _supportFire_type, _supportFire_number] call FNC_SupportFire_RemoveAmmo;

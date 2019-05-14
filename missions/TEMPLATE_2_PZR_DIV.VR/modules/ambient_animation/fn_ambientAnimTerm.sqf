@@ -66,7 +66,7 @@
         detach _this;
     };
 
-    if (time > 0) then {
+    if (CBA_missionTime > 0) then {
         _unit call _detachCode;
     } else {
         [_unit,_detachCode] spawn {

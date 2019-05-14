@@ -325,7 +325,7 @@ private["_attachOffset","_attachObj","_attachSpecsAuto","_attachSpecs","_attachS
         _attach     = _this select 4;
 
         //wait for the simulation to start
-        waitUntil{time > 0};
+        waitUntil{CBA_missionTime > 0};
 
         if (isNil "_unit") exitWith {};
         if (isNull _unit) exitWith {};

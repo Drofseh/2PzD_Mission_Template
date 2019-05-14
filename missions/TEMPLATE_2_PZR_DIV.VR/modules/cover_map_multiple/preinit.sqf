@@ -122,7 +122,7 @@ FNC_AOCoverAndCenterMap = {
         //center map on AO Marker in game map
         [_zoomlevel,_p] spawn {
             params [["_zoomlevel",0.4],"_p"];
-            waitUntil {time > 0.5};
+            waitUntil {CBA_missionTime > 0.5};
             disableSerialization;
             if ("ItemMap" in (assignedItems player)) then{
                 //if map already open dont close it, just move it
@@ -144,7 +144,7 @@ FNC_AOCoverAndCenterMap = {
         };
 
         //center map on AO Marker in briefing for initial marker
-        waitUntil {(!(isNull (findDisplay _idd))) || (time > 0.1)};
+        waitUntil {(!(isNull (findDisplay _idd))) || (CBA_missionTime > 0.1)};
         ((findDisplay _idd) displayCtrl 51) ctrlMapAnimAdd [0, _zoomlevel, _p];
         ctrlMapAnimCommit ((findDisplay _idd) displayCtrl 51);
     };

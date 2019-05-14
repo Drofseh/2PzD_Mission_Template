@@ -5,7 +5,7 @@
 if (isServer) then {
     [] spawn {
 
-        waitUntil {time > FW_JIPDENYTIME};
+        waitUntil {CBA_missionTime > FW_JIPDENYTIME};
 
         missionNamespace setVariable ["FW_JIPDenied", true];
         publicVariable "FW_JIPDenied";
@@ -49,7 +49,7 @@ if (hasInterface && str side player != "LOGIC") then {
 
     if ((_target distance player) >  FW_JIPDISTANCE) then {
 
-        private _spawnPos = getPosATL player;
+        FW_JIP_spawnPos = getPosATL player;
 
         switch (FW_JIPTYPE) do {
 
@@ -62,7 +62,7 @@ if (hasInterface && str side player != "LOGIC") then {
                 },{
                     [player, 1, ["ACE_SelfActions","JIP_Teleport"]] call ace_interact_menu_fnc_removeActionFromObject;
                     (format ["JIP teleport option lost, you went beyond %1 meters from your spawn location", FW_SPAWNDISTANCE]) call CBA_fnc_notify;
-                }, _spawnPos] call CBA_fnc_waitUntilAndExecute;
+                }, FW_JIP_spawnPos] call CBA_fnc_waitUntilAndExecute;
             };
 
             case "TRANSPORT": {
@@ -74,7 +74,7 @@ if (hasInterface && str side player != "LOGIC") then {
                 },{
                     [player, 1, ["ACE_SelfActions","JIP_Transport"]] call ace_interact_menu_fnc_removeActionFromObject;
                     (format ["JIP teleport option lost, you went beyond %1 meters from your spawn location", FW_SPAWNDISTANCE]) call CBA_fnc_notify;
-                }, _spawnPos] call CBA_fnc_waitUntilAndExecute;
+                }, FW_JIP_spawnPos] call CBA_fnc_waitUntilAndExecute;
             };
         };
     };

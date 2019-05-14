@@ -15,7 +15,7 @@
 
 private _scenario = _this;
 
-if (time > 0) then {
+if (CBA_missionTime > 0) then {
 
     logLoopTime = 1;
     logEnd = 1;
