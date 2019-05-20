@@ -97,7 +97,7 @@
                 [Ger_Mag_PPK,1],        \
                 [Ger_Weap_PPK],         \
                 [Ger_Mag_PPK,2]         \
-            ],[10]                      \
+            ],[10],                     \
             [                           \
                 [Ger_Mag_M172_20,1],    \
                 [Ger_Weap_M172],        \

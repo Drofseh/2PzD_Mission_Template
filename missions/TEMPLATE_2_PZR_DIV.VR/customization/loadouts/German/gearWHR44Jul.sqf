@@ -160,26 +160,26 @@
         ] call FNC_AddItemRandomPercent;
 
 // For Grenadier
-#define WHR44Jul_Weapon_Grenadier         \
-        [                                 \
-            [                             \
-                [Ger_Vest_K98],           \
-                [Ger_Mag_K98,1],          \
-                [Ger_Weap_K98],           \
-                [Ger_Acc_K98_GL,1,"vest"] \
-                [Ger_Mag_K98,12,"vest"]   \
-                [Ger_Mag_RGrn_HE,4]       \
-                [Ger_Mag_RGrn_ATL,4]      \
-            ],[85],                       \
-            [                             \
-                [Ger_Vest_StG44],         \
-                [Ger_Mag_StG44,1],        \
-                [Ger_Weap_StG44],         \
-                [Ger_Acc_K98_GL,1,"vest"] \
-                [Ger_Mag_StG44,6,"vest"]  \
-                [Ger_Mag_RGrn_HE,4]       \
-                [Ger_Mag_RGrn_ATL,4]      \
-            ],[15]                        \
+#define WHR44Jul_Weapon_Grenadier          \
+        [                                  \
+            [                              \
+                [Ger_Vest_K98],            \
+                [Ger_Mag_K98,1],           \
+                [Ger_Weap_K98],            \
+                [Ger_Acc_K98_GL,1,"vest"], \
+                [Ger_Mag_K98,12,"vest"],   \
+                [Ger_Mag_RGrn_HE,4],       \
+                [Ger_Mag_RGrn_ATL,4]       \
+            ],[85],                        \
+            [                              \
+                [Ger_Vest_StG44],          \
+                [Ger_Mag_StG44,1],         \
+                [Ger_Weap_StG44],          \
+                [Ger_Acc_K98_GL,1,"vest"], \
+                [Ger_Mag_StG44,6,"vest"],  \
+                [Ger_Mag_RGrn_HE,4],       \
+                [Ger_Mag_RGrn_ATL,4]       \
+            ],[15]                         \
         ] call FNC_AddItemRandomPercent;
 
 //For Kompanieführer, Zugführer and Besatzungsführer

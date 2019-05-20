@@ -162,7 +162,7 @@
         US_Default_Equipment;
         US_Leader_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Leader;
 
         //Secondary Weapon
@@ -185,7 +185,7 @@
         US_Default_Equipment;
         US_Leader_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Leader;
 
         //Secondary Weapon
@@ -209,7 +209,7 @@
         US_Default_Equipment;
         US_Leader_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle_Light;
 
         //Secondary Weapon
@@ -232,7 +232,7 @@
         //Assigned Items
         US_Default_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle_Light;
 
         //Extra
@@ -252,7 +252,7 @@
         US_Default_Equipment;
         US_Leader_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Leader;
 
         //Secondary Weapon
@@ -276,7 +276,7 @@
         US_Default_Equipment;
         US_Leader_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle_Light;
 
         //Secondary Weapon
@@ -298,7 +298,7 @@
         //Assigned Items
         US_Default_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle_Light;
 
         //Extra
@@ -317,7 +317,7 @@
         //Assigned Items
         US_Default_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle_Medic;
 
         //Extra
@@ -338,7 +338,7 @@
         US_Default_Equipment;
         US_Leader_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Leader;
 
         //Extra
@@ -356,7 +356,7 @@
         //Assigned Items
         US_Default_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle_Light;
 
         //Extra
@@ -374,7 +374,7 @@
         //Assigned Items
         US_Default_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle_Light;
 
         //Extra
@@ -417,7 +417,7 @@
         US_Leader_Equipment;
         [US_Weap_M1919A4_T] call FNC_AddItem;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle;
 
         //Extra
@@ -442,7 +442,7 @@
         //Assigned Items
         US_Default_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle;
 
         //Extra
@@ -483,7 +483,7 @@
         US_Default_Equipment;
         US_Leader_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle;
 
         //Extra
@@ -509,7 +509,7 @@
         //Assigned Items
         US_Default_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle;
 
         //Extra
@@ -535,7 +535,7 @@
         //Assigned Items
         US_Default_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle;
 
         //Extra
@@ -556,7 +556,7 @@
         US_Default_Equipment;
         US_Leader_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle_Light;
 
         //Extra
@@ -577,7 +577,7 @@
         US_Default_Equipment;
         US_Leader_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle_Light;
 
         //Extra
@@ -651,7 +651,7 @@
         //Assigned Items
         US_Default_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle;
 
         //Extra
@@ -671,7 +671,7 @@
         US_Default_Equipment;
         US_Leader_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle_Light;
 
         //Extra
@@ -690,7 +690,7 @@
         //Assigned Items
         US_Default_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle_Light;
 
         //Extra
@@ -717,7 +717,7 @@
         //Assigned Items
         US_Default_Equipment;
 
-        [//Primary Weapon
+        //Primary Weapon
         USAB42Jun_Weapon_Rifle;
 
         //Extra

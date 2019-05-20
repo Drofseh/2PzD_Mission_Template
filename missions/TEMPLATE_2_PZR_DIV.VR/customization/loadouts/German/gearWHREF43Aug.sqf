@@ -237,7 +237,6 @@
                 [Ger_Weap_M172],            \
                 [Ger_Mag_M172_20,2]         \
             ],[0.5]                         \
-
         ] call FNC_AddItemRandomPercent;
 
 #define WHREF43Aug_Weapon_Enlisted_Secondary \
@@ -282,7 +281,6 @@
                 [Ger_Weap_M172],             \
                 [Ger_Mag_M172_20,2]          \
             ],[0.5]                          \
-
         ] call FNC_AddItemRandomPercent;
 
 #define WHREF43Aug_Weapon_PzFaust      \

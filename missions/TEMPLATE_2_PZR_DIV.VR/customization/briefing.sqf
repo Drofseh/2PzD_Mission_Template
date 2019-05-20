@@ -51,48 +51,6 @@ Make sure to put the images in a new annex tab instead of cluttering the normal 
 
 //======================== Important Sections Not Specific to Side ========================
 
-//===== Mission Notes =====
-//This section is for techincal information about the mission that would be out of place in the briefing proper
-
-NEWTAB("Mission notes:")
-// This is shown for everyone and should include any technical information you want to include about the mission
-<br/>Time Limit is XX minutes.
-// change the XX to what you set the time limit to in settings.sqf
-<br/>
-<br/><font color='#FF8C00' size='14'>Victory Conditions:</font>
-// put win condition here
-// Example:
-// Victory will be achieved if 2PzD hold at least one capture zone at the end of the mission.
-// The more capture zones are held, the better the victory
-<br/>
-<br/>
-<br/><font color='#FF8C00' size='14'>Defeat Conditions:</font>
-// put failure conditions here
-// Example:
-// Defeat will occur if 2PzD is unable to hold any of the capture zones.
-<br/>
-<br/>
-<br/><font color='#FF8C00' size='14'>Additional Information:</font>
-// Additional information here
-// Example:
-// Capture Zones:
-// There are three capture zones in the mission area.
-// If one is captured by the Allies it may be recaptured by 2PzD.
-<br/>
-<br/>
-<br/>
-ENDTAB;
-
-//===== Game Mastering =====
-//This indicates if a Zeus is required for the mission.
-
-NEWTAB("Game Mastering")
-// Change this if you want a zeus to guide your mission
-// Example:
-//This mission is not designed for game mastering and should only be manipulated for technical, administrative or diagnostic purposes.
-This mission requires a dedicated Zeus to play correctly.
-ENDTAB;
-
 //===== Admin Tab =====
 //Displays the Admin Tab, which provides some techinical controls for respawn, mission ending, and similar.
 //It appears for the Admin, the Zeus, Brauer, Falk, Haas, Madsen, Sauer, Schuttler
@@ -165,6 +123,48 @@ if (!isNil "God" && {God isEqualTo player}) then {
     <br/>
     ENDTAB;
 };
+
+//===== Mission Notes =====
+//This section is for techincal information about the mission that would be out of place in the briefing proper
+
+NEWTAB("Mission notes:")
+// This is shown for everyone and should include any technical information you want to include about the mission
+<br/>Time Limit is XX minutes.
+// change the XX to what you set the time limit to in settings.sqf
+<br/>
+<br/><font color='#FF8C00' size='14'>Victory Conditions:</font>
+// put win condition here
+// Example:
+// Victory will be achieved if 2PzD hold at least one capture zone at the end of the mission.
+// The more capture zones are held, the better the victory
+<br/>
+<br/>
+<br/><font color='#FF8C00' size='14'>Defeat Conditions:</font>
+// put failure conditions here
+// Example:
+// Defeat will occur if 2PzD is unable to hold any of the capture zones.
+<br/>
+<br/>
+<br/><font color='#FF8C00' size='14'>Additional Information:</font>
+// Additional information here
+// Example:
+// Capture Zones:
+// There are three capture zones in the mission area.
+// If one is captured by the Allies it may be recaptured by 2PzD.
+<br/>
+<br/>
+<br/>
+ENDTAB;
+
+//===== Game Mastering =====
+//This indicates if a Zeus is required for the mission.
+
+NEWTAB("Game Mastering")
+// Change this if you want a zeus to guide your mission
+// Example:
+//This mission is not designed for game mastering and should only be manipulated for technical, administrative or diagnostic purposes.
+This mission requires a dedicated Zeus to play correctly.
+ENDTAB;
 
 //======================== Side Based Briefings ========================
 

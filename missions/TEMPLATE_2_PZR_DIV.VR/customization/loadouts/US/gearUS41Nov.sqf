@@ -119,6 +119,7 @@
                 [US_Weap_M1903A1],       \
                 [US_Mag_M1903,20,"vest"] \
             ],[60],                      \
+            [                            \
                 [US_Mag_M1G,1],          \
                 [US_Weap_M1G],           \
                 [US_Mag_M1G,10,"vest"]   \

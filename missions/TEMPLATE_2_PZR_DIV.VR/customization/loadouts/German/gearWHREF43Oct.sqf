@@ -100,51 +100,51 @@
             ],[5]                         \
         ] call FNC_AddItemRandomPercent;
 
-#define WHREF43Oct_Weapon_Rifleman         \
-        [                                  \
-            [                              \
-                [Ger_Vest_K98]             \
-                [Ger_Mag_K98,1],           \
-                [Ger_Weap_K98],            \
-                [Ger_Mag_K98,12,"vest"]    \
-            ],[50],                        \
-            [                              \
-                [Ger_Vest_K98]             \
-                [Rus_Mag_Mosin,1],         \
-                [Rus_Weap_MosM9130],       \
+#define WHREF43Oct_Weapon_Rifleman        \
+        [                                 \
+            [                             \
+                [Ger_Vest_K98],           \
+                [Ger_Mag_K98,1],          \
+                [Ger_Weap_K98],           \
+                [Ger_Mag_K98,12,"vest"]   \
+            ],[50],                       \
+            [                             \
+                [Ger_Vest_K98],           \
+                [Rus_Mag_Mosin,1],        \
+                [Rus_Weap_MosM9130],      \
                 [Rus_Acc_Mos_Bayo],       \
-                [Rus_Mag_Mosin,12,"vest"]  \
-            ],[24],                        \
-            [                              \
-                [Ger_Vest_G43]             \
-                [Ger_Mag_G41w,1],           \
-                [Ger_Weap_G43],            \
-                [Ger_Mag_G41w,6,"vest"]     \
-            ],[10],                        \
-            [                              \
-                [Ger_Vest_G43]             \
-                [Rus_Mag_SVT40,1],         \
-                [Rus_Weap_SVT40],          \
-                [Rus_Mag_SVT40,6,"vest"]   \
-            ],[9],                         \
-            [                              \
-                [Ger_Vest_StG44]           \
-                [Ger_Mag_StG44,1],         \
-                [Ger_Weap_StG44],          \
-                [Ger_Mag_StG44,6,"vest"]   \
-            ],[5],                         \
-            [                              \
-                [Ger_Vest_G43]             \
-                [Ger_Mag_G41w,1],           \
-                [Ger_Weap_G41w],           \
-                [Ger_Mag_G41w,6,"vest"]     \
-            ],[1],                         \
-            [                              \
-                [Ger_Vest_K98]             \
-                [Rus_Mag_Mosin,1],         \
-                [Rus_Weap_MosM38],         \
-                [Rus_Mag_Mosin,12,"vest"]  \
-            ],[1]                          \
+                [Rus_Mag_Mosin,12,"vest"] \
+            ],[24],                       \
+            [                             \
+                [Ger_Vest_G43],           \
+                [Ger_Mag_G41w,1],         \
+                [Ger_Weap_G43],           \
+                [Ger_Mag_G41w,6,"vest"]   \
+            ],[10],                       \
+            [                             \
+                [Ger_Vest_G43],           \
+                [Rus_Mag_SVT40,1],        \
+                [Rus_Weap_SVT40],         \
+                [Rus_Mag_SVT40,6,"vest"]  \
+            ],[9],                        \
+            [                             \
+                [Ger_Vest_StG44],         \
+                [Ger_Mag_StG44,1],        \
+                [Ger_Weap_StG44],         \
+                [Ger_Mag_StG44,6,"vest"]  \
+            ],[5],                        \
+            [                             \
+                [Ger_Vest_G43],           \
+                [Ger_Mag_G41w,1],         \
+                [Ger_Weap_G41w],          \
+                [Ger_Mag_G41w,6,"vest"]   \
+            ],[1],                        \
+            [                             \
+                [Ger_Vest_K98],           \
+                [Rus_Mag_Mosin,1],        \
+                [Rus_Weap_MosM38],        \
+                [Rus_Mag_Mosin,12,"vest"] \
+            ],[1]                         \
         ] call FNC_AddItemRandomPercent;
 
 #define WHREF43Oct_Weapon_MG              \
@@ -200,36 +200,36 @@
         ] call FNC_AddItemRandomPercent;
 
 // For Grenadier
-#define WHREF43Oct_Weapon_Grenadier         \
-        [                                   \
-            [                               \
-                [Ger_Vest_K98],             \
-                [Ger_Mag_K98,1],            \
-                [Ger_Weap_K98],             \
-                [Ger_Acc_K98_GL,1,"vest"]   \
-                [Ger_Mag_K98,12,"vest"]     \
-                [Ger_Mag_RGrn_HE,4]         \
-                [Ger_Mag_RGrn_ATL,3]        \
-                [Ger_Mag_RGrn_ATS,1]        \
-            ],[95],                         \
-            [                               \
-                [Ger_Vest_K98],             \
-                [Rus_Mag_Mosin,1],          \
-                [Rus_Weap_MosM9130],        \
-                [Rus_Acc_Mos_GL,1,"vest"]   \
-                [Rus_Mag_Mosin,24,"vest"]   \
-                [Rus_Mag_RGrn_HE,8]         \
-            ],[95],                         \
-            [                               \
-                [Ger_Vest_StG44],           \
-                [Ger_Mag_StG44,1],          \
-                [Ger_Weap_StG44],           \
-                [Ger_Acc_K98_GL,1,"vest"]   \
-                [Ger_Mag_StG44,6,"vest"]    \
-                [Ger_Mag_RGrn_HE,4]         \
-                [Ger_Mag_RGrn_ATL,3]        \
-                [Ger_Mag_RGrn_ATS,1]        \
-            ],[5]                           \
+#define WHREF43Oct_Weapon_Grenadier        \
+        [                                  \
+            [                              \
+                [Ger_Vest_K98],            \
+                [Ger_Mag_K98,1],           \
+                [Ger_Weap_K98],            \
+                [Ger_Acc_K98_GL,1,"vest"], \
+                [Ger_Mag_K98,12,"vest"],   \
+                [Ger_Mag_RGrn_HE,4],       \
+                [Ger_Mag_RGrn_ATL,3],      \
+                [Ger_Mag_RGrn_ATS,1]       \
+            ],[95],                        \
+            [                              \
+                [Ger_Vest_K98],            \
+                [Rus_Mag_Mosin,1],         \
+                [Rus_Weap_MosM9130],       \
+                [Rus_Acc_Mos_GL,1,"vest"], \
+                [Rus_Mag_Mosin,24,"vest"], \
+                [Rus_Mag_RGrn_HE,8]        \
+            ],[95],                        \
+            [                              \
+                [Ger_Vest_StG44],          \
+                [Ger_Mag_StG44,1],         \
+                [Ger_Weap_StG44],          \
+                [Ger_Acc_K98_GL,1,"vest"], \
+                [Ger_Mag_StG44,6,"vest"],  \
+                [Ger_Mag_RGrn_HE,4],       \
+                [Ger_Mag_RGrn_ATL,3],      \
+                [Ger_Mag_RGrn_ATS,1]       \
+            ],[5]                          \
         ] call FNC_AddItemRandomPercent;
 
 #define WHREF43Oct_Weapon_MG_SWT \
@@ -321,7 +321,6 @@
                 [Ger_Weap_M172],            \
                 [Ger_Mag_M172_20,2]         \
             ],[0.5]                         \
-
         ] call FNC_AddItemRandomPercent;
 
 #define WHREF43Oct_Weapon_Enlisted_Secondary \
@@ -366,7 +365,6 @@
                 [Ger_Weap_M172],             \
                 [Ger_Mag_M172_20,2]          \
             ],[0.5]                          \
-
         ] call FNC_AddItemRandomPercent;
 
 #define WHREF43Oct_Weapon_PzFaust      \

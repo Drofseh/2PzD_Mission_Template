@@ -183,4 +183,4 @@
 
 #define GEN_Mortar_Equipment                         \
     [GEN_ace_maptools,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_rangetable,"uniform"] call FNC_AddItem;
+    [GEN_ace_rangetable,1,"uniform"] call FNC_AddItem;

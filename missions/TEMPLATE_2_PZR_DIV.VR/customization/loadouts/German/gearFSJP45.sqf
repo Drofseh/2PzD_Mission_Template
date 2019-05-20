@@ -95,22 +95,22 @@
         ] call FNC_AddItemRandomPercent;
 
 // For Grenadier
-#define FSJP45Jan_Weapon_Grenadier        \
-        [                                 \
-            [                             \
-                [FSJ_Vest_Band],          \
-                [Ger_Acc_K98_GL,1,"vest"] \
-                [Ger_Mag_K98,24,"vest"]   \
-                [Ger_Mag_RGrn_HE,4]       \
-                [Ger_Mag_RGrn_ATL,4]      \
-            ],[80],                       \
-            [                             \
-                [Ger_Vest_StG44],         \
-                [Ger_Acc_K98_GL,1,"vest"] \
-                [Ger_Mag_StG44,6,"vest"]  \
-                [Ger_Mag_RGrn_HE,4]       \
-                [Ger_Mag_RGrn_ATL,4]      \
-            ],[20]                        \
+#define FSJP45Jan_Weapon_Grenadier         \
+        [                                  \
+            [                              \
+                [FSJ_Vest_Band],           \
+                [Ger_Acc_K98_GL,1,"vest"], \
+                [Ger_Mag_K98,24,"vest"],   \
+                [Ger_Mag_RGrn_HE,4],       \
+                [Ger_Mag_RGrn_ATL,4]       \
+            ],[80],                        \
+            [                              \
+                [Ger_Vest_StG44],          \
+                [Ger_Acc_K98_GL,1,"vest"], \
+                [Ger_Mag_StG44,6,"vest"],  \
+                [Ger_Mag_RGrn_HE,4],       \
+                [Ger_Mag_RGrn_ATL,4]       \
+            ],[20]                         \
         ] call FNC_AddItemRandomPercent;
 
 // For Kompanieführer, Zugführer

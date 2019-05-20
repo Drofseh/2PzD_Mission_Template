@@ -16,19 +16,44 @@
  * Public: No
  */
 
-params ["_unit", "_loadoutType", "_item", "_succes", "_parents", "_type", "_message", "_amount", "_position"];
-_amount = 1;
-_position = "none";
+params ["_unit", "_loadoutType", "_item", "_amount", "_position", "_succes", "_parents", "_type", "_message", "_badData"];
+
+if (isNil "_amount") then {
+    _amount = 1;
+};
+
+if (isNil "_position") then {
+    _position = "none";
+};
+
+_badData = false;
 
 if !([_item, _unit] call FNC_checkClassname) exitWith {};
 
-if (count _this > 3) then {
-    _amount = _this select 3;
+if (typeName _amount != "SCALAR") then {
+    _badData = true;
+
+    ("Item amount is not a number in this loadout: " + (str _this)) call FNC_DebugMessage;
+    diag_log ("Item amount is not a number in this loadout: " + (str _this));
 };
 
-if (count _this > 4) then {
-    _position = toLower (_this select 4);
+if (typeName _position != "STRING") then {
+
+    _badData = true;
+    ("Position is not a string in this loadout: " + (str _this)) call FNC_DebugMessage;
+    diag_log ("Position is not a string in this loadout: " + (str _this));
+
+} else {
+    if (_position != "none" && {_position != "backpack" && _position != "vest" && _position != "uniform"}) then {
+
+        _badData = true;
+        ("Position string is misspelled or invalid in this loadout: " + (str _this)) call FNC_DebugMessage;
+        diag_log ("Position string is misspelled or invalid in this loadout: " + (str _this));
+
+    };
 };
+
+if (_badData) exitWith {};
 
 for "_x" from 1 to _amount do {
     _succes = false;
@@ -36,89 +61,67 @@ for "_x" from 1 to _amount do {
     _type = (_item call BIS_fnc_itemType) select 1;
 
     if (_position == "none") then {
-        if (!_succes && "Rifle" in _parents) then {
-            if (primaryWeapon _unit == "") then {
-                _unit addWeaponGlobal _item;
-                _succes = true;
-            };
+        if (primaryWeapon _unit == "" && "Rifle" in _parents) exitWith {
+            _unit addWeaponGlobal _item;
+            _succes = true;
         };
-        if (!_succes && "Pistol" in _parents) then {
-            if (handgunWeapon _unit == "") then {
-                _unit addWeaponGlobal _item;
-                _succes = true;
-            };
+        if (handgunWeapon _unit == "" && "Pistol" in _parents) exitWith {
+            _unit addWeaponGlobal _item;
+            _succes = true;
         };
-        if (!_succes && "Launcher" in _parents) then {
-            if (secondaryWeapon _unit == "") then {
-                _unit addWeaponGlobal _item;
-                _succes = true;
-            };
+        if (secondaryWeapon _unit == "" && "Launcher" in _parents) exitWith {
+            _unit addWeaponGlobal _item;
+            _succes = true;
         };
-        if (!_succes && _type in ["Map", "GPS", "Compass", "Watch", "NVGoggles"]) then {
-            if ([_unit, _type] call FNC_CanLinkItem) then {
-                _unit linkItem _item;
-                _succes = true;
-            };
+        if (_type in ["Map", "GPS", "Compass", "Watch", "NVGoggles"] && {[_unit, _type] call FNC_CanLinkItem}) exitWith {
+            _unit linkItem _item;
+            _succes = true;
         };
-        if (!_succes && _type == "uniform") then {
-            if (uniform _unit == "") then {
-                _unit forceAddUniform _item;
-                _succes = true;
-            };
+        if (_type == "uniform" && uniform _unit == "") exitWith {
+            _unit forceAddUniform _item;
+            _succes = true;
         };
-        if (!_succes && _type == "vest") then {
-            if (vest _unit == "") then {
-                _unit addVest _item;
-                _succes = true;
-            };
+        if (_type == "vest" && vest _unit == "") exitWith {
+            _unit addVest _item;
+            _succes = true;
         };
-        if (!_succes && _type == "backpack") then {
-            if (backpack _unit == "") then {
-                _unit addBackpackGlobal _item;
-                _succes = true;
-            };
+        if (_type == "backpack" && backpack _unit == "") exitWith {
+            _unit addBackpackGlobal _item;
+            _succes = true;
         };
-        if (!_succes && _type == "Headgear") then {
-            if (headgear _unit == "") then {
-                _unit addHeadgear _item;
-                _succes = true;
-            };
+        if (_type == "Headgear" && headgear _unit == "") exitWith {
+            _unit addHeadgear _item;
+            _succes = true;
         };
-        if (!_succes && _type == "Glasses") then {
-            if (goggles _unit == "") then {
-                _unit addGoggles _item;
-                _succes = true;
-            };
+        if (_type == "Glasses" && goggles _unit == "") exitWith {
+            _unit addGoggles _item;
+            _succes = true;
         };
-        if (!_succes && _type == "Binocular") then {
-            if (binocular _unit == "") then {
-                _unit addWeaponGlobal _item;
-                _succes = true;
-            };
+        if (_type == "Binocular" && binocular _unit == "") exitWith {
+            _unit addWeaponGlobal _item;
+            _succes = true;
         };
-        if (!_succes && _type in ["AccessoryMuzzle", "AccessoryPointer", "AccessorySights", "AccessoryBipod"]) then {
+        if (_type in ["AccessoryMuzzle", "AccessoryPointer", "AccessorySights", "AccessoryBipod"]) exitWith {
             if ([primaryWeapon _unit, _item] call FNC_CanAttachItem) then {
                 if (!(_type in primaryWeaponItems _unit)) then {
                     _unit addPrimaryWeaponItem _item;
                     _succes = true;
                 };
-            }
-            else {
+            } else {
                 if ([handgunWeapon _unit, _item] call FNC_CanAttachItem) then {
                     if (!(_type in handgunItems _unit)) then {
                         _unit addHandgunItem _item;
                         _succes = true;
                     };
-                }
-                else {
+                } else {
                     if ([secondaryWeapon _unit, _item] call FNC_CanAttachItem) then {
                         if (!(_type in secondaryWeaponItems _unit)) then {
                             _unit addSecondaryWeaponItem _item;
                             _succes = true;
                         };
                     };
-                }
-            }
+                };
+            };
         };
     } else {
         if (!_succes) then {
@@ -127,8 +130,7 @@ for "_x" from 1 to _amount do {
                     if (_unit canAddItemToBackpack _item || FW_enableOverfill) then {
                         if (FW_enableOverfill) then {
                             (backpackContainer _unit) addItemCargoGlobal [_item, 1];
-                        }
-                        else {
+                        } else {
                             _unit addItemToBackpack _item;
                         };
                         _succes = true;
@@ -138,8 +140,7 @@ for "_x" from 1 to _amount do {
                     if (_unit canAddItemToVest _item || FW_enableOverfill) then {
                         if (FW_enableOverfill) then {
                             (vestContainer _unit) addItemCargoGlobal [_item, 1];
-                        }
-                        else {
+                        } else {
                             _unit addItemToVest _item;
                         };
                         _succes = true;
@@ -149,8 +150,7 @@ for "_x" from 1 to _amount do {
                     if (_unit canAddItemToUniform _item || FW_enableOverfill) then {
                         if (FW_enableOverfill) then {
                             (uniformContainer _unit) addItemCargoGlobal [_item, 1];
-                        }
-                        else {
+                        } else {
                             _unit addItemToUniform _item;
                         };
                         _succes = true;

@@ -227,7 +227,6 @@
                 [Ger_Weap_M172],            \
                 [Ger_Mag_M172_20,2]         \
             ],[0.5]                         \
-
         ] call FNC_AddItemRandomPercent;
 
 #define WHREF43Mar_Weapon_Enlisted_Secondary \
@@ -272,7 +271,6 @@
                 [Ger_Weap_M172],             \
                 [Ger_Mag_M172_20,2]          \
             ],[0.5]                          \
-
         ] call FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================

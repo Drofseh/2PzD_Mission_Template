@@ -49,7 +49,6 @@
                 [Ger_Weap_M172],           \
                 [Ger_Mag_M172_20,2]        \
             ],[0.5]                        \
-
         ] call FNC_AddItemRandomPercent;
 
 //For Enlisted
@@ -85,7 +84,6 @@
                 [Ger_Weap_M172],            \
                 [Ger_Mag_M172_20,2]         \
             ],[0.5]                         \
-
         ] call FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================
