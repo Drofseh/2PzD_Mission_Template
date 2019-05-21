@@ -13,11 +13,11 @@
  * Public: No
  */
 
-private ["_assignedItems", "_result"];
-
 params [
     ["_unit", objNull, [objNull]],
-    ["_type", "", [""]]
+    ["_type", "", [""]],
+    "_assignedItems",
+    "_result"
 ];
 
 _assignedItems = [];

@@ -15,21 +15,21 @@
 
 params [
     ["_team", "", [""]],
-    ["_index", 0, [0]]
+    ["_index", 0, [0]],
+    "_return",
+    "_found"
 ];
 
-private _return = 0;
-private _found = false;
+_return = 0;
+_found = false;
 
 {
-
     if ((_x select 0) == _team) exitWith {
 
         _return = (_x select _index);
         _found = true;
 
     };
-
 } forEach FW_Teams;
 
 if (!_found) then {

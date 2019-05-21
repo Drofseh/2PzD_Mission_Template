@@ -15,19 +15,16 @@
 
 params [
     ["_weapon", "", [""]],
-    ["_item", "", [""]]
+    ["_item", "", [""]],
+    "_result"
 ];
 
-private _result = false;
+_result = false;
 
 {
-
     if (_item == _x) exitWith {
-
         _result = true;
-
     };
-
 } forEach ([_weapon] call BIS_fnc_compatibleItems);
 
 _result

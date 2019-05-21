@@ -17,8 +17,7 @@ if (!(serverCommandAvailable "#kick")) exitWith {
             };
             acre_sys_gui_VolumeControl_Level = FW_bu_volume_level;
             _toggle_vt = true;
-        }
-        else {
+        } else {
             if (_toggle_vt) then {
                 acre_sys_gui_VolumeControl_Level = 0;
                 _toggle_vt = false;
@@ -30,8 +29,7 @@ if (!(serverCommandAvailable "#kick")) exitWith {
         ) then {
             player enableSimulation false;
             _toggle_fm = true;
-        }
-        else {
+        } else {
             if (_toggle_fm) then {
                 player enableSimulation true;
                 _toggle_fm = false;

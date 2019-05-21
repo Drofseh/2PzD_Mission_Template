@@ -13,9 +13,10 @@
  * Public: No
  */
 
-private _message = _this;
+params ["_message","_found"];
 
-private _found = false;
+_message = _this;
+_found = false;
 
 {
 

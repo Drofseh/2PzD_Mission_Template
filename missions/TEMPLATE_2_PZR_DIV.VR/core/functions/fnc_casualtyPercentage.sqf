@@ -11,13 +11,12 @@
  *
  * Public: Yes
  */
+params ["_team","_count","_start","_current"];
 
-private _team = _this;
-
-private _count = 0;
-
-private _start = [_team, 3] call FNC_GetTeamVariable;
-private _current = [_team, 4] call FNC_GetTeamVariable;
+_team = _this;
+_count = 0;
+_start = [_team, 3] call FNC_GetTeamVariable;
+_current = [_team, 4] call FNC_GetTeamVariable;
 
 if (_start == 0) then {
 

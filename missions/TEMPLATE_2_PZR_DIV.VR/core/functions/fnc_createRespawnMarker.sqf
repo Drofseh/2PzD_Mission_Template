@@ -12,10 +12,10 @@
  * Public: No
  */
 
-private _team = _this;
+params ["_team","_markerName","_marker"];
 
-private _markerName = format ["respawn_%1", _team];
-
-private _marker = createMarker [_markerName, [0, 0, 0]];
+_team = _this;
+_markerName = format ["respawn_%1", _team];
+_marker = createMarker [_markerName, [0, 0, 0]];
 _marker setMarkerShape "ICON";
 _markerName setMarkerType "EMPTY";

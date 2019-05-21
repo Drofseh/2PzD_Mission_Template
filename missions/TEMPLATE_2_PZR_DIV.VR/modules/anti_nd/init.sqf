@@ -35,8 +35,7 @@ if (hasInterface) then {
                 hintC format ["You are firing without approval. Cease your actions immediately!%1%2", _msg1, _msg2];
                 if ((_this select 5) call BIS_fnc_isThrowable) then {
                     player addMagazine _magazine;
-                }
-                else {
+                } else {
                     player setAmmo [currentWeapon player, (player ammo currentWeapon player) + 1];
                 };
             };

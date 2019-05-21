@@ -343,8 +343,7 @@ private["_attachOffset","_attachObj","_attachSpecsAuto","_attachSpecs","_attachS
         if (isNull _logic) exitWith {
             _unit call FNC_ambientAnimPlay;
 
-            if (count units _group == 0) then
-            {
+            if (count units _group == 0) then {
                 deleteGroup _group;
             };
         };
@@ -377,8 +376,7 @@ private["_attachOffset","_attachObj","_attachSpecsAuto","_attachSpecs","_attachS
 
                 if (alive _unit) then {
                     _unit call FNC_ambientAnimPlay;
-                }
-                else {
+                } else {
                     _unit call FNC_ambientAnimTerminate;
                 };
             }

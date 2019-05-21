@@ -14,18 +14,18 @@
 
 params [
     ["_class", "", [""]],
-    ["_unit", objNull, [objNull]]
+    ["_unit", objNull, [objNull]],
+    "_result"
 ];
 
-private _result = (
-        isClass (configfile >> "CfgWeapons" >> _class)
-    || (isClass (configFile >> "CfgMagazines" >> _class))
-    || (isClass (configFile >> "CfgGlasses" >> _class))
-    || (isClass (configFile >> "CfgVehicles" >> _class))
-);
-
-
 if (_class isEqualTo "") exitWith {};
+
+_result = (
+       isClass (configfile >> "CfgWeapons" >> _class)
+    || isClass (configFile >> "CfgMagazines" >> _class)
+    || isClass (configFile >> "CfgGlasses" >> _class)
+    || isClass (configFile >> "CfgVehicles" >> _class)
+);
 
 if (!_result) then {
     if (!isMultiplayer) then {
@@ -33,8 +33,8 @@ if (!_result) then {
         diag_log ("Invalid classname given! - " + _class);
     };
     [_class, {
-        params ["_class"];
-        private _msg = "Framework has detected an invalid classname - '" + str _class + "'! Mission will continue but some parts of gear will be missing.";
+        params ["_class","_msg"];
+        _msg = "Framework has detected an invalid classname - '" + str _class + "'! Mission will continue but some parts of gear will be missing.";
         if (!isNil "FW_missing_gear_found") then {
             if !(_class in FW_missing_gear_found) then {
                 //systemChat _msg;

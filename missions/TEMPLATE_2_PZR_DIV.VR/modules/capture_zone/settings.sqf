@@ -18,7 +18,7 @@
 
 //Comments: In endConditions.sqf add MARKERNAMEINQUOTES call FNC_isCaptured;
 //          will return "EAST","WEST","CIVILIAN","RESISTANCE","NONE" depending on who captured it
-//          Example:if("EAST" == "marker" call FNC_isCaptured) exitWith {};
+//          Example:if ("EAST" == "marker" call FNC_isCaptured) exitWith {};
 
 //Additional:
 

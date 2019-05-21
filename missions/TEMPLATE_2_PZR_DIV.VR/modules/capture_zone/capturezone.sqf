@@ -3,12 +3,10 @@ private ["_sides","_marker","_wins","_intervall","_colors","_countforwins","_mar
 _marker = (_this select 0) select 0;
 _wins = [300,300,300,300];
 _sides = [west,east,resistance,civilian];
-if((count (_this select 0)) > 1) then
-{
+if ((count (_this select 0)) > 1) then {
     _sides = (_this select 0) select 1;
 };
-if((count (_this select 0)) > 2) then
-{
+if ((count (_this select 0)) > 2) then {
     _wins = (_this select 0) select 2;
 };
 _colors = _this select 1;
@@ -20,7 +18,7 @@ _countforwins = 0;
 {
     (_markerCount select 1) pushBack [_x ,0,_wins select _countforwins]; //side,count,win
     _countforwins = _countforwins + 1;
-}forEach _sides;
+} forEach _sides;
 //special format [_marker,[[_side,count,win],[_side,count,win]]];
 _update = true;
 _updateContested  = true;
@@ -35,8 +33,7 @@ sleep(1);
 _run = true;
 
 _contester = "NONE";
-while{_run} do
-{
+while {_run} do {
 
     _start = CBA_missionTime;
     _delta = _start - _end;
@@ -44,51 +41,42 @@ while{_run} do
 
     {
         _x set [1,0];
-    }forEach (_markerCount select 1);
+    } forEach (_markerCount select 1);
 
     {
         _unit = _x;
 
-        if([_unit,_markerCount select 0] call FNC_InArea && alive _unit) then
-        {
+        if ([_unit,_markerCount select 0] call FNC_InArea && alive _unit) then {
             {
 
-                if(side _unit == _x select 0) then
-                {
+                if (side _unit == _x select 0) then {
                     _x set [1,(_x select 1) + 1] ;
                 }
-            }forEach (_markercount select 1);
+            } forEach (_markercount select 1);
         };
-    }forEach allUnits;
+    } forEach allUnits;
     _currentOwner = ["UNCONTESTED",0,9999];
     {
 
-        if(_x select 1 > _currentOwner select 1) then
-        {
+        if (_x select 1 > _currentOwner select 1) then {
             _currentOwner = [str (_x select 0),_x select 1,_x select 2];
 
-        }
-        else
-        {
-            if((_x select 1) == (_currentOwner select 1) && (_x select 1) != 0) then
-            {
+        } else {
+            if ((_x select 1) == (_currentOwner select 1) && (_x select 1) != 0) then {
                 _currentOwner = ["CONTESTED",_x select 1,9999];
             };
         }
-    }forEach (_markerCount select 1);
+    } forEach (_markerCount select 1);
 
-    if(((_currentOwner select 0) != (_oldOwner select 0)) || (_currentOwner select 0 == "CONTESTED")) then
-    {
-        switch(_currentOwner select 0) do
-        {
+    if (((_currentOwner select 0) != (_oldOwner select 0)) || (_currentOwner select 0 == "CONTESTED")) then {
+        switch(_currentOwner select 0) do {
             case "WEST":
             {
 
                     _mes = _messages select 0;
                     //this is for ContestedZone so the timer doesn't reset
                     //can probaply be done better
-                    if(_contester != "WEST") then
-                    {
+                    if (_contester != "WEST") then {
                         _timer = CBA_missionTime;
                         _contester = "WEST";
                     };
@@ -101,8 +89,7 @@ while{_run} do
                     _mes = _messages select 1;
                     //this is for ContestedZone so the timer doesn't reset
                     //can probaply be done better
-                    if(_contester != "EAST") then
-                    {
+                    if (_contester != "EAST") then {
                         _timer = CBA_missionTime;
                         _contester = "EAST";
                     };
@@ -115,8 +102,7 @@ while{_run} do
                     _mes = _messages select 2;
                     //this is for ContestedZone so the timer doesn't reset
                     //can probaply be done better
-                    if(_contester != "GUER") then
-                    {
+                    if (_contester != "GUER") then {
                         _timer = CBA_missionTime;
                         _contester = "GUER";
                     };
@@ -130,8 +116,7 @@ while{_run} do
                     _mes = _messages select 2;
                     //this is for ContestedZone so the timer doesn't reset
                     //can probaply be done better
-                    if(_contester != "RESISTANCE") then
-                    {
+                    if (_contester != "RESISTANCE") then {
                         _timer = CBA_missionTime;
                         _contester = "RESISTANCE";
                     };
@@ -144,8 +129,7 @@ while{_run} do
                     _mes = _messages select 3;
                     //this is for ContestedZone so the timer doesn't reset
                     //can probaply be done better
-                    if(_contester != "CIVILIAN") then
-                    {
+                    if (_contester != "CIVILIAN") then {
                         _timer = CBA_missionTime;
                         _contester = "CIVILIAN";
                     };
@@ -164,8 +148,7 @@ while{_run} do
             };
             case "CONTESTED":
             {
-                    if((_currentOwner select 0) != (_oldOwner select 0)) then
-                    {
+                    if ((_currentOwner select 0) != (_oldOwner select 0)) then {
                         _mes = _messages select 4;
                         [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
                         [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 4]] call CBA_fnc_globalExecute;
@@ -177,25 +160,21 @@ while{_run} do
     };
     _countforwins = 0;
     {
-        if(_marker  == _x select 1) then
-        {
-            if((CBA_missionTime - _timer) >= _currentOwner select 2) then
-            {
+        if (_marker  == _x select 1) then {
+            if ((CBA_missionTime - _timer) >= _currentOwner select 2) then {
                 _temp = true;
 
-                if(_temp) exitWith
+                if (_temp) exitWith
                 {
                     CZMARKERCOLLECTION set [_countforwins,[_currentOwner select 0,_marker,true]];
                     _run = false;
                 };
-            }
-            else
-            {
+            } else {
                     CZMARKERCOLLECTION set [_countforwins,[_currentowner select 0,_marker,false]];
             };
         };
         _countforwins = _countforwins + 1;
-    }forEach CZMARKERCOLLECTION;
+    } forEach CZMARKERCOLLECTION;
     _oldOwner = _currentOwner;
     _end = _start;
     sleep(1);

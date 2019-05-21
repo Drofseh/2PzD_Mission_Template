@@ -95,8 +95,7 @@ if (isMultiplayer) then {
         if (defaultFogType) then {
             _fog = _FogParam;
             0 setFog (_fog / 3.2);
-        }
-        else {
+        } else {
             _fog = (fogArrays select _FogParam);
             if (count _fog == 0) then {
                 _fog = [0,0,0];

@@ -20,8 +20,7 @@ _randomGear     = ["MEDIUM","MEDIUM","LIGHT"];
 _canInterpolate = false;
 
 //setup ambient animations
-switch (_this) do
-{
+switch (_this) do {
     /*------------------------------------------------------------------------------------------
 
         STANDING
