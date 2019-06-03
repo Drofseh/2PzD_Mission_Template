@@ -136,22 +136,22 @@
             [//TT33
                 [Rus_Mag_TT33,1],
                 [Rus_Weap_TT33],
-                [Rus_Mag_TT33,2]
+                [Rus_Mag_TT33,2,"uniform"]
             ],[50],
             [//M1895 Nagant
                 [Rus_Mag_M1895,1],
                 [Rus_Weap_M1895],
-                [Rus_Mag_M1895,2]
+                [Rus_Mag_M1895,2,"uniform"]
             ],[25],
             [//P38
                 [Ger_Mag_P38,1],
                 [Ger_Weap_P38],
-                [Ger_Mag_P38,2]
+                [Ger_Mag_P38,2,"uniform"]
             ],[15],
             [//P38
                 [Ger_Mag_P08,1],
                 [Ger_Weap_P08],
-                [Ger_Mag_P08,2]
+                [Ger_Mag_P08,2,"uniform"]
             ],[10]
         ] call FNC_AddItemRandomPercent;
 
@@ -187,6 +187,7 @@
             [//Mosin M38
                 [Rus_Mag_Mosin,1],
                 [Rus_Weap_MosM38],
+                [Rus_Acc_Mos_Bayo,1,"uniform"],
                 [Rus_Mag_Mosin,6]
             ],[10],
             [//PPSh41 Drum
@@ -202,22 +203,23 @@
             [//TT33
                 [Rus_Mag_TT33,1],
                 [Rus_Weap_TT33],
-                [Rus_Mag_TT33,2]
+                [Rus_Mag_TT33,2,"uniform"]
             ],[10],
             [//K98
                 [Ger_Mag_K98,1],
+                [Ger_Acc_K98_Bayo,1,"uniform"],
                 [Ger_Weap_K98],
                 [Ger_Mag_K98,6]
             ],[5],
             [//M1895 Nagant
                 [Rus_Mag_M1895,1],
                 [Rus_Weap_M1895],
-                [Rus_Mag_M1895,2]
+                [Rus_Mag_M1895,2,"uniform"]
             ],[5],
             [//P38
                 [Ger_Mag_P38,1],
                 [Ger_Weap_P38],
-                [Ger_Mag_P38,2]
+                [Ger_Mag_P38,2,"uniform"]
             ],[3],
             [//P08
                 [Ger_Mag_P08,1],
@@ -251,7 +253,7 @@
                     [//P38
                         [Ger_Mag_P08,1],
                         [Ger_Weap_P08],
-                        [Ger_Mag_P08,2]
+                        [Ger_Mag_P08,2,"uniform"]
                     ],[4]
                 ] call FNC_AddItemRandomPercent;
             };
@@ -278,7 +280,7 @@
                     [//P38
                         [Ger_Mag_P08,1],
                         [Ger_Weap_P08],
-                        [Ger_Mag_P08,2]
+                        [Ger_Mag_P08,2,"uniform"]
                     ],[1]
                 ] call FNC_AddItemRandomPercent;
             };
@@ -305,7 +307,7 @@
                     [//P38
                         [Ger_Mag_P08,1],
                         [Ger_Weap_P08],
-                        [Ger_Mag_P08,2]
+                        [Ger_Mag_P08,2,"uniform"]
                     ],[4]
                 ] call FNC_AddItemRandomPercent;
             };
@@ -332,7 +334,7 @@
                     [//P38
                         [Ger_Mag_P08,1],
                         [Ger_Weap_P08],
-                        [Ger_Mag_P08,2]
+                        [Ger_Mag_P08,2,"uniform"]
                     ],[1]
                 ] call FNC_AddItemRandomPercent;
             };
@@ -359,7 +361,7 @@
                     [//P38
                         [Ger_Mag_P08,1],
                         [Ger_Weap_P08],
-                        [Ger_Mag_P08,2]
+                        [Ger_Mag_P08,2,"uniform"]
                     ],[1]
                 ] call FNC_AddItemRandomPercent;
             };
@@ -386,21 +388,21 @@
                     [//P38
                         [Ger_Mag_P08,1],
                         [Ger_Weap_P08],
-                        [Ger_Mag_P08,2]
+                        [Ger_Mag_P08,2,"uniform"]
                     ],[4]
                 ] call FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Rus_Weap_TT33): {
-                [Rus_Mag_TT33,2] call FNC_AddItem;
+                [Rus_Mag_TT33,2,"uniform"] call FNC_AddItem;
             };
             case (_unit hasWeapon Rus_Weap_M1895): {
-                [Rus_Mag_M1895,2] call FNC_AddItem;
+                [Rus_Mag_M1895,2,"uniform"] call FNC_AddItem;
             };
             case (_unit hasWeapon Ger_Weap_P38): {
-                [Ger_Mag_P38,2] call FNC_AddItem;
+                [Ger_Mag_P38,2,"uniform"] call FNC_AddItem;
             };
             case (_unit hasWeapon Ger_Weap_P08): {
-                [Ger_Mag_P08,2] call FNC_AddItem;
+                [Ger_Mag_P08,2,"uniform"] call FNC_AddItem;
             };
         };
 
@@ -424,6 +426,7 @@
             [//Mosin M9130
                 [Rus_Mag_Mosin,1],
                 [Rus_Weap_MosM9130],
+                [Rus_Acc_Mos_Bayo,1,"uniform"],
                 [Rus_Mag_Mosin,6]
             ],[25],
             [//PPSh41 Stick
@@ -449,22 +452,23 @@
             [//TT33
                 [Rus_Mag_TT33,1],
                 [Rus_Weap_TT33],
-                [Rus_Mag_TT33,2]
+                [Rus_Mag_TT33,2,"uniform"]
             ],[10],
             [//K98
                 [Ger_Mag_K98,1],
+                [Ger_Acc_K98_Bayo,1,"uniform"],
                 [Ger_Weap_K98],
                 [Ger_Mag_K98,6]
             ],[5],
             [//M1895 Nagant
                 [Rus_Mag_M1895,1],
                 [Rus_Weap_M1895],
-                [Rus_Mag_M1895,2]
+                [Rus_Mag_M1895,2,"uniform"]
             ],[5],
             [//P38
                 [Ger_Mag_P38,1],
                 [Ger_Weap_P38],
-                [Ger_Mag_P38,2]
+                [Ger_Mag_P38,2,"uniform"]
             ],[3],
             [//P08
                 [Ger_Mag_P08,1],
@@ -638,16 +642,16 @@
                 ] call FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Rus_Weap_TT33): {
-                [Rus_Mag_TT33,2] call FNC_AddItem;
+                [Rus_Mag_TT33,2,"uniform"] call FNC_AddItem;
             };
             case (_unit hasWeapon Rus_Weap_M1895): {
-                [Rus_Mag_M1895,2] call FNC_AddItem;
+                [Rus_Mag_M1895,2,"uniform"] call FNC_AddItem;
             };
             case (_unit hasWeapon Ger_Weap_P38): {
-                [Ger_Mag_P38,2] call FNC_AddItem;
+                [Ger_Mag_P38,2,"uniform"] call FNC_AddItem;
             };
             case (_unit hasWeapon Ger_Weap_P08): {
-                [Ger_Mag_P08,2] call FNC_AddItem;
+                [Ger_Mag_P08,2,"uniform"] call FNC_AddItem;
             };
         };
 

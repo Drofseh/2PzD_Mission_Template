@@ -31,7 +31,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
     };
 
     //Glider Pilot
@@ -48,7 +48,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Primary Weapon
         [US_Mag_M1C,1] call FNC_AddItem;

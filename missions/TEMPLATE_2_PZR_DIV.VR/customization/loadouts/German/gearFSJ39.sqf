@@ -30,113 +30,116 @@
 //======================== Definitions ========================
 
 // For Kompanieführer and Zugführer
-#define FSJ39_Weapon_Officer            \
-        [                               \
-            [                           \
-                [FSJ_Vest_CC]           \
-            ],[80],                     \
-            [                           \
-                [FSJ_Vest_PC],          \
-                [Ger_Mag_MP40,1],       \
-                [Ger_Weap_MP38],        \
+#define FSJ39_Weapon_Officer \
+        [ \
+            [ \
+                [FSJ_Vest_CC] \
+            ],[80], \
+            [ \
+                [FSJ_Vest_PC], \
+                [Ger_Mag_MP40,1], \
+                [Ger_Weap_MP38], \
                 [Ger_Mag_MP40,3,"vest"] \
-            ],[20]                      \
+            ],[20] \
         ] call FNC_AddItemRandomPercent;
 
 // For Kompanietruppführer and Zugtruppführer
-#define FSJ39_Weapon_TF                 \
-        [                               \
-            [                           \
-                [FSJ_Vest_Band],        \
-                [Ger_Mag_K98,1],        \
-                [Ger_Weap_K98_E],       \
+#define FSJ39_Weapon_TF \
+        [ \
+            [ \
+                [FSJ_Vest_Band], \
+                [Ger_Mag_K98,1], \
+                [Ger_Acc_K98_Bayo,1,"uniform"], \
+                [Ger_Weap_K98_E], \
                 [Ger_Mag_K98,24,"vest"] \
-            ],[80],                     \
-            [                           \
-                [FSJ_Vest_PC],          \
-                [Ger_Mag_MP40,1],       \
-                [Ger_Weap_MP38],        \
+            ],[80], \
+            [ \
+                [FSJ_Vest_PC], \
+                [Ger_Mag_MP40,1], \
+                [Ger_Weap_MP38], \
                 [Ger_Mag_MP40,3,"vest"] \
-            ],[20]                      \
+            ],[20] \
         ] call FNC_AddItemRandomPercent;
 
 // For Gruppenführer
-#define FSJ39_Weapon_GF                 \
-        [                               \
-            [                           \
-                [FSJ_Vest_Band],        \
-                [Ger_Mag_K98,1],        \
-                [Ger_Weap_K98_E],       \
+#define FSJ39_Weapon_GF \
+        [ \
+            [ \
+                [FSJ_Vest_Band], \
+                [Ger_Mag_K98,1], \
+                [Ger_Acc_K98_Bayo,1,"uniform"], \
+                [Ger_Weap_K98_E], \
                 [Ger_Mag_K98,24,"vest"] \
-            ],[80],                     \
-            [                           \
-                [FSJ_Vest_PC],          \
-                [Ger_Mag_MP40,1],       \
-                [Ger_Weap_MP38],        \
+            ],[80], \
+            [ \
+                [FSJ_Vest_PC], \
+                [Ger_Mag_MP40,1], \
+                [Ger_Weap_MP38], \
                 [Ger_Mag_MP40,3,"vest"] \
-            ],[20]                      \
+            ],[20] \
         ] call FNC_AddItemRandomPercent;
 
 // For Stellvertretender Gruppenführer
-#define FSJ39_Weapon_SGf                \
-        [                               \
-            [                           \
-                [FSJ_Vest_Band],        \
-                [Ger_Mag_K98,1],        \
-                [Ger_Weap_K98_E],       \
+#define FSJ39_Weapon_SGf \
+        [ \
+            [ \
+                [FSJ_Vest_Band], \
+                [Ger_Mag_K98,1], \
+                [Ger_Acc_K98_Bayo,1,"uniform"], \
+                [Ger_Weap_K98_E], \
                 [Ger_Mag_K98,24,"vest"] \
-            ],[80],                     \
-            [                           \
-                [Ger_Vest_MP40],        \
-                [Ger_Mag_MP40,1],       \
-                [Ger_Weap_MP38],        \
+            ],[80], \
+            [ \
+                [Ger_Vest_MP40], \
+                [Ger_Mag_MP40,1], \
+                [Ger_Weap_MP38], \
                 [Ger_Mag_MP40,6,"vest"] \
-            ],[20]                      \
+            ],[20] \
         ] call FNC_AddItemRandomPercent;
 
 // For Kompanieführer, Zugführer
 #define FSJ39_Weapon_Officer_Secondary \
-        [                              \
-            [                          \
-                [Ger_Mag_P08,1],       \
-                [Ger_Weap_P08],        \
-                [Ger_Mag_P08,2]        \
-            ],[53],                    \
-            [                          \
-                [Ger_Mag_P38,1],       \
-                [Ger_Weap_P38],        \
-                [Ger_Mag_P38,2]        \
-            ],[37],                    \
-            [                          \
-                [Ger_Mag_PPK,1],       \
-                [Ger_Weap_PPK],        \
-                [Ger_Mag_PPK,2]        \
-            ],[10],                    \
-            [                          \
-                [Ger_Mag_M172_20,1],   \
-                [Ger_Weap_M172],       \
-                [Ger_Mag_M172_20,2]    \
-            ],[1]                      \
+        [ \
+            [ \
+                [Ger_Mag_P08,1], \
+                [Ger_Weap_P08], \
+                [Ger_Mag_P08,2,"uniform"] \
+            ],[53], \
+            [ \
+                [Ger_Mag_P38,1], \
+                [Ger_Weap_P38], \
+                [Ger_Mag_P38,2,"uniform"] \
+            ],[37], \
+            [ \
+                [Ger_Mag_PPK,1], \
+                [Ger_Weap_PPK], \
+                [Ger_Mag_PPK,2,"uniform"] \
+            ],[10], \
+            [ \
+                [Ger_Mag_M172_20,1], \
+                [Ger_Weap_M172], \
+                [Ger_Mag_M172_20,2,"uniform"] \
+            ],[1] \
         ] call FNC_AddItemRandomPercent;
 
 // For Kompanietruppführer, Zugtruppführer, MG-Richtschütze
 #define FSJ39_Weapon_Enlisted_Secondary \
-        [                               \
-            [                           \
-                [Ger_Mag_P08,1],        \
-                [Ger_Weap_P08],         \
-                [Ger_Mag_P08,2]         \
-            ],[58],                     \
-            [                           \
-                [Ger_Mag_P38,1],        \
-                [Ger_Weap_P38],         \
-                [Ger_Mag_P38,2]         \
-            ],[42],                     \
-            [                           \
-                [Ger_Mag_M172_20,1],    \
-                [Ger_Weap_M172],        \
-                [Ger_Mag_M172_20,2]     \
-            ],[1]                       \
+        [ \
+            [ \
+                [Ger_Mag_P08,1], \
+                [Ger_Weap_P08], \
+                [Ger_Mag_P08,2,"uniform"] \
+            ],[58], \
+            [ \
+                [Ger_Mag_P38,1], \
+                [Ger_Weap_P38], \
+                [Ger_Mag_P38,2,"uniform"] \
+            ],[42], \
+            [ \
+                [Ger_Mag_M172_20,1], \
+                [Ger_Weap_M172], \
+                [Ger_Mag_M172_20,2,"uniform"] \
+            ],[1] \
         ] call FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================
@@ -245,6 +248,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
+        [Ger_Acc_K98_Bayo,1,"uniform"] call FNC_AddItem;
         [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
@@ -267,6 +271,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
+        [Ger_Acc_K98_Bayo,1,"uniform"] call FNC_AddItem;
         [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
@@ -289,6 +294,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
+        [Ger_Acc_K98_Bayo,1,"uniform"] call FNC_AddItem;
         [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
@@ -379,6 +385,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
+        [Ger_Acc_K98_Bayo,1,"uniform"] call FNC_AddItem;
         [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
 
@@ -423,6 +430,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
+        [Ger_Acc_K98_Bayo,1,"uniform"] call FNC_AddItem;
         [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 
@@ -446,6 +454,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
+        [Ger_Acc_K98_Bayo,1,"uniform"] call FNC_AddItem;
         [Ger_Weap_K98_E] call FNC_AddItem;
         [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
 

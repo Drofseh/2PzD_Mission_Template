@@ -36,6 +36,7 @@
 #define CZ_Mag_vz37             "CSA38_ZB53mg5"
 #define CZ_Mag_vz37_AP          "CSA38_ZB53mg6"
 #define CZ_Mag_vz26             "CBA_792x57_ZB26"
+
 #define CZ_Mag_vz22p            "CSA38_9mm_8xBrowning"
 #define CZ_Mag_vz27             "CSA38_7_65mm_8xBrowning"
 #define CZ_Mag_vz36             "CSA38_6_35mm_8xBrowning"

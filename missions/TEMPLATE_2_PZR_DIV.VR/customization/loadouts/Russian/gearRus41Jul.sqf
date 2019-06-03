@@ -47,83 +47,83 @@
 //======================== Definitions ========================
 
 //For riflemen
-#define R41Jul_Weapon_Rifleman            \
-        [                                 \
-            [/*Mosin M91/30*/             \
-                [Rus_Vest_Mosin],         \
-                [Rus_Mag_Mosin,1],        \
-                [Rus_Weap_MosM9130],      \
-                [Rus_Acc_Mos_Bayo],      \
+#define R41Jul_Weapon_Rifleman \
+        [ \
+            [/*Mosin M91/30*/ \
+                [Rus_Vest_Mosin], \
+                [Rus_Mag_Mosin,1], \
+                [Rus_Weap_MosM9130], \
+                [Rus_Acc_Mos_Bayo], \
                 [Rus_Mag_Mosin,12,"vest"] \
-            ],[68],                       \
-            [/*SVT*/                      \
-                [Rus_Vest_SVT],           \
-                [Rus_Mag_SVT40,1],        \
-                [Rus_Weap_SVT40],         \
-                [Rus_Mag_SVT40,6,"vest"]  \
-            ],[30],                       \
-            [/*Mosin M38*/                \
-                [Rus_Vest_Mosin],         \
-                [Rus_Mag_Mosin,1],        \
-                [Rus_Weap_MosM38],        \
+            ],[68], \
+            [/*SVT*/ \
+                [Rus_Vest_SVT], \
+                [Rus_Mag_SVT40,1], \
+                [Rus_Weap_SVT40], \
+                [Rus_Mag_SVT40,6,"vest"] \
+            ],[30], \
+            [/*Mosin M38*/ \
+                [Rus_Vest_Mosin], \
+                [Rus_Mag_Mosin,1], \
+                [Rus_Weap_MosM38], \
                 [Rus_Mag_Mosin,12,"vest"] \
-            ],[2]                         \
+            ],[2] \
         ] call FNC_AddItemRandomPercent;
 
 //For light riflemen
-#define R41Jul_Weapon_Rifleman_Light      \
-        [                                 \
-            [/*Mosin M91/30*/             \
-                [Rus_Vest_Mosin],         \
-                [Rus_Mag_Mosin,1],        \
-                [Rus_Weap_MosM9130],      \
-                [Rus_Acc_Mos_Bayo],      \
+#define R41Jul_Weapon_Rifleman_Light \
+        [ \
+            [/*Mosin M91/30*/ \
+                [Rus_Vest_Mosin], \
+                [Rus_Mag_Mosin,1], \
+                [Rus_Weap_MosM9130], \
+                [Rus_Acc_Mos_Bayo], \
                 [Rus_Mag_Mosin,12,"vest"] \
-            ],[70],                       \
-            [/*SVT*/                      \
-                [Rus_Vest_SVT],           \
-                [Rus_Mag_SVT40,1],        \
-                [Rus_Weap_SVT40],         \
-                [Rus_Mag_SVT40,6,"vest"]  \
-            ],[15],                       \
-            [/*Mosin M38*/                \
-                [Rus_Vest_Mosin],         \
-                [Rus_Mag_Mosin,1],        \
-                [Rus_Weap_MosM38],        \
+            ],[70], \
+            [/*SVT*/ \
+                [Rus_Vest_SVT], \
+                [Rus_Mag_SVT40,1], \
+                [Rus_Weap_SVT40], \
+                [Rus_Mag_SVT40,6,"vest"] \
+            ],[15], \
+            [/*Mosin M38*/ \
+                [Rus_Vest_Mosin], \
+                [Rus_Mag_Mosin,1], \
+                [Rus_Weap_MosM38], \
                 [Rus_Mag_Mosin,12,"vest"] \
-            ],[15]                        \
+            ],[15] \
         ] call FNC_AddItemRandomPercent;
 
 //For submachine gunners
-#define R41Jul_Weapon_SMG                \
-        [                                \
-            [/*PPD-40*/                  \
-                [Rus_Vest_PPSH_D1],      \
-                [Rus_Mag_PPD40,1],       \
-                [Rus_Weap_PPD40],        \
+#define R41Jul_Weapon_SMG \
+        [ \
+            [/*PPD-40*/ \
+                [Rus_Vest_PPSH_D1], \
+                [Rus_Mag_PPD40,1], \
+                [Rus_Weap_PPD40], \
                 [Rus_Mag_PPD40,2,"vest"] \
-            ],[50],                      \
-            [/*PPD-40*/                  \
-                [Rus_Vest_PPSH_D2],      \
-                [Rus_Mag_PPD40,1],       \
-                [Rus_Weap_PPD40],        \
+            ],[50], \
+            [/*PPD-40*/ \
+                [Rus_Vest_PPSH_D2], \
+                [Rus_Mag_PPD40,1], \
+                [Rus_Weap_PPD40], \
                 [Rus_Mag_PPD40,2,"vest"] \
-            ],[50]                       \
+            ],[50] \
         ] call FNC_AddItemRandomPercent;
 
 //For all loadouts with pistols
-#define R41Jul_Weapon_Secondary    \
-        [                          \
-            [/*TT-33*/             \
-                [Rus_Mag_TT33,1],  \
-                [Rus_Weap_TT33],   \
-                [Rus_Mag_TT33,2]   \
-            ],[59],                \
-            [/*M1895*/             \
+#define R41Jul_Weapon_Secondary \
+        [ \
+            [/*TT-33*/ \
+                [Rus_Mag_TT33,1], \
+                [Rus_Weap_TT33], \
+                [Rus_Mag_TT33,2,"uniform"] \
+            ],[59], \
+            [/*M1895*/ \
                 [Rus_Mag_M1895,1], \
-                [Rus_Weap_M1895],  \
-                [Rus_Mag_M1895,2]  \
-            ],[41]                 \
+                [Rus_Weap_M1895], \
+                [Rus_Mag_M1895,2,"uniform"] \
+            ],[41] \
         ] call FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================

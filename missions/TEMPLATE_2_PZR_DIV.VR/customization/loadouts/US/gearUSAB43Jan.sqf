@@ -46,150 +46,154 @@
 //======================== Definitions ========================
 
 // For Company Commander, Company Executive Officer, Platoon Commander, Squad Leader
-#define USAB43Jan_Weapon_Leader         \
-        [                               \
-            [/*M1 Carbine*/             \
-                [USAB_Vest_M1C],        \
-                [US_Mag_M1C,1],         \
-                [US_Weap_M1C],          \
-                [US_Mag_M1C,4,"vest"]   \
-            ],[35],                     \
-            [/*M1A1 Carbine*/           \
-                [USAB_Vest_M1C],        \
-                [US_Mag_M1C,1],         \
-                [US_Weap_M1A1C],        \
-                [US_Mag_M1C,4,"vest"]   \
-            ],[15],                     \
-            [/*M1 Thompson*/            \
-                [USAB_Vest_M1T],        \
-                [US_Mag_M1T_1,1],       \
-                [US_Weap_M1T],          \
+#define USAB43Jan_Weapon_Leader \
+        [ \
+            [/*M1 Carbine*/ \
+                [USAB_Vest_M1C], \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[35], \
+            [/*M1A1 Carbine*/ \
+                [USAB_Vest_M1C], \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1A1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[15], \
+            [/*M1 Thompson*/ \
+                [USAB_Vest_M1T], \
+                [US_Mag_M1T_1,1], \
+                [US_Weap_M1T], \
                 [US_Mag_M1T_1,5,"vest"] \
-            ],[15],                     \
-            [/*M3 Grease Gun*/          \
-                [USAB_Vest_M1T],        \
-                [US_Mag_M3GG,1],        \
-                [US_Weap_M3GG],         \
-                [US_Mag_M3GG,5,"vest"]  \
-            ],[10],                     \
-            [/*M1A1 Thompson*/          \
-                [USAB_Vest_M1T],        \
-                [US_Mag_M1T_1,1],       \
-                [US_Weap_M1A1T],        \
+            ],[15], \
+            [/*M3 Grease Gun*/ \
+                [USAB_Vest_M1T], \
+                [US_Mag_M3GG,1], \
+                [US_Weap_M3GG], \
+                [US_Mag_M3GG,5,"vest"] \
+            ],[10], \
+            [/*M1A1 Thompson*/ \
+                [USAB_Vest_M1T], \
+                [US_Mag_M1T_1,1], \
+                [US_Weap_M1A1T], \
                 [US_Mag_M1T_1,5,"vest"] \
-            ],[10],                     \
-            [/*M1928A1*/                \
-                [USAB_Vest_M1T],        \
-                [US_Mag_M1T_2,1],       \
-                [US_Weap_M1928A1],      \
+            ],[10], \
+            [/*M1928A1*/ \
+                [USAB_Vest_M1T], \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1928A1], \
                 [US_Mag_M1T_2,5,"vest"] \
-            ],[10],                     \
-            [/*M1928*/                  \
-                [USAB_Vest_M1T],        \
-                [US_Mag_M1T_2,1],       \
-                [US_Weap_M1928],        \
+            ],[10], \
+            [/*M1928*/ \
+                [USAB_Vest_M1T], \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1928], \
                 [US_Mag_M1T_2,5,"vest"] \
-            ],[5]                       \
+            ],[5] \
         ] call FNC_AddItemRandomPercent;
 
 // For Assistant Squad Leader
-#define USAB43Jan_Weapon_ASL              \
-        [                                 \
-            [                             \
-                [USAB_Vest_M1G],          \
-                [US_Mag_M1G,1],           \
-                [US_Weap_M1G],            \
+#define USAB43Jan_Weapon_ASL \
+        [ \
+            [ \
+                [USAB_Vest_M1G], \
+                [US_Mag_M1G,1], \
+                [US_Acc_M1_Bayo,1,"uniform"], \
+                [US_Weap_M1G], \
                 [US_Acc_M1G_GL,1,"vest"], \
-                [US_Mag_M1G,10,"vest"],   \
-                [US_Mag_RGrn_AT,10]       \
-            ],[64],                       \
-            [                             \
-                [USAB_Vest_M1C],          \
-                [US_Mag_M1C,1],           \
-                [US_Weap_M1C],            \
-                [US_Mag_M1C,4,"vest"]     \
-            ],[20],                       \
-            [                             \
-                [USAB_Vest_M1C],          \
-                [US_Mag_M1C,1],           \
-                [US_Weap_M1A1C],          \
-                [US_Mag_M1C,4,"vest"]     \
-            ],[15],                       \
-            [                             \
-                [USAB_Vest_M1G],          \
-                [US_Mag_M1903,1],         \
-                [US_Weap_M1903A3],        \
-                [US_Mag_M1903,20,"vest"]  \
-            ],[1]                         \
+                [US_Mag_M1G,10,"vest"], \
+                [US_Mag_RGrn_AT,10] \
+            ],[64], \
+            [ \
+                [USAB_Vest_M1C], \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[20], \
+            [ \
+                [USAB_Vest_M1C], \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1A1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[15], \
+            [ \
+                [USAB_Vest_M1G], \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A3], \
+                [US_Mag_M1903,20,"vest"] \
+            ],[1] \
         ] call FNC_AddItemRandomPercent;
 
 // For light riflemen
-#define USAB43Jan_Weapon_Rifle_Light     \
-        [                                \
-            [                            \
-                [USAB_Vest_M1G],         \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G],           \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[54],                      \
-            [                            \
-                [USAB_Vest_M1C],         \
-                [US_Mag_M1C,1],          \
-                [US_Weap_M1C],           \
-                [US_Mag_M1C,4,"vest"]    \
-            ],[30],                      \
-            [                            \
-                [USAB_Vest_M1C],         \
-                [US_Mag_M1C,1],          \
-                [US_Weap_M1A1C],         \
-                [US_Mag_M1C,4,"vest"]    \
-            ],[15],                      \
-            [                            \
-                [USAB_Vest_M1G],         \
-                [US_Mag_M1903,1],        \
-                [US_Weap_M1903A3],       \
+#define USAB43Jan_Weapon_Rifle_Light \
+        [ \
+            [ \
+                [USAB_Vest_M1G], \
+                [US_Mag_M1G,1], \
+                [US_Acc_M1_Bayo,1,"uniform"], \
+                [US_Weap_M1G], \
+                [US_Mag_M1G,10,"vest"] \
+            ],[54], \
+            [ \
+                [USAB_Vest_M1C], \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[30], \
+            [ \
+                [USAB_Vest_M1C], \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1A1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[15], \
+            [ \
+                [USAB_Vest_M1G], \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A3], \
                 [US_Mag_M1903,20,"vest"] \
-            ],[1]                        \
+            ],[1] \
         ] call FNC_AddItemRandomPercent;
 
 // For medic
-#define USAB43Jan_Weapon_Rifle_Medic     \
-        [                                \
-            [                            \
-                [US_Mag_M1C,1],          \
-                [US_Weap_M1C],           \
-                [US_Mag_M1C,4,"vest"]    \
-            ],[30],                      \
-            [                            \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G],           \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[54],                      \
-            [                            \
-                [US_Mag_M1C,1],          \
-                [US_Weap_M1A1C],         \
-                [US_Mag_M1C,4,"vest"]    \
-            ],[15],                      \
-            [                            \
-                [US_Mag_M1903,1],        \
-                [US_Weap_M1903A3],       \
+#define USAB43Jan_Weapon_Rifle_Medic \
+        [ \
+            [ \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[30], \
+            [ \
+                [US_Mag_M1G,1], \
+                [US_Acc_M1_Bayo,1,"uniform"], \
+                [US_Weap_M1G], \
+                [US_Mag_M1G,10,"vest"] \
+            ],[54], \
+            [ \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1A1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[15], \
+            [ \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A3], \
                 [US_Mag_M1903,20,"vest"] \
-            ],[1]                        \
+            ],[1] \
         ] call FNC_AddItemRandomPercent;
 
 // For riflemen
-#define USAB43Jan_Weapon_Rifle           \
-        [                                \
-            [                            \
-                [US_Mag_M1G,1],          \
-                [US_Weap_M1G],           \
-                [US_Mag_M1G,10,"vest"]   \
-            ],[99],                      \
-            [                            \
-                [US_Mag_M1903,1],        \
-                [US_Weap_M1903A1],       \
+#define USAB43Jan_Weapon_Rifle \
+        [ \
+            [ \
+                [US_Mag_M1G,1], \
+                [US_Acc_M1_Bayo,1,"uniform"], \
+                [US_Weap_M1G], \
+                [US_Mag_M1G,10,"vest"] \
+            ],[99], \
+            [ \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A1], \
                 [US_Mag_M1903,20,"vest"] \
-            ],[1]                        \
+            ],[1] \
         ] call FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================
@@ -212,7 +216,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,1] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -235,7 +239,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,1] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -259,7 +263,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,1] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -302,7 +306,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,1] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -326,7 +330,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,1] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -440,7 +444,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,2] call FNC_AddItem;
+        [US_Mag_M1911,2,"uniform"] call FNC_AddItem;
 
         //Primary Weapon
         [US_Mag_M1919_250,1] call FNC_AddItem;
@@ -506,7 +510,7 @@
         //Primary Weapon
         [US_Mag_BAR,1] call FNC_AddItem;
         [US_Weap_BAR] call FNC_AddItem;
-        [US_Weap_BAR_Bipod] call FNC_AddItem;
+        [US_Acc_BAR_Bipod] call FNC_AddItem;
         [US_Mag_BAR,6,"vest"] call FNC_AddItem;
         [US_Mag_BAR,9] call FNC_AddItem;
 
@@ -646,7 +650,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [US_Mag_Mort_HE,8] call FNC_AddItem;
@@ -669,7 +673,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [US_Mag_Mort_HE,8] call FNC_AddItem;

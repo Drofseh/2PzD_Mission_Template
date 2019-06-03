@@ -75,7 +75,9 @@ Letting them keep the large backpack would allow them to put other items in the 
 #define US_Mag_M12_Slug         "fow_6Rnd_12G_Slug"
 #define US_Mag_M37_Buck         "fow_5Rnd_12G_Pellets"
 #define US_Mag_M37_Slug         "fow_5Rnd_12G_Slug"
+
 #define US_Mag_M1911            "LIB_7Rnd_45ACP"
+
 #define US_Mag_RGrn_AT          "fow_1Rnd_m9a1"
 //#define US_Mag_RGrn_AT          "LIB_1Rnd_G_M9A1"
 #define US_Mag_RGrn_HE          "LIB_1Rnd_G_Mk2"

@@ -86,7 +86,7 @@ FW_ChannelNames = [
 
 // set this to true to enable babel
 // this scrambles the voices of people who don't speak the same language as your side
-FW_enable_babel = false;
+FW_enable_babel = true;
 
 /*
  * FNC_SetLanguages
@@ -99,25 +99,49 @@ FW_enable_babel = false;
  * [this, ["fr", "en", "ru"]] call FNC_SetLanguages;
 */
 
-//define all available languages here
-
+// define all available languages here
+// you can add your own if something is missing
+// ["ISO 639 country code", "Name of language"]
 FW_all_languages = [
-    ["cz", "Czech"],
-    ["en", "English"],
-    ["fr", "French"],
-    ["gr", "German"],
-    ["it", "Italian"],
-    ["jp", "Japanese"],
-    ["pl", "Polish"],
-    ["ru", "Russian"]
+    ["sq",  "Albanian"],
+    ["be",  "Belarusian"],
+    ["bs",  "Bosnian"],
+    ["bg",  "Bulgarian"],
+    ["hr",  "Croatian"],
+    ["cs",  "Czech"],
+    ["da",  "Danish"],
+    ["nl",  "Dutch"],
+    ["en",  "English"],
+    ["et",  "Estonian"],
+    ["fi",  "Finnish"],
+    ["fr",  "French"],
+    ["de",  "German"],
+    ["el",  "Greek"],
+    ["hu",  "Hungarian"],
+    ["it",  "Italian"],
+    ["ja",  "Japanese"],
+    ["lv",  "Latvian"],
+    ["lt",  "Lithuanian"],
+    ["mt",  "Maltese"],
+    ["no",  "Norwegian"],
+    ["pl",  "Polish"],
+    ["ro",  "Romanian"],
+    ["ru",  "Russian"],
+    ["sr",  "Serbian"],
+    ["scn", "Sicilian"],
+    ["sk",  "Slovak"],
+    ["sl",  "Slovene"],
+    ["sv",  "Swedish"],
+    ["uk",  "Ukrainian"]
 ];
 
 //define languages for different sides
+//change these to make that side speak a different language
 FW_languages_babel = [
-    ["gr"],//WEST
-    ["ru"],//EAST
-    ["en"],//INDEPENDENT
-    ["fr"]//DEFAULT/CIVILIAN
+    ["de"], //WEST Language
+    ["ru"], //EAST Language
+    ["en"], //INDEPENDENT Language
+    ["fr"]  //CIVILIAN Language
 ];
 
 ///////////////////////

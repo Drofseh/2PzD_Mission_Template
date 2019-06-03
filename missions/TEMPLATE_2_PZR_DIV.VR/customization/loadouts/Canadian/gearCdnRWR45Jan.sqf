@@ -31,13 +31,13 @@
 [this,"CdnRWR45_MortA"] call FNC_GearScript;      Mortar Assistant
 [this,"CdnRWR45_MortAB"] call FNC_GearScript;     Mortar Ammo Bearer
 
-[this,"UK45Jan_ATRTL"] call FNC_GearScript;   Boys Rifle Team Leader
-[this,"UK45Jan_ATRG"] call FNC_GearScript;    Boys Rifle Gunner
-[this,"UK45Jan_ATRAB"] call FNC_GearScript;   Boys Rifle Ammo Bearer
+[this,"CdnRWR45_ATRTL"] call FNC_GearScript;   Boys Rifle Team Leader
+[this,"CdnRWR45_ATRG"] call FNC_GearScript;    Boys Rifle Gunner
+[this,"CdnRWR45_ATRAB"] call FNC_GearScript;   Boys Rifle Ammo Bearer
 
-[this,"UK45Jan_ATTL"] call FNC_GearScript;    PIAT Team Leader
-[this,"UK45Jan_ATG"] call FNC_GearScript;     PIAT Gunner
-[this,"UK45Jan_ATAB"] call FNC_GearScript;    PIAT Ammo Bearer
+[this,"CdnRWR45_ATTL"] call FNC_GearScript;    PIAT Team Leader
+[this,"CdnRWR45_ATG"] call FNC_GearScript;     PIAT Gunner
+[this,"CdnRWR45_ATAB"] call FNC_GearScript;    PIAT Ammo Bearer
 
     Vehicle Crew
 [this,"CdnRWR45_VCom"] call FNC_GearScript;       Tank Commander
@@ -46,66 +46,66 @@
 
 //======================== Definitions ========================
 
-#define CdnRWR45_LeeEn                  \
-        [                               \
-            [                           \
-                [UK_Mag_LeeEn,1],       \
-                [UK_Weap_LeeEnNo4_1],   \
+#define CdnRWR45_LeeEn \
+        [ \
+            [ \
+                [UK_Mag_LeeEn,1], \
+                [UK_Weap_LeeEnNo4_1], \
                 [UK_Mag_LeeEn,5,"vest"] \
-            ],[38],                     \
-            [                           \
-                [UK_Mag_LeeEn,1],       \
-                [UK_Weap_LeeEnNo4_2],   \
+            ],[38], \
+            [ \
+                [UK_Mag_LeeEn,1], \
+                [UK_Weap_LeeEnNo4_2], \
                 [UK_Mag_LeeEn,5,"vest"] \
-            ],[37],                     \
-            [                           \
-                [UK_Mag_LeeEn,1],       \
-                [UK_Weap_LeeEnNo1Mk3s],     \
+            ],[37], \
+            [ \
+                [UK_Mag_LeeEn,1], \
+                [UK_Weap_LeeEnNo1Mk3s], \
                 [UK_Mag_LeeEn,5,"vest"] \
-            ],[25]                      \
+            ],[25] \
         ] call FNC_AddItemRandomPercent;
 
-#define CdnRWR45_SMG                    \
-        [                               \
-            [                           \
-                [UK_Mag_Sten,1],        \
-                [UK_Weap_StenMkII],     \
-                [UK_Mag_Sten,6,"vest"]  \
-            ],[50],                     \
-            [                           \
-                [US_Mag_M1T_1,1],       \
-                [US_Weap_M1T],          \
+#define CdnRWR45_SMG \
+        [ \
+            [ \
+                [UK_Mag_Sten,1], \
+                [UK_Weap_StenMkII], \
+                [UK_Mag_Sten,6,"vest"] \
+            ],[50], \
+            [ \
+                [US_Mag_M1T_1,1], \
+                [US_Weap_M1T], \
                 [US_Mag_M1T_1,6,"vest"] \
-            ],[25],                     \
-            [                           \
-                [UK_Mag_Sten,1],        \
-                [UK_Weap_StenMkV],      \
-                [UK_Mag_Sten,6,"vest"]  \
-            ],[15],                     \
-            [                           \
-                [US_Mag_M1T_1,1],       \
-                [US_Weap_M1928],        \
+            ],[25], \
+            [ \
+                [UK_Mag_Sten,1], \
+                [UK_Weap_StenMkV], \
+                [UK_Mag_Sten,6,"vest"] \
+            ],[15], \
+            [ \
+                [US_Mag_M1T_1,1], \
+                [US_Weap_M1928], \
                 [US_Mag_M1T_1,6,"vest"] \
-            ],[5],                      \
-            [                           \
-                [UK_Mag_Sten,1],        \
-                [UK_Weap_StenMkI],      \
-                [UK_Mag_Sten,6,"vest"]  \
-            ],[5]                       \
+            ],[5], \
+            [ \
+                [UK_Mag_Sten,1], \
+                [UK_Weap_StenMkI], \
+                [UK_Mag_Sten,6,"vest"] \
+            ],[5] \
         ] call FNC_AddItemRandomPercent;
 
-#define CdnRWR45_Pistol                    \
-        [                                 \
-            [                             \
-                [UK_Mag_EnfieldNo2,1],     \
-                [UK_Weap_EnfieldNo2],      \
-                [UK_Mag_EnfieldNo2,3]      \
-            ],[85],                       \
-            [                             \
-                [UK_Mag_HiPower,1],       \
-                [UK_Weap_HiPower],        \
-                [UK_Mag_HiPower,2,"vest"] \
-            ],[15]                        \
+#define CdnRWR45_Pistol \
+        [ \
+            [ \
+                [UK_Mag_EnfieldNo2,1], \
+                [UK_Weap_EnfieldNo2], \
+                [UK_Mag_EnfieldNo2,3,"uniform"] \
+            ],[85], \
+            [ \
+                [UK_Mag_HiPower,1], \
+                [UK_Weap_HiPower], \
+                [UK_Mag_HiPower,2,"uniform"] \
+            ],[15] \
         ] call FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================
@@ -511,7 +511,7 @@
 //Boys Rifle Team
 
     //Boys Rifle Team Leader
-    case "UK45Jan_ATRTL" : {
+    case "CdnRWR45_ATRTL" : {
         [CDN_UniRWR_Cpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -532,7 +532,7 @@
     };
 
     //Boys Rifle Gunner
-    case "UK45Jan_ATRG" : {
+    case "CdnRWR45_ATRG" : {
         [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -552,7 +552,7 @@
     };
 
     //Boys Rifle Ammo Bearer
-    case "UK45Jan_ATRAB" : {
+    case "CdnRWR45_ATRAB" : {
         [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_Bren] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -573,7 +573,7 @@
 //PIAT Team
 
     //PIAT Team Leader
-    case "UK45Jan_ATTL" : {
+    case "CdnRWR45_ATTL" : {
         [CDN_UniRWR_Cpl] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BP_P] call FNC_AddItem;
@@ -594,7 +594,7 @@
     };
 
     //PIAT Gunner
-    case "UK45Jan_ATG" : {
+    case "CdnRWR45_ATG" : {
         [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_O] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;
@@ -613,7 +613,7 @@
     };
 
     //PIAT Ammo Bearer
-    case "UK45Jan_ATAB" : {
+    case "CdnRWR45_ATAB" : {
         [CDN_UniRWR_Pte] call FNC_AddItem;
         [UK_VestK_LeeEn] call FNC_AddItem;
         [UK_BPK] call FNC_AddItem;

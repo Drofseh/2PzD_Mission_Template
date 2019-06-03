@@ -48,249 +48,250 @@
 
 //======================== Definitions ========================
 
-#define WHREF43Aug_Weapon_Officer         \
-        [                                 \
-            [                             \
-                [Ger_Mag_MP40,1],         \
-                [Ger_Weap_MP40],          \
-                [Ger_Mag_MP40,3,"vest"]   \
-            ],[50],                       \
-            [                             \
-                [Rus_Mag_PPSH_S,1],       \
-                [Rus_Weap_PPSH_S],        \
+#define WHREF43Aug_Weapon_Officer \
+        [ \
+            [ \
+                [Ger_Mag_MP40,1], \
+                [Ger_Weap_MP40], \
+                [Ger_Mag_MP40,3,"vest"] \
+            ],[50], \
+            [ \
+                [Rus_Mag_PPSH_S,1], \
+                [Rus_Weap_PPSH_S], \
                 [Rus_Mag_PPSH_S,3,"vest"] \
-            ],[37],                       \
-            [                             \
-                [Rus_Mag_PPS43,1],        \
-                [Rus_Weap_PPS43],         \
-                [Rus_Mag_PPS43,3,"vest"]  \
-            ],[8],                        \
-            [                             \
-                [Rus_Mag_PPD40,1],        \
-                [Rus_Weap_PPD40],         \
-                [Rus_Mag_PPD40,1,"vest"]  \
-            ],[5]                         \
+            ],[37], \
+            [ \
+                [Rus_Mag_PPS43,1], \
+                [Rus_Weap_PPS43], \
+                [Rus_Mag_PPS43,3,"vest"] \
+            ],[8], \
+            [ \
+                [Rus_Mag_PPD40,1], \
+                [Rus_Weap_PPD40], \
+                [Rus_Mag_PPD40,1,"vest"] \
+            ],[5] \
         ] call FNC_AddItemRandomPercent;
 
-#define WHREF43Aug_Weapon_Gruppe          \
-        [                                 \
-            [                             \
-                [Ger_Mag_MP40,1],         \
-                [Ger_Weap_MP40],          \
-                [Ger_Mag_MP40,6,"vest"]   \
-            ],[50],                       \
-            [                             \
-                [Rus_Mag_PPSH_S,1],       \
-                [Rus_Weap_PPSH_S],        \
+#define WHREF43Aug_Weapon_Gruppe \
+        [ \
+            [ \
+                [Ger_Mag_MP40,1], \
+                [Ger_Weap_MP40], \
+                [Ger_Mag_MP40,6,"vest"] \
+            ],[50], \
+            [ \
+                [Rus_Mag_PPSH_S,1], \
+                [Rus_Weap_PPSH_S], \
                 [Rus_Mag_PPSH_S,6,"vest"] \
-            ],[37],                       \
-            [                             \
-                [Rus_Mag_PPS43,1],        \
-                [Rus_Weap_PPS43],         \
-                [Rus_Mag_PPS43,6,"vest"]  \
-            ],[8],                        \
-            [                             \
-                [Rus_Mag_PPD40,1],        \
-                [Rus_Weap_PPD40],         \
-                [Rus_Mag_PPD40,3,"vest"]  \
-            ],[5]                         \
+            ],[37], \
+            [ \
+                [Rus_Mag_PPS43,1], \
+                [Rus_Weap_PPS43], \
+                [Rus_Mag_PPS43,6,"vest"] \
+            ],[8], \
+            [ \
+                [Rus_Mag_PPD40,1], \
+                [Rus_Weap_PPD40], \
+                [Rus_Mag_PPD40,3,"vest"] \
+            ],[5] \
         ] call FNC_AddItemRandomPercent;
 
-#define WHREF43Aug_Weapon_Rifleman         \
-        [                                  \
-            [                              \
-                [Ger_Mag_K98,1],           \
-                [Ger_Weap_K98],            \
-                [Ger_Mag_K98,12,"vest"]    \
-            ],[60],                        \
-            [                              \
-                [Rus_Mag_Mosin,1],         \
-                [Rus_Weap_MosM9130],       \
-                [Rus_Acc_Mos_Bayo],       \
-                [Rus_Mag_Mosin,12,"vest"]  \
-            ],[24],                        \
-            [                              \
-                [Rus_Mag_SVT40,1],         \
-                [Rus_Weap_SVT40],          \
-                [Rus_Mag_SVT40,6,"vest"]   \
-            ],[12],                        \
-            [                              \
-                [Ger_Mag_G41w,1],           \
-                [Ger_Weap_G41w],           \
-                [Ger_Mag_G41w,6,"vest"]     \
-            ],[3],                         \
-            [                              \
-                [Rus_Mag_Mosin,1],         \
-                [Rus_Weap_MosM38],         \
-                [Rus_Mag_Mosin,12,"vest"]  \
-            ],[1]                          \
+#define WHREF43Aug_Weapon_Rifleman \
+        [ \
+            [ \
+                [Ger_Mag_K98,1], \
+                [Ger_Acc_K98_Bayo,1,"uniform"], \
+                [Ger_Weap_K98], \
+                [Ger_Mag_K98,12,"vest"] \
+            ],[60], \
+            [ \
+                [Rus_Mag_Mosin,1], \
+                [Rus_Weap_MosM9130], \
+                [Rus_Acc_Mos_Bayo], \
+                [Rus_Mag_Mosin,12,"vest"] \
+            ],[24], \
+            [ \
+                [Rus_Mag_SVT40,1], \
+                [Rus_Weap_SVT40], \
+                [Rus_Mag_SVT40,6,"vest"] \
+            ],[12], \
+            [ \
+                [Ger_Mag_G41w,1], \
+                [Ger_Acc_K98_Bayo,1,"uniform"], \
+                [Ger_Weap_G41w], \
+                [Ger_Mag_G41w,6,"vest"] \
+            ],[3], \
+            [ \
+                [Rus_Mag_Mosin,1], \
+                [Rus_Weap_MosM38], \
+                [Rus_Mag_Mosin,12,"vest"] \
+            ],[1] \
         ] call FNC_AddItemRandomPercent;
 
-#define WHREF43Aug_Weapon_MG              \
-        [                                 \
-            [                             \
-                [Ger_Mag_MG_50,1],        \
-                [Ger_Weap_MG34],          \
+#define WHREF43Aug_Weapon_MG \
+        [ \
+            [ \
+                [Ger_Mag_MG_50,1], \
+                [Ger_Weap_MG34], \
                 [Ger_Mag_MG_50,5,"vest"], \
-                [Ger_Mag_MG_50,3]         \
-            ],[52],                       \
-            [                             \
-                [Rus_Mag_DP,1],           \
-                [Rus_Weap_DP],            \
-                [Rus_Mag_DP,5,"vest"],    \
-                [Rus_Mag_DP,3]            \
-            ],[35],                       \
-            [                             \
-                [Ger_Mag_MG_50,1],        \
-                [Ger_Weap_MG42],          \
+                [Ger_Mag_MG_50,3] \
+            ],[52], \
+            [ \
+                [Rus_Mag_DP,1], \
+                [Rus_Weap_DP], \
+                [Rus_Mag_DP,5,"vest"], \
+                [Rus_Mag_DP,3] \
+            ],[35], \
+            [ \
+                [Ger_Mag_MG_50,1], \
+                [Ger_Weap_MG42], \
                 [Ger_Mag_MG_50,5,"vest"], \
-                [Ger_Mag_MG_50,3]         \
-            ],[13]                        \
+                [Ger_Mag_MG_50,3] \
+            ],[13] \
         ] call FNC_AddItemRandomPercent;
 
 #define WHREF43Aug_Weapon_MG_SWT \
-        [                        \
-            [                    \
-                [Ger_Weap_MG34]  \
-            ],[80],              \
-            [                    \
-                [Ger_Weap_MG42]  \
-            ],[20]               \
+        [ \
+            [ \
+                [Ger_Weap_MG34] \
+            ],[80], \
+            [ \
+                [Ger_Weap_MG42] \
+            ],[20] \
         ] call FNC_AddItemRandomPercent;
 
 //1 for Gruppe leaders, 2 for Gewehrschütze, 3 for MG-Hilfsschütze, 5 for MG-Munitionsträger
-#define WHREF43Aug_Weapon_MG_Ammo(COUNT)                               \
-        _weaponsArray = [];                                            \
-        {                                                              \
-            _weapon = primaryWeapon _x;                                \
-            if (                                                       \
-                _weapon == Ger_Weap_MG34 ||                            \
-                _weapon == Rus_Weap_DP ||                              \
-                _weapon == Ger_Weap_MG42                               \
-            ) then {                                                   \
-                _weaponsArray pushBack _weapon;                        \
-            };                                                         \
-        } forEach units group _unit;                                   \
-                                                                       \
-        if (count _weaponsArray != 0) then {                           \
-            _ammobearer = selectRandom _weaponsArray;                  \
-            switch (_ammobearer) do {                                  \
-                case Ger_Weap_MG34: {                                  \
+#define WHREF43Aug_Weapon_MG_Ammo(COUNT) \
+        _weaponsArray = []; \
+        { \
+            _weapon = primaryWeapon _x; \
+            if ( \
+                _weapon == Ger_Weap_MG34 || \
+                _weapon == Rus_Weap_DP || \
+                _weapon == Ger_Weap_MG42 \
+            ) then { \
+                _weaponsArray pushBack _weapon; \
+            }; \
+        } forEach units group _unit; \
+        if (count _weaponsArray != 0) then { \
+            _ammobearer = selectRandom _weaponsArray; \
+            switch (_ammobearer) do { \
+                case Ger_Weap_MG34: { \
                     [Ger_Mag_MG_50,COUNT,"backpack"] call FNC_AddItem; \
-                };                                                     \
-                case Rus_Weap_DP: {                                    \
-                    [Rus_Mag_DP,COUNT,"backpack"] call FNC_AddItem;    \
-                };                                                     \
-                case Ger_Weap_MG42: {                                  \
+                }; \
+                case Rus_Weap_DP: { \
+                    [Rus_Mag_DP,COUNT,"backpack"] call FNC_AddItem; \
+                }; \
+                case Ger_Weap_MG42: { \
                     [Ger_Mag_MG_50,COUNT,"backpack"] call FNC_AddItem; \
-                };                                                     \
-                case Ger_Weap_MG30: {                                  \
-                    [Ger_Mag_MG30,COUNT,"backpack"] call FNC_AddItem;  \
-                };                                                     \
-            };                                                         \
+                }; \
+                case Ger_Weap_MG30: { \
+                    [Ger_Mag_MG30,COUNT,"backpack"] call FNC_AddItem; \
+                }; \
+            }; \
         };
 
 #define WHREF43Aug_Weapon_Officer_Secondary \
-        [                                   \
-            [                               \
-                [Ger_Mag_P38,1],            \
-                [Ger_Weap_P38],             \
-                [Ger_Mag_P38,2]             \
-            ],[52],                         \
-            [                               \
-                [Ger_Mag_P08,1],            \
-                [Ger_Weap_P08],             \
-                [Ger_Mag_P08,2]             \
-            ],[14],                         \
-            [                               \
-                [Rus_Mag_TT33,1],           \
-                [Rus_Weap_TT33],            \
-                [Rus_Mag_TT33,2]            \
-            ],[16],                         \
-            [                               \
-                [Ger_Mag_PPK,1],            \
-                [Ger_Weap_PPK],             \
-                [Ger_Mag_PPK,2]             \
-            ],[10],                         \
-            [                               \
-                [Rus_Mag_M1895,1],          \
-                [Rus_Weap_M1895],           \
-                [Rus_Mag_M1895,2]           \
-            ],[4],                          \
-            [                               \
-                [Pol_Mag_Radom,1],          \
-                [Pol_Weap_Radom],           \
-                [Pol_Mag_Radom,2]           \
-            ],[2],                          \
-            [                               \
-                [UK_Mag_HiPower,1],         \
-                [UK_Weap_HiPower],          \
-                [UK_Mag_HiPower,2]          \
-            ],[2],                          \
-            [                               \
-                [Ger_Mag_M1916,1],          \
-                [Ger_Weap_M1916],           \
-                [Ger_Mag_M1916,2]           \
-            ],[1],                          \
-            [                               \
-                [Ger_Mag_M172_20,1],        \
-                [Ger_Weap_M172],            \
-                [Ger_Mag_M172_20,2]         \
-            ],[0.5]                         \
+        [ \
+            [ \
+                [Ger_Mag_P38,1], \
+                [Ger_Weap_P38], \
+                [Ger_Mag_P38,2,"uniform"] \
+            ],[52], \
+            [ \
+                [Ger_Mag_P08,1], \
+                [Ger_Weap_P08], \
+                [Ger_Mag_P08,2,"uniform"] \
+            ],[14], \
+            [ \
+                [Rus_Mag_TT33,1], \
+                [Rus_Weap_TT33], \
+                [Rus_Mag_TT33,2,"uniform"] \
+            ],[16], \
+            [ \
+                [Ger_Mag_PPK,1], \
+                [Ger_Weap_PPK], \
+                [Ger_Mag_PPK,2,"uniform"] \
+            ],[10], \
+            [ \
+                [Rus_Mag_M1895,1], \
+                [Rus_Weap_M1895], \
+                [Rus_Mag_M1895,2,"uniform"] \
+            ],[4], \
+            [ \
+                [Pol_Mag_Radom,1], \
+                [Pol_Weap_Radom], \
+                [Pol_Mag_Radom,2,"uniform"] \
+            ],[2], \
+            [ \
+                [UK_Mag_HiPower,1], \
+                [UK_Weap_HiPower], \
+                [UK_Mag_HiPower,2,"uniform"] \
+            ],[2], \
+            [ \
+                [Ger_Mag_M1916,1], \
+                [Ger_Weap_M1916], \
+                [Ger_Mag_M1916,2,"uniform"] \
+            ],[1], \
+            [ \
+                [Ger_Mag_M172_20,1], \
+                [Ger_Weap_M172], \
+                [Ger_Mag_M172_20,2,"uniform"] \
+            ],[0.5] \
         ] call FNC_AddItemRandomPercent;
 
 #define WHREF43Aug_Weapon_Enlisted_Secondary \
-        [                                    \
-            [                                \
-                [Ger_Mag_P38,1],             \
-                [Ger_Weap_P38],              \
-                [Ger_Mag_P38,2]              \
-            ],[54],                          \
-            [                                \
-                [Ger_Mag_P08,1],             \
-                [Ger_Weap_P08],              \
-                [Ger_Mag_P08,2]              \
-            ],[22],                          \
-            [                                \
-                [Rus_Mag_TT33,1],            \
-                [Rus_Weap_TT33],             \
-                [Rus_Mag_TT33,2]             \
-            ],[16],                          \
-            [                                \
-                [Rus_Mag_M1895,1],           \
-                [Rus_Weap_M1895],            \
-                [Rus_Mag_M1895,2]            \
-            ],[4],                           \
-            [                                \
-                [Pol_Mag_Radom,1],           \
-                [Pol_Weap_Radom],            \
-                [Pol_Mag_Radom,2]            \
-            ],[2],                           \
-            [                                \
-                [UK_Mag_HiPower,1],          \
-                [UK_Weap_HiPower],           \
-                [UK_Mag_HiPower,2]           \
-            ],[2],                           \
-            [                                \
-                [Ger_Mag_M1916,1],           \
-                [Ger_Weap_M1916],            \
-                [Ger_Mag_M1916,2]            \
-            ],[1],                           \
-            [                                \
-                [Ger_Mag_M172_20,1],         \
-                [Ger_Weap_M172],             \
-                [Ger_Mag_M172_20,2]          \
-            ],[0.5]                          \
+        [ \
+            [ \
+                [Ger_Mag_P38,1], \
+                [Ger_Weap_P38], \
+                [Ger_Mag_P38,2,"uniform"] \
+            ],[54], \
+            [ \
+                [Ger_Mag_P08,1], \
+                [Ger_Weap_P08], \
+                [Ger_Mag_P08,2,"uniform"] \
+            ],[22], \
+            [ \
+                [Rus_Mag_TT33,1], \
+                [Rus_Weap_TT33], \
+                [Rus_Mag_TT33,2,"uniform"] \
+            ],[16], \
+            [ \
+                [Rus_Mag_M1895,1], \
+                [Rus_Weap_M1895], \
+                [Rus_Mag_M1895,2,"uniform"] \
+            ],[4], \
+            [ \
+                [Pol_Mag_Radom,1], \
+                [Pol_Weap_Radom], \
+                [Pol_Mag_Radom,2,"uniform"] \
+            ],[2], \
+            [ \
+                [UK_Mag_HiPower,1], \
+                [UK_Weap_HiPower], \
+                [UK_Mag_HiPower,2,"uniform"] \
+            ],[2], \
+            [ \
+                [Ger_Mag_M1916,1], \
+                [Ger_Weap_M1916], \
+                [Ger_Mag_M1916,2,"uniform"] \
+            ],[1], \
+            [ \
+                [Ger_Mag_M172_20,1], \
+                [Ger_Weap_M172], \
+                [Ger_Mag_M172_20,2,"uniform"] \
+            ],[0.5] \
         ] call FNC_AddItemRandomPercent;
 
-#define WHREF43Aug_Weapon_PzFaust      \
-        [                              \
-            [                          \
-                [Ger_Weap_PzFaust_K]   \
-            ],[50],                    \
-            [                          \
-                [Ger_Weap_PzFaust_30]  \
-            ],[50]                     \
+#define WHREF43Aug_Weapon_PzFaust \
+        [ \
+            [ \
+                [Ger_Weap_PzFaust_K] \
+            ],[50], \
+            [ \
+                [Ger_Weap_PzFaust_30] \
+            ],[50] \
         ] call FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================
@@ -599,6 +600,7 @@
 
         //Primary Weapon
         [Ger_Mag_K98,1] call FNC_AddItem;
+        [Ger_Acc_K98_Bayo,1,"uniform"] call FNC_AddItem;
         [Ger_Weap_K98] call FNC_AddItem;
         [Ger_Acc_K98_GL,1,"vest"] call FNC_AddItem;
         [Ger_Mag_K98,12,"vest"] call FNC_AddItem;

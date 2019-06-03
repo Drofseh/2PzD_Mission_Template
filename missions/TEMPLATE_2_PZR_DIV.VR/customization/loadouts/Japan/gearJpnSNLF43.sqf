@@ -44,7 +44,7 @@
             [//Type 14 Pistol Only
                 [IJA_Mag_Type14,1],
                 [IJA_Weap_Type14],
-                [IJA_Mag_Type14,2]
+                [IJA_Mag_Type14,2,"uniform"]
             ],[80],
             [//Type 100 SMG and Type 14 Pistol
                 [IJA_Mag_Type100,1],
@@ -52,7 +52,7 @@
                 [IJA_Mag_Type100,3],
                 [IJA_Mag_Type14,1],
                 [IJA_Weap_Type14],
-                [IJA_Mag_Type14,2]
+                [IJA_Mag_Type14,2,"uniform"]
             ],[20]
         ] call FNC_AddItemRandomPercent;
 
@@ -138,7 +138,7 @@
         //Secondary Weapon
         [IJA_Mag_Type14,1] call FNC_AddItem;
         [IJA_Weap_Type14] call FNC_AddItem;
-        [IJA_Mag_Type14,2] call FNC_AddItem;
+        [IJA_Mag_Type14,2,"uniform"] call FNC_AddItem;
 
         //Extra
         [IJA_Gren_Frag,1] call FNC_AddItem;
@@ -167,7 +167,7 @@
         //Secondary Weapon
         [IJA_Mag_Type14,1] call FNC_AddItem;
         [IJA_Weap_Type14] call FNC_AddItem;
-        [IJA_Mag_Type14,2] call FNC_AddItem;
+        [IJA_Mag_Type14,2,"uniform"] call FNC_AddItem;
 
         //Extra
         [IJA_Gren_Frag,1] call FNC_AddItem;
@@ -196,7 +196,7 @@
         //Secondary Weapon
         [IJA_Mag_Type14,1] call FNC_AddItem;
         [IJA_Weap_Type14] call FNC_AddItem;
-        [IJA_Mag_Type14,2] call FNC_AddItem;
+        [IJA_Mag_Type14,2,"uniform"] call FNC_AddItem;
 
         //Extra
         [IJA_Mag_Type99_M,4,"backpack"] call FNC_AddItem;

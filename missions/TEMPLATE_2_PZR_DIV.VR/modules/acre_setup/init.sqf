@@ -80,15 +80,18 @@ if (hasInterface) then {
 
         if (FW_enable_babel) then {
             {_x call acre_api_fnc_babelAddLanguageType;} foreach FW_all_languages;
+            
+            _side_language = FW_languages_babel select _side_i;
 
-            (FW_languages_babel select _side_i) call acre_api_fnc_babelSetSpokenLanguages;
+            _side_language call acre_api_fnc_babelSetSpokenLanguages;
 
             private _languages = player getVariable ["FW_Languages", []];
 
             if (count _languages > 0) then {
-
                 _languages call acre_api_fnc_babelSetSpokenLanguages;
-
+            } else {
+                _languages pushBackUnique (_side_language select 0);
+                player setVariable ["FW_Languages", _languages];
             };
         };
 

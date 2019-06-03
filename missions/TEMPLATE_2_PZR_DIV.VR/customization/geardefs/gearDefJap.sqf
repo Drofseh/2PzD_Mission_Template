@@ -24,7 +24,9 @@
 #define IJA_Mag_Type100         "fow_32Rnd_8x22"
 #define IJA_Mag_Type99_M        "fow_30Rnd_77x58"
 #define IJA_Mag_Type96          "fow_30Rnd_77x58"
+
 #define IJA_Mag_Type14          "fow_8Rnd_8x22"
+
 #define IJA_Mag_Type10_W        "fow_1Rnd_type10"
 #define IJA_Mag_RGrn            "fow_1Rnd_type2_40"
 

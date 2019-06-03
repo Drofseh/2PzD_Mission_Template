@@ -38,6 +38,7 @@
 //#include "cover_map_multiple\root.sqf"
 //#include "covert\root.sqf"
 //#include "extract\root.sqf"
+//#include "familiar_weapons\root.sqf"
 //#include "hostage\root.sqf"
 //#include "in_game_briefing_utilities\root.sqf"
 //#include "setup_timer\root.sqf"

@@ -44,6 +44,52 @@
 [this,"USMC41Jan_VCrew"] call FNC_GearScript;       Tank Crew
 */
 
+//======================== Definitions ========================
+
+// For Platoon Commander, Squad Leader, Tank Commander
+#define USMC41Jan_Weapon_SMG \
+        [ \
+            [ \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1928A1], \
+                [US_Mag_M1T_2,5,"vest"] \
+            ],[70], \
+            [ \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1928], \
+                [US_Mag_M1T_2,5,"vest"] \
+            ],[30] \
+        ] call FNC_AddItemRandomPercent;
+
+// For Tank Crew
+#define USMC41Jan_Weapon_Crew \
+        [ \
+            [/*M1911 Only*/ \
+                [USMC_Vest_Pistol], \
+                [US_Mag_M1911,1], \
+                [US_Weap_M1911], \
+                [US_Mag_M1911,3,"uniform"] \
+            ],[90], \
+            [/*M1928A1 Thompson & M1911*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1928A1], \
+                [US_Mag_M1T_2,5,"vest"], \
+                [US_Mag_M1911,1], \
+                [US_Weap_M1911], \
+                [US_Mag_M1911,3,"uniform"] \
+            ],[7], \
+            [/*M1928 Thompson & M1911*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1928], \
+                [US_Mag_M1T_2,5,"vest"], \
+                [US_Mag_M1911,1], \
+                [US_Weap_M1911], \
+                [US_Mag_M1911,3,"uniform"] \
+            ],[3] \
+        ] call FNC_AddItemRandomPercent;
+
 //======================== Loadouts ========================
 
 //Company HQ
@@ -63,7 +109,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -85,7 +131,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -112,7 +158,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,1] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -154,23 +200,13 @@
         USMC_Default_Equipment;
         USMC_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1928A1 Thompson
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928A1],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[70],
-        [//M1928 Thompson
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[30]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC41Jan_Weapon_SMG;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -197,7 +233,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,1] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -259,18 +295,8 @@
         USMC_Default_Equipment;
         USMC_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1928A1 Thompson
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928A1],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[70],
-        [//M1928 Thompson
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[30]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC41Jan_Weapon_SMG;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -300,13 +326,13 @@
 
     //Scout
     case "USMC41Jan_Scout" : {
-        [//Uni
         [
-        [USMC_Uni_PFC]
-        ],[50],
-        [
-        [USMC_Uni_PVT]
-        ],[50]
+            [
+                [USMC_Uni_PFC]
+            ],[50],
+            [
+                [USMC_Uni_PVT]
+            ],[50]
         ] call FNC_AddItemRandomPercent;
         [USMC_Vest_M1G] call FNC_AddItem;
         [USMC_BP_M1928] call FNC_AddItem;
@@ -340,7 +366,7 @@
         //Primary Weapon
         [US_Mag_BAR,1] call FNC_AddItem;
         [US_Weap_BAR] call FNC_AddItem;
-        [US_Weap_BAR_Bipod] call FNC_AddItem;
+        [US_Acc_BAR_Bipod] call FNC_AddItem;
         [US_Mag_BAR,6,"vest"] call FNC_AddItem;
         [US_Mag_BAR,9,"backpack"] call FNC_AddItem;
 
@@ -372,13 +398,13 @@
 
     //Automatic Rifle Ammo Bearer
     case "USMC41Jan_ARB" : {
-        [//Uniform
-        [//PFC
-        [USMC_Uni_PFC]
-        ],[50],
-        [//PVT
-        [USMC_Uni_PVT]
-        ],[50]
+        [
+            [
+                [USMC_Uni_PFC]
+            ],[50],
+            [
+                [USMC_Uni_PVT]
+            ],[50]
         ] call FNC_AddItemRandomPercent;
         [USMC_Vest_M1G] call FNC_AddItem;
         [USMC_BP_M1928] call FNC_AddItem;
@@ -400,13 +426,13 @@
 
     //Rifleman
     case "USMC41Jan_Rif" : {
-        [//Uniform
-        [//PFC
-        [USMC_Uni_PFC]
-        ],[50],
-        [//PVT
-        [USMC_Uni_PVT]
-        ],[50]
+        [
+            [
+                [USMC_Uni_PFC]
+            ],[50],
+            [
+                [USMC_Uni_PVT]
+            ],[50]
         ] call FNC_AddItemRandomPercent;
         [USMC_Vest_M1G] call FNC_AddItem;
         [USMC_BP_M1928] call FNC_AddItem;
@@ -466,7 +492,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,2] call FNC_AddItem;
+        [US_Mag_M1911,2,"uniform"] call FNC_AddItem;
 
         //Primary Weapon
         [US_Mag_M1919_250,1] call FNC_AddItem;
@@ -498,13 +524,13 @@
 
     //Machine Gun Ammo Bearer
     case "USMC41Jan_MGAB" : {
-        [//Uniform
-        [//PFC
-        [USMC_Uni_PFC]
-        ],[50],
-        [//PVT
-        [USMC_Uni_PVT]
-        ],[50]
+        [
+            [
+                [USMC_Uni_PFC]
+            ],[50],
+            [
+                [USMC_Uni_PVT]
+            ],[50]
         ] call FNC_AddItemRandomPercent;
         [USMC_Vest_M1G_Gren] call FNC_AddItem;
         [US_BP_MG] call FNC_AddItem;
@@ -565,7 +591,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [US_Mag_Mort_HE,8] call FNC_AddItem;
@@ -589,7 +615,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [US_Mag_Mort_HE,8] call FNC_AddItem;
@@ -599,13 +625,13 @@
 
     //Mortar Ammo Bearer
     case "USMC41Jan_MortAB" : {
-        [//Uniform
-        [//PFC
-        [USMC_Uni_PFC]
-        ],[50],
-        [//PVT
-        [USMC_Uni_PVT]
-        ],[50]
+        [
+            [
+                [USMC_Uni_PFC]
+            ],[50],
+            [
+                [USMC_Uni_PVT]
+            ],[50]
         ] call FNC_AddItemRandomPercent;
         [USMC_Vest_M1G_Gren] call FNC_AddItem;
         [USMC_BP_M1928] call FNC_AddItem;
@@ -641,7 +667,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
     };
 
     //Tank Commander
@@ -656,37 +682,27 @@
         US_Default_Equipment;
         US_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1928A1 Thompson
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928A1],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[70],
-        [//M1928 Thompson
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[30]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC41Jan_Weapon_SMG;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
     };
 
     //Tank Crew
     case "USMC41Jan_VCrew" : {
-        [//Uniform
-        [//Cpl
-        [USMC_Uni_CPL]
-        ],[30],
-        [//PFC
-        [USMC_Uni_PFC]
-        ],[40],
-        [//PVT
-        [USMC_Uni_PVT]
-        ],[30]
+        [
+            [
+                [USMC_Uni_CPL]
+            ],[30],
+            [
+                [USMC_Uni_PFC]
+            ],[40],
+            [
+                [USMC_Uni_PVT]
+            ],[30]
         ] call FNC_AddItemRandomPercent;
         [USMC_BP_M1928] call FNC_AddItem;
         [USMC_Helm_VCrew] call FNC_AddItem;
@@ -695,32 +711,8 @@
         //Assigned Items
         US_Default_Equipment;
 
-        [//Weapon
-        [//M1911 Only
-        [USMC_Vest_Pistol],
-        [US_Mag_M1911,1],
-        [US_Weap_M1911],
-        [US_Mag_M1911,3]
-        ],[90],
-        [//M1928A1 Thompson & M1911
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928A1],
-        [US_Mag_M1T_2,5,"vest"],
-        [US_Mag_M1911,1],
-        [US_Weap_M1911],
-        [US_Mag_M1911,3]
-        ],[7],
-        [//M1928 Thompson & M1911
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_2,5,"vest"],
-        [US_Mag_M1911,1],
-        [US_Weap_M1911],
-        [US_Mag_M1911,3]
-        ],[3]
-        ] call FNC_AddItemRandomPercent;
+        //Weapon
+        USMC41Jan_Weapon_Crew;
 
         //Extra
         [GEN_Toolkit] call FNC_AddItem;

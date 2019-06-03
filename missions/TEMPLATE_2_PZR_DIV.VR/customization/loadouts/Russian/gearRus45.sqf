@@ -47,175 +47,175 @@
 //======================== Definitions ========================
 
 //For leaders
-#define R45_Weapon_Leader                 \
-        [                                 \
-            [/*PPSh-41, Stick*/           \
-                [Rus_Mag_PPSH_S,1],       \
-                [Rus_Weap_PPSH_S],        \
+#define R45_Weapon_Leader \
+        [ \
+            [/*PPSh-41, Stick*/ \
+                [Rus_Mag_PPSH_S,1], \
+                [Rus_Weap_PPSH_S], \
                 [Rus_Mag_PPSH_S,3,"vest"] \
-            ],[54],                       \
-            [/*PPS-43*/                   \
-                [Rus_Mag_PPS43,1],        \
-                [Rus_Weap_PPS43],         \
-                [Rus_Mag_PPS43,3,"vest"]  \
-            ],[44],                       \
-            [/*PPD-40*/                   \
-                [Rus_Mag_PPD40,1],        \
-                [Rus_Weap_PPD40],         \
-                [Rus_Mag_PPD40,1,"vest"]  \
-            ],[2]                         \
+            ],[54], \
+            [/*PPS-43*/ \
+                [Rus_Mag_PPS43,1], \
+                [Rus_Weap_PPS43], \
+                [Rus_Mag_PPS43,3,"vest"] \
+            ],[44], \
+            [/*PPD-40*/ \
+                [Rus_Mag_PPD40,1], \
+                [Rus_Weap_PPD40], \
+                [Rus_Mag_PPD40,1,"vest"] \
+            ],[2] \
         ] call FNC_AddItemRandomPercent;
 
 //For team leaders and submachine gunners
-#define R45_Weapon_SMG                    \
-        [                                 \
-            [/*PPSh-41, Stick*/           \
-                [Rus_Vest_PPSH_D1],       \
-                [Rus_Mag_PPSH_D,1],       \
-                [Rus_Weap_PPSH_S],        \
+#define R45_Weapon_SMG \
+        [ \
+            [/*PPSh-41, Stick*/ \
+                [Rus_Vest_PPSH_D1], \
+                [Rus_Mag_PPSH_D,1], \
+                [Rus_Weap_PPSH_S], \
                 [Rus_Mag_PPSH_S,6,"vest"] \
-            ],[44],                       \
-            [/*PPS-43*/                   \
-                [Rus_Vest_PPSH_D1],       \
-                [Rus_Mag_PPS43,1],        \
-                [Rus_Weap_PPS43],         \
-                [Rus_Mag_PPS43,6,"vest"]  \
-            ],[44],                       \
-            [/*PPSh-41, Drum*/            \
-                [Rus_Vest_PPSH_D2],       \
-                [Rus_Mag_PPSH_D,1],       \
-                [Rus_Weap_PPSH_D],        \
+            ],[44], \
+            [/*PPS-43*/ \
+                [Rus_Vest_PPSH_D1], \
+                [Rus_Mag_PPS43,1], \
+                [Rus_Weap_PPS43], \
+                [Rus_Mag_PPS43,6,"vest"] \
+            ],[44], \
+            [/*PPSh-41, Drum*/ \
+                [Rus_Vest_PPSH_D2], \
+                [Rus_Mag_PPSH_D,1], \
+                [Rus_Weap_PPSH_D], \
                 [Rus_Mag_PPSH_D,3,"vest"] \
-            ],[10],                       \
-            [/*PPD-40*/                   \
-                [Rus_Vest_PPSH_D1],       \
-                [Rus_Mag_PPD40,1],        \
-                [Rus_Weap_PPD40],         \
-                [Rus_Mag_PPD40,2,"vest"]  \
-            ],[1],                        \
-            [/*PPD-40*/                   \
-                [Rus_Vest_PPSH_D2],       \
-                [Rus_Mag_PPD40,1],        \
-                [Rus_Weap_PPD40],         \
-                [Rus_Mag_PPD40,2,"vest"]  \
-            ],[1]                         \
+            ],[10], \
+            [/*PPD-40*/ \
+                [Rus_Vest_PPSH_D1], \
+                [Rus_Mag_PPD40,1], \
+                [Rus_Weap_PPD40], \
+                [Rus_Mag_PPD40,2,"vest"] \
+            ],[1], \
+            [/*PPD-40*/ \
+                [Rus_Vest_PPSH_D2], \
+                [Rus_Mag_PPD40,1], \
+                [Rus_Weap_PPD40], \
+                [Rus_Mag_PPD40,2,"vest"] \
+            ],[1] \
         ] call FNC_AddItemRandomPercent;
 
 //For riflemen
-#define R45_Weapon_Rifleman               \
-        [                                 \
-            [/*Mosin M91/30*/             \
-                [Rus_Vest_Mosin],         \
-                [Rus_Mag_Mosin,1],        \
-                [Rus_Weap_MosM9130],      \
-                [Rus_Acc_Mos_Bayo],      \
+#define R45_Weapon_Rifleman \
+        [ \
+            [/*Mosin M91/30*/ \
+                [Rus_Vest_Mosin], \
+                [Rus_Mag_Mosin,1], \
+                [Rus_Weap_MosM9130], \
+                [Rus_Acc_Mos_Bayo], \
                 [Rus_Mag_Mosin,12,"vest"] \
-            ],[43.8],                     \
-            [/*PPSh-41, Stick*/           \
-                [Rus_Vest_PPSH_D1],       \
-                [Rus_Mag_PPSH_D,1],       \
-                [Rus_Weap_PPSH_S],        \
+            ],[43.8], \
+            [/*PPSh-41, Stick*/ \
+                [Rus_Vest_PPSH_D1], \
+                [Rus_Mag_PPSH_D,1], \
+                [Rus_Weap_PPSH_S], \
                 [Rus_Mag_PPSH_S,6,"vest"] \
-            ],[17.6],                     \
-            [/*PPS-43*/                   \
-                [Rus_Vest_PPSH_D1],       \
-                [Rus_Mag_PPS43,1],        \
-                [Rus_Weap_PPS43],         \
-                [Rus_Mag_PPS43,6,"vest"]  \
-            ],[17.6],                     \
-            [/*SVT*/                      \
-                [Rus_Vest_SVT],           \
-                [Rus_Mag_SVT40,1],        \
-                [Rus_Weap_SVT40],         \
-                [Rus_Mag_SVT40,6,"vest"]  \
-            ],[6.6],                      \
-            [/*Mosin M44*/                \
-                [Rus_Vest_Mosin],         \
-                [Rus_Mag_Mosin,1],        \
-                [Rus_Weap_MosM44],        \
+            ],[17.6], \
+            [/*PPS-43*/ \
+                [Rus_Vest_PPSH_D1], \
+                [Rus_Mag_PPS43,1], \
+                [Rus_Weap_PPS43], \
+                [Rus_Mag_PPS43,6,"vest"] \
+            ],[17.6], \
+            [/*SVT*/ \
+                [Rus_Vest_SVT], \
+                [Rus_Mag_SVT40,1], \
+                [Rus_Weap_SVT40], \
+                [Rus_Mag_SVT40,6,"vest"] \
+            ],[6.6], \
+            [/*Mosin M44*/ \
+                [Rus_Vest_Mosin], \
+                [Rus_Mag_Mosin,1], \
+                [Rus_Weap_MosM44], \
                 [Rus_Mag_Mosin,12,"vest"] \
-            ],[6],                        \
-            [/*PPSh-41, Drum*/            \
-                [Rus_Vest_PPSH_D2],       \
-                [Rus_Mag_PPSH_D,1],       \
-                [Rus_Weap_PPSH_D],        \
+            ],[6], \
+            [/*PPSh-41, Drum*/ \
+                [Rus_Vest_PPSH_D2], \
+                [Rus_Mag_PPSH_D,1], \
+                [Rus_Weap_PPSH_D], \
                 [Rus_Mag_PPSH_D,3,"vest"] \
-            ],[4],                        \
-            [/*Mosin M38*/                \
-                [Rus_Vest_Mosin],         \
-                [Rus_Mag_Mosin,1],        \
-                [Rus_Weap_MosM38],        \
+            ],[4], \
+            [/*Mosin M38*/ \
+                [Rus_Vest_Mosin], \
+                [Rus_Mag_Mosin,1], \
+                [Rus_Weap_MosM38], \
                 [Rus_Mag_Mosin,12,"vest"] \
-            ],[3],                        \
-            [/*AVT*/                      \
-                [Rus_Vest_SVT],           \
-                [Rus_Mag_SVT40,1],        \
-                [Rus_Weap_AVT40],         \
-                [Rus_Mag_SVT40,6,"vest"]  \
-            ],[0.6],                      \
-            [/*PPD-40*/                   \
-                [Rus_Vest_PPSH_D1],       \
-                [Rus_Mag_PPD40,1],        \
-                [Rus_Weap_PPD40],         \
-                [Rus_Mag_PPD40,2,"vest"]  \
-            ],[0.4],                      \
-            [/*PPD-40*/                   \
-                [Rus_Vest_PPSH_D2],       \
-                [Rus_Mag_PPD40,1],        \
-                [Rus_Weap_PPD40],         \
-                [Rus_Mag_PPD40,2,"vest"]  \
-            ],[0.4]                       \
+            ],[3], \
+            [/*AVT*/ \
+                [Rus_Vest_SVT], \
+                [Rus_Mag_SVT40,1], \
+                [Rus_Weap_AVT40], \
+                [Rus_Mag_SVT40,6,"vest"] \
+            ],[0.6], \
+            [/*PPD-40*/ \
+                [Rus_Vest_PPSH_D1], \
+                [Rus_Mag_PPD40,1], \
+                [Rus_Weap_PPD40], \
+                [Rus_Mag_PPD40,2,"vest"] \
+            ],[0.4], \
+            [/*PPD-40*/ \
+                [Rus_Vest_PPSH_D2], \
+                [Rus_Mag_PPD40,1], \
+                [Rus_Weap_PPD40], \
+                [Rus_Mag_PPD40,2,"vest"] \
+            ],[0.4] \
         ] call FNC_AddItemRandomPercent;
 
 //For light riflemen
-#define R45_Weapon_Rifleman_Light         \
-        [                                 \
-            [/*Mosin M91/30*/             \
-                [Rus_Vest_Mosin],         \
-                [Rus_Mag_Mosin,1],        \
-                [Rus_Weap_MosM9130],      \
-                [Rus_Acc_Mos_Bayo],      \
+#define R45_Weapon_Rifleman_Light \
+        [ \
+            [/*Mosin M91/30*/ \
+                [Rus_Vest_Mosin], \
+                [Rus_Mag_Mosin,1], \
+                [Rus_Weap_MosM9130], \
+                [Rus_Acc_Mos_Bayo], \
                 [Rus_Mag_Mosin,12,"vest"] \
-            ],[43],                       \
-            [/*Mosin M38*/                \
-                [Rus_Vest_Mosin],         \
-                [Rus_Mag_Mosin,1],        \
-                [Rus_Weap_MosM38],        \
+            ],[43], \
+            [/*Mosin M38*/ \
+                [Rus_Vest_Mosin], \
+                [Rus_Mag_Mosin,1], \
+                [Rus_Weap_MosM38], \
                 [Rus_Mag_Mosin,12,"vest"] \
-            ],[35],                       \
-            [/*Mosin M44*/                \
-                [Rus_Vest_Mosin],         \
-                [Rus_Mag_Mosin,1],        \
-                [Rus_Weap_MosM44],        \
+            ],[35], \
+            [/*Mosin M44*/ \
+                [Rus_Vest_Mosin], \
+                [Rus_Mag_Mosin,1], \
+                [Rus_Weap_MosM44], \
                 [Rus_Mag_Mosin,12,"vest"] \
-            ],[20],                       \
-            [/*SVT*/                      \
-                [Rus_Vest_SVT],           \
-                [Rus_Mag_SVT40,1],        \
-                [Rus_Weap_SVT40],         \
-                [Rus_Mag_SVT40,6,"vest"]  \
-            ],[1],                        \
-            [/*AVT*/                      \
-                [Rus_Vest_SVT],           \
-                [Rus_Mag_SVT40,1],        \
-                [Rus_Weap_AVT40],         \
-                [Rus_Mag_SVT40,6,"vest"]  \
-            ],[1]                         \
+            ],[20], \
+            [/*SVT*/ \
+                [Rus_Vest_SVT], \
+                [Rus_Mag_SVT40,1], \
+                [Rus_Weap_SVT40], \
+                [Rus_Mag_SVT40,6,"vest"] \
+            ],[1], \
+            [/*AVT*/ \
+                [Rus_Vest_SVT], \
+                [Rus_Mag_SVT40,1], \
+                [Rus_Weap_AVT40], \
+                [Rus_Mag_SVT40,6,"vest"] \
+            ],[1] \
         ] call FNC_AddItemRandomPercent;
 
 //For all loadouts with pistols
-#define R45_Weapon_Secondary       \
-        [                          \
-            [/*TT-33*/             \
-                [Rus_Mag_TT33,1],  \
-                [Rus_Weap_TT33],   \
-                [Rus_Mag_TT33,2]   \
-            ],[80],                \
-            [/*M1895*/             \
+#define R45_Weapon_Secondary \
+        [ \
+            [/*TT-33*/ \
+                [Rus_Mag_TT33,1], \
+                [Rus_Weap_TT33], \
+                [Rus_Mag_TT33,2,"uniform"] \
+            ],[80], \
+            [/*M1895*/ \
                 [Rus_Mag_M1895,1], \
-                [Rus_Weap_M1895],  \
-                [Rus_Mag_M1895,2]  \
-            ],[20]                 \
+                [Rus_Weap_M1895], \
+                [Rus_Mag_M1895,2,"uniform"] \
+            ],[20] \
         ] call FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================

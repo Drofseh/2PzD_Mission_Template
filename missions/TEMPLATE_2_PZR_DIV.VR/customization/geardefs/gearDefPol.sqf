@@ -17,7 +17,6 @@
 //Attachments
 
 //Ammo
-#define Pol_Mag_Radom           "w39_9mm_8xPARAVIS"
 #define Pol_Mag_wz28            "w39_7_92_20xMauserS"
 #define Pol_Mag_wz28_AP         "w39_7_92_20xMauserP"
 #define Pol_Mag_wz29            "w39_7_92_5xMauserS"
@@ -25,6 +24,8 @@
 #define Pol_Mag_wz38            "w39_7_92_10xMauserS"
 #define Pol_Mag_wz38_AP         "w39_7_92_10xMauserP"
 #define Pol_Mag_wz39            "w39_9_MM_24xPARA"
+
+#define Pol_Mag_Radom           "w39_9mm_8xPARAVIS"
 
 //Grenades
 

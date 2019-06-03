@@ -46,11 +46,13 @@
 #define UK_Mag_Bren_100         "CSA38_7_7_100x56R"
 #define UK_Mag_Boys             "w39_7_92_4x107DS"
 #define UK_Mag_DeLisle          "LIB_11Rnd_45ACP_2PzD"
+
 #define UK_Mag_EnfieldNo2       "fow_6Rnd_455"
 #define UK_Mag_HiPower          "fow_13Rnd_9x19"
 #define UK_Mag_Webley455        "LIB_6Rnd_455"
 #define UK_Mag_WelrodMk1        "LIB_6Rnd_9x19_Welrod"
 #define UK_Mag_WelrodMk2        "fow_8Rnd_765x17"
+
 #define UK_Mag_Piat_HEAT        "fow_1Rnd_piat_HEAT"
 #define UK_Mag_Piat_HE          "fow_1Rnd_piat_HE"
 

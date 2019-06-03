@@ -49,10 +49,12 @@
 #define Rus_Mag_DP_H            "LIB_47Rnd_762x54d"
 #define Rus_Mag_DT_1            "LIB_63Rnd_762x54"
 #define Rus_Mag_DT_2            "LIB_63Rnd_762x54d"
-#define Rus_Mag_TT33            "LIB_8Rnd_762x25"
-#define Rus_Mag_M1895           "LIB_7Rnd_762x38"
 #define Rus_Mag_PTRD            "LIB_1Rnd_145x114"
 #define Rus_Mag_PTRS            "w39_7_92_4x107DS"
+
+#define Rus_Mag_TT33            "LIB_8Rnd_762x25"
+#define Rus_Mag_M1895           "LIB_7Rnd_762x38"
+
 #define Rus_Mag_RGrn_HE         "LIB_1Rnd_G_DYAKONOV"
 #define Rus_Mag_Mort_HE         "LIB_1Rnd_82mm_Mo_HE"
 #define Rus_Mag_Mort_Smoke      "LIB_1Rnd_82mm_Mo_Smoke"

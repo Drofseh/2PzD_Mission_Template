@@ -50,7 +50,7 @@
 #define CdnRWR39_Webley \
         [UK_Mag_EnfieldNo2,1] call FNC_AddItem; \
         [UK_Weap_EnfieldNo2] call FNC_AddItem; \
-        [UK_Mag_EnfieldNo2,3] call FNC_AddItem;
+        [UK_Mag_EnfieldNo2,3,"uniform"] call FNC_AddItem;
 
 //======================== Loadouts ========================
 

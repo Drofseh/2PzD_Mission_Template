@@ -48,6 +48,199 @@
 [this,"USMC42Jun_VCrew"] call FNC_GearScript;       Tank Crew
 */
 
+//======================== Definitions ========================
+
+// For Company Commander, Company Executive Officer, Platoon Commander, Squad Leader
+#define USMC42Jun_Weapon_Leader \
+        [ \
+            [/*M1928A1 Thompson*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1928A1], \
+                [US_Mag_M1T_2,5,"vest"] \
+            ],[46], \
+            [/*M1 Carbine*/ \
+                [USMC_Vest_M1C], \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[20], \
+            [/*M50 Reising*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M50_1,1], \
+                [US_Weap_M50], \
+                [US_Mag_M50_1,5,"vest"] \
+            ],[15], \
+            [/*M1 Thompson*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1T], \
+                [US_Mag_M1T_2,4,"vest"], \
+                [US_Mag_M1T_1,1,"vest"] \
+            ],[9], \
+            [/*M1928 Thompson*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1928], \
+                [US_Mag_M1T_2,5,"vest"] \
+            ],[9], \
+            [/*M55 Reising*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M50_1,1], \
+                [US_Weap_M55], \
+                [US_Mag_M50_1,5,"vest"] \
+            ],[1] \
+        ] call FNC_AddItemRandomPercent;
+
+// For medic
+#define USMC42Jun_Weapon_Rifle_Medic \
+        [ \
+            [/*M1903A1*/ \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A1], \
+                [US_Mag_M1903,20,"vest"] \
+            ],[76], \
+            [/*M1903A3*/ \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A3], \
+                [US_Mag_M1903,20,"vest"] \
+            ],[14], \
+            [/*M1 Carbine*/ \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[10] \
+        ] call FNC_AddItemRandomPercent;
+
+// For riflemen
+#define USMC42Jun_Weapon_Rifle \
+        [ \
+            [/*M1903A1*/ \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A1], \
+                [US_Mag_M1903,20,"vest"] \
+            ],[76], \
+            [/*M1903A3*/ \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A3], \
+                [US_Mag_M1903,20,"vest"] \
+            ],[14], \
+            [/*M1 Carbine*/ \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[10] \
+        ] call FNC_AddItemRandomPercent;
+
+// For Tank Commander
+#define USMC42Jun_Weapon_VCom \
+        [ \
+            [/*M1928A1 Thompson*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1928A1], \
+                [US_Mag_M1T_2,5,"vest"] \
+            ],[49], \
+            [/*M55 Reising*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M50_1,1], \
+                [US_Weap_M55], \
+                [US_Mag_M50_1,5,"vest"] \
+            ],[16], \
+            [/*M1 Carbine*/ \
+                [USMC_Vest_M1C], \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[10], \
+            [/*M1 Thompson*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1T], \
+                [US_Mag_M1T_2,4,"vest"], \
+                [US_Mag_M1T_1,1,"vest"] \
+            ],[10], \
+            [/*M1928 Thompson*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1928], \
+                [US_Mag_M1T_2,5,"vest"] \
+            ],[10], \
+            [/*M50 Reising*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M50_1,1], \
+                [US_Weap_M50], \
+                [US_Mag_M50_1,5,"vest"] \
+            ],[5] \
+        ] call FNC_AddItemRandomPercent;
+
+// For Tank Crew
+#define USMC42Jun_Weapon_VCrew \
+        [ \
+            [/*M1911 Only*/ \
+                [USMC_Vest_Pistol], \
+                [US_Mag_M1911,1], \
+                [US_Weap_M1911], \
+                [US_Mag_M1911,3,"uniform"] \
+            ],[90], \
+            [/*M1928A1 Thompson & M1911*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1928A1], \
+                [US_Mag_M1T_2,5,"vest"], \
+                [US_Mag_M1911,1], \
+                [US_Weap_M1911], \
+                [US_Mag_M1911,3,"uniform"] \
+            ],[4], \
+            [/*M55 Reising & M1911*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M50_1,1], \
+                [US_Weap_M55], \
+                [US_Mag_M50_1,5,"vest"], \
+                [US_Mag_M1911,1], \
+                [US_Weap_M1911], \
+                [US_Mag_M1911,3,"uniform"] \
+            ],[2], \
+            [/*M1 Carbine & M1911*/ \
+                [USMC_Vest_M1C], \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"], \
+                [US_Mag_M1911,1], \
+                [US_Weap_M1911], \
+                [US_Mag_M1911,3,"uniform"] \
+            ],[1], \
+            [/*M1 Thompson & M1911*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1T], \
+                [US_Mag_M1T_2,4,"vest"], \
+                [US_Mag_M1T_1,1,"vest"], \
+                [US_Mag_M1911,1], \
+                [US_Weap_M1911], \
+                [US_Mag_M1911,3,"uniform"] \
+            ],[1], \
+            [/*M1928 Thompson & M1911*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M1T_2,1], \
+                [US_Weap_M1928], \
+                [US_Mag_M1T_2,5,"vest"], \
+                [US_Mag_M1911,1], \
+                [US_Weap_M1911], \
+                [US_Mag_M1911,3,"uniform"] \
+            ],[1], \
+            [/*M50 Reising & M1911*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M50_1,1], \
+                [US_Weap_M50], \
+                [US_Mag_M50_1,5,"vest"], \
+                [US_Mag_M1911,1], \
+                [US_Weap_M1911], \
+                [US_Mag_M1911,3,"uniform"] \
+            ],[1] \
+        ] call FNC_AddItemRandomPercent;
+
+
 //======================== Loadouts ========================
 
 //Company HQ
@@ -63,50 +256,13 @@
         USMC_Default_Equipment;
         USMC_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1928A1 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928A1],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[46],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[20],
-        [//M50 Reising
-        [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
-        [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"]
-        ],[15],
-        [//M1 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1T],
-        [US_Mag_M1T_2,4,"vest"],
-        [US_Mag_M1T_1,1,"vest"]
-        ],[9],
-        [//M1928 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[9],
-        [//M55 Reising
-        [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
-        [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"]
-        ],[1]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Leader;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -124,50 +280,13 @@
         USMC_Default_Equipment;
         USMC_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1928A1 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928A1],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[46],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[20],
-        [//M50 Reising
-        [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
-        [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"]
-        ],[15],
-        [//M1 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1T],
-        [US_Mag_M1T_2,4,"vest"],
-        [US_Mag_M1T_1,1,"vest"]
-        ],[9],
-        [//M1928 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[9],
-        [//M55 Reising
-        [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
-        [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"]
-        ],[1]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Leader;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -185,31 +304,13 @@
         USMC_Default_Equipment;
         USMC_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,1] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -226,26 +327,8 @@
         //Assigned Items
         USMC_Default_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -265,50 +348,13 @@
         USMC_Default_Equipment;
         USMC_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1928A1 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928A1],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[46],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[20],
-        [//M50 Reising
-        [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
-        [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"]
-        ],[15],
-        [//M1 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1T],
-        [US_Mag_M1T_2,4,"vest"],
-        [US_Mag_M1T_1,1,"vest"]
-        ],[9],
-        [//M1928 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[9],
-        [//M55 Reising
-        [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
-        [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"]
-        ],[1]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Leader;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -326,31 +372,13 @@
         USMC_Default_Equipment;
         USMC_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,1] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -366,26 +394,8 @@
         //Assigned Items
         USMC_Default_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -403,23 +413,8 @@
         //Assigned Items
         USMC_Default_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle_Medic;
 
         //Extra
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -439,45 +434,8 @@
         USMC_Default_Equipment;
         USMC_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1928A1 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928A1],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[46],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[20],
-        [//M50 Reising
-        [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
-        [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"]
-        ],[15],
-        [//M1 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1T],
-        [US_Mag_M1T_2,4,"vest"],
-        [US_Mag_M1T_1,1,"vest"]
-        ],[9],
-        [//M1928 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[9],
-        [//M55 Reising
-        [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
-        [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"]
-        ],[1]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Leader;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -494,26 +452,8 @@
         //Assigned Items
         USMC_Default_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -522,13 +462,13 @@
 
     //Scout
     case "USMC42Jun_Scout" : {
-        [//Uni
-        [//PFC
-        [USMC_Uni_PFC]
-        ],[90],
-        [//PVT
-        [USMC_Uni_PVT]
-        ],[10]
+        [
+            [
+                [USMC_Uni_PFC]
+            ],[90],
+            [
+                [USMC_Uni_PVT]
+            ],[10]
         ] call FNC_AddItemRandomPercent;
         [USMC_BP_M1928] call FNC_AddItem;
         [USMC_Helm_e_r] call FNC_AddItemRandom;
@@ -537,26 +477,8 @@
         //Assigned Items
         USMC_Default_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -577,7 +499,7 @@
         //Primary Weapon
         [US_Mag_BAR,1] call FNC_AddItem;
         [US_Weap_BAR] call FNC_AddItem;
-        [US_Weap_BAR_Bipod] call FNC_AddItem;
+        [US_Acc_BAR_Bipod] call FNC_AddItem;
         [US_Mag_BAR,6,"vest"] call FNC_AddItem;
         [US_Mag_BAR,9,"backpack"] call FNC_AddItem;
 
@@ -596,26 +518,8 @@
         USMC_Default_Equipment;
         USMC_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -624,13 +528,13 @@
 
     //Automatic Rifle Ammo Bearer
     case "USMC42Jun_ARB" : {
-        [//Uniform
-        [//PFC
-        [USMC_Uni_PFC]
-        ],[90],
-        [//PVT
-        [USMC_Uni_PVT]
-        ],[10]
+        [
+            [
+                [USMC_Uni_PFC]
+            ],[90],
+            [
+                [USMC_Uni_PVT]
+            ],[10]
         ] call FNC_AddItemRandomPercent;
         [USMC_BP_M1928] call FNC_AddItem;
         [USMC_Helm_e_r] call FNC_AddItemRandom;
@@ -639,26 +543,8 @@
         //Assigned Items
         USMC_Default_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -667,13 +553,13 @@
 
     //Rifleman
     case "USMC42Jun_Rif" : {
-        [//Uniform
-        [//PFC
-        [USMC_Uni_PFC]
-        ],[90],
-        [//PVT
-        [USMC_Uni_PVT]
-        ],[10]
+        [
+            [
+                [USMC_Uni_PFC]
+            ],[90],
+            [
+                [USMC_Uni_PVT]
+            ],[10]
         ] call FNC_AddItemRandomPercent;
         [USMC_BP_M1928] call FNC_AddItem;
         [USMC_Helm_e_r] call FNC_AddItemRandom;
@@ -682,26 +568,8 @@
         //Assigned Items
         USMC_Default_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [GEN_Gren_Frag_P,2] call FNC_AddItem;
@@ -722,26 +590,8 @@
         USMC_Default_Equipment;
         USMC_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [US_Mag_M1919_250,1] call FNC_AddItem;
@@ -763,7 +613,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,2] call FNC_AddItem;
+        [US_Mag_M1911,2,"uniform"] call FNC_AddItem;
 
         //Primary Weapon
         [US_Mag_M1919_250,1] call FNC_AddItem;
@@ -783,26 +633,8 @@
         USMC_Leader_Equipment;
         [US_Weap_M1919A4_T] call FNC_AddItem;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [US_Mag_M1919_250,2] call FNC_AddItem;
@@ -810,13 +642,13 @@
 
     //Machine Gun Ammo Bearer
     case "USMC42Jun_MGAB" : {
-        [//Uniform
-        [//PFC
-        [USMC_Uni_PFC]
-        ],[90],
-        [//PVT
-        [USMC_Uni_PVT]
-        ],[10]
+        [
+            [
+                [USMC_Uni_PFC]
+            ],[90],
+            [
+                [USMC_Uni_PVT]
+            ],[10]
         ] call FNC_AddItemRandomPercent;
         [USMC_Vest_M1G_Gren] call FNC_AddItem;
         [US_BP_MG] call FNC_AddItem;
@@ -826,23 +658,8 @@
         //Assigned Items
         USMC_Default_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [US_Mag_M1919_250,4] call FNC_AddItem;
@@ -861,26 +678,8 @@
         USMC_Default_Equipment;
         USMC_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -905,7 +704,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [US_Mag_Mort_HE,8] call FNC_AddItem;
@@ -929,7 +728,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
 
         //Extra
         [US_Mag_Mort_HE,8] call FNC_AddItem;
@@ -939,13 +738,13 @@
 
     //Mortar Ammo Bearer
     case "USMC42Jun_MortAB" : {
-        [//Uniform
-        [//PFC
-        [USMC_Uni_PFC]
-        ],[90],
-        [//PVT
-        [USMC_Uni_PVT]
-        ],[10]
+        [
+            [
+                [USMC_Uni_PFC]
+            ],[90],
+            [
+                [USMC_Uni_PVT]
+            ],[10]
         ] call FNC_AddItemRandomPercent;
         [USMC_Vest_M1G_Gren] call FNC_AddItem;
         [USMC_BP_M1928] call FNC_AddItem;
@@ -955,23 +754,8 @@
         //Assigned Items
         USMC_Default_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [US_Mag_Mort_HE,8] call FNC_AddItem;
@@ -990,26 +774,8 @@
         USMC_Default_Equipment;
         USMC_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [US_Mag_Bazoo,3,"backpack"] call FNC_AddItem;
@@ -1027,26 +793,8 @@
         //Assigned Items
         USMC_Default_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [US_Mag_Bazoo,1] call FNC_AddItem;
@@ -1056,13 +804,13 @@
 
     //Bazooka Ammo Bearer
     case "USMC42Jun_BzkaAB" : {
-        [//Uniform
-        [//PFC
-        [USMC_Uni_PFC]
-        ],[90],
-        [//PVT
-        [USMC_Uni_PVT]
-        ],[10]
+        [
+            [
+                [USMC_Uni_PFC]
+            ],[90],
+            [
+                [USMC_Uni_PVT]
+            ],[10]
         ] call FNC_AddItemRandomPercent;
         [US_BP_AT] call FNC_AddItem;
         [USMC_Helm_e_r] call FNC_AddItemRandom;
@@ -1071,26 +819,8 @@
         //Assigned Items
         USMC_Default_Equipment;
 
-        [//Primary Weapon
-        [//M1903A1
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A1],
-        [US_Mag_M1903,20,"vest"]
-        ],[76],
-        [//M1903A3
-        [USMC_Vest_M1G],
-        [US_Mag_M1903,1],
-        [US_Weap_M1903A3],
-        [US_Mag_M1903,20,"vest"]
-        ],[14],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_Rifle;
 
         //Extra
         [US_Mag_Bazoo,3,"backpack"] call FNC_AddItem;
@@ -1152,7 +882,7 @@
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
     };
 
     //Tank Commander
@@ -1166,64 +896,27 @@
         US_Default_Equipment;
         US_Leader_Equipment;
 
-        [//Primary Weapon
-        [//M1928A1 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928A1],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[49],
-        [//M55 Reising
-        [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
-        [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"]
-        ],[16],
-        [//M1 Carbine
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"]
-        ],[10],
-        [//M1 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1T],
-        [US_Mag_M1T_2,4,"vest"],
-        [US_Mag_M1T_1,1,"vest"]
-        ],[10],
-        [//M1928 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_2,5,"vest"]
-        ],[10],
-        [//M50 Reising
-        [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
-        [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"]
-        ],[5]
-        ] call FNC_AddItemRandomPercent;
+        //Primary Weapon
+        USMC42Jun_Weapon_VCom;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
         [US_Weap_M1911] call FNC_AddItem;
-        [US_Mag_M1911,3] call FNC_AddItem;
+        [US_Mag_M1911,3,"uniform"] call FNC_AddItem;
     };
 
     //Tank Crew
     case "USMC42Jun_VCrew" : {
-        [//Uniform
-        [//Cpl
-        [USMC_Uni_CPL]
-        ],[40],
-        [//PFC
-        [USMC_Uni_PFC]
-        ],[55],
-        [//PVT
-        [USMC_Uni_PVT]
-        ],[5]
+        [
+            [
+                [USMC_Uni_CPL]
+            ],[40],
+            [
+                [USMC_Uni_PFC]
+            ],[55],
+            [
+                [USMC_Uni_PVT]
+            ],[5]
         ] call FNC_AddItemRandomPercent;
         [USMC_BP_M1928] call FNC_AddItem;
         [USMC_Helm_VCrew] call FNC_AddItem;
@@ -1232,69 +925,8 @@
         //Assigned Items
         US_Default_Equipment;
 
-        [//Weapon
-        [//M1911 Only
-        [USMC_Vest_Pistol],
-        [US_Mag_M1911,1],
-        [US_Weap_M1911],
-        [US_Mag_M1911,3]
-        ],[90],
-        [//M1928A1 Thompson & M1911
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928A1],
-        [US_Mag_M1T_2,5,"vest"],
-        [US_Mag_M1911,1],
-        [US_Weap_M1911],
-        [US_Mag_M1911,3]
-        ],[4],
-        [//M55 Reising
-        [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
-        [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"],
-        [US_Mag_M1911,1],
-        [US_Weap_M1911],
-        [US_Mag_M1911,3]
-        ],[2],
-        [//M1 Carbine & M1911
-        [USMC_Vest_M1C],
-        [US_Mag_M1C,1],
-        [US_Weap_M1C],
-        [US_Mag_M1C,4,"vest"],
-        [US_Mag_M1911,1],
-        [US_Weap_M1911],
-        [US_Mag_M1911,3]
-        ],[1],
-        [//M1 Thompson
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1T],
-        [US_Mag_M1T_2,4,"vest"],
-        [US_Mag_M1T_1,1,"vest"],
-        [US_Mag_M1911,1],
-        [US_Weap_M1911],
-        [US_Mag_M1911,3]
-        ],[1],
-        [//M1928 Thompson & M1911
-        [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
-        [US_Weap_M1928],
-        [US_Mag_M1T_2,5,"vest"],
-        [US_Mag_M1911,1],
-        [US_Weap_M1911],
-        [US_Mag_M1911,3]
-        ],[1],
-        [//M50 Reising
-        [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
-        [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"],
-        [US_Mag_M1911,1],
-        [US_Weap_M1911],
-        [US_Mag_M1911,3]
-        ],[1]
-        ] call FNC_AddItemRandomPercent;
+        //Weapon
+        USMC42Jun_Weapon_VCrew;
 
         //Extra
         [GEN_Toolkit] call FNC_AddItem;

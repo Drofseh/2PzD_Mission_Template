@@ -42,55 +42,55 @@
 
 //======================== Definitions ========================
 
-#define CdnRWR42Jun_LeeEn               \
-        [                               \
-            [                           \
-                [UK_Mag_LeeEn,1],       \
-                [UK_Weap_LeeEnNo1Mk3s],     \
+#define CdnRWR42Jun_LeeEn \
+        [ \
+            [ \
+                [UK_Mag_LeeEn,1], \
+                [UK_Weap_LeeEnNo1Mk3s], \
                 [UK_Mag_LeeEn,5,"vest"] \
-            ],[80],                     \
-            [                           \
-                [UK_Mag_LeeEn,1],       \
-                [UK_Weap_LeeEnNo4_1],   \
+            ],[80], \
+            [ \
+                [UK_Mag_LeeEn,1], \
+                [UK_Weap_LeeEnNo4_1], \
                 [UK_Mag_LeeEn,5,"vest"] \
-            ],[10],                     \
-            [                           \
-                [UK_Mag_LeeEn,1],       \
-                [UK_Weap_LeeEnNo4_2],   \
+            ],[10], \
+            [ \
+                [UK_Mag_LeeEn,1], \
+                [UK_Weap_LeeEnNo4_2], \
                 [UK_Mag_LeeEn,5,"vest"] \
-            ],[10]                      \
+            ],[10] \
         ] call FNC_AddItemRandomPercent;
 
-#define CdnRWR42Jan_SMG                  \
-        [                                \
-            [                            \
-                [US_Mag_M1T_1,1],        \
-                [US_Weap_M1928],         \
+#define CdnRWR42Jan_SMG \
+        [ \
+            [ \
+                [US_Mag_M1T_1,1], \
+                [US_Weap_M1928], \
                 [US_Mag_M1T_1,1,"vest"], \
-                [US_Mag_M1T_2,5,"vest"]  \
-            ],[75],                      \
-            [                            \
-                [UK_Mag_Sten,1],         \
-                [UK_Weap_StenMkII],      \
-                [UK_Mag_Sten,6,"vest"]   \
-            ],[10],                      \
-            [                            \
-                [US_Mag_M1T_1,1],        \
-                [US_Weap_M1T],           \
+                [US_Mag_M1T_2,5,"vest"] \
+            ],[75], \
+            [ \
+                [UK_Mag_Sten,1], \
+                [UK_Weap_StenMkII], \
+                [UK_Mag_Sten,6,"vest"] \
+            ],[10], \
+            [ \
+                [US_Mag_M1T_1,1], \
+                [US_Weap_M1T], \
                 [US_Mag_M1T_1,2,"vest"], \
-                [US_Mag_M1T_2,4,"vest"]  \
-            ],[10],                      \
-            [                            \
-                [UK_Mag_Sten,1],         \
-                [UK_Weap_StenMkI],       \
-                [UK_Mag_Sten,6,"vest"]   \
-            ],[5]                        \
+                [US_Mag_M1T_2,4,"vest"] \
+            ],[10], \
+            [ \
+                [UK_Mag_Sten,1], \
+                [UK_Weap_StenMkI], \
+                [UK_Mag_Sten,6,"vest"] \
+            ],[5] \
         ] call FNC_AddItemRandomPercent;
 
 #define CdnRWR42Jun_Webley \
         [UK_Mag_EnfieldNo2,1] call FNC_AddItem; \
         [UK_Weap_EnfieldNo2] call FNC_AddItem; \
-        [UK_Mag_EnfieldNo2,3] call FNC_AddItem;
+        [UK_Mag_EnfieldNo2,3,"uniform"] call FNC_AddItem;
 
 //======================== Loadouts ========================
 
