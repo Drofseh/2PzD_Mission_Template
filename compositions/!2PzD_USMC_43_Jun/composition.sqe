@@ -3029,7 +3029,7 @@ class items
 				class Attributes
 				{
 					init="[this,""USMC43Jun_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
-					description="Medic@1 Platoon | Platoon HQ";
+					description="Corpsman@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{
@@ -17235,7 +17235,7 @@ class items
 				class Attributes
 				{
 					init="[this,""USMC43Jun_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
-					description="Medic@2 Platoon | Platoon HQ";
+					description="Corpsman@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
 					{

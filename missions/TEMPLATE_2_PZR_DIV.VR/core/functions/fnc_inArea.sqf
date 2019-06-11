@@ -15,7 +15,7 @@
 
 params [
     ["_unit", objNull, [objNull]],
-    ["_marker", "", [""]].
+    ["_marker", "", [""]],
     "_pos",
     "_xSize",
     "_ySize",
