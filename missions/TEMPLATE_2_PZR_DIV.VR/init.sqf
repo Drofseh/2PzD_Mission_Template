@@ -9,8 +9,6 @@ if (isNil {God}) then {
     God = 0;
 };
 
-#include "scripts\Scripts.sqf"
-
 #include "core\script_macros.hpp"
 #include "core\init.sqf" //DO NOT REMOVE
 #include "customization\settings.sqf" //DO NOT REMOVE
@@ -55,8 +53,4 @@ if (isServer) then {
 #include "modules\modules.sqf" //DO NOT REMOVE
 #include "core\postChecks.sqf" //DO NOT REMOVE
 
-if (!hasInterface) then { //temp fix for AI not detecting players speaking with acre local voice
-    if ((getText (configFile >> "CfgPatches" >> "acre_main" >> "version")) == "2.6.2.996") then {
-        ["acre_sys_core_onRevealUnit", { _this call acre_sys_core_fnc_onRevealUnit }] call CBA_fnc_addEventHandler;
-    };
-};
+#include "scripts\Scripts.sqf"

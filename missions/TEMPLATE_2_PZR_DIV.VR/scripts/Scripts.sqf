@@ -1,3 +1,4 @@
+#include "acre.sqf"
 #include "actions.sqf"
 #include "chatCommands.sqf"
 #include "Diwako_Variables.sqf"
@@ -5,5 +6,6 @@
 //#include "gearLog.sqf"
 //#include "gearPersistent.sqf"
 #include "IFA3_variables.sqf"
+#include "mapMarkerPrevention.sqf"
 #include "mapTextures.sqf"
 //#include "vehGearPersistent.sqf"
