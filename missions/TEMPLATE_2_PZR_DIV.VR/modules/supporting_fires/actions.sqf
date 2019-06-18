@@ -111,8 +111,8 @@ _supportingFireActions = call {
 
 
     // ===== Add Target Base Actions
-    _actionBaseHE = ["HE","HE","Haas_WWII_Rebalance\UI\icon_supporting_fires_he.paa",_statementTargets,_conditionFiresHE5] call ace_interact_menu_fnc_createAction;
-    _actionBaseSmoke = ["Smoke","Smoke","Haas_WWII_Rebalance\UI\icon_supporting_fires_smoke.paa",_statementTargets,_conditionFiresSmoke5] call ace_interact_menu_fnc_createAction;
+    _actionBaseHE = ["HE","HE","Haas_WWII_Rebalance\UI\icon_supporting_fires_he.paa",_statementTargets,_conditionFiresHE1] call ace_interact_menu_fnc_createAction;
+    _actionBaseSmoke = ["Smoke","Smoke","Haas_WWII_Rebalance\UI\icon_supporting_fires_smoke.paa",_statementTargets,_conditionFiresSmoke1] call ace_interact_menu_fnc_createAction;
     _actionBaseFlare = ["Flare","Flare","Haas_WWII_Rebalance\UI\icon_supporting_fires_flare.paa",_statementTargets,_conditionFiresFlare1] call ace_interact_menu_fnc_createAction;
 
     // ===== Add Targets
