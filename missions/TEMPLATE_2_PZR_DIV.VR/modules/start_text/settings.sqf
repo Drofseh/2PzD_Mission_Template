@@ -25,10 +25,10 @@ switch (side player) do { //Checks what team the player is on
     default {
 
         _startTextArray = [
-            ["TITLEQUOTE", "Battle of Kursk"],
+            ["TITLE", "Battle of Kursk"],
             ["TEXT", "Unternehmen Zitadelle"],
             ["TEXT", "D+0, Northeast of Long_Town_Name"],
-            ["TEXT", "0530hrs, 05 July 1943"]
+            ["DATETIME"]
         ];
 
     };
@@ -37,10 +37,10 @@ switch (side player) do { //Checks what team the player is on
     case west: { //If player is west he receives this message
 
         _startTextArray = [
-            ["TITLEQUOTE", "Battle of Kursk"],
+            ["TITLE", "Battle of Kursk"],
             ["TEXT", "Unternehmen Zitadelle"],
-            ["TEXT", "D+0, Northeast of Long_Town_Name"],
-            ["TEXT", "0530hrs, 05 July 1943"]
+            ["TEXT", "D+2, Northeast of Long_Town_Name"],
+            ["DATETIME"]
         ];
 
     }; //End of west case
@@ -49,10 +49,10 @@ switch (side player) do { //Checks what team the player is on
     case resistance: { //If player is resistance he receives this message
 
         _startTextArray = [
-            ["TITLEQUOTE", "Training Day"],
+            ["TITLE", "Training Day"],
             ["TEXT", "Mouth of the Tenaru River"],
             ["TEXT", "Guadalcanal"],
-            ["TEXT", "0530hrs, 04 March 1944"]
+            ["DATETIME"]
         ];
 
     }; //End of resistance case
@@ -61,7 +61,7 @@ switch (side player) do { //Checks what team the player is on
     case east: { //If player is east he receives this message
 
         _startTextArray = [
-            ["TITLEQUOTE", "Mission_Title_or_something"],
+            ["TITLE", "Mission_Title_or_something"],
             ["TEXT", "Somewhere in Pyrgos"],
             ["DATETIME"]
         ];
@@ -72,7 +72,7 @@ switch (side player) do { //Checks what team the player is on
     case civilian: { //If player is civilian he receives this message
 
         _startTextArray = [
-            ["TITLEQUOTE", "Mission_Title_or_something"],
+            ["TITLE", "Mission_Title_or_something"],
             ["TEXT", "Somewhere in Pyrgos"],
             ["DATETIME"]
         ];

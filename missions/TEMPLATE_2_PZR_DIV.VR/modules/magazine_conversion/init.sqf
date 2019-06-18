@@ -38,9 +38,9 @@ magazine_conversion_nameSpace = true call CBA_fnc_createNamespace;
         _ammoClass = _ammoClass joinString "_";
     };
 
-    _ammoClassMagazines = magazine_conversion_nameSpace getVariable [("magazine_conversion_" + _ammoClass), []];
+    _ammoClassMagazines = magazine_conversion_nameSpace getVariable [(format ["magazine_conversion_%1",_ammoClass]), []];
     _ammoClassMagazines pushBack _x;
-    magazine_conversion_nameSpace setVariable [("magazine_conversion_" + _ammoClass), _ammoClassMagazines];
+    magazine_conversion_nameSpace setVariable [(format ["magazine_conversion_%1",_ammoClass]), _ammoClassMagazines];
 } forEach magazine_conversion_allMagazines;
 
 // include the other stuff

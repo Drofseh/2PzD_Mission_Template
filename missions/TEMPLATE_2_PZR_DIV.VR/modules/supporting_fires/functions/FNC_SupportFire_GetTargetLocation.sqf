@@ -1,13 +1,18 @@
 
 FNC_SupportFire_GetTargetLocation = {
+    params [
+        "_supportFire_target",
+        "_supportFire_accuracy",
+        "_supportFire_adjust",
+        "_supportFire_adjustX",
+        "_supportFire_adjustY",
+        "_supportFire_targetX",
+        "_supportFire_targetY",
+        "_supportFire_targetLoc"
+    ];
 
-    private _supportFire_target   = _this select 0;
-    private _supportFire_accuracy = _this select 1;
-    private _supportFire_adjustX = (_this select 2) select 0;
-    private _supportFire_adjustY = (_this select 2) select 1;
-    private "_supportFire_targetX";
-    private "_supportFire_targetY";
-    private "_supportFire_targetLoc";
+    _supportFire_adjustX = _supportFire_adjust select 0;
+    _supportFire_adjustY = _supportFire_adjust select 1;
 
     // systemChat ("_supportFire_target - " + str _supportFire_target);
     // systemChat ("_supportFire_accuracy - " + str _supportFire_accuracy);
@@ -21,7 +26,7 @@ FNC_SupportFire_GetTargetLocation = {
         _supportFire_targetLoc = supportFire_previousTargetLoc;
 
         if (supportFire_repeatFireBonus < 1) then {supportFire_repeatFireBonus = 1};
-        supportFire_repeatFireBonus = supportFire_repeatFireBonus + 0.25;
+        supportFire_repeatFireBonus = supportFire_repeatFireBonus + 0.2;
         if (supportFire_repeatFireBonus >= 3) then {supportFire_repeatFireBonus = 3};
 
         supportFire_shellDispersion = supportFire_originalShellDispersion / supportFire_repeatFireBonus;
@@ -45,7 +50,7 @@ FNC_SupportFire_GetTargetLocation = {
             _supportFire_targetLoc = supportFire_previousTargetLoc;
 
             if (supportFire_repeatFireBonus < 1) then {supportFire_repeatFireBonus = 1};
-            supportFire_repeatFireBonus = supportFire_repeatFireBonus + 0.25;
+            supportFire_repeatFireBonus = supportFire_repeatFireBonus + 0.2;
             if (supportFire_repeatFireBonus >= 3) then {supportFire_repeatFireBonus = 3};
 
             supportFire_shellDispersion = supportFire_originalShellDispersion / supportFire_repeatFireBonus;

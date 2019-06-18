@@ -65,7 +65,7 @@ if (side player == WEST) then {
 
     {
         private _nameWeapon = getText (configFile >> "CfgWeapons" >> _x >> "displayName");
-        familiarWeapons_nameSpace setVariable [("familiarWeapons" + _nameWeapon), 100];
+        familiarWeapons_nameSpace setVariable [(format ["familiarWeapons%1",_nameWeapon]), 100];
     } forEach familiarWeapons_familiarWeapons;
 
     player addEventHandler ["Fired",{

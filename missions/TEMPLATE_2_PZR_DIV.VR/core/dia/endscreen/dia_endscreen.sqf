@@ -34,15 +34,15 @@ _textSide = 0;
 
     _x params ["_name", "_side", "_type", "_start", "_current", "_disabled", "_destroyed"];
 
-    _temp = format ["%1<br />Casualties: %2 out of %3<br />", _name, (_start - _current), _start];
+    _temp = format ["%1<br/>Casualties: %2 out of %3<br/>", _name, (_start - _current), _start];
 
     if (count _disabled != 0) then {
 
-        _temp = _temp + "<br />Disabled assets:<br />";
+        _temp = format ["%1<br/>Disabled assets:<br/>",_temp];
 
         {
 
-            _temp = _temp + format ["%1<br />", _x];
+            _temp = format ["%1%2<br/>",_temp, _x];
 
         } forEach _disabled;
 
@@ -50,16 +50,16 @@ _textSide = 0;
 
     if (count _destroyed != 0) then {
 
-        _temp = _temp + "<br />Destroyed assets:<br />";
+        _temp = format ["%1<br/>Destroyed assets:<br/>",_temp];
 
         {
 
-            _temp = _temp + format ["%1<br />", _x];
+            _temp = format ["%1%2<br/>",_temp, _x];
 
         } forEach _destroyed;
     };
 
-    _temp = _temp + "<br />";
+    _temp = format ["%1<br/>",_temp];
 
     if (_textSide == 0) then {
 
@@ -89,14 +89,14 @@ if (_timeLimit != 0) then {
 
     _timeLimitText = format ["Mission duration: %1 out of %2 minutes", _time, _timeLimit];
 
-    _endTitleText = format ["%1<br />%2", _scenario, _timeLimitText];
+    _endTitleText = format ["%1<br/>%2", _scenario, _timeLimitText];
 
 };
 
 if (!isNil "aCount_textBLU" && !isNil "aCount_textRED" && !isNil "aCount_textRES") then {
-    _bottomTextLeft = format["%1",aCount_textBLU];
-    _bottomTextMiddle = format["%1",aCount_textRED];
-    _bottomTextRight = format["%1",aCount_textRES];
+    _bottomTextLeft = format ["%1",aCount_textBLU];
+    _bottomTextMiddle = format ["%1",aCount_textRED];
+    _bottomTextRight = format ["%1",aCount_textRES];
 };
 
 disableSerialization;

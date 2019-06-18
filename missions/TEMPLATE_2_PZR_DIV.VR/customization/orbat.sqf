@@ -8,9 +8,9 @@
 
 // Define needed variables
 private ["_orbatText", "_groups", "_precompileGroups"];
-_orbatText = "<br />    NOTE: This ORBAT is only accurate at mission start.<br />
-    Leadership and roles may change based on casualties or other needs.<br />
-    The group with the leaders name in colour is your group.<br />
+_orbatText = "<br/>    NOTE: This ORBAT is only accurate at mission start.<br/>
+    Leadership and roles may change based on casualties or other needs.<br/>
+    The group with the leaders name in colour is your group.<br/>
     ";
 _groups = [];
 _hiddenGroups = [];
@@ -27,12 +27,12 @@ _hiddenGroups = [];
 _groups = _groups - _hiddenGroups;
 
     // Add spacing
-    _orbatText = _orbatText + "<br /><font size='18'>== ORBAT ==</font><br />";
+    _orbatText = format ["%1<br/><font size='18'>== ORBAT ==</font><br/>",_orbatText];
 
 // Loop through the group, print out group ID, leader name and medics if present
 {
     // Add spacing
-    _orbatText = _orbatText + "<br />";
+    _orbatText = format ["%1<br/>",_orbatText];
 
     // Highlight the player's group with a different color (based on the player's side)
     _color = "#FFFFFF";
@@ -58,7 +58,7 @@ _groups = _groups - _hiddenGroups;
             _leaderPrep03 = _leaderPrep02 select 0;
             _leaderPrep04 = _leaderPrep02 select 1;
             _leaderRole = [_leaderPrep04,_leaderPrep03] joinString " | ";
-            _orbatText = _orbatText + format ["<font color='%3' size='16'>%1 - %2</font>", _leaderRole, name leader _x,_color] + "<br />";
+            _orbatText = format ["%4<font color='%3' size='16'>%1 - %2</font><br/><br/>", _leaderRole, name leader _x,_color,_orbatText];
     } else {
         // If no @ is found, then it will just use the description string as written
         _leaderRole = roleDescription _groupleader;
@@ -67,7 +67,7 @@ _groups = _groups - _hiddenGroups;
         // This will force _leaderRole to a value that can be output as part of _orbatText
         if (isNil _leaderRole) then {_leaderRole = "Leader";};
         if (_leaderRole == "") then {_roleRole = "Leader";};
-        _orbatText = _orbatText + format ["<font color='%3' size='16'>%1 - %2</font>", _leaderRole, name leader _x,_color] + "<br />";
+        _orbatText = format ["%4<font color='%3' size='16'>%1 - %2</font><br/><br/>", _leaderRole, name leader _x,_color,_orbatText];
     }; // End Leader
 
     // Group members - This will take the name and description of each group member and place them under the leader.
@@ -78,12 +78,12 @@ _groups = _groups - _hiddenGroups;
             if (["@",_rolePrep01] call BIS_fnc_inString) then {
                 _rolePrep02 = _rolePrep01 splitString "@";
                 _roleRole = _rolePrep02 select 0;
-                _orbatText = _orbatText + format["<font size='14'>    |--- %1 | %2</font>", _roleRole, name _x] + "<br />";
+                _orbatText = format ["%3<font size='14'>    |--- %1 | %2</font><br/>", _roleRole, name _x,_orbatText];
             } else {
                 _roleRole = roleDescription _x;
                 if (isNil _roleRole) then {_roleRole = "Group Member";};
                 if (_roleRole == "") then {_roleRole = "Group Member";};
-                _orbatText = _orbatText + format ["<font size='14'>    |--- %1 | %2</font>", _roleRole, name _x] + "<br />";
+                _orbatText = format ["%3<font size='14'>    |--- %1 | %2</font><br/>", _roleRole, name _x,_orbatText];
             };
         };
     } forEach units _x;
@@ -106,35 +106,35 @@ _veharray = [];
 
 if (count _veharray > 0) then {
 
-    _orbatText = _orbatText + "<br /><br /><font size='16'>== Vehicle Crews and Passengers ==</font><br />";
+    _orbatText = format ["%1<br/><br/><font size='16'>== Vehicle Crews and Passengers ==</font><br/>", _orbatText];
 
     {
          // Filter all characters which might break the diary entry (such as the & in Orca Black & White)
         _vehName = [getText (configFile >> "CfgVehicles" >> (typeOf _x) >> "displayname"),"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_- "] call BIS_fnc_filterString;
-        _orbatText = _orbatText + "<br />" + format["<font size='15'>%1 </font>",_vehName];
+        _orbatText = format ["%1<br/><font size='15'>%2 </font>",_orbatText,_vehName];
 
         // Get passenger seats, total and occupied - Workaround for http:// feedback.arma3.com/view.php?id=21602 (bad link, has to do with FFV turrets being counted as crew not passengers)
         _maxSlots = getNumber(configfile >> "CfgVehicles" >> typeof _x >> "transportSoldier") + (count allTurrets [_x, true] - count allTurrets _x);
         _freeSlots = _x emptyPositions "cargo";
         if (_maxSlots > 0) then {
-            _orbatText = _orbatText + format ["<font size='15'><br />  %1 / %2 passenger seats full</font>",(_maxSlots-_freeSlots),_maxSlots];
+            _orbatText = format ["%1<font size='15'><br/>  %2 / %3 passenger seats full</font>",_orbatText,(_maxSlots-_freeSlots),_maxSlots];
         };
 
-        _orbatText = _orbatText  + "<br /><font size='15'>  |- Crew </font><br />";
+        _orbatText = format ["%1<br/><font size='15'>  |- Crew </font><br/>", _orbatText];
 
         {
             // Get all crew members
             if ((assignedVehicleRole _x select 0) != "CARGO") then {
                 _veh = vehicle _x;
                 _crewrole = switch (true) do {
-                    case (driver _veh == _x && !((vehicle _x isKindOf "helicopter") || (vehicle _x isKindOf "plane"))):{"<font size='14'> | Driver</font>"};
-                    case (driver _veh == _x && ((vehicle _x isKindOf "helicopter") || (vehicle _x isKindOf "plane"))):{"<font size='14'> | Pilot</font>"};
-                    case (commander _veh == _x):{"<font size='14'> | Commander</font>"};
-                    case (gunner _veh == _x):{"<font size='14'> | Gunner</font>"};
-                    case (assignedVehicleRole _x select 0 == "Turret" && commander _veh != _x && gunner _veh != _x && driver _veh != _x):{"<font size='14'> | Commander</font>"};
+                    case (driver _veh == _x && !((vehicle _x isKindOf "helicopter") || (vehicle _x isKindOf "plane"))) : {"<font size='14'> | Driver</font>"};
+                    case (driver _veh == _x && ((vehicle _x isKindOf "helicopter") || (vehicle _x isKindOf "plane"))) : {"<font size='14'> | Pilot</font>"};
+                    case (commander _veh == _x) : {"<font size='14'> | Commander</font>"};
+                    case (gunner _veh == _x) : {"<font size='14'> | Gunner</font>"};
+                    case (assignedVehicleRole _x select 0 == "Turret" && commander _veh != _x && gunner _veh != _x && driver _veh != _x) : {"<font size='14'> | Commander</font>"};
                     default {"<font size='14'> | Crewman</font>"};
                 };
-                _orbatText = _orbatText + format["<font size='14'>    |--- %1</font>",name _x] + _crewrole + "<br/>";
+                _orbatText = format ["%1<font size='14'>    |--- %2</font>%3<br/>",_orbatText,name _x,_crewrole];
             };
         } forEach crew _x;
 
@@ -148,7 +148,7 @@ if (count _veharray > 0) then {
 
         // Get all passenger groups
         if (count _groupList > 0) then {
-            _orbatText =_orbatText + "<font size='15'>  |- Passengers </font><br />";
+            _orbatText = format ["%1<font size='15'>  |- Passengers </font><br/>", _orbatText];
             {
                 _groupleader = leader _x;
                 _leaderPrep01 = roleDescription _groupleader;
@@ -156,9 +156,9 @@ if (count _veharray > 0) then {
                 if (["@",_leaderPrep01] call BIS_fnc_inString) then {
                     _leaderPrep02 = _leaderPrep01 splitString "@";
                     _leaderGroup = _leaderPrep02 select 1;
-                    _orbatText =_orbatText + format["<font size='14'>    |--- %1</font>", _leaderGroup] + "<br />";
+                    _orbatText = format ["%1<font size='14'>    |--- %2</font>",_orbatText, _leaderGroup];
                 } else {
-                    _orbatText =_orbatText + format["<font size='14'>    |--- %1</font>", _x] + "<br />";
+                    _orbatText = format ["%1<font size='14'>    |--- %2</font><br/>",_orbatText _x];
                 };
             } forEach _groupList;
         };

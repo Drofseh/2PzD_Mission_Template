@@ -19,16 +19,16 @@ FNC_Foreign_Weapons_reloadedEh = {
         };
 
         private _nameWeapon = getText (configFile >> "CfgWeapons" >> _weapon >> "displayName");
-        private _weaponLearning = familiarWeapons_nameSpace getVariable [("familiarWeapons" + _nameWeapon), 0];
+        private _weaponLearning = familiarWeapons_nameSpace getVariable [(format ["familiarWeapons%1",_nameWeapon]), 0];
 
         _weaponLearning = _weaponLearning + 10;
 
-        familiarWeapons_nameSpace setVariable [("familiarWeapons" + _nameWeapon), _weaponLearning];
+        familiarWeapons_nameSpace setVariable [(format ["familiarWeapons%1",_nameWeapon]), _weaponLearning];
 
         if (_weaponLearning >= 100) then {
             (format ["You've used the %1 enough to become familiar with it.", _nameWeapon]) call CBA_fnc_notify;
             familiarWeapons_familiarWeapons pushBackUnique (toLower _weapon);
-            familiarWeapons_nameSpace setVariable [("familiarWeapons" + _nameWeapon), _weaponLearning];
+            familiarWeapons_nameSpace setVariable [("format ["familiarWeapons%1",_nameWeapon]), _weaponLearning];
         };
     };
 };

@@ -48,7 +48,7 @@ FNC_MagazineConversion_AddNewMags = {
                 [_OldMag,_NewMag,_oldMagCountCurrent,_newMagCountMax] call FNC_MagazineConversion_AddNewMags;
                 [
                     ["Converting partially complete."],
-                    [((str _oldMagCountCurrent) + " rounds remaining")]
+                    [(format ["%1 rounds remaining",str _oldMagCountCurrent])]
                 ] call CBA_fnc_notify;
             } else {
                 "Converting complete." call CBA_fnc_notify;
@@ -67,7 +67,7 @@ FNC_MagazineConversion_AddNewMags = {
 
             [
                 ["Converting interupted!"],
-                [((str _oldMagCountCurrent) + " rounds remaining")]
+                [(format ["%1 rounds remaining",str _oldMagCountCurrent])]
             ] call CBA_fnc_notify;
         },
         "Converting..."

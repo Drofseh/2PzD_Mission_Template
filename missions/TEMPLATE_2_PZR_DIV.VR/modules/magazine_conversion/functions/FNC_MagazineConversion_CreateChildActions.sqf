@@ -14,7 +14,7 @@ FNC_MagazineConversion_CreateChildActions = {
         private _OldMag = _x;
 
         // check if the OLD MAG interaction point has been created, TRUE if no interaction point, FALSE if already extant.
-        private _OldMag_Action_Missing = magazine_conversion_nameSpace getVariable [(_OldMag + "_parent_action_missing"), true];
+        private _OldMag_Action_Missing = magazine_conversion_nameSpace getVariable [(format ["%1_parent_action_missing",_OldMag]), true];
 
         if (_OldMag_Action_Missing) then {
 
@@ -44,7 +44,7 @@ FNC_MagazineConversion_CreateChildActions = {
                 /*
                 //this was used to prevent duplicate interaction points due to same display name, but now the interaction point is based on the classname it's no longer needed.
                 if ((player getVariable ["ace_interact_menu_selfactions",  []]) findIf {(_x select 0 select 0 ) isEqualTo _actionNameOldMag} >= 0) then {
-                    _actionNameOldMag = _actionNameOldMag + " ";
+                    _actionNameOldMag = format ["%1 ",_actionNameOldMag];
                 };
                 */
 
@@ -74,14 +74,14 @@ FNC_MagazineConversion_CreateChildActions = {
                 private _actionOldMagazine = [_OldMag,_actionNameOldMag,_pictureOldMagazine,_statementOldMagazine,_conditionOldMagazine,{},_parametersOldMagazine] call ace_interact_menu_fnc_createAction;
                 [player, 1, ["ACE_SelfActions","ACE_Equipment","Magazine Conversion"], _actionOldMagazine] call ace_interact_menu_fnc_addActionToObject;
 
-                private _ammoClassMagazines = magazine_conversion_nameSpace getVariable [("magazine_conversion_" + _ammoClass), []];
+                private _ammoClassMagazines = magazine_conversion_nameSpace getVariable [(format ["magazine_conversion_%1",_ammoClass]), []];
 
                 // start of the `forEach _ammoClassMagazines` loop
                 {
                     private _NewMag = _x;
 
                     // Check if the NEW MAG interaction point has been created, TRUE if no interaction point, FALSE if already extant.
-                    private _NewMag_ChildAction_Missing = magazine_conversion_nameSpace getVariable [(_OldMag + "_child_action_" + _NewMag + "_missing"), true];
+                    private _NewMag_ChildAction_Missing = magazine_conversion_nameSpace getVariable [(format ["%1_child_action_%2_missing",_OldMag,_NewMag]), true];
 
                     if (_NewMag_ChildAction_Missing)then {
 
@@ -122,12 +122,12 @@ FNC_MagazineConversion_CreateChildActions = {
                     };
 
                     // set that the NEW MAG interaction point has been created for this magazine so it doesn't create them again
-                    magazine_conversion_nameSpace setVariable [(_OldMag + "_child_action_" + _NewMag + "_missing"), false];
+                    magazine_conversion_nameSpace setVariable [(format ["%1_child_action_%2_missing",_OldMag,_NewMag]), false];
                 } forEach _ammoClassMagazines;
             };
         };
 
         // set that the OLD MAG interaction point has been created for this magazine so it doesn't create them again
-        magazine_conversion_nameSpace setVariable [(_OldMag + "_parent_action_missing"), false];
+        magazine_conversion_nameSpace setVariable [(format ["%1_parent_action_missing",_OldMag]), false];
     } forEach magazine_conversion_playerMagazines;
 };

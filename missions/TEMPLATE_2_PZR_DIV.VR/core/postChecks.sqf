@@ -8,11 +8,11 @@ if (hasInterface) then {
 
         _module = FW_Modules select _i;
 
-        _modules = _modules + "<font size='16'>" + (_module select 0) + "</font><br/>Description: " + (_module select 1) + "<br/>by " + (_module select 2);
+        _modules = format ["%1<font size='16'>%2</font><br/>Description: %3<br/>by %4", _modules, _module select 0, _module select 1, _module select 2];
 
         if (_i < count FW_Modules) then {
 
-            _modules = _modules + "<br/><br/>";
+            _modules = format ["%1<br/><br/>", _modules];
 
         };
     };

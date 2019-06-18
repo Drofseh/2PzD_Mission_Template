@@ -1,7 +1,8 @@
 
 ["Supporting Fires", "Allows radio operators to call in fire support using Ace interaction.", "Wilhelm Haas (Drofseh)"] call FNC_RegisterModule;
 
-#define def_fireMissionBriefingMessage player createDiarySubject ["Supporting Fires", "Supporting Fires"]; \
+#define def_fireMissionBriefingMessage \
+    player createDiarySubject ["Supporting Fires", "Supporting Fires"]; \
     player createDiaryRecord ["Supporting Fires",["How To Use"," \
         <br/><font color='#FF8C00' size='16'>How To Use</font> \
         <br/> \
@@ -59,10 +60,19 @@
         <br/><font color='#70db70' size='14'>7. The Fire Mission</font> \
         <br/>Once a target and rounds are selected the fire mission will begin automatically. \
         <br/> \
-        <br/>Hints will be displayed to update you on the progress of the fire mission. \
-        <br/>These will include the status of fire mission, rounds remaining, and similar messages. \
-        <br/> \
         <br/>While a fire mission is in progress no other fire mission may be called, and the target interaction points will be temporarily removed. \
+        <br/> \
+        <br/>Hints will be displayed to update you on the progress of the fire mission. \
+        <br/> \
+        <br/>Roger acknowledges the fire mission and starts the battery laying the guns. \
+        <br/>A warning will be given if the target is dangerously close to location of the observer. \
+        <br/>Note that the battery may refuse the fire mission if the target is too close to the observer. \
+        <br/> \
+        <br/>Shots out indicates that the battery has finished laying the guns and has started firing. \
+        <br/> \
+        <br/>Rounds complete indicates that the battery has finished firing and is available for another fire mission. \
+        <br/> \
+        <br/>Splash out indicates that the rounds are about to hit the target. \
         <br/> \
         <br/>Once all ammunition is used up no more fire missions may be called and the interaction points will be removed. \
     "]]; \

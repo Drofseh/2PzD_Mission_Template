@@ -17,7 +17,7 @@ FNC_Foreign_Weapons_firedEh = {
         [_projectile, ((_dispersionX * _dispersion) * familiarWeapons_accuracyPenalty), ((_dispersionY * _dispersion) * familiarWeapons_accuracyPenalty)] call ace_common_fnc_changeProjectileDirection;
 
         private _modeType = getText (configFile >> "CfgWeapons" >> "_weapon" >> "_mode" >> "textureType");
-        private _weaponLearning = familiarWeapons_nameSpace getVariable [("familiarWeapons" + _nameWeapon), 0];
+        private _weaponLearning = familiarWeapons_nameSpace getVariable [(format ["familiarWeapons%1",_nameWeapon]), 0];
 
         switch (_condition) do {
             case "semi" : {_weaponLearning = _weaponLearning + 2};
@@ -27,7 +27,7 @@ FNC_Foreign_Weapons_firedEh = {
             default {_weaponLearning = _weaponLearning + 2};
         };
 
-        familiarWeapons_nameSpace setVariable [("familiarWeapons" + _nameWeapon), _weaponLearning];
+        familiarWeapons_nameSpace setVariable [(format ["familiarWeapons%1",_nameWeapon]), _weaponLearning];
 
         if (_weaponLearning >= 100) then {
             (format ["You've used the %1 enough to become familiar with it.", _nameWeapon]) call CBA_fnc_notify;

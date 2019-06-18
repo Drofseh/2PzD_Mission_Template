@@ -12,13 +12,13 @@ if (hasInterface) then {
         _text = "";
 
         {
-            _text = _text + _x + "<br></br><br></br>";
+            _text = format ["%1%2<br></br><br></br>",_text,_x];
         } forEach FW_DebugMessages;
 
         ((uiNamespace getVariable "FW_Debug") displayCtrl _someText) ctrlSetStructuredText parseText _text;
 
         FNC_DebugMessage = {
-            diag_log _this;
+            diag_log text _this;
 
             private ["_someText", "_message", "_found", "_text"];
 
@@ -38,7 +38,7 @@ if (hasInterface) then {
                 _text = "";
 
                 {
-                    _text = _text + _x + "<br></br><br></br>";
+                    _text = format ["%1%2<br></br><br></br>",_text,_x];
                 } forEach FW_DebugMessages;
 
                 ((uiNamespace getVariable "FW_Debug") displayCtrl _someText) ctrlSetStructuredText parseText _text;

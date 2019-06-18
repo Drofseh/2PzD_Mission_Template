@@ -1,36 +1,22 @@
 
 FNC_SupportFire_GetTargetName = {
-
-    private _supportFire_target = _this select 0;
+    params ["_supportFire_target"];
 
     // systemChat ("_supportFire_target - " + str _supportFire_target);
 
-    if (_supportFire_target isEqualTo "TargetVisual") then {
-        supportFire_targetName = "On your mark";
-    };
-    if (_supportFire_target isEqualTo "AdjustFire") then {
-        supportFire_targetName = "Adjusting Fire";
-    };
-    if (_supportFire_target isEqualTo "Target01") then {
-        supportFire_targetName = supportFire_target01_Name;
-    };
-    if (_supportFire_target isEqualTo "Target02") then {
-        supportFire_targetName = supportFire_target02_Name;
-    };
-    if (_supportFire_target isEqualTo "Target03") then {
-        supportFire_targetName = supportFire_target03_Name;
-    };
-    if (_supportFire_target isEqualTo "Target04") then {
-        supportFire_targetName = supportFire_target04_Name;
-    };
-    if (_supportFire_target isEqualTo "Target05") then {
-        supportFire_targetName = supportFire_target05_Name;
-    };
-    if (_supportFire_target isEqualTo "Target06") then {
-        supportFire_targetName = supportFire_target06_Name;
+    switch (_supportFire_target) do {
+        case "TargetVisual" : {_supportFire_targetName = "your mark"};
+        case "AdjustFire"   : {_supportFire_targetName = "Adjust Fire"};
+        case "TargetLast"   : {_supportFire_targetName = "Repeat Fire"};
+        case "Target01"     : {_supportFire_targetName = supportFire_target01_Name};
+        case "Target02"     : {_supportFire_targetName = supportFire_target02_Name};
+        case "Target03"     : {_supportFire_targetName = supportFire_target03_Name};
+        case "Target04"     : {_supportFire_targetName = supportFire_target04_Name};
+        case "Target05"     : {_supportFire_targetName = supportFire_target05_Name};
+        case "Target06"     : {_supportFire_targetName = supportFire_target06_Name};
     };
 
-    // systemChat ("supportFire_targetName - " + str supportFire_targetName);
+    // systemChat ("_supportFire_targetName - " + str _supportFire_targetName);
 
-    supportFire_targetName;
+    _supportFire_targetName;
 };

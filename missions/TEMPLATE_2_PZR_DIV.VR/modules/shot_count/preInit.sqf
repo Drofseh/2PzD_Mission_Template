@@ -34,7 +34,7 @@ if (isServer) then {
 
             if (_ret == "") then {
                 _ret = (str _className);
-                diag_log "displayName entry is blank for " + _ret;
+                diag_log text (format ["displayName entry is blank for %1",_ret]);
             };
 
             aCount_classNames pushBack _className;
@@ -205,7 +205,7 @@ if (hasInterface) then {
                 for [{ _i = 0}, {_i < count _arrayBLU}, {_i = _i + 2}] do {
                     _label = _arrayBLU select (_i);
                     _count = _arrayBLU select (_i + 1);
-                    aCount_textBLU = aCount_textBLU + _label + ": " + str(_count) + " Rounds" + "<br/>";
+                    aCount_textBLU = format ["%1%2: %3 Rounds<br/>",aCount_textBLU,_label,str _count];
                 };
             } else {
                 aCount_textBLU = "";
@@ -215,7 +215,7 @@ if (hasInterface) then {
                 for [{ _i = 0}, {_i < count _arrayRED}, {_i = _i + 2}] do {
                     _label = _arrayRED select (_i);
                     _count = _arrayRED select (_i + 1);
-                    aCount_textRED = aCount_textRED + _label + ": " + str(_count) + " Rounds" + "<br/>";
+                    aCount_textRED = format ["%1%2: %3 Rounds<br/>",aCount_textRED,_label,str _count];
                 };
             } else {
                 aCount_textRED = "";
@@ -225,7 +225,7 @@ if (hasInterface) then {
                 for [{ _i = 0}, {_i < count _arrayRES}, {_i = _i + 2}] do {
                     _label = _arrayRES select (_i);
                     _count = _arrayRES select (_i + 1);
-                    aCount_textRES = aCount_textRES + _label + ": " + str(_count) + " Rounds" + "<br/>";
+                    aCount_textRES = format ["%1%2: %3 Rounds<br/>",aCount_textRES,_label,str _count];
                 };
             } else {
                 aCount_textRES = "";

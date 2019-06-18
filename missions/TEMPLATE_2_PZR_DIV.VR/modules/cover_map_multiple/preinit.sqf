@@ -60,7 +60,7 @@ FNC_AOCoverAndCenterMap = {
         {
             _x params ["_color"];
 
-            private _marker = createMarkerLocal ["ao_" + str _i + str _forEachIndex, [_pos_x, _pos_y]];
+            private _marker = createMarkerLocal [(format ["ao_%1%2",str _i,str _forEachIndex]), [_pos_x, _pos_y]];
             FW_map_cover pushBack _marker;
 
             _marker setMarkerSizeLocal [_w,S];
@@ -80,7 +80,7 @@ FNC_AOCoverAndCenterMap = {
         _pos_y = _py + (cos _a) * (BS/2 + _s);
 
         for "_m" from 0 to 7 do {
-            _marker = createMarkerLocal ["ao_w_" + str _i + str _m,[_pos_x, _pos_y]];
+            _marker = createMarkerLocal [(format ["ao_w_%1%2",str _i,str _m]),[_pos_x, _pos_y]];
             FW_map_cover pushBack _marker;
 
             _marker setMarkerSizeLocal [_bw, BS/2];

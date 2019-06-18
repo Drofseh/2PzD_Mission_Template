@@ -33,22 +33,22 @@ if !([_item, _unit] call FNC_checkClassname) exitWith {};
 if (typeName _amount != "SCALAR") then {
     _badData = true;
 
-    ("Item amount is not a number in this loadout: " + (str _this)) call FNC_DebugMessage;
-    diag_log ("Item amount is not a number in this loadout: " + (str _this));
+    (format ["Item amount is not a number in this loadout: %1", str _this]) call FNC_DebugMessage;
+    diag_log text (format ["Item amount is not a number in this loadout: %1", str _this]);
 };
 
 if (typeName _position != "STRING") then {
 
     _badData = true;
-    ("Position is not a string in this loadout: " + (str _this)) call FNC_DebugMessage;
-    diag_log ("Position is not a string in this loadout: " + (str _this));
+    (format ["Position is not a string in this loadout: %1", str _this]) call FNC_DebugMessage;
+    diag_log text (format ["Position is not a string in this loadout: %1", str _this]);
 
 } else {
     if (_position != "none" && {_position != "backpack" && _position != "vest" && _position != "uniform"}) then {
 
         _badData = true;
-        ("Position string is misspelled or invalid in this loadout: " + (str _this)) call FNC_DebugMessage;
-        diag_log ("Position string is misspelled or invalid in this loadout: " + (str _this));
+        (format ["Position string is misspelled or invalid in this loadout: %1", str _this]) call FNC_DebugMessage;
+        diag_log text (format ["Position string is misspelled or invalid in this loadout: %1", str _this]);
 
     };
 };

@@ -1,15 +1,9 @@
 
 // [side player] call FNC_SupportFire_AmmoCheck;
 FNC_SupportFire_AmmoCheck = {
-
+    params ["_supportFire_side","_supportFire_ammoCountHE","_supportFire_ammoCountSmoke","_supportFire_ammoCountFlare"];
     // systemChat "ammo check started";
-
-    private _supportFire_side = _this select 0;
     // systemChat str supportFire_side;
-
-    private "_supportFire_ammoCountHE";
-    private "_supportFire_ammoCountSmoke";
-    private "_supportFire_ammoCountFlare";
 
     if (_supportFire_side isEqualTo WEST) then {
         // systemChat "west ammo counted";
@@ -37,23 +31,20 @@ FNC_SupportFire_AmmoCheck = {
     // systemChat (str _supportFire_ammoCountFlare);
     // systemChat "ammo count passed";
 
-    [_supportFire_ammoCountHE, _supportFire_ammoCountSmoke, _supportFire_ammoCountFlare] spawn {
-        // systemChat "ammo hint spawn started";
-        private _supportFire_ammoCountHE = _this select 0;
-        private _supportFire_ammoCountSmoke = _this select 1;
-        private _supportFire_ammoCountFlare = _this select 2;
-        // systemChat (str _supportFire_ammoCountHE);
-        // systemChat (str _supportFire_ammoCountSmoke);
-        // systemChat (str _supportFire_ammoCountFlare);
-        "Roger, checking ammunition." call CBA_fnc_notify;
-        sleep 5;
-        [
-            [(format ["%1 Rounds, HE,", _supportFire_ammoCountHE])],
-            [(format ["%1 rounds Smoke,", _supportFire_ammoCountSmoke])],
-            [(format ["%1 rounds Flare,", _supportFire_ammoCountFlare])],
-            ["remaining."]
-        ] call CBA_fnc_notify;
-        // systemChat "ammo hint spawn finished";
-    };
+    "Roger, checking ammunition." call CBA_fnc_notify;
+    [
+        {
+            params ["_supportFire_ammoCountHE","_supportFire_ammoCountSmoke","_supportFire_ammoCountFlare"];
+            [
+                ["Ammunition remaining:"],
+                [(format ["%1 rounds HE,", _supportFire_ammoCountHE])],
+                [(format ["%1 rounds Smoke,", _supportFire_ammoCountSmoke])],
+                [(format ["%1 rounds Flare.", _supportFire_ammoCountFlare])]
+            ] call CBA_fnc_notify;
+            // systemChat "ammo hint finished";
+        },
+        [_supportFire_ammoCountHE, _supportFire_ammoCountSmoke, _supportFire_ammoCountFlare],
+        5
+    ] call CBA_fnc_waitAndExecute;
     // systemChat "ammo check finshed";
 };

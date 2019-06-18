@@ -36,7 +36,7 @@ FNC_StaminaBoost_Eat_Food = {
                 _foodName = (_foodNamePrep1 joinString " ");
 
                 [
-                    [("You ate a " + _foodName + " ration")],
+                    [(format ["You ate a %1 ration",_foodName])],
                     ["Delicious!"]
                 ] call CBA_fnc_notify;
             };

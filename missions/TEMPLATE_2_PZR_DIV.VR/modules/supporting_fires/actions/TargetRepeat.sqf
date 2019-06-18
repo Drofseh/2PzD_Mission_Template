@@ -6,6 +6,11 @@
         // Repeat Target, HE
         [player, 1, ["ACE_SelfActions","Supporting Fires","Repeat Last Target"], _actionBaseHE] call ace_interact_menu_fnc_addActionToObject;
 
+            // Repeat Last Target, 1 Round, HE
+            _statementRepeat_1 = { [(side player), "HE", 1, "TargetLast", [0,0]] call FNC_SupportFire_FireMission; };
+            _actionRepeat_1 = ["HE - 1 Round","1 Round","Haas_WWII_Rebalance\UI\icon_supporting_fires_he.paa",_statementRepeat_1,_conditionFiresHE1] call ace_interact_menu_fnc_createAction;
+            [player, 1, ["ACE_SelfActions","Supporting Fires","Repeat Last Target","HE"], _actionRepeat_1] call ace_interact_menu_fnc_addActionToObject;
+
             // Repeat Last Target, 5 Rounds, HE
             _statementRepeatHE_5 = { [(side player), "HE", 5, "TargetLast", [0,0]] call FNC_SupportFire_FireMission; };
             _actionRepeatHE_5 = ["5 Rounds","5 Rounds","Haas_WWII_Rebalance\UI\icon_supporting_fires_he.paa",_statementRepeatHE_5,_conditionFiresHE5] call ace_interact_menu_fnc_createAction;
@@ -33,6 +38,11 @@
 
         // Repeat Target, Smoke
         [player, 1, ["ACE_SelfActions","Supporting Fires","Repeat Last Target"], _actionBaseSmoke] call ace_interact_menu_fnc_addActionToObject;
+
+            // Repeat Last Target, 1 Round, Smoke
+            _statementRepeatS_1 = { [(side player), "Smoke", 1, "TargetLast", [0,0]] call FNC_SupportFire_FireMission; };
+            _actionRepeatS_1 = ["Smoke - 1 Round","1 Round","Haas_WWII_Rebalance\UI\icon_supporting_fires_smoke.paa",_statementRepeatS_1,_conditionFiresSmoke1] call ace_interact_menu_fnc_createAction;
+            [player, 1, ["ACE_SelfActions","Supporting Fires","Repeat Last Target","Smoke"], _actionRepeatS_1] call ace_interact_menu_fnc_addActionToObject;
 
             // Repeat Last Target, 5 Rounds, Smoke
             _statementRepeatS_5 = { [(side player), "Smoke", 5, "TargetLast", [0,0]] call FNC_SupportFire_FireMission; };

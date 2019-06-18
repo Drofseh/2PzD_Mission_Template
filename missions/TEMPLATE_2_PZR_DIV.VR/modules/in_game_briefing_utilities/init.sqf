@@ -74,7 +74,7 @@ _unitNameDisplayRemove = {
 
 _displayWhisperInfo = {
     params ["_target", "_player", "_params", "_actionData"];
-    _actionData set [1, ("Toggle between whisper/semi-whisper, current: " + (["semi-whisper", "whisper"] select FW_bu_whisper))];
+    _actionData set [1, (format ["Toggle between whisper/semi-whisper, current: %1",["semi-whisper", "whisper"] select FW_bu_whisper])];
 };
 
 FW_bu_fnc_whitelist = {

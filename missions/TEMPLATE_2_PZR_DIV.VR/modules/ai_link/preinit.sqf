@@ -15,7 +15,9 @@
             };
         } forEach allGroups;
 
-        if (tin_aiLink_debug) then {diag_log format["Link Groups: %1",_allLinkGroups];};
+        if (tin_aiLink_debug) then {
+            diag_log text format ["Link Groups: %1",_allLinkGroups];
+        };
 
         {   //Share that sweet, sweet info
             _thisGroup = _x;
@@ -58,14 +60,14 @@
                                 if (_revAmt > tin_aiLink_maxKnows) then {_revAmt = tin_aiLink_maxKnows};
                                 if (_revAmt > _thatGroup knowsAbout _targUnit) then {_thatGroup reveal [_targUnit,_revAmt];};
 
-                                if (tin_aiLink_debug) then {diag_log format["Update || This: %1 | That: %2 | Targ: %3 | Knows:%4",_thisGroup,_thatGroup,_targUnit,_revAmt];};
+                                if (tin_aiLink_debug) then {diag_log text format ["Update || This: %1 | That: %2 | Targ: %3 | Knows:%4",_thisGroup,_thatGroup,_targUnit,_revAmt];};
                             }, [_thatGroup,_thisGroup,_x],_waitTime] call CBA_fnc_waitAndExecute;
-                            if (tin_aiLink_debug) then {diag_log format["Pre-update || This: %1 | That: %2 | Targ: %3",_thisGroup,_thatGroup,_x];};
+                            if (tin_aiLink_debug) then {diag_log text format ["Pre-update || This: %1 | That: %2 | Targ: %3",_thisGroup,_thatGroup,_x];};
                         };
-                        if (tin_aiLink_debug) then {diag_log format["Check || This: %1 | That: %2 | Targ: %3",_thisGroup knowsAbout _x,_thatGroup knowsAbout _x,_x];};
+                        if (tin_aiLink_debug) then {diag_log text format ["Check || This: %1 | That: %2 | Targ: %3",_thisGroup knowsAbout _x,_thatGroup knowsAbout _x,_x];};
                     } forEach _checkUnits;
 
-                    if (tin_aiLink_debug) then {diag_log format["Rem Groups: %1 | This: %2 | That:%3 | ThisLR:%4 | ThatLR:%5 | Range:%6",_groups,_thisGroup,_thatGroup,_thisLR,_thatLR,_range];};
+                    if (tin_aiLink_debug) then {diag_log text format ["Rem Groups: %1 | This: %2 | That:%3 | ThisLR:%4 | ThatLR:%5 | Range:%6",_groups,_thisGroup,_thatGroup,_thisLR,_thatLR,_range];};
                 };
             } forEach _groups;
             _groups = _allLinkGroups;
