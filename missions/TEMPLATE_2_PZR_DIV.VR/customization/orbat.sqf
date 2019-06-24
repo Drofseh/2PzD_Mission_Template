@@ -11,7 +11,7 @@ private ["_orbatText", "_groups", "_precompileGroups"];
 _orbatText = "<br/>    NOTE: This ORBAT is only accurate at mission start.<br/>
     Leadership and roles may change based on casualties or other needs.<br/>
     The group with the leaders name in colour is your group.<br/>
-    ";
+";
 _groups = [];
 _hiddenGroups = [];
 
@@ -67,7 +67,7 @@ _groups = _groups - _hiddenGroups;
         // This will force _leaderRole to a value that can be output as part of _orbatText
         if (isNil _leaderRole) then {_leaderRole = "Leader";};
         if (_leaderRole == "") then {_roleRole = "Leader";};
-        _orbatText = format ["%4<font color='%3' size='16'>%1 - %2</font><br/><br/>", _leaderRole, name leader _x,_color,_orbatText];
+        _orbatText = format ["%4<font color='%3' size='16'>%1 - %2</font><br/>", _leaderRole, name leader _x,_color,_orbatText];
     }; // End Leader
 
     // Group members - This will take the name and description of each group member and place them under the leader.
@@ -101,7 +101,6 @@ _veharray = [];
             };
         } forEach units _x;
     };
-
 } forEach _groups;
 
 if (count _veharray > 0) then {
@@ -158,7 +157,7 @@ if (count _veharray > 0) then {
                     _leaderGroup = _leaderPrep02 select 1;
                     _orbatText = format ["%1<font size='14'>    |--- %2</font>",_orbatText, _leaderGroup];
                 } else {
-                    _orbatText = format ["%1<font size='14'>    |--- %2</font><br/>",_orbatText _x];
+                    _orbatText = format ["%1<font size='14'>    |--- %2</font><br/>",_orbatText, _x];
                 };
             } forEach _groupList;
         };

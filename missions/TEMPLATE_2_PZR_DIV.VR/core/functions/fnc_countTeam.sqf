@@ -12,10 +12,8 @@
  * Public: Yes
  */
 
-params ["_team","_count"];
-
-_team = _this;
-_count = -1;
+private _team = _this;
+private _count = -1;
 
 {
     _x params ["_name", "_side", "_type", "_total", "_current"];

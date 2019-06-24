@@ -20,5 +20,4 @@ if (!(_unit getVariable ["FW_Tracked", false])) then {
     _unit setVariable ["FW_Tracked", true];
 
     _unit call FNC_EventSpawned;
-
 };

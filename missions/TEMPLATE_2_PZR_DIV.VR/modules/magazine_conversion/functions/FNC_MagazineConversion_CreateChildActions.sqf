@@ -88,9 +88,12 @@ FNC_MagazineConversion_CreateChildActions = {
                         // Skip if OLD MAG mag and NEW MAG mag are the same class
                         // Skip if NEW MAG mag is a vehicle magazine.
                         // Skip if NEW MAG mag scope is not public.
+                        // Skip if the mags have the same name.
                         if (_OldMag == _NewMag) exitWith {};
                         if (_NewMag isKindOf ["VehicleMagazine", configFile >> "CfgMagazines"]) exitWith {};
                         if ((getNumber (configFile >> "CfgMagazines" >> _NewMag >> "scope")) != 2) exitWith {};
+                        private _nameNewMagazine = getText (configFile >> "CfgMagazines" >> _NewMag >> "displayName");
+                        if (_nameOldMagazine == _nameNewMagazine) exitWith {};
 
                         // Skip if NEW MAG magazine has more tracers than OLD MAG magazine to keep some tracer continuity
                         // It will also prevent most rifle magazines from being turned into any machine gun magazine that uses tracers.
@@ -100,9 +103,8 @@ FNC_MagazineConversion_CreateChildActions = {
                         if (1 min (getNumber (configFile >> "CfgMagazines" >> _OldMag >> "tracersEvery")) < (1 min (getNumber (configFile >> "CfgMagazines" >> _NewMag >> "tracersEvery")))) exitWith {};
                         */
 
-                        // Get the NEW MAG magazine's display name, make the interaction point name based on it.
+                        // Make the interaction point name based on the NEW MAG magazine's display name.
                         // Get the invetory icon to use as the interaction point icon, and get the ammunition class the OLD MAG magazine uses.
-                        private _nameNewMagazine = getText (configFile >> "CfgMagazines" >> _NewMag >> "displayName");
                         private _actionNameNewMag = (format ["into %1",_nameNewMagazine]);
                         private _pictureNewMagazine = getText (configFile >> "CfgMagazines" >> _NewMag >> "picture");
 
