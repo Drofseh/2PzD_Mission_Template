@@ -78,6 +78,15 @@
     supportFire_target05GUER_Name = "Echo";
     supportFire_target06GUER_Name = "Foxtrot";
 
+// BATTERY SIZE
+    // Sets, per side, the number of guns in the supporting battery.
+    // Higher number means more shells landing per volley.
+    // So for a value of 5, if 10 rounds are fired then they will arrive in 2 volleys.
+    // Must not be lower than 1 or greater than 25.
+    supportFire_batterySizeWEST = 5;
+    supportFire_batterySizeEAST = 5;
+    supportFire_batterySizeGUER = 5;
+
 // AMMUNITION TYPE
     // There are three types of ammunition available, High Explosive, Smoke, and Flare.
     // By default these are mortar shells, but you can change the classNames (Type) to some other kind of ammo if desired.

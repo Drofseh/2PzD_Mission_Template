@@ -84,5 +84,5 @@ FNC_SupportFire_RemoveAmmo = {
 
     // systemChat ("_supportFire_ammoCount - " + str _supportFire_ammoCount);
 
-    _supportFire_ammoCount;
+    _supportFire_ammoCount
 };

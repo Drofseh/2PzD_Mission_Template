@@ -1,7 +1,7 @@
 
-// [side player] call FNC_SupportFire_AmmoCheck;
+// [side player,bool] call FNC_SupportFire_AmmoCheck;
 FNC_SupportFire_AmmoCheck = {
-    params ["_supportFire_side","_supportFire_ammoCountHE","_supportFire_ammoCountSmoke","_supportFire_ammoCountFlare"];
+    params ["_supportFire_side","_supportFire_ammoCheckPlayer","_supportFire_ammoCountHE","_supportFire_ammoCountSmoke","_supportFire_ammoCountFlare"];
     // systemChat "ammo check started";
     // systemChat str supportFire_side;
 
@@ -31,12 +31,15 @@ FNC_SupportFire_AmmoCheck = {
     // systemChat (str _supportFire_ammoCountFlare);
     // systemChat "ammo count passed";
 
-    "Roger, checking ammunition." call CBA_fnc_notify;
+    if (_supportFire_ammoCheckPlayer) then {
+        "Roger, checking ammunition." call CBA_fnc_notify;
+    };
+
     [
         {
             params ["_supportFire_ammoCountHE","_supportFire_ammoCountSmoke","_supportFire_ammoCountFlare"];
             [
-                ["Ammunition remaining:"],
+                ["Available ammunition:"],
                 [(format ["%1 rounds HE,", _supportFire_ammoCountHE])],
                 [(format ["%1 rounds Smoke,", _supportFire_ammoCountSmoke])],
                 [(format ["%1 rounds Flare.", _supportFire_ammoCountFlare])]

@@ -22,6 +22,21 @@ FNC_SupportFire_Barrage = {
 
     [
         {
+            params ["_supportFire_targetName"];
+
+            [
+                [(format ["Shots out on %1.", _supportFire_targetName])],
+                ["30 seconds to impact."],
+                ["Watch for splash."]
+            ] call CBA_fnc_notify;
+            // systemChat "Shots Out";
+        },
+        _supportFire_targetName,
+        _supportFire_layingDelay
+    ] call CBA_fnc_waitAndExecute;
+
+    [
+        {
             params [
                 "_supportFire_type",
                 "_supportFire_number",
@@ -64,6 +79,7 @@ FNC_SupportFire_Barrage = {
                             "_supportFire_targetX",
                             "_supportFire_targetY",
                             "_supportFire_dispersion",
+                            "_supportFire_number",
                             "_supportFire_bomb",
                             "_supportFire_bombPosition",
                             "_supportFire_bombPositionX",
@@ -94,7 +110,7 @@ FNC_SupportFire_Barrage = {
                 // systemChat ("_supportFire_rounds_fired - " + str _supportFire_rounds_fired);
                 // systemChat ("_supportFire_shotDelay - " + str _supportFire_shotDelay);
 
-                if (_supportFire_rounds_fired > 4) then {
+                if (_supportFire_rounds_fired >= supportFire_batterySize) then {
                     _supportFire_shotDelay = _supportFire_shotDelay + 3;
                     _supportFire_rounds_fired = 0;
                 };
