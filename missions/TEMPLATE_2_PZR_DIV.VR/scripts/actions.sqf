@@ -7,7 +7,7 @@ call {
         _magListAll = magazinesAllTurrets this;
 
         if (_magListAll isEqualTo []) then {
-            "This vehicle is unarmed" call CBA_fnc_notify;
+            [["This vehicle is unarmed"], true] call CBA_fnc_notify;
         } else {
             _magList = [];
 
@@ -49,7 +49,7 @@ call {
             _hint = [["Vehicle Ammuntion Remaining:"]];
             _hint append _magListFinal;
 
-            _hint call CBA_fnc_notify;
+            [[_hint], true] call CBA_fnc_notify;
         };
     };
 

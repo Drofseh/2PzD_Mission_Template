@@ -44,7 +44,7 @@ if (isServer) then {
             _orignalUserMarkers = [];
 
             {
-                if (_x find "_USER_DEFINED" >= 0) then {
+                if (_x find "_USER_DEFINED" > -1) then {
                     _orignalUserMarkers pushBack _x;
                 };
             } forEach allMapMarkers;

@@ -4,7 +4,8 @@
     [_x] spawn {
         params ["_display"];
 
-        waitUntil {!isNull (findDisplay _display) || (CBA_missionTime > 1)};
+        waitUntil {!isNull (findDisplay _display)};
+        if (visibleMap) then {systemChat "You're showing the map !"};
 
         if (!isNull (findDisplay _display)) then {
             ctrlActivate ((findDisplay _display) displayCtrl 1201);
