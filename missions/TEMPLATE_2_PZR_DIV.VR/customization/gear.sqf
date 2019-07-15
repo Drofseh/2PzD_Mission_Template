@@ -79,6 +79,19 @@ switch (_type) do {
     //#include "loadouts\British\gearUKEsx44Sep.sqf"
     //#include "loadouts\British\gearUKEsx45Jan.sqf"
 
+    //#include "loadouts\British\gearUKSEA39.sqf"
+    //#include "loadouts\British\gearUKSEA40Sep.sqf"
+    //#include "loadouts\British\gearUKSEA41Jan.sqf"
+    //#include "loadouts\British\gearUKSEA41Jun.sqf"
+    //#include "loadouts\British\gearUKSEA42Jan.sqf"
+    //#include "loadouts\British\gearUKSEA42Jun.sqf"
+    //#include "loadouts\British\gearUKSEA43Jan.sqf"
+    //#include "loadouts\British\gearUKSEA43Jun.sqf"
+    //#include "loadouts\British\gearUKSEA44Jan.sqf"
+    //#include "loadouts\British\gearUKSEA44Jun.sqf"
+    //#include "loadouts\British\gearUKSEA44Sep.sqf"
+    //#include "loadouts\British\gearUKSEA45Jan.sqf"
+
         //=== Canadian ===
         //British Columbia Regiment
     //#include "loadouts\Canadian\gearCdnBC39.sqf"

@@ -17,7 +17,7 @@ _hiddenGroups = [];
 
 {
     // Add group to ORBAT if side matches, group isn't already listed, and group has players
-    if ((side _x == side group player) && !(_x in _groups) && ({_x in playableUnits} count units _x) > 0) then {
+    if ((side _x == side group player) && {!(_x in _groups)} && {({_x in playableUnits} count units _x) > 0}) then {
     // if ((side _x == side group player) && !(_x in _groups)) then { // this line includes AI
         _groups = _groups + [_x];
     };
@@ -26,8 +26,8 @@ _hiddenGroups = [];
 // Remove groups we don't want to show
 _groups = _groups - _hiddenGroups;
 
-    // Add spacing
-    _orbatText = format ["%1<br/><font size='18'>== ORBAT ==</font><br/>",_orbatText];
+// Add spacing
+_orbatText = format ["%1<br/><font size='18'>== ORBAT ==</font><br/>",_orbatText];
 
 // Loop through the group, print out group ID, leader name and medics if present
 {
@@ -38,9 +38,9 @@ _groups = _groups - _hiddenGroups;
     _color = "#FFFFFF";
     if (_x == group player) then {
         _color = switch (side player) do {
-             case west: {"#0080FF"};
-             case east: {"#B40404"};
-             case independent: {"#298A08"};
+             case west : {"#0080FF"};
+             case east : {"#B40404"};
+             case independent : {"#298A08"};
              default {"#8904B1"};
         };
     };
@@ -66,24 +66,24 @@ _groups = _groups - _hiddenGroups;
         // If the any of the above variables are nil then things break (either because the leader is AI or because it wasn't slotted)
         // This will force _leaderRole to a value that can be output as part of _orbatText
         if (isNil _leaderRole) then {_leaderRole = "Leader";};
-        if (_leaderRole == "") then {_roleRole = "Leader";};
+        if (_leaderRole == "") then {_leaderRole = "Leader";};
         _orbatText = format ["%4<font color='%3' size='16'>%1 - %2</font><br/>", _leaderRole, name leader _x,_color,_orbatText];
     }; // End Leader
 
     // Group members - This will take the name and description of each group member and place them under the leader.
     {
-        if (_x != leader group _x) then {
-            _rolePrep01 = roleDescription _x;
+        if (_x != _groupleader) then {
+            _memberPrep01 = roleDescription _x;
 
-            if (["@",_rolePrep01] call BIS_fnc_inString) then {
-                _rolePrep02 = _rolePrep01 splitString "@";
-                _roleRole = _rolePrep02 select 0;
-                _orbatText = format ["%3<font size='14'>    |--- %1 | %2</font><br/>", _roleRole, name _x,_orbatText];
+            if (["@",_memberPrep01] call BIS_fnc_inString) then {
+                _memberPrep02 = _memberPrep01 splitString "@";
+                _memberRole = _memberPrep02 select 0;
+                _orbatText = format ["%3<font size='14'>    |--- %1 | %2</font><br/>", _memberRole, name _x,_orbatText];
             } else {
-                _roleRole = roleDescription _x;
-                if (isNil _roleRole) then {_roleRole = "Group Member";};
-                if (_roleRole == "") then {_roleRole = "Group Member";};
-                _orbatText = format ["%3<font size='14'>    |--- %1 | %2</font><br/>", _roleRole, name _x,_orbatText];
+                _memberRole = roleDescription _x;
+                if (isNil _memberRole) then {_memberRole = "Group Member";};
+                if (_memberRole == "") then {_memberRole = "Group Member";};
+                _orbatText = format ["%3<font size='14'>    |--- %1 | %2</font><br/>", _memberRole, name _x,_orbatText];
             };
         };
     } forEach units _x;
@@ -91,19 +91,19 @@ _groups = _groups - _hiddenGroups;
 // End of groups
 
 // Vehicle detection below here.
-_veharray = [];
+_vehicleArray = [];
 {
     // gets vehicles with units in them
     if ({vehicle _x != _x} count units _x > 0 ) then {
         {
-            if (vehicle _x != _x && {!(vehicle _x in _veharray)}) then {
-            _veharray set [count _veharray,vehicle _x];
+            if (vehicle _x != _x && {!(vehicle _x in _vehicleArray)}) then {
+            _vehicleArray set [count _vehicleArray,vehicle _x];
             };
         } forEach units _x;
     };
 } forEach _groups;
 
-if (count _veharray > 0) then {
+if (count _vehicleArray > 0) then {
 
     _orbatText = format ["%1<br/><br/><font size='16'>== Vehicle Crews and Passengers ==</font><br/>", _orbatText];
 
@@ -161,7 +161,7 @@ if (count _veharray > 0) then {
                 };
             } forEach _groupList;
         };
-    } forEach _veharray;
+    } forEach _vehicleArray;
 };
 
 // Insert final result into subsection ORBAT of section Notes
