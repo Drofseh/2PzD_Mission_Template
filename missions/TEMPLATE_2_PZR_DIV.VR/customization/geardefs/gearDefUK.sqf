@@ -6,7 +6,6 @@
 #define UK_Weap_LeeEnNo1Mk3     "CSA38_SMLE"
 #define UK_Weap_LeeEnNo1Mk3s    "LIB_LeeEnfield_No1"
 #define UK_Weap_LeeEnNo4_1      "LIB_LeeEnfield_No4"
-#define UK_Weap_LeeEnNo4_2      "LIB_LeeEnfield_No4"
 #define UK_Weap_LeeEnNo4T       "LIB_LeeEnfield_No4_Scoped"
 #define UK_Weap_LeeEnNo5        "fow_w_leeenfield_no5mk1_junglecarbine"
 #define UK_Weap_StenMkI         "LEN_StenMk5"
@@ -92,6 +91,12 @@
 #define UK_UniA2_LCpl           "fow_u_uk_bd40_seac_02_lance_corporal"
 #define UK_UniA2_Pte            "fow_u_uk_bd40_seac_02_private"
 
+#define UK_UniSEA_Lt_r          ["fow_u_uk_bd40_seac_01_lieutenant"],["fow_u_uk_bd40_seac_02_lieutenant"]
+#define UK_UniSEA_Sgt_r         ["fow_u_uk_bd40_seac_01_sergeant"],["fow_u_uk_bd40_seac_02_sergeant"]
+#define UK_UniSEA_Cpl_r         ["fow_u_uk_bd40_seac_01_corporal"],["fow_u_uk_bd40_seac_02_corporal"]
+#define UK_UniSEA_LCpl_r        ["fow_u_uk_bd40_seac_01_lance_corporal"],["fow_u_uk_bd40_seac_02_lance_corporal"]
+#define UK_UniSEA_Pte_r         ["fow_u_uk_bd40_seac_01_private"],["fow_u_uk_bd40_seac_02_private"]
+
 #define UK_Uni_Para             "fow_u_uk_parasmock"
 
 #define UK_Uni_Com              "fow_u_uk_bd40_commando_01_private"
@@ -129,8 +134,8 @@
 #define UK_BPG_Radio            "fow_b_uk_p37_radio_blanco"
 
 //Headgear
-#define UK_Helm_r               ["fow_h_uk_mk2"],["fow_h_uk_mk2_net"],["fow_h_uk_mk2_net_camo"],["fow_h_uk_mk2_net_foliage"],["fow_h_uk_mk3"],["fow_h_uk_mk3_net_camo"]
-#define UK_Helm_Mk2_r           ["fow_h_uk_mk2"],["fow_h_uk_mk2_net"]
+#define UK_Helm_r               ["fow_h_uk_mk2"],["fow_h_uk_mk2_net"],["fow_h_uk_mk2_net_camo"],["fow_h_uk_mk2_net_foliage"],["fow_h_uk_mk3"],["fow_h_uk_mk3"],["fow_h_uk_mk3_net_camo"],["fow_h_uk_mk3_net_camo"]
+#define UK_Helm_Mk2_r           ["fow_h_uk_mk2"],["fow_h_uk_mk2_net"],["fow_h_uk_mk2_net_camo"],["fow_h_uk_mk2_net_foliage"]
 #define UK_Helm_Mk3_r           ["fow_h_uk_mk3"],["fow_h_uk_mk3_net_camo"]
 #define UK_Helm_Mk2_P_r         ["fow_h_uk_mk2_para"],["fow_h_uk_mk2_para_foliage"]
 #define UK_Helm_Mk2             "fow_h_uk_mk2"
@@ -160,6 +165,10 @@
 #define UK_Beret_RHA_HS         "fow_h_uk_beret_rha_headset"
 #define UK_Beret_RTR            "fow_h_uk_beret_rtr"
 #define UK_Beret_RTR_HS         "fow_h_uk_beret_rtr_headset"
+
+#define UK_Headgear_SEA_r           ["fow_h_uk_mk2"],["fow_h_uk_mk2_net"],["fow_h_uk_mk2_net_camo"],["fow_h_uk_mk2_net_foliage"],["fow_h_uk_mk3"],["fow_h_uk_mk3_net_camo"],["fow_h_uk_jungle_hat_01"],["fow_h_uk_jungle_hat_02"],["fow_h_uk_jungle_hat_03"],["fow_h_uk_jungle_hat_03"]
+#define UK_Headgear_SEA_Mk2_r       ["fow_h_uk_mk2"],["fow_h_uk_mk2_net"],["fow_h_uk_mk2_net_camo"],["fow_h_uk_mk2_net_foliage"],["fow_h_uk_jungle_hat_01"],["fow_h_uk_jungle_hat_02"],["fow_h_uk_jungle_hat_03"],["fow_h_uk_jungle_hat_03"]
+#define UK_Headgear_SEA_Mk3_r       ["fow_h_uk_mk3"],["fow_h_uk_mk3"],["fow_h_uk_mk3_net_camo"],["fow_h_uk_mk3_net_camo"],["fow_h_uk_jungle_hat_01"],["fow_h_uk_jungle_hat_02"],["fow_h_uk_jungle_hat_03"],["fow_h_uk_jungle_hat_03"]
 
 //Radio
 

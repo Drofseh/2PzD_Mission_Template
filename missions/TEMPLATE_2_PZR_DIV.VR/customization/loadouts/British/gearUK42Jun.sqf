@@ -53,15 +53,10 @@
                 [UK_Mag_LeeEn,1], \
                 [UK_Weap_LeeEnNo4_1], \
                 [UK_Mag_LeeEn,5,"vest"] \
-            ],[10], \
-            [ \
-                [UK_Mag_LeeEn,1], \
-                [UK_Weap_LeeEnNo4_2], \
-                [UK_Mag_LeeEn,5,"vest"] \
-            ],[10] \
+            ],[20]
         ] call FNC_AddItemRandomPercent;
 
-#define UK42Jan_SMG \
+#define UK42Jun_SMG \
         [ \
             [ \
                 [US_Mag_M1T_1,1], \
@@ -128,7 +123,7 @@
         UK_Leader_Equipment;
 
         //Primary Weapon
-        UK42Jan_SMG;
+        UK42Jun_SMG;
 
         //Extra
         [UK_Gren_Frag,1] call FNC_AddItem;
@@ -230,7 +225,7 @@
         UK_Leader_Equipment;
 
         //Primary Weapon
-        UK42Jan_SMG;
+        UK42Jun_SMG;
 
         //Extra
         [UK_Gren_Frag,1] call FNC_AddItem;
@@ -251,7 +246,7 @@
         UK_Default_Equipment;
 
         //Primary Weapon
-        UK42Jan_SMG;
+        UK42Jun_SMG;
 
         //Extra
         [UK_Gren_Frag,1] call FNC_AddItem;
@@ -569,7 +564,7 @@
         UK_Leader_Equipment;
 
         //Primary Weapon
-        UK42Jan_SMG;
+        UK42Jun_SMG;
 
         //Secondary Weapon
         UK42Jun_Webley;
@@ -592,7 +587,7 @@
         UK_Default_Equipment;
 
         //Primary Weapon
-        UK42Jan_SMG;
+        UK42Jun_SMG;
 
         //Secondary Weapon
         UK42Jun_Webley;

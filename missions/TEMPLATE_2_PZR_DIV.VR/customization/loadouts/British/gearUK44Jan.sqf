@@ -57,12 +57,7 @@
                 [UK_Mag_LeeEn,1], \
                 [UK_Weap_LeeEnNo4_1], \
                 [UK_Mag_LeeEn,5,"vest"] \
-            ],[25], \
-            [ \
-                [UK_Mag_LeeEn,1], \
-                [UK_Weap_LeeEnNo4_2], \
-                [UK_Mag_LeeEn,5,"vest"] \
-            ],[25] \
+            ],[50] \
         ] call FNC_AddItemRandomPercent;
 
 #define UK44Jan_SMG \

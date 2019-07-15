@@ -52,12 +52,7 @@
                 [UK_Mag_LeeEn,1], \
                 [UK_Weap_LeeEnNo4_1], \
                 [UK_Mag_LeeEn,5,"vest"] \
-            ],[38], \
-            [ \
-                [UK_Mag_LeeEn,1], \
-                [UK_Weap_LeeEnNo4_2], \
-                [UK_Mag_LeeEn,5,"vest"] \
-            ],[37], \
+            ],[75], \
             [ \
                 [UK_Mag_LeeEn,1], \
                 [UK_Weap_LeeEnNo1Mk3s], \

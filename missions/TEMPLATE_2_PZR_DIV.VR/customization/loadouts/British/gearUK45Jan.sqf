@@ -31,13 +31,13 @@
 [this,"UK45_MortA"] call FNC_GearScript;      Mortar Assistant
 [this,"UK45_MortAB"] call FNC_GearScript;     Mortar Ammo Bearer
 
-[this,"UK45_ATRTL"] call FNC_GearScript;   Boys Rifle Team Leader
-[this,"UK45_ATRG"] call FNC_GearScript;    Boys Rifle Gunner
-[this,"UK45_ATRAB"] call FNC_GearScript;   Boys Rifle Ammo Bearer
+[this,"UK45_ATRTL"] call FNC_GearScript;      Boys Rifle Team Leader
+[this,"UK45_ATRG"] call FNC_GearScript;       Boys Rifle Gunner
+[this,"UK45_ATRAB"] call FNC_GearScript;      Boys Rifle Ammo Bearer
 
-[this,"UK45_ATTL"] call FNC_GearScript;    PIAT Team Leader
-[this,"UK45_ATG"] call FNC_GearScript;     PIAT Gunner
-[this,"UK45_ATAB"] call FNC_GearScript;    PIAT Ammo Bearer
+[this,"UK45_ATTL"] call FNC_GearScript;       PIAT Team Leader
+[this,"UK45_ATG"] call FNC_GearScript;        PIAT Gunner
+[this,"UK45_ATAB"] call FNC_GearScript;       PIAT Ammo Bearer
 
     Vehicle Crew
 [this,"UK45_VCom"] call FNC_GearScript;       Tank Commander
@@ -52,12 +52,7 @@
                 [UK_Mag_LeeEn,1], \
                 [UK_Weap_LeeEnNo4_1], \
                 [UK_Mag_LeeEn,5,"vest"] \
-            ],[38], \
-            [ \
-                [UK_Mag_LeeEn,1], \
-                [UK_Weap_LeeEnNo4_2], \
-                [UK_Mag_LeeEn,5,"vest"] \
-            ],[37], \
+            ],[75], \
             [ \
                 [UK_Mag_LeeEn,1], \
                 [UK_Weap_LeeEnNo1Mk3s], \
