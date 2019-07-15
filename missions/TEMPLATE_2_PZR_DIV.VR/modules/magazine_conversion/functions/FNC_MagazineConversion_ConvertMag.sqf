@@ -12,7 +12,11 @@ FNC_MagazineConversion_ConvertMag = {
     _NewMag = _this select 1;
 
     if !(_OldMag in magazines player) exitWith {
-        "You don't have any of those to convert." call CBA_fnc_notify;
+        [["You don't have any of those to convert."], true] call CBA_fnc_notify;
+    };
+
+    if !(player canAdd _NewMag) exitWith {
+        [["You don't have room for that magazine."], true] call CBA_fnc_notify;
     };
 
     // This gets all the players magazines classnames and their current ammo counts.

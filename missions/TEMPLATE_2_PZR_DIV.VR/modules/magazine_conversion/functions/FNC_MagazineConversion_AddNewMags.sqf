@@ -12,26 +12,37 @@ FNC_MagazineConversion_AddNewMags = {
     params ["_OldMag","_NewMag","_oldMagCountCurrent","_newMagCountMax"];
 
     private _convertTime = 0;
+    private _nameOldMagazine = getText (configFile >> "CfgMagazines" >> _OldMag >> "displayName");
+    private _nameNewMagazine = getText (configFile >> "CfgMagazines" >> _NewMag >> "displayName");
+    private _oldMagCountMax = getNumber (configFile >> "CfgMagazines" >> _OldMag >> "count");
 
     // Set the time to run the progress bar based on the number of rounds that can be moved in one batch and the speed multiplier setting.
-    // If moving 5 rounds into a 30 round 
-    if (_oldMagCountCurrent >= _newMagCountMax) then {
-        _convertTime = _newMagCountMax * magazine_conversion_speedMultiplier;
-    };
     if (_oldMagCountCurrent < _newMagCountMax) then {
         _convertTime = _oldMagCountCurrent * magazine_conversion_speedMultiplier;
+    } else {
+        _convertTime = _newMagCountMax * magazine_conversion_speedMultiplier;
+    };
+    if (_oldMagCountMax < _newMagCountMax) then {
+        _convertTime = _convertTime * ((_oldMagCountMax / _newMagCountMax) max 0.5);
+    };
+
+    if !(player canAdd _NewMag) exitWith {
+        [["You don't have room for that magazine."], true] call CBA_fnc_notify;
     };
 
     // Call Ace Progress Bar for the time it takes to convert.
     [
         _convertTime,
-        [_OldMag,_NewMag,_oldMagCountCurrent,_newMagCountMax],
+        [_OldMag,_NewMag,_oldMagCountCurrent,_oldMagCountMax,_newMagCountMax,_nameOldMagazine,_nameNewMagazine],
         {
             private _args = _this select 0;
             private _OldMag = _args select 0;
             private _NewMag = _args select 1;
             private _oldMagCountCurrent = _args select 2;
-            private _newMagCountMax = _args select 3;
+            private _oldMagCountMax = _args select 3;
+            private _newMagCountMax = _args select 4;
+            private _nameOldMagazine = _args select 5;
+            private _nameNewMagazine = _args select 6;
 
             // If the OLD MAG has fewer rounds that the max of the NEW MAG, create the NEW MAG with that number of rounds else create a full NEW MAG
             if (_oldMagCountCurrent < _newMagCountMax) then {
@@ -47,11 +58,42 @@ FNC_MagazineConversion_AddNewMags = {
             if (_oldMagCountCurrent > 0) then {
                 [_OldMag,_NewMag,_oldMagCountCurrent,_newMagCountMax] call FNC_MagazineConversion_AddNewMags;
                 [
-                    ["Converting partially complete."],
-                    [(format ["%1 rounds remaining",str _oldMagCountCurrent])]
+                    [(format ["Converting %1 into %2 partially complete.",_nameOldMagazine,_nameNewMagazine])],
+                    [(format ["%1 rounds remaining in %2",str _oldMagCountCurrent,_nameOldMagazine])],
+                    true
                 ] call CBA_fnc_notify;
             } else {
-                "Converting complete." call CBA_fnc_notify;
+                if (_oldMagCountMax < _newMagCountMax) then {
+                    if (_OldMag in magazines player) then {
+                        [_OldMag,_NewMag] call FNC_MagazineConversion_ConvertMag;
+                        [
+                            [(format ["Converting %1 into partial %2 complete.",_nameOldMagazine,_nameNewMagazine])],
+                            ["Make sure to repack your mags."],
+                            ["Converting another one."],
+                            true
+                        ] call CBA_fnc_notify;
+                    } else {
+                        [
+                            [(format ["Converting %1 into partial %2 complete.",_nameOldMagazine,_nameNewMagazine])],
+                            ["Make sure to repack your mags."],
+                            true
+                        ] call CBA_fnc_notify;
+                    };
+                } else {
+                    if (_OldMag in magazines player) then {
+                        [_OldMag,_NewMag] call FNC_MagazineConversion_ConvertMag;
+                        [
+                            [(format ["Converting %1 into %2 complete.",_nameOldMagazine,_nameNewMagazine])],
+                            ["Converting another one."],
+                            true
+                        ] call CBA_fnc_notify;
+                    } else {
+                        [
+                            [(format ["Converting %1 into %2 complete.",_nameOldMagazine,_nameNewMagazine])],
+                            true
+                        ] call CBA_fnc_notify;
+                    };
+                };
             };
         },
         {
@@ -59,17 +101,21 @@ FNC_MagazineConversion_AddNewMags = {
             private _OldMag = _args select 0;
             private _NewMag = _args select 1;
             private _oldMagCountCurrent = _args select 2;
-            private _newMagCountMax = _args select 3;
+            private _oldMagCountMax = _args select 3;
+            private _newMagCountMax = _args select 4;
+            private _nameOldMagazine = _args select 5;
+            private _nameNewMagazine = _args select 6;
 
             if (_oldMagCountCurrent > 0) then {
                 player addMagazine [_OldMag, _oldMagCountCurrent];
             };
 
             [
-                ["Converting interupted!"],
-                [(format ["%1 rounds remaining",str _oldMagCountCurrent])]
+                [(format ["Converting %1 into %2 cancelled.",_nameOldMagazine,_nameNewMagazine])],
+                [(format ["%1 rounds remaining in %2",str _oldMagCountCurrent,_nameOldMagazine])],
+                true
             ] call CBA_fnc_notify;
         },
-        "Converting..."
+        (format ["Converting %1 into %2... Press Ace Interaction to cancel.",_nameOldMagazine,_nameNewMagazine])
     ] call ace_common_fnc_progressBar;
 };

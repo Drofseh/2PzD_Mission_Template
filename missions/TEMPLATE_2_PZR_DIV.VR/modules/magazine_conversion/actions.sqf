@@ -4,13 +4,14 @@
 // Doing it this way mean it is called every time the interaction menu is opened.
 _conditionMagazineConversion = {
     [] call FNC_MagazineConversion_CreateChildActions;
-    true;
+    !((magazines player) isEqualTo [])
 };
 _statementMagazineConversion = {
     [
         ["Select a magazine type to convert."],
-        ["If no magazines are visible you have nothing that can be converted."]
+        ["If no magazines are visible you have nothing that can be converted."],
+        true
     ] call CBA_fnc_notify;
 };
 _actionMagazineConversion = ["Magazine Conversion","Magazine Conversion","",_statementMagazineConversion,_conditionMagazineConversion] call ace_interact_menu_fnc_createAction;
-[player, 1, ["ACE_SelfActions","ACE_Equipment"], _actionMagazineConversion] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions"], _actionMagazineConversion] call ace_interact_menu_fnc_addActionToObject;

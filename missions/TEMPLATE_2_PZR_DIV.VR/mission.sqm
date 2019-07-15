@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=44772;
+		nextID=44793;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={539.716,30,1328.5653};
-		dir[]={-0.030736694,-0.42524561,-0.90456271};
-		up[]={-0.014441258,0.90507603,-0.4250043};
-		aside[]={-0.99942905,-5.3114491e-009,0.033959545};
+		pos[]={536.95953,11.153226,1311.6598};
+		dir[]={-0.01509414,-0.30178377,-0.95328432};
+		up[]={-0.0047781975,0.95336938,-0.30175951};
+		aside[]={-0.99989229,-7.3743649e-008,0.015832737};
 	};
 };
 binarizationWanted=0;
@@ -946,7 +946,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="2 Panzer Division Mission Template v2.23.0";
+		briefingName="2 Panzer Division Mission Template v2.26.0";
 		resistanceWest=0;
 		resistanceEast=1;
 		timeOfChanges=1800.0002;
@@ -1498,7 +1498,7 @@ class Mission
 			};
 			id=9634;
 			type="LIB_Zis3";
-			atlOffset=-5;
+			atlOffset=-5.0003386;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3594,7 +3594,7 @@ class Mission
 			};
 			id=9662;
 			type="LIB_Maxim_M30_base";
-			atlOffset=-5;
+			atlOffset=-5.0025592;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4722,7 +4722,7 @@ class Mission
 			};
 			id=9700;
 			type="LIB_M5A1_Stuart";
-			atlOffset=-5;
+			atlOffset=-5.0038128;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4916,7 +4916,7 @@ class Mission
 			};
 			id=9702;
 			type="LIB_M5A1_Stuart";
-			atlOffset=-5;
+			atlOffset=-5.0038128;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9205,12 +9205,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={538.9458,0,1300.3826};
+				position[]={538.9458,5,1300.3826};
 			};
 			name="zeusAdmin";
 			id=44399;
 			type="ModuleCurator_F";
-			atlOffset=-5;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9316,11 +9315,10 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={534.90259,0,1300.3684};
+				position[]={534.90259,5,1300.3684};
 			};
 			id=44400;
 			type="acex_headless_module";
-			atlOffset=-5;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9407,7 +9405,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={536.93823,0,1300.8816};
+				position[]={536.93823,5,1300.8816};
 			};
 			name="HC";
 			init="call{this setGroupId [""Headless Client 01""];}";
@@ -9415,19 +9413,17 @@ class Mission
 			description="Headless Client 01";
 			id=44401;
 			type="HeadlessClient_F";
-			atlOffset=-5;
 		};
 		class Item230
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={538.87085,0,1298.2976};
+				position[]={538.87085,5,1298.2976};
 			};
 			name="zeusCommander";
 			id=44402;
 			type="ModuleCurator_F";
-			atlOffset=-5;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9540,7 +9536,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={536.90063,0.0014390945,1298.3953};
+						position[]={536.901,5.0014391,1298.395};
 					};
 					side="Civilian";
 					flags=6;
@@ -9550,12 +9546,10 @@ class Mission
 						init="call{this setVariable [""ace_w_allow_dam"",false,true];" \n "this allowDamage false; " \n "this addItemToUniform ""NVGoggles_OPFOR""; " \n "this linkItem ""ItemWatch"";}";
 						name="God";
 						description="Zeus@Mount Olympus";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=44404;
 					type="LIB_CIV_Functionary_4";
-					atlOffset=-5;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9889,14 +9883,13 @@ class Mission
 			{
 			};
 			id=44403;
-			atlOffset=-5;
 		};
 		class Item232
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={536.93823,0,1300.3816};
+				position[]={536.93823,5,1300.3816};
 			};
 			name="HC_1";
 			init="call{this setGroupId [""Headless Client 02""];}";
@@ -9904,14 +9897,13 @@ class Mission
 			description="Headless Client 02";
 			id=44405;
 			type="HeadlessClient_F";
-			atlOffset=-5;
 		};
 		class Item233
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={536.93823,0,1299.8816};
+				position[]={536.93823,5,1299.8816};
 			};
 			name="HC_2";
 			init="call{this setGroupId [""Headless Client 03""];}";
@@ -9919,72 +9911,66 @@ class Mission
 			description="Headless Client 03";
 			id=44406;
 			type="HeadlessClient_F";
-			atlOffset=-5;
 		};
 		class Item234
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={536.91968,0,1296.3525};
+				position[]={536.91968,5,1296.3525};
 			};
 			isPlayable=1;
 			description="Camera Man@Media Team";
 			id=44407;
 			type="ace_spectator_virtual";
-			atlOffset=-5;
 		};
 		class Item235
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={536.92261,0,1294.3726};
+				position[]={536.92261,5,1294.3726};
 			};
 			isPlayable=1;
 			description="Camera Man@Media Team";
 			id=44408;
 			type="ace_spectator_virtual";
-			atlOffset=-5;
 		};
 		class Item236
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={534.88135,0,1298.3696};
+				position[]={534.88135,5,1298.3696};
 				angles[]={0,0.81370723,0};
 			};
 			name="fw_guer_respawn";
 			id=44409;
 			type="Logic";
-			atlOffset=-5;
 		};
 		class Item237
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={534.87842,0,1296.3816};
+				position[]={534.87842,5,1296.3816};
 				angles[]={0,1.0976419,0};
 			};
 			name="fw_west_respawn";
 			id=44410;
 			type="Logic";
-			atlOffset=-5;
 		};
 		class Item238
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={534.8877,0,1294.3628};
+				position[]={534.8877,5,1294.3628};
 				angles[]={0,1.0976375,0};
 			};
 			name="fw_east_respawn";
 			id=44411;
 			type="Logic";
-			atlOffset=-5;
 		};
 		class Item239
 		{
