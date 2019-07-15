@@ -23,7 +23,8 @@ FNC_StaminaBoost_Eat_Food = {
             if (_food == "ACE_Banana") then {
                 [
                     ["You ate a banana."],
-                    ["Delicious!"]
+                    ["Delicious!"],
+                    true
                 ] call CBA_fnc_notify;
             } else {
 
@@ -37,11 +38,12 @@ FNC_StaminaBoost_Eat_Food = {
 
                 [
                     [(format ["You ate a %1 ration",_foodName])],
-                    ["Delicious!"]
+                    ["Delicious!"],
+                    true
                 ] call CBA_fnc_notify;
             };
         },
-        {"Eating interupted!" call CBA_fnc_notify;},
+        {[["Eating interupted!"], true] call CBA_fnc_notify;},
         "Eating..."
     ] call ace_common_fnc_progressBar;
 };

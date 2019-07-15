@@ -38,9 +38,9 @@ _supportingFireActions = call {
     // ===== Add supporting fires interaction
     _statementFires = {
         if (side player isEqualTo civilian) then {
-            "Return possession of the radio to the appropriate military authorities." call CBA_fnc_notify;
+            [["Return possession of this radio to the appropriate military authorities."], true] call CBA_fnc_notify;
         } else {
-            "Select a target, type of ammunition, and number of rounds, then call the fire mission." call CBA_fnc_notify;
+            [["Select a target, type of ammunition, and number of rounds, then call the fire mission."], true] call CBA_fnc_notify;
         };
     };
     _actionFires = ["Supporting Fires","Supporting Fires","Haas_WWII_Rebalance\UI\icon_supporting_fires.paa",_statementFires,_conditionFires] call ace_interact_menu_fnc_createAction;
@@ -52,7 +52,7 @@ _supportingFireActions = call {
     [player, 1, ["ACE_SelfActions","Supporting Fires"], _actionRounds] call ace_interact_menu_fnc_addActionToObject;
 
     // ===== Add action to indicate fire mission is in progress.
-    _statementFiring = {"Fire mission is already underway." call CBA_fnc_notify;};
+    _statementFiring = {[["Fire mission is already underway."], true] call CBA_fnc_notify;};
     _actionFiring = ["Fire Mission In Progress","Fire Mission In Progress","Haas_WWII_Rebalance\UI\icon_supporting_fires.paa",_statementFiring,_conditionFiring] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires"], _actionFiring] call ace_interact_menu_fnc_addActionToObject;
 
@@ -70,7 +70,7 @@ _supportingFireActions = call {
 
     // ===== Add Fire Mission Safety
     _statementSafety = {
-        "Select 'Confirm' to call the fire mission." call CBA_fnc_notify
+        [["Select 'Confirm' to call the fire mission."], true] call CBA_fnc_notify
     };
     _actionSafety = ["Call for Fire","Call for Fire","Haas_WWII_Rebalance\UI\icon_supporting_fires.paa",_statementSafety,_conditionTargets] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires"], _actionSafety] call ace_interact_menu_fnc_addActionToObject;

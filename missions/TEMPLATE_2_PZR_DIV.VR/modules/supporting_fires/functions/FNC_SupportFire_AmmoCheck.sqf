@@ -32,7 +32,7 @@ FNC_SupportFire_AmmoCheck = {
     // systemChat "ammo count passed";
 
     if (_supportFire_ammoCheckPlayer) then {
-        "Roger, checking ammunition." call CBA_fnc_notify;
+        [["Roger, checking ammunition."], true] call CBA_fnc_notify;
     };
 
     [
@@ -42,7 +42,8 @@ FNC_SupportFire_AmmoCheck = {
                 ["Available ammunition:"],
                 [(format ["%1 rounds HE,", _supportFire_ammoCountHE])],
                 [(format ["%1 rounds Smoke,", _supportFire_ammoCountSmoke])],
-                [(format ["%1 rounds Flare.", _supportFire_ammoCountFlare])]
+                [(format ["%1 rounds Flare.", _supportFire_ammoCountFlare])],
+                true
             ] call CBA_fnc_notify;
             // systemChat "ammo hint finished";
         },

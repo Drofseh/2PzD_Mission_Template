@@ -27,7 +27,8 @@ FNC_SupportFire_Barrage = {
             [
                 [(format ["Shots out on %1.", _supportFire_targetName])],
                 ["30 seconds to impact."],
-                ["Watch for splash."]
+                ["Watch for splash."],
+                true
             ] call CBA_fnc_notify;
             // systemChat "Shots Out";
         },
@@ -67,7 +68,8 @@ FNC_SupportFire_Barrage = {
             _supportFire_rounds_fired = 0;
 
             [
-                [(format ["Splash out on %1.", _supportFire_targetName])]
+                [(format ["Splash out on %1.", _supportFire_targetName])],
+                true
             ] call CBA_fnc_notify;
             // systemChat "Splash out";
 

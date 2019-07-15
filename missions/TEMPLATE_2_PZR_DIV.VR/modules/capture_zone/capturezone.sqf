@@ -80,7 +80,7 @@ while {_run} do {
                         _timer = CBA_missionTime;
                         _contester = "WEST";
                     };
-                    [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
+                    [-1, {[[_this], true] call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
                     [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 0]] call CBA_fnc_globalExecute;
 
             };
@@ -93,7 +93,7 @@ while {_run} do {
                         _timer = CBA_missionTime;
                         _contester = "EAST";
                     };
-                    [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
+                    [-1, {[[_this], true] call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
                     [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 1]] call CBA_fnc_globalExecute;
 
             };
@@ -106,7 +106,7 @@ while {_run} do {
                         _timer = CBA_missionTime;
                         _contester = "GUER";
                     };
-                    [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
+                    [-1, {[[_this], true] call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
                     [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 2]] call CBA_fnc_globalExecute;
 
 
@@ -120,7 +120,7 @@ while {_run} do {
                         _timer = CBA_missionTime;
                         _contester = "RESISTANCE";
                     };
-                    [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
+                    [-1, {[[_this], true] call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
                     [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 2]] call CBA_fnc_globalExecute;
 
             };
@@ -133,14 +133,14 @@ while {_run} do {
                         _timer = CBA_missionTime;
                         _contester = "CIVILIAN";
                     };
-                    [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
+                    [-1, {[[_this], true] call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
                     [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 3]] call CBA_fnc_globalExecute;
 
             };
             case "UNCONTESTED":
             {
                     _mes = _messages select 5;
-                    [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
+                    [-1, {[[_this], true] call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
                     [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 5]] call CBA_fnc_globalExecute;
                     sleep(_intervall);
                     _timer = CBA_missionTime;
@@ -150,7 +150,7 @@ while {_run} do {
             {
                     if ((_currentOwner select 0) != (_oldOwner select 0)) then {
                         _mes = _messages select 4;
-                        [-1, {_this call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
+                        [-1, {[[_this], true] call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
                         [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 4]] call CBA_fnc_globalExecute;
 
                     };

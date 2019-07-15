@@ -7,7 +7,8 @@ _conditionStaminaBoost = {
 _statementStaminaBoost = {
     [
         ["Eat or drink to boost your stamina."],
-        ["If neither option was visible you have nothing to eat or drink."]
+        ["If neither option was visible you have nothing to eat or drink."],
+        true
     ] call CBA_fnc_notify;
 };
 _actionStaminaBoost = ["Eat or Drink","Eat or Drink","",_statementStaminaBoost,_conditionStaminaBoost] call ace_interact_menu_fnc_createAction;
@@ -21,7 +22,7 @@ _conditionDrink = {
 
 _statementDrink = {
     if (stamina_boost_playerDrank || {stamina_boost_playerAte}) exitWith {
-        "You're too full to drink right now." call CBA_fnc_notify;
+        [["You're too full to drink right now."], true] call CBA_fnc_notify;
     };
 
     stamina_boost_playerItems = [player] call ace_common_fnc_uniqueItems;
@@ -32,7 +33,7 @@ _statementDrink = {
         if ("ACE_Canteen" in stamina_boost_playerItems) then {
             ["ACE_Canteen","ACE_Canteen_Half"] call FNC_StaminaBoost_Drink_Water;
         } else {
-            "That's strange, you don't seem to have anything to drink." call CBA_fnc_notify;
+            [["That's strange, you don't seem to have anything to drink."], true] call CBA_fnc_notify;
         };
     };
 };
@@ -56,7 +57,7 @@ _conditionEat = {
 
 _statementEat = {
     if (stamina_boost_playerDrank || {stamina_boost_playerAte}) exitWith {
-        "You're too full to eat right now." call CBA_fnc_notify;
+        [["You're too full to eat right now."], true] call CBA_fnc_notify;
     };
 
     stamina_boost_playerItems = [player] call ace_common_fnc_uniqueItems;
@@ -88,7 +89,7 @@ _statementEat = {
                                     if ("ACE_MRE_SteakVegetables" in stamina_boost_playerItems) then {
                                         ["ACE_MRE_SteakVegetables"] call FNC_StaminaBoost_Eat_Food;
                                     } else {
-                                        "That's strange, you don't seem to have anything to eat." call CBA_fnc_notify;
+                                        [["That's strange, you don't seem to have anything to eat."], true] call CBA_fnc_notify;
                                     };
                                 };
                             };
@@ -118,9 +119,9 @@ _statementCombine = {
             player removeItem "ACE_Canteen_Half";
             player addItem "ACE_Canteen";
             player addItem "ACE_Canteen_Empty";
-            ("You combined two half full canteens.") call CBA_fnc_notify;
+            [["You combined two half full canteens."], true] call CBA_fnc_notify;
         },
-        {"Pouring interupted!" call CBA_fnc_notify;},
+        {[["Pouring interupted!"], true] call CBA_fnc_notify;},
         "Pouring..."
     ] call ace_common_fnc_progressBar;
 };

@@ -40,7 +40,7 @@ FNC_SupportFire_FireMission = {
     _supportFire_distance = _supportFire_targetXY distance2D player;
     if (_supportFire_distance < (0.75 * (supportFire_originalShellDispersion + supportFire_originalShellAccuracy))) exitWith {
         // systemChat "Fire mission canceled";
-        (format ["Negative, %1 is too close your position.<br/>No fire mission.", _supportFire_targetName]) call CBA_fnc_notify;
+        [[(format ["Negative, %1 is too close your position.<br/>No fire mission.", _supportFire_targetName])], true] call CBA_fnc_notify;
     };
 
     if (_supportFire_distance < (1.5 * (supportFire_originalShellDispersion + supportFire_originalShellAccuracy))) then {
@@ -63,7 +63,7 @@ FNC_SupportFire_FireMission = {
     // cancel if not enough ammo
     if (_supportFire_ammoLeft < 0) exitWith {
         // systemChat "Fire mission canceled";
-        (format ["Negative, not enough %1 rounds available.", _supportFire_type]) call CBA_fnc_notify;
+        [[(format ["Negative, not enough %1 rounds available.", _supportFire_type])], true] call CBA_fnc_notify;
         [(side player),false] call FNC_SupportFire_AmmoCheck;
     };
 
@@ -94,7 +94,7 @@ FNC_SupportFire_FireMission = {
         _supportFire_grammar = "round";
     };
 
-    (format ["Roger, fire mission, %1 %2 %3, on %4%5.%6", _supportFire_number, _supportFire_grammar, _supportFire_type, _supportFire_targetName,_supportFire_adjustDir,_supportFire_warning]) call CBA_fnc_notify;
+    [[(format ["Roger, fire mission, %1 %2 %3, on %4%5.%6", _supportFire_number, _supportFire_grammar, _supportFire_type, _supportFire_targetName,_supportFire_adjustDir,_supportFire_warning])], true] call CBA_fnc_notify;
 
     supportFire_lastType = _supportFire_type;
     supportFire_lastNumber = _supportFire_number;
@@ -145,7 +145,8 @@ FNC_SupportFire_FireMission = {
 
             [
                 [(format ["Rounds complete on %1.", _supportFire_targetName])],
-                [(format ["%1 %2 %3 remaining.", _supportFire_ammoLeft, _supportFire_grammar, _supportFire_type])]
+                [(format ["%1 %2 %3 remaining.", _supportFire_ammoLeft, _supportFire_grammar, _supportFire_type])],
+                true
             ] call CBA_fnc_notify;
             // systemChat "Rounds complete";
         },

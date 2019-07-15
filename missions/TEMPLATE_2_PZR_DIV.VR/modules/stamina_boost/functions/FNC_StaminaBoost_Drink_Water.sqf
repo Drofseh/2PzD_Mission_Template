@@ -42,9 +42,9 @@ FNC_StaminaBoost_Drink_Water = {
                 };
             };
 
-            [[(format ["You had a refreshing drink from your %1",_drinkName])],[_drinkLeft]] call CBA_fnc_notify;
+            [[(format ["You had a refreshing drink from your %1",_drinkName])],[_drinkLeft], true] call CBA_fnc_notify;
         },
-        {"Drinking interupted!" call CBA_fnc_notify;},
+        {[["Drinking interupted!"], true] call CBA_fnc_notify;},
         "Drinking..."
     ] call ace_common_fnc_progressBar;
 };
