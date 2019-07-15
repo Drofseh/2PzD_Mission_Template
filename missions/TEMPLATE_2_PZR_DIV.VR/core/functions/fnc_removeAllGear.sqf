@@ -17,36 +17,36 @@ switch (side player) do {
         FW_Whitelist_Face = [
             "None",
             "fow_g_watch1","fow_g_watch2","G_LIB_Watch1","G_LIB_Watch2", //watches
-            "fow_g_glasses1","fow_g_glasses2","fow_g_glasses1","fow_g_glasses2", //glasses
-            "fow_g_gloves4","fow_g_gloves5","fow_g_gloves6","G_LIB_GER_Gloves2","G_LIB_GER_Gloves1","G_LIB_GER_Gloves3", //wool gloves
-            "fow_g_gloves2","fow_g_gloves1","fow_g_gloves3","G_LIB_GER_Gloves4" //leather gloves
+            "fow_g_glasses1","fow_g_glasses2","G_LIB_Dienst_Brille","G_LIB_Dienst_Brille2", //glasses
+            "fow_g_gloves1","fow_g_gloves2","fow_g_gloves3","G_LIB_GER_Gloves1","G_LIB_GER_Gloves2","G_LIB_GER_Gloves3", //wool gloves
+            "fow_g_gloves4","fow_g_gloves5","fow_g_gloves6","G_LIB_GER_Gloves4" //leather gloves
         ];
     };
     case EAST : {
         FW_Whitelist_Face = [
             "None",
             "fow_g_watch1","fow_g_watch2","G_LIB_Watch1","G_LIB_Watch2", //watches
-            "fow_g_glasses1","fow_g_glasses2","fow_g_glasses1","fow_g_glasses2", //glasses
-            "fow_g_gloves4","fow_g_gloves5","fow_g_gloves6","G_LIB_GER_Gloves2","G_LIB_GER_Gloves1","G_LIB_GER_Gloves3", //wool gloves
-            "fow_g_gloves2","fow_g_gloves1","fow_g_gloves3","G_LIB_GER_Gloves4" //leather gloves
+            "fow_g_glasses1","fow_g_glasses2","G_LIB_Dienst_Brille","G_LIB_Dienst_Brille2", //glasses
+            "fow_g_gloves1","fow_g_gloves2","fow_g_gloves3","G_LIB_GER_Gloves1","G_LIB_GER_Gloves2","G_LIB_GER_Gloves3", //wool gloves
+            "fow_g_gloves4","fow_g_gloves5","fow_g_gloves6","G_LIB_GER_Gloves4" //leather gloves
         ];
     };
     case RESISTANCE : {
         FW_Whitelist_Face = [
-            "None",
+            "None","G_LIB_Mohawk",
             "fow_g_watch1","fow_g_watch2","G_LIB_Watch1","G_LIB_Watch2", //watches
             "fow_g_glasses4", //glasses
-            "fow_g_gloves4","fow_g_gloves5","fow_g_gloves6","G_LIB_GER_Gloves2","G_LIB_GER_Gloves1","G_LIB_GER_Gloves3", //wool gloves
-            "fow_g_gloves2","fow_g_gloves1","fow_g_gloves3","G_LIB_GER_Gloves4","G_LIB_GER_Gloves5" //leather gloves
+            "fow_g_gloves1","fow_g_gloves2","fow_g_gloves3","G_LIB_GER_Gloves1","G_LIB_GER_Gloves2","G_LIB_GER_Gloves3", //wool gloves
+            "fow_g_gloves4","fow_g_gloves5","fow_g_gloves6","G_LIB_GER_Gloves4","G_LIB_GER_Gloves5" //leather gloves
         ];
     };
     default {
         FW_Whitelist_Face = [
             "None",
             "fow_g_watch1","fow_g_watch2","G_LIB_Watch1","G_LIB_Watch2", //watches
-            "G_Spectacles","G_LIB_Watch1","G_LIB_Watch2","fow_g_glasses1","fow_g_glasses2","G_Squares_Tinted","G_Squares", //glasses
-            "fow_g_gloves4","fow_g_gloves5","fow_g_gloves6","G_LIB_GER_Gloves2","G_LIB_GER_Gloves1","G_LIB_GER_Gloves3", //wool gloves
-            "fow_g_gloves2","fow_g_gloves1","fow_g_gloves3","G_LIB_GER_Gloves4" //leather gloves
+            "G_Aviator","G_Spectacles","G_Squares_Tinted","G_Squares","G_Spectacles_Tinted","fow_g_glasses1","fow_g_glasses2","fow_g_glasses3","G_LIB_Dienst_Brille","G_LIB_Dienst_Brille2", //glasses
+            "fow_g_gloves1","fow_g_gloves2","fow_g_gloves3","G_LIB_GER_Gloves1","G_LIB_GER_Gloves2","G_LIB_GER_Gloves3", //wool gloves
+            "fow_g_gloves4","fow_g_gloves5","fow_g_gloves6","G_LIB_GER_Gloves4" //leather gloves
         ];
     };
 };
@@ -54,7 +54,7 @@ switch (side player) do {
 private _unit = _this;
 
 removeHeadgear _unit;
-if (!isPlayer _unit || !((goggles _unit) in FW_Whitelist_Face) || (!isNil "FW_force_remove_facewear" && {FW_force_remove_facewear})) then {
+if (!isPlayer _unit || {!((goggles _unit) in FW_Whitelist_Face)} || {!isNil "FW_force_remove_facewear" && {FW_force_remove_facewear}}) then {
     removeGoggles _unit;
 };
 removeVest _unit;
