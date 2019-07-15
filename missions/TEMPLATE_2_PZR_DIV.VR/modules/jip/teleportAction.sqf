@@ -1,24 +1,26 @@
 _conditionJIP_Teleport = {
-    player distance FW_JIP_spawnPos < FW_SPAWNDISTANCE;
+    (player distance FW_JIP_spawnPos) < FW_SPAWNDISTANCE
 };
 
 _statementJIP_Teleport = {
-    params ["_target"];
-    _alive = _target call FNC_Alive;
-    _inVehicle = _target call FNC_InVehicle;
-    _freeSpace = (vehicle _target) call FNC_HasEmptyPositions;
+    private _target = leader player;
+    private _alive = _target call FNC_Alive;
+    private _inVehicle = _target call FNC_InVehicle;
+    private _freeSpace = (vehicle _target) call FNC_HasEmptyPositions;
 
-    if (!(_alive) || (_inVehicle && !(_freeSpace))) then {
+    if (!(_alive) || {_inVehicle && {!(_freeSpace)}}) then {
         private _rank = -1;
         private _newRank = -1;
         private _count = 0;
 
         {
             if (_x call FNC_Alive) then {
+                private _inVehicle = _x call FNC_InVehicle;
+                private _freeSpace = (vehicle _x) call FNC_HasEmptyPositions;
                 _count = _count + 1;
                 _newRank = rankId _x;
 
-                if ((_newRank > _rank) && (!(_x call FNC_InVehicle) || ((vehicle _x) call FNC_HasEmptyPositions))) then {
+                if ((_newRank > _rank) && (_inVehicle || _freeSpace)) then {
                     _rank = _newRank;
                     _target = _x;
                 };
@@ -30,7 +32,7 @@ _statementJIP_Teleport = {
 
             if (_count == 0) then {
                 [player, 1, ["ACE_SelfActions","JIP_Teleport"]] call ace_interact_menu_fnc_removeActionFromObject;
-                "No one left in the squad" call CBA_fnc_notify;
+                "No one left in your squad" call CBA_fnc_notify;
             } else {
                 "Not possible to JIP teleport to anyone, please try again later" call CBA_fnc_notify;
             };
@@ -56,9 +58,7 @@ _actionJIP_Teleport = [
     "Teleport to Squad",
     "",
     _statementJIP_Teleport,
-    _conditionJIP_Teleport,
-    {},
-    (leader player)
+    _conditionJIP_Teleport
 ] call ace_interact_menu_fnc_createAction;
 
 [player, 1, ["ACE_SelfActions"], _actionJIP_Teleport] call ace_interact_menu_fnc_addActionToObject;

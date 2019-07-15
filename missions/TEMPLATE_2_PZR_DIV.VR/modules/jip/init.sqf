@@ -2,21 +2,20 @@
 
 #include "settings.sqf"
 
-if (isServer) then {
-    [] spawn {
-
-        waitUntil {CBA_missionTime > FW_JIPDENYTIME};
-
-        missionNamespace setVariable ["FW_JIPDenied", true];
-        publicVariable "FW_JIPDenied";
-
-    };
+if (isServer && {FW_JIPDENYTIME > -1}) then {
+    [
+        {CBA_missionTime > FW_JIPDENYTIME},
+        {
+            missionNamespace setVariable ["FW_JIPDenied", true];
+            publicVariable "FW_JIPDenied";
+        },
+        []
+    ] call CBA_fnc_waitUntilAndExecute;
 };
 
-if (hasInterface && str side player != "LOGIC") then {
+if (hasInterface && {str side player != "LOGIC"}) then {
 
-    if (FW_JIPTYPE == "DENY" && missionNamespace getVariable ["FW_JIPDenied", false]) exitWith {
-
+    if (FW_JIPTYPE == "DENY" && {missionNamespace getVariable ["FW_JIPDenied", false]}) exitWith {
         [{
             player call FNC_UntrackUnit;
             setPlayerRespawnTime 10e10;
@@ -26,28 +25,24 @@ if (hasInterface && str side player != "LOGIC") then {
             [{
                 cutText ["This mission does not support JIP.", "PLAIN DOWN"];
             }, [], 8] call CBA_fnc_waitAndExecute;
-
         }, [], 5] call CBA_fnc_waitAndExecute;
-
     };
 
     private _target = leader player;
 
-    if (player == _target || !(_target call FNC_Alive)) then {
+    if (player == _target || {!(_target call FNC_Alive)}) then {
 
         private _rank = -1;
 
         {
-
-            if (rankId _x > _rank && (_target call FNC_Alive)) then {
+            if (rankId _x > _rank && {_target call FNC_Alive}) then {
                 _rank = rankId _x;
                 _target = _x;
             };
-
         } forEach ((units group player) - [player]);
     };
 
-    if ((_target distance player) >  FW_JIPDISTANCE) then {
+    if ((_target distance player) > FW_JIPDISTANCE) then {
 
         FW_JIP_spawnPos = getPosATL player;
 
@@ -58,7 +53,14 @@ if (hasInterface && str side player != "LOGIC") then {
                 #include "teleportAction.sqf"
 
                 [{
-                    player distance _this > FW_SPAWNDISTANCE;
+                    [
+                        ["You've joined a mission that is already in progress."],
+                        ["Use Ace Self Interation to teleport to your squad."]
+                    ] call CBA_fnc_notify;
+                }, [], 1] call CBA_fnc_waitAndExecute;
+
+                [{
+                    player distance FW_JIP_spawnPos > FW_SPAWNDISTANCE;
                 },{
                     [player, 1, ["ACE_SelfActions","JIP_Teleport"]] call ace_interact_menu_fnc_removeActionFromObject;
                     (format ["JIP teleport option lost, you went beyond %1 meters from your spawn location", FW_SPAWNDISTANCE]) call CBA_fnc_notify;
@@ -70,7 +72,14 @@ if (hasInterface && str side player != "LOGIC") then {
                 #include "transportAction.sqf"
 
                 [{
-                    player distance _this > FW_SPAWNDISTANCE;
+                    [
+                        ["You've joined a mission that is already in progress."],
+                        ["Use Ace Self Interation to request transportation."]
+                    ] call CBA_fnc_notify;
+                }, [], 1] call CBA_fnc_waitAndExecute;
+
+                [{
+                    player distance FW_JIP_spawnPos > FW_SPAWNDISTANCE;
                 },{
                     [player, 1, ["ACE_SelfActions","JIP_Transport"]] call ace_interact_menu_fnc_removeActionFromObject;
                     (format ["JIP teleport option lost, you went beyond %1 meters from your spawn location", FW_SPAWNDISTANCE]) call CBA_fnc_notify;
