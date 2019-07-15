@@ -32,7 +32,6 @@ PREP(hasExtracted);
 enableSaving [false, false];
 
 if (isServer) then {
-
     "west" call FNC_CreateRespawnMarker;
     "east" call FNC_CreateRespawnMarker;
     "guer" call FNC_CreateRespawnMarker;
@@ -46,11 +45,9 @@ if (isServer) then {
     FW_EventKilledHandle = addMissionEventHandler ["EntityKilled", {_this call FNC_EventKilled;}];
 
     FW_EventDisconnectHandle = addMissionEventHandler ["HandleDisconnect", {_this call FNC_EventDisconnect;}];
-
 };
 
 if (hasInterface) then {
-
     //Anything done using "player" must be past this line for JIP compatibility
     waitUntil {!(isNull player)};
 
@@ -93,7 +90,6 @@ if (hasInterface) then {
         || {_dateYear > 1945}
         || {_dateYear == 1945 && {_dateMonth > 9 || {_dateMonth == 9 && _dateDay > 2}}}
     ) then {
-
         switch (_dateMonth) do {
             case  1 : {_dateMonth = "Jan"};
             case  2 : {_dateMonth = "Feb"};

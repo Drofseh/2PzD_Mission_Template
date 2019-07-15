@@ -10,9 +10,7 @@ _bottomRight = 3006;
 params ["_scenario", "_timeLimit", "_teams"];
 
 {
-
     _x enableSimulation false;
-
 } forEach vehicles;
 
 [
@@ -30,67 +28,50 @@ _bottomTextLeft = "";
 _bottomTextMiddle = "";
 _bottomTextRight = "";
 _textSide = 0;
-{
 
+{
     _x params ["_name", "_side", "_type", "_start", "_current", "_disabled", "_destroyed"];
 
     _temp = format ["%1<br/>Casualties: %2 out of %3<br/>", _name, (_start - _current), _start];
 
     if (count _disabled != 0) then {
-
         _temp = format ["%1<br/>Disabled assets:<br/>",_temp];
 
         {
-
             _temp = format ["%1%2<br/>",_temp, _x];
-
         } forEach _disabled;
-
     };
 
     if (count _destroyed != 0) then {
-
         _temp = format ["%1<br/>Destroyed assets:<br/>",_temp];
 
         {
-
             _temp = format ["%1%2<br/>",_temp, _x];
-
         } forEach _destroyed;
     };
 
     _temp = format ["%1<br/>",_temp];
 
     if (_textSide == 0) then {
-
         _textSide = 1;
         _leftText = _leftText + _temp;
-
     } else {
-
         _textSide = 0;
         _rightText = _rightText + _temp;
-
     };
-
 } forEach _teams;
 
 _endTitleText = _scenario;
 
 if (_timeLimit != 0) then {
-
     _time = ceil(CBA_missionTime / 60);
 
     if (_time >= _timeLimit) then {
-
         _time = _timeLimit;
-
     };
 
     _timeLimitText = format ["Mission duration: %1 out of %2 minutes", _time, _timeLimit];
-
     _endTitleText = format ["%1<br/>%2", _scenario, _timeLimitText];
-
 };
 
 if (!isNil "aCount_textBLU" && !isNil "aCount_textRED" && !isNil "aCount_textRES") then {
@@ -100,6 +81,7 @@ if (!isNil "aCount_textBLU" && !isNil "aCount_textRED" && !isNil "aCount_textRES
 };
 
 disableSerialization;
+
 _dia = uiNamespace getVariable "FW_EndScreen";
 
 (_dia displayCtrl _endTitle) ctrlSetStructuredText parseText _endTitleText;
@@ -110,14 +92,12 @@ _dia = uiNamespace getVariable "FW_EndScreen";
 (_dia displayCtrl _bottomRight) ctrlSetStructuredText parseText _bottomTextRight;
 
 for "_x" from 1 to 120 do {
-
     (_dia displayCtrl _bg) ctrlSetBackgroundColor [0, 0, 0, (_x * (1/120))];
     sleep(0.01);
-
 };
 
 [
     {
         endMission "END1";
-    }, [], 15
+    }, [], 30
 ] call CBA_fnc_waitAndExecute;
