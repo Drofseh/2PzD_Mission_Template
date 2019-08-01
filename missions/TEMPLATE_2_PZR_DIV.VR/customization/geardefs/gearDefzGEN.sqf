@@ -67,6 +67,7 @@
 
 //=== MISC ===
 //ACE
+#define GEN_ace_bodybag         "ACE_bodyBag"
 #define GEN_ace_defuse          "ACE_DefusalKit"
 #define GEN_ace_earplugs        "ACE_EarPlugs";
 #define GEN_ace_firing_device   "ACE_Clacker"

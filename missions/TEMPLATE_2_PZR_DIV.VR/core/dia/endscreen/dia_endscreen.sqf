@@ -99,5 +99,5 @@ for "_x" from 1 to 120 do {
 [
     {
         endMission "END1";
-    }, [], 30
+    }, [], 25
 ] call CBA_fnc_waitAndExecute;
