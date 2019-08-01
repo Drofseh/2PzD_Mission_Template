@@ -32,7 +32,7 @@ _orbatText = format ["%1<br/><font size='18'>== ORBAT ==</font><br/>",_orbatText
 // Loop through the group, print out group ID, leader name and medics if present
 {
     // Add spacing
-    _orbatText = format ["%1<br/>",_orbatText];
+    _orbatText = format ["%1<br/><br/>",_orbatText];
 
     // Highlight the player's group with a different color (based on the player's side)
     _color = "#FFFFFF";
@@ -58,7 +58,7 @@ _orbatText = format ["%1<br/><font size='18'>== ORBAT ==</font><br/>",_orbatText
             _leaderPrep03 = _leaderPrep02 select 0;
             _leaderPrep04 = _leaderPrep02 select 1;
             _leaderRole = [_leaderPrep04,_leaderPrep03] joinString " | ";
-            _orbatText = format ["%4<font color='%3' size='16'>%1 - %2</font><br/><br/>", _leaderRole, name leader _x,_color,_orbatText];
+            _orbatText = format ["%4<font color='%3' size='16'>%1 - %2</font><br/>", _leaderRole, name leader _x,_color,_orbatText];
     } else {
         // If no @ is found, then it will just use the description string as written
         _leaderRole = roleDescription _groupleader;
@@ -155,7 +155,7 @@ if (count _vehicleArray > 0) then {
                 if (["@",_leaderPrep01] call BIS_fnc_inString) then {
                     _leaderPrep02 = _leaderPrep01 splitString "@";
                     _leaderGroup = _leaderPrep02 select 1;
-                    _orbatText = format ["%1<font size='14'>    |--- %2</font>",_orbatText, _leaderGroup];
+                    _orbatText = format ["%1<font size='14'>    |--- %2</font><br/>",_orbatText, _leaderGroup];
                 } else {
                     _orbatText = format ["%1<font size='14'>    |--- %2</font><br/>",_orbatText, _x];
                 };

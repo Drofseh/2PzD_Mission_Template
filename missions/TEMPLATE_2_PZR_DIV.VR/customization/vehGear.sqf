@@ -14,6 +14,8 @@ switch (_type) do {
 
     #include "geardefs\gearDefCiv.sqf"
 
+    #include "geardefs\gearDefCzech.sqf"
+
     #include "geardefs\gearDefFrn.sqf"
 
     #include "geardefs\gearDefGer.sqf"

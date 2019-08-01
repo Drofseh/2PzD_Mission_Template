@@ -31,12 +31,12 @@
 //Backpack
 #define Civ_BP                  "B_LIB_SOV_RA_GasBag"
 #define Civ_BP_ran              ["B_LIB_SOV_RA_GasBag"],["B_LIB_SOV_RA_Rucksack"],["B_LIB_SOV_RA_Rucksack2"],["B_LIB_SOV_RA_Rucksack_Green"],["B_LIB_SOV_RA_Rucksack2_Green"],["B_LIB_SOV_RA_Shinel"],["B_LIB_GER_Tonister34_cowhide"]
-#define Civ_BP_r                ["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["B_LIB_SOV_RA_GasBag"],["B_LIB_SOV_RA_Rucksack"],["B_LIB_SOV_RA_Rucksack2"],["B_LIB_SOV_RA_Rucksack_Green"],["B_LIB_SOV_RA_Rucksack2_Green"],["B_LIB_SOV_RA_Shinel"]
+#define Civ_BP_r                [],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],["B_LIB_SOV_RA_GasBag"],["B_LIB_SOV_RA_Rucksack"],["B_LIB_SOV_RA_Rucksack2"],["B_LIB_SOV_RA_Rucksack_Green"],["B_LIB_SOV_RA_Rucksack2_Green"],["B_LIB_SOV_RA_Shinel"]
 #define Civ_BP_MG_r             ["B_LIB_SOV_RA_MGAmmoBag_Big_Empty"],["B_LIB_SOV_RA_MGAmmoBag_Big_Empty"],["B_LIB_SOV_RA_Rucksack"],["B_LIB_SOV_RA_Rucksack2"],["B_LIB_SOV_RA_Rucksack_Green"],["B_LIB_SOV_RA_Rucksack2_Green"],["B_LIB_GER_Tonister34_cowhide"]
 #define Civ_BP_Med              "B_LIB_SOV_RA_MedicalBag_Big_Empty"
 
 //Headgear
-#define Civ_Hat_r               ["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["ACE_Banana"],["H_LIB_CIV_Worker_Cap_2"],["H_LIB_CIV_Worker_Cap_3"],["H_LIB_CIV_Worker_Cap_4"],["H_LIB_CIV_Villager_Cap_1"],["H_LIB_CIV_Villager_Cap_2"],["H_LIB_CIV_Villager_Cap_4"]
+#define Civ_Hat_r               [],[],[],[],[],["H_LIB_CIV_Worker_Cap_2"],["H_LIB_CIV_Worker_Cap_3"],["H_LIB_CIV_Worker_Cap_4"],["H_LIB_CIV_Villager_Cap_1"],["H_LIB_CIV_Villager_Cap_2"],["H_LIB_CIV_Villager_Cap_4"]
 #define Civ_Hat_1_r             ["H_LIB_CIV_Worker_Cap_2"],["H_LIB_CIV_Worker_Cap_3"],["H_LIB_CIV_Worker_Cap_4"]
 //Beanie/Toque
 #define Civ_Hat_2_r             ["H_LIB_CIV_Villager_Cap_1"],["H_LIB_CIV_Villager_Cap_2"],["H_LIB_CIV_Villager_Cap_4"]
@@ -47,15 +47,21 @@
 //Black Beret for irregulars
 
 //Face
-#define Civ_Face_r             [GEN_Face_GlassesSilver],[GEN_Face_GlassesBlack], \
-                               [GEN_Face_GlassesSilver],[GEN_Face_GlassesBlack], \
-                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                               [GEN_Face_WatchBlack],[GEN_Face_WatchBrown]       
+#define Civ_Face_r              ["G_LIB_Dienst_Brille"],["G_LIB_Dienst_Brille2"], \
+                                ["fow_g_glasses2"],["fow_g_glasses3"], \
+                                ["G_Spectacles"],["G_Spectacles_Tinted"], \
+                                ["G_Squares"],["G_Squares_Tinted"], \
+                                ["fow_g_watch1"],["fow_g_watch2"], \
+                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
+                                ["fow_g_watch1"],["fow_g_watch2"], \
+                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
+                                ["fow_g_watch1"],["fow_g_watch2"], \
+                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
+                                ["fow_g_watch1"],["fow_g_watch2"], \
+                                ["G_LIB_Watch2"],["G_LIB_Watch1"], \
+                                ["fow_g_watch1"],["fow_g_watch2"], \
+                                ["G_LIB_Watch2"],["G_LIB_Watch1"]
+
 #define Civ_Face_Bino          "G_LIB_Binoculars"
 
 //=== MISC ===

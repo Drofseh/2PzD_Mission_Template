@@ -1,8 +1,6 @@
 
 #ifdef framework
 
-if (hasInterface) then {
-    #include "init.sqf"
-};
+#include "init.sqf"
 
 #endif

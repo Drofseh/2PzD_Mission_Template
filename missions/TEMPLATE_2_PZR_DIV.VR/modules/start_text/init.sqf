@@ -55,6 +55,7 @@ if (hasInterface) then {
 
     for "_i" from 0 to count _startTextArray -1 do {
         _line = _startTextArray select _i;
+        if (isNil "_unparsedText") then {_unparsedText = ""};
 
         switch (_line select 0) do {
             case "TITLEQUOTE": {

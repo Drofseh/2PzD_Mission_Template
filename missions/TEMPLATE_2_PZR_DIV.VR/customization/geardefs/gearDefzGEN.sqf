@@ -54,15 +54,15 @@
 #define GEN_Face_WatchBlack     "G_LIB_Watch2"
 #define GEN_Face_Tank_r         ["G_LIB_Headwrap"],["G_LIB_Headwrap_gloves"]
 #define GEN_Face_r              [GEN_Face_GlassesSilver],[GEN_Face_GlassesBlack], \
-                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
-                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown],      \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown], \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown], \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown], \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown], \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown], \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown], \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown], \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown], \
+                                [GEN_Face_WatchBlack],[GEN_Face_WatchBrown], \
                                 [GEN_Face_WatchBlack],[GEN_Face_WatchBrown]
 
 //=== MISC ===
@@ -140,47 +140,47 @@
 
 //=== EQUIPMENT ===
 
-#define GEN_Default_Equipment                            \
-    [                                                    \
-        [[GEN_ace_ration_Lamb]],[1],                     \
-        [[GEN_ace_ration_Beef]],[1],                     \
-        [[GEN_ace_ration_TSoup]],[1],                    \
-        [[GEN_ace_ration_CSoup]],[1],                    \
-        [[GEN_ace_ration_Tikka]],[1],                    \
-        [[GEN_ace_ration_Steak]],[1],                    \
-        [[GEN_ace_ration_Pasta]],[1],                    \
-        [[GEN_ace_ration_Dumpling]],[1]                  \
-    ] call FNC_AddItemRandomPercent;                     \
-    [GEN_Map] call FNC_AddItem;                          \
-    [GEN_Compass] call FNC_AddItem;                      \
-    [GEN_Watch] call FNC_AddItem;                        \
-    [GEN_ace_hammer,1,"uniform"] call FNC_AddItem;       \
-    [GEN_ace_shovel,1,"uniform"] call FNC_AddItem;       \
-    [GEN_BandageField,4,"uniform"] call FNC_AddItem;     \
-    [GEN_TQ,1,"uniform"] call FNC_AddItem;               \
+#define GEN_Default_Equipment \
+    [ \
+        [[GEN_ace_ration_Lamb]],[1], \
+        [[GEN_ace_ration_Beef]],[1], \
+        [[GEN_ace_ration_TSoup]],[1], \
+        [[GEN_ace_ration_CSoup]],[1], \
+        [[GEN_ace_ration_Tikka]],[1], \
+        [[GEN_ace_ration_Steak]],[1], \
+        [[GEN_ace_ration_Pasta]],[1], \
+        [[GEN_ace_ration_Dumpling]],[1] \
+    ] call FNC_AddItemRandomPercent; \
+    [GEN_Map] call FNC_AddItem; \
+    [GEN_Compass] call FNC_AddItem; \
+    [GEN_Watch] call FNC_AddItem; \
+    [GEN_ace_hammer,1,"uniform"] call FNC_AddItem; \
+    [GEN_ace_shovel,1,"uniform"] call FNC_AddItem; \
+    [GEN_BandageField,4,"uniform"] call FNC_AddItem; \
+    [GEN_TQ,1,"uniform"] call FNC_AddItem; \
     [GEN_ace_flashlightNA,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_cabletie,1,"uniform"] call FNC_AddItem;     \
+    [GEN_ace_cabletie,1,"uniform"] call FNC_AddItem; \
     [GEN_ace_canteen_F,1,"uniform"] call FNC_AddItem;
 
-#define GEN_Leader_Equipment                         \
-    [                                                \
-        [[GEN_BinoG]],[33],                          \
-        [[GEN_BinoR]],[33],                          \
-        [[GEN_BinoUS]],[33]                          \
-    ] call FNC_AddItemRandomPercent;                 \
+#define GEN_Leader_Equipment \
+    [ \
+        [[GEN_BinoG]],[33], \
+        [[GEN_BinoR]],[33], \
+        [[GEN_BinoUS]],[33] \
+    ] call FNC_AddItemRandomPercent; \
     [GEN_ace_maptools,1,"uniform"] call FNC_AddItem; \
     [GEN_Whistle,1,"uniform"] call FNC_AddItem;
 
-#define GEN_Medic_Equipment                              \
-    [GEN_BandageField,5,"backpack"] call FNC_AddItem;    \
+#define GEN_Medic_Equipment \
+    [GEN_BandageField,5,"backpack"] call FNC_AddItem; \
     [GEN_BandageElastic,10,"backpack"] call FNC_AddItem; \
     [GEN_BandagePacking,10,"backpack"] call FNC_AddItem; \
-    [GEN_Morp,5,"backpack"] call FNC_AddItem;            \
-    [GEN_Epi,2,"backpack"] call FNC_AddItem;             \
-    [GEN_TQ,2,"backpack"] call FNC_AddItem;              \
-    [GEN_SurgKit,1,"backpack"] call FNC_AddItem;         \
+    [GEN_Morp,5,"backpack"] call FNC_AddItem; \
+    [GEN_Epi,2,"backpack"] call FNC_AddItem; \
+    [GEN_TQ,2,"backpack"] call FNC_AddItem; \
+    [GEN_SurgKit,1,"backpack"] call FNC_AddItem; \
     [GEN_Saline500,4,"backpack"] call FNC_AddItem;
 
-#define GEN_Mortar_Equipment                         \
+#define GEN_Mortar_Equipment \
     [GEN_ace_maptools,1,"uniform"] call FNC_AddItem; \
     [GEN_ace_rangetable,1,"uniform"] call FNC_AddItem;

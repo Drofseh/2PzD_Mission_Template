@@ -10,6 +10,7 @@
 #define CZ_Weap_vz98_22         "CSA38_vz22"
 #define CZ_Weap_vz16_33         "CSA38_vz33"
 #define CZ_Weap_vz38smg         "csa38_kpvz38P"
+#define CZ_Weap_vz26            "CSA38_zb26"
 #define CZ_Weap_vz7_24          "CSA38_TKVZ24"
 #define CZ_Weap_vz37            "CSA38_TKVZ37"
 
@@ -18,7 +19,6 @@
 #define CZ_Weap_vz24p           "csa38_czvz24"
 #define CZ_Weap_vz27            "csa38_czvz27"
 #define CZ_Weap_vz27_s          "csa38_czvz27s"
-#define CZ_Weap_vz26            "CSA38_zb26"
 #define CZ_Weap_vz36            "csa38_czvz36"
 #define CZ_Weap_vz38p           "csa38_czvz38"
 
@@ -40,8 +40,9 @@
 #define CZ_Mag_vz22p            "CSA38_9mm_8xBrowning"
 #define CZ_Mag_vz27             "CSA38_7_65mm_8xBrowning"
 #define CZ_Mag_vz36             "CSA38_6_35mm_8xBrowning"
-#define CZ_Mag_vz38p            "csa38_9mm_9xBrowning"
-#define CZ_Mag_vz38p            "CSA38_Grg21"
+#define CZ_Mag_vz38p            "CSA38_9mm_9xBrowning"
+
+#define CZ_Mag_RGrn_HE          "CSA38_Grg21"
 
 //Grenades
 #define CZ_Gren_HE_21           "CSA38_rg21"
