@@ -2280,7 +2280,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Mess""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Mess""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Messenger@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -2654,7 +2654,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Mess""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Mess""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Messenger@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -4168,7 +4168,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Assistant Automatic Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -4541,7 +4541,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Automatic Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -4914,7 +4914,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -5287,7 +5287,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -5660,7 +5660,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -6388,7 +6388,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -6743,7 +6743,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -6965,7 +6965,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -7338,7 +7338,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Automatic Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -7711,7 +7711,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Assistant Automatic Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -8475,7 +8475,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Assistant Automatic Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -8848,7 +8848,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Automatic Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -9070,7 +9070,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -9425,7 +9425,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -9780,7 +9780,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -10490,7 +10490,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Automatic Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -10863,7 +10863,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -11085,7 +11085,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -11307,7 +11307,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -11529,7 +11529,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Assistant Automatic Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -12293,7 +12293,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Assistant Automatic Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -12666,7 +12666,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Automatic Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -12888,7 +12888,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -13243,7 +13243,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -13598,7 +13598,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -14308,7 +14308,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Automatic Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -14681,7 +14681,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -14903,7 +14903,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -15125,7 +15125,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -15347,7 +15347,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Assistant Automatic Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -16486,7 +16486,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Mess""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Mess""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Messenger@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -16860,7 +16860,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Mess""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Mess""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Messenger@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -18373,7 +18373,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Automatic Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -18595,7 +18595,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Assistant Automatic Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -18968,7 +18968,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -19323,7 +19323,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -19678,7 +19678,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -20407,7 +20407,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -20629,7 +20629,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -20851,7 +20851,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -21073,7 +21073,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Assistant Automatic Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -21446,7 +21446,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Automatic Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -22209,7 +22209,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Automatic Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -22431,7 +22431,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Assistant Automatic Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -22804,7 +22804,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -23159,7 +23159,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -23514,7 +23514,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -24243,7 +24243,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Automatic Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -24616,7 +24616,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -24838,7 +24838,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -25060,7 +25060,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -25282,7 +25282,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Assistant Automatic Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -26045,7 +26045,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Automatic Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -26267,7 +26267,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Assistant Automatic Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -26640,7 +26640,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -26995,7 +26995,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -27369,7 +27369,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -28098,7 +28098,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AAR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Assistant Automatic Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -28471,7 +28471,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -28693,7 +28693,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -28915,7 +28915,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -29137,7 +29137,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bravo Team | Automatic Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -29899,7 +29899,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_MG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_MG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Machine Gunner@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
@@ -30645,7 +30645,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_MGAB""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_MGAB""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Machine Gun Ammo Bearer@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
@@ -32176,7 +32176,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_MortAB""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_MortAB""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Mortar Ammo Bearer@Mortar Team";
 					isPlayable=1;
 					class Inventory
@@ -32961,7 +32961,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_BzkaG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_BzkaG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bazooka Gunner@Bazooka Team";
 					isPlayable=1;
 					class Inventory
@@ -33334,7 +33334,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_BzkaG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_BzkaG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bazooka Gunner@Bazooka Team";
 					isPlayable=1;
 					class Inventory
@@ -33707,7 +33707,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_BzkaAB""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_BzkaAB""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
 					description="Bazooka Ammo Bearer@Bazooka Team";
 					isPlayable=1;
 					class Inventory
@@ -34120,7 +34120,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_VCom""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_VCom""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Tank Commander@Tank";
 					isPlayable=1;
 					class Inventory
@@ -34494,7 +34494,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_VCrew""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_VCrew""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
@@ -34716,7 +34716,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_VCrew""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_VCrew""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
@@ -34938,7 +34938,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44Jan_VCrew""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""USMC44Jan_VCrew""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory

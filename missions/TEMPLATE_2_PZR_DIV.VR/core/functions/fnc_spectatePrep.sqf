@@ -30,7 +30,6 @@ if (FW_RespawnTickets > 0) then {
 
     private _respawnName = toLower(format ["fw_%1_respawn", side player]);
     private _respawnPoint = missionNamespace getVariable [_respawnName, objNull];
-
     private _loadout = (player getVariable ["FW_Loadout", ""]);
 
     if (_loadout != "") then {
@@ -52,12 +51,8 @@ if (FW_RespawnTickets > 0) then {
 
     cutText [format ['%1 %2', FW_RespawnTickets, _text], 'PLAIN DOWN'];
 
-    if (isNil "FW_mapRemoved") then {
-        FW_mapRemoved = 0;
-    } else {
-        if (FW_mapRemoved == 1) then {
-            nul = [player] execVM "scripts\removeMap.sqf";
-        };
+    if (player getVariable ["FW_mapRemoved", true]) then {
+        player call FNC_Remove_Map;
     };
 
 } else {
@@ -81,4 +76,5 @@ if (FW_RespawnTickets > 0) then {
     [true] call acre_api_fnc_setSpectator;
 
     [true] call ace_spectator_fnc_setSpectator;
+
 };

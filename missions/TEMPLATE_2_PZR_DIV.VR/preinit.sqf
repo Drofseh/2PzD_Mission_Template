@@ -5,22 +5,23 @@
 FW_DebugMessages = [];
 FW_Modules = [];
 
-PREP(notTrackUnit);
-PREP(debugMessage);
-PREP(randomRange);
-PREP(trackAsset);
-PREP(canLinkItem);
-PREP(canAttachItem);
 PREP(addItemOrg);
 PREP(addItemRandomOrg);
 PREP(addItemRandomOrgPercent);
 PREP(addItemVehicleOrg);
 PREP(addItemVehicleRandomOrg);
+PREP(canAttachItem);
+PREP(canLinkItem);
+PREP(checkClassname);
+PREP(debugMessage);
+PREP(makeUnitsList);
+PREP(notTrackUnit);
+PREP(randomRange);
+PREP(registerModule);
 PREP(removeAllGear);
 PREP(removeAllVehicleGear);
-PREP(registerModule);
-PREP(checkClassname);
-PREP(makeUnitsList);
+PREP(removeMap);
+PREP(trackAsset);
 
 FNC_Briefing = compile preprocessFileLineNumbers "customization\briefing.sqf";
 

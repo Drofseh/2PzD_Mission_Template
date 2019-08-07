@@ -50,15 +50,15 @@ _orbatText = format ["%1<br/><font size='18'>== ORBAT ==</font><br/>",_orbatText
     _leaderPrep01 = roleDescription _groupleader;
 
     if (["@",_leaderPrep01] call BIS_fnc_inString) then {
-            // If the description has an @ (presumably from the CBA Group Name setup)
-            // then it will split the string at the @, swap each half, and
-            // join them again with an | in the middle.
-            // "Team Leader@Team 1" will become "Team 1 | Team Leader" in the ORBAT
-            _leaderPrep02 = _leaderPrep01 splitString "@";
-            _leaderPrep03 = _leaderPrep02 select 0;
-            _leaderPrep04 = _leaderPrep02 select 1;
-            _leaderRole = [_leaderPrep04,_leaderPrep03] joinString " | ";
-            _orbatText = format ["%4<font color='%3' size='16'>%1 - %2</font><br/>", _leaderRole, name leader _x,_color,_orbatText];
+        // If the description has an @ (presumably from the CBA Group Name setup)
+        // then it will split the string at the @, swap each half, and
+        // join them again with an | in the middle.
+        // "Team Leader@Team 1" will become "Team 1 | Team Leader" in the ORBAT
+        _leaderPrep02 = _leaderPrep01 splitString "@";
+        _leaderPrep03 = _leaderPrep02 select 0;
+        _leaderPrep04 = _leaderPrep02 select 1;
+        _leaderRole = [_leaderPrep04,_leaderPrep03] joinString " | ";
+        _orbatText = format ["%4<font color='%3' size='16'>%1 - %2</font><br/>", _leaderRole, name leader _x,_color,_orbatText];
     } else {
         // If no @ is found, then it will just use the description string as written
         _leaderRole = roleDescription _groupleader;

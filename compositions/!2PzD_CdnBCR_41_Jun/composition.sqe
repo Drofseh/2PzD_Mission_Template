@@ -5356,7 +5356,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -5559,7 +5559,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -5762,7 +5762,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -5965,7 +5965,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -6301,7 +6301,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -6504,7 +6504,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_LCpl""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_LCpl""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Gun Team Leader@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -6840,7 +6840,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AR""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AR""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Bren Gunner@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -7195,7 +7195,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AAR""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AAR""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Bren Gun Assistant@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -7550,7 +7550,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AAB""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AAB""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -8259,7 +8259,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -8462,7 +8462,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -8665,7 +8665,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -8868,7 +8868,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -9204,7 +9204,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -9407,7 +9407,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_LCpl""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_LCpl""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Gun Team Leader@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -9743,7 +9743,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AR""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AR""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Bren Gunner@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -10098,7 +10098,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AAR""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AAR""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Bren Gun Assistant@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -10453,7 +10453,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AAB""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AAB""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -11162,7 +11162,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -11365,7 +11365,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -11568,7 +11568,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -11771,7 +11771,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -12107,7 +12107,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -12310,7 +12310,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_LCpl""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_LCpl""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Gun Team Leader@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -12646,7 +12646,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AR""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AR""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Bren Gunner@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -13001,7 +13001,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AAR""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AAR""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Bren Gun Assistant@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -13356,7 +13356,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AAB""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AAB""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -16582,7 +16582,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -16785,7 +16785,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -16988,7 +16988,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -17191,7 +17191,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -17527,7 +17527,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -17730,7 +17730,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_LCpl""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_LCpl""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Gun Team Leader@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -18066,7 +18066,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AR""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AR""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Bren Gunner@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -18421,7 +18421,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AAR""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AAR""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Bren Gun Assistant@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -18776,7 +18776,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AAB""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AAB""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -19485,7 +19485,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -19688,7 +19688,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -19891,7 +19891,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -20094,7 +20094,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -20430,7 +20430,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -20633,7 +20633,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_LCpl""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_LCpl""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Gun Team Leader@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -20969,7 +20969,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AR""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AR""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Bren Gunner@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -21324,7 +21324,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AAR""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AAR""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Bren Gun Assistant@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -21679,7 +21679,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AAB""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AAB""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -22388,7 +22388,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -22591,7 +22591,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -22794,7 +22794,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -22997,7 +22997,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -23333,7 +23333,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -23536,7 +23536,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_LCpl""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_LCpl""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Gun Team Leader@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -23872,7 +23872,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AR""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AR""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Bren Gunner@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -24227,7 +24227,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AAR""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AAR""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Bren Gun Assistant@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -24582,7 +24582,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_AAB""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_AAB""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -26074,7 +26074,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_MortAB""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_MortAB""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="3"" Mortar Ammo Bearer@Mortar Team";
 					isPlayable=1;
 					class Inventory
@@ -26860,7 +26860,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_MG""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_MG""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gunner@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
@@ -28392,7 +28392,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_ATRG""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_ATRG""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Boys Gunner@Boys Rifle Team";
 					isPlayable=1;
 					class Inventory
@@ -29924,7 +29924,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_VCrew""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_VCrew""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
@@ -30145,7 +30145,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_VCrew""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_VCrew""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
@@ -30499,7 +30499,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""CdnBC41Jun_VCrew""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""CdnBC41Jun_VCrew""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory

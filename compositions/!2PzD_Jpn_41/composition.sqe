@@ -2871,7 +2871,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Mark""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Mark""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Marksman@1 Platoon | HQ";
 					isPlayable=1;
 					class Inventory
@@ -3950,7 +3950,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -4304,7 +4304,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -4658,7 +4658,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -5012,7 +5012,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -5366,7 +5366,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -5720,7 +5720,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -6074,7 +6074,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Team Leader@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -6428,7 +6428,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MG""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MG""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gunner@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -6783,7 +6783,7 @@ class items
 				class Attributes
 				{
 					health=0.62274319;
-					init="[this,""IJA41_MGA""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MGA""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gun Assistant@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -7137,7 +7137,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MGAB""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MGAB""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gun Ammo Bearer@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -7491,7 +7491,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Gren""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Gren""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Grenadier@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -7845,7 +7845,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -8566,7 +8566,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -8920,7 +8920,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -9274,7 +9274,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -9628,7 +9628,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -9982,7 +9982,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -10336,7 +10336,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -10690,7 +10690,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Team Leader@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -11044,7 +11044,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MG""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MG""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gunner@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -11398,7 +11398,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MGA""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MGA""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gun Assistant@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -11752,7 +11752,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MGAB""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MGAB""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gun Ammo Bearer@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -12106,7 +12106,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Gren""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Gren""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Grenadier@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -12460,7 +12460,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -13181,7 +13181,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -13535,7 +13535,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -13889,7 +13889,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -14243,7 +14243,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -14597,7 +14597,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -14951,7 +14951,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -15305,7 +15305,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Team Leader@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -15659,7 +15659,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MG""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MG""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gunner@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -16013,7 +16013,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MGA""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MGA""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gun Assistant@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -16367,7 +16367,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MGAB""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MGAB""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gun Ammo Bearer@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -16721,7 +16721,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Gren""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Gren""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Grenadier@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -17075,7 +17075,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -17796,7 +17796,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Team Leader@1 Platoon | 4 Squad";
 					isPlayable=1;
 					class Inventory
@@ -18858,7 +18858,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_KMortAB""] call FNC_GearScript; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_KMortAB""] call FNC_GearScript; " \n "this call FNC_removeMap;";
 					description="Type 89 Ammo Bearer@1 Platoon | 4 Squad";
 					isPlayable=1;
 					class Inventory
@@ -19212,7 +19212,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Team Leader@1 Platoon | 4 Squad";
 					isPlayable=1;
 					class Inventory
@@ -20274,7 +20274,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_KMortAB""] call FNC_GearScript; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_KMortAB""] call FNC_GearScript; " \n "this call FNC_removeMap;";
 					description="Type 89 Ammo Bearer@1 Platoon | 4 Squad";
 					isPlayable=1;
 					class Inventory
@@ -20628,7 +20628,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Team Leader@1 Platoon | 4 Squad";
 					isPlayable=1;
 					class Inventory
@@ -21690,7 +21690,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_KMortAB""] call FNC_GearScript; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_KMortAB""] call FNC_GearScript; " \n "this call FNC_removeMap;";
 					description="Type 89 Ammo Bearer@1 Platoon | 4 Squad";
 					isPlayable=1;
 					class Inventory
@@ -23119,7 +23119,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Mark""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Mark""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Marksman@2 Platoon | HQ";
 					isPlayable=1;
 					class Inventory
@@ -24198,7 +24198,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -24552,7 +24552,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -24906,7 +24906,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -25260,7 +25260,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -25614,7 +25614,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -25968,7 +25968,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -26322,7 +26322,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Team Leader@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -26676,7 +26676,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MG""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MG""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gunner@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -27031,7 +27031,7 @@ class items
 				class Attributes
 				{
 					health=0.62274319;
-					init="[this,""IJA41_MGA""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MGA""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gun Assistant@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -27385,7 +27385,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MGAB""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MGAB""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gun Ammo Bearer@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -27739,7 +27739,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Gren""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Gren""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Grenadier@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -28093,7 +28093,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -28814,7 +28814,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -29168,7 +29168,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -29522,7 +29522,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -29876,7 +29876,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -30230,7 +30230,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -30584,7 +30584,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -30938,7 +30938,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Team Leader@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -31292,7 +31292,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MG""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MG""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gunner@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -31646,7 +31646,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MGA""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MGA""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gun Assistant@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -32000,7 +32000,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MGAB""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MGAB""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gun Ammo Bearer@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -32354,7 +32354,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Gren""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Gren""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Grenadier@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -32708,7 +32708,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -33429,7 +33429,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -33783,7 +33783,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -34137,7 +34137,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -34491,7 +34491,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -34845,7 +34845,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -35199,7 +35199,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -35553,7 +35553,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Team Leader@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -35907,7 +35907,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MG""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MG""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gunner@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -36261,7 +36261,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MGA""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MGA""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gun Assistant@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -36615,7 +36615,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_MGAB""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_MGAB""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Machine Gun Ammo Bearer@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -36969,7 +36969,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Gren""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Gren""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Grenadier@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -37323,7 +37323,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -38044,7 +38044,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Team Leader@2 Platoon | 4 Squad";
 					isPlayable=1;
 					class Inventory
@@ -39106,7 +39106,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_KMortAB""] call FNC_GearScript; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_KMortAB""] call FNC_GearScript; " \n "this call FNC_removeMap;";
 					description="Type 89 Ammo Bearer@2 Platoon | 4 Squad";
 					isPlayable=1;
 					class Inventory
@@ -39460,7 +39460,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Team Leader@2 Platoon | 4 Squad";
 					isPlayable=1;
 					class Inventory
@@ -40522,7 +40522,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_KMortAB""] call FNC_GearScript; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_KMortAB""] call FNC_GearScript; " \n "this call FNC_removeMap;";
 					description="Type 89 Ammo Bearer@2 Platoon | 4 Squad";
 					isPlayable=1;
 					class Inventory
@@ -40876,7 +40876,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_TL""] call FNC_GearScript;" \n "this call FNC_removeMap;";
 					description="Team Leader@2 Platoon | 4 Squad";
 					isPlayable=1;
 					class Inventory
@@ -41938,7 +41938,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""IJA41_KMortAB""] call FNC_GearScript; " \n "this call compile preprocessFileLineNumbers ""scripts\removeMap.sqf"";";
+					init="[this,""IJA41_KMortAB""] call FNC_GearScript; " \n "this call FNC_removeMap;";
 					description="Type 89 Ammo Bearer@2 Platoon | 4 Squad";
 					isPlayable=1;
 					class Inventory
