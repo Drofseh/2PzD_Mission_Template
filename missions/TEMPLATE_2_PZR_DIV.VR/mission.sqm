@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=44793;
+		nextID=44795;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={536.95953,11.153226,1311.6598};
-		dir[]={-0.01509414,-0.30178377,-0.95328432};
-		up[]={-0.0047781975,0.95336938,-0.30175951};
-		aside[]={-0.99989229,-7.3743649e-008,0.015832737};
+		pos[]={537.69098,18.609425,1315.972};
+		dir[]={-0.044030834,-0.351473,-0.93519568};
+		up[]={-0.016530991,0.93619138,-0.35110125};
+		aside[]={-0.99891955,-2.8000068e-007,0.04703249};
 	};
 };
 binarizationWanted=0;
@@ -946,7 +946,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="2 Panzer Division Mission Template v2.26.0";
+		briefingName="2 Panzer Division Mission Template v2.27.0";
 		resistanceWest=0;
 		resistanceEast=1;
 		timeOfChanges=1800.0002;
