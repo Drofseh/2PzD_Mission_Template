@@ -5,6 +5,7 @@
 //#include "Dropcan.sqf"
 //#include "gearLog.sqf"
 //#include "gearPersistent.sqf"
+#include "handleLargeMagazines.sqf"
 #include "IFA3_variables.sqf"
 #include "mapMarkerPrevention.sqf"
 #include "mapTextures.sqf"
