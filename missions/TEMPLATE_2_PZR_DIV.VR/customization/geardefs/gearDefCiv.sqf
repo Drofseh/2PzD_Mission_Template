@@ -2,10 +2,23 @@
 //=== Weapons ===
 
 //Primary
+#define Civ_Weap_Shotgun        "sgun_HunterShotgun_01_base_F"
+#define Civ_Weap_Sawnoff        "sgun_HunterShotgun_01_sawedoff_base_F"
+
 //Secondary
 //Launcher
 //Attachments
+
 //Ammo
+#define US_Mag_M12_Buck00       "2Rnd_12Gauge_Pellets"
+#define US_Mag_M12_Buck0        "ACE_2Rnd_12Gauge_Pellets_No0_Buck"
+#define US_Mag_M12_Buck1        "ACE_2Rnd_12Gauge_Pellets_No1_Buck"
+#define US_Mag_M12_Buck2        "ACE_2Rnd_12Gauge_Pellets_No2_Buck"
+#define US_Mag_M12_Buck3        "ACE_2Rnd_12Gauge_Pellets_No3_Buck"
+#define US_Mag_M12_Buck4        "ACE_2Rnd_12Gauge_Pellets_No4_Buck"
+#define US_Mag_M12_Bird4        "ACE_2Rnd_12Gauge_Pellets_No4_Bird"
+#define US_Mag_M12_Slug         "2Rnd_12Gauge_Slug"
+
 //Grenades
 
 //=== Clothes ===

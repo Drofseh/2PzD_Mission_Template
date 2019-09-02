@@ -242,9 +242,9 @@
         ],[13],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[10],
         [//M1903
@@ -311,9 +311,9 @@
         ],[13],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[10],
         [//M1903
@@ -453,9 +453,9 @@
         ],[13],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[10],
         [//M1903
@@ -522,9 +522,9 @@
         ],[13],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[10],
         [//M1903
@@ -586,9 +586,9 @@
         ],[13],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[10],
         [//M1903
@@ -646,9 +646,9 @@
         [US_Mag_M1G,10,"vest"]
         ],[13],
         [//M12 Shotgun
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[10],
         [//M1903
@@ -860,9 +860,9 @@
         ],[6],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[5],
         [//M2 Carbine
@@ -953,9 +953,9 @@
         ],[5],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
@@ -1024,9 +1024,9 @@
         ],[5],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
@@ -1095,9 +1095,9 @@
         ],[5],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
@@ -1157,9 +1157,9 @@
         ],[6],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[5],
         [//M2 Carbine
@@ -1240,9 +1240,9 @@
         ],[13],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[10],
         [//M1903
@@ -1316,9 +1316,9 @@
         [US_Mag_M2C,4,"vest"]
         ],[5],
         [//M12 Shotgun
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
@@ -1376,9 +1376,9 @@
         ],[6],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[5],
         [//M2 Carbine
@@ -1497,9 +1497,9 @@
         [US_Mag_M2C,4,"vest"]
         ],[5],
         [//M12 Shotgun
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
@@ -1557,9 +1557,9 @@
         ],[6],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[5],
         [//M2 Carbine
@@ -1622,9 +1622,9 @@
         ],[6],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[5],
         [//M2 Carbine
@@ -1700,9 +1700,9 @@
         ],[5],
         [//M12 Shotgun
         [USMC_Vest_M1G],
-        [US_Mag_M12_Buck,1],
+        [US_Mag_M12_Buck00,1],
         [US_Weap_M12],
-        [US_Mag_M12_Buck,6,"vest"],
+        [US_Mag_M12_Buck00,6,"vest"],
         [US_Mag_M12_Slug,1,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;

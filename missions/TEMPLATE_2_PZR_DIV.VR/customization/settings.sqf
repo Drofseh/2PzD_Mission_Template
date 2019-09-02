@@ -1,6 +1,7 @@
 if (isServer) then { //This scope is only for the server
 
     setViewDistance 1000; //View distance for the server and any AI controlled by the server (Note - the server does not normally control the AI, instead the Headless Clients do)
+    //Do not change this without Council permission.
 
     FW_TimeLimit = 4*60; //Time limit in minutes, to disable the time limit set it to 0 - Is is strongly recommended that every mission has a time limit simply to force the mission to end if it is accidentally left running.
 
@@ -36,7 +37,7 @@ if (hasInterface) then { //This scope is for the players
     };
 
     setViewDistance 2000; //View distance for the player set lower on urbanised map to increase player performance
-    setTerrainGrid  50;   //Set grass to none
+    setTerrainGrid  3.125;   //Set grass/terrain detail to high (but grass is removed automatically by the 2PzD House Cutter Removal addon)
 
     //[[1,2], [0]] call ace_spectator_fnc_updateCameraModes; //Set ACE Spectator camera modes. Should only be enabled for TvT. See https://ace3mod.com/wiki/framework/spectator-framework.html#44-addremove-available-camera-modes
     //[[-2], [-1,0,1,2,3,4,5,6,7]] call ace_spectator_fnc_updateVisionModes; //Set ACE Spectator camera vision mods. Should only be enabled for TvT. See https://ace3mod.com/wiki/framework/spectator-framework.html#45-addremove-available-vision-modes
