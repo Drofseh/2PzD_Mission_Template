@@ -55,25 +55,29 @@ FNC_SupportFire_GetTargetLocation = {
         // systemChat ("_supportFire_accuracy - " + str _supportFire_accuracy);
 
         // gets new target location
-        if (_supportFire_target isEqualTo "TargetVisual") then {
+        switch (_supportFire_target) do {
+        case "TargetGrid" : {
             _supportFire_targetLoc = screenToWorld [0.5, 0.5];
         };
-        if (_supportFire_target isEqualTo "Target01") then {
+        case "TargetVisual" : {
+            _supportFire_targetLoc = screenToWorld [0.5, 0.5];
+        };
+        case "Target01" : {
             _supportFire_targetLoc = getMarkerPos supportFire_target01;
         };
-        if (_supportFire_target isEqualTo "Target02") then {
+        case "Target02" : {
             _supportFire_targetLoc = getMarkerPos supportFire_target02;
         };
-        if (_supportFire_target isEqualTo "Target03") then {
+        case "Target03" : {
             _supportFire_targetLoc = getMarkerPos supportFire_target03;
         };
-        if (_supportFire_target isEqualTo "Target04") then {
+        case "Target04" : {
             _supportFire_targetLoc = getMarkerPos supportFire_target04;
         };
-        if (_supportFire_target isEqualTo "Target05") then {
+        case "Target05" : {
             _supportFire_targetLoc = getMarkerPos supportFire_target05;
         };
-        if (_supportFire_target isEqualTo "Target06") then {
+        case "Target06" : {
             _supportFire_targetLoc = getMarkerPos supportFire_target06;
         };
         // systemChat ("_supportFire_targetLoc - " + str _supportFire_targetLoc);

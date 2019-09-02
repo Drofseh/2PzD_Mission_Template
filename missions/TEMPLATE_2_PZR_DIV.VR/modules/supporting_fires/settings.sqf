@@ -44,39 +44,8 @@
     supportFire_target06GUER = "";
 
 //TARGET NAMES
-    // These are the names for the targets that appear in the self interaction menu.
-    // They should match (or at least be very similar to) the visible text for the target they go with.
-    // Try to keep them reasonably short, so that people who have their ACE menu set to radial won't have too much overlap.
-    // See https://gyazo.com/d66a1b6559f60e0fcf969165c93efeeb for an example
-
-    //Examples:
-    //supportFire_target01WEST_Name = "Target Alpha";
-    //supportFire_target02WEST_Name = "Eggwil";
-    //supportFire_target03WEST_Name = "Worb Docks";
-
-    // WEST/Blufor
-    supportFire_target01WEST_Name = "Alpha";
-    supportFire_target02WEST_Name = "Bravo";
-    supportFire_target03WEST_Name = "Charlie";
-    supportFire_target04WEST_Name = "Delta";
-    supportFire_target05WEST_Name = "Echo";
-    supportFire_target06WEST_Name = "Foxtrot";
-
-    // East/Opfor
-    supportFire_target01EAST_Name = "Alpha";
-    supportFire_target02EAST_Name = "Bravo";
-    supportFire_target03EAST_Name = "Charlie";
-    supportFire_target04EAST_Name = "Delta";
-    supportFire_target05EAST_Name = "Echo";
-    supportFire_target06EAST_Name = "Foxtrot";
-
-    // Resistance/Independent/Indfor
-    supportFire_target01GUER_Name = "Alpha";
-    supportFire_target02GUER_Name = "Bravo";
-    supportFire_target03GUER_Name = "Charlie";
-    supportFire_target04GUER_Name = "Delta";
-    supportFire_target05GUER_Name = "Echo";
-    supportFire_target06GUER_Name = "Foxtrot";
+    // These are now automatically taken from the marker text set in the editor.
+    // So make sure you name your markers appropriately.
 
 // BATTERY SIZE
     // Sets, per side, the number of guns in the supporting battery.

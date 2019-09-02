@@ -5,6 +5,8 @@ FNC_SetTeamColor = {
         ["_color", "", [""]]
     ];
 
-    _unit setVariable ["FW_TeamColor", _color, false];
+    if (local _unit) then {
+        _unit setVariable ["FW_TeamColor", _color, false];
+    };
 
 };

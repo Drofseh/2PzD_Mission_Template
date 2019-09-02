@@ -40,7 +40,7 @@ FNC_SupportFire_FireMission = {
     _supportFire_distance = _supportFire_targetXY distance2D player;
     if (_supportFire_distance < (0.75 * (supportFire_originalShellDispersion + supportFire_originalShellAccuracy))) exitWith {
         // systemChat "Fire mission canceled";
-        [[(format ["Negative, %1 is too close your position.<br/>No fire mission.", _supportFire_targetName])], true] call CBA_fnc_notify;
+        [[(format ["Negative, %1 is too close to your position.<br/>No fire mission.", _supportFire_targetName])], true] call CBA_fnc_notify;
     };
 
     if (_supportFire_distance < (1.5 * (supportFire_originalShellDispersion + supportFire_originalShellAccuracy))) then {
