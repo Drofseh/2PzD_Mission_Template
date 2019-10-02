@@ -56,16 +56,26 @@
         [player, 1, ["ACE_SelfActions","Supporting Fires","Select Target"], _actionTarget06] call ace_interact_menu_fnc_addActionToObject;
     };
 
+    _statementVisualLoc = {
+        supportFire_terrainPosition = screenToWorld [0.5,0.5];
+        _supportFire_targetDistance = player distance2D supportFire_terrainPosition;
+        if (_supportFire_targetDistance < (0.75 * (supportFire_originalShellDispersion + supportFire_originalShellAccuracy))) then {
+            [["Warning, target is on your position.<br/>Fire mission will not be completed."]] call CBA_fnc_notify;
+        } else {
+            if (_supportFire_targetDistance < (1.5 * (supportFire_originalShellDispersion + supportFire_originalShellAccuracy))) then {
+                [["Warning, target is danger close to your position."]] call CBA_fnc_notify;
+            } else {
+                [["Target is your mark."], true] call CBA_fnc_notify;
+            };
+        };
+        supportFire_targetType = "TargetVisual";
+    };
+    _actionVisualLoc = ["Visual Location","Visual Location","Haas_WWII_Rebalance\UI\icon_supporting_fires_target_vis.paa",_statementVisualLoc,_conditionVisual] call ace_interact_menu_fnc_createAction;
+    [player, 1, ["ACE_SelfActions","Supporting Fires","Select Target"], _actionVisualLoc] call ace_interact_menu_fnc_addActionToObject;
+
     _statementRepeat = {
         [[(format ["Target %1 will be repeated.<br/>Select adjustment if required, and the type of ammunition to use.",supportFire_previousTargetName])], true] call CBA_fnc_notify;
         supportFire_targetType = "TargetLast";
     };
     _actionRepeat = ["Repeat Last Target","Repeat Last Target","Haas_WWII_Rebalance\UI\icon_supporting_fires_target_rep.paa",_statementRepeat,_conditionRepeat] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires","Select Target"], _actionRepeat] call ace_interact_menu_fnc_addActionToObject;
-
-    _statementVisualLoc = {
-        [["Target is your mark."], true] call CBA_fnc_notify;
-        supportFire_targetType = "TargetVisual";
-    };
-    _actionVisualLoc = ["Visual Location","Visual Location","Haas_WWII_Rebalance\UI\icon_supporting_fires_target_vis.paa",_statementVisualLoc,_conditionVisual] call ace_interact_menu_fnc_createAction;
-    [player, 1, ["ACE_SelfActions","Supporting Fires","Select Target"], _actionVisualLoc] call ace_interact_menu_fnc_addActionToObject;

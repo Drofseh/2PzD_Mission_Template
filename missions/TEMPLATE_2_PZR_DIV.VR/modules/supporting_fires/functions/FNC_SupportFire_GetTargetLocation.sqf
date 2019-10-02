@@ -56,29 +56,27 @@ FNC_SupportFire_GetTargetLocation = {
 
         // gets new target location
         switch (_supportFire_target) do {
-        case "TargetGrid" : {
-            _supportFire_targetLoc = screenToWorld [0.5, 0.5];
-        };
-        case "TargetVisual" : {
-            _supportFire_targetLoc = screenToWorld [0.5, 0.5];
-        };
-        case "Target01" : {
-            _supportFire_targetLoc = getMarkerPos supportFire_target01;
-        };
-        case "Target02" : {
-            _supportFire_targetLoc = getMarkerPos supportFire_target02;
-        };
-        case "Target03" : {
-            _supportFire_targetLoc = getMarkerPos supportFire_target03;
-        };
-        case "Target04" : {
-            _supportFire_targetLoc = getMarkerPos supportFire_target04;
-        };
-        case "Target05" : {
-            _supportFire_targetLoc = getMarkerPos supportFire_target05;
-        };
-        case "Target06" : {
-            _supportFire_targetLoc = getMarkerPos supportFire_target06;
+            case "TargetVisual" : {
+                _supportFire_targetLoc = supportFire_terrainPosition;
+            };
+            case "Target01" : {
+                _supportFire_targetLoc = getMarkerPos supportFire_target01;
+            };
+            case "Target02" : {
+                _supportFire_targetLoc = getMarkerPos supportFire_target02;
+            };
+            case "Target03" : {
+                _supportFire_targetLoc = getMarkerPos supportFire_target03;
+            };
+            case "Target04" : {
+                _supportFire_targetLoc = getMarkerPos supportFire_target04;
+            };
+            case "Target05" : {
+                _supportFire_targetLoc = getMarkerPos supportFire_target05;
+            };
+            case "Target06" : {
+                _supportFire_targetLoc = getMarkerPos supportFire_target06;
+            };
         };
         // systemChat ("_supportFire_targetLoc - " + str _supportFire_targetLoc);
 

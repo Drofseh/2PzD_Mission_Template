@@ -37,17 +37,20 @@ FNC_SupportFire_FireMission = {
     // systemChat ("_supportFire_targetXY - " + str _supportFire_targetXY);
 
     // check if player is too close to target
-    _supportFire_distance = _supportFire_targetXY distance2D player;
-    if (_supportFire_distance < (0.75 * (supportFire_originalShellDispersion + supportFire_originalShellAccuracy))) exitWith {
-        // systemChat "Fire mission canceled";
+    _supportFire_targetDistance = player distance2D _supportFire_targetXY;
+    _supportFire_warning = "";
+    _supportFire_cancelled = false;
+    if (_supportFire_targetDistance < (0.75 * (supportFire_originalShellDispersion + supportFire_originalShellAccuracy))) then {
         [[(format ["Negative, %1 is too close to your position.<br/>No fire mission.", _supportFire_targetName])], true] call CBA_fnc_notify;
+        _supportFire_cancelled = true;
+    } else {
+        if (_supportFire_targetDistance < (1.5 * (supportFire_originalShellDispersion + supportFire_originalShellAccuracy))) then {
+            _supportFire_warning = "<br/>Warning, target is danger closer, take cover.";
+        };
     };
 
-    if (_supportFire_distance < (1.5 * (supportFire_originalShellDispersion + supportFire_originalShellAccuracy))) then {
-        _supportFire_warning = "<br/>Warning, target is danger closer, take cover.";
-    } else {
-        // systemChat ("_supportFire_targetName - " + str _supportFire_targetName);
-        _supportFire_warning = "";
+    if (_supportFire_cancelled) exitWith {
+        // systemChat "Fire mission canceled";
     };
 
     if (_supportFire_target == "TargetLast") then {
