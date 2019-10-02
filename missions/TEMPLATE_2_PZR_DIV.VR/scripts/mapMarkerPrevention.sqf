@@ -2,6 +2,12 @@
 // Informs the placing player that map markers are forbidden in that channel.
 
 FNC_removeForbiddenMarkers = {
+    [
+        {call FNC_removeForbiddenMarkers},
+        [],
+        0.1
+    ] call CBA_fnc_waitAndExecute;
+
     _userMarkerNumber = 0;
     {
         if (_x find "_USER_DEFINED" >= 0) then {
@@ -22,37 +28,32 @@ FNC_removeForbiddenMarkers = {
                 };
 
                 if (_delete) then {
-                    deleteMarker _x;
-                    _playerID = parseNumber (((_markerSelections select 0) splitString "#") select 1);
-                    {systemChat "Placing map markers during play is forbidden in this channel"} remoteExec ["call",_playerID];
+                    //deleteMarker _x;
+                    deleteMarkerLocal _x;
+                    _netID = (((_markerSelections select 0) splitString "#") select 1);
+                    if ((((netId player) splitString ":") select 0) == _netID) then {
+                        systemChat "Placing map markers during play is forbidden in this channel";
+                    };
                 };
             };
         };
     } forEach allMapMarkers;
-
-    [
-        {call FNC_removeForbiddenMarkers},
-        [],
-        0.1
-    ] call CBA_fnc_waitAndExecute;
 };
 
-if (isServer) then {
-    [
-        {CBA_missionTime > 1},
+[
+    {CBA_missionTime > 1},
+    {
+        _orignalUserMarkers = [];
+
         {
-            _orignalUserMarkers = [];
+            if (_x find "_USER_DEFINED" > -1) then {
+                _orignalUserMarkers pushBack _x;
+            };
+        } forEach allMapMarkers;
 
-            {
-                if (_x find "_USER_DEFINED" > -1) then {
-                    _orignalUserMarkers pushBack _x;
-                };
-            } forEach allMapMarkers;
+        FW_preplacedMarkerNumber = count _orignalUserMarkers;
 
-            FW_preplacedMarkerNumber = count _orignalUserMarkers;
-
-            call FNC_removeForbiddenMarkers;
-        },
-        []
-    ] call CBA_fnc_waitUntilAndExecute;
-};
+        call FNC_removeForbiddenMarkers;
+    },
+    []
+] call CBA_fnc_waitUntilAndExecute;
