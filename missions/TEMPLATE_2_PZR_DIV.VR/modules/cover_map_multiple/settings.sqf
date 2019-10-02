@@ -25,7 +25,7 @@ _AOMarkers = [
 
 // default maps
 _AOMarkers = [
-    ["AO",true,0.3,"Normal",1]
+    ["AO",true,0.3,"Normal",1],
     ["AO_1",true,0.1,"Alternate Map",2]
 ];
 

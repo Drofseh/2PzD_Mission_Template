@@ -11,23 +11,25 @@
 FNC_MagazineConversion_AddNewMags = {
     params ["_OldMag","_NewMag","_oldMagCountCurrent","_newMagCountMax"];
 
+    if !(player canAdd _NewMag) exitWith {
+        [["You don't have room for that magazine."], true] call CBA_fnc_notify;
+    };
+
     private _convertTime = 0;
     private _nameOldMagazine = getText (configFile >> "CfgMagazines" >> _OldMag >> "displayName");
     private _nameNewMagazine = getText (configFile >> "CfgMagazines" >> _NewMag >> "displayName");
+    private _isBeltOldMagazine = getNumber (configFile >> "CfgMagazines" >> _OldMag >> "ace_isbelt");
+    private _isBeltNewMagazine = getNumber (configFile >> "CfgMagazines" >> _NewMag >> "ace_isbelt");
     private _oldMagCountMax = getNumber (configFile >> "CfgMagazines" >> _OldMag >> "count");
 
     // Set the time to run the progress bar based on the number of rounds that can be moved in one batch and the speed multiplier setting.
-    if (_oldMagCountCurrent < _newMagCountMax) then {
-        _convertTime = _oldMagCountCurrent * magazine_conversion_speedMultiplier;
-    } else {
-        _convertTime = _newMagCountMax * magazine_conversion_speedMultiplier;
-    };
+    _convertTime = (_oldMagCountCurrent min _newMagCountMax) * magazine_conversion_speedMultiplier;
+
     if (_oldMagCountMax < _newMagCountMax) then {
         _convertTime = _convertTime * ((_oldMagCountMax / _newMagCountMax) max 0.5);
     };
-
-    if !(player canAdd _NewMag) exitWith {
-        [["You don't have room for that magazine."], true] call CBA_fnc_notify;
+    if (_isBeltOldMagazine == 1 && {_isBeltOldMagazine == _isBeltNewMagazine} && {_oldMagCountMax > 49} && {_newMagCountMax > 49}) then {
+        _convertTime = _convertTime * 0.1;
     };
 
     // Call Ace Progress Bar for the time it takes to convert.

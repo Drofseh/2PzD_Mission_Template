@@ -28,7 +28,7 @@ FNC_Foreign_Weapons_reloadedEh = {
         if (_weaponLearning >= 100) then {
             (format ["You've used the %1 enough to become familiar with it.", _nameWeapon]) call CBA_fnc_notify;
             familiarWeapons_familiarWeapons pushBackUnique (toLower _weapon);
-            familiarWeapons_nameSpace setVariable [("format ["familiarWeapons%1",_nameWeapon]), _weaponLearning];
+            familiarWeapons_nameSpace setVariable [(format ["familiarWeapons%1",_nameWeapon]), _weaponLearning];
         };
     };
 };
