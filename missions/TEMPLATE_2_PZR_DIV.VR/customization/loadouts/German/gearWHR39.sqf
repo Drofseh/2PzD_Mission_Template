@@ -262,10 +262,10 @@
 #define WHR39_Weapon_MG \
         [ \
             [ \
-                [Ger_Mag_MG_50,1], \
+                [Ger_Mag_MG_sS50,1], \
                 [Ger_Weap_MG34], \
-                [Ger_Mag_MG_50,5,"vest"], \
-                [Ger_Mag_MG_50,3] \
+                [Ger_Mag_MG_sS50,5,"vest"], \
+                [Ger_Mag_MG_sS50,3] \
             ],[90], \
             [ \
                 [Ger_Mag_MG30,1], \
@@ -291,7 +291,7 @@
             _ammobearer = selectRandom _weaponsArray; \
             switch (_ammobearer) do { \
                 case Ger_Weap_MG34: { \
-                    [Ger_Mag_MG_50,COUNT,"backpack"] call FNC_AddItem; \
+                    [Ger_Mag_MG_sS50,COUNT,"backpack"] call FNC_AddItem; \
                 }; \
                 case Ger_Weap_MG30: { \
                     [Ger_Mag_MG30,COUNT,"backpack"] call FNC_AddItem; \
@@ -774,7 +774,7 @@
         [Ger_Weap_MG_T,1] call FNC_AddItem;
 
         //Extra
-        [Ger_Mag_MG_250,2,"backpack"] call FNC_AddItem;
+        [Ger_Mag_MG_sS250,2,"backpack"] call FNC_AddItem;
     };
 
     //HMG Richtschütze
@@ -794,9 +794,9 @@
         WHR39_Weapon_Enlisted_Secondary;
 
         //Primary Weapon
-        [Ger_Mag_MG_250,1] call FNC_AddItem;
+        [Ger_Mag_MG_sS250,1] call FNC_AddItem;
         [Ger_Weap_MG34] call FNC_AddItem;
-        [Ger_Mag_MG_250,4,"backpack"] call FNC_AddItem;
+        [Ger_Mag_MG_sS250,4,"backpack"] call FNC_AddItem;
 
         //Extra
     };
@@ -817,7 +817,7 @@
         WHR39_Weapon_Rifleman;
 
         //Extra
-        [Ger_Mag_MG_250,3,"backpack"] call FNC_AddItem;
+        [Ger_Mag_MG_sS250,3,"backpack"] call FNC_AddItem;
     };
 
     //Panzerbüchse Team

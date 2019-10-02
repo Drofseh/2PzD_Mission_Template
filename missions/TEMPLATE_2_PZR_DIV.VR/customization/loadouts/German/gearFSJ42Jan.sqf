@@ -327,7 +327,7 @@
         //Extra
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
+        [Ger_Mag_MG_sS50,1] call FNC_AddItem;
     };
 
     //Stellvertretender Gruppenführer
@@ -347,7 +347,7 @@
         //Extra
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
+        [Ger_Mag_MG_sS50,1] call FNC_AddItem;
     };
 
     //MG-Richtschütze
@@ -367,12 +367,12 @@
         FSJ42Jan_Weapon_Enlisted_Secondary;
 
         //Primary Weapon
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
+        [Ger_Mag_MG_sS50,1] call FNC_AddItem;
         [Ger_Weap_MG34] call FNC_AddItem;
-        [Ger_Mag_MG_50,5,"vest"] call FNC_AddItem;
+        [Ger_Mag_MG_sS50,5,"vest"] call FNC_AddItem;
 
         //Extra
-        [Ger_Mag_MG_50,3] call FNC_AddItem;
+        [Ger_Mag_MG_sS50,3] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
     };
 
@@ -394,7 +394,7 @@
 
         //Extra
         [GEN_ace_sparebarrel] call FNC_AddItem;
-        [Ger_Mag_MG_50,5] call FNC_AddItem;
+        [Ger_Mag_MG_sS50,5] call FNC_AddItem;
         [Ger_mg_neck] call FNC_AddItem;
     };
 
@@ -459,5 +459,5 @@
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
         [Ger_Gren_HE_SC,1] call FNC_AddItem;
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
-        [Ger_Mag_MG_50,1,"backpack"] call FNC_AddItem;
+        [Ger_Mag_MG_sS50,1,"backpack"] call FNC_AddItem;
     };
