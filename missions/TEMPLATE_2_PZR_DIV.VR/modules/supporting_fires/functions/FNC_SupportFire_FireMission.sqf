@@ -53,8 +53,9 @@ FNC_SupportFire_FireMission = {
         // systemChat "Fire mission canceled";
     };
 
-    if (_supportFire_target == "TargetLast") then {
+    if (_supportFire_target == "TargetLast" && {supportFire_firstRepeat}) then {
         _supportFire_adjustDir = format [" %1", supportFire_adjustmentDirection];
+        supportFire_firstRepeat = False;
     } else {
         // systemChat ("_supportFire_targetName - " + str _supportFire_targetName);
         _supportFire_adjustDir = "";

@@ -85,6 +85,7 @@
     _statementRepeat = {
         [[(format ["Target %1 will be repeated.<br/>Select adjustment if required, and the type of ammunition to use.",supportFire_previousTargetName])], true] call CBA_fnc_notify;
         supportFire_targetType = "TargetLast";
+        supportFire_firstRepeat = True;
     };
     _actionRepeat = ["Repeat Last Target","Repeat Last Target","Haas_WWII_Rebalance\UI\icon_supporting_fires_target_rep.paa",_statementRepeat,_conditionRepeat] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires","Select Target"], _actionRepeat] call ace_interact_menu_fnc_addActionToObject;

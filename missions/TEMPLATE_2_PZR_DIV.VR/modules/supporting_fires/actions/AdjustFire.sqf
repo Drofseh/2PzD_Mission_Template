@@ -6,7 +6,11 @@
         || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {"TargetLast" == supportFire_targetType}}
     };
     _statementAdjust = {
-        [["Select the direction and distance to adjust fire,"],[format ["Current adjustment is %1.", supportFire_adjustmentDirection]], true] call CBA_fnc_notify;
+        if (supportFire_adjustmentCoords isEqualTo [0,0]) then {
+            [["Select the direction and distance to adjust fire,"],[format ["No adjustment currently requested.", supportFire_adjustmentDirection]], true] call CBA_fnc_notify;
+        } else {
+            [["Select the direction and distance to adjust fire,"],[format ["Current adjustment is %1.", supportFire_adjustmentDirection]], true] call CBA_fnc_notify;
+        };
     };
     _actionAdjust = ["Adjust Fire","Adjust Fire","Haas_WWII_Rebalance\UI\icon_supporting_fires_adjust.paa",_statementAdjust,_conditionAdjust] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires"], _actionAdjust] call ace_interact_menu_fnc_addActionToObject;
@@ -16,7 +20,7 @@
         _statementAdjustNone = {
             supportFire_targetType = "TargetLast";
             supportFire_adjustmentCoords = [0,0];
-            supportFire_adjustmentDirection = "no adjustment";
+            supportFire_adjustmentDirection = "with no adjustment";
             [["No fire adjustment will be made"], true] call CBA_fnc_notify;
         };
         _actionAdjustNone = ["Remove Adjustment Direction","Remove Adjustment Direction","Haas_WWII_Rebalance\UI\icon_supporting_fires_adjust.paa",_statementAdjustNone,_conditionAdjustNone] call ace_interact_menu_fnc_createAction;
