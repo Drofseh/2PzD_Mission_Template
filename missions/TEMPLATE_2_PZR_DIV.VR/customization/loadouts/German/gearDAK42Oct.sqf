@@ -95,10 +95,10 @@
 #define DAK42Oct_Weapon_MG \
         [ \
             [ \
-                [Ger_Weap_MG42] \
+                [Ger_Weap_MG34] \
             ],[90], \
             [ \
-                [Ger_Weap_MG34] \
+                [Ger_Weap_MG42] \
             ],[10] \
         ] call FNC_AddItemRandomPercent;
 

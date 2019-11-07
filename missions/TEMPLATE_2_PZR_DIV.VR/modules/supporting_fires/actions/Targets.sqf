@@ -57,17 +57,26 @@
     };
 
     _statementVisualLoc = {
-        supportFire_terrainPosition = screenToWorld [0.5,0.5];
-        _supportFire_targetDistance = player distance2D supportFire_terrainPosition;
+        _supportFire_terrainPosition = screenToWorld [0.5,0.5];
+        _supportFire_cancelled = false;
+
+        _supportFire_targetDistance = player distance2D _supportFire_terrainPosition;
         if (_supportFire_targetDistance < (0.75 * (supportFire_originalShellDispersion + supportFire_originalShellAccuracy))) then {
-            [["Warning, target is on your position.<br/>Fire mission will not be completed."]] call CBA_fnc_notify;
+            [["Negative, target is too close to your position.<br/>Check your target."]] call CBA_fnc_notify;
+            _supportFire_cancelled = true;
         } else {
             if (_supportFire_targetDistance < (1.5 * (supportFire_originalShellDispersion + supportFire_originalShellAccuracy))) then {
                 [["Warning, target is danger close to your position."]] call CBA_fnc_notify;
-            } else {
-                [["Target is your mark."], true] call CBA_fnc_notify;
             };
+            supportFire_TargetVisualLocation = _supportFire_terrainPosition;
         };
+
+        if (_supportFire_cancelled) exitWith {
+            // systemChat "Fire mission canceled";
+        };
+
+        [["Target is your mark."], true] call CBA_fnc_notify;
+
         supportFire_targetType = "TargetVisual";
     };
     _actionVisualLoc = ["Visual Location","Visual Location","Haas_WWII_Rebalance\UI\icon_supporting_fires_target_vis.paa",_statementVisualLoc,_conditionVisual] call ace_interact_menu_fnc_createAction;

@@ -543,7 +543,7 @@ NEWTAB("III. C. Дружественные Силы (Friendly Forces):")
 <br/>*/
 ENDTAB;
 
-NEWTAB("IV. сигнальная (Signals):")
+NEWTAB("IV. Сигнальная (Signals):")
 <br/><font color='#FF8C00' size='16'>A. Call Signs:</font>
 <br/>
 <br/>HQ - Company HQ

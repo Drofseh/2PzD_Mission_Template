@@ -12,6 +12,7 @@
     // debug console is enabled for Brauer, Falk, Haas, Madsen, Sauer, and Schuttler by default. Add your UID to the list if you want to access the debug console during your mission
     // enableDebugConsole = 1; // 1 = Only for logged-in admins - This setting is superseded by the array above.
     enableTargetDebug = 1; //Enable CBA Target Debugging - This allows debugging on non-local machines.
+    unsafeCVL = 1;
 
     class Extended_PreInit_EventHandlers {
 

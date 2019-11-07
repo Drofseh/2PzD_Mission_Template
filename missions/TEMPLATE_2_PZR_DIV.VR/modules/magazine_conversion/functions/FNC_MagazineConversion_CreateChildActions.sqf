@@ -47,7 +47,7 @@ FNC_MagazineConversion_CreateChildActions = {
                 };
                 */
 
-                // This is a workaround for some IFA3 ammo that uses a special ammo with no `cartrige` model entry but should otherwise interchange.
+                // This is a workaround for some IFA3 ammo that uses a special ammo with no 'cartridge' model entry but should otherwise interchange.
                 if (_ammoClass == "") then {
                     _ammoClass = "No_Ammo_Class";
                 } else {
