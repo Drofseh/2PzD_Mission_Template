@@ -25,7 +25,7 @@
         [GEN_Gren_Smoke_R, 2] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
         [Rus_Mag_Mosin, 50] call FNC_AddItemVehicle;
-        [Rus_Mag_DP, 30] call FNC_AddItemVehicle;
+        [Rus_Mag_DP_Mixed_Ball_Red, 30] call FNC_AddItemVehicle;
         [Rus_Mag_PPSH_S, 5] call FNC_AddItemVehicle;
         [Rus_Mag_SVT40, 10] call FNC_AddItemVehicle;
         [GEN_Gren_Frag_P, 30] call FNC_AddItemVehicle;
@@ -50,7 +50,7 @@
         [GEN_Gren_Smoke_R, 2] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
         [Rus_Mag_Mosin, 20] call FNC_AddItemVehicle;
-        [Rus_Mag_DP, 10] call FNC_AddItemVehicle;
+        [Rus_Mag_DP_Mixed_Ball_Red, 10] call FNC_AddItemVehicle;
         [Rus_Mag_PPSH_S, 5] call FNC_AddItemVehicle;
         [Rus_Mag_SVT40, 10] call FNC_AddItemVehicle;
         [GEN_Gren_Frag_P, 10] call FNC_AddItemVehicle;

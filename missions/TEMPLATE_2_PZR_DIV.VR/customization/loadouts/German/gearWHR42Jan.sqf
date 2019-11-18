@@ -327,7 +327,7 @@
         //Extra
         [Ger_Gren_HE_SC,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Mag_MG_sS50,1] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_sS,1] call FNC_AddItem;
     };
 
     //Stellvertretender Gruppenführer
@@ -348,7 +348,7 @@
         //Extra
         [Ger_Gren_HE_SC,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Mag_MG_sS50,1] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_sS,1] call FNC_AddItem;
     };
 
     //Gefreiter
@@ -368,7 +368,7 @@
         //Extra
         [Ger_Gren_HE_SC,1] call FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Mag_MG_sS50,1] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_sS,1] call FNC_AddItem;
     };
 
     //MG-Richtschütze
@@ -387,12 +387,12 @@
         WHR42Jan_Weapon_Enlisted_Secondary;
 
         //Primary Weapon
-        [Ger_Mag_MG_sS50,1] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_sS,1] call FNC_AddItem;
         [Ger_Weap_MG34] call FNC_AddItem;
-        [Ger_Mag_MG_sS50,5,"vest"] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_sS,5,"vest"] call FNC_AddItem;
 
         //Extra
-        [Ger_Mag_MG_sS50,3] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_sS,3] call FNC_AddItem;
     };
 
     //MG-Hilfsschütze
@@ -412,7 +412,7 @@
         WHR42Jan_Weapon_Rifleman;
 
         //Extra
-        [Ger_Mag_MG_sS50,3] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_sS,3] call FNC_AddItem;
     };
 
     //MG-Munitionsträger
@@ -431,7 +431,7 @@
         WHR42Jan_Weapon_Rifleman;
 
         //Extra
-        [Ger_Mag_MG_sS50,5] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_sS,5] call FNC_AddItem;
     };
 
     //Grenadier
@@ -491,7 +491,7 @@
         //Extra
         [Ger_Gren_HE_SC,1] call FNC_AddItem;
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
-        [Ger_Mag_MG_sS50,2,"backpack"] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_sS,2,"backpack"] call FNC_AddItem;
     };
 
 //Weapon Truppen
@@ -583,7 +583,7 @@
         [Ger_Weap_MG_T,1] call FNC_AddItem;
 
         //Extra
-        [Ger_Mag_MG_sS250,2] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_sS,2] call FNC_AddItem;
     };
 
     //HMG Richtschütze
@@ -603,13 +603,13 @@
         WHR42Jan_Weapon_Enlisted_Secondary;
 
         //Primary Weapon
-        [Ger_Mag_MG_sS250,1] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_sS,1] call FNC_AddItem;
         [Ger_Weap_MG34] call FNC_AddItem;
-        [Ger_Mag_MG_sS250,1] call FNC_AddItem;
-        [Ger_Mag_MG_sS150,1] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_sS,1] call FNC_AddItem;
+        [Ger_Mag_MG_150_Mixed_sS,1] call FNC_AddItem;
 
         //Extra
-        [Ger_Mag_MG_sS250,2] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_sS,2] call FNC_AddItem;
     };
 
     //HMG Munitionsträger
@@ -628,8 +628,8 @@
         WHR42Jan_Weapon_Rifleman;
 
         //Extra
-        [Ger_Mag_MG_sS250,2] call FNC_AddItem;
-        [Ger_Mag_MG_sS150,1] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_sS,2] call FNC_AddItem;
+        [Ger_Mag_MG_150_Mixed_sS,1] call FNC_AddItem;
     };
 
     //Panzerbüchse Team

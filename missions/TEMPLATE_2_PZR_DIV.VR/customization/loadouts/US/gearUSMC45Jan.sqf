@@ -79,23 +79,23 @@
         ],[30],
         [//M1A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1A1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[21],
         [//M1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[10],
         [//M50 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[3],
         [//M2 Carbine
         [USMC_Vest_M1C],
@@ -111,23 +111,23 @@
         ],[1],
         [//M55 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[1],
         [//M1928A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1928A1],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1],
         [//M1928 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
+        [US_Mag_M1T_20,1],
         [US_Weap_M1928],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
 
@@ -167,23 +167,23 @@
         ],[30],
         [//M1A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1A1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[21],
         [//M1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[10],
         [//M50 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[3],
         [//M2 Carbine
         [USMC_Vest_M1C],
@@ -199,23 +199,23 @@
         ],[1],
         [//M55 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[1],
         [//M1928A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1928A1],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1],
         [//M1928 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
+        [US_Mag_M1T_20,1],
         [US_Weap_M1928],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
 
@@ -392,23 +392,23 @@
         ],[30],
         [//M1A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1A1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[21],
         [//M1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[10],
         [//M50 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[3],
         [//M2 Carbine
         [USMC_Vest_M1C],
@@ -424,23 +424,23 @@
         ],[1],
         [//M55 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[1],
         [//M1928A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1928A1],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1],
         [//M1928 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
+        [US_Mag_M1T_20,1],
         [US_Weap_M1928],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
 
@@ -738,23 +738,23 @@
         ],[30],
         [//M1A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1A1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[21],
         [//M1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[10],
         [//M50 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[3],
         [//M2 Carbine
         [USMC_Vest_M1C],
@@ -770,23 +770,23 @@
         ],[1],
         [//M55 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[1],
         [//M1928A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1928A1],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1],
         [//M1928 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
+        [US_Mag_M1T_20,1],
         [US_Weap_M1928],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
 
@@ -820,23 +820,23 @@
         ],[30],
         [//M1A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1A1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[21],
         [//M1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[10],
         [//M50 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[3],
         [//M2 Carbine
         [USMC_Vest_M1C],
@@ -852,23 +852,23 @@
         ],[1],
         [//M55 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[1],
         [//M1928A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1928A1],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1],
         [//M1928 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
+        [US_Mag_M1T_20,1],
         [US_Weap_M1928],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
 
@@ -960,11 +960,11 @@
         USMC_Default_Equipment;
 
         //Primary Weapon
-        [US_Mag_BAR,1] call FNC_AddItem;
+        [US_Mag_BAR_Mixed_Ball,1] call FNC_AddItem;
         [US_Weap_BAR] call FNC_AddItem;
         [US_Acc_BAR_Bipod] call FNC_AddItem;
-        [US_Mag_BAR,6,"vest"] call FNC_AddItem;
-        [US_Mag_BAR,9,"backpack"] call FNC_AddItem;
+        [US_Mag_BAR_Mixed_Ball,6,"vest"] call FNC_AddItem;
+        [US_Mag_BAR_Mixed_Ball,9,"backpack"] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -1032,7 +1032,7 @@
 
         //Extra
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
-        [US_Mag_BAR,10,"backpack"] call FNC_AddItem;
+        [US_Mag_BAR_Mixed_Ball,10,"backpack"] call FNC_AddItem;
     };
 
     //Automatic Rifle Ammo Bearer
@@ -1103,7 +1103,7 @@
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [US_Mag_BAR,15,"backpack"] call FNC_AddItem;
+        [US_Mag_BAR_Mixed_Ball,15,"backpack"] call FNC_AddItem;
     };
 
     //Rifleman
@@ -1175,7 +1175,7 @@
         //Extra
         [GEN_Gren_Frag_P,2] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
-        [US_Mag_BAR,7,"backpack"] call FNC_AddItem;
+        [US_Mag_BAR_Mixed_Ball,7,"backpack"] call FNC_AddItem;
     };
 
 //Machine Gun Team
@@ -1241,7 +1241,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [US_Mag_M1919_250,1] call FNC_AddItem;
+        [US_Mag_M1919_250_Mixed_Ball,1] call FNC_AddItem;
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
     };
@@ -1263,9 +1263,9 @@
         [US_Mag_M1911,2,"uniform"] call FNC_AddItem;
 
         //Primary Weapon
-        [US_Mag_M1919_250,1] call FNC_AddItem;
+        [US_Mag_M1919_250_Mixed_Ball,1] call FNC_AddItem;
         [US_Weap_M1919A4] call FNC_AddItem;
-        [US_Mag_M1919_250,3] call FNC_AddItem;
+        [US_Mag_M1919_250_Mixed_Ball,3] call FNC_AddItem;
     };
 
     //Assistant Machine Gunner
@@ -1330,7 +1330,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [US_Mag_M1919_250,2] call FNC_AddItem;
+        [US_Mag_M1919_250_Mixed_Ball,2] call FNC_AddItem;
     };
 
     //Machine Gun Ammo Bearer
@@ -1394,7 +1394,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [US_Mag_M1919_250,4] call FNC_AddItem;
+        [US_Mag_M1919_250_Mixed_Ball,4] call FNC_AddItem;
     };
 
 //Mortar Team
@@ -1806,23 +1806,23 @@
         ],[35],
         [//M1A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1A1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[35],
         [//M1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[17],
         [//M55 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[5],
         [//M1 Carbine
         [USMC_Vest_M1C],
@@ -1832,23 +1832,23 @@
         ],[5],
         [//M50 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[1],
         [//M1928A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1928A1],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1],
         [//M1928 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
+        [US_Mag_M1T_20,1],
         [US_Weap_M1928],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
 
@@ -1878,23 +1878,23 @@
         ],[35],
         [//M1A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1A1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[35],
         [//M1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"]
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"]
         ],[17],
         [//M55 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[5],
         [//M1 Carbine
         [USMC_Vest_M1C],
@@ -1904,23 +1904,23 @@
         ],[5],
         [//M50 Reising
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"]
+        [US_Mag_M50_20,5,"vest"]
         ],[1],
         [//M1928A1 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1928A1],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1],
         [//M1928 Thompson
         [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
+        [US_Mag_M1T_20,1],
         [US_Weap_M1928],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"]
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"]
         ],[1]
         ] call FNC_AddItemRandomPercent;
 
@@ -1968,10 +1968,10 @@
         ],[5],
         [//M1A1 Thompson & M1911
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1A1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"],
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"],
         [US_Mag_M1911,1],
         [US_Weap_M1911],
         [US_Mag_M1911,3,"uniform"]
@@ -1987,19 +1987,19 @@
         ],[1],
         [//M55 Reising & M1911
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M55],
-        [US_Mag_M50_1,5,"vest"],
+        [US_Mag_M50_20,5,"vest"],
         [US_Mag_M1911,1],
         [US_Weap_M1911],
         [US_Mag_M1911,3,"uniform"]
         ],[1],
         [//M1 Thompson & M1911
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1T],
-        [US_Mag_M1T_2,1,"vest"],
-        [US_Mag_M1T_1,4,"vest"],
+        [US_Mag_M1T_20,1,"vest"],
+        [US_Mag_M1T_30,4,"vest"],
         [US_Mag_M1911,1],
         [US_Weap_M1911],
         [US_Mag_M1911,3,"uniform"]
@@ -2015,29 +2015,29 @@
         ],[1],
         [//M1928A1 Thompson & M1911
         [USMC_Vest_M1T],
-        [US_Mag_M1T_1,1],
+        [US_Mag_M1T_30,1],
         [US_Weap_M1928A1],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"],
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"],
         [US_Mag_M1911,1],
         [US_Weap_M1911],
         [US_Mag_M1911,3,"uniform"]
         ],[1],
         [//M1928 Thompson & M1911
         [USMC_Vest_M1T],
-        [US_Mag_M1T_2,1],
+        [US_Mag_M1T_20,1],
         [US_Weap_M1928],
-        [US_Mag_M1T_2,2,"vest"],
-        [US_Mag_M1T_1,3,"vest"],
+        [US_Mag_M1T_20,2,"vest"],
+        [US_Mag_M1T_30,3,"vest"],
         [US_Mag_M1911,1],
         [US_Weap_M1911],
         [US_Mag_M1911,3,"uniform"]
         ],[1],
         [//M50 Reising & M1911
         [USMC_Vest_M1T],
-        [US_Mag_M50_1,1],
+        [US_Mag_M50_20,1],
         [US_Weap_M50],
-        [US_Mag_M50_1,5,"vest"],
+        [US_Mag_M50_20,5,"vest"],
         [US_Mag_M1911,1],
         [US_Weap_M1911],
         [US_Mag_M1911,3,"uniform"]

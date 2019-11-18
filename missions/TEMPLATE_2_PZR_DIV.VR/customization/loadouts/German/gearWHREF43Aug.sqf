@@ -131,22 +131,22 @@
 #define WHREF43Aug_Weapon_MG \
         [ \
             [ \
-                [Ger_Mag_MG_50,1], \
+                [Ger_Mag_MG_50_Mixed_SmE,1], \
                 [Ger_Weap_MG34], \
-                [Ger_Mag_MG_50,5,"vest"], \
-                [Ger_Mag_MG_50,3] \
+                [Ger_Mag_MG_50_Mixed_SmE,5,"vest"], \
+                [Ger_Mag_MG_50_Mixed_SmE,3] \
             ],[52], \
             [ \
-                [Rus_Mag_DP,1], \
+                [Rus_Mag_DP_Mixed_Ball_Red,1], \
                 [Rus_Weap_DP], \
-                [Rus_Mag_DP,5,"vest"], \
-                [Rus_Mag_DP,3] \
+                [Rus_Mag_DP_Mixed_Ball_Red,5,"vest"], \
+                [Rus_Mag_DP_Mixed_Ball_Red,3] \
             ],[35], \
             [ \
-                [Ger_Mag_MG_50,1], \
+                [Ger_Mag_MG_50_Mixed_SmE,1], \
                 [Ger_Weap_MG42], \
-                [Ger_Mag_MG_50,5,"vest"], \
-                [Ger_Mag_MG_50,3] \
+                [Ger_Mag_MG_50_Mixed_SmE,5,"vest"], \
+                [Ger_Mag_MG_50_Mixed_SmE,3] \
             ],[13] \
         ] call FNC_AddItemRandomPercent;
 
@@ -177,16 +177,16 @@
             _ammobearer = selectRandom _weaponsArray; \
             switch (_ammobearer) do { \
                 case Ger_Weap_MG34: { \
-                    [Ger_Mag_MG_50,COUNT,"backpack"] call FNC_AddItem; \
+                    [Ger_Mag_MG_50_Mixed_SmE,COUNT,"backpack"] call FNC_AddItem; \
                 }; \
                 case Rus_Weap_DP: { \
-                    [Rus_Mag_DP,COUNT,"backpack"] call FNC_AddItem; \
+                    [Rus_Mag_DP_Mixed_Ball_Red,COUNT,"backpack"] call FNC_AddItem; \
                 }; \
                 case Ger_Weap_MG42: { \
-                    [Ger_Mag_MG_50,COUNT,"backpack"] call FNC_AddItem; \
+                    [Ger_Mag_MG_50_Mixed_SmE,COUNT,"backpack"] call FNC_AddItem; \
                 }; \
                 case Ger_Weap_MG30: { \
-                    [Ger_Mag_MG30,COUNT,"backpack"] call FNC_AddItem; \
+                    [Ger_Mag_MG30_Mixed_sS,COUNT,"backpack"] call FNC_AddItem; \
                 }; \
             }; \
         };
@@ -755,7 +755,7 @@
         [Ger_Weap_MG_T,1] call FNC_AddItem;
 
         //Extra
-        [Ger_Mag_MG_250,2] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,2] call FNC_AddItem;
     };
 
     //HMG Richtschütze
@@ -775,13 +775,13 @@
         WHREF43Aug_Weapon_Enlisted_Secondary;
 
         //Primary Weapon
-        [Ger_Mag_MG_250,1] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,1] call FNC_AddItem;
         WHREF43Aug_Weapon_MG_SWT;
-        [Ger_Mag_MG_250,1] call FNC_AddItem;
-        [Ger_Mag_MG_150,1] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,1] call FNC_AddItem;
+        [Ger_Mag_MG_150_Mixed_SmE,1] call FNC_AddItem;
 
         //Extra
-        [Ger_Mag_MG_250,2] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,2] call FNC_AddItem;
     };
 
     //HMG Munitionsträger
@@ -800,8 +800,8 @@
         WHREF43Aug_Weapon_Rifleman;
 
         //Extra
-        [Ger_Mag_MG_250,2] call FNC_AddItem;
-        [Ger_Mag_MG_150,1] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,2] call FNC_AddItem;
+        [Ger_Mag_MG_150_Mixed_SmE,1] call FNC_AddItem;
     };
 
     //Panzerbüchse Team

@@ -104,7 +104,7 @@
                 [Rus_Mag_PPD40,2,"vest"] \
             ],[50], \
             [/*PPD-40*/ \
-                [Rus_Vest_PPSH_D2], \
+                [Rus_Vest_PPSH_D1], \
                 [Rus_Mag_PPD40,1], \
                 [Rus_Weap_PPD40], \
                 [Rus_Mag_PPD40,2,"vest"] \
@@ -280,7 +280,7 @@
 
         //Extra
         [Rus_Gren_Frag_S,1] call FNC_AddItem;
-        [Rus_Mag_DP,1] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,1] call FNC_AddItem;
     };
 
     //Team Leader
@@ -299,7 +299,7 @@
 
         //Extra
         [Rus_Gren_Frag_S,1] call FNC_AddItem;
-        [Rus_Mag_DP,1] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,1] call FNC_AddItem;
     };
 
     //Submachine Gunner
@@ -314,7 +314,7 @@
 
         //Extra
         [Rus_Gren_Frag_S,1] call FNC_AddItem;
-        [Rus_Mag_DP,1] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,1] call FNC_AddItem;
     };
 
     //Grenadier
@@ -355,7 +355,7 @@
         //Extra
         [Rus_Gren_Frag_S,1] call FNC_AddItem;
         [Rus_Gren_Frag_P,1] call FNC_AddItem;
-        [Rus_Mag_DP,1,"backpack"] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,1,"backpack"] call FNC_AddItem;
     };
 
     //Machine Gunner
@@ -373,10 +373,10 @@
         R41Jan_Weapon_Secondary;
 
         //Primary Weapon
-        [Rus_Mag_DP,1] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,1] call FNC_AddItem;
         [Rus_Weap_DP] call FNC_AddItem;
-        [Rus_Mag_DP,3,"vest"] call FNC_AddItem;
-        [Rus_Mag_DP,6,"backpack"] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,3,"vest"] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,6,"backpack"] call FNC_AddItem;
     };
 
     //MG Assistant
@@ -395,7 +395,7 @@
         [Rus_Gren_Frag_S,1] call FNC_AddItem;
 
         //Extra
-        [Rus_Mag_DP,6,"backpack"] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,6,"backpack"] call FNC_AddItem;
     };
 
 //Heavy Weapons Teams

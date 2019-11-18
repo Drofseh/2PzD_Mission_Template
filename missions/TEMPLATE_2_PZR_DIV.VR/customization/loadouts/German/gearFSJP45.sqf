@@ -402,7 +402,7 @@
         FSJP45Jan_Weapon_Enlisted_Secondary;
 
         //Primary Weapon
-        [Ger_Mag_MG_50,5,"vest"] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,5,"vest"] call FNC_AddItem;
 
         //Extra
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;

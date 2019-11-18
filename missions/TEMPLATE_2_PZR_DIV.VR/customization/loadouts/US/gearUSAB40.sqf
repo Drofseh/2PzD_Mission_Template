@@ -45,14 +45,14 @@
 #define USAB40_Weapon_SMG \
         [ \
             [ \
-                [US_Mag_M1T_2,1], \
+                [US_Mag_M1T_20,1], \
                 [US_Weap_M1928A1], \
-                [US_Mag_M1T_2,5,"vest"] \
+                [US_Mag_M1T_20,5,"vest"] \
             ],[60], \
             [ \
-                [US_Mag_M1T_2,1], \
+                [US_Mag_M1T_20,1], \
                 [US_Weap_M1928], \
-                [US_Mag_M1T_2,5,"vest"] \
+                [US_Mag_M1T_20,5,"vest"] \
             ],[40] \
         ] call FNC_AddItemRandomPercent;
 
@@ -325,9 +325,9 @@
         [US_Mag_M1911,2,"uniform"] call FNC_AddItem;
 
         //Primary Weapon
-        [US_Mag_M1919_250,1] call FNC_AddItem;
+        [US_Mag_M1919_250_Mixed_Ball,1] call FNC_AddItem;
         [US_Weap_M1919A4] call FNC_AddItem;
-        [US_Mag_M1919_250,3] call FNC_AddItem;
+        [US_Mag_M1919_250_Mixed_Ball,3] call FNC_AddItem;
     };
 
     //Assistant Machine Gunner
@@ -349,7 +349,7 @@
         [US_Mag_M1903,20] call FNC_AddItem;
 
         //Extra
-        [US_Mag_M1919_250,2] call FNC_AddItem;
+        [US_Mag_M1919_250_Mixed_Ball,2] call FNC_AddItem;
     };
 
     //Machine Gun Ammo Bearer
@@ -376,7 +376,7 @@
         [US_Mag_M1903,20,"vest"] call FNC_AddItem;
 
         //Extra
-        [US_Mag_M1919_250,4] call FNC_AddItem;
+        [US_Mag_M1919_250_Mixed_Ball,4] call FNC_AddItem;
     };
 
     //Automatic Rifleman
@@ -391,11 +391,11 @@
         US_Default_Equipment;
 
         //Primary Weapon
-        [US_Mag_BAR,1] call FNC_AddItem;
+        [US_Mag_BAR_Mixed_Ball,1] call FNC_AddItem;
         [US_Weap_BAR] call FNC_AddItem;
         [US_Acc_BAR_Bipod] call FNC_AddItem;
-        [US_Mag_BAR,6,"vest"] call FNC_AddItem;
-        [US_Mag_BAR,9] call FNC_AddItem;
+        [US_Mag_BAR_Mixed_Ball,6,"vest"] call FNC_AddItem;
+        [US_Mag_BAR_Mixed_Ball,9] call FNC_AddItem;
 
         //Extra
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -420,7 +420,7 @@
 
         //Extra
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
-        [US_Mag_BAR,10] call FNC_AddItem;
+        [US_Mag_BAR_Mixed_Ball,10] call FNC_AddItem;
     };
 
     //Automatic Rifle Ammo Bearer
@@ -448,7 +448,7 @@
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
-        [US_Mag_BAR,15] call FNC_AddItem;
+        [US_Mag_BAR_Mixed_Ball,15] call FNC_AddItem;
     };
 
     //Rifleman

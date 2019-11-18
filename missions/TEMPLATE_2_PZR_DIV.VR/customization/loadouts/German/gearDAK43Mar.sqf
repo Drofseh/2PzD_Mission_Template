@@ -352,7 +352,7 @@
             ],[34]
         ] call FNC_AddItemRandomPercent;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,1] call FNC_AddItem;
     };
 
     //Stellvertretender Gruppenführer
@@ -380,7 +380,7 @@
             ],[34]
         ] call FNC_AddItemRandomPercent;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,1] call FNC_AddItem;
     };
 
     //Gefreiter
@@ -407,7 +407,7 @@
             ],[34]
         ] call FNC_AddItemRandomPercent;
         [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,1] call FNC_AddItem;
     };
 
     //MG-Richtschütze
@@ -426,12 +426,12 @@
         DAK43Mar_Weapon_Pistol_Enl;
 
         //Primary Weapon
-        [Ger_Mag_MG_50,1] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,1] call FNC_AddItem;
         DAK43Mar_Weapon_MG;
-        [Ger_Mag_MG_50,4,"vest"] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,4,"vest"] call FNC_AddItem;
 
         //Extra
-        [Ger_Mag_MG_50,3] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,3] call FNC_AddItem;
     };
 
     //MG-Hilfsschütze
@@ -451,7 +451,7 @@
         DAK43Mar_Weapon_Rifle;
 
         //Extra
-        [Ger_Mag_MG_50,3] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,3] call FNC_AddItem;
     };
 
     //MG-Munitionsträger
@@ -470,7 +470,7 @@
         DAK43Mar_Weapon_Rifle;
 
         //Extra
-        [Ger_Mag_MG_50,5] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,5] call FNC_AddItem;
     };
 
     //Grenadier
@@ -545,7 +545,7 @@
             ],[34]
         ] call FNC_AddItemRandomPercent;
         [Ger_Gren_Frag_P,1] call FNC_AddItem;
-        [Ger_Mag_MG_50,1,"backpack"] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,1,"backpack"] call FNC_AddItem;
     };
 
 //Weapon Truppen
@@ -637,7 +637,7 @@
         [Ger_Weap_MG_T,1] call FNC_AddItem;
 
         //Extra
-        [Ger_Mag_MG_250,2] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,2] call FNC_AddItem;
     };
 
     //HMG Richtschütze
@@ -657,13 +657,13 @@
         DAK43Mar_Weapon_Pistol_Enl;
 
         //Primary Weapon
-        [Ger_Mag_MG_250,1] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,1] call FNC_AddItem;
         DAK43Mar_Weapon_MG;
-        [Ger_Mag_MG_250,1] call FNC_AddItem;
-        [Ger_Mag_MG_150,1] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,1] call FNC_AddItem;
+        [Ger_Mag_MG_150_Mixed_SmE,1] call FNC_AddItem;
 
         //Extra
-        [Ger_Mag_MG_250,2] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,2] call FNC_AddItem;
     };
 
     //HMG Munitionsträger
@@ -682,8 +682,8 @@
         DAK43Mar_Weapon_Rifle;
 
         //Extra
-        [Ger_Mag_MG_250,2] call FNC_AddItem;
-        [Ger_Mag_MG_150,1] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,2] call FNC_AddItem;
+        [Ger_Mag_MG_150_Mixed_SmE,1] call FNC_AddItem;
     };
 
     //Panzerbüchse Team

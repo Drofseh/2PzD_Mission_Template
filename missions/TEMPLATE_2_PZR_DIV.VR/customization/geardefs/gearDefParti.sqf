@@ -3,20 +3,21 @@
 //=== Clothes ===
 
 //Uniform
+    //Random, includes Uni_1 and Uni_2
 #define Parti_Uni_ran           ["U_LIB_CIV_Citizen_1"],["U_LIB_CIV_Citizen_2"],["U_LIB_CIV_Citizen_3"],["U_LIB_CIV_Citizen_4"],["U_LIB_CIV_Citizen_5"],["U_LIB_CIV_Citizen_6"],["U_LIB_CIV_Citizen_7"],["U_LIB_CIV_Citizen_8"],["U_LIB_CIV_Woodlander_1"],["U_LIB_CIV_Woodlander_2"],["U_LIB_CIV_Woodlander_3"],["U_LIB_CIV_Woodlander_4"],["U_LIB_CIV_Villager_1"],["U_LIB_CIV_Villager_2"],["U_LIB_CIV_Villager_3"],["U_LIB_CIV_Villager_4"]
-//Random, includes Uni_1 and Uni_2
+    //Leather Jackets, Turtlenecks, Slacks
 #define Parti_Uni_1_r           ["U_LIB_CIV_Citizen_1"],["U_LIB_CIV_Citizen_2"],["U_LIB_CIV_Citizen_3"],["U_LIB_CIV_Citizen_4"],["U_LIB_CIV_Citizen_5"],["U_LIB_CIV_Citizen_6"],["U_LIB_CIV_Citizen_7"],["U_LIB_CIV_Citizen_8"],["U_LIB_CIV_Woodlander_1"],["U_LIB_CIV_Woodlander_2"],["U_LIB_CIV_Woodlander_3"],["U_LIB_CIV_Woodlander_4"]
-//Leather Jackets, Turtlenecks, Slacks
+    //Fat button up shirt, slacks, rubber boots
 #define Parti_Uni_2_r           ["U_LIB_CIV_Villager_1"],["U_LIB_CIV_Villager_2"],["U_LIB_CIV_Villager_3"],["U_LIB_CIV_Villager_4"]
-//Fat button up shirt, slacks, rubber boots
+    //Suits
 #define Parti_Uni_3_r           ["U_LIB_CIV_Functionary_1"],["U_LIB_CIV_Functionary_2"],["U_LIB_CIV_Functionary_3"],["U_LIB_CIV_Functionary_4"]
-//Suits
+    //Lab Coats
 #define Parti_Uni_Lab_r         ["U_LIB_CIV_Assistant"],["U_LIB_CIV_Assistant_2"],["U_LIB_CIV_Doctor"],["U_LIB_CIV_Schoolteacher"],["U_LIB_CIV_Schoolteacher_2"]
-//Lab Coats
+    //Orthodox Priest Robes
 #define Parti_Uni_Priest        "U_LIB_CIV_Priest"
-//Orthodox Priest Robes
+    //Partisan appropriate uniforms
 #define Parti_Uni_r             ["U_BG_Guerilla3_1"],["U_LIB_CIV_Citizen_4"],["U_LIB_CIV_Citizen_5"],["U_LIB_CIV_Citizen_6"],["U_LIB_CIV_Villager_3"],["U_LIB_CIV_Woodlander_1"],["U_LIB_CIV_Woodlander_3"],["U_LIB_CIV_Woodlander_4"]
-//Partisan appropriate uniforms
+
 
 //Vests
 #define Parti_Vest_r            ["V_LIB_SOV_RA_Belt"],["V_LIB_GER_OfficerBelt"]

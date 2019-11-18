@@ -20,8 +20,8 @@
 
     //Platoon level or higher leader
     case "PGerE45_PC" : {
-        [Civ_Uni_ran] call FNC_addItemRandom;
-        [Civ_Uni_r] call FNC_addItemRandom;
+        [Parti_Uni_r] call FNC_addItemRandom;
+        [Parti_Vest_r] call FNC_addItemRandom;
         [Civ_BP] call FNC_addItem;
         [Civ_Beret] call FNC_addItem;
         [Civ_Face_Bino] call FNC_addItem;
@@ -63,8 +63,8 @@
 
     //Squad or team level leader
     case "PGerE45_SL" : {
-        [Civ_Uni_ran] call FNC_addItemRandom;
-        [Civ_Uni_r] call FNC_addItemRandom;
+        [Parti_Uni_r] call FNC_addItemRandom;
+        [Parti_Vest_r] call FNC_addItemRandom;
         [Civ_BP] call FNC_addItem;
         [Civ_Beret] call FNC_addItem;
         [Civ_Face_Bino] call FNC_addItem;
@@ -116,8 +116,8 @@
 
     //Machine Gunner
     case "PGerE45_MG" : {
-        [Civ_Uni_ran] call FNC_addItemRandom;
-        [Civ_Uni_r] call FNC_addItemRandom;
+        [Parti_Uni_r] call FNC_addItemRandom;
+        [Parti_Vest_r] call FNC_addItemRandom;
         [Civ_BP_MG_r] call FNC_addItemRandom;
         _unit removeItemFromBackpack "fow_50Rnd_792x57";
         [Civ_Hat_r] call FNC_addItemRandom;
@@ -129,14 +129,14 @@
         //Primary Weapon
         [
             [//MG43
-                [Ger_Mag_MG_50,1],
+                [Ger_Mag_MG_50_Mixed_SmE,1],
                 [Ger_Weap_MG34],
-                [Ger_Mag_MG_50,2]
+                [Ger_Mag_MG_50_Mixed_SmE,2]
             ],[50],
             [//MG42
-                [Ger_Mag_MG_50,1],
+                [Ger_Mag_MG_50_Mixed_SmE,1],
                 [Ger_Weap_MG42],
-                [Ger_Mag_MG_50,2]
+                [Ger_Mag_MG_50_Mixed_SmE,2]
             ],[25]
         ] call FNC_AddItemRandomPercent;
 
@@ -165,13 +165,13 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [Ger_Mag_MG_50,6] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,6] call FNC_AddItem;
     };
 
     //Machine Gun Assistant
     case "PGerE45_MGA" : {
-        [Civ_Uni_ran] call FNC_addItemRandom;
-        [Civ_Uni_r] call FNC_addItemRandom;
+        [Parti_Uni_r] call FNC_addItemRandom;
+        [Parti_Vest_r] call FNC_addItemRandom;
         [Civ_BP_MG_r] call FNC_addItemRandom;
         _unit removeItemFromBackpack "fow_50Rnd_792x57";
         [Civ_Hat_r] call FNC_addItemRandom;
@@ -416,13 +416,13 @@
         };
 
         //Extra
-        [Ger_Mag_MG_50,6] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,6] call FNC_AddItem;
     };
 
     //Partisan
     case "PGerE45_Parti" : {
-        [Civ_Uni_ran] call FNC_addItemRandom;
-        [Civ_Uni_r] call FNC_addItemRandom;
+        [Parti_Uni_r] call FNC_addItemRandom;
+        [Parti_Vest_r] call FNC_addItemRandom;
         [Civ_BP_r] call FNC_addItemRandom;
         [Civ_Hat_r] call FNC_addItemRandom;
         [Civ_Face_r] call FNC_addItemRandom;
@@ -703,7 +703,7 @@
                         [Ger_Gren_HE_SC,1]
                     ],[33]
                 ] call FNC_AddItemRandomPercent;
-                [Ger_Mag_MG_50,1] call FNC_addItem;
+                [Ger_Mag_MG_50_Mixed_SmE,1] call FNC_addItem;
             };
         };
     };

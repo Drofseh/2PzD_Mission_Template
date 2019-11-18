@@ -20,8 +20,8 @@
 
     //Platoon level or higher leader
     case "PRus45_PC" : {
-        [Civ_Uni_ran] call FNC_addItemRandom;
-        [Civ_Uni_r] call FNC_addItemRandom;
+        [Parti_Uni_r] call FNC_addItemRandom;
+        [Parti_Vest_r] call FNC_addItemRandom;
         [Civ_BP] call FNC_addItem;
         [Civ_Beret] call FNC_addItem;
         [Civ_Face_Bino] call FNC_addItem;
@@ -63,8 +63,8 @@
 
     //Squad or team level leader
     case "PRus45_SL" : {
-        [Civ_Uni_ran] call FNC_addItemRandom;
-        [Civ_Uni_r] call FNC_addItemRandom;
+        [Parti_Uni_r] call FNC_addItemRandom;
+        [Parti_Vest_r] call FNC_addItemRandom;
         [Civ_BP] call FNC_addItem;
         [Civ_Beret] call FNC_addItem;
         [Civ_Face_Bino] call FNC_addItem;
@@ -116,8 +116,8 @@
 
     //Machine Gunner
     case "PRus45_MG" : {
-        [Civ_Uni_ran] call FNC_addItemRandom;
-        [Civ_Uni_r] call FNC_addItemRandom;
+        [Parti_Uni_r] call FNC_addItemRandom;
+        [Parti_Vest_r] call FNC_addItemRandom;
         [Civ_BP_MG_r] call FNC_addItemRandom;
         _unit removeItemFromBackpack "fow_50Rnd_792x57";
         [Civ_Hat_r] call FNC_addItemRandom;
@@ -127,9 +127,9 @@
         Parti_Default_Equipment;
 
         //Primary Weapon
-        [Rus_Mag_DP,1] call FNC_addItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,1] call FNC_addItem;
         [Rus_Weap_DP] call FNC_addItem;
-        [Rus_Mag_DP,2] call FNC_addItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,2] call FNC_addItem;
 
         //Secondary Weapon
         [
@@ -156,13 +156,13 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [Rus_Mag_DP,6] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,6] call FNC_AddItem;
     };
 
     //Machine Gun Assistant
     case "PRus45_MGA" : {
-        [Civ_Uni_ran] call FNC_addItemRandom;
-        [Civ_Uni_r] call FNC_addItemRandom;
+        [Parti_Uni_r] call FNC_addItemRandom;
+        [Parti_Vest_r] call FNC_addItemRandom;
         [Civ_BP_MG_r] call FNC_addItemRandom;
         _unit removeItemFromBackpack "fow_50Rnd_792x57";
         [Civ_Hat_r] call FNC_addItemRandom;
@@ -407,13 +407,13 @@
         };
 
         //Extra
-        [Rus_Mag_DP,6] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,6] call FNC_AddItem;
     };
 
     //Partisan
     case "PRus45_Parti" : {
-        [Civ_Uni_ran] call FNC_addItemRandom;
-        [Civ_Uni_r] call FNC_addItemRandom;
+        [Parti_Uni_r] call FNC_addItemRandom;
+        [Parti_Vest_r] call FNC_addItemRandom;
         [Civ_BP_r] call FNC_addItemRandom;
         [Civ_Hat_r] call FNC_addItemRandom;
         [Civ_Face_r] call FNC_addItemRandom;
@@ -694,7 +694,7 @@
                         [Ger_Gren_HE_SC,1]
                     ],[15]
                 ] call FNC_AddItemRandomPercent;
-                [Rus_Mag_DP,1] call FNC_addItem;
+                [Rus_Mag_DP_Mixed_Ball_Red,1] call FNC_addItem;
             };
         };
     };

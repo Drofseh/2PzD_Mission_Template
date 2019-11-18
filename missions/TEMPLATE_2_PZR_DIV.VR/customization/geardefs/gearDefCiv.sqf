@@ -10,14 +10,14 @@
 //Attachments
 
 //Ammo
-#define US_Mag_M12_Buck00       "2Rnd_12Gauge_Pellets"
-#define US_Mag_M12_Buck0        "ACE_2Rnd_12Gauge_Pellets_No0_Buck"
-#define US_Mag_M12_Buck1        "ACE_2Rnd_12Gauge_Pellets_No1_Buck"
-#define US_Mag_M12_Buck2        "ACE_2Rnd_12Gauge_Pellets_No2_Buck"
-#define US_Mag_M12_Buck3        "ACE_2Rnd_12Gauge_Pellets_No3_Buck"
-#define US_Mag_M12_Buck4        "ACE_2Rnd_12Gauge_Pellets_No4_Buck"
-#define US_Mag_M12_Bird4        "ACE_2Rnd_12Gauge_Pellets_No4_Bird"
-#define US_Mag_M12_Slug         "2Rnd_12Gauge_Slug"
+#define Civ_Mag_Shotgun_Buck00  "2Rnd_12Gauge_Pellets"
+#define Civ_Mag_Shotgun_Buck0   "ACE_2Rnd_12Gauge_Pellets_No0_Buck"
+#define Civ_Mag_Shotgun_Buck1   "ACE_2Rnd_12Gauge_Pellets_No1_Buck"
+#define Civ_Mag_Shotgun_Buck2   "ACE_2Rnd_12Gauge_Pellets_No2_Buck"
+#define Civ_Mag_Shotgun_Buck3   "ACE_2Rnd_12Gauge_Pellets_No3_Buck"
+#define Civ_Mag_Shotgun_Buck4   "ACE_2Rnd_12Gauge_Pellets_No4_Buck"
+#define Civ_Mag_Shotgun_Bird4   "ACE_2Rnd_12Gauge_Pellets_No4_Bird"
+#define Civ_Mag_Shotgun_Slug    "2Rnd_12Gauge_Slug"
 
 //Grenades
 

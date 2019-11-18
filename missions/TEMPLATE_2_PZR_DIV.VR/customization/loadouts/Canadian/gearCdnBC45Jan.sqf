@@ -73,9 +73,9 @@
                 [UK_Mag_Sten,6,"vest"] \
             ],[50], \
             [ \
-                [US_Mag_M1T_1,1], \
+                [US_Mag_M1T_30,1], \
                 [US_Weap_M1T], \
-                [US_Mag_M1T_1,6,"vest"] \
+                [US_Mag_M1T_30,6,"vest"] \
             ],[25], \
             [ \
                 [UK_Mag_Sten,1], \
@@ -83,9 +83,9 @@
                 [UK_Mag_Sten,6,"vest"] \
             ],[15], \
             [ \
-                [US_Mag_M1T_1,1], \
+                [US_Mag_M1T_30,1], \
                 [US_Weap_M1928], \
-                [US_Mag_M1T_1,6,"vest"] \
+                [US_Mag_M1T_30,6,"vest"] \
             ],[5], \
             [ \
                 [UK_Mag_Sten,1], \
@@ -252,7 +252,7 @@
         [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
         [UK_Gren_WP,1] call FNC_AddItem;
-        [UK_Mag_Bren_30,2,"backpack"] call FNC_AddItem;
+        [UK_Mag_Bren_30_Mixed_Ball,2,"backpack"] call FNC_AddItem;
     };
 
     //Lance Corporal
@@ -273,7 +273,7 @@
         [UK_Gren_Frag,1] call FNC_AddItem;
         [UK_Gren_Smoke_W,1] call FNC_AddItem;
         [UK_Gren_WP,1] call FNC_AddItem;
-        [UK_Mag_Bren_30,2,"backpack"] call FNC_AddItem;
+        [UK_Mag_Bren_30_Mixed_Ball,2,"backpack"] call FNC_AddItem;
     };
 
     //Bren Gunner
@@ -288,9 +288,9 @@
         UK_Default_Equipment;
 
         //Primary Weapon
-        [UK_Mag_Bren_30,1] call FNC_AddItem;
+        [UK_Mag_Bren_30_Mixed_Ball,1] call FNC_AddItem;
         [UK_Weap_BrenMkII] call FNC_AddItem;
-        [UK_Mag_Bren_30,10,"vest"] call FNC_AddItem;
+        [UK_Mag_Bren_30_Mixed_Ball,10,"vest"] call FNC_AddItem;
 
         //Secondary Weapon
         CdnBC45_Pistol;
@@ -313,7 +313,7 @@
 
         //Extra
         [GEN_ace_sparebarrel,1,"backpack"] call FNC_AddItem;
-        [UK_Mag_Bren_30,4,"backpack"] call FNC_AddItem;
+        [UK_Mag_Bren_30_Mixed_Ball,4,"backpack"] call FNC_AddItem;
         [UK_Gren_Frag,1] call FNC_AddItem;
     };
 
@@ -333,7 +333,7 @@
 
         //Extra
         [UK_Gren_Frag,1] call FNC_AddItem;
-        [UK_Mag_Bren_30,10,"backpack"] call FNC_AddItem;
+        [UK_Mag_Bren_30_Mixed_Ball,10,"backpack"] call FNC_AddItem;
     };
 
     //Rifleman
@@ -352,7 +352,7 @@
 
         //Extra
         [UK_Gren_Frag,1] call FNC_AddItem;
-        [UK_Mag_Bren_30,2,"backpack"] call FNC_AddItem;
+        [UK_Mag_Bren_30_Mixed_Ball,2,"backpack"] call FNC_AddItem;
     };
 
 //Machine Gun Team

@@ -40,15 +40,15 @@
         ],[50],
         [//PPSH
         [NKVD_Vest_O_PPSH],
-        [Rus_Mag_PPSH_S,1],
-        [Rus_Weap_PPSH_S],
-        [Rus_Mag_PPSH_S,5,"vest"]
+        [Rus_Mag_PPD40,1],
+        [Rus_Weap_PPD40],
+        [Rus_Mag_PPD40,2,"vest"]
         ],[25],
         [//PPSH and Knife
-        [NKVD_Vest_O_PPSH_K],
-        [Rus_Mag_PPSH_S,1],
-        [Rus_Weap_PPSH_S],
-        [Rus_Mag_PPSH_S,5,"vest"]
+        [NKVD_Vest_O_PPSH],
+        [Rus_Mag_PPD40,1],
+        [Rus_Weap_PPD40],
+        [Rus_Mag_PPD40,2,"vest"]
         ],[25]
         ] call FNC_AddItemRandomPercent;
 
@@ -86,15 +86,15 @@
         [
         [//PPSH
         [NKVD_Vest_O_PPSH],
-        [Rus_Mag_PPSH_S,1],
-        [Rus_Weap_PPSH_S],
-        [Rus_Mag_PPSH_S,5,"vest"]
+        [Rus_Mag_PPD40,1],
+        [Rus_Weap_PPD40],
+        [Rus_Mag_PPD40,2,"vest"]
         ],[50],
         [//PPSH and Knife
-        [NKVD_Vest_O_PPSH_K],
-        [Rus_Mag_PPSH_S,1],
-        [Rus_Weap_PPSH_S],
-        [Rus_Mag_PPSH_S,5,"vest"]
+        [NKVD_Vest_O_PPSH],
+        [Rus_Mag_PPD40,1],
+        [Rus_Weap_PPD40],
+        [Rus_Mag_PPD40,2,"vest"]
         ],[50]
         ] call FNC_AddItemRandomPercent;
 
@@ -251,9 +251,9 @@
         Rus_Default_Equipment;
 
         //Primary Weapon
-        [Rus_Mag_DP,1] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,1] call FNC_AddItem;
         [Rus_Weap_DP] call FNC_AddItem;
-        [Rus_Mag_DP,9] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,9] call FNC_AddItem;
 
         //Secondary Weapon
         [
@@ -309,7 +309,7 @@
         ] call FNC_AddItemRandomPercent;
 
         //Extra
-        [Rus_Mag_DP,6] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,6] call FNC_AddItem;
     };
 
     //Strelok
