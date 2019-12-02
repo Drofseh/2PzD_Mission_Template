@@ -1,7 +1,7 @@
 ## 2. Panzer Division Mission Template
 <p align="left">
     <a href="https://github.com/Drofseh/2PzD_Mission_Template/releases/latest">
-        <img src="https://img.shields.io/badge/Version-2.28.0-blue.svg" alt="2PzD Mission Template Version">
+        <img src="https://img.shields.io/badge/Version-2.28.1-blue.svg" alt="2PzD Mission Template Version">
     </a>
     <a href="https://2pzd.net/">
         <img src="https://img.shields.io/badge/2PzD-Website-yellow.svg" alt="2PzD Website">
