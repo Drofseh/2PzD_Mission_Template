@@ -75,7 +75,7 @@
         [GEN_Flare_R, 2] call FNC_AddItemVehicle;
         [GEN_Flare_W, 2] call FNC_AddItemVehicle;
         [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
-        [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
+        [GEN_Gren_Smoke_B, 4] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_O, 2] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_P, 2] call FNC_AddItemVehicle;
@@ -88,6 +88,7 @@
         [GEN_Pain, 20] call FNC_AddItemVehicle;
         [GEN_Morp, 10] call FNC_AddItemVehicle;
         [GEN_Saline500, 15] call FNC_AddItemVehicle;
+		[GEN_Saline1000, 5] call FNC_AddItemVehicle;
         [GEN_TQ, 20] call FNC_AddItemVehicle;
         [GEN_Epi, 20] call FNC_AddItemVehicle;
         [Ger_Mag_K98, 15] call FNC_AddItemVehicle;
@@ -192,7 +193,7 @@
         [GEN_Flare_R, 2] call FNC_AddItemVehicle;
         [GEN_Flare_W, 2] call FNC_AddItemVehicle;
         [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
-        [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
+        [GEN_Gren_Smoke_B, 4] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_O, 2] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_P, 2] call FNC_AddItemVehicle;
@@ -205,6 +206,7 @@
         [GEN_Pain, 20] call FNC_AddItemVehicle;
         [GEN_Morp, 10] call FNC_AddItemVehicle;
         [GEN_Saline500, 15] call FNC_AddItemVehicle;
+		[GEN_Saline1000, 5] call FNC_AddItemVehicle;
         [GEN_TQ, 20] call FNC_AddItemVehicle;
         [GEN_Epi, 20] call FNC_AddItemVehicle;
         [Ger_Mag_K98, 15] call FNC_AddItemVehicle;
@@ -321,7 +323,7 @@
         [GEN_Flare_R, 2] call FNC_AddItemVehicle;
         [GEN_Flare_W, 2] call FNC_AddItemVehicle;
         [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
-        [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
+        [GEN_Gren_Smoke_B, 4] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_O, 2] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_P, 2] call FNC_AddItemVehicle;
@@ -334,6 +336,7 @@
         [GEN_Pain, 20] call FNC_AddItemVehicle;
         [GEN_Morp, 10] call FNC_AddItemVehicle;
         [GEN_Saline500, 15] call FNC_AddItemVehicle;
+		[GEN_Saline1000, 5] call FNC_AddItemVehicle;
         [GEN_TQ, 20] call FNC_AddItemVehicle;
         [GEN_Epi, 20] call FNC_AddItemVehicle;
         [Ger_Mag_G43, 5] call FNC_AddItemVehicle;
@@ -432,7 +435,7 @@
     };
 
     case "1944_G_SdKfz": {
-        [Ger_Weap_PzFaust_30, 2] call FNC_AddItemVehicle;
+        [Ger_Weap_PzFaust_60, 2] call FNC_AddItemVehicle;
         [GEN_Flare_Pistol, 1] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
         [GEN_Flare_G, 2] call FNC_AddItemVehicle;
@@ -465,14 +468,14 @@
     };
 
     case "1944_G_SdKfz_Zug": {
-        [Ger_Weap_PzFaust_30, 2] call FNC_AddItemVehicle;
+        [Ger_Weap_PzFaust_60, 2] call FNC_AddItemVehicle;
         [GEN_Flare_Pistol, 1] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
         [GEN_Flare_G, 2] call FNC_AddItemVehicle;
         [GEN_Flare_R, 2] call FNC_AddItemVehicle;
         [GEN_Flare_W, 2] call FNC_AddItemVehicle;
         [GEN_Flare_Y, 2] call FNC_AddItemVehicle;
-        [GEN_Gren_Smoke_B, 2] call FNC_AddItemVehicle;
+        [GEN_Gren_Smoke_B, 4] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_G, 2] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_O, 2] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_P, 2] call FNC_AddItemVehicle;
@@ -485,6 +488,7 @@
         [GEN_Pain, 20] call FNC_AddItemVehicle;
         [GEN_Morp, 10] call FNC_AddItemVehicle;
         [GEN_Saline500, 15] call FNC_AddItemVehicle;
+		[GEN_Saline1000, 5] call FNC_AddItemVehicle;
         [GEN_TQ, 20] call FNC_AddItemVehicle;
         [GEN_Epi, 20] call FNC_AddItemVehicle;
         [Ger_Mag_G43, 5] call FNC_AddItemVehicle;
@@ -507,7 +511,7 @@
     };
 
     case "1944_G_SdKfz_SWT": {
-        [Ger_Weap_PzFaust_30, 2] call FNC_AddItemVehicle;
+        [Ger_Weap_PzFaust_60, 2] call FNC_AddItemVehicle;
         [GEN_Flare_Pistol, 1] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
         [GEN_Flare_G, 2] call FNC_AddItemVehicle;
@@ -539,7 +543,7 @@
     };
 
     case "1944_G_Pzr": {
-        [Ger_Weap_PzFaust_30, 2] call FNC_AddItemVehicle;
+        [Ger_Weap_PzFaust_60, 2] call FNC_AddItemVehicle;
         [GEN_Flare_Pistol, 1] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_W, 10] call FNC_AddItemVehicle;
         [GEN_Flare_G, 2] call FNC_AddItemVehicle;
