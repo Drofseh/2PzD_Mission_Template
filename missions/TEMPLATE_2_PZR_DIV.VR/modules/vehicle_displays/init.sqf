@@ -43,8 +43,8 @@ if !(vicDisplay_Allow_VehicleGunnerDisplay) then {
 if ((count vicDisplay_StringArray) >= 1) then {
     ["AllVehicles", "init", {
         {
-            _this enableInfoPanelComponent ["left", _x, false];
-            _this enableInfoPanelComponent ["right", _x, false];
+            (_this select 0) enableInfoPanelComponent ["left", _x, false];
+            (_this select 0) enableInfoPanelComponent ["right", _x, false];
         } forEach vicDisplay_StringArray;
     }, true, [], true] call CBA_fnc_addClassEventHandler;
 };

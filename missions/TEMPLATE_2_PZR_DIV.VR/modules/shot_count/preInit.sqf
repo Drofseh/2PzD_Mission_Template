@@ -15,9 +15,9 @@
 */
 
 if (isServer) then {
-    aCount_west_ExpendedAmmunition = [];
-    aCount_resistance_ExpendedAmmunition = [];
-    aCount_east_ExpendedAmmunition = [];
+    aCount_west_ExpendedAmmunition = ["Total",0];
+    aCount_resistance_ExpendedAmmunition = ["Total",0];
+    aCount_east_ExpendedAmmunition = ["Total",0];
 
     aCount_classNames = [];
 
@@ -82,7 +82,7 @@ if (isServer) then {
 
         switch (_side) do {
             case west: {
-
+                aCount_west_ExpendedAmmunition set [1,(aCount_west_ExpendedAmmunition select 1) + 1 ];
                 _found = aCount_west_ExpendedAmmunition find _magazineName;
 
                 if (_found < 0) then {
@@ -94,7 +94,7 @@ if (isServer) then {
             };
 
             case east: {
-
+                aCount_east_ExpendedAmmunition set [1,(aCount_east_ExpendedAmmunition select 1) + 1 ];
                 _found = aCount_east_ExpendedAmmunition find _magazineName;
 
                 if (_found < 0) then {
@@ -106,7 +106,7 @@ if (isServer) then {
             };
 
             case resistance: {
-
+                aCount_resistance_ExpendedAmmunition set [1,(aCount_resistance_ExpendedAmmunition select 1) + 1 ];
                 _found = aCount_resistance_ExpendedAmmunition find _magazineName;
 
                 if (_found < 0) then {

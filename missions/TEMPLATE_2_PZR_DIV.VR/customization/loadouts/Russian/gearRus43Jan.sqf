@@ -79,7 +79,7 @@
                 [Rus_Vest_PPSH_S1], \
                 [Rus_Mag_PPSH_S,1], \
                 [Rus_Weap_PPSH_S], \
-                [Rus_Mag_PPSH_S,3,"vest"] \
+                [Rus_Mag_PPSH_S,3,"vest"], \
                 [Rus_Mag_PPSH_D,2,"vest"] \
             ],[35], \
             [/*PPD-40*/ \
@@ -116,7 +116,7 @@
                 [Rus_Vest_PPSH_S1], \
                 [Rus_Mag_PPSH_S,1], \
                 [Rus_Weap_PPSH_S], \
-                [Rus_Mag_PPSH_S,3,"vest"] \
+                [Rus_Mag_PPSH_S,3,"vest"], \
                 [Rus_Mag_PPSH_D,2,"vest"] \
             ],[7], \
             [/*Mosin M38*/ \

@@ -3,7 +3,7 @@
 if (isServer) then {
 
     ["All", "init", {
-        if (((_this select 0) getVariable ["added_shotCount",false]) isEqualTo false) then {
+        if !((_this select 0) getVariable ["added_shotCount",false]) then {
             ["aCount_event_addEH", (_this select 0)] call CBA_fnc_serverEvent;
             (_this select 0) setVariable ["added_shotCount",true];
         };
@@ -11,7 +11,7 @@ if (isServer) then {
 
     [{ CBA_missionTime > 0 }, {
         {
-            if ((_x getVariable ["added_shotCount",false]) isEqualTo false) then {
+            if !(_x getVariable ["added_shotCount",false]) then {
                 _x setVariable ["added_shotCount",true];
                 _x call aCount_addEH;
             };
@@ -22,7 +22,7 @@ if (isServer) then {
 if (hasInterface) then {
     if (didJIP) then {
         [{!isNull player}, {
-            if ((player getVariable ["added_shotCount",false]) isEqualTo false) then {
+            if !(player getVariable ["added_shotCount",false]) then {
                 player setVariable ["added_shotCount",true];
                 ["aCount_event_addEH", player] call CBA_fnc_serverEvent;
             };

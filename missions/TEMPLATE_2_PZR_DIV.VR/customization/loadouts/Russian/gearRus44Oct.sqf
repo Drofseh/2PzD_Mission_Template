@@ -78,7 +78,7 @@
                 [Rus_Vest_PPSH_S1], \
                 [Rus_Mag_PPSH_S,1], \
                 [Rus_Weap_PPSH_S], \
-                [Rus_Mag_PPSH_S,3,"vest"] \
+                [Rus_Mag_PPSH_S,3,"vest"], \
                 [Rus_Mag_PPSH_D,2,"vest"] \
             ],[48], \
             [/*PPS-43*/ \
@@ -115,7 +115,7 @@
                 [Rus_Vest_PPSH_D1], \
                 [Rus_Mag_PPSH_S,1], \
                 [Rus_Weap_PPSH_S], \
-                [Rus_Mag_PPSH_S,3,"vest"] \
+                [Rus_Mag_PPSH_S,3,"vest"], \
                 [Rus_Mag_PPSH_D,2,"vest"] \
             ],[16.8], \
             [/*PPS-43*/ \
