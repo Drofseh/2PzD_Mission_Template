@@ -5,8 +5,8 @@ westCasualty = "2 Panzer Division" call FNC_CasualtyPercentage; //Gets the casua
     publicVariable "westCasualty";
 eastCasualty = "Red Army" call FNC_CasualtyPercentage; //Gets the casualty percentage of the Opfor team
     publicVariable "eastCasualty";
-//resistanceCasualty = "PUT_TEAM_NAME_HERE" call FNC_CasualtyPercentage; //Gets the casualty percentage of the Indfor team.
-    //publicVariable "resistanceCasualty";
+resistanceCasualty = "Western Allies" call FNC_CasualtyPercentage; //Gets the casualty percentage of the Indfor team.
+    publicVariable "resistanceCasualty";
 //civilianCasualty = "Civilians" call FNC_CasualtyPercentage; //Gets the casualty percentage of the Civilian team.
     //publicVariable "civilianCasualty";
 

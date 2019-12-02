@@ -61,18 +61,18 @@ _textSide = 0;
     };
 } forEach _teams;
 
-_endTitleText = _scenario;
+_time = ceil(CBA_missionTime / 60);
 
-if (_timeLimit != 0) then {
-    _time = ceil(CBA_missionTime / 60);
-
+if (_timeLimit == 0) then {
+    _timeLimitText = format ["Mission duration: %1 minutes", _time];
+} else {
     if (_time >= _timeLimit) then {
         _time = _timeLimit;
     };
-
     _timeLimitText = format ["Mission duration: %1 out of %2 minutes", _time, _timeLimit];
-    _endTitleText = format ["%1<br/>%2", _scenario, _timeLimitText];
 };
+
+_endTitleText = format ["%1<br/>%2", _scenario, _timeLimitText];
 
 if (!isNil "aCount_textBLU" && !isNil "aCount_textRED" && !isNil "aCount_textRES") then {
     _bottomTextLeft = format ["%1",aCount_textBLU];
