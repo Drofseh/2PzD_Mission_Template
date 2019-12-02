@@ -55,26 +55,26 @@ FNC_SupportFire_GetTargetLocation = {
         // systemChat ("_supportFire_accuracy - " + str _supportFire_accuracy);
 
         // gets new target location
-        switch (_supportFire_target) do {
-            case "TargetVisual" : {
-                _supportFire_targetLoc = supportFire_terrainPosition;
+        switch (true) do {
+            case (_supportFire_target == "TargetVisual") : {
+                _supportFire_targetLoc = screenToWorld [0.5, 0.5];
             };
-            case "Target01" : {
+            case (_supportFire_target == "Target01") : {
                 _supportFire_targetLoc = getMarkerPos supportFire_target01;
             };
-            case "Target02" : {
+            case (_supportFire_target == "Target02") : {
                 _supportFire_targetLoc = getMarkerPos supportFire_target02;
             };
-            case "Target03" : {
+            case (_supportFire_target == "Target03") : {
                 _supportFire_targetLoc = getMarkerPos supportFire_target03;
             };
-            case "Target04" : {
+            case (_supportFire_target == "Target04") : {
                 _supportFire_targetLoc = getMarkerPos supportFire_target04;
             };
-            case "Target05" : {
+            case (_supportFire_target == "Target05") : {
                 _supportFire_targetLoc = getMarkerPos supportFire_target05;
             };
-            case "Target06" : {
+            case (_supportFire_target == "Target06") : {
                 _supportFire_targetLoc = getMarkerPos supportFire_target06;
             };
         };
