@@ -7,47 +7,47 @@
 /*Loadouts
 
     //Company HQ
-[this,"USAB44Jun_CC"] call FNC_GearScript;          Company Commander
-[this,"USAB44Jun_C2"] call FNC_GearScript;          Company Executive Officer
-[this,"USAB44Jun_CSGT"] call FNC_GearScript;        Company First Sergeant
-[this,"USAB44Jun_CRTO"] call FNC_GearScript;        Company Radio Operator
+[this,"USAB44May_CC"] call FNC_GearScript;          Company Commander
+[this,"USAB44May_C2"] call FNC_GearScript;          Company Executive Officer
+[this,"USAB44May_CSGT"] call FNC_GearScript;        Company First Sergeant
+[this,"USAB44May_CRTO"] call FNC_GearScript;        Company Radio Operator
 
     //Platoon HQ
-[this,"USAB44Jun_PC"] call FNC_GearScript;          Platoon Commander
-[this,"USAB44Jun_PSGT"] call FNC_GearScript;        Platoon Sergeant/Platoon Guide
-[this,"USAB44Jun_PRTO"] call FNC_GearScript;        Radio Operator
-[this,"USAB44Jun_Mess"] call FNC_GearScript;        Messenger
-[this,"USAB44Jun_Med"] call FNC_GearScript;         Medic
+[this,"USAB44May_PC"] call FNC_GearScript;          Platoon Commander
+[this,"USAB44May_PSGT"] call FNC_GearScript;        Platoon Sergeant/Platoon Guide
+[this,"USAB44May_PRTO"] call FNC_GearScript;        Radio Operator
+[this,"USAB44May_Mess"] call FNC_GearScript;        Messenger
+[this,"USAB44May_Med"] call FNC_GearScript;         Medic
 
     //Squad
-[this,"USAB44Jun_SL"] call FNC_GearScript;          Squad Leader
-[this,"USAB44Jun_S2"] call FNC_GearScript;          Assistant Squad Leader
-[this,"USAB44Jun_Scout"] call FNC_GearScript;       Scout
-[this,"USAB44Jun_MG"] call FNC_GearScript;          Machine Gunner
-[this,"USAB44Jun_MGA"] call FNC_GearScript;         Assistant Machine Gunner
-[this,"USAB44Jun_MGAB"] call FNC_GearScript;        Machine Gun Ammo Bearer
-[this,"USAB44Jun_AR"] call FNC_GearScript;          Automatic Rifleman
-[this,"USAB44Jun_AAR"] call FNC_GearScript;         Assistant Automatic Rifleman
-[this,"USAB44Jun_ARB"] call FNC_GearScript;         Ammo Bearer
-[this,"USAB44Jun_Rif"] call FNC_GearScript;         Rifleman
+[this,"USAB44May_SL"] call FNC_GearScript;          Squad Leader
+[this,"USAB44May_S2"] call FNC_GearScript;          Assistant Squad Leader
+[this,"USAB44May_Scout"] call FNC_GearScript;       Scout
+[this,"USAB44May_MG"] call FNC_GearScript;          Machine Gunner
+[this,"USAB44May_MGA"] call FNC_GearScript;         Assistant Machine Gunner
+[this,"USAB44May_MGAB"] call FNC_GearScript;        Machine Gun Ammo Bearer
+[this,"USAB44May_AR"] call FNC_GearScript;          Automatic Rifleman
+[this,"USAB44May_AAR"] call FNC_GearScript;         Assistant Automatic Rifleman
+[this,"USAB44May_ARB"] call FNC_GearScript;         Ammo Bearer
+[this,"USAB44May_Rif"] call FNC_GearScript;         Rifleman
 
     //Weapons Teams
-[this,"USAB44Jun_MGTL"] call FNC_GearScript;        Machine Gun Team Leader
+[this,"USAB44May_MGTL"] call FNC_GearScript;        Machine Gun Team Leader
 
-[this,"USAB44Jun_MortTL"] call FNC_GearScript;      Mortar Team Leader
-[this,"USAB44Jun_MortG"] call FNC_GearScript;       Mortar Gunner
-[this,"USAB44Jun_MortA"] call FNC_GearScript;       Mortar Assistant
-[this,"USAB44Jun_MortAB"] call FNC_GearScript;      Mortar Ammo Bearer
+[this,"USAB44May_MortTL"] call FNC_GearScript;      Mortar Team Leader
+[this,"USAB44May_MortG"] call FNC_GearScript;       Mortar Gunner
+[this,"USAB44May_MortA"] call FNC_GearScript;       Mortar Assistant
+[this,"USAB44May_MortAB"] call FNC_GearScript;      Mortar Ammo Bearer
 
-[this,"USAB44Jun_BzkaTL"] call FNC_GearScript;      Bazooka Team Leader
-[this,"USAB44Jun_BzkaG"] call FNC_GearScript;       Bazooka Gunner
-[this,"USAB44Jun_BzkaAB"] call FNC_GearScript;      Bazooka Ammo Bearer
+[this,"USAB44May_BzkaTL"] call FNC_GearScript;      Bazooka Team Leader
+[this,"USAB44May_BzkaG"] call FNC_GearScript;       Bazooka Gunner
+[this,"USAB44May_BzkaAB"] call FNC_GearScript;      Bazooka Ammo Bearer
 */
 
 //======================== Definitions ========================
 
 // For Company Commander, Company Executive Officer, Platoon Commander
-#define USAB44Jun_Weapon_Leader \
+#define USAB44May_Weapon_Leader \
         [ \
             [/*M1A1 Carbine*/ \
                 [USAB_Vest_M1C], \
@@ -94,7 +94,7 @@
         ] call FNC_AddItemRandomPercent;
 
 // Squad Leader
-#define USAB44Jun_Weapon_SL \
+#define USAB44May_Weapon_SL \
         [ \
             [/*M3 Grease Gun*/ \
                 [USAB_Vest_M1T], \
@@ -141,7 +141,7 @@
         ] call FNC_AddItemRandomPercent;
 
 // For Assistant Squad Leader
-#define USAB44Jun_Weapon_ASL \
+#define USAB44May_Weapon_ASL \
         [ \
             [ \
                 [USAB_Vest_M1G], \
@@ -173,7 +173,7 @@
         ] call FNC_AddItemRandomPercent;
 
 // For light riflemen
-#define USAB44Jun_Weapon_Rifle_Light \
+#define USAB44May_Weapon_Rifle_Light \
         [ \
             [ \
                 [USAB_Vest_M1C], \
@@ -203,7 +203,7 @@
         ] call FNC_AddItemRandomPercent;
 
 // For medic
-#define USAB44Jun_Weapon_Rifle_Medic \
+#define USAB44May_Weapon_Rifle_Medic \
         [ \
             [ \
                 [US_Mag_M1C,1], \
@@ -229,7 +229,7 @@
         ] call FNC_AddItemRandomPercent;
 
 // For riflemen
-#define USAB44Jun_Weapon_Rifle \
+#define USAB44May_Weapon_Rifle \
         [ \
             [ \
                 [US_Mag_M1G,1], \
@@ -249,7 +249,7 @@
 //Company HQ
 
     //Company Commander
-    case "USAB44Jun_CC" : {
+    case "USAB44May_CC" : {
         [USAB_UniG_CPT] call FNC_AddItem;
         [USAB_Helm_CPT_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -259,7 +259,7 @@
         US_Leader_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Leader;
+        USAB44May_Weapon_Leader;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
@@ -272,7 +272,7 @@
     };
 
     //Company Executive Officer
-    case "USAB44Jun_C2" : {
+    case "USAB44May_C2" : {
         [USAB_UniG_LT] call FNC_AddItem;
         [USAB_Helm_LT_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -282,7 +282,7 @@
         US_Leader_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Leader;
+        USAB44May_Weapon_Leader;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
@@ -295,7 +295,7 @@
     };
 
     //Company First Sergeant
-    case "USAB44Jun_CSGT" : {
+    case "USAB44May_CSGT" : {
         [USAB_UniG_SGT] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
         [USAB_Helm_NCO_r] call FNC_AddItemRandom;
@@ -306,7 +306,7 @@
         US_Leader_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle_Light;
+        USAB44May_Weapon_Rifle_Light;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
@@ -319,7 +319,7 @@
     };
 
     //Company Radio Operator
-    case "USAB44Jun_CRTO" : {
+    case "USAB44May_CRTO" : {
         [USAB_UniG_CPL] call FNC_AddItem;
         [USAB_BP_Radio] call FNC_AddItem;
         [USAB_Helm_r] call FNC_AddItemRandom;
@@ -329,7 +329,7 @@
         US_Default_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle_Light;
+        USAB44May_Weapon_Rifle_Light;
 
         //Extra
         [GEN_Radio_HH] call FNC_AddItem;
@@ -340,7 +340,7 @@
 //Platoon HQ
 
     //Platoon Commander
-    case "USAB44Jun_PC" : {
+    case "USAB44May_PC" : {
         [USAB_UniG_LT] call FNC_AddItem;
         [USAB_Helm_2LT_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -350,7 +350,7 @@
         US_Leader_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Leader;
+        USAB44May_Weapon_Leader;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
@@ -363,7 +363,7 @@
     };
 
     //Platoon Sergeant
-    case "USAB44Jun_PSGT" : {
+    case "USAB44May_PSGT" : {
         [USAB_UniG_SGT] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
         [USAB_Helm_NCO_r] call FNC_AddItemRandom;
@@ -374,7 +374,7 @@
         US_Leader_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle_Light;
+        USAB44May_Weapon_Rifle_Light;
 
         //Secondary Weapon
         [US_Mag_M1911,1] call FNC_AddItem;
@@ -387,7 +387,7 @@
     };
 
     //Radio Operator
-    case "USAB44Jun_PRTO" : {
+    case "USAB44May_PRTO" : {
         [USAB_UniG_CPL] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
         [USAB_Helm_r] call FNC_AddItemRandom;
@@ -397,7 +397,7 @@
         US_Default_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle_Light;
+        USAB44May_Weapon_Rifle_Light;
 
         //Extra
         [GEN_Radio_HH] call FNC_AddItem;
@@ -406,7 +406,7 @@
     };
 
     //Messenger
-    case "USAB44Jun_Mess" : {
+    case "USAB44May_Mess" : {
         [USAB_UniG_PFC] call FNC_AddItem;
         [USAB_Helm_r] call FNC_AddItemRandom;
         [GEN_Face_r] call FNC_AddItemRandom;
@@ -415,7 +415,7 @@
         US_Default_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle_Light;
+        USAB44May_Weapon_Rifle_Light;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -423,7 +423,7 @@
     };
 
     //Medic
-    case "USAB44Jun_Med" : {
+    case "USAB44May_Med" : {
         [USAB_UniG_Med] call FNC_AddItem;
         [USAB_Vest_Med] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
@@ -434,7 +434,7 @@
         US_Default_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle_Medic;
+        USAB44May_Weapon_Rifle_Medic;
 
         //Extra
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -444,7 +444,7 @@
 //Squad
 
     //Squad Leader
-    case "USAB44Jun_SL" : {
+    case "USAB44May_SL" : {
         [USAB_UniG_SGT] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
         [USAB_Helm_NCO_r] call FNC_AddItemRandom;
@@ -455,7 +455,7 @@
         US_Leader_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_SL;
+        USAB44May_Weapon_SL;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -463,7 +463,7 @@
     };
 
     //Assistant Squad Leader
-    case "USAB44Jun_S2" : {
+    case "USAB44May_S2" : {
         [USAB_UniG_CPL] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
         [USAB_Helm_NCO_r] call FNC_AddItemRandom;
@@ -473,7 +473,7 @@
         US_Default_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_ASL;
+        USAB44May_Weapon_ASL;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -481,7 +481,7 @@
     };
 
     //Scout
-    case "USAB44Jun_Scout" : {
+    case "USAB44May_Scout" : {
         [USAB_UniK_PFC] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
         [USAB_Helm_r] call FNC_AddItemRandom;
@@ -491,7 +491,7 @@
         US_Default_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle_Light;
+        USAB44May_Weapon_Rifle_Light;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -499,7 +499,7 @@
     };
 
     //Machine Gunner
-    case "USAB44Jun_MG" : {
+    case "USAB44May_MG" : {
         [USAB_UniG_PFC] call FNC_AddItem;
         [USAB_Vest_MGA] call FNC_AddItem;
         [USAB_BP_MG] call FNC_AddItem;
@@ -521,7 +521,7 @@
     };
 
     //Assistant Machine Gunner
-    case "USAB44Jun_MGA" : {
+    case "USAB44May_MGA" : {
         [USAB_UniG_PFC] call FNC_AddItem;
         [USAB_BP_MG] call FNC_AddItem;
         [USAB_Helm_r] call FNC_AddItemRandom;
@@ -533,14 +533,14 @@
         [US_Weap_M1919A4_T] call FNC_AddItem;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle_Light;
+        USAB44May_Weapon_Rifle_Light;
 
         //Extra
         [US_Mag_M1919_250_Mixed_Ball,2] call FNC_AddItem;
     };
 
     //Machine Gun Ammo Bearer
-    case "USAB44Jun_MGAB" : {
+    case "USAB44May_MGAB" : {
         [
             [
                 [USAB_UniG_PFC]
@@ -558,14 +558,14 @@
         US_Default_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle;
+        USAB44May_Weapon_Rifle;
 
         //Extra
         [US_Mag_M1919_250_Mixed_Ball,4] call FNC_AddItem;
     };
 
     //Automatic Rifleman
-    case "USAB44Jun_AR" : {
+    case "USAB44May_AR" : {
         [USAB_UniG_CPL] call FNC_AddItem;
         [USAB_Vest_BAR] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
@@ -587,7 +587,7 @@
     };
 
     //Automatic Rifle Assistant
-    case "USAB44Jun_AAR" : {
+    case "USAB44May_AAR" : {
         [USAB_UniG_PFC] call FNC_AddItem;
         [USAB_Vest_M1G] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
@@ -599,7 +599,7 @@
         US_Leader_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle;
+        USAB44May_Weapon_Rifle;
 
         //Extra
         [GEN_Gren_Smoke_W,1] call FNC_AddItem;
@@ -607,7 +607,7 @@
     };
 
     //Automatic Rifle Ammo Bearer
-    case "USAB44Jun_ARB" : {
+    case "USAB44May_ARB" : {
         [
             [
                 [USAB_UniG_PFC]
@@ -625,7 +625,7 @@
         US_Default_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle;
+        USAB44May_Weapon_Rifle;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -633,7 +633,7 @@
     };
 
     //Rifleman
-    case "USAB44Jun_Rif" : {
+    case "USAB44May_Rif" : {
         [
             [
                 [USAB_UniG_PFC]
@@ -651,7 +651,7 @@
         US_Default_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle;
+        USAB44May_Weapon_Rifle;
 
         //Extra
         [GEN_Gren_Frag_P,2] call FNC_AddItem;
@@ -661,7 +661,7 @@
 //Machine Gun Team
 
     //Machine Gun Team Leader
-    case "USAB44Jun_MGTL" : {
+    case "USAB44May_MGTL" : {
         [USAB_UniG_CPL] call FNC_AddItem;
         [USAB_Vest_M1G] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
@@ -673,7 +673,7 @@
         US_Leader_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle;
+        USAB44May_Weapon_Rifle;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -683,7 +683,7 @@
 //Mortar Team
 
     //Mortar Team Leader
-    case "USAB44Jun_MortTL" : {
+    case "USAB44May_MortTL" : {
         [USAB_UniG_CPL] call FNC_AddItem;
         [USAB_BP_r] call FNC_AddItemRandom;
         [USAB_Helm_r] call FNC_AddItemRandom;
@@ -694,7 +694,7 @@
         US_Leader_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle_Light;
+        USAB44May_Weapon_Rifle_Light;
 
         //Extra
         [GEN_Gren_Frag_P,1] call FNC_AddItem;
@@ -704,7 +704,7 @@
     };
 
     //Mortar Gunner
-    case "USAB44Jun_MortG" : {
+    case "USAB44May_MortG" : {
         [USAB_UniG_PFC] call FNC_AddItem;
         [USAB_Vest_Mort] call FNC_AddItem;
         [USAB_BP_MG] call FNC_AddItem;
@@ -727,7 +727,7 @@
     };
 
     //Mortar Assistant
-    case "USAB44Jun_MortA" : {
+    case "USAB44May_MortA" : {
         [USAB_UniG_PFC] call FNC_AddItem;
         [USAB_Vest_Mort] call FNC_AddItem;
         [USAB_BP_MG] call FNC_AddItem;
@@ -750,7 +750,7 @@
     };
 
     //Mortar Ammo Bearer
-    case "USAB44Jun_MortAB" : {
+    case "USAB44May_MortAB" : {
         [
             [
                 [USAB_UniG_PFC]
@@ -768,7 +768,7 @@
         US_Default_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle;
+        USAB44May_Weapon_Rifle;
 
         //Extra
         [US_Mag_Mort_HE,9] call FNC_AddItem;
@@ -777,7 +777,7 @@
 //Bazooka Team
 
     //Bazooka Team Leader
-    case "USAB44Jun_BzkaTL" : {
+    case "USAB44May_BzkaTL" : {
         [USAB_UniG_CPL] call FNC_AddItem;
         [USAB_BP_AT] call FNC_AddItem;
         [USAB_Helm_r] call FNC_AddItemRandom;
@@ -788,7 +788,7 @@
         US_Leader_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle_Light;
+        USAB44May_Weapon_Rifle_Light;
 
         //Extra
         [US_Mag_Bazoo,3,"backpack"] call FNC_AddItem;
@@ -797,7 +797,7 @@
     };
 
     //Bazooka Gunner
-    case "USAB44Jun_BzkaG" : {
+    case "USAB44May_BzkaG" : {
         [USAB_UniG_PFC] call FNC_AddItem;
         [USAB_BP_AT] call FNC_AddItem;
         [USAB_Helm_r] call FNC_AddItemRandom;
@@ -807,7 +807,7 @@
         US_Default_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle_Light;
+        USAB44May_Weapon_Rifle_Light;
 
         //Extra
         [US_Mag_Bazoo,1] call FNC_AddItem;
@@ -816,7 +816,7 @@
     };
 
     //Bazooka Ammo Bearer
-    case "USAB44Jun_BzkaAB" : {
+    case "USAB44May_BzkaAB" : {
         [
             [
                 [USAB_UniG_PFC]
@@ -833,7 +833,7 @@
         US_Default_Equipment;
 
         //Primary Weapon
-        USAB44Jun_Weapon_Rifle;
+        USAB44May_Weapon_Rifle;
 
         //Extra
         [US_Mag_Bazoo,3,"backpack"] call FNC_AddItem;

@@ -59,7 +59,7 @@ _adminState = call BIS_fnc_admin;
 _uid = getPlayerUID player;
 if (
     (_adminState != 0) ||
-    (God isEqualTo player) ||
+    (!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}) ||
     (_uid == "76561198006804011") || // Brauer
     (_uid == "76561197989925440") || // Falk
     (_uid == "76561197970317496") || // Haas
@@ -117,15 +117,16 @@ if (
 
 //===== Zeus Notes =====
 // Used to find the dedicated Zeus player and put the Zeus notes in their briefing.
-// This is only visible to the Zeus
+// This is only visible to the Zeus and other players in the same group as the dedicated Zeus.
 
 // IMPORTANT - your Zeus unit must have their Variable Name set to God for this to function correctly.
 // The Zeus unit in the Essentials composition is currently set to this variable name.
 // If you wish to use a different Zeus unit then you will need to set its Variable Name yourself.
+// If you wish to use a second Zeus make sure they are in the same group.
 
 // I strongly suggest keeping the Zeus on the Civilian side, or at least on a different side from the players, so they can't see any of the marks or lines the players draw on the map.
 
-if (!isNil "God" && {God isEqualTo player}) then {
+if (!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}) then {
     //All Zeus Notes should go in this tab, only the Zeus player will see them.
     NEWTAB("Zeus Notes")
     <br/><font color='#FF8C00' size='20'>If you are not going to Zeus this mission, do not read this tab.</font>

@@ -187,6 +187,8 @@ acre_sys_core_interference = true;
 
 //  Direct Speach Starting Volume
 /*
+  This setting appears to be non-functinal after an ACRE2 update and is disabled until it can be fixed.
+
   ACRE2 has a built in direct speech slider allowing you to determine how far your voice in direct speech should travel. The system has five states and by default starts in the middle state. The below table contains an approximated table with empirical testing by Bullhorn.
 
   Volume state  |  Loud (m)  |  Quiet (m)  |  Barely audible (m)

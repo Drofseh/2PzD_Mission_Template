@@ -55,7 +55,7 @@
         [GEN_Gren_Smoke_R, 2] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
         [Ger_Mag_K98, 50] call FNC_AddItemVehicle;
-        [Ger_Mag_MG_50_Mixed_sS, 20] call FNC_AddItemVehicle;
+        [Ger_Mag_MG_50_Mixed_SmE, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 20] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_HE_SC, 20] call FNC_AddItemVehicle;
@@ -92,7 +92,7 @@
         [GEN_TQ, 20] call FNC_AddItemVehicle;
         [GEN_Epi, 20] call FNC_AddItemVehicle;
         [Ger_Mag_K98, 15] call FNC_AddItemVehicle;
-        [Ger_Mag_MG_50_Mixed_sS, 10] call FNC_AddItemVehicle;
+        [Ger_Mag_MG_50_Mixed_SmE, 10] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 10] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_HE_SC, 20] call FNC_AddItemVehicle;
@@ -116,7 +116,7 @@
         [GEN_Gren_Smoke_R, 2] call FNC_AddItemVehicle;
         [GEN_Gren_Smoke_Y, 2] call FNC_AddItemVehicle;
         [Ger_Mag_K98, 10] call FNC_AddItemVehicle;
-        [Ger_Mag_MG_50_Mixed_sS, 20] call FNC_AddItemVehicle;
+        [Ger_Mag_MG_50_Mixed_SmE, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 5] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_P, 10] call FNC_AddItemVehicle;
         [Ger_Gren_HE_SC, 20] call FNC_AddItemVehicle;
@@ -146,7 +146,7 @@
         [GEN_Pain, 4] call FNC_AddItemVehicle;
         [GEN_TQ, 4] call FNC_AddItemVehicle;
         [GEN_Epi, 4] call FNC_AddItemVehicle;
-        [Ger_Mag_MG_50_Mixed_sS, 20] call FNC_AddItemVehicle;
+        [Ger_Mag_MG_50_Mixed_SmE, 20] call FNC_AddItemVehicle;
         [Ger_Mag_MP40, 5] call FNC_AddItemVehicle;
         [Ger_Gren_Frag_P, 5] call FNC_AddItemVehicle;
         [Ger_Gren_HE_SC, 10] call FNC_AddItemVehicle;
@@ -304,7 +304,6 @@
         [Ger_Mag_RGrn_HE, 5] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P08, 5] call FNC_AddItemVehicle;
-        [Ger_Mag_MG_50_Mixed_sS, 5] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50_Mixed_SmK, 5] call FNC_AddItemVehicle;
         [Rus_Mag_Mosin, 15] call FNC_AddItemVehicle;
         [Rus_Mag_PPSH_D, 5] call FNC_AddItemVehicle;
@@ -352,7 +351,6 @@
         [Ger_Mag_P38, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P08, 5] call FNC_AddItemVehicle;
         [Ger_Mag_PPK, 2] call FNC_AddItemVehicle;
-        [Ger_Mag_MG_50_Mixed_sS, 5] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50_Mixed_SmK, 5] call FNC_AddItemVehicle;
         [Rus_Mag_Mosin, 15] call FNC_AddItemVehicle;
         [Rus_Mag_PPSH_D, 5] call FNC_AddItemVehicle;
@@ -385,7 +383,6 @@
         [Ger_Gren_HE_SCK, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P08, 5] call FNC_AddItemVehicle;
-        [Ger_Mag_MG_50_Mixed_sS, 5] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50_Mixed_SmK, 5] call FNC_AddItemVehicle;
         [Rus_Mag_Mosin, 15] call FNC_AddItemVehicle;
         [Rus_Mag_PPSH_D, 5] call FNC_AddItemVehicle;
@@ -461,7 +458,6 @@
         [Ger_Mag_RGrn_HE, 5] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P08, 5] call FNC_AddItemVehicle;
-        [Ger_Mag_MG_50_Mixed_sS, 5] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50_Mixed_SmK, 5] call FNC_AddItemVehicle;
         [GEN_ace_sparebarrel, 2] call FNC_AddItemVehicle;
         [GEN_Toolkit, 1] call FNC_AddItemVehicle;
@@ -505,7 +501,6 @@
         [Ger_Mag_P38, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P08, 5] call FNC_AddItemVehicle;
         [Ger_Mag_PPK, 2] call FNC_AddItemVehicle;
-        [Ger_Mag_MG_50_Mixed_sS, 5] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50_Mixed_SmK, 5] call FNC_AddItemVehicle;
         [GEN_Toolkit, 1] call FNC_AddItemVehicle;
     };
@@ -534,7 +529,6 @@
         [Ger_Gren_HE_SC, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P38, 10] call FNC_AddItemVehicle;
         [Ger_Mag_P08, 5] call FNC_AddItemVehicle;
-        [Ger_Mag_MG_50_Mixed_sS, 5] call FNC_AddItemVehicle;
         [Ger_Mag_MG_50_Mixed_SmK, 5] call FNC_AddItemVehicle;
         [GEN_Toolkit, 1] call FNC_AddItemVehicle;
         [Ger_Mag_Mort_HE, 20] call FNC_AddItemVehicle;

@@ -24,6 +24,7 @@ if (hasInterface) then {
         private _side = side player;
         private _customSide = (player getVariable ["FW_CustomScramble", nil]);
 
+        /*
         if (!isNil "FW_Acre_Volume_Value") then {
             if ((abs FW_Acre_Volume_Value) > 2) then {
               FW_Acre_Volume_Value = 0;
@@ -44,6 +45,7 @@ if (hasInterface) then {
                 acre_sys_gui_VolumeControl_Level = FW_Acre_Volume_Value;
             }, [], 1] call CBA_fnc_waitAndExecute;
         };
+        */
 
 
         if (!isNil "_customSide") then {
@@ -80,10 +82,17 @@ if (hasInterface) then {
 
         if (FW_enable_babel) then {
             {_x call acre_api_fnc_babelAddLanguageType;} foreach FW_all_languages;
-            
-            _side_language = FW_languages_babel select _side_i;
 
-            _side_language call acre_api_fnc_babelSetSpokenLanguages;
+            if (!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}) then {
+                _zeusLanguages = [];
+                {
+                    _zeusLanguages pushBackUnique (_x select 0);
+                } forEach FW_languages_babel;
+                [player, _zeusLanguages] call FNC_SetLanguages;
+            } else {
+                _side_language = FW_languages_babel select _side_i;
+                _side_language call acre_api_fnc_babelSetSpokenLanguages;
+            };
 
             private _languages = player getVariable ["FW_Languages", []];
 
