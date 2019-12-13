@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=521;
+	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=45229;
+		nextID=45877;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={536.62006,54.845989,1356.0474};
-		dir[]={0.018394558,-0.68272078,-0.73049891};
-		up[]={0.017186075,0.73067659,-0.68250537};
-		aside[]={-0.99971443,1.4079342e-007,-0.025174551};
+		pos[]={537.29138,24.360834,1319.6052};
+		dir[]={-0.013475284,-0.6943965,-0.71947724};
+		up[]={-0.013003672,0.71958905,-0.69427639};
+		aside[]={-0.99982965,7.8856829e-008,0.018727383};
 	};
 };
 binarizationWanted=0;
@@ -948,7 +948,6 @@ class Mission
 	{
 		briefingName="2 Panzer Division Mission Template v2.28.1";
 		resistanceWest=0;
-		resistanceEast=1;
 		timeOfChanges=1800.0002;
 		startWeather=0;
 		startWind=0.1;

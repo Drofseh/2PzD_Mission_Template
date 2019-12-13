@@ -138,8 +138,8 @@ if (hasInterface) then {
             _arrayRED = param [1];
             _arrayRES = param [2];
             aCount_textBLU = "BLUFOR Munitions Expended:<br/>";
-            aCount_textRED = "REDFOR Munitions Expended:<br/>";
-            aCount_textRES = "RESISTANCE Munitions Expended:<br/>";
+            aCount_textRED = "OPFOR Munitions Expended:<br/>";
+            aCount_textRES = "INDEPENDENT Munitions Expended:<br/>";
 
             //Get the custom names of each side's team and use them instead of generic names above ^
             _numberOfTeams = count FW_Teams;
@@ -199,7 +199,11 @@ if (hasInterface) then {
                     };
                 };
             };
-
+/*
+            aCount_textBLU_EndScreen = (aCount_textBLU splitString ":") select 0;
+            aCount_textRED_EndScreen = (aCount_textRED splitString ":") select 0;
+            aCount_textRES_EndScreen = (aCount_textRES splitString ":") select 0;
+*/
             // Build each side's total ammunition count.
             if (count _arrayBLU > 0) then {
                 for [{ _i = 0}, {_i < count _arrayBLU}, {_i = _i + 2}] do {
@@ -230,6 +234,8 @@ if (hasInterface) then {
             } else {
                 aCount_textRES = "";
             };
+            
+            aCount_textFinal = format ["%1<br/><br/>%2<br/><br/>%3",aCount_textBLU,aCount_textRED,aCount_textRES];
         };
     };
 

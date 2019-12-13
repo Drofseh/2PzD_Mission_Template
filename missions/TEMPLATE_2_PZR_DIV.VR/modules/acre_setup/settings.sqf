@@ -1,21 +1,100 @@
-//////////////////
-//RADIO SCRAMBLE
-//////////////////
+//////////////
+//BABEL
+//////////////
 
-FW_enable_scramble = false;
-
-//If enabled all sides will have different scramble frequencies.
-//Function below is to switch one unit to different scramble side.
+// set this to true to enable babel
+// this scrambles the voices of people who don't speak the same language as your side
+FW_enable_babel = true;
 
 /*
- * FNC_SetScramble
- * Change unit's scramble so it matches set faction
+ * FNC_SetLanguages
  *
- * Example:
- * [this, east] call FNC_SetScramble;
- * Will set unit's radio to east's scramble setting.
- * (if following example is used on west unit, that unit will hear east units on radio, but won't hear west)
+ * Use this function in player's init to set player's custom languages (translator for example)
+ * faction setting will be overwritten by this value
+ *
+ * Examples:
+ * [this, ["ru"]] call FNC_SetLanguages;
+ * [this, ["fr", "en", "ru"]] call FNC_SetLanguages;
 */
+
+//define languages for different sides
+//these use the country code from the list below
+//change these to make that side speak a different language
+FW_languages_babel = [
+    ["de"], //WEST Language
+    ["ru"], //EAST Language
+    ["en"], //INDEPENDENT Language
+    ["fr"]  //CIVILIAN Language
+];
+
+// all available languages are defined here
+// you can add your own if something one you want is missing
+// ["ISO 639-1 country code", "Name of language"]
+FW_all_languages = [
+    ["sq",  "Albanian"],
+    ["ar",  "Arabic"],
+    ["be",  "Belarusian"],
+    ["my",  "Burmese"],
+    ["bn",  "Bengali"],
+    ["bs",  "Bosnian"],
+    ["bg",  "Bulgarian"],
+    ["km",  "Cambodian"],
+    ["zh",  "Chinese"],
+    ["hr",  "Croatian"],
+    ["cs",  "Czech"],
+    ["da",  "Danish"],
+    ["nl",  "Dutch"],
+    ["en",  "English"],
+    ["et",  "Estonian"],
+    ["fil", "Filipino"],
+    ["fi",  "Finnish"],
+    ["fr",  "French"],
+    ["de",  "German"],
+    ["el",  "Greek"],
+    ["hi",  "Hindi"],
+    ["hu",  "Hungarian"],
+    ["id",  "Indonesian"],
+    ["it",  "Italian"],
+    ["ja",  "Japanese"],
+    ["ko",  "Korean"],
+    ["lv",  "Latvian"],
+    ["lt",  "Lithuanian"],
+    ["ms",  "Malay"],
+    ["mt",  "Maltese"],
+    ["mr",  "Marathi"],
+    ["ne",  "Nepali"],
+    ["no",  "Norwegian"],
+    ["fa",  "Persian"],
+    ["pl",  "Polish"],
+    ["pa",  "Punjabi"],
+    ["ro",  "Romanian"],
+    ["ru",  "Russian"],
+    ["sr",  "Serbian"],
+    ["scn", "Sicilian"],
+    ["sk",  "Slovak"],
+    ["sl",  "Slovene"],
+    ["sv",  "Swedish"],
+    ["ta",  "Tamil"],
+    ["th",  "Thai"],
+    ["tr",  "Turkish"],
+    ["uk",  "Ukrainian"]
+];
+
+
+//  Direct Speach Starting Volume
+/*
+  This setting appears to be non-functinal after an ACRE2 update and is disabled until it can be fixed.
+
+  ACRE2 has a built in direct speech slider allowing you to determine how far your voice in direct speech should travel. The system has five states and by default starts in the middle state. The below table contains an approximated table with empirical testing by Bullhorn.
+
+  Volume state  |  Loud (m)  |  Quiet (m)  |  Barely audible (m)
+  -2            |  1         |  2          |  13
+  -1            |  3         |  15         |  55
+   0            |  8         |  30         |  100
+  +1            |  12        |  45         |  145
+  +2            |  15        |  55         |  195
+*/
+//FW_Acre_Volume_Value = -2;
 
 
 /////////////////
@@ -80,69 +159,26 @@ FW_ChannelNames = [
     ]
 ];
 
-//////////////
-//BABEL
-//////////////
 
-// set this to true to enable babel
-// this scrambles the voices of people who don't speak the same language as your side
-FW_enable_babel = true;
+//////////////////
+//RADIO SCRAMBLE
+//////////////////
+
+FW_enable_scramble = false;
+
+//If enabled all sides will have different scramble frequencies.
+//Function below is to switch one unit to different scramble side.
 
 /*
- * FNC_SetLanguages
+ * FNC_SetScramble
+ * Change unit's scramble so it matches set faction
  *
- * Use this function in player's init to set player's custom languages (translator for example)
- * faction setting will be overwritten by this value
- *
- * Examples:
- * [this, ["ru"]] call FNC_SetLanguages;
- * [this, ["fr", "en", "ru"]] call FNC_SetLanguages;
+ * Example:
+ * [this, east] call FNC_SetScramble;
+ * Will set unit's radio to east's scramble setting.
+ * (if following example is used on west unit, that unit will hear east units on radio, but won't hear west)
 */
 
-// define all available languages here
-// you can add your own if something is missing
-// ["ISO 639 country code", "Name of language"]
-FW_all_languages = [
-    ["sq",  "Albanian"],
-    ["be",  "Belarusian"],
-    ["bs",  "Bosnian"],
-    ["bg",  "Bulgarian"],
-    ["hr",  "Croatian"],
-    ["cs",  "Czech"],
-    ["da",  "Danish"],
-    ["nl",  "Dutch"],
-    ["en",  "English"],
-    ["et",  "Estonian"],
-    ["fi",  "Finnish"],
-    ["fr",  "French"],
-    ["de",  "German"],
-    ["el",  "Greek"],
-    ["hu",  "Hungarian"],
-    ["it",  "Italian"],
-    ["ja",  "Japanese"],
-    ["lv",  "Latvian"],
-    ["lt",  "Lithuanian"],
-    ["mt",  "Maltese"],
-    ["no",  "Norwegian"],
-    ["pl",  "Polish"],
-    ["ro",  "Romanian"],
-    ["ru",  "Russian"],
-    ["sr",  "Serbian"],
-    ["scn", "Sicilian"],
-    ["sk",  "Slovak"],
-    ["sl",  "Slovene"],
-    ["sv",  "Swedish"],
-    ["uk",  "Ukrainian"]
-];
-
-//define languages for different sides
-//change these to make that side speak a different language
-FW_languages_babel = [
-    ["de"], //WEST Language
-    ["ru"], //EAST Language
-    ["en"], //INDEPENDENT Language
-    ["fr"]  //CIVILIAN Language
-];
 
 ///////////////////////
 //EXTRA SETTINGS
@@ -183,19 +219,3 @@ acre_sys_core_revealToAI = true;
 /*This setting can be used to disable the simulation of antenna radiation patterns for both the transmitting and receiving radios.
   It will make all antennas act with perfect omni-directional behaviour. (true/false)*/
 acre_sys_core_interference = true;
-
-
-//  Direct Speach Starting Volume
-/*
-  This setting appears to be non-functinal after an ACRE2 update and is disabled until it can be fixed.
-
-  ACRE2 has a built in direct speech slider allowing you to determine how far your voice in direct speech should travel. The system has five states and by default starts in the middle state. The below table contains an approximated table with empirical testing by Bullhorn.
-
-  Volume state  |  Loud (m)  |  Quiet (m)  |  Barely audible (m)
-  -2            |  1         |  2          |  13
-  -1            |  3         |  15         |  55
-   0            |  8         |  30         |  100
-  +1            |  12        |  45         |  145
-  +2            |  15        |  55         |  195
-*/
-FW_Acre_Volume_Value = -2;

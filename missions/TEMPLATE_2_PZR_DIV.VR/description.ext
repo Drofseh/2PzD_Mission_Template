@@ -5,6 +5,16 @@
 #include "modules\modules.sqf" //DO NOT REMOVE
 
 #undef description
+#define debriefing_sections
+
+class CfgDebriefingSections {
+
+    #include "core\description.hpp" //DO NOT REMOVE
+    #include "modules\modules.sqf" //DO NOT REMOVE
+
+};
+
+#undef debriefing_sections
 #define description_functions
 
 class CfgFunctions {
@@ -46,7 +56,6 @@ class CfgSounds {
 };
 
 #undef description_sounds
-
 #define description_insignia
 
 class CfgUnitInsignia {
@@ -57,7 +66,6 @@ class CfgUnitInsignia {
 };
 
 #undef description_insignia
-
 #define description_params
 
 class Params {

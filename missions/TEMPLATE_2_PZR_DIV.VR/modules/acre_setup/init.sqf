@@ -81,27 +81,22 @@ if (hasInterface) then {
         };
 
         if (FW_enable_babel) then {
-            {_x call acre_api_fnc_babelAddLanguageType;} foreach FW_all_languages;
-
-            if (!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}) then {
-                _zeusLanguages = [];
-                {
-                    _zeusLanguages pushBackUnique (_x select 0);
-                } forEach FW_languages_babel;
-                [player, _zeusLanguages] call FNC_SetLanguages;
-            } else {
-                _side_language = FW_languages_babel select _side_i;
-                _side_language call acre_api_fnc_babelSetSpokenLanguages;
-            };
+            {
+                _x call acre_api_fnc_babelAddLanguageType;
+            } foreach FW_all_languages;
 
             private _languages = player getVariable ["FW_Languages", []];
+            private _side_language = FW_languages_babel select _side_i;
+            _languages pushBackUnique (_side_language select 0);
 
-            if (count _languages > 0) then {
-                _languages call acre_api_fnc_babelSetSpokenLanguages;
-            } else {
-                _languages pushBackUnique (_side_language select 0);
-                player setVariable ["FW_Languages", _languages];
+            if (!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}) then {
+                {
+                    _languages pushBackUnique (_x select 0);
+                } forEach FW_languages_babel;
             };
+
+            _languages call acre_api_fnc_babelSetSpokenLanguages;
+            player setVariable ["FW_Languages", _languages];
         };
 
         waitUntil {[] call acre_api_fnc_isInitialized};
@@ -120,7 +115,5 @@ if (hasInterface) then {
                 [_radioID, _spatial] call acre_api_fnc_setRadioSpatial;
             };
         } foreach _channels;
-
     };
-
 };

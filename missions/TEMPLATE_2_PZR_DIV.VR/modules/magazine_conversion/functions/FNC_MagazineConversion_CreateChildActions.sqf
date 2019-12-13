@@ -7,6 +7,7 @@ FNC_MagazineConversion_CreateChildActions = {
 
     // get all the player's magazines and then find the unique ones.
     magazine_conversion_playerMagazines = magazines player arrayIntersect magazines player;
+    magazine_conversion_playerMagazines sort true;
 
     // start of the `forEach magazine_conversion_playerMagazines` loop
     {
@@ -38,22 +39,15 @@ FNC_MagazineConversion_CreateChildActions = {
                 private _nameOldMagazine = getText (configFile >> "CfgMagazines" >> _OldMag >> "displayName");
                 private _actionNameOldMag = (format ["Convert %1",_nameOldMagazine]);
                 private _pictureOldMagazine = getText (configFile >> "CfgMagazines" >> _OldMag >> "picture");
-                private _ammoClass = getText (configFile >> "CfgMagazines" >> _OldMag >> "ammo");
-
-                /*
-                //this was used to prevent duplicate interaction points due to same display name, but now the interaction point is based on the classname it's no longer needed.
-                if ((player getVariable ["ace_interact_menu_selfactions",  []]) findIf {(_x select 0 select 0 ) isEqualTo _actionNameOldMag} >= 0) then {
-                    _actionNameOldMag = format ["%1 ",_actionNameOldMag];
-                };
-                */
+                private _ammoClass = toUpper (getText (configFile >> "CfgMagazines" >> _OldMag >> "ammo"));
 
                 // This is a workaround for some IFA3 ammo that uses a special ammo with no 'cartridge' model entry but should otherwise interchange.
                 if (_ammoClass == "") then {
                     _ammoClass = "No_Ammo_Class";
                 } else {
                     _ammoClass = _ammoClass splitString "_";
-                    if ("NoCartridge" in _ammoClass) then {
-                        _index = _ammoClass find "NoCartridge";
+                    if ("NOCARTRIDGE" in _ammoClass) then {
+                        _index = _ammoClass find "NOCARTRIDGE";
                         _ammoClass deleteAt _index;
                     };
                     _ammoClass = _ammoClass joinString "_";
@@ -75,6 +69,7 @@ FNC_MagazineConversion_CreateChildActions = {
                 [player, 1, ["ACE_SelfActions","Magazine Conversion"], _actionOldMagazine] call ace_interact_menu_fnc_addActionToObject;
 
                 private _ammoClassMagazines = magazine_conversion_nameSpace getVariable [(format ["magazine_conversion_%1",_ammoClass]), []];
+                _ammoClassMagazines sort true;
 
                 // start of the `forEach _ammoClassMagazines` loop
                 {
@@ -92,14 +87,6 @@ FNC_MagazineConversion_CreateChildActions = {
                         // Skip if the mags have the same name.
                         private _nameNewMagazine = getText (configFile >> "CfgMagazines" >> _NewMag >> "displayName");
                         if (_OldMag == _NewMag || {_NewMag isKindOf ["VehicleMagazine", configFile >> "CfgMagazines"]} || {(getNumber (configFile >> "CfgMagazines" >> _NewMag >> "scope")) != 2} || {_nameOldMagazine == _nameNewMagazine}) exitWith {};
-
-                        // Skip if NEW MAG magazine has more tracers than OLD MAG magazine to keep some tracer continuity
-                        // It will also prevent most rifle magazines from being turned into any machine gun magazine that uses tracers.
-                        // I'm not sure if this is a good solution, as it prevents converting rifle mags into MG mags and similar, but it could be worked around by creating new mag classes with no tracers.
-                        // It might not be worth bothering at all, as tracer mags don't have much extra utility and the time it takes to convert should generally prevent abuse.
-                        /*
-                        if (1 min (getNumber (configFile >> "CfgMagazines" >> _OldMag >> "tracersEvery")) < (1 min (getNumber (configFile >> "CfgMagazines" >> _NewMag >> "tracersEvery")))) exitWith {};
-                        */
 
                         // Make the interaction point name based on the NEW MAG magazine's display name.
                         // Get the invetory icon to use as the interaction point icon, and get the ammunition class the OLD MAG magazine uses.

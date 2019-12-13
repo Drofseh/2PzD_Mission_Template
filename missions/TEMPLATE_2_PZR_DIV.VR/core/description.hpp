@@ -27,19 +27,30 @@
 
         };
     };
-
-    class CfgDebriefingSections {
-        class acex_killTracker {
-            title = "Acex Killed Events";
-            variable = "acex_killTracker_outputText";
-        };
-    };
-
 #endif
 
 #ifdef description_titles
 
     #include "dia\debug\dia_debug.hpp" //Must have for the end screen to work, if removed Arma 3 will crash on mission load
     #include "dia\endscreen\dia_endscreen.hpp" //Must have for the end screen to work, if removed Arma 3 will crash on mission load
+
+#endif
+
+#ifdef debriefing_sections
+
+    class acex_killTracker {
+        title = "Acex Killed Events";
+        variable = "acex_killTracker_outputText";
+    };
+
+    class endTitleText_EndScreen {
+        title = "End Message";
+        variable = "endTitleText_EndScreen";
+    };
+
+    class endCasualties_EndScreen {
+        title = "Casualties";
+        variable = "endCasualties_EndScreen";
+    };
 
 #endif

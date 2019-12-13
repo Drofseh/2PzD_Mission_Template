@@ -2,10 +2,11 @@
 _bg = 3000;
 _endTitle = 3001;
 _left = 3002;
-_right = 3003;
-_bottomLeft = 3004;
-_bottomMiddle = 3005;
-_bottomRight = 3006;
+_centre = 3003;
+_right = 3004;
+_bottomLeft = 3005;
+_bottomMiddle = 3006;
+_bottomRight = 3007;
 
 params ["_scenario", "_timeLimit", "_teams"];
 
@@ -23,6 +24,7 @@ params ["_scenario", "_timeLimit", "_teams"];
 ] call CBA_fnc_waitAndExecute;
 
 _leftText = "";
+_centreText = "";
 _rightText = "";
 _bottomTextLeft = "";
 _bottomTextMiddle = "";
@@ -52,16 +54,26 @@ _textSide = 0;
 
     _temp = format ["%1<br/>",_temp];
 
-    if (_textSide == 0) then {
-        _textSide = 1;
-        _leftText = _leftText + _temp;
-    } else {
-        _textSide = 0;
-        _rightText = _rightText + _temp;
+    switch (_textSide) do {
+        case 0 : {
+            _textSide = 1;
+            _leftText = _leftText + _temp;
+        };
+        case 1 : {
+            _textSide = 2;
+            _centreText = _centreText + _temp;
+        };
+        case 2 : {
+            _textSide = 0;
+            _rightText = _rightText + _temp;
+        };
     };
 } forEach _teams;
 
+endCasualties_EndScreen = format ["%1<br/>%2<br/>%3",_leftText,_centreText,_rightText];
+
 _time = ceil(CBA_missionTime / 60);
+_timeLimitText = "";
 
 if (_timeLimit == 0) then {
     _timeLimitText = format ["Mission duration: %1 minutes", _time];
@@ -73,6 +85,7 @@ if (_timeLimit == 0) then {
 };
 
 _endTitleText = format ["%1<br/>%2", _scenario, _timeLimitText];
+endTitleText_EndScreen = _endTitleText;
 
 if (!isNil "aCount_textBLU" && !isNil "aCount_textRED" && !isNil "aCount_textRES") then {
     _bottomTextLeft = format ["%1",aCount_textBLU];
@@ -86,6 +99,7 @@ _dia = uiNamespace getVariable "FW_EndScreen";
 
 (_dia displayCtrl _endTitle) ctrlSetStructuredText parseText _endTitleText;
 (_dia displayCtrl _left) ctrlSetStructuredText parseText _leftText;
+(_dia displayCtrl _centre) ctrlSetStructuredText parseText _centreText;
 (_dia displayCtrl _right) ctrlSetStructuredText parseText _rightText;
 (_dia displayCtrl _bottomLeft) ctrlSetStructuredText parseText _bottomTextLeft;
 (_dia displayCtrl _bottomMiddle) ctrlSetStructuredText parseText _bottomTextMiddle;

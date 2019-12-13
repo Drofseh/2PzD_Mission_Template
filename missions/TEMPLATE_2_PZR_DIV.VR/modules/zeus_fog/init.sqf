@@ -40,7 +40,9 @@ if (isServer) then {
             };
         };
     } else {
-        zeusCommander addCuratorEditingArea [999, (getPosATL God),300];
+        if (!isNil "God") then {
+            zeusCommander addCuratorEditingArea [999, (getPosATL God),300];
+        };
     };
 
     // Prevents the Zeus from editing outside the editing area, except for logics

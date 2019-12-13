@@ -5,10 +5,6 @@ if (isDedicated) then {
     ['Mission Started', 'info'] call MAR_fnc_log;
 };
 
-if (isNil {God}) then {
-    God = 0;
-};
-
 #include "core\script_macros.hpp"
 #include "core\init.sqf" //DO NOT REMOVE
 #include "customization\settings.sqf" //DO NOT REMOVE
