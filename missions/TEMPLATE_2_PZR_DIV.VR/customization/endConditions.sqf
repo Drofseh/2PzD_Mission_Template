@@ -71,7 +71,8 @@ if (westCasualty >= 75) exitWith { //ends when Bluefor deaths above or equal to 
     <br/>
     <br/>OPFOR VICTORY" call FNC_EndMission;
 };
-
+*/
+/*
     //Alternative methods of counting casualties
     //this will count how many members of a team died in the mission
 "2 Panzer Division" call FNC_casualtyCount;
@@ -81,7 +82,7 @@ if (westCasualty >= 75) exitWith { //ends when Bluefor deaths above or equal to 
     //not enough players are present in the team
 "2 Panzer Division" call FNC_countTeam;
 
-    Adding extraction
+    //Adding extraction
     //this will check if at least 80% of remaining forces are present in extraction area
     //it will then end the mission
 ["2 Panzer Division", "ExtractionAreaMarker", 0.8] call FNC_hasExtracted;
