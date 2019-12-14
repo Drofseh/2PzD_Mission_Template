@@ -1,6 +1,6 @@
 #include "core\briefingCore.sqf" // DO NOT REMOVE
 
-//======================== Briefing Formatiing Information ========================
+// ======================== Briefing Formatiing Information ========================
 
 // use // to comment out a line, this will make it no longer appear in the briefing
 // use </br> to make a line break, if you don't do this your briefing will all be on one line.
@@ -49,11 +49,11 @@ Don't use too many images or your mission filesize will be too large.
 Make sure to put the images in a new annex tab instead of cluttering the normal tabs.
 */
 
-//======================== Important Sections Not Specific to Side ========================
+// ======================== Important Sections Not Specific to Side ========================
 
-//===== Admin Tab =====
-//Displays the Admin Tab, which provides some techinical controls for respawn, mission ending, and similar.
-//It appears for the Admin, the Zeus, Brauer, Falk, Haas, Madsen, Sauer, Schuttler
+// ===== Admin Tab =====
+// Displays the Admin Tab, which provides some techinical controls for respawn, mission ending, and similar.
+// It appears for the Admin, the Zeus, Brauer, Falk, Haas, Madsen, Sauer, Schuttler
 
 _adminState = call BIS_fnc_admin;
 _uid = getPlayerUID player;
@@ -67,8 +67,8 @@ if (
     (_uid == "76561197985738940") || // Sauer
     (_uid == "76561198096113294")    // Schuttler
 ) then {
-    //This tab has clickable commands to allow the admin or zeus to end the mission.
-    //More may be added by makin an entry here and adding a corresponding entry in the settings.sqf
+    // This tab has clickable commands to allow the admin or zeus to end the mission.
+    // More may be added by makin an entry here and adding a corresponding entry in the settings.sqf
     NEWTAB("Admin Tab")
     <br/>The server admin, the zeus (if present), and all Council members have access to these options.
     <br/>
@@ -101,21 +101,21 @@ if (
     <br/>    <execute expression='victoryMessage call FNC_EndMissionRequest'>Call Mission Victory</execute>
     <br/>
     <br/>    <execute expression='failureMessage call FNC_EndMissionRequest'>Call Mission Failure</execute>
-    //An example of a custom ending
-    //<br/>    <execute expression='myCustomMessage call FNC_EndMissionRequest'>Call My Custom Ending Example</execute>
+    // An example of a custom ending
+    // <br/>    <execute expression='myCustomMessage call FNC_EndMissionRequest'>Call My Custom Ending Example</execute>
     <br/>
-    <br/><font color='#70db70' size='14'>Helper Checks:</font>//Server vars
+    <br/><font color='#70db70' size='14'>Helper Checks:</font>// Server vars
     <br/>These are anything the mission maker wants to be able to check in game.
     <br/>
     <br/>    <execute expression='systemChat str westCasualty'>Check Bluefor Casualty Percentage</execute>
     <br/>    <execute expression='systemChat str eastCasualty'>Check Opfor Casualty Percentage</execute>
-    //<br/>    <execute expression='systemChat str resistanceCasualty'>Check Indfor Casualty Percentage</execute>
-    //<br/>    <execute expression='systemChat str civilianCasualty'>Check Civilian Casualty Percentage</execute>
+    // <br/>    <execute expression='systemChat str resistanceCasualty'>Check Indfor Casualty Percentage</execute>
+    // <br/>    <execute expression='systemChat str civilianCasualty'>Check Civilian Casualty Percentage</execute>
     <br/>    <execute expression='systemChat str testVar'>Test Boolean Handling</execute>
     ENDTAB;
 };
 
-//===== Zeus Notes =====
+// ===== Zeus Notes =====
 // Used to find the dedicated Zeus player and put the Zeus notes in their briefing.
 // This is only visible to the Zeus and other players in the same group as the dedicated Zeus.
 
@@ -127,7 +127,7 @@ if (
 // I strongly suggest keeping the Zeus on the Civilian side, or at least on a different side from the players, so they can't see any of the marks or lines the players draw on the map.
 
 if (!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}) then {
-    //All Zeus Notes should go in this tab, only the Zeus player will see them.
+    // All Zeus Notes should go in this tab, only the Zeus player will see them.
     NEWTAB("Zeus Notes")
     <br/><font color='#FF8C00' size='20'>If you are not going to Zeus this mission, do not read this tab.</font>
     <br/>
@@ -138,12 +138,15 @@ if (!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}
     ENDTAB;
 };
 
-//===== Mission Notes =====
-//This section is for techincal information about the mission that would be out of place in the briefing proper
+// ===== Mission Notes =====
+// This section is for techincal information about the mission that would be out of place in the briefing proper
 
 NEWTAB("Mission notes:")
 // This is shown for everyone and should include any technical information you want to include about the mission
 <br/>Time Limit is XX minutes.
+// for side missions the time limit should be 60 minutes
+// the strict time limit ending is disabled by default
+// if you enable a strict time limit make sure you note that the mission will end when the time is up.
 // change the XX to what you set the time limit to in settings.sqf
 <br/>
 <br/><font color='#FF8C00' size='14'>Victory Conditions:</font>
@@ -170,22 +173,22 @@ NEWTAB("Mission notes:")
 <br/>
 ENDTAB;
 
-//===== Game Mastering =====
-//This indicates if a Zeus is required for the mission.
+// ===== Game Mastering =====
+// This indicates if a Zeus is required for the mission.
 
 NEWTAB("Game Mastering")
 // Change this if you want a zeus to guide your mission
 // Example:
-//This mission is not designed for game mastering and should only be manipulated for technical, administrative or diagnostic purposes.
+// This mission is not designed for game mastering and should only be manipulated for technical, administrative or diagnostic purposes.
 This mission requires a dedicated Zeus to play correctly.
 ENDTAB;
 
-//======================== Side Based Briefings ========================
+// ======================== Side Based Briefings ========================
 
 switch (side player) do { // Checks what team the player is on
 
 case west : {
-//===== West =====
+// ===== West =====
 // If player is Blufor (Blue) they receive this briefing
 // This normally includes German and Japanese units
 
@@ -339,15 +342,20 @@ NEWTAB("III. C. Eigene Kräfte (Friendly Forces):")
 <br/>
 <br/><font color='#70db70' size='14'>1. Composition:</font>
 // Describe the makeup of the friendly forces.
-<br/>1x Kompanie consisting of:
+// Include others as needed
+<br/>1x Zug consisting of:
+<br/> 1x Zugtrupp
+<br/> 3x Gruppen
 <br/>
-<br/> 1x Kompanietrupp
-<br/> 1x Ersatztruppen
-<br/>
-<br/> 2x Züge each consisting of:
-<br/>  1x Zugtrupp
-<br/>  3x Gruppen
-<br/>
+// <br/>1x Kompanie consisting of:
+// <br/>
+// <br/> 1x Kompanietrupp
+// <br/> 1x Ersatztruppen
+// <br/>
+// <br/> 2x Züge each consisting of:
+// <br/>  1x Zugtrupp
+// <br/>  3x Gruppen
+// <br/>
 <br/><font color='#70db70' size='14'>2. Attachments/Detachments:</font>
 // Any attached or detached elements or units
 // Example:
@@ -384,22 +392,20 @@ ENDTAB;
 
 NEWTAB("IV. Gefechtssignale (Signals):")
 <br/><font color='#FF8C00' size='16'>A. Call Signs:</font>
-//Include others as needed
-<br/>
-<br/>HQ - Kompanietrupp
+// Include others as needed
+// <br/>
+// <br/>HQ - Kompanietrupp
 <br/>
 <br/>1'0 - 1 Zug Zugtrupp
 <br/>  1'1 - 1 Zug 1 Gruppe
 <br/>  1'2 - 1 Zug 2 Gruppe
 <br/>  1'3 - 1 Zug 3 Gruppe
 <br/>
-<br/>2'0 - 2 Zug Zugtrupp
-<br/>  2'1 - 2 Zug 1 Gruppe
-<br/>  2'2 - 2 Zug 2 Gruppe
-<br/>  2'3 - 2 Zug 3 Gruppe
-<br/>
-<br/>Eva - The tank.
-<br/>
+// <br/>2'0 - 2 Zug Zugtrupp
+// <br/>  2'1 - 2 Zug 1 Gruppe
+// <br/>  2'2 - 2 Zug 2 Gruppe
+// <br/>  2'3 - 2 Zug 3 Gruppe
+// <br/>
 <br/><font color='#FF8C00' size='16'>B. Prowords:</font>
 <br/>Ende - Out, reply not required.
 <br/>
@@ -409,17 +415,17 @@ NEWTAB("IV. Gefechtssignale (Signals):")
 <br/>Example: 1 Actual would be the 1 Zug Zugführer personally, not his Funker.
 <br/>
 <br/><font color='#FF8C00' size='16'>C. Radio Frequencies:</font>
-//Include others as needed
+// Include others as needed
 <br/>Frequency 51.00 mhz - Kompanie Net
 <br/>Frequency 31.00 mhz - 1 Zug Sub-Net
 <br/>Frequency 54.00 mhz - 2 Zug Sub-Net
 <br/>
 <br/><font color='#FF8C00' size='16'>D. Special Signals</font>
-//Include others as needed
+// Include others as needed
 <br/>
 <br/><font color='#70db70' size='14'>1. Hand Signals:</font>
-<br/>Waving like a idiot - Don't shoot me //'
-<br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me //'
+<br/>Waving like a idiot - Don't shoot me // '
+<br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me // '
 <br/>
 <br/><font color='#70db70' size='14'>2. Smoke Signals:</font>
 <br/>Green - Go signal
@@ -446,7 +452,7 @@ ENDTAB;
 }; // End of west case
 
 case east : {
-//===== East =====
+// ===== East =====
 // If player is Opfor (Red) they receive this briefing
 // This normally includes Russian units.
 
@@ -525,8 +531,19 @@ NEWTAB("III. C. Дружественные Силы (Friendly Forces):")
 <font size='14'>FRIENDLY_NAME_HERE</font>
 <br/>
 <br/><font color='#70db70' size='14'>1. Composition:</font>
+<br/>1x Platoon consisting of:
+<br/> 1x Platoon HQ
+<br/> 3x Squads
 <br/>
-<br/>
+// <br/>1x Company consisting of:
+// <br/>
+// <br/> 1x Company HQ
+// <br/> 1x Reserve Section
+// <br/>
+// <br/> 2x Platoons each consisting of:
+// <br/>  1x Platoon HQ
+// <br/>  3x Squads
+// <br/>
 <br/><font color='#70db70' size='14'>2. Attachments/Detachments:</font>
 <br/>
 <br/>
@@ -546,19 +563,19 @@ ENDTAB;
 
 NEWTAB("IV. Сигнальная (Signals):")
 <br/><font color='#FF8C00' size='16'>A. Call Signs:</font>
-<br/>
-<br/>HQ - Company HQ
+// <br/>
+// <br/>HQ - Company HQ
 <br/>
 <br/>1'0 - 1 Platoon, Platoon HQ
 <br/>  1'1 - 1 Platoon, 1 Squad
 <br/>  1'2 - 1 Platoon, 2 Squad
 <br/>  1'3 - 1 Platoon, 3 Squad
 <br/>
-<br/>2'0 - 2 Platoon, Platoon HQ
-<br/>  2'1 - 2 Platoon, 1 Squad
-<br/>  2'2 - 2 Platoon, 2 Squad
-<br/>  2'3 - 2 Platoon, 3 Squad
-<br/>
+// <br/>2'0 - 2 Platoon, Platoon HQ
+// <br/>  2'1 - 2 Platoon, 1 Squad
+// <br/>  2'2 - 2 Platoon, 2 Squad
+// <br/>  2'3 - 2 Platoon, 3 Squad
+// <br/>
 <br/><font color='#FF8C00' size='16'>B. Prowords:</font>
 <br/>Out - Reply not required.
 <br/>
@@ -568,17 +585,17 @@ NEWTAB("IV. Сигнальная (Signals):")
 <br/>For example 1 Actual would be 1 Platoon Commander personally, not his radio operator.
 <br/>
 <br/><font color='#FF8C00' size='16'>C. Radio Frequencies:</font>
-//Include others as needed
+// Include others as needed
 <br/>Frequency 53.00 mhz - Company Net
 <br/>Frequency 33.00 mhz - 1 Platoon Sub-Net
 <br/>Frequency 56.00 mhz - 2 Platoon Sub-Net
 <br/>
 <br/><font color='#FF8C00' size='16'>D. Special Signals</font>
-//Include others as needed
+// Include others as needed
 <br/>
 <br/><font color='#70db70' size='14'>1. Hand Signals:</font>
-<br/>Waving like a idiot - Don't shoot me //'
-<br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me //'
+<br/>Waving like a idiot - Don't shoot me // '
+<br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me // '
 <br/>
 <br/><font color='#70db70' size='14'>2. Smoke Signals:</font>
 <br/>Green - Go signal
@@ -599,7 +616,7 @@ ENDTAB;
 };// End of east case
 
 case resistance : {
-//===== Resistance =====
+// ===== Resistance =====
 // If player is Indfor (Green) they receive this briefing
 // This normally includes Americans and British units.
 
@@ -678,15 +695,20 @@ NEWTAB("III. C. Friendly Forces:")
 <font size='14'>FRIENDLY_NAME_HERE</font>
 <br/>
 <br/><font color='#70db70' size='14'>1. Composition:</font>
-<br/>1x Company consisting of:
-<br/>
-<br/>1x Company HQ
-<br/>1x Reserve Section
-<br/>
-<br/>2x Platoons each consisting of:
+// Americans use the term Squad, Commonwealth (Canada, Australia, etc.) use the term Section
+<br/>1x Platoon consisting of:
 <br/> 1x Platoon HQ
 <br/> 3x Sections
 <br/>
+// <br/>1x Company consisting of:
+// <br/>
+// <br/>1x Company HQ
+// <br/>1x Reserve Section
+// <br/>
+// <br/>2x Platoons each consisting of:
+// <br/> 1x Platoon HQ
+// <br/> 3x Sections
+// <br/>
 <br/><font color='#70db70' size='14'>2. Attachments/Detachments:</font>
 <br/>
 <br/>
@@ -706,19 +728,20 @@ ENDTAB;
 
 NEWTAB("IV. Signals:")
 <br/><font color='#FF8C00' size='16'>A. Call Signs:</font>
-<br/>
-<br/>HQ - Company HQ
+// Americans use the term Squad, Commonwealth (Canada, Australia, etc.) use the term Section
+// <br/>
+// <br/>HQ - Company HQ
 <br/>
 <br/>1'0 - 1 Platoon, Platoon HQ
 <br/>  1'1 - 1 Platoon, 1 Section
 <br/>  1'2 - 1 Platoon, 2 Section
 <br/>  1'3 - 1 Platoon, 3 Section
 <br/>
-<br/>2'0 - 2 Platoon, Platoon HQ
-<br/>  2'1 - 2 Platoon, 1 Section
-<br/>  2'2 - 2 Platoon, 2 Section
-<br/>  2'3 - 2 Platoon, 3 Section
-<br/>
+// <br/>2'0 - 2 Platoon, Platoon HQ
+// <br/>  2'1 - 2 Platoon, 1 Section
+// <br/>  2'2 - 2 Platoon, 2 Section
+// <br/>  2'3 - 2 Platoon, 3 Section
+// <br/>
 <br/><font color='#FF8C00' size='16'>B. Prowords:</font>
 <br/>Out - Reply not required.
 <br/>
@@ -728,17 +751,17 @@ NEWTAB("IV. Signals:")
 <br/>For example 1 Actual would be 1 Platoon Commander personally, not his radio operator.
 <br/>
 <br/><font color='#FF8C00' size='16'>C. Radio Frequencies:</font>
-//Include others as needed
+// Include others as needed
 <br/>Frequency 55.00 mhz - Company Net
 <br/>Frequency 35.00 mhz - 1 Platoon Sub-Net
 <br/>Frequency 58.00 mhz - 2 Platoon Sub-Net
 <br/>
 <br/><font color='#FF8C00' size='16'>D. Special Signals</font>
-//Include others as needed
+// Include others as needed
 <br/>
 <br/><font color='#70db70' size='14'>1. Hand Signals:</font>
-<br/>Waving like a idiot - Don't shoot me //'
-<br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me //'
+<br/>Waving like a idiot - Don't shoot me // '
+<br/>Spamming Q and E, aka the 'friendly dance' - Don't shoot me // '
 <br/>
 <br/><font color='#70db70' size='14'>2. Smoke Signals:</font>
 <br/>Green - Go signal
@@ -759,7 +782,7 @@ ENDTAB;
 };// End of resistance case
 
 case civilian : {
-//===== Civilian =====
+// ===== Civilian =====
 // If player is a Civilian they receive this briefing.
 // No layout is specificied, so you will need to make your own tabs.
 
@@ -768,7 +791,7 @@ case civilian : {
 }; // End of switch
 
 if (!isNil "loggingEnabled" && {loggingEnabled == 1}) then {
-    //Persistance system information should go in this tab.
+    // Persistance system information should go in this tab.
     NEWTAB("Persistence System")
     <br/><font color='#70db70'>To ensure accurate logging of data follow these steps:</font>
     <br/>
