@@ -12,7 +12,7 @@ _info = "
 <br/>
 <br/><font size='16'>Current Versions:
 <br/>    Oslen Framework v3.3.3
-<br/>    2PzD Template   v2.28.1</font>
+<br/>    2PzD Template   v2.28.2</font>
 ";
 
 player createDiaryRecord ["FW_Menu", ["Framework Info", _info]];
