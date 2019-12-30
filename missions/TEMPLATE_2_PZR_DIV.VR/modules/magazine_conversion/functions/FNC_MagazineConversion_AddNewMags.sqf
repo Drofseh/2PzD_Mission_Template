@@ -118,6 +118,8 @@ FNC_MagazineConversion_AddNewMags = {
                 true
             ] call CBA_fnc_notify;
         },
-        (format ["Converting %1 into %2... Press Ace Interaction to cancel.",_nameOldMagazine,_nameNewMagazine])
+        (format ["Converting %1 into %2... Press Ace Interaction to cancel.",_nameOldMagazine,_nameNewMagazine]),
+        nil,
+        ["isNotInside", "isNotSitting"]
     ] call ace_common_fnc_progressBar;
 };

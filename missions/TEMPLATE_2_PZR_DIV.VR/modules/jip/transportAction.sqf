@@ -1,8 +1,8 @@
-_conditionJIP_Teleport = {
-    player distance FW_JIP_spawnPos < FW_SPAWNDISTANCE;
+_conditionJIP_Transport = {
+    (player distance FW_JIP_spawnPos) < FW_SPAWNDISTANCE;
 };
 
-_statementJIP_Teleport = {
+_statementJIP_Transport = {
     private _targets = [];
 
     {
@@ -15,12 +15,12 @@ _statementJIP_Teleport = {
     [player, 1, ["ACE_SelfActions","JIP_Transport"]] call ace_interact_menu_fnc_removeActionFromObject;
 };
 
-_actionJIP_Teleport = [
+_actionJIP_Transport = [
     "JIP_Transport",
     "Request Transportation",
     "",
-    _statementJIP_Teleport,
-    _conditionJIP_Teleport
+    _statementJIP_Transport,
+    _conditionJIP_Transport
 ] call ace_interact_menu_fnc_createAction;
 
-[player, 1, ["ACE_SelfActions"], _actionJIP_Teleport] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions"], _actionJIP_Transport] call ace_interact_menu_fnc_addActionToObject;

@@ -1,5 +1,5 @@
 _conditionJIP_Teleport = {
-    (player distance FW_JIP_spawnPos) < FW_SPAWNDISTANCE
+    (player distance FW_JIP_spawnPos) < FW_SPAWNDISTANCE;
 };
 
 _statementJIP_Teleport = {
@@ -9,34 +9,28 @@ _statementJIP_Teleport = {
     private _freeSpace = (vehicle _target) call FNC_HasEmptyPositions;
 
     if (!(_alive) || {_inVehicle && {!(_freeSpace)}}) then {
-        private _rank = -1;
-        private _newRank = -1;
-        private _count = 0;
+        private _skip = -1;
+        private _count = -1;
+        private _found = false;
+        _target = objNull;
 
         {
-            if (_x call FNC_Alive) then {
-                private _inVehicle = _x call FNC_InVehicle;
-                private _freeSpace = (vehicle _x) call FNC_HasEmptyPositions;
-                _count = _count + 1;
-                _newRank = rankId _x;
+            _alive = _x call FNC_Alive;
 
-                if ((_newRank > _rank) && (_inVehicle || _freeSpace)) then {
-                    _rank = _newRank;
-                    _target = _x;
-                };
+            if (_alive && {(_x distance2D player) > FW_JIPDISTANCE && {!(_x call FNC_InVehicle) || {vehicle _x call FNC_HasEmptyPositions}}}) then {
+                _found = true;
+            } else {
+                _skip = _skip + 1;
+            };
+
+            if (_found) exitWith {
+                _target = _x;
+            };
+
+            if (_alive) then {
+                _count = _count + 1;
             };
         } forEach ((units group player) - [player]);
-
-        if (_rank == -1) then {
-            _target = objNull;
-
-            if (_count == 0) then {
-                [player, 1, ["ACE_SelfActions","JIP_Teleport"]] call ace_interact_menu_fnc_removeActionFromObject;
-                "No one left in your squad" call CBA_fnc_notify;
-            } else {
-                "Not possible to JIP teleport to anyone, please try again later" call CBA_fnc_notify;
-            };
-        };
     };
 
     if (!isNull(_target)) then {
@@ -49,6 +43,15 @@ _statementJIP_Teleport = {
 
         [player, 1, ["ACE_SelfActions","JIP_Teleport"]] call ace_interact_menu_fnc_removeActionFromObject;
     } else {
+        if (_count < 0) exitWith {
+            [player, 1, ["ACE_SelfActions","JIP_Teleport"]] call ace_interact_menu_fnc_removeActionFromObject;
+            "No one left in your squad" call CBA_fnc_notify;
+        };
+
+        if (_skip > -1) exitWith {
+            "Not possible to JIP teleport to anyone, please try again later" call CBA_fnc_notify;
+        };
+
         "Something went wrong, target doesn't exist." call CBA_fnc_notify;
     };
 };

@@ -67,7 +67,5 @@ if (hasInterface) then {
                 hintC format ["You are firing without approval. Cease your actions immediately!%1%2\n\nYour grenade has not been replaced.", _msg1, _msg2];
             };
         }] call CBA_fnc_addEventHandler;
-
-
     }, []] call CBA_fnc_waitUntilAndExecute;
 };

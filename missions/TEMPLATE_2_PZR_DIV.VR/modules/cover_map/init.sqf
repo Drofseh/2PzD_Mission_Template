@@ -6,6 +6,24 @@
 #define BS 50
 
 if (hasInterface) then {
+
+    if (_useSideSpecificAO) then {
+        switch (side player) do {
+            case west: {
+                _marker = _markerWest;
+            };
+            case east: {
+                _marker = _markerEast;
+            };
+            case resistance: {
+                _marker = _markerIndep;
+            };
+            case civilian: {
+                _marker = _markerCiv;
+            };
+        };
+    };
+
     _marker setMarkerAlphaLocal 0;
 
     FW_map_cover = [];

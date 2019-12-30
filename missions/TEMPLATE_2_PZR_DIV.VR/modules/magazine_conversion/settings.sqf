@@ -3,5 +3,5 @@
 // The normal rate is 2 rounds per second.
 // Setting this setting to 2 would mean 1 round every 2 seconds.
 // Setting this to 0.25 would give 4 rounds per second.
-// It may not be no less than 0.1
+// It may not be less than 0.1
 magazine_conversion_speedMultiplier = 0.5;

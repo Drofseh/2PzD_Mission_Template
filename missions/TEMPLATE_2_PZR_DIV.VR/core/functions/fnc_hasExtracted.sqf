@@ -1,5 +1,5 @@
 /*
- * Author: BlackHawk
+ * Author: BlackHawk && Wilhelm Haas
  *
  * Checks if given part of team has extracted to set area.
  * This function accounts for team starting in extraction area.
@@ -27,15 +27,11 @@ params [
 _result = false;
 _side = [_team, 1] call FNC_getTeamVariable;
 _count = {
-    side _x == _side && [_x, _marker] call FNC_inArea
+    side _x == _side && {_x inArea _marker};
 } count allUnits;
 
 if (_count >= _ratio * ([_team, 4] call FNC_getTeamVariable)) then {
-    if (!isNil "FW_hasDeparted" && {FW_hasDeparted}) then {
-        _result = true;
-    };
-} else {
-    FW_hasDeparted = true;
+    _result = true;
 };
 
 _result

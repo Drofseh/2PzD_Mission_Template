@@ -78,7 +78,7 @@ if (
     <br/>If the admin is dead and in spectator they can also trigger a respawn by typing the command <font color='#FF8C00'>#respawnWave</font> in spectator chat.
     <br/>
     <br/>This must NOT be used in missions that already have respawning enabled.
-    <br/>    <execute expression=' \
+    <br/>   <execute expression=' \
                 FW_RespawnTickets = 1; \
                 publicVariable ""FW_RespawnTickets""; \
                 {setPlayerRespawnTime random 10;} remoteExec [""call""]; \
@@ -98,9 +98,9 @@ if (
     <br/>
     <br/>Please be careful as a single click will end the mission immediately.
     <br/>
-    <br/>    <execute expression='victoryMessage call FNC_EndMissionRequest'>Call Mission Victory</execute>
+    <br/>   <execute expression='victoryMessage call FNC_EndMissionRequest'>Call Mission Victory</execute>
     <br/>
-    <br/>    <execute expression='failureMessage call FNC_EndMissionRequest'>Call Mission Failure</execute>
+    <br/>   <execute expression='failureMessage call FNC_EndMissionRequest'>Call Mission Failure</execute>
     // An example of a custom ending
     // <br/>    <execute expression='myCustomMessage call FNC_EndMissionRequest'>Call My Custom Ending Example</execute>
     <br/>

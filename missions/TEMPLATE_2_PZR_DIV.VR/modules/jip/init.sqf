@@ -32,17 +32,15 @@ if (hasInterface && {str side player != "LOGIC"}) then {
 
     if (player == _target || {!(_target call FNC_Alive)}) then {
 
-        private _rank = -1;
-
         {
-            if (rankId _x > _rank && {_target call FNC_Alive}) then {
-                _rank = rankId _x;
+            if (_target call FNC_Alive) then {
+                if ((_target distance2D player) > FW_JIPDISTANCE);
                 _target = _x;
             };
         } forEach ((units group player) - [player]);
     };
 
-    if ((_target distance player) > FW_JIPDISTANCE) then {
+    if ((_target distance2D player) > FW_JIPDISTANCE) then {
 
         FW_JIP_spawnPos = getPosATL player;
 
@@ -60,9 +58,8 @@ if (hasInterface && {str side player != "LOGIC"}) then {
                 }, [], 1] call CBA_fnc_waitAndExecute;
 
                 [{
-                    player distance FW_JIP_spawnPos > FW_SPAWNDISTANCE;
+                    player distance2D FW_JIP_spawnPos > FW_SPAWNDISTANCE;
                 },{
-                    [player, 1, ["ACE_SelfActions","JIP_Teleport"]] call ace_interact_menu_fnc_removeActionFromObject;
                     (format ["JIP teleport option lost, you went beyond %1 meters from your spawn location", FW_SPAWNDISTANCE]) call CBA_fnc_notify;
                 }, FW_JIP_spawnPos] call CBA_fnc_waitUntilAndExecute;
             };
@@ -81,7 +78,6 @@ if (hasInterface && {str side player != "LOGIC"}) then {
                 [{
                     player distance FW_JIP_spawnPos > FW_SPAWNDISTANCE;
                 },{
-                    [player, 1, ["ACE_SelfActions","JIP_Transport"]] call ace_interact_menu_fnc_removeActionFromObject;
                     (format ["JIP teleport option lost, you went beyond %1 meters from your spawn location", FW_SPAWNDISTANCE]) call CBA_fnc_notify;
                 }, FW_JIP_spawnPos] call CBA_fnc_waitUntilAndExecute;
             };
