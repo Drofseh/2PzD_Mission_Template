@@ -29,10 +29,12 @@ _delta = 0;
 _timer = 0;
  //ident,count,win
 _oldOwner = ["temp",0,9999];
-sleep(1);
-_run = true;
 
+sleep(1);
+
+_run = true;
 _contester = "NONE";
+
 while {_run} do {
 
     _start = CBA_missionTime;
@@ -46,21 +48,20 @@ while {_run} do {
     {
         _unit = _x;
 
-        if ([_unit,_markerCount select 0] call FNC_InArea && alive _unit) then {
+        if (alive _unit && {_unit inArea (_markerCount select 0)}) then {
             {
-
                 if (side _unit == _x select 0) then {
                     _x set [1,(_x select 1) + 1] ;
                 }
             } forEach (_markercount select 1);
         };
     } forEach allUnits;
-    _currentOwner = ["UNCONTESTED",0,9999];
-    {
 
+    _currentOwner = ["UNCONTESTED",0,9999];
+
+    {
         if (_x select 1 > _currentOwner select 1) then {
             _currentOwner = [str (_x select 0),_x select 1,_x select 2];
-
         } else {
             if ((_x select 1) == (_currentOwner select 1) && (_x select 1) != 0) then {
                 _currentOwner = ["CONTESTED",_x select 1,9999];
