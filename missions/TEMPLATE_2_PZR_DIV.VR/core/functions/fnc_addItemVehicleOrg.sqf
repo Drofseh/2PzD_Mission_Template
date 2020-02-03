@@ -20,7 +20,7 @@ params ["_vehicle", "_loadoutType", "_item", "_amount", "_type"];
 _amount = 1;
 _type = (_item call BIS_fnc_itemType) select 1;
 
-if !([_item] call FNC_checkClassname) exitWith {};
+if !([_item] call Olsen_FW_FNC_checkClassname) exitWith {};
 
 if (count _this > 3) then {
 
@@ -44,7 +44,7 @@ for "_x" from 1 to _amount do {
 
     } else {
 
-        (format ["FNC_AddItemVehicle: Warning couldn't fit %1, in %2, case %3", _item, _vehicle, _loadoutType]) call FNC_DebugMessage;
+        (format ["Olsen_FW_FNC_AddItemVehicle: Warning couldn't fit %1, in %2, case %3", _item, _vehicle, _loadoutType]) call Olsen_FW_FNC_DebugMessage;
 
     };
 };

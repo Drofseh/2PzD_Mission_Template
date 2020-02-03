@@ -47,7 +47,7 @@ _supportingFireActions = call {
     [player, 1, ["ACE_SelfActions"], _actionFires] call ace_interact_menu_fnc_addActionToObject;
 
     // ===== Add action to check remaining ammunition
-    _statementRounds = {[(side player),true] call FNC_SupportFire_AmmoCheck; };
+    _statementRounds = {[(side player),true] call Olsen_FW_FNC_SupportFire_AmmoCheck; };
     _actionRounds = ["Check Ammo Supply","Check Ammo Supply","Haas_WWII_Rebalance\UI\icon_supporting_fires_ammo.paa",_statementRounds,_conditionCheck] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires"], _actionRounds] call ace_interact_menu_fnc_addActionToObject;
 
@@ -77,7 +77,7 @@ _supportingFireActions = call {
 
     // ===== Add Fire Mission
     _statementFireMission = {
-        [(side player), supportFire_ammoType, supportFire_volumeOfFire, supportFire_targetType, supportFire_adjustmentCoords] call FNC_SupportFire_FireMission;
+        [(side player), supportFire_ammoType, supportFire_volumeOfFire, supportFire_targetType, supportFire_adjustmentCoords] call Olsen_FW_FNC_SupportFire_FireMission;
     };
     _actionFireMission = ["Confirm!","Confirm!","Haas_WWII_Rebalance\UI\icon_supporting_fires.paa",_statementFireMission,{true}] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires","Call for Fire"], _actionFireMission] call ace_interact_menu_fnc_addActionToObject;

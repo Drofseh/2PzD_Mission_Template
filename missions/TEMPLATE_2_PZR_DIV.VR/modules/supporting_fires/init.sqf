@@ -1,5 +1,5 @@
 
-["Supporting Fires", "Allows radio operators to call in fire support using Ace interaction.", "Wilhelm Haas (Drofseh)"] call FNC_RegisterModule;
+["Supporting Fires", "Allows radio operators to call in fire support using Ace interaction.", "Wilhelm Haas (Drofseh)"] call Olsen_FW_FNC_RegisterModule;
 
 #define def_fireMissionBriefingMessage \
     player createDiarySubject ["Supporting Fires", "Supporting Fires"]; \

@@ -1,6 +1,6 @@
 #include "core\vehGearCore.sqf" //DO NOT REMOVE
 
-_vehicle call FNC_RemoveAllVehicleGear;
+_vehicle call Olsen_FW_FNC_RemoveAllVehicleGear;
 
 switch (_type) do {
 

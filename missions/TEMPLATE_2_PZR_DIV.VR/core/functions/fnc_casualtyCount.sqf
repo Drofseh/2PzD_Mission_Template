@@ -14,13 +14,13 @@
 
 private _team = _this;
 private _count = 0;
-private _start = [_team, 3] call FNC_GetTeamVariable;
-private _current = [_team, 4] call FNC_GetTeamVariable;
+private _start = [_team, 3] call Olsen_FW_FNC_GetTeamVariable;
+private _current = [_team, 4] call Olsen_FW_FNC_GetTeamVariable;
 
 if (_start == 0) then {
 
     private _tempText = format ["Casualty count: Warning no units on team ""%1"".", _team];
-    _tempText call FNC_DebugMessage;
+    _tempText call Olsen_FW_FNC_DebugMessage;
 
 } else {
 

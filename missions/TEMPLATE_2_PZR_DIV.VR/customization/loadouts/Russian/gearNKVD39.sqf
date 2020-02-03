@@ -2,22 +2,22 @@
 // - For multi line definitions use \
 // - All loadouts listed are customised to correct equipment, so have fun with them
 // - ALWAYS ADD SHORT-RANGE RADIO FIRST
-// - On any random equipment definition remember to use FNC_AddItemRandom
+// - On any random equipment definition remember to use Olsen_FW_FNC_AddItemRandom
 
 //Loadouts
 
     //Platoon HQ
-//[this,"NKVD39_LT"] call FNC_GearScript;       Leutenant
-//[this,"NKVD39_Star"] call FNC_GearScript;     Starshina
-//[this,"NKVD39_RTO"] call FNC_GearScript;      Radio Operator
-//[this,"NKVD39_Med"] call FNC_GearScript;      Medic
+//[this,"NKVD39_LT"] call Olsen_FW_FNC_GearScript;       Leutenant
+//[this,"NKVD39_Star"] call Olsen_FW_FNC_GearScript;     Starshina
+//[this,"NKVD39_RTO"] call Olsen_FW_FNC_GearScript;      Radio Operator
+//[this,"NKVD39_Med"] call Olsen_FW_FNC_GearScript;      Medic
 
     //Squad
-//[this,"NKVD39_Sgt"] call FNC_GearScript;      Sergeant
-//[this,"NKVD39_Efr"] call FNC_GearScript;      Efreitor
-//[this,"NKVD39_MG"] call FNC_GearScript;       Machine Gunner
-//[this,"NKVD39_MGA"] call FNC_GearScript;      Machine Gun Assistant
-//[this,"NKVD39_Stre"] call FNC_GearScript;     Strelok
+//[this,"NKVD39_Sgt"] call Olsen_FW_FNC_GearScript;      Sergeant
+//[this,"NKVD39_Efr"] call Olsen_FW_FNC_GearScript;      Efreitor
+//[this,"NKVD39_MG"] call Olsen_FW_FNC_GearScript;       Machine Gunner
+//[this,"NKVD39_MGA"] call Olsen_FW_FNC_GearScript;      Machine Gun Assistant
+//[this,"NKVD39_Stre"] call Olsen_FW_FNC_GearScript;     Strelok
 
 //======================== Loadouts ========================
 
@@ -25,9 +25,9 @@
 
     //Leutenant
     case "NKVD39_LT" : {
-        [NKVD_Uni_LT] call FNC_AddItem;
-        [NKVD_Hat_O] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [NKVD_Uni_LT] call Olsen_FW_FNC_AddItem;
+        [NKVD_Hat_O] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Rus_Default_Equipment;
@@ -50,7 +50,7 @@
         [Rus_Weap_PPD40],
         [Rus_Mag_PPD40,2,"vest"]
         ],[25]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
         //Secondary Weapon
         [
@@ -69,14 +69,14 @@
         [Rus_Weap_C96],
         [Rus_Weap_C96_Mag,1,"vest"]
         ],[15]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
     };
 
     //Starshina
     case "NKVD39_Star" : {
-        [NKVD_Uni_Star] call FNC_AddItem;
-        [NKVD_Hat] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [NKVD_Uni_Star] call Olsen_FW_FNC_AddItem;
+        [NKVD_Hat] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Rus_Default_Equipment;
@@ -96,7 +96,7 @@
         [Rus_Weap_PPD40],
         [Rus_Mag_PPD40,2,"vest"]
         ],[50]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
         //Secondary Weapon
         [
@@ -115,15 +115,15 @@
         [Rus_Weap_C96],
         [Rus_Weap_C96_Mag,1,"vest"]
         ],[15]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
     };
 
     //Radio Operator
     case "NKVD39_RTO" : {
-        [NKVD_Uni_Stre] call FNC_AddItem;
-        [Rus_BP_Radio] call FNC_AddItem;
-        [NKVD_Hat] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [NKVD_Uni_Stre] call Olsen_FW_FNC_AddItem;
+        [Rus_BP_Radio] call Olsen_FW_FNC_AddItem;
+        [NKVD_Hat] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Rus_Default_Equipment;
@@ -148,15 +148,15 @@
         [Rus_Weap_PPSH_D],
         [Rus_Mag_PPSH_D,2,"vest"]
         ],[33]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
     };
 
     //Medic
     case "NKVD39_Med" : {
-        [NKVD_Uni_Stre] call FNC_AddItem;
-        [Rus_BP_Med] call FNC_AddItem;
-        [NKVD_Hat] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [NKVD_Uni_Stre] call Olsen_FW_FNC_AddItem;
+        [Rus_BP_Med] call Olsen_FW_FNC_AddItem;
+        [NKVD_Hat] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Rus_Default_Equipment;
@@ -181,7 +181,7 @@
         [Rus_Weap_PPSH_D],
         [Rus_Mag_PPSH_D,2,"vest"]
         ],[33]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
         //Extra
         Rus_Medic_Equipment;
@@ -189,9 +189,9 @@
 
     //Sergeant
     case "NKVD39_Sgt" : {
-        [NKVD_Uni_Sgt] call FNC_AddItem;
-        [NKVD_Hat] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [NKVD_Uni_Sgt] call Olsen_FW_FNC_AddItem;
+        [NKVD_Hat] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Rus_Default_Equipment;
@@ -210,14 +210,14 @@
         [Rus_Weap_MosM38],
         [Rus_Mag_Mosin,8,"vest"]
         ],[25]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
     };
 
     //Efreitor
     case "NKVD39_Efr" : {
-        [NKVD_Uni_Efr] call FNC_AddItem;
-        [NKVD_Hat] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [NKVD_Uni_Efr] call Olsen_FW_FNC_AddItem;
+        [NKVD_Hat] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Rus_Default_Equipment;
@@ -236,24 +236,24 @@
         [Rus_Weap_MosM38],
         [Rus_Mag_Mosin,8,"vest"]
         ],[25]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
     };
 
     //Machine Gunner
     case "NKVD39_MG" : {
-        [NKVD_Uni_Efr] call FNC_AddItem;
-        [NKVD_Vest_HKC] call FNC_AddItem;
-        [Rus_BP_MG] call FNC_AddItem;
-        [NKVD_Hat] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [NKVD_Uni_Efr] call Olsen_FW_FNC_AddItem;
+        [NKVD_Vest_HKC] call Olsen_FW_FNC_AddItem;
+        [Rus_BP_MG] call Olsen_FW_FNC_AddItem;
+        [NKVD_Hat] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Rus_Default_Equipment;
 
         //Primary Weapon
-        [Rus_Mag_DP_Mixed_Ball_Red,1] call FNC_AddItem;
-        [Rus_Weap_DP] call FNC_AddItem;
-        [Rus_Mag_DP_Mixed_Ball_Red,9] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,1] call Olsen_FW_FNC_AddItem;
+        [Rus_Weap_DP] call Olsen_FW_FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,9] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         [
@@ -272,19 +272,19 @@
         [Rus_Weap_C96],
         [Rus_Weap_C96_Mag,1,"vest"]
         ],[15]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
     };
 
     //Machine Gun Assistant
     case "NKVD39_MGA" : {
-        [NKVD_Uni_Stre] call FNC_AddItem;
-        [Rus_BP_MG] call FNC_AddItem;
-        [NKVD_Hat] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [NKVD_Uni_Stre] call Olsen_FW_FNC_AddItem;
+        [Rus_BP_MG] call Olsen_FW_FNC_AddItem;
+        [NKVD_Hat] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Rus_Default_Equipment;
-        [GEN_BinoR] call FNC_AddItem;
+        [GEN_BinoR] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon
         [
@@ -306,17 +306,17 @@
         [Rus_Weap_PPSH_D],
         [Rus_Mag_PPSH_D,2,"vest"]
         ],[33]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
         //Extra
-        [Rus_Mag_DP_Mixed_Ball_Red,6] call FNC_AddItem;
+        [Rus_Mag_DP_Mixed_Ball_Red,6] call Olsen_FW_FNC_AddItem;
     };
 
     //Strelok
     case "NKVD39_Stre" : {
-        [NKVD_Uni_Stre] call FNC_AddItem;
-        [NKVD_Hat] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [NKVD_Uni_Stre] call Olsen_FW_FNC_AddItem;
+        [NKVD_Hat] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Rus_Default_Equipment;
@@ -341,5 +341,5 @@
         [Rus_Weap_PPSH_D],
         [Rus_Mag_PPSH_D,2,"vest"]
         ],[33]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
     };

@@ -1,6 +1,6 @@
 // Add action to check remaining ammunition in vehicle
 call {
-    FNC_checkVehicleAmmo = {
+    Olsen_FW_FNC_checkVehicleAmmo = {
         params ["_vehicle","_magListAll","_magList","_magCurrentRoundCount","_magClass","_magName","_magCapacity","_currentOutput","_existingIndex","_previousEntry","_previousNumber","_magListFinal","_magCount","_magString","_hint"];
 
         _magListAll = magazinesAllTurrets _vehicle;
@@ -57,7 +57,7 @@ call {
     private _conditionCheck = {True};
 
     private _statementCheck = {
-        [this] call FNC_checkVehicleAmmo;
+        [this] call Olsen_FW_FNC_checkVehicleAmmo;
     };
 
     private _actionCheck = ["Check Vehicle Ammunition","Check Vehicle Ammunition","",_statementCheck,_conditionCheck] call ace_interact_menu_fnc_createAction;

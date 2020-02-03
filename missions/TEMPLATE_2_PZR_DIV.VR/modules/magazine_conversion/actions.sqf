@@ -3,7 +3,7 @@
 // As part of the condition it calls the function to create all the conversion interactions.
 // Doing it this way mean it is called every time the interaction menu is opened.
 _conditionMagazineConversion = {
-    [] call FNC_MagazineConversion_CreateChildActions;
+    [] call Olsen_FW_FNC_MagazineConversion_CreateChildActions;
     !((magazines player) isEqualTo [])
 };
 _statementMagazineConversion = {

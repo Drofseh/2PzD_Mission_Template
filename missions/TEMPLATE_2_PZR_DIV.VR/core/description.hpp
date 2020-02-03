@@ -21,8 +21,8 @@
             //Compiles the gear script for the server and client
             init = "\
                 '' call compile preprocessFileLineNumbers 'preinit.sqf';\
-                FNC_GearScript = compile preprocessFileLineNumbers 'customization\gear.sqf';\
-                FNC_VehicleGearScript = compile preprocessFileLineNumbers 'customization\vehGear.sqf';\
+                Olsen_FW_FNC_GearScript = compile preprocessFileLineNumbers 'customization\gear.sqf';\
+                Olsen_FW_FNC_VehicleGearScript = compile preprocessFileLineNumbers 'customization\vehGear.sqf';\
             ";
 
         };

@@ -21,7 +21,7 @@ if (_unit getVariable ["FW_AssetName", ""] == "" && (count _this >= 3)) then {
       _vehCfg = (configFile >> "CfgVehicles" >> (typeOf _unit));
       if (isText(_vehCfg >> "displayName")) then
       {
-        [_unit, getText(_vehCfg >> "displayName"), _x select 0] call FNC_TrackAsset;
+        [_unit, getText(_vehCfg >> "displayName"), _x select 0] call Olsen_FW_FNC_TrackAsset;
       };
     };
   } forEach FW_Teams;

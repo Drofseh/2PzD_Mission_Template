@@ -25,12 +25,12 @@ params [
 ];
 
 _result = false;
-_side = [_team, 1] call FNC_getTeamVariable;
+_side = [_team, 1] call Olsen_FW_FNC_getTeamVariable;
 _count = {
     side _x == _side && {_x inArea _marker};
 } count allUnits;
 
-if (_count >= _ratio * ([_team, 4] call FNC_getTeamVariable)) then {
+if (_count >= _ratio * ([_team, 4] call Olsen_FW_FNC_getTeamVariable)) then {
     _result = true;
 };
 

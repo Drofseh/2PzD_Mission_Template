@@ -87,7 +87,7 @@
 sleep 1;
 if (local (_this select 0)) then {
     _vic = _this select 0;
-    _vic call FNC_RemoveAllVehicleGear;
+    _vic call Olsen_FW_FNC_RemoveAllVehicleGear;
 
     switch (vehicleVarName _vic) do {
 

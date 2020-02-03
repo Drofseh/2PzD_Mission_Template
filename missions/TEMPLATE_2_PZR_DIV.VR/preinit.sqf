@@ -23,8 +23,8 @@ PREP(removeAllVehicleGear);
 PREP(removeMap);
 PREP(trackAsset);
 
-FNC_Briefing = compile preprocessFileLineNumbers "customization\briefing.sqf";
+Olsen_FW_FNC_Briefing = compile preprocessFileLineNumbers "customization\briefing.sqf";
 
-FNC_Menu = compile preprocessFileLineNumbers "core\menu.sqf";
+Olsen_FW_FNC_Menu = compile preprocessFileLineNumbers "core\menu.sqf";
 
 #include "modules\modules.sqf" //DO NOT REMOVE

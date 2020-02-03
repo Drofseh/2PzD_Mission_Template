@@ -9,7 +9,7 @@ FW_force_remove_facewear = false;
 // when set to true, gear will be added even if there is no more room in the container
 FW_enableOverfill = true;
 
-_unit call FNC_RemoveAllGear;
+_unit call Olsen_FW_FNC_RemoveAllGear;
 
 switch (_type) do {
 

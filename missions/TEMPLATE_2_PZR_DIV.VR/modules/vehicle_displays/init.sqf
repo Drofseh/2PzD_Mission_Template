@@ -1,4 +1,4 @@
-["Vehicle Displays", "Selectively disables the displays for the left and right info panels in vehicles.", "Wilhelm Haas (Drofseh) &amp; Jonpas"] call FNC_RegisterModule;
+["Vehicle Displays", "Selectively disables the displays for the left and right info panels in vehicles.", "Wilhelm Haas (Drofseh) &amp; Jonpas"] call Olsen_FW_FNC_RegisterModule;
 
 #include "settings.sqf"
 

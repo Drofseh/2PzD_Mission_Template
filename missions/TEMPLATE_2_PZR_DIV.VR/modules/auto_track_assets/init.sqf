@@ -1,8 +1,8 @@
-["Auto Track Assets", "Automatically runs FNC_TrackAsset on AI vehicles.", "Starfox64"] call FNC_RegisterModule;
+["Auto Track Assets", "Automatically runs Olsen_FW_FNC_TrackAsset on AI vehicles.", "Starfox64"] call Olsen_FW_FNC_RegisterModule;
 
 if (isServer) then {
 
-    FNC_TrackAssetArea = {
+    Olsen_FW_FNC_TrackAssetArea = {
 
         private ["_marker", "_team", "_vehicle", "_vehCfg"];
 
@@ -23,7 +23,7 @@ if (isServer) then {
 
                         if (isText(_vehCfg >> "displayName")) then {
 
-                            [_vehicle, getText(_vehCfg >> "displayName"), _team] call FNC_TrackAsset;
+                            [_vehicle, getText(_vehCfg >> "displayName"), _team] call Olsen_FW_FNC_TrackAsset;
 
                         };
 
@@ -59,7 +59,7 @@ if (isServer) then {
 
                             if (isText(_vehCfg >> "displayName")) then {
 
-                                [_vehicle, getText(_vehCfg >> "displayName"), _x select 0] call FNC_TrackAsset;
+                                [_vehicle, getText(_vehCfg >> "displayName"), _x select 0] call Olsen_FW_FNC_TrackAsset;
 
                             };
 

@@ -1,4 +1,4 @@
-["Squad Vics", "Adds an icon for the assigned vehicle of a squad to the D-UI HUD compass of each member of the squad.", "Wilhelm Haas (Drofseh)"] call FNC_RegisterModule;
+["Squad Vics", "Adds an icon for the assigned vehicle of a squad to the D-UI HUD compass of each member of the squad.", "Wilhelm Haas (Drofseh)"] call Olsen_FW_FNC_RegisterModule;
 
 #include "settings.sqf"
 

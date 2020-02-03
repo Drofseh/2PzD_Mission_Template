@@ -12,27 +12,27 @@ if (isDedicated) then {
 
 if (isServer) then {
 
-    "" call FNC_StartingCount; //DO NOT REMOVE
+    "" call Olsen_FW_FNC_StartingCount; //DO NOT REMOVE
 
-    FNC_EndConditions = { //create an end condition fuction that loops by calling itself using CBA_fnc_waitAndExecute.
+    Olsen_FW_FNC_EndConditions = { //create an end condition fuction that loops by calling itself using CBA_fnc_waitAndExecute.
 
         #include "customization\endConditions.sqf" //DO NOT REMOVE
 
         //The time limit in minutes variable called FW_TimeLimit is set in customization/settings.sqf, to disable the time limit set it to 0
         //Do not remove this time limit end condition
         if ((CBA_missionTime / 60) >= FW_TimeLimit && FW_TimeLimit != 0) exitWith {
-            FW_TimeLimitMessage call FNC_EndMission;
+            FW_TimeLimitMessage call Olsen_FW_FNC_EndMission;
         };
 
         if (FW_MissionEnded) exitWith {}; //stop the end condition loop once the mission is ended.
 
         //call the end condition function again to restart the loop, it's called every 10 seconds by default.
         [{
-            call FNC_EndConditions;
+            call Olsen_FW_FNC_EndConditions;
         }, [], 10] call CBA_fnc_waitAndExecute;
     };
 
-    call FNC_EndConditions; //start the end condition function loop by calling it for the first time.
+    call Olsen_FW_FNC_EndConditions; //start the end condition function loop by calling it for the first time.
 
     [{
         {

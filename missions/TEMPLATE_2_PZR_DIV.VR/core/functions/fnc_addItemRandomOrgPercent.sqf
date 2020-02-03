@@ -18,7 +18,7 @@ params ["_unit", "_loadoutType", "_items", "_randomPick", "_valuesArray", "_weig
 _itemCount = count _items;
 
 if (_itemCount % 2 != 0 ) exitWith { // If array has to few or too many elements
-    (format ["AddItemRandomPercent: Warning Random Percentage Array wrong size for unit %1 , in loadout %2", _unit, _loadoutType]) call FNC_DebugMessage;
+    (format ["AddItemRandomPercent: Warning Random Percentage Array wrong size for unit %1 , in loadout %2", _unit, _loadoutType]) call Olsen_FW_FNC_DebugMessage;
 };
 
 _valuesArray = [];
@@ -32,12 +32,12 @@ for "_i" from 1 to _itemCount step 2 do {
 
     if (typeName _itemWeight != "SCALAR") exitWith {
         _badLoadout = true;
-        (format ["AddItemRandomPercent: Warning Random Percentage Array item weight (%3) must be a number for unit %1 , in loadout %2", _unit, _loadoutType, _itemWeight]) call FNC_DebugMessage;
+        (format ["AddItemRandomPercent: Warning Random Percentage Array item weight (%3) must be a number for unit %1 , in loadout %2", _unit, _loadoutType, _itemWeight]) call Olsen_FW_FNC_DebugMessage;
     };
     {
         if (typeName _x != "ARRAY") exitWith {
             _badLoadout = true;
-            (format ["AddItemRandomPercent: Warning Random Percentage Array item value (%3) must be an array with a string for unit %1 , in loadout %2", _unit, _loadoutType, _x]) call FNC_DebugMessage;
+            (format ["AddItemRandomPercent: Warning Random Percentage Array item value (%3) must be an array with a string for unit %1 , in loadout %2", _unit, _loadoutType, _x]) call Olsen_FW_FNC_DebugMessage;
         };
     } forEach _itemValue;
 
@@ -47,8 +47,8 @@ for "_i" from 1 to _itemCount step 2 do {
 
 if (_badLoadout) exitWith {
     _badLoadout = false;
-    (format ["AddItemRandomPercent: Warning Random Percentage Array is not valid for unit %1 , in loadout %2", _unit, _loadoutType]) call FNC_DebugMessage;
+    (format ["AddItemRandomPercent: Warning Random Percentage Array is not valid for unit %1 , in loadout %2", _unit, _loadoutType]) call Olsen_FW_FNC_DebugMessage;
 };
 
 _randomPick = _valuesArray selectRandomWeighted _weightsArray;
-{ ([_unit, _loadoutType] + _x) call FNC_AddItemOrg; } forEach _randomPick;
+{ ([_unit, _loadoutType] + _x) call Olsen_FW_FNC_AddItemOrg; } forEach _randomPick;

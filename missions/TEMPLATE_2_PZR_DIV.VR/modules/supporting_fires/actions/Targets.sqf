@@ -1,7 +1,7 @@
 
     // ===== Add Target Base Action
     _statementTargetsMain = {
-        [["Select a target,"],[format ["Current target is %1.", (supportFire_targetType call FNC_SupportFire_GetTargetName)]], true] call CBA_fnc_notify;
+        [["Select a target,"],[format ["Current target is %1.", (supportFire_targetType call Olsen_FW_FNC_SupportFire_GetTargetName)]], true] call CBA_fnc_notify;
     };
     _actionTargetsMain = ["Select Target","Select Target","Haas_WWII_Rebalance\UI\icon_supporting_fires_target.paa",_statementTargetsMain,_conditionTargets] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires"], _actionTargetsMain] call ace_interact_menu_fnc_addActionToObject;

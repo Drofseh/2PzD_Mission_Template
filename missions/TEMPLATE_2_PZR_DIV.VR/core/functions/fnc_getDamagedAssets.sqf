@@ -38,7 +38,7 @@ private _destroyedAssets = [];
 
 } forEach vehicles;
 
-_destroyedAssets = _destroyedAssets call FNC_StackNames;
-_disabledAssets = _disabledAssets call FNC_StackNames;
+_destroyedAssets = _destroyedAssets call Olsen_FW_FNC_StackNames;
+_disabledAssets = _disabledAssets call Olsen_FW_FNC_StackNames;
 
 [_disabledAssets, _destroyedAssets]

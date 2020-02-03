@@ -2,48 +2,48 @@
 // - For multi line definitions use \
 // - All loadouts listed are customised to correct equipment, so have fun with them
 // - ALWAYS ADD SHORT-RANGE RADIO FIRST
-// - On any random equipment definition remember to use FNC_AddItemRandom
+// - On any random equipment definition remember to use Olsen_FW_FNC_AddItemRandom
 
 /*Loadouts
 
     //Kompanietrupp
-[this,"WHREF43Aug_CC"] call FNC_GearScript;     Kompanieführer
-[this,"WHREF43Aug_C2"] call FNC_GearScript;     Kompanietruppführer
+[this,"WHREF43Aug_CC"] call Olsen_FW_FNC_GearScript;     Kompanieführer
+[this,"WHREF43Aug_C2"] call Olsen_FW_FNC_GearScript;     Kompanietruppführer
 
     //Zugtrupp
-[this,"WHREF43Aug_PC"] call FNC_GearScript;     Zugführer
-[this,"WHREF43Aug_P2"] call FNC_GearScript;     Zugtruppführer
-[this,"WHREF43Aug_RTO"] call FNC_GearScript;    Funker
-[this,"WHREF43Aug_Mess"] call FNC_GearScript;   Melder
-[this,"WHREF43Aug_MedP"] call FNC_GearScript;   Krankenträger
+[this,"WHREF43Aug_PC"] call Olsen_FW_FNC_GearScript;     Zugführer
+[this,"WHREF43Aug_P2"] call Olsen_FW_FNC_GearScript;     Zugtruppführer
+[this,"WHREF43Aug_RTO"] call Olsen_FW_FNC_GearScript;    Funker
+[this,"WHREF43Aug_Mess"] call Olsen_FW_FNC_GearScript;   Melder
+[this,"WHREF43Aug_MedP"] call Olsen_FW_FNC_GearScript;   Krankenträger
 
     //Gruppe
-[this,"WHREF43Aug_SL"] call FNC_GearScript;     Gruppenführer
-[this,"WHREF43Aug_S2"] call FNC_GearScript;     Stellvertretender Gruppenführer
-[this,"WHREF43Aug_S3"] call FNC_GearScript;     Gefreiter
-[this,"WHREF43Aug_MG"] call FNC_GearScript;     MG-Richtschütze
-[this,"WHREF43Aug_MGA"] call FNC_GearScript;    MG-Hilfsschütze
-[this,"WHREF43Aug_MGAB"] call FNC_GearScript;   MG-Munitionsträger
-[this,"WHREF43Aug_Gren"] call FNC_GearScript;   Grenadier
-[this,"WHREF43Aug_MedS"] call FNC_GearScript;   Hilfs-Krankenträger
-[this,"WHREF43Aug_Rif"] call FNC_GearScript;    Gewehrschütze
+[this,"WHREF43Aug_SL"] call Olsen_FW_FNC_GearScript;     Gruppenführer
+[this,"WHREF43Aug_S2"] call Olsen_FW_FNC_GearScript;     Stellvertretender Gruppenführer
+[this,"WHREF43Aug_S3"] call Olsen_FW_FNC_GearScript;     Gefreiter
+[this,"WHREF43Aug_MG"] call Olsen_FW_FNC_GearScript;     MG-Richtschütze
+[this,"WHREF43Aug_MGA"] call Olsen_FW_FNC_GearScript;    MG-Hilfsschütze
+[this,"WHREF43Aug_MGAB"] call Olsen_FW_FNC_GearScript;   MG-Munitionsträger
+[this,"WHREF43Aug_Gren"] call Olsen_FW_FNC_GearScript;   Grenadier
+[this,"WHREF43Aug_MedS"] call Olsen_FW_FNC_GearScript;   Hilfs-Krankenträger
+[this,"WHREF43Aug_Rif"] call Olsen_FW_FNC_GearScript;    Gewehrschütze
 
     //Weapon Truppen
-[this,"WHREF43Aug_MortSL"] call FNC_GearScript; Mortar Truppführer
-[this,"WHREF43Aug_MortG"] call FNC_GearScript;  Mortar Granatwerferschützen
-[this,"WHREF43Aug_MortA"] call FNC_GearScript;  Mortar Munitionsträger
+[this,"WHREF43Aug_MortSL"] call Olsen_FW_FNC_GearScript; Mortar Truppführer
+[this,"WHREF43Aug_MortG"] call Olsen_FW_FNC_GearScript;  Mortar Granatwerferschützen
+[this,"WHREF43Aug_MortA"] call Olsen_FW_FNC_GearScript;  Mortar Munitionsträger
 
-[this,"WHREF43Aug_HMGSL"] call FNC_GearScript;  HMG Truppführer
-[this,"WHREF43Aug_HMGG"] call FNC_GearScript;   HMG Richtschütze
-[this,"WHREF43Aug_HMGA"] call FNC_GearScript;   HMG Munitionsträger
+[this,"WHREF43Aug_HMGSL"] call Olsen_FW_FNC_GearScript;  HMG Truppführer
+[this,"WHREF43Aug_HMGG"] call Olsen_FW_FNC_GearScript;   HMG Richtschütze
+[this,"WHREF43Aug_HMGA"] call Olsen_FW_FNC_GearScript;   HMG Munitionsträger
 
-[this,"WHREF43Aug_ATRSL"] call FNC_GearScript;  Panzerbüchse Truppführer
-[this,"WHREF43Aug_ATRG"] call FNC_GearScript;   Panzerbüchse Richtschütze
-[this,"WHREF43Aug_ATRA"] call FNC_GearScript;   Panzerbüchse Munitionsträger
+[this,"WHREF43Aug_ATRSL"] call Olsen_FW_FNC_GearScript;  Panzerbüchse Truppführer
+[this,"WHREF43Aug_ATRG"] call Olsen_FW_FNC_GearScript;   Panzerbüchse Richtschütze
+[this,"WHREF43Aug_ATRA"] call Olsen_FW_FNC_GearScript;   Panzerbüchse Munitionsträger
 
     //Tank Crew
-[this,"WHREF43Aug_VCom"] call FNC_GearScript;   Besatzungsführer
-[this,"WHREF43Aug_VCrew"] call FNC_GearScript;  Besatzung
+[this,"WHREF43Aug_VCom"] call Olsen_FW_FNC_GearScript;   Besatzungsführer
+[this,"WHREF43Aug_VCrew"] call Olsen_FW_FNC_GearScript;  Besatzung
 */
 
 //======================== Definitions ========================
@@ -70,7 +70,7 @@
                 [Rus_Weap_PPD40], \
                 [Rus_Mag_PPD40,1,"vest"] \
             ],[5] \
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
 #define WHREF43Aug_Weapon_Gruppe \
         [ \
@@ -94,7 +94,7 @@
                 [Rus_Weap_PPD40], \
                 [Rus_Mag_PPD40,3,"vest"] \
             ],[5] \
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
 #define WHREF43Aug_Weapon_Rifleman \
         [ \
@@ -126,7 +126,7 @@
                 [Rus_Weap_MosM38], \
                 [Rus_Mag_Mosin,12,"vest"] \
             ],[1] \
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
 #define WHREF43Aug_Weapon_MG \
         [ \
@@ -148,7 +148,7 @@
                 [Ger_Mag_MG_50_Mixed_SmE,5,"vest"], \
                 [Ger_Mag_MG_50_Mixed_SmE,3] \
             ],[13] \
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
 #define WHREF43Aug_Weapon_MG_SWT \
         [ \
@@ -158,7 +158,7 @@
             [ \
                 [Ger_Weap_MG42] \
             ],[20] \
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
 //1 for Gruppe leaders, 2 for Gewehrschütze, 3 for MG-Hilfsschütze, 5 for MG-Munitionsträger
 #define WHREF43Aug_Weapon_MG_Ammo(COUNT) \
@@ -177,16 +177,16 @@
             _ammobearer = selectRandom _weaponsArray; \
             switch (_ammobearer) do { \
                 case Ger_Weap_MG34: { \
-                    [Ger_Mag_MG_50_Mixed_SmE,COUNT,"backpack"] call FNC_AddItem; \
+                    [Ger_Mag_MG_50_Mixed_SmE,COUNT,"backpack"] call Olsen_FW_FNC_AddItem; \
                 }; \
                 case Rus_Weap_DP: { \
-                    [Rus_Mag_DP_Mixed_Ball_Red,COUNT,"backpack"] call FNC_AddItem; \
+                    [Rus_Mag_DP_Mixed_Ball_Red,COUNT,"backpack"] call Olsen_FW_FNC_AddItem; \
                 }; \
                 case Ger_Weap_MG42: { \
-                    [Ger_Mag_MG_50_Mixed_SmE,COUNT,"backpack"] call FNC_AddItem; \
+                    [Ger_Mag_MG_50_Mixed_SmE,COUNT,"backpack"] call Olsen_FW_FNC_AddItem; \
                 }; \
                 case Ger_Weap_MG30: { \
-                    [Ger_Mag_MG30_Mixed_sS,COUNT,"backpack"] call FNC_AddItem; \
+                    [Ger_Mag_MG30_Mixed_sS,COUNT,"backpack"] call Olsen_FW_FNC_AddItem; \
                 }; \
             }; \
         };
@@ -238,7 +238,7 @@
                 [Ger_Weap_M172], \
                 [Ger_Mag_M172_20,2,"uniform"] \
             ],[0.5] \
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
 #define WHREF43Aug_Weapon_Enlisted_Secondary \
         [ \
@@ -282,7 +282,7 @@
                 [Ger_Weap_M172], \
                 [Ger_Mag_M172_20,2,"uniform"] \
             ],[0.5] \
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
 #define WHREF43Aug_Weapon_PzFaust \
         [ \
@@ -292,7 +292,7 @@
             [ \
                 [Ger_Weap_PzFaust_30] \
             ],[50] \
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================
 
@@ -300,11 +300,11 @@
 
     //Kompanieführer
     case "WHREF43Aug_CC" : {
-        [Ger_Uni_CC] call FNC_AddItem;
-        [Ger_Vest_PC] call FNC_AddItem;
-        [Ger_BP_Radio] call FNC_AddItem;
-        [Ger_Hat_Officer] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_CC] call Olsen_FW_FNC_AddItem;
+        [Ger_Vest_PC] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_Radio] call Olsen_FW_FNC_AddItem;
+        [Ger_Hat_Officer] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -319,10 +319,10 @@
 
     //Kompanietruppführer
     case "WHREF43Aug_C2" : {
-        [Ger_Uni_SL] call FNC_AddItem;
-        [Ger_Vest_PC] call FNC_AddItem;
-        [Ger_Hat] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_SL] call Olsen_FW_FNC_AddItem;
+        [Ger_Vest_PC] call Olsen_FW_FNC_AddItem;
+        [Ger_Hat] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -339,10 +339,10 @@
 
     //Zugführer
     case "WHREF43Aug_PC" : {
-        [Ger_Uni_PC] call FNC_AddItem;
-        [Ger_Vest_PC] call FNC_AddItem;
-        [Ger_Hat_Officer] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_PC] call Olsen_FW_FNC_AddItem;
+        [Ger_Vest_PC] call Olsen_FW_FNC_AddItem;
+        [Ger_Hat_Officer] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -357,11 +357,11 @@
 
     //Zugtruppführer
     case "WHREF43Aug_P2" : {
-        [Ger_Uni_SL] call FNC_AddItem;
-        [Ger_Vest_SL] call FNC_AddItem;
-        [Ger_BP_AF] call FNC_AddItem;
-        [Ger_Hat] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_SL] call Olsen_FW_FNC_AddItem;
+        [Ger_Vest_SL] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_AF] call Olsen_FW_FNC_AddItem;
+        [Ger_Hat] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -378,22 +378,22 @@
             [//M24 Splittering
                 [Ger_Gren_Frag_SF,1]
             ],[34]
-        ] call FNC_AddItemRandomPercent;
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
     };
 
     //Funker
     case "WHREF43Aug_RTO" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_K98] call FNC_AddItem;
-        [Ger_BP_Radio] call FNC_AddItem;
-        [Ger_Hat] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_Radio] call Olsen_FW_FNC_AddItem;
+        [Ger_Hat] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
-        [GEN_Headset] call FNC_AddItem;
+        [GEN_Headset] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon
         WHREF43Aug_Weapon_Rifleman;
@@ -401,11 +401,11 @@
 
     //Melder
     case "WHREF43Aug_Mess" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_K98] call FNC_AddItem;
-        [Ger_BP_r] call FNC_AddItemRandom;
-        [Ger_Helmet] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Helmet] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -421,17 +421,17 @@
             [//M24 Splittering
                 [Ger_Gren_Frag_SF,1]
             ],[34]
-        ] call FNC_AddItemRandomPercent;
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
     };
 
     //Krankenträger
     case "WHREF43Aug_MedP" : {
-        [Ger_Uni_Med] call FNC_AddItem;
-        [Ger_Vest_Med] call FNC_AddItem;
-        [Ger_BP_Med] call FNC_AddItem;
-        [Ger_Helmet] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Med] call Olsen_FW_FNC_AddItem;
+        [Ger_Vest_Med] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_Med] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -440,7 +440,7 @@
         WHREF43Aug_Weapon_Enlisted_Secondary;
 
         //Extra
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         Ger_MedicP_Equipment;
     };
 
@@ -448,11 +448,11 @@
 
     //Gruppenführer
     case "WHREF43Aug_SL" : {
-        [Ger_Uni_SL] call FNC_AddItem;
-        [Ger_Vest_SL] call FNC_AddItem;
-        [Ger_BP_AF] call FNC_AddItem;
-        [Ger_Helmet] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_SL] call Olsen_FW_FNC_AddItem;
+        [Ger_Vest_SL] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_AF] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -469,22 +469,22 @@
             [//M24 Splittering
                 [Ger_Gren_Frag_SF,1]
             ],[34]
-        ] call FNC_AddItemRandomPercent;
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         WHREF43Aug_Weapon_MG_Ammo(1);
     };
 
     //Stellvertretender Gruppenführer
     case "WHREF43Aug_S2" : {
-        [Ger_Uni_S2_r] call FNC_AddItemRandom;
-        [Ger_Vest_K98] call FNC_AddItem;
-        [Ger_BP_r] call FNC_AddItemRandom;
-        [Ger_Helmet] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_S2_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Helmet] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
-        [GEN_BinoG] call FNC_AddItem;
+        [GEN_BinoG] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon
         WHREF43Aug_Weapon_Rifleman;
@@ -497,18 +497,18 @@
             [//M24 Splittering
                 [Ger_Gren_Frag_SF,1]
             ],[34]
-        ] call FNC_AddItemRandomPercent;
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         WHREF43Aug_Weapon_MG_Ammo(1);
     };
 
     //Gefreiter
     case "WHREF43Aug_S3" : {
-        [Ger_Uni_S3_r] call FNC_AddItemRandom;
-        [Ger_Vest_MP40] call FNC_AddItem;
-        [Ger_BP_T34] call FNC_AddItem;
-        [Ger_Helmet] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_S3_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_MP40] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -524,19 +524,19 @@
             [//M24 Splittering
                 [Ger_Gren_Frag_SF,1]
             ],[34]
-        ] call FNC_AddItemRandomPercent;
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         WHREF43Aug_Weapon_MG_Ammo(1);
     };
 
     //MG-Richtschütze
     case "WHREF43Aug_MG" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_MG] call FNC_AddItem;
-        [Ger_BP_MG_D] call FNC_AddItem;
-        [Ger_mg_neck] call FNC_AddItem;
-        [Ger_Helmet] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_MG_D] call Olsen_FW_FNC_AddItem;
+        [Ger_mg_neck] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -550,16 +550,16 @@
 
     //MG-Hilfsschütze
     case "WHREF43Aug_MGA" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_MGA] call FNC_AddItem;
-        [Ger_BP_MG_D] call FNC_AddItem;
-        [Ger_mg_neck] call FNC_AddItem;
-        [Ger_Helmet] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_MGA] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_MG_D] call Olsen_FW_FNC_AddItem;
+        [Ger_mg_neck] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
-        [GEN_ace_sparebarrel] call FNC_AddItem;
+        [GEN_ace_sparebarrel] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon
         WHREF43Aug_Weapon_MGA;
@@ -570,12 +570,12 @@
 
     //MG-Munitionsträger
     case "WHREF43Aug_MGAB" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_K98] call FNC_AddItem;
-        [Ger_BP_MG_D] call FNC_AddItem;
-        [Ger_mg_neck] call FNC_AddItem;
-        [Ger_Helmet] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_MG_D] call Olsen_FW_FNC_AddItem;
+        [Ger_mg_neck] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -589,33 +589,33 @@
 
     //Grenadier
     case "WHREF43Aug_Gren" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_K98] call FNC_AddItem;
-        [Ger_BP_r] call FNC_AddItemRandom;
-        [Ger_Helmet] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Helmet] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_K98,1] call FNC_AddItem;
-        [Ger_Acc_K98_Bayo,1,"uniform"] call FNC_AddItem;
-        [Ger_Weap_K98] call FNC_AddItem;
-        [Ger_Acc_K98_GL,1,"vest"] call FNC_AddItem;
-        [Ger_Mag_K98,12,"vest"] call FNC_AddItem;
-        [Ger_Mag_RGrn_HE,4] call FNC_AddItem;
-        [Ger_Mag_RGrn_ATS,1] call FNC_AddItem;
-        [Ger_Mag_RGrn_ATL,3] call FNC_AddItem;
+        [Ger_Mag_K98,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Acc_K98_Bayo,1,"uniform"] call Olsen_FW_FNC_AddItem;
+        [Ger_Weap_K98] call Olsen_FW_FNC_AddItem;
+        [Ger_Acc_K98_GL,1,"vest"] call Olsen_FW_FNC_AddItem;
+        [Ger_Mag_K98,12,"vest"] call Olsen_FW_FNC_AddItem;
+        [Ger_Mag_RGrn_HE,4] call Olsen_FW_FNC_AddItem;
+        [Ger_Mag_RGrn_ATS,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Mag_RGrn_ATL,3] call Olsen_FW_FNC_AddItem;
     };
 
     //Hilfs-Krankenträger
     case "WHREF43Aug_MedS" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_K98] call FNC_AddItem;
-        [Ger_BP_Med] call FNC_AddItem;
-        [Ger_Helmet] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_Med] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -632,17 +632,17 @@
             [//M24 Splittering
                 [Ger_Gren_Frag_SF,1]
             ],[34]
-        ] call FNC_AddItemRandomPercent;
-        [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
+        [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
     };
 
     //Gewehrschütze
     case "WHREF43Aug_Rif" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_K98] call FNC_AddItem;
-        [Ger_BP_r] call FNC_AddItemRandom;
-        [Ger_Helmet] call FNC_AddItem;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Helmet] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -661,8 +661,8 @@
             [//M24 Splittering
                 [Ger_Gren_Frag_SF,1]
             ],[34]
-        ] call FNC_AddItemRandomPercent;
-        [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
+        [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         WHREF43Aug_Weapon_MG_Ammo(2);
     };
 
@@ -671,11 +671,11 @@
     //Mortar Team
     //Mortar Truppführer
     case "WHREF43Aug_MortSL" : {
-        [Ger_Uni_S3_r] call FNC_AddItemRandom;
-        [Ger_Vest_HGun] call FNC_AddItem;
-        [Ger_BP_T34] call FNC_AddItem;
-        [Ger_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_S3_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_HGun] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -685,20 +685,20 @@
         WHREF43Aug_Weapon_Enlisted_Secondary;
 
         //Launcher
-        [Ger_Weap_MortB,1] call FNC_AddItem;
+        [Ger_Weap_MortB,1] call Olsen_FW_FNC_AddItem;
 
         //Extra
-        [Ger_Mag_Mort_HE,4] call FNC_AddItem;
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Mag_Mort_HE,4] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
     };
 
     //Mortar Granatwerferschützen
     case "WHREF43Aug_MortG" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_HGun] call FNC_AddItem;
-        [Ger_BP_T34] call FNC_AddItem;
-        [Ger_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_HGun] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -708,19 +708,19 @@
         WHREF43Aug_Weapon_Enlisted_Secondary;
 
         //Launcher
-        [Ger_Weap_MortT,1] call FNC_AddItem;
+        [Ger_Weap_MortT,1] call Olsen_FW_FNC_AddItem;
 
         //Extra
-        [Ger_Mag_Mort_HE,4] call FNC_AddItem;
+        [Ger_Mag_Mort_HE,4] call Olsen_FW_FNC_AddItem;
     };
 
     //Mortar Munitionsträger
     case "WHREF43Aug_MortA" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_K98] call FNC_AddItem;
-        [Ger_BP_T34] call FNC_AddItem;
-        [Ger_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -730,42 +730,42 @@
         WHREF43Aug_Weapon_Rifleman;
 
         //Extra
-        [Ger_Mag_Mort_HE,4] call FNC_AddItem;
+        [Ger_Mag_Mort_HE,4] call Olsen_FW_FNC_AddItem;
     };
 
     //HMG Team
     //HMG Truppführer
     case "WHREF43Aug_HMGSL" : {
-        [Ger_Uni_S3_r] call FNC_AddItemRandom;
-        [Ger_Vest_MGA] call FNC_AddItem;
-        [Ger_BP_MG_B] call FNC_AddItem;
-        [Ger_mg_neck] call FNC_AddItem;
-        [Ger_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_S3_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_MGA] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_MG_B] call Olsen_FW_FNC_AddItem;
+        [Ger_mg_neck] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
         Ger_Leader_Equipment;
-        [GEN_ace_sparebarrel] call FNC_AddItem;
+        [GEN_ace_sparebarrel] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon
         WHREF43Aug_Weapon_Rifleman;
 
         //Launcher
-        [Ger_Weap_MG_T,1] call FNC_AddItem;
+        [Ger_Weap_MG_T,1] call Olsen_FW_FNC_AddItem;
 
         //Extra
-        [Ger_Mag_MG_250_Mixed_SmE,2] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,2] call Olsen_FW_FNC_AddItem;
     };
 
     //HMG Richtschütze
     case "WHREF43Aug_HMGG" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_MG] call FNC_AddItem;
-        [Ger_BP_MG_B] call FNC_AddItem;
-        [Ger_mg_neck] call FNC_AddItem;
-        [Ger_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_MG_B] call Olsen_FW_FNC_AddItem;
+        [Ger_mg_neck] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -775,23 +775,23 @@
         WHREF43Aug_Weapon_Enlisted_Secondary;
 
         //Primary Weapon
-        [Ger_Mag_MG_250_Mixed_SmE,1] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,1] call Olsen_FW_FNC_AddItem;
         WHREF43Aug_Weapon_MG_SWT;
-        [Ger_Mag_MG_250_Mixed_SmE,1] call FNC_AddItem;
-        [Ger_Mag_MG_150_Mixed_SmE,1] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Mag_MG_150_Mixed_SmE,1] call Olsen_FW_FNC_AddItem;
 
         //Extra
-        [Ger_Mag_MG_250_Mixed_SmE,2] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,2] call Olsen_FW_FNC_AddItem;
     };
 
     //HMG Munitionsträger
     case "WHREF43Aug_HMGA" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_K98] call FNC_AddItem;
-        [Ger_BP_MG_B] call FNC_AddItem;
-        [Ger_mg_neck] call FNC_AddItem;
-        [Ger_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_MG_B] call Olsen_FW_FNC_AddItem;
+        [Ger_mg_neck] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -800,18 +800,18 @@
         WHREF43Aug_Weapon_Rifleman;
 
         //Extra
-        [Ger_Mag_MG_250_Mixed_SmE,2] call FNC_AddItem;
-        [Ger_Mag_MG_150_Mixed_SmE,1] call FNC_AddItem;
+        [Ger_Mag_MG_250_Mixed_SmE,2] call Olsen_FW_FNC_AddItem;
+        [Ger_Mag_MG_150_Mixed_SmE,1] call Olsen_FW_FNC_AddItem;
     };
 
     //Panzerbüchse Team
     //Panzerbüchse Truppführer
     case "WHREF43Aug_ATRSL" : {
-        [Ger_Uni_S3_r] call FNC_AddItemRandom;
-        [Ger_Vest_K98] call FNC_AddItem;
-        [Ger_BP_T34] call FNC_AddItem;
-        [Ger_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_S3_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -821,18 +821,18 @@
         WHREF43Aug_Weapon_Rifleman;
 
         //Extra
-        [Ger_Mag_PzB39,20,"backpack"] call FNC_AddItem;
-        [Ger_Gren_Frag_P,1] call FNC_AddItem;
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Mag_PzB39,20,"backpack"] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
     };
 
     //Panzerbüchse Richtschütze
     case "WHREF43Aug_ATRG" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_MG] call FNC_AddItem;
-        [Ger_BP_T34] call FNC_AddItem;
-        [Ger_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -842,18 +842,18 @@
         WHREF43Aug_Weapon_Enlisted_Secondary;
 
         //Primary Weapon
-        [Ger_Mag_PzB39,1] call FNC_AddItem;
-        [Ger_Weap_PzB39] call FNC_AddItem;
-        [Ger_Mag_PzB39,20] call FNC_AddItem;
+        [Ger_Mag_PzB39,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Weap_PzB39] call Olsen_FW_FNC_AddItem;
+        [Ger_Mag_PzB39,20] call Olsen_FW_FNC_AddItem;
     };
 
     //Panzerbüchse Munitionsträger
     case "WHREF43Aug_ATRAB" : {
-        [Ger_Uni_Rif_r] call FNC_AddItemRandom;
-        [Ger_Vest_K98] call FNC_AddItem;
-        [Ger_BP_T34] call FNC_AddItem;
-        [Ger_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
+        [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -862,19 +862,19 @@
         WHREF43Aug_Weapon_Rifleman;
 
         //Extra
-        [Ger_Mag_PzB39,20,"backpack"] call FNC_AddItem;
-        [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Mag_PzB39,20,"backpack"] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
     };
 
 //Tank Crew
 
     //Besatzungsführer
     case "WHREF43Aug_VCom" : {
-        [Ger_Uni_VCom] call FNC_AddItem;
-        [Ger_Vest_PC] call FNC_AddItem;
-        [Ger_BP_VCrew] call FNC_AddItem;
-        [Ger_Hat_VCom] call FNC_AddItemRandom;
-        [GEN_Face_Tank_r] call FNC_AddItemRandom;
+        [Ger_Uni_VCom] call Olsen_FW_FNC_AddItem;
+        [Ger_Vest_PC] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
+        [Ger_Hat_VCom] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_Tank_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -889,11 +889,11 @@
 
     //Besatzung
     case "WHREF43Aug_VCrew" : {
-        [Ger_Uni_VCrew] call FNC_AddItem;
-        [Ger_Vest_VCrew] call FNC_AddItem;
-        [Ger_BP_VCrew] call FNC_AddItem;
-        [Ger_Hat_VCrew] call FNC_AddItemRandom;
-        [GEN_Face_Tank_r] call FNC_AddItemRandom;
+        [Ger_Uni_VCrew] call Olsen_FW_FNC_AddItem;
+        [Ger_Vest_VCrew] call Olsen_FW_FNC_AddItem;
+        [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
+        [Ger_Hat_VCrew] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_Tank_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -902,5 +902,5 @@
         WHREF43Aug_Weapon_Enlisted_Secondary;
 
         //Extra
-        [GEN_Toolkit] call FNC_AddItem;
+        [GEN_Toolkit] call Olsen_FW_FNC_AddItem;
     };

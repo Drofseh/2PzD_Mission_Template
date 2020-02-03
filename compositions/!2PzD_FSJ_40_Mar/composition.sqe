@@ -22,7 +22,7 @@ class items
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					init="[this,""FSJ40Mar_CC""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_CC""] call Olsen_FW_FNC_GearScript;";
 					name="FSJc1";
 					description="Kompanieführer@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
@@ -301,7 +301,7 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					init="[this,""FSJ40Mar_C2""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_C2""] call Olsen_FW_FNC_GearScript;";
 					description="Kompanietruppführer@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
 					class Inventory
@@ -560,7 +560,7 @@ class items
 				class Attributes
 				{
 					ammo=0.7751143;
-					init="[this,""FSJ40Mar_RTO""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_RTO""] call Olsen_FW_FNC_GearScript;";
 					description="Funker@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
 					class Inventory
@@ -837,7 +837,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
 					class Inventory
@@ -1114,7 +1114,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@1. Kompanie | Kompanietrupp";
 					isPlayable=1;
 					class Inventory
@@ -1392,7 +1392,7 @@ class items
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					init="[this,""FSJ40Mar_PC""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_PC""] call Olsen_FW_FNC_GearScript;";
 					name="FSJp1";
 					description="Zugführer@1. Zug | Zugtrupp";
 					isPlayable=1;
@@ -1672,7 +1672,7 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					init="[this,""FSJ40Mar_P2""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_P2""] call Olsen_FW_FNC_GearScript;";
 					description="Zugtruppführer@1. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
@@ -1932,7 +1932,7 @@ class items
 				class Attributes
 				{
 					ammo=0.7751143;
-					init="[this,""FSJ40Mar_RTO""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_RTO""] call Olsen_FW_FNC_GearScript;";
 					description="Funker@1. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
@@ -2210,7 +2210,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this,""FSJ40Mar_Med""] call Olsen_FW_FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Krankenträger@1. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
@@ -2488,7 +2488,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mess""] call FNC_GearScript;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Mess""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Melder@1. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
@@ -2766,7 +2766,7 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					init="[this,""FSJ40Mar_SL""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_SL""] call Olsen_FW_FNC_GearScript;";
 					name="FSJp1s1";
 					description="Gruppenführer@1. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -3026,7 +3026,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MG""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Richtschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -3285,7 +3285,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MGA""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Hilfsschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -3563,7 +3563,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Mark""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Scharfschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -3841,7 +3841,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -4120,7 +4120,7 @@ class items
 				class Attributes
 				{
 					rank="CORPORAL";
-					init="[this,""FSJ40Mar_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""FSJ40Mar_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Stellver. Gruppenführer@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -4398,7 +4398,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MG""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Richtschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -4657,7 +4657,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MGA""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Hilfsschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -4935,7 +4935,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Gren""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Grenadier@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -5213,7 +5213,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@1. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -5510,7 +5510,7 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					init="[this,""FSJ40Mar_SL""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_SL""] call Olsen_FW_FNC_GearScript;";
 					name="FSJp1s2";
 					description="Gruppenführer@1. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -5789,7 +5789,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MG""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Richtschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -6048,7 +6048,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MGA""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Hilfsschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -6307,7 +6307,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Mark""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Scharfschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -6585,7 +6585,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -6865,7 +6865,7 @@ class items
 				{
 					ammo=0.23335065;
 					rank="CORPORAL";
-					init="[this,""FSJ40Mar_S2""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""FSJ40Mar_S2""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Stellver. Gruppenführer@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -7124,7 +7124,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MG""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Richtschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -7383,7 +7383,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MGA""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Hilfsschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -7642,7 +7642,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Gren""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Grenadier@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -7920,7 +7920,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@1. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -8217,7 +8217,7 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					init="[this,""FSJ40Mar_SL""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_SL""] call Olsen_FW_FNC_GearScript;";
 					name="FSJp1s3";
 					description="Gruppenführer@1. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -8496,7 +8496,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MG""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Richtschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -8774,7 +8774,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MGA""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Hilfsschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -9033,7 +9033,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Mark""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Scharfschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -9311,7 +9311,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -9590,7 +9590,7 @@ class items
 				class Attributes
 				{
 					rank="CORPORAL";
-					init="[this,""FSJ40Mar_S2""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""FSJ40Mar_S2""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Stellver. Gruppenführer@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -9868,7 +9868,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MG""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Richtschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -10128,7 +10128,7 @@ class items
 				class Attributes
 				{
 					skill=0.40000001;
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MGA""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Hilfsschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -10406,7 +10406,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Gren""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Grenadier@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -10684,7 +10684,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@1. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -10981,7 +10981,7 @@ class items
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					init="[this,""FSJ40Mar_PC""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_PC""] call Olsen_FW_FNC_GearScript;";
 					name="FSJp2";
 					description="Zugführer@2. Zug | Zugtrupp";
 					isPlayable=1;
@@ -11261,7 +11261,7 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					init="[this,""FSJ40Mar_P2""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_P2""] call Olsen_FW_FNC_GearScript;";
 					description="Zugtruppführer@2. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
@@ -11521,7 +11521,7 @@ class items
 				class Attributes
 				{
 					ammo=0.7751143;
-					init="[this,""FSJ40Mar_RTO""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_RTO""] call Olsen_FW_FNC_GearScript;";
 					description="Funker@2. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
@@ -11799,7 +11799,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this,""FSJ40Mar_Med""] call Olsen_FW_FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Krankenträger@2. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
@@ -12058,7 +12058,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mess""] call FNC_GearScript;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Mess""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Melder@2. Zug | Zugtrupp";
 					isPlayable=1;
 					class Inventory
@@ -12355,7 +12355,7 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					init="[this,""FSJ40Mar_SL""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_SL""] call Olsen_FW_FNC_GearScript;";
 					name="FSJp2s1";
 					description="Gruppenführer@2. Zug | 1. Gruppe";
 					isPlayable=1;
@@ -12615,7 +12615,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MG""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Richtschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -12874,7 +12874,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MGA""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Hilfsschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -13152,7 +13152,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Mark""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Scharfschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -13430,7 +13430,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -13709,7 +13709,7 @@ class items
 				class Attributes
 				{
 					rank="CORPORAL";
-					init="[this,""FSJ40Mar_S2""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""FSJ40Mar_S2""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Stellver. Gruppenführer@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -13987,7 +13987,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MG""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Richtschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -14265,7 +14265,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MGA""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Hilfsschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -14543,7 +14543,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Gren""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Grenadier@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -14821,7 +14821,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@2. Zug | 1. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -15118,7 +15118,7 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					init="[this,""FSJ40Mar_SL""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_SL""] call Olsen_FW_FNC_GearScript;";
 					name="FSJp2s2";
 					description="Gruppenführer@2. Zug | 2. Gruppe";
 					isPlayable=1;
@@ -15378,7 +15378,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MG""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Richtschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -15656,7 +15656,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MGA""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Hilfsschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -15934,7 +15934,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Mark""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Scharfschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -16212,7 +16212,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -16492,7 +16492,7 @@ class items
 				{
 					ammo=0.23335065;
 					rank="CORPORAL";
-					init="[this,""FSJ40Mar_S2""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""FSJ40Mar_S2""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Stellver. Gruppenführer@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -16770,7 +16770,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MG""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Richtschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -17048,7 +17048,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MGA""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Hilfsschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -17326,7 +17326,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Gren""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Grenadier@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -17604,7 +17604,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@2. Zug | 2. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -17901,7 +17901,7 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					init="[this,""FSJ40Mar_SL""] call FNC_GearScript;";
+					init="[this,""FSJ40Mar_SL""] call Olsen_FW_FNC_GearScript;";
 					name="FSJp2s3";
 					description="Gruppenführer@2. Zug | 3. Gruppe";
 					isPlayable=1;
@@ -18180,7 +18180,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MG""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Richtschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -18458,7 +18458,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MGA""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Hilfsschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -18736,7 +18736,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Mark""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Mark""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Scharfschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -19014,7 +19014,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript; " \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -19294,7 +19294,7 @@ class items
 				{
 					ammo=0.23335065;
 					rank="CORPORAL";
-					init="[this,""FSJ40Mar_S2""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""FSJ40Mar_S2""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Stellver. Gruppenführer@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -19572,7 +19572,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MG""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MG""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Richtschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -19831,7 +19831,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_MGA""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_MGA""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="MG-Hilfsschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -20109,7 +20109,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Gren""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Gren""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Grenadier@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory
@@ -20387,7 +20387,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""FSJ40Mar_Rif""] call FNC_GearScript; " \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""FSJ40Mar_Rif""] call Olsen_FW_FNC_GearScript; " \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gewehrschütze@2. Zug | 3. Gruppe";
 					isPlayable=1;
 					class Inventory

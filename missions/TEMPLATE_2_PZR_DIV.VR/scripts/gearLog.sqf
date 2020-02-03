@@ -22,6 +22,33 @@
 loggingEnabled = 0; // Set this to 1 to enable inventory logging for players and named vehicles. See scripts\gearLog.sqf for more requirements.
 loggingTime = 60; // How often (in seconds) an inventory log will be created during play. I do not recommend changing this except when doing testing and diagnostics.
 
+/*
+if (hasInterface) then {
+    _thePersistenceVoid = [] spawn {
+
+        sleep 5;
+
+        _loadoutOld = profileNamespace getVariable ["test_loadout",[]];
+        if !(_loadoutOld isEqualTo []) then {
+            player setUnitLoadout _loadout;
+        };
+
+        while {(CBA_missionTime >= 0) && (loggingEnabled == 1)} do {
+            if (alive player) then {
+                _loadoutNew = getUnitLoadout player;
+                profileNamespace setVariable ["test_loadout",_loadoutNew];
+            } else {
+                profileNamespace setVariable ["test_loadout",[]];
+            };
+
+            saveProfileNamespace;
+
+            sleep 5;
+        };
+    };
+};
+*/
+
 _uid = getPlayerUID player;
     // note that the UID won't match in single player, so this will only log in multiplayer
 if (

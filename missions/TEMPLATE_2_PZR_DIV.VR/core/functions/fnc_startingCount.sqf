@@ -16,7 +16,7 @@
 
     if (!(_x getVariable ["FW_DontTrack", false])) then {
 
-        _x call FNC_TrackUnit;
+        _x call Olsen_FW_FNC_TrackUnit;
 
     };
 

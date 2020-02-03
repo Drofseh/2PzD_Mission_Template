@@ -1,9 +1,9 @@
 // Automatically delete any map markers placed after the mission starts unless they are in the vehicle or direct channels.
 // Informs the placing player that map markers are forbidden in that channel.
 
-FNC_removeForbiddenMarkers = {
+Olsen_FW_FNC_removeForbiddenMarkers = {
     [
-        {call FNC_removeForbiddenMarkers},
+        {call Olsen_FW_FNC_removeForbiddenMarkers},
         [],
         0.1
     ] call CBA_fnc_waitAndExecute;
@@ -53,7 +53,7 @@ FNC_removeForbiddenMarkers = {
 
         FW_preplacedMarkerNumber = count _orignalUserMarkers;
 
-        call FNC_removeForbiddenMarkers;
+        call Olsen_FW_FNC_removeForbiddenMarkers;
     },
     []
 ] call CBA_fnc_waitUntilAndExecute;

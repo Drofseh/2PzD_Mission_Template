@@ -393,41 +393,41 @@
         [[GEN_ace_ration_CSoup]],[1], \
         [[GEN_ace_ration_Steak]],[1], \
         [[GEN_ace_ration_Pasta]],[1] \
-    ] call FNC_AddItemRandomPercent; \
-    [GEN_Map] call FNC_AddItem; \
-    [GEN_Compass] call FNC_AddItem; \
-    [GEN_Watch] call FNC_AddItem; \
-    [GEN_ace_hammer,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_shovel,1,"uniform"] call FNC_AddItem; \
-    [GEN_BandageField,4,"uniform"] call FNC_AddItem; \
-    [GEN_TQ,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_flashlightEU,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_cabletie,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_canteen_F,1,"uniform"] call FNC_AddItem;
+    ] call Olsen_FW_FNC_AddItemRandomPercent; \
+    [GEN_Map] call Olsen_FW_FNC_AddItem; \
+    [GEN_Compass] call Olsen_FW_FNC_AddItem; \
+    [GEN_Watch] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_hammer,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_shovel,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandageField,4,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_TQ,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_flashlightEU,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_cabletie,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_canteen_F,1,"uniform"] call Olsen_FW_FNC_AddItem;
 
 #define Ger_Leader_Equipment \
-    [GEN_BinoG] call FNC_AddItem; \
-    [GEN_ace_maptools,1,"uniform"] call FNC_AddItem; \
-    [GEN_Whistle,1,"uniform"] call FNC_AddItem;
+    [GEN_BinoG] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_maptools,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Whistle,1,"uniform"] call Olsen_FW_FNC_AddItem;
 
 #define Ger_MedicP_Equipment \
-    [GEN_BandageField,10,"backpack"] call FNC_AddItem; \
-    [GEN_BandageElastic,20,"backpack"] call FNC_AddItem; \
-    [GEN_BandagePacking,20,"backpack"] call FNC_AddItem; \
-    [GEN_Morp,5,"backpack"] call FNC_AddItem; \
-    [GEN_Pain,10,"backpack"] call FNC_AddItem; \
-    [GEN_Epi,5,"backpack"] call FNC_AddItem; \
-    [GEN_TQ,4,"backpack"] call FNC_AddItem; \
-    [GEN_SurgKit,1,"backpack"] call FNC_AddItem; \
-    [GEN_Saline1000,5,"backpack"] call FNC_AddItem; \
-    [GEN_Saline500,10,"vest"] call FNC_AddItem;
+    [GEN_BandageField,10,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandageElastic,20,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandagePacking,20,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Morp,5,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Pain,10,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Epi,5,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_TQ,4,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_SurgKit,1,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Saline1000,5,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Saline500,10,"vest"] call Olsen_FW_FNC_AddItem;
 
 #define Ger_MedicS_Equipment \
-    [GEN_BandageField,5,"backpack"] call FNC_AddItem; \
-    [GEN_BandageElastic,10,"backpack"] call FNC_AddItem; \
-    [GEN_BandagePacking,10,"backpack"] call FNC_AddItem; \
-    [GEN_Pain,10,"backpack"] call FNC_AddItem; \
-    [GEN_TQ,5,"backpack"] call FNC_AddItem;
+    [GEN_BandageField,5,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandageElastic,10,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandagePacking,10,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Pain,10,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_TQ,5,"backpack"] call Olsen_FW_FNC_AddItem;
 
 //===== Deutsches Afrikakorps Equipment Definitions =====
 
@@ -541,11 +541,11 @@
 //=== EQUIPMENT ===
 
 #define FSJ_Medic_Equipment \
-    [GEN_BandageElastic,8] call FNC_AddItem; \
-    [GEN_BandagePacking,8] call FNC_AddItem; \
-    [GEN_Morp,5] call FNC_AddItem; \
-    [GEN_Epi,4] call FNC_AddItem; \
-    [GEN_Saline500,3] call FNC_AddItem;
+    [GEN_BandageElastic,8] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandagePacking,8] call Olsen_FW_FNC_AddItem; \
+    [GEN_Morp,5] call Olsen_FW_FNC_AddItem; \
+    [GEN_Epi,4] call Olsen_FW_FNC_AddItem; \
+    [GEN_Saline500,3] call Olsen_FW_FNC_AddItem;
 
 //===== SS Equipment Definitions =====
 

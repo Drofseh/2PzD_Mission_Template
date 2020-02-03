@@ -8,7 +8,7 @@
 // If I take an OLD MAG with 20 rounds in it but the NEW MAG has a max of 5 then it will create a NEW MAG with 5, loop, create another NEW MAG with 5, loop, until I have four NEW MAG each with 5 rounds.
 // If I cancel it after two loops then I will get the OLD MAG with 10 rounds in it and two NEW MAG with 5 rounds each.
 
-FNC_MagazineConversion_AddNewMags = {
+Olsen_FW_FNC_MagazineConversion_AddNewMags = {
     params ["_OldMag","_NewMag","_oldMagCountCurrent","_newMagCountMax"];
 
     if !(player canAdd _NewMag) exitWith {
@@ -58,7 +58,7 @@ FNC_MagazineConversion_AddNewMags = {
 
             // If any rounds are left over, call this function again to put them into another NEW MAG. Repeats until all rounds are removed from the old magazine.
             if (_oldMagCountCurrent > 0) then {
-                [_OldMag,_NewMag,_oldMagCountCurrent,_newMagCountMax] call FNC_MagazineConversion_AddNewMags;
+                [_OldMag,_NewMag,_oldMagCountCurrent,_newMagCountMax] call Olsen_FW_FNC_MagazineConversion_AddNewMags;
                 [
                     [(format ["Converting %1 into %2 partially complete.",_nameOldMagazine,_nameNewMagazine])],
                     [(format ["%1 rounds remaining in %2",str _oldMagCountCurrent,_nameOldMagazine])],
@@ -67,7 +67,7 @@ FNC_MagazineConversion_AddNewMags = {
             } else {
                 if (_oldMagCountMax < _newMagCountMax) then {
                     if (_OldMag in magazines player) then {
-                        [_OldMag,_NewMag] call FNC_MagazineConversion_ConvertMag;
+                        [_OldMag,_NewMag] call Olsen_FW_FNC_MagazineConversion_ConvertMag;
                         [
                             [(format ["Converting %1 into partial %2 complete.",_nameOldMagazine,_nameNewMagazine])],
                             ["Make sure to repack your mags."],
@@ -83,7 +83,7 @@ FNC_MagazineConversion_AddNewMags = {
                     };
                 } else {
                     if (_OldMag in magazines player) then {
-                        [_OldMag,_NewMag] call FNC_MagazineConversion_ConvertMag;
+                        [_OldMag,_NewMag] call Olsen_FW_FNC_MagazineConversion_ConvertMag;
                         [
                             [(format ["Converting %1 into %2 complete.",_nameOldMagazine,_nameNewMagazine])],
                             ["Converting another one."],

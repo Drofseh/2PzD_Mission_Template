@@ -1,4 +1,4 @@
-["Start Text", "Displays animated text on mission start.", "Olsen &amp; Starfox64"] call FNC_RegisterModule;
+["Start Text", "Displays animated text on mission start.", "Olsen &amp; Starfox64"] call Olsen_FW_FNC_RegisterModule;
 
 if (hasInterface) then {
     private ["_year","_month","_day","_hour","_min","_startTextArray","_line","_unparsedText"];

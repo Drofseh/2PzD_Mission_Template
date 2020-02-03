@@ -1,4 +1,4 @@
-["Start on safe", "Forces ACE Safety on all players when the mission starts.", "Olsen"] call FNC_RegisterModule;
+["Start on safe", "Forces ACE Safety on all players when the mission starts.", "Olsen"] call Olsen_FW_FNC_RegisterModule;
 
 if (hasInterface) then {
 

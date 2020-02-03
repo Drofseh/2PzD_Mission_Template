@@ -7,17 +7,17 @@ if (isServer) then { //This scope is only for the server
 
     // Teams, used for the end screen and to calculate casualties on each side
     // The names in endConditions.sqf used in the casualty calls MUST match these names.
-    [west, "2 Panzer Division", "player"] call FNC_AddTeam; //Adds a player team called USA on side west
-    [east, "Red Army", "ai"] call FNC_AddTeam; //Adds a ai team called Red Army on side east
-    [resistance, "Western Allies", "ai"] call FNC_AddTeam; //Adds an ai team called PUT_TEAM_NAME_HERE on side resistance (aka independent)
-    //[civilian, "Civilians", "ai"] call FNC_AddTeam; // civilians
+    [west, "2 Panzer Division", "player"] call Olsen_FW_FNC_AddTeam; //Adds a player team called USA on side west
+    [east, "Red Army", "ai"] call Olsen_FW_FNC_AddTeam; //Adds a ai team called Red Army on side east
+    [resistance, "Western Allies", "ai"] call Olsen_FW_FNC_AddTeam; //Adds an ai team called PUT_TEAM_NAME_HERE on side resistance (aka independent)
+    //[civilian, "Civilians", "ai"] call Olsen_FW_FNC_AddTeam; // civilians
 
     publicVariable "callMissionRemote";
 
     "callMissionRemote" addPublicVariableEventHandler {
         _endStringMessage = _this select 1;
         _endString = _endStringMessage select 0;
-        _endString call FNC_EndMission;
+        _endString call Olsen_FW_FNC_EndMission;
     };
 };
 

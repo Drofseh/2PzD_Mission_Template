@@ -31,15 +31,15 @@ if (count _items > 1) then {
     };
 };
 
-_randomPick = (_items select (([1, count _items] call FNC_RandomRange) - 1));
+_randomPick = (_items select (([1, count _items] call Olsen_FW_FNC_RandomRange) - 1));
 if (_position == "ARRAY") then {
     if (typeName (_randomPick select 0) == "ARRAY") then {
         {
-            ([_unit, _loadoutType] + _x) call FNC_AddItemOrg;
+            ([_unit, _loadoutType] + _x) call Olsen_FW_FNC_AddItemOrg;
         } forEach _randomPick;
     } else {
-        ([_unit, _loadoutType] + _randomPick) call FNC_AddItemOrg;
+        ([_unit, _loadoutType] + _randomPick) call Olsen_FW_FNC_AddItemOrg;
     };
 } else {
-    [_unit, _loadoutType, _randomPick, _amount, _position] call FNC_AddItemOrg;
+    [_unit, _loadoutType, _randomPick, _amount, _position] call Olsen_FW_FNC_AddItemOrg;
 };

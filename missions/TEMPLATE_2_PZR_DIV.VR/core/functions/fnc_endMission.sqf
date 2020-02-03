@@ -29,10 +29,10 @@ if (CBA_missionTime > 0) then {
 
     {
         private _team = (_x select 0);
-        private _assets = _team call FNC_GetDamagedAssets;
+        private _assets = _team call Olsen_FW_FNC_GetDamagedAssets;
 
-        [_team, 5, _assets select 0] call FNC_SetTeamVariable;
-        [_team, 6, _assets select 1] call FNC_SetTeamVariable;
+        [_team, 5, _assets select 0] call Olsen_FW_FNC_SetTeamVariable;
+        [_team, 6, _assets select 1] call Olsen_FW_FNC_SetTeamVariable;
     } forEach FW_Teams;
 
     ["FW_EndMission", [_scenario, FW_TimeLimit, FW_Teams]] call CBA_fnc_globalEvent;

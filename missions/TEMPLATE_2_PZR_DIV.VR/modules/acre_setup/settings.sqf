@@ -7,14 +7,14 @@
 FW_enable_babel = true;
 
 /*
- * FNC_SetLanguages
+ * Olsen_FW_FNC_SetLanguages
  *
  * Use this function in player's init to set player's custom languages (translator for example)
  * faction setting will be overwritten by this value
  *
  * Examples:
- * [this, ["ru"]] call FNC_SetLanguages;
- * [this, ["fr", "en", "ru"]] call FNC_SetLanguages;
+ * [this, ["ru"]] call Olsen_FW_FNC_SetLanguages;
+ * [this, ["fr", "en", "ru"]] call Olsen_FW_FNC_SetLanguages;
 */
 
 //define languages for different sides
@@ -102,12 +102,12 @@ FW_all_languages = [
 /////////////////
 
 /*
- * FNC_SetRadio
+ * Olsen_FW_FNC_SetRadio
  * use this in player init to set default radio channel and spatial (optional)
  *
  * Examples:
- * [this, "ACRE_PRC343", 2] call FNC_SetRadio;
- * [this, "ACRE_PRC117F", 7, "LEFT"] call FNC_SetRadio;
+ * [this, "ACRE_PRC343", 2] call Olsen_FW_FNC_SetRadio;
+ * [this, "ACRE_PRC117F", 7, "LEFT"] call Olsen_FW_FNC_SetRadio;
 */
 
 
@@ -170,11 +170,11 @@ FW_enable_scramble = false;
 //Function below is to switch one unit to different scramble side.
 
 /*
- * FNC_SetScramble
+ * Olsen_FW_FNC_SetScramble
  * Change unit's scramble so it matches set faction
  *
  * Example:
- * [this, east] call FNC_SetScramble;
+ * [this, east] call Olsen_FW_FNC_SetScramble;
  * Will set unit's radio to east's scramble setting.
  * (if following example is used on west unit, that unit will hear east units on radio, but won't hear west)
 */

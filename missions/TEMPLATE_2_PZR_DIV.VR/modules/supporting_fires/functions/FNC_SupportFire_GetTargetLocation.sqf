@@ -1,5 +1,5 @@
 
-FNC_SupportFire_GetTargetLocation = {
+Olsen_FW_FNC_SupportFire_GetTargetLocation = {
     params [
         "_supportFire_target",
         "_supportFire_accuracy",

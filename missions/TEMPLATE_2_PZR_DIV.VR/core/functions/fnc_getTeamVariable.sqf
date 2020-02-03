@@ -27,7 +27,7 @@ private _found = false;
 
 if (!_found) then {
     private _tempText = format ["Critical: Team ""%1"" does not exist.", _team];
-    _tempText call FNC_DebugMessage;
+    _tempText call Olsen_FW_FNC_DebugMessage;
 };
 
 _return

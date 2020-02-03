@@ -22,7 +22,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="call{[this,""PRus45_SL""] call FNC_GearScript;}";
+					init="call{[this,""PRus45_SL""] call Olsen_FW_FNC_GearScript;}";
 					class Inventory
 					{
 					};
@@ -313,7 +313,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="call{[this,""PRus45_MG""] call FNC_GearScript;}";
+					init="call{[this,""PRus45_MG""] call Olsen_FW_FNC_GearScript;}";
 					class Inventory
 					{
 					};
@@ -604,7 +604,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="call{[this,""PRus45_MGA""] call FNC_GearScript;}";
+					init="call{[this,""PRus45_MGA""] call Olsen_FW_FNC_GearScript;}";
 					class Inventory
 					{
 					};
@@ -895,7 +895,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="call{[this,""PRus45_Parti""] call FNC_GearScript;}";
+					init="call{[this,""PRus45_Parti""] call Olsen_FW_FNC_GearScript;}";
 					class Inventory
 					{
 					};
@@ -1034,7 +1034,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="call{[this,""PRus45_Parti""] call FNC_GearScript;}";
+					init="call{[this,""PRus45_Parti""] call Olsen_FW_FNC_GearScript;}";
 					class Inventory
 					{
 					};
@@ -1173,7 +1173,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="call{[this,""PRus45_Parti""] call FNC_GearScript;}";
+					init="call{[this,""PRus45_Parti""] call Olsen_FW_FNC_GearScript;}";
 					class Inventory
 					{
 					};
@@ -1312,7 +1312,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="call{[this,""PRus45_Parti""] call FNC_GearScript;}";
+					init="call{[this,""PRus45_Parti""] call Olsen_FW_FNC_GearScript;}";
 					class Inventory
 					{
 					};
@@ -1451,7 +1451,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="call{[this,""PRus45_Parti""] call FNC_GearScript;}";
+					init="call{[this,""PRus45_Parti""] call Olsen_FW_FNC_GearScript;}";
 					class Inventory
 					{
 					};

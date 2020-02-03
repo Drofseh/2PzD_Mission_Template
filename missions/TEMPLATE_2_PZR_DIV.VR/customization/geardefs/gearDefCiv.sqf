@@ -82,4 +82,4 @@
 //=== EQUIPMENT ===
 
 #define Civ_Default_Equipment \
-    [GEN_Watch] call FNC_AddItem;
+    [GEN_Watch] call Olsen_FW_FNC_AddItem;

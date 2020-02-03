@@ -1,5 +1,5 @@
 
-FNC_SupportFire_Barrage = {
+Olsen_FW_FNC_SupportFire_Barrage = {
     params [
         "_supportFire_type",
         "_supportFire_number",

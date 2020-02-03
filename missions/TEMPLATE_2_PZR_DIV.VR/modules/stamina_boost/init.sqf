@@ -1,5 +1,5 @@
 
-["Stamina Boost", "Gives a boost to stamina after eating or drinking.", "Wilhelm Haas (Drofseh)"] call FNC_RegisterModule;
+["Stamina Boost", "Gives a boost to stamina after eating or drinking.", "Wilhelm Haas (Drofseh)"] call Olsen_FW_FNC_RegisterModule;
 
 #include "settings.sqf"
 

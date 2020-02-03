@@ -1,4 +1,4 @@
-FNC_DebugMessage = {};
+Olsen_FW_FNC_DebugMessage = {};
 
 if (hasInterface) then {
 
@@ -17,7 +17,7 @@ if (hasInterface) then {
 
         ((uiNamespace getVariable "FW_Debug") displayCtrl _someText) ctrlSetStructuredText parseText _text;
 
-        FNC_DebugMessage = {
+        Olsen_FW_FNC_DebugMessage = {
             diag_log text _this;
 
             private ["_someText", "_message", "_found", "_text"];

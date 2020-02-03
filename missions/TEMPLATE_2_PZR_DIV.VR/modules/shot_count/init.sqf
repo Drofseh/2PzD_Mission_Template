@@ -1,4 +1,4 @@
-["Ammo Counter", "Counts ammunition types fired and displays it in the mission endscreen.", "TinfoilHate &amp; Wilhelm Haas (Drofseh)"] call FNC_RegisterModule;
+["Ammo Counter", "Counts ammunition types fired and displays it in the mission endscreen.", "TinfoilHate &amp; Wilhelm Haas (Drofseh)"] call Olsen_FW_FNC_RegisterModule;
 
 if (isServer) then {
 

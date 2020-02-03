@@ -1,8 +1,8 @@
 /*
-["ACE_Canteen","ACE_Canteen_Half"] call FNC_StaminaBoost_Drink_Water;
+["ACE_Canteen","ACE_Canteen_Half"] call Olsen_FW_FNC_StaminaBoost_Drink_Water;
 */
 
-FNC_StaminaBoost_Drink_Water = {
+Olsen_FW_FNC_StaminaBoost_Drink_Water = {
     params ["_drinkItem", "_newItem"];
     //private _drinkItem = _this select 0;
     //private _newItem = _this select 1;
@@ -30,7 +30,7 @@ FNC_StaminaBoost_Drink_Water = {
             stamina_boost_staminaBoostTime = stamina_boost_staminaDrinkBoostTime;
             stamina_boost_staminaBoost = stamina_boost_staminaDrinkBoost;
 
-            [stamina_boost_staminaFoodCool] call FNC_StaminaBoost_RaiseStamina;
+            [stamina_boost_staminaFoodCool] call Olsen_FW_FNC_StaminaBoost_RaiseStamina;
 
             if (_oldItem == "ACE_Canteen") then {
                 _drinkName = "full canteen.";

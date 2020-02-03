@@ -199,33 +199,33 @@
         [[GEN_ace_ration_CSoup]],[1], \
         [[GEN_ace_ration_Steak]],[1], \
         [[GEN_ace_ration_Dumpling]],[1] \
-    ] call FNC_AddItemRandomPercent; \
-    [GEN_Map] call FNC_AddItem; \
-    [GEN_Compass] call FNC_AddItem; \
-    [GEN_Watch] call FNC_AddItem; \
-    [GEN_ace_hammer,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_shovel,1,"uniform"] call FNC_AddItem; \
-    [GEN_BandageField,4,"uniform"] call FNC_AddItem; \
-    [GEN_TQ,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_flashlightEU,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_cabletie,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_canteen_F,1,"uniform"] call FNC_AddItem;
+    ] call Olsen_FW_FNC_AddItemRandomPercent; \
+    [GEN_Map] call Olsen_FW_FNC_AddItem; \
+    [GEN_Compass] call Olsen_FW_FNC_AddItem; \
+    [GEN_Watch] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_hammer,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_shovel,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandageField,4,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_TQ,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_flashlightEU,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_cabletie,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_canteen_F,1,"uniform"] call Olsen_FW_FNC_AddItem;
 
 #define Rus_Leader_Equipment \
-    [GEN_BinoR] call FNC_AddItem; \
-    [GEN_ace_maptools,1,"uniform"] call FNC_AddItem; \
-    [GEN_Whistle,1,"uniform"] call FNC_AddItem;
+    [GEN_BinoR] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_maptools,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Whistle,1,"uniform"] call Olsen_FW_FNC_AddItem;
 
 #define Rus_Medic_Equipment \
-    [GEN_BandageField,10,"backpack"] call FNC_AddItem; \
-    [GEN_BandageElastic,20,"backpack"] call FNC_AddItem; \
-    [GEN_BandagePacking,20,"backpack"] call FNC_AddItem; \
-    [GEN_Morp,5,"backpack"] call FNC_AddItem; \
-    [GEN_Pain,10,"backpack"] call FNC_AddItem; \
-    [GEN_Epi,5,"backpack"] call FNC_AddItem; \
-    [GEN_TQ,2,"backpack"] call FNC_AddItem; \
-    [GEN_SurgKit,1,"backpack"] call FNC_AddItem; \
-    [GEN_Saline500,4,"backpack"] call FNC_AddItem;
+    [GEN_BandageField,10,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandageElastic,20,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandagePacking,20,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Morp,5,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Pain,10,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Epi,5,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_TQ,2,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_SurgKit,1,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Saline500,4,"backpack"] call Olsen_FW_FNC_AddItem;
 
 //===== VDV Equipment Definitions =====
 
@@ -238,32 +238,32 @@
         [[GEN_ace_ration_CSoup]],[1], \
         [[GEN_ace_ration_Steak]],[1], \
         [[GEN_ace_ration_Dumpling]],[1] \
-    ] call FNC_AddItemRandomPercent; \
-    [GEN_Map] call FNC_AddItem; \
-    [GEN_Compass] call FNC_AddItem; \
-    [GEN_Watch] call FNC_AddItem; \
-    [GEN_ace_hammer,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_shovel,1,"uniform"] call FNC_AddItem; \
-    [GEN_BandageField,4,"uniform"] call FNC_AddItem; \
-    [GEN_TQ,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_flashlightEU,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_cabletie,1,"uniform"] call FNC_AddItem; \
-    [GEN_ace_canteen_F,1,"uniform"] call FNC_AddItem;
+    ] call Olsen_FW_FNC_AddItemRandomPercent; \
+    [GEN_Map] call Olsen_FW_FNC_AddItem; \
+    [GEN_Compass] call Olsen_FW_FNC_AddItem; \
+    [GEN_Watch] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_hammer,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_shovel,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandageField,4,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_TQ,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_flashlightEU,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_cabletie,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_canteen_F,1,"uniform"] call Olsen_FW_FNC_AddItem;
 
 #define VDV_Leader_Equipment \
-    [GEN_BinoR] call FNC_AddItem; \
-    [GEN_ace_maptools,1,"uniform"] call FNC_AddItem; \
-    [GEN_Whistle,1,"uniform"] call FNC_AddItem;
+    [GEN_BinoR] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_maptools,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Whistle,1,"uniform"] call Olsen_FW_FNC_AddItem;
 
 #define VDV_Medic_Equipment \
-    [GEN_BandageField,5,"backpack"] call FNC_AddItem; \
-    [GEN_BandageElastic,10,"backpack"] call FNC_AddItem; \
-    [GEN_BandagePacking,15,"backpack"] call FNC_AddItem; \
-    [GEN_Morp,5,"backpack"] call FNC_AddItem; \
-    [GEN_Epi,2,"backpack"] call FNC_AddItem; \
-    [GEN_TQ,2,"backpack"] call FNC_AddItem; \
-    [GEN_SurgKit,1,"backpack"] call FNC_AddItem; \
-    [GEN_Saline500,3,"backpack"] call FNC_AddItem;
+    [GEN_BandageField,5,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandageElastic,10,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandagePacking,15,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Morp,5,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Epi,2,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_TQ,2,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_SurgKit,1,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Saline500,3,"backpack"] call Olsen_FW_FNC_AddItem;
 
 //===== NKVD Equipment Definitions =====
 

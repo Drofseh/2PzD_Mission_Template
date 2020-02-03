@@ -29,7 +29,7 @@ _result = (
 
 if (!_result) then {
     if (!isMultiplayer) then {
-        format ["Invalid classname given! - %1", _class] call FNC_DebugMessage;
+        format ["Invalid classname given! - %1", _class] call Olsen_FW_FNC_DebugMessage;
         diag_log text format ["Invalid classname given! - %1", _class];
     };
     [_class, {
@@ -49,7 +49,7 @@ if (!_result) then {
     }] remoteExec ["call", 0, true];
 
     if (!isNull _unit) then {
-        [_class, _unit] remoteExecCall ["FNC_makeUnitsList", 2, false];
+        [_class, _unit] remoteExecCall ["Olsen_FW_FNC_makeUnitsList", 2, false];
     };
 };
 

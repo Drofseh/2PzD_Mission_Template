@@ -3,7 +3,7 @@
 //Example:
 //#include "start_text\root.sqf"
 
-//Enabled modules by default, disable them by adding // in front.
+//Default modules, enable/disable them by adding/removing // from the front.
 
 #include "marker_control\root.sqf"
 #include "acre_setup\root.sqf"
@@ -19,11 +19,14 @@
 #include "stamina_boost\root.sqf"
 #include "start_on_safe\root.sqf"
 #include "start_on_team_color\root.sqf"
-#include "start_with_earplugs\root.sqf"
+//#include "start_text\root.sqf"
+//#include "supporting_fires\root.sqf"
 #include "vehicle_displays\root.sqf"
 
-//Additional modules that can be enabled by removing the //
-//!!Some of them require changing settings in their settings.sqf file!!
+//Additional optional modules are provided in the Optional Modules folder.
+//If you with to use one of these modules copy it from the Optional Modules folder into your mission/modules folder
+//Then enabled it by uncommenting it in this file.
+//Most of them require changing settings in their settings.sqf file
 
 //#include "ai_attack\root.sqf"
 //#include "ai_behaviour\root.sqf"
@@ -43,7 +46,6 @@
 //#include "in_game_briefing_utilities\root.sqf"
 //#include "setup_timer\root.sqf"
 //#include "start_in_parachute\root.sqf"
-//#include "start_text\root.sqf"
-//#include "supporting_fires\root.sqf"
+//#include "start_with_earplugs\root.sqf"
 //#include "task_control\root.sqf"
 //#include "zeus_fog\root.sqf"

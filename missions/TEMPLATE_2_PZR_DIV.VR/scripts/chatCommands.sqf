@@ -2,7 +2,7 @@
 
 ["endMission", {
     private _msg = "Mission ended by admin";
-    _msg call FNC_EndMission;
+    _msg call Olsen_FW_FNC_EndMission;
 }, "admin"] call CBA_fnc_registerChatCommand;
 
 ["respawnWave", {

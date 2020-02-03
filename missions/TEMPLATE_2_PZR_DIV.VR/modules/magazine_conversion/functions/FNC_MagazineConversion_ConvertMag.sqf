@@ -6,7 +6,7 @@
 // Since the ammo count is based on a specific magazine but the removal of the OLD MAG is based on the classname it's possible for there to be a bug where the removed mag is not the same magazine that the ammo count was taken from.
 // I think this is unlikely as I believe they should both always be the first matching magazine of that class in the player's inventory.
 
-FNC_MagazineConversion_ConvertMag = {
+Olsen_FW_FNC_MagazineConversion_ConvertMag = {
     params ["_OldMag","_NewMag","_allMags"];
     _OldMag = _this select 0;
     _NewMag = _this select 1;
@@ -41,7 +41,7 @@ FNC_MagazineConversion_ConvertMag = {
             player removeMagazine _thisMagClass;
             magazine_conversion_nameSpace setVariable ["magRemoved", true];
 
-            [_OldMag,_NewMag,_oldMagCountCurrent,_newMagCountMax] call FNC_MagazineConversion_AddNewMags;
+            [_OldMag,_NewMag,_oldMagCountCurrent,_newMagCountMax] call Olsen_FW_FNC_MagazineConversion_AddNewMags;
         };
     } forEach _allMags;
     magazine_conversion_nameSpace setVariable ["magRemoved", false];

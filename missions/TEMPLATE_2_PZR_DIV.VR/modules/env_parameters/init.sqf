@@ -1,4 +1,4 @@
-["Environment / Mission Parameters", "Allows the admin to choose between different weather parameters.", "Starfox64, Olsen"] call FNC_RegisterModule;
+["Environment / Mission Parameters", "Allows the admin to choose between different weather parameters.", "Starfox64, Olsen"] call Olsen_FW_FNC_RegisterModule;
 
 if ((isServer) and (isMultiplayer)) then {
 
@@ -18,7 +18,7 @@ if ((isServer) and (isMultiplayer)) then {
 
         } else {
 
-            "Time limit was negative and therefore not changed." call FNC_DebugMessage;
+            "Time limit was negative and therefore not changed." call Olsen_FW_FNC_DebugMessage;
 
         }
     };

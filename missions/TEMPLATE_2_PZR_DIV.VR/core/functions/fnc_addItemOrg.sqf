@@ -28,26 +28,26 @@ if (isNil "_position") then {
 
 _badData = false;
 
-if !([_item, _unit] call FNC_checkClassname) exitWith {};
+if !([_item, _unit] call Olsen_FW_FNC_checkClassname) exitWith {};
 
 if (typeName _amount != "SCALAR") then {
     _badData = true;
 
-    (format ["Item amount is not a number in this loadout: %1", str _this]) call FNC_DebugMessage;
+    (format ["Item amount is not a number in this loadout: %1", str _this]) call Olsen_FW_FNC_DebugMessage;
     diag_log text (format ["Item amount is not a number in this loadout: %1", str _this]);
 };
 
 if (typeName _position != "STRING") then {
 
     _badData = true;
-    (format ["Position is not a string in this loadout: %1", str _this]) call FNC_DebugMessage;
+    (format ["Position is not a string in this loadout: %1", str _this]) call Olsen_FW_FNC_DebugMessage;
     diag_log text (format ["Position is not a string in this loadout: %1", str _this]);
 
 } else {
     if (_position != "none" && {_position != "backpack" && _position != "vest" && _position != "uniform"}) then {
 
         _badData = true;
-        (format ["Position string is misspelled or invalid in this loadout: %1", str _this]) call FNC_DebugMessage;
+        (format ["Position string is misspelled or invalid in this loadout: %1", str _this]) call Olsen_FW_FNC_DebugMessage;
         diag_log text (format ["Position string is misspelled or invalid in this loadout: %1", str _this]);
 
     };
@@ -73,7 +73,7 @@ for "_x" from 1 to _amount do {
             _unit addWeaponGlobal _item;
             _succes = true;
         };
-        if (_type in ["Map", "GPS", "Compass", "Watch", "NVGoggles"] && {[_unit, _type] call FNC_CanLinkItem}) exitWith {
+        if (_type in ["Map", "GPS", "Compass", "Watch", "NVGoggles"] && {[_unit, _type] call Olsen_FW_FNC_CanLinkItem}) exitWith {
             _unit linkItem _item;
             _succes = true;
         };
@@ -102,19 +102,19 @@ for "_x" from 1 to _amount do {
             _succes = true;
         };
         if (_type in ["AccessoryMuzzle", "AccessoryPointer", "AccessorySights", "AccessoryBipod"]) exitWith {
-            if ([primaryWeapon _unit, _item] call FNC_CanAttachItem) then {
+            if ([primaryWeapon _unit, _item] call Olsen_FW_FNC_CanAttachItem) then {
                 if (!(_type in primaryWeaponItems _unit)) then {
                     _unit addPrimaryWeaponItem _item;
                     _succes = true;
                 };
             } else {
-                if ([handgunWeapon _unit, _item] call FNC_CanAttachItem) then {
+                if ([handgunWeapon _unit, _item] call Olsen_FW_FNC_CanAttachItem) then {
                     if (!(_type in handgunItems _unit)) then {
                         _unit addHandgunItem _item;
                         _succes = true;
                     };
                 } else {
-                    if ([secondaryWeapon _unit, _item] call FNC_CanAttachItem) then {
+                    if ([secondaryWeapon _unit, _item] call Olsen_FW_FNC_CanAttachItem) then {
                         if (!(_type in secondaryWeaponItems _unit)) then {
                             _unit addSecondaryWeaponItem _item;
                             _succes = true;
@@ -158,7 +158,7 @@ for "_x" from 1 to _amount do {
                 };
             };
             if (!_succes) then {
-                (format ["FNC_AddItem: Warning %1 overflown from %2, in %3, case %4", _item, _position, _unit, _loadoutType]) call FNC_DebugMessage;
+                (format ["Olsen_FW_FNC_AddItem: Warning %1 overflown from %2, in %3, case %4", _item, _position, _unit, _loadoutType]) call Olsen_FW_FNC_DebugMessage;
             };
         };
     };
@@ -168,12 +168,12 @@ for "_x" from 1 to _amount do {
             _unit addItem _item;
             _succes = true;
         } else {
-            _message = "FNC_AddItem: Warning couldn't fit %1 anywhere, originally intended for %2, in %3, case %4";
+            _message = "Olsen_FW_FNC_AddItem: Warning couldn't fit %1 anywhere, originally intended for %2, in %3, case %4";
 
             if (_position == "none") then {
-                _message = "FNC_AddItem: Warning couldn't fit %1 (type %5) anywhere, in %3, case %4";
+                _message = "Olsen_FW_FNC_AddItem: Warning couldn't fit %1 (type %5) anywhere, in %3, case %4";
             };
-            (format [_message, _item, _position, _unit, _loadoutType, _type]) call FNC_DebugMessage;
+            (format [_message, _item, _position, _unit, _loadoutType, _type]) call Olsen_FW_FNC_DebugMessage;
         };
     };
 };

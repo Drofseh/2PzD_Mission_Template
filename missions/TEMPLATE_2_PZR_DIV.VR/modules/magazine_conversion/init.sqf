@@ -1,5 +1,5 @@
 
-["Magazine Conversion", "Allows the conversion of one magazine type into another magazine type that uses the same ammunition.", "Wilhelm Haas (Drofseh)"] call FNC_RegisterModule;
+["Magazine Conversion", "Allows the conversion of one magazine type into another magazine type that uses the same ammunition.", "Wilhelm Haas (Drofseh)"] call Olsen_FW_FNC_RegisterModule;
 
 magazine_conversion_allMagazinesConfig = "true" configClasses (configFile >> "CfgMagazines");
 magazine_conversion_allMagazines = [];

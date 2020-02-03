@@ -1,4 +1,4 @@
-["Cover map", "Covers map except specified area.", "BlackHawk"] call FNC_RegisterModule;
+["Cover map", "Covers map except specified area.", "BlackHawk"] call Olsen_FW_FNC_RegisterModule;
 
 #include "settings.sqf"
 

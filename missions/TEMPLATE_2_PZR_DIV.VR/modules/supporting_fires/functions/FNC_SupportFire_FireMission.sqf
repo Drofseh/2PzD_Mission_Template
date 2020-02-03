@@ -1,7 +1,7 @@
 
 // [side, type, number, target, [adjustmentX,Y]]
-// [(side player), "HE", 5, "Target01", [0,0]] call FNC_SupportFire_FireMission;
-FNC_SupportFire_FireMission = {
+// [(side player), "HE", 5, "Target01", [0,0]] call Olsen_FW_FNC_SupportFire_FireMission;
+Olsen_FW_FNC_SupportFire_FireMission = {
     params [
         ["_supportFire_side", side player],
         ["_supportFire_type", "Smoke"],
@@ -29,11 +29,11 @@ FNC_SupportFire_FireMission = {
     // systemChat ("_supportFire_adjust - " + str _supportFire_adjust);
     // systemChat ("_supportFire_accuracy - " + str _supportFire_accuracy);
 
-    _supportFire_targetName = _supportFire_target call FNC_SupportFire_GetTargetName;
+    _supportFire_targetName = _supportFire_target call Olsen_FW_FNC_SupportFire_GetTargetName;
     // systemChat _supportFire_target;
     // systemChat _supportFire_targetName;
 
-    _supportFire_targetXY = [_supportFire_target, _supportFire_accuracy, _supportFire_adjust] call FNC_SupportFire_GetTargetLocation;
+    _supportFire_targetXY = [_supportFire_target, _supportFire_accuracy, _supportFire_adjust] call Olsen_FW_FNC_SupportFire_GetTargetLocation;
     // systemChat ("_supportFire_targetXY - " + str _supportFire_targetXY);
 
     // check if player is too close to target
@@ -61,14 +61,14 @@ FNC_SupportFire_FireMission = {
         _supportFire_adjustDir = "";
     };
 
-    _supportFire_ammoLeft = [_supportFire_side, _supportFire_type, _supportFire_number] call FNC_SupportFire_RemoveAmmo;
+    _supportFire_ammoLeft = [_supportFire_side, _supportFire_type, _supportFire_number] call Olsen_FW_FNC_SupportFire_RemoveAmmo;
     // systemChat ("_supportFire_ammoLeft - " + str _supportFire_ammoLeft);
 
     // cancel if not enough ammo
     if (_supportFire_ammoLeft < 0) exitWith {
         // systemChat "Fire mission canceled";
         [[(format ["Negative, not enough %1 rounds available.", _supportFire_type])], true] call CBA_fnc_notify;
-        [(side player),false] call FNC_SupportFire_AmmoCheck;
+        [(side player),false] call Olsen_FW_FNC_SupportFire_AmmoCheck;
     };
 
     // make fire missions unavailable for that side
@@ -117,7 +117,7 @@ FNC_SupportFire_FireMission = {
     // systemChat ("_supportFire_layingDelay - " + str _supportFire_layingDelay);
     // systemChat ("_supportFire_completionDelay - " + str _supportFire_completionDelay);
 
-    [_supportFire_type, _supportFire_number, _supportFire_targetXY, _supportFire_dispersion,_supportFire_targetName,_supportFire_layingDelay] call FNC_SupportFire_Barrage;
+    [_supportFire_type, _supportFire_number, _supportFire_targetXY, _supportFire_dispersion,_supportFire_targetName,_supportFire_layingDelay] call Olsen_FW_FNC_SupportFire_Barrage;
 
     [
         {

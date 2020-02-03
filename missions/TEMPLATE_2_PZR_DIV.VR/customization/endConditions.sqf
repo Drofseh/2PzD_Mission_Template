@@ -1,13 +1,13 @@
     //These are used to get the casualty numbers for the end screen. To not remove them!
     //They use the team names from the setting.sqf
     //They MUST match exactly!
-westCasualty = "2 Panzer Division" call FNC_CasualtyPercentage; //Gets the casualty percentage of the Blufor team.
+westCasualty = "2 Panzer Division" call Olsen_FW_FNC_CasualtyPercentage; //Gets the casualty percentage of the Blufor team.
     publicVariable "westCasualty";
-eastCasualty = "Red Army" call FNC_CasualtyPercentage; //Gets the casualty percentage of the Opfor team
+eastCasualty = "Red Army" call Olsen_FW_FNC_CasualtyPercentage; //Gets the casualty percentage of the Opfor team
     publicVariable "eastCasualty";
-resistanceCasualty = "Western Allies" call FNC_CasualtyPercentage; //Gets the casualty percentage of the Indfor team.
+resistanceCasualty = "Western Allies" call Olsen_FW_FNC_CasualtyPercentage; //Gets the casualty percentage of the Indfor team.
     publicVariable "resistanceCasualty";
-//civilianCasualty = "Civilians" call FNC_CasualtyPercentage; //Gets the casualty percentage of the Civilian team.
+//civilianCasualty = "Civilians" call Olsen_FW_FNC_CasualtyPercentage; //Gets the casualty percentage of the Civilian team.
     //publicVariable "civilianCasualty";
 
 testVar = TRUE;
@@ -63,27 +63,27 @@ publicVariable "myCustomMessage";
 if (eastCasualty >= 75) exitWith { //ends when Opfor deaths above or equal to 75%
     "Red Army forces have taken too many casualties to continue operations.
     <br/>
-    <br/>BLUFOR VICTORY" call FNC_EndMission;
+    <br/>BLUFOR VICTORY" call Olsen_FW_FNC_EndMission;
 };
 
 if (westCasualty >= 75) exitWith { //ends when Bluefor deaths above or equal to 75%
     "2 Panzer Division has taken too many casualties to continue operations.
     <br/>
-    <br/>OPFOR VICTORY" call FNC_EndMission;
+    <br/>OPFOR VICTORY" call Olsen_FW_FNC_EndMission;
 };
 */
 /*
     //Alternative methods of counting casualties
     //this will count how many members of a team died in the mission
-"2 Panzer Division" call FNC_casualtyCount;
+"2 Panzer Division" call Olsen_FW_FNC_casualtyCount;
 
     //this will check how many players are remaining in a team
     //be careful as using this method will end the mission instantly if
     //not enough players are present in the team
-"2 Panzer Division" call FNC_countTeam;
+"2 Panzer Division" call Olsen_FW_FNC_countTeam;
 
     //Adding extraction
     //this will check if at least 80% of remaining forces are present in extraction area
     //it will then end the mission
-["2 Panzer Division", "ExtractionAreaMarker", 0.8] call FNC_hasExtracted;
+["2 Panzer Division", "ExtractionAreaMarker", 0.8] call Olsen_FW_FNC_hasExtracted;
 */

@@ -2,16 +2,16 @@
 // - For multi line definitions use \
 // - All loadouts listed are customised to correct equipment, so have fun with them
 // - ALWAYS ADD SHORT-RANGE RADIO FIRST
-// - On any random equipment definition remember to use FNC_AddItemRandom
+// - On any random equipment definition remember to use Olsen_FW_FNC_AddItemRandom
 
 //Loadouts
 /*
     //Unit
-[this,"PGerE45_PC"] call FNC_GearScript;       Platoon level or higher leader.
-[this,"PGerE45_SL"] call FNC_GearScript;       Squad level leader
-[this,"PGerE45_MG"] call FNC_GearScript;       Machine Gunner
-[this,"PGerE45_MGA"] call FNC_GearScript;      Machine Gun Assistant
-[this,"PGerE45_Parti"] call FNC_GearScript;    Random Partisan
+[this,"PGerE45_PC"] call Olsen_FW_FNC_GearScript;       Platoon level or higher leader.
+[this,"PGerE45_SL"] call Olsen_FW_FNC_GearScript;       Squad level leader
+[this,"PGerE45_MG"] call Olsen_FW_FNC_GearScript;       Machine Gunner
+[this,"PGerE45_MGA"] call Olsen_FW_FNC_GearScript;      Machine Gun Assistant
+[this,"PGerE45_Parti"] call Olsen_FW_FNC_GearScript;    Random Partisan
 */
 
 //======================== Loadouts ========================
@@ -20,11 +20,11 @@
 
     //Platoon level or higher leader
     case "PGerE45_PC" : {
-        [Parti_Uni_r] call FNC_addItemRandom;
-        [Parti_Vest_r] call FNC_addItemRandom;
-        [Civ_BP] call FNC_addItem;
-        [Civ_Beret] call FNC_addItem;
-        [Civ_Face_Bino] call FNC_addItem;
+        [Parti_Uni_r] call Olsen_FW_FNC_addItemRandom;
+        [Parti_Vest_r] call Olsen_FW_FNC_addItemRandom;
+        [Civ_BP] call Olsen_FW_FNC_addItem;
+        [Civ_Beret] call Olsen_FW_FNC_addItem;
+        [Civ_Face_Bino] call Olsen_FW_FNC_addItem;
 
         //Assigned Items
         Parti_Default_Equipment;
@@ -47,27 +47,27 @@
                 [Rus_Weap_PPSH_D],
                 [Rus_Mag_PPSH_D,1]
             ],[10]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
         //Secondary Weapon
-        [GEN_Flare_W,1] call FNC_addItem;
-        [GEN_Flare_Pistol] call FNC_addItem;
-        [GEN_Flare_W,2,"backpack"] call FNC_addItem;
-        [GEN_Flare_R,2,"backpack"] call FNC_addItem;
-        [GEN_Flare_G,2,"backpack"] call FNC_addItem;
-        [GEN_Flare_Y,2,"backpack"] call FNC_addItem;
+        [GEN_Flare_W,1] call Olsen_FW_FNC_addItem;
+        [GEN_Flare_Pistol] call Olsen_FW_FNC_addItem;
+        [GEN_Flare_W,2,"backpack"] call Olsen_FW_FNC_addItem;
+        [GEN_Flare_R,2,"backpack"] call Olsen_FW_FNC_addItem;
+        [GEN_Flare_G,2,"backpack"] call Olsen_FW_FNC_addItem;
+        [GEN_Flare_Y,2,"backpack"] call Olsen_FW_FNC_addItem;
 
         //Extra
-        [GEN_Gren_Smoke_W,2] call FNC_AddItem;
+        [GEN_Gren_Smoke_W,2] call Olsen_FW_FNC_AddItem;
     };
 
     //Squad or team level leader
     case "PGerE45_SL" : {
-        [Parti_Uni_r] call FNC_addItemRandom;
-        [Parti_Vest_r] call FNC_addItemRandom;
-        [Civ_BP] call FNC_addItem;
-        [Civ_Beret] call FNC_addItem;
-        [Civ_Face_Bino] call FNC_addItem;
+        [Parti_Uni_r] call Olsen_FW_FNC_addItemRandom;
+        [Parti_Vest_r] call Olsen_FW_FNC_addItemRandom;
+        [Civ_BP] call Olsen_FW_FNC_addItem;
+        [Civ_Beret] call Olsen_FW_FNC_addItem;
+        [Civ_Face_Bino] call Olsen_FW_FNC_addItem;
 
         //Assigned Items
         Parti_Default_Equipment;
@@ -90,15 +90,15 @@
                 [Rus_Weap_PPSH_D],
                 [Rus_Mag_PPSH_D,1]
             ],[10]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
         //Secondary Weapon
-        [GEN_Flare_W,1] call FNC_addItem;
-        [GEN_Flare_Pistol] call FNC_addItem;
-        [GEN_Flare_W,2,"backpack"] call FNC_addItem;
-        [GEN_Flare_R,2,"backpack"] call FNC_addItem;
-        [GEN_Flare_G,2,"backpack"] call FNC_addItem;
-        [GEN_Flare_Y,2,"backpack"] call FNC_addItem;
+        [GEN_Flare_W,1] call Olsen_FW_FNC_addItem;
+        [GEN_Flare_Pistol] call Olsen_FW_FNC_addItem;
+        [GEN_Flare_W,2,"backpack"] call Olsen_FW_FNC_addItem;
+        [GEN_Flare_R,2,"backpack"] call Olsen_FW_FNC_addItem;
+        [GEN_Flare_G,2,"backpack"] call Olsen_FW_FNC_addItem;
+        [GEN_Flare_Y,2,"backpack"] call Olsen_FW_FNC_addItem;
 
         //Launcher
         [
@@ -108,20 +108,20 @@
             [//Panzerfaust
                 [Ger_Weap_PzFaust_30]
             ],[20]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
         //Extra
-        [GEN_Gren_Smoke_W,2] call FNC_AddItem;
+        [GEN_Gren_Smoke_W,2] call Olsen_FW_FNC_AddItem;
     };
 
     //Machine Gunner
     case "PGerE45_MG" : {
-        [Parti_Uni_r] call FNC_addItemRandom;
-        [Parti_Vest_r] call FNC_addItemRandom;
-        [Civ_BP_MG_r] call FNC_addItemRandom;
+        [Parti_Uni_r] call Olsen_FW_FNC_addItemRandom;
+        [Parti_Vest_r] call Olsen_FW_FNC_addItemRandom;
+        [Civ_BP_MG_r] call Olsen_FW_FNC_addItemRandom;
         _unit removeItemFromBackpack "fow_50Rnd_792x57";
-        [Civ_Hat_r] call FNC_addItemRandom;
-        [Civ_Face_r] call FNC_addItemRandom;
+        [Civ_Hat_r] call Olsen_FW_FNC_addItemRandom;
+        [Civ_Face_r] call Olsen_FW_FNC_addItemRandom;
 
         //Assigned Items
         Parti_Default_Equipment;
@@ -138,7 +138,7 @@
                 [Ger_Weap_MG42],
                 [Ger_Mag_MG_50_Mixed_SmE,2]
             ],[25]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
         //Secondary Weapon
         [
@@ -162,20 +162,20 @@
                 [Rus_Weap_M1895],
                 [Rus_Mag_M1895,2,"uniform"]
             ],[10]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
         //Extra
-        [Ger_Mag_MG_50_Mixed_SmE,6] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,6] call Olsen_FW_FNC_AddItem;
     };
 
     //Machine Gun Assistant
     case "PGerE45_MGA" : {
-        [Parti_Uni_r] call FNC_addItemRandom;
-        [Parti_Vest_r] call FNC_addItemRandom;
-        [Civ_BP_MG_r] call FNC_addItemRandom;
+        [Parti_Uni_r] call Olsen_FW_FNC_addItemRandom;
+        [Parti_Vest_r] call Olsen_FW_FNC_addItemRandom;
+        [Civ_BP_MG_r] call Olsen_FW_FNC_addItemRandom;
         _unit removeItemFromBackpack "fow_50Rnd_792x57";
-        [Civ_Hat_r] call FNC_addItemRandom;
-        [Civ_Face_Bino] call FNC_addItem;
+        [Civ_Hat_r] call Olsen_FW_FNC_addItemRandom;
+        [Civ_Face_Bino] call Olsen_FW_FNC_addItem;
 
         //Assigned Items
         Parti_Default_Equipment;
@@ -235,7 +235,7 @@
                 [Rus_Weap_MosM38],
                 [Rus_Mag_Mosin,6]
             ],[1]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
         //Secondary Weapon
         switch TRUE do {
@@ -264,7 +264,7 @@
                         [Rus_Weap_M1895],
                         [Rus_Mag_M1895,1]
                     ],[4]
-                ] call FNC_AddItemRandomPercent;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Rus_Weap_PPSH_S): {
                 [
@@ -291,7 +291,7 @@
                         [Rus_Weap_M1895],
                         [Rus_Mag_M1895,1]
                     ],[1]
-                ] call FNC_AddItemRandomPercent;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Rus_Weap_MosM38): {
                 [
@@ -318,7 +318,7 @@
                         [Rus_Weap_M1895],
                         [Rus_Mag_M1895,1]
                     ],[4]
-                ] call FNC_AddItemRandomPercent;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Rus_Weap_PPSH_D): {
                 [
@@ -345,7 +345,7 @@
                         [Rus_Weap_M1895],
                         [Rus_Mag_M1895,1]
                     ],[1]
-                ] call FNC_AddItemRandomPercent;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Ger_Weap_MP40): {
                 [
@@ -372,7 +372,7 @@
                         [Ger_Weap_P08],
                         [Ger_Mag_P08,2,"uniform"]
                     ],[1]
-                ] call FNC_AddItemRandomPercent;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Ger_Weap_K98): {
                 [
@@ -399,33 +399,33 @@
                         [Rus_Weap_M1895],
                         [Rus_Mag_M1895,1]
                     ],[4]
-                ] call FNC_AddItemRandomPercent;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Rus_Weap_TT33): {
-                [Rus_Mag_TT33,2,"uniform"] call FNC_AddItem;
+                [Rus_Mag_TT33,2,"uniform"] call Olsen_FW_FNC_AddItem;
             };
             case (_unit hasWeapon Rus_Weap_M1895): {
-                [Rus_Mag_M1895,2,"uniform"] call FNC_AddItem;
+                [Rus_Mag_M1895,2,"uniform"] call Olsen_FW_FNC_AddItem;
             };
             case (_unit hasWeapon Ger_Weap_P38): {
-                [Ger_Mag_P38,2,"uniform"] call FNC_AddItem;
+                [Ger_Mag_P38,2,"uniform"] call Olsen_FW_FNC_AddItem;
             };
             case (_unit hasWeapon Ger_Weap_P08): {
-                [Ger_Mag_P08,2,"uniform"] call FNC_AddItem;
+                [Ger_Mag_P08,2,"uniform"] call Olsen_FW_FNC_AddItem;
             };
         };
 
         //Extra
-        [Ger_Mag_MG_50_Mixed_SmE,6] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_SmE,6] call Olsen_FW_FNC_AddItem;
     };
 
     //Partisan
     case "PGerE45_Parti" : {
-        [Parti_Uni_r] call FNC_addItemRandom;
-        [Parti_Vest_r] call FNC_addItemRandom;
-        [Civ_BP_r] call FNC_addItemRandom;
-        [Civ_Hat_r] call FNC_addItemRandom;
-        [Civ_Face_r] call FNC_addItemRandom;
+        [Parti_Uni_r] call Olsen_FW_FNC_addItemRandom;
+        [Parti_Vest_r] call Olsen_FW_FNC_addItemRandom;
+        [Civ_BP_r] call Olsen_FW_FNC_addItemRandom;
+        [Civ_Hat_r] call Olsen_FW_FNC_addItemRandom;
+        [Civ_Face_r] call Olsen_FW_FNC_addItemRandom;
 
         //Assigned Items
         Parti_Default_Equipment;
@@ -484,7 +484,7 @@
                 [Rus_Weap_MosM38],
                 [Rus_Mag_Mosin,6]
             ],[1]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
         //Secondary Weapon
         switch TRUE do {
@@ -513,7 +513,7 @@
                         [Rus_Weap_M1895],
                         [Rus_Mag_M1895,1]
                     ],[4]
-                ] call FNC_AddItemRandomPercent;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Rus_Weap_PPSH_S): {
                 [
@@ -540,7 +540,7 @@
                         [Rus_Weap_M1895],
                         [Rus_Mag_M1895,1]
                     ],[1]
-                ] call FNC_AddItemRandomPercent;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Rus_Weap_MosM38): {
                 [
@@ -567,7 +567,7 @@
                         [Rus_Weap_M1895],
                         [Rus_Mag_M1895,1]
                     ],[4]
-                ] call FNC_AddItemRandomPercent;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Rus_Weap_PPSH_D): {
                 [
@@ -594,7 +594,7 @@
                         [Rus_Weap_M1895],
                         [Rus_Mag_M1895,1]
                     ],[1]
-                ] call FNC_AddItemRandomPercent;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Ger_Weap_MP40): {
                 [
@@ -621,7 +621,7 @@
                         [Ger_Weap_P08],
                         [Ger_Mag_P08,2,"uniform"]
                     ],[1]
-                ] call FNC_AddItemRandomPercent;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Ger_Weap_K98): {
                 [
@@ -648,19 +648,19 @@
                         [Rus_Weap_M1895],
                         [Rus_Mag_M1895,1]
                     ],[4]
-                ] call FNC_AddItemRandomPercent;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
             };
             case (_unit hasWeapon Rus_Weap_TT33): {
-                [Rus_Mag_TT33,2,"uniform"] call FNC_AddItem;
+                [Rus_Mag_TT33,2,"uniform"] call Olsen_FW_FNC_AddItem;
             };
             case (_unit hasWeapon Rus_Weap_M1895): {
-                [Rus_Mag_M1895,2,"uniform"] call FNC_AddItem;
+                [Rus_Mag_M1895,2,"uniform"] call Olsen_FW_FNC_AddItem;
             };
             case (_unit hasWeapon Ger_Weap_P38): {
-                [Ger_Mag_P38,2,"uniform"] call FNC_AddItem;
+                [Ger_Mag_P38,2,"uniform"] call Olsen_FW_FNC_AddItem;
             };
             case (_unit hasWeapon Ger_Weap_P08): {
-                [Ger_Mag_P08,2,"uniform"] call FNC_AddItem;
+                [Ger_Mag_P08,2,"uniform"] call Olsen_FW_FNC_AddItem;
             };
         };
 
@@ -672,7 +672,7 @@
             [//Panzerfaust
                 [Ger_Weap_PzFaust_30]
             ],[20]
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
         //Extra
         //Chance to either be grenadier or have a hand grenade and extra MG ammo
@@ -689,7 +689,7 @@
                         [Ger_Weap_K98_Grn_AP,2],
                         [Ger_Weap_K98_Grn_ATL,1]
                     ],[20]
-                ] call FNC_AddItemRandomPercent;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
             };
             default {
                 [//Frag Grenades
@@ -702,8 +702,8 @@
                     [
                         [Ger_Gren_HE_SC,1]
                     ],[33]
-                ] call FNC_AddItemRandomPercent;
-                [Ger_Mag_MG_50_Mixed_SmE,1] call FNC_addItem;
+                ] call Olsen_FW_FNC_AddItemRandomPercent;
+                [Ger_Mag_MG_50_Mixed_SmE,1] call Olsen_FW_FNC_addItem;
             };
         };
     };

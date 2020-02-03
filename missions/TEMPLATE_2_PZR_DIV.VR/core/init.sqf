@@ -32,19 +32,19 @@ PREP(untrackUnit);
 enableSaving [false, false];
 
 if (isServer) then {
-    "west" call FNC_CreateRespawnMarker;
-    "east" call FNC_CreateRespawnMarker;
-    "guer" call FNC_CreateRespawnMarker;
-    "civ" call FNC_CreateRespawnMarker;
+    "west" call Olsen_FW_FNC_CreateRespawnMarker;
+    "east" call Olsen_FW_FNC_CreateRespawnMarker;
+    "guer" call Olsen_FW_FNC_CreateRespawnMarker;
+    "civ" call Olsen_FW_FNC_CreateRespawnMarker;
 
     FW_Teams = []; //DO NOT REMOVE
     FW_MissionEnded = false; //Mission has not ended
 
-    FW_EventPlayerSpawnedHandle = ["FW_PlayerSpawned", {_this call FNC_EventPlayerSpawned;}] call CBA_fnc_addEventHandler;
-    FW_EventRespawnedHandle = addMissionEventHandler ["EntityRespawned", {_this call FNC_EventRespawned;}];
-    FW_EventKilledHandle = addMissionEventHandler ["EntityKilled", {_this call FNC_EventKilled;}];
+    FW_EventPlayerSpawnedHandle = ["FW_PlayerSpawned", {_this call Olsen_FW_FNC_EventPlayerSpawned;}] call CBA_fnc_addEventHandler;
+    FW_EventRespawnedHandle = addMissionEventHandler ["EntityRespawned", {_this call Olsen_FW_FNC_EventRespawned;}];
+    FW_EventKilledHandle = addMissionEventHandler ["EntityKilled", {_this call Olsen_FW_FNC_EventKilled;}];
 
-    FW_EventDisconnectHandle = addMissionEventHandler ["HandleDisconnect", {_this call FNC_EventDisconnect;}];
+    FW_EventDisconnectHandle = addMissionEventHandler ["HandleDisconnect", {_this call Olsen_FW_FNC_EventDisconnect;}];
 };
 
 if (hasInterface) then {
@@ -64,16 +64,16 @@ if (hasInterface) then {
     0 fadeRadio 0; //Lower radio volume to 0
 
     //Creates the briefing notes for the player
-    "" call FNC_Briefing;
-    "" call FNC_Menu;
+    "" call Olsen_FW_FNC_Briefing;
+    "" call Olsen_FW_FNC_Menu;
 
     FW_RespawnTickets = 0; //Initialize respawn tickets to 0
 
     player setVariable ["FW_Dead", false, true]; //Tells the framework the player is alive
 
     //Makes the player go into spectator mode when dead or respawn if he has respawn tickets
-    FW_KilledEh = player addEventHandler ["Killed", {_this call FNC_SpectateCheck;}];
-    FW_RespawnEh = player addEventHandler ["Respawn", {_this call FNC_SpectatePrep;}];
+    FW_KilledEh = player addEventHandler ["Killed", {_this call Olsen_FW_FNC_SpectateCheck;}];
+    FW_RespawnEh = player addEventHandler ["Respawn", {_this call Olsen_FW_FNC_SpectatePrep;}];
 
     //Various settings
     player addRating 100000; //Makes sure ai doesnt turn hostile when teamkilling
@@ -106,6 +106,6 @@ if (hasInterface) then {
         };
 
         private _tempText = format ["Warning: Mission date is not set during WW2.<br></br>Expected date range is 01 Sept 1939 to 02 Sept 1945.<br></br>Current date is %1 %2 %3.<br></br>If this is intentional ignore this warning, otherwise set the intended date in the Eden Editor's Attributes - Environment menu.", _dateDay, _dateMonth, _dateYear];
-        _tempText call FNC_DebugMessage;
+        _tempText call Olsen_FW_FNC_DebugMessage;
     };
 };

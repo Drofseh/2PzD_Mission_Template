@@ -1,4 +1,4 @@
-["JIP Manager", "Handles JIPs in different ways depending on the module's settings.", "Olsen, Starfox64, and Wilhelm Haas (Drofseh)"] call FNC_RegisterModule;
+["JIP Manager", "Handles JIPs in different ways depending on the module's settings.", "Olsen, Starfox64, and Wilhelm Haas (Drofseh)"] call Olsen_FW_FNC_RegisterModule;
 
 #include "settings.sqf"
 
@@ -17,7 +17,7 @@ if (hasInterface && {str side player != "LOGIC"}) then {
 
     if (FW_JIPTYPE == "DENY" && {missionNamespace getVariable ["FW_JIPDenied", false]}) exitWith {
         [{
-            player call FNC_UntrackUnit;
+            player call Olsen_FW_FNC_UntrackUnit;
             setPlayerRespawnTime 10e10;
             FW_RespawnTickets = 0;
             player setDamage 1;
@@ -30,10 +30,10 @@ if (hasInterface && {str side player != "LOGIC"}) then {
 
     private _target = leader player;
 
-    if (player == _target || {!(_target call FNC_Alive)}) then {
+    if (player == _target || {!(_target call Olsen_FW_FNC_Alive)}) then {
 
         {
-            if (_target call FNC_Alive) then {
+            if (_target call Olsen_FW_FNC_Alive) then {
                 if ((_target distance2D player) > FW_JIPDISTANCE);
                 _target = _x;
             };

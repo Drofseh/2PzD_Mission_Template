@@ -1,4 +1,4 @@
-["Marker Control", "Allows the mission maker to create markers visible to a single side.", "Olsen"] call FNC_RegisterModule;
+["Marker Control", "Allows the mission maker to create markers visible to a single side.", "Olsen"] call Olsen_FW_FNC_RegisterModule;
 
 #define SYSTEM sideLogic
 
@@ -7,7 +7,7 @@ if !(markerType NAME == "") then { \
     _markers set [count _markers, [SIDE, NAME, DELETE_AFTER_START]]; \
 } else { \
     _temp = format ["Marker control module:<br></br>Warning marker ""%1"", in file ""modules\marker control\settings.sqf"" does not exist.", NAME]; \
-    _temp call FNC_DebugMessage; \
+    _temp call Olsen_FW_FNC_DebugMessage; \
 };
 
 if (hasInterface) then {

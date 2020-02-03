@@ -33,7 +33,7 @@ if (FW_RespawnTickets > 0) then {
     private _loadout = (player getVariable ["FW_Loadout", ""]);
 
     if (_loadout != "") then {
-        [player, _loadout] call FNC_GearScript;
+        [player, _loadout] call Olsen_FW_FNC_GearScript;
     };
 
     if (!isNull(_respawnPoint)) then {
@@ -52,7 +52,7 @@ if (FW_RespawnTickets > 0) then {
     cutText [format ['%1 %2', FW_RespawnTickets, _text], 'PLAIN DOWN'];
 
     if (player getVariable ["FW_mapRemoved", true]) then {
-        player call FNC_Remove_Map;
+        player call Olsen_FW_FNC_Remove_Map;
     };
 
 } else {
@@ -63,7 +63,7 @@ if (FW_RespawnTickets > 0) then {
 
     player allowdamage false;
 
-    player call FNC_RemoveAllGear;
+    player call Olsen_FW_FNC_RemoveAllGear;
 
     player addWeapon "itemMap";
 

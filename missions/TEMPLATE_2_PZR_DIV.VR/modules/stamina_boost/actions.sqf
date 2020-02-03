@@ -28,10 +28,10 @@ _statementDrink = {
     stamina_boost_playerItems = [player] call ace_common_fnc_uniqueItems;
 
     if ("ACE_Canteen_Half" in stamina_boost_playerItems) then {
-        ["ACE_Canteen_Half","ACE_Canteen_Empty"] call FNC_StaminaBoost_Drink_Water;
+        ["ACE_Canteen_Half","ACE_Canteen_Empty"] call Olsen_FW_FNC_StaminaBoost_Drink_Water;
     } else {
         if ("ACE_Canteen" in stamina_boost_playerItems) then {
-            ["ACE_Canteen","ACE_Canteen_Half"] call FNC_StaminaBoost_Drink_Water;
+            ["ACE_Canteen","ACE_Canteen_Half"] call Olsen_FW_FNC_StaminaBoost_Drink_Water;
         } else {
             [["That's strange, you don't seem to have anything to drink."], true] call CBA_fnc_notify;
         };
@@ -63,31 +63,31 @@ _statementEat = {
     stamina_boost_playerItems = [player] call ace_common_fnc_uniqueItems;
 
     if ("ACE_Banana" in stamina_boost_playerItems) then {
-        ["ACE_Banana"] call FNC_StaminaBoost_Eat_Food;
+        ["ACE_Banana"] call Olsen_FW_FNC_StaminaBoost_Eat_Food;
     } else {
         if ("ACE_MRE_BeefStew" in stamina_boost_playerItems) then {
-            ["ACE_MRE_BeefStew"] call FNC_StaminaBoost_Eat_Food;
+            ["ACE_MRE_BeefStew"] call Olsen_FW_FNC_StaminaBoost_Eat_Food;
         } else {
             if ("ACE_MRE_ChickenHerbDumplings" in stamina_boost_playerItems) then {
-                ["ACE_MRE_ChickenHerbDumplings"] call FNC_StaminaBoost_Eat_Food;
+                ["ACE_MRE_ChickenHerbDumplings"] call Olsen_FW_FNC_StaminaBoost_Eat_Food;
             } else {
                 if ("ACE_MRE_ChickenTikkaMasala" in stamina_boost_playerItems) then {
-                    ["ACE_MRE_ChickenTikkaMasala"] call FNC_StaminaBoost_Eat_Food;
+                    ["ACE_MRE_ChickenTikkaMasala"] call Olsen_FW_FNC_StaminaBoost_Eat_Food;
                 } else {
                     if ("ACE_MRE_CreamChickenSoup" in stamina_boost_playerItems) then {
-                        ["ACE_MRE_CreamChickenSoup"] call FNC_StaminaBoost_Eat_Food;
+                        ["ACE_MRE_CreamChickenSoup"] call Olsen_FW_FNC_StaminaBoost_Eat_Food;
                     } else {
                         if ("ACE_MRE_CreamTomatoSoup" in stamina_boost_playerItems) then {
-                            ["ACE_MRE_CreamTomatoSoup"] call FNC_StaminaBoost_Eat_Food;
+                            ["ACE_MRE_CreamTomatoSoup"] call Olsen_FW_FNC_StaminaBoost_Eat_Food;
                         } else {
                             if ("ACE_MRE_LambCurry" in stamina_boost_playerItems) then {
-                                ["ACE_MRE_LambCurry"] call FNC_StaminaBoost_Eat_Food;
+                                ["ACE_MRE_LambCurry"] call Olsen_FW_FNC_StaminaBoost_Eat_Food;
                             } else {
                                 if ("ACE_MRE_MeatballsPasta" in stamina_boost_playerItems) then {
-                                    ["ACE_MRE_MeatballsPasta"] call FNC_StaminaBoost_Eat_Food;
+                                    ["ACE_MRE_MeatballsPasta"] call Olsen_FW_FNC_StaminaBoost_Eat_Food;
                                 } else {
                                     if ("ACE_MRE_SteakVegetables" in stamina_boost_playerItems) then {
-                                        ["ACE_MRE_SteakVegetables"] call FNC_StaminaBoost_Eat_Food;
+                                        ["ACE_MRE_SteakVegetables"] call Olsen_FW_FNC_StaminaBoost_Eat_Food;
                                     } else {
                                         [["That's strange, you don't seem to have anything to eat."], true] call CBA_fnc_notify;
                                     };

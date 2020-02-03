@@ -1,4 +1,4 @@
-FNC_SetTeamColor = {
+Olsen_FW_FNC_SetTeamColor = {
 
     params [
         ["_unit", objNull, [objNull]],

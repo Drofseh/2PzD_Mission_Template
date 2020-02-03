@@ -2,29 +2,29 @@
 // - For multi line definitions use \
 // - All loadouts listed are customised to correct equipment, so have fun with them
 // - ALWAYS ADD SHORT-RANGE RADIO FIRST
-// - On any random equipment definition remember to use FNC_AddItemRandom
+// - On any random equipment definition remember to use Olsen_FW_FNC_AddItemRandom
 
 /*Loadouts
 
     //Kompanietrupp
-[this,"FSJP42Jan_CC"] call FNC_GearScript;     Kompanieführer
-[this,"FSJP42Jan_C2"] call FNC_GearScript;     Kompanietruppführer
+[this,"FSJP42Jan_CC"] call Olsen_FW_FNC_GearScript;     Kompanieführer
+[this,"FSJP42Jan_C2"] call Olsen_FW_FNC_GearScript;     Kompanietruppführer
 
     //Zugtrupp
-[this,"FSJP42Jan_PC"] call FNC_GearScript;     Zugführer
-[this,"FSJP42Jan_P2"] call FNC_GearScript;     Zugtruppführer
-[this,"FSJP42Jan_RTO"] call FNC_GearScript;    Funker
-[this,"FSJP42Jan_Mess"] call FNC_GearScript;   Melder
-[this,"FSJP42Jan_Med"] call FNC_GearScript;    Krankenträger
+[this,"FSJP42Jan_PC"] call Olsen_FW_FNC_GearScript;     Zugführer
+[this,"FSJP42Jan_P2"] call Olsen_FW_FNC_GearScript;     Zugtruppführer
+[this,"FSJP42Jan_RTO"] call Olsen_FW_FNC_GearScript;    Funker
+[this,"FSJP42Jan_Mess"] call Olsen_FW_FNC_GearScript;   Melder
+[this,"FSJP42Jan_Med"] call Olsen_FW_FNC_GearScript;    Krankenträger
 
     //Gruppe
-[this,"FSJP42Jan_SL"] call FNC_GearScript;     Gruppenführer
-[this,"FSJP42Jan_S2"] call FNC_GearScript;     Stellvertretender Gruppenführer
-[this,"FSJP42Jan_MG"] call FNC_GearScript;     MG-Richtschütze
-[this,"FSJP42Jan_MGA"] call FNC_GearScript;    MG-Hilfsschütze
-[this,"FSJP42Jan_Gren"] call FNC_GearScript;   Grenadier
-[this,"FSJP42Jan_Mark"] call FNC_GearScript;   Scharfschütze
-[this,"FSJP42Jan_Rif"] call FNC_GearScript;    Gewehrschütze
+[this,"FSJP42Jan_SL"] call Olsen_FW_FNC_GearScript;     Gruppenführer
+[this,"FSJP42Jan_S2"] call Olsen_FW_FNC_GearScript;     Stellvertretender Gruppenführer
+[this,"FSJP42Jan_MG"] call Olsen_FW_FNC_GearScript;     MG-Richtschütze
+[this,"FSJP42Jan_MGA"] call Olsen_FW_FNC_GearScript;    MG-Hilfsschütze
+[this,"FSJP42Jan_Gren"] call Olsen_FW_FNC_GearScript;   Grenadier
+[this,"FSJP42Jan_Mark"] call Olsen_FW_FNC_GearScript;   Scharfschütze
+[this,"FSJP42Jan_Rif"] call Olsen_FW_FNC_GearScript;    Gewehrschütze
 */
 
 //======================== Definitions ========================
@@ -67,7 +67,7 @@
                 [Ger_Weap_M172], \
                 [Ger_Mag_M172_20,2,"uniform"] \
             ],[0.5] \
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
 // For all enlisted men
 #define FSJP42Jan_Weapon_Enlisted_Secondary \
@@ -102,7 +102,7 @@
                 [Ger_Weap_M172], \
                 [Ger_Mag_M172_20,2,"uniform"] \
             ],[0.5] \
-        ] call FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
 
 //======================== Loadouts ========================
 
@@ -110,18 +110,18 @@
 
     //Kompanieführer
     case "FSJP42Jan_CC" : {
-        [FSJ_UniC_NI] call FNC_AddItem;
-        [FSJ_Vest_PC] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_NI] call Olsen_FW_FNC_AddItem;
+        [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
+        [Ger_Mag_MP40,3,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Officer_Secondary;
@@ -129,43 +129,43 @@
 
     //Kompanietruppführer
     case "FSJP42Jan_C2" : {
-        [FSJ_UniC_NI] call FNC_AddItem;
-        [FSJ_Vest_PC] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_NI] call Olsen_FW_FNC_AddItem;
+        [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
+        [Ger_Mag_MP40,3,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Enlisted_Secondary;
 
         //Extra
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
     };
 
 //Platoon HQ
 
     //Zugführer
     case "FSJP42Jan_PC" : {
-        [FSJ_UniC_NI] call FNC_AddItem;
-        [FSJ_Vest_PC] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_NI] call Olsen_FW_FNC_AddItem;
+        [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
+        [Ger_Mag_MP40,3,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Officer_Secondary;
@@ -173,90 +173,90 @@
 
     //Zugtruppführer
     case "FSJP42Jan_P2" : {
-        [FSJ_UniC_SL] call FNC_AddItem;
-        [FSJ_Vest_PC] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_SL] call Olsen_FW_FNC_AddItem;
+        [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
+        [Ger_Mag_MP40,3,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Enlisted_Secondary;
 
         //Extra
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
     };
 
     //Funker
     case "FSJP42Jan_RTO" : {
-        [FSJ_UniC_Rif] call FNC_AddItem;
-        [FSJ_Vest_Band] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
+        [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
+        [Ger_Mag_K98,24,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Enlisted_Secondary;
 
         //Extra
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
     };
 
     //Melder
     case "FSJP42Jan_Mess" : {
-        [FSJ_UniC_Rif] call FNC_AddItem;
-        [FSJ_Vest_Band] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
+        [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
+        [Ger_Mag_K98,24,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Enlisted_Secondary;
 
         //Extra
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
     };
 
     //Krankenträger
     case "FSJP42Jan_Med" : {
-        [FSJ_UniC_Rif] call FNC_AddItem;
-        [FSJ_Vest_Band] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
+        [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
+        [Ger_Mag_K98,24,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Enlisted_Secondary;
 
         //Extra
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         FSJ_Medic_Equipment;
     };
 
@@ -264,157 +264,157 @@
 
     //Gruppenführer
     case "FSJP42Jan_SL" : {
-        [FSJ_UniC_SL] call FNC_AddItem;
-        [FSJ_Vest_PC] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_SL] call Olsen_FW_FNC_AddItem;
+        [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
         Ger_Leader_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_MP40,3,"vest"] call FNC_AddItem;
+        [Ger_Mag_MP40,3,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Enlisted_Secondary;
 
         //Extra
-        [Ger_Gren_Frag_P,1] call FNC_AddItem;
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
     };
 
     //Stellvertretender Gruppenführer
     case "FSJP42Jan_S2" : {
-        [FSJ_UniC_S2] call FNC_AddItem;
-        [Ger_Vest_MP40] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_S2] call Olsen_FW_FNC_AddItem;
+        [Ger_Vest_MP40] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_MP40,6,"vest"] call FNC_AddItem;
+        [Ger_Mag_MP40,6,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Enlisted_Secondary;
 
         //Extra
-        [Ger_Gren_Frag_P,1] call FNC_AddItem;
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
     };
 
     //MG-Richtschütze
     case "FSJP42Jan_MG" : {
-        [FSJ_UniC_Rif] call FNC_AddItem;
-        [Ger_Vest_MG] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
+        [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
-        [GEN_BinoG] call FNC_AddItem;
+        [GEN_BinoG] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Enlisted_Secondary;
 
         //Primary Weapon
-        [Ger_Mag_MG_50_Mixed_sS,5,"vest"] call FNC_AddItem;
+        [Ger_Mag_MG_50_Mixed_sS,5,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Extra
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
     };
 
     //MG-Hilfsschütze
     case "FSJP42Jan_MGA" : {
-        [FSJ_UniC_Rif] call FNC_AddItem;
-        [Ger_Vest_MGA] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
+        [Ger_Vest_MGA] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
-        [GEN_BinoG] call FNC_AddItem;
+        [GEN_BinoG] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon
-        [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
+        [Ger_Mag_K98,24,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Enlisted_Secondary;
 
         //Extra
-        [GEN_ace_sparebarrel] call FNC_AddItem;
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [GEN_ace_sparebarrel] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
     };
 
     //Scharfschütze
     case "FSJP42Jan_Mark" : {
-        [FSJ_UniC_Rif] call FNC_AddItem;
-        [FSJ_Vest_Band] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
+        [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
+        [Ger_Mag_K98,24,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Enlisted_Secondary;
 
         //Extra
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
     };
 
     //Grenadier
     case "FSJP42Jan_Gren" : {
-        [FSJ_UniC_Rif] call FNC_AddItem;
-        [FSJ_Vest_Band] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
+        [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
+        [Ger_Mag_K98,24,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Enlisted_Secondary;
 
         //Extra
-        [Ger_Mag_RGrn_HE,4] call FNC_AddItem;
-        [Ger_Mag_RGrn_ATS,4] call FNC_AddItem;
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
+        [Ger_Mag_RGrn_HE,4] call Olsen_FW_FNC_AddItem;
+        [Ger_Mag_RGrn_ATS,4] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
     };
 
     //Gewehrschütze
     case "FSJP42Jan_Rif" : {
-        [FSJ_UniC_Rif] call FNC_AddItem;
-        [FSJ_Vest_Band] call FNC_AddItem;
-        [GEN_BP_Para] call FNC_AddItem;
-        [FSJ_Helmet_r] call FNC_AddItemRandom;
-        [GEN_Face_r] call FNC_AddItemRandom;
+        [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
+        [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
+        [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
+        [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
+        [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
         Ger_Default_Equipment;
 
         //Primary Weapon
-        [Ger_Mag_K98,24,"vest"] call FNC_AddItem;
+        [Ger_Mag_K98,24,"vest"] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
         FSJP42Jan_Weapon_Enlisted_Secondary;
 
         //Extra
-        [Ger_Gren_Smoke_W,1] call FNC_AddItem;
-        [Ger_Gren_Frag_P,1] call FNC_AddItem;
+        [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
+        [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
     };

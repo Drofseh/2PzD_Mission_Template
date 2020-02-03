@@ -21,7 +21,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44May_CC""] call FNC_GearScript;";
+					init="[this,""USMC44May_CC""] call Olsen_FW_FNC_GearScript;";
 					description="Company Commander@Company HQ";
 					isPlayable=1;
 					class Inventory
@@ -393,7 +393,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_C2""] call FNC_GearScript;";
+					init="[this,""USMC44May_C2""] call Olsen_FW_FNC_GearScript;";
 					description="Company Executive Officer@Company HQ";
 					isPlayable=1;
 					class Inventory
@@ -765,7 +765,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USMC44May_CSGT""] call FNC_GearScript;";
+					init="[this,""USMC44May_CSGT""] call Olsen_FW_FNC_GearScript;";
 					description="Company First Sergeant@Company HQ";
 					isPlayable=1;
 					class Inventory
@@ -1137,7 +1137,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_CRTO""] call FNC_GearScript;";
+					init="[this,""USMC44May_CRTO""] call Olsen_FW_FNC_GearScript;";
 					description="Company Radio Operator@Company HQ";
 					isPlayable=1;
 					class Inventory
@@ -1527,7 +1527,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44May_PC""] call FNC_GearScript;";
+					init="[this,""USMC44May_PC""] call Olsen_FW_FNC_GearScript;";
 					description="Platoon Commander@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -1900,7 +1900,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_PSGT""] call FNC_GearScript;";
+					init="[this,""USMC44May_PSGT""] call Olsen_FW_FNC_GearScript;";
 					description="Platoon Sergeant@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -2273,7 +2273,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USMC44May_Mess""] call FNC_GearScript;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Mess""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Messenger@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -2646,7 +2646,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USMC44May_Mess""] call FNC_GearScript;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Mess""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Messenger@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -3019,7 +3019,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USMC44May_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this,""USMC44May_Med""] call Olsen_FW_FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Corpsman@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -3392,7 +3392,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USMC44May_PSGT""] call FNC_GearScript;" \n "";
+					init="[this,""USMC44May_PSGT""] call Olsen_FW_FNC_GearScript;" \n "";
 					description="Platoon Guide@1 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -3782,7 +3782,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44May_SL""] call FNC_GearScript;";
+					init="[this,""USMC44May_SL""] call Olsen_FW_FNC_GearScript;";
 					description="Squad Leader@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -4155,7 +4155,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Alpha Team | Team Leader@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -4528,7 +4528,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Automatic Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -4901,7 +4901,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -5274,7 +5274,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -5647,7 +5647,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Bravo Team | Team Leader@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -6020,7 +6020,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Automatic Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -6393,7 +6393,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -6766,7 +6766,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -7006,7 +7006,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Charlie Team | Team Leader@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -7379,7 +7379,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Automatic Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -7752,7 +7752,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -8125,7 +8125,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Rifleman@1 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -8515,7 +8515,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44May_SL""] call FNC_GearScript;";
+					init="[this,""USMC44May_SL""] call Olsen_FW_FNC_GearScript;";
 					description="Squad Leader@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -8888,7 +8888,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Alpha Team | Team Leader@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -9261,7 +9261,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Automatic Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -9634,7 +9634,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -10007,7 +10007,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -10380,7 +10380,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Bravo Team | Team Leader@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -10753,7 +10753,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Automatic Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -11126,7 +11126,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -11499,7 +11499,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -11739,7 +11739,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Charlie Team | Team Leader@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -12112,7 +12112,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Automatic Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -12485,7 +12485,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -12858,7 +12858,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Rifleman@1 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -13248,7 +13248,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44May_SL""] call FNC_GearScript;";
+					init="[this,""USMC44May_SL""] call Olsen_FW_FNC_GearScript;";
 					description="Squad Leader@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -13621,7 +13621,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Alpha Team | Team Leader@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -13994,7 +13994,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Automatic Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -14367,7 +14367,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -14740,7 +14740,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -15113,7 +15113,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Bravo Team | Team Leader@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -15486,7 +15486,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Automatic Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -15859,7 +15859,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -16232,7 +16232,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -16605,7 +16605,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Charlie Team | Team Leader@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -16978,7 +16978,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Automatic Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -17351,7 +17351,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -17724,7 +17724,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Rifleman@1 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -18114,7 +18114,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44May_PC""] call FNC_GearScript;";
+					init="[this,""USMC44May_PC""] call Olsen_FW_FNC_GearScript;";
 					description="Platoon Commander@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -18487,7 +18487,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_PSGT""] call FNC_GearScript;";
+					init="[this,""USMC44May_PSGT""] call Olsen_FW_FNC_GearScript;";
 					description="Platoon Sergeant@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -18860,7 +18860,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USMC44May_Mess""] call FNC_GearScript;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Mess""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Messenger@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -19233,7 +19233,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USMC44May_Mess""] call FNC_GearScript;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Mess""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Messenger@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -19606,7 +19606,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USMC44May_Med""] call FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this,""USMC44May_Med""] call Olsen_FW_FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Corpsman@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -19979,7 +19979,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""USMC44May_PSGT""] call FNC_GearScript;";
+					init="[this,""USMC44May_PSGT""] call Olsen_FW_FNC_GearScript;";
 					description="Platoon Guide@2 Platoon | Platoon HQ";
 					isPlayable=1;
 					class Inventory
@@ -20369,7 +20369,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44May_SL""] call FNC_GearScript;";
+					init="[this,""USMC44May_SL""] call Olsen_FW_FNC_GearScript;";
 					description="Squad Leader@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -20742,7 +20742,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Alpha Team | Team Leader@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -21115,7 +21115,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Automatic Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -21488,7 +21488,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -21861,7 +21861,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -22234,7 +22234,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Bravo Team | Team Leader@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -22607,7 +22607,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Automatic Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -22980,7 +22980,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -23353,7 +23353,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -23726,7 +23726,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Charlie Team | Team Leader@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -24099,7 +24099,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Automatic Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -24472,7 +24472,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -24845,7 +24845,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Rifleman@2 Platoon | 1 Squad";
 					isPlayable=1;
 					class Inventory
@@ -25235,7 +25235,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44May_SL""] call FNC_GearScript;";
+					init="[this,""USMC44May_SL""] call Olsen_FW_FNC_GearScript;";
 					description="Squad Leader@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -25608,7 +25608,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Alpha Team | Team Leader@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -25981,7 +25981,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Automatic Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -26354,7 +26354,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -26727,7 +26727,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -27100,7 +27100,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Bravo Team | Team Leader@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -27473,7 +27473,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Automatic Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -27846,7 +27846,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -28219,7 +28219,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -28592,7 +28592,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Charlie Team | Team Leader@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -28965,7 +28965,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Automatic Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -29338,7 +29338,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -29711,7 +29711,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Rifleman@2 Platoon | 2 Squad";
 					isPlayable=1;
 					class Inventory
@@ -30101,7 +30101,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44May_SL""] call FNC_GearScript;";
+					init="[this,""USMC44May_SL""] call Olsen_FW_FNC_GearScript;";
 					description="Squad Leader@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -30474,7 +30474,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Alpha Team | Team Leader@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -30847,7 +30847,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Automatic Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -31220,7 +31220,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -31593,7 +31593,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""RED""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""RED""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Alpha Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -31966,7 +31966,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Bravo Team | Team Leader@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -32339,7 +32339,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Automatic Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -32712,7 +32712,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -33085,7 +33085,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""BLUE""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""BLUE""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bravo Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -33458,7 +33458,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_S2""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_S2""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Charlie Team | Team Leader@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -33831,7 +33831,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_AR""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_AR""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Automatic Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -34204,7 +34204,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -34577,7 +34577,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_Rif""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_Rif""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Charlie Team | Rifleman@2 Platoon | 3 Squad";
 					isPlayable=1;
 					class Inventory
@@ -34966,7 +34966,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44May_MGTL""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_MGTL""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Team Leader@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
@@ -35338,7 +35338,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_MG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_MG""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Machine Gunner@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
@@ -35710,7 +35710,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_MGA""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_MGA""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Assistant Machine Gunner@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
@@ -36082,7 +36082,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_MGAB""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_MGAB""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Machine Gun Ammo Bearer@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
@@ -36494,7 +36494,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44May_MortTL""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_MortTL""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Team Leader@Mortar Team";
 					isPlayable=1;
 					class Inventory
@@ -36866,7 +36866,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_MortG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_MortG""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Mortar Gunner@Mortar Team";
 					isPlayable=1;
 					class Inventory
@@ -37238,7 +37238,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_MortA""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_MortA""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Mortar Assistant@Mortar Team";
 					isPlayable=1;
 					class Inventory
@@ -37610,7 +37610,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_MortAB""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_MortAB""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Mortar Ammo Bearer@Mortar Team";
 					isPlayable=1;
 					class Inventory
@@ -38022,7 +38022,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44May_BzkaTL""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;";
+					init="[this,""USMC44May_BzkaTL""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;";
 					description="Team Leader@Bazooka Team";
 					isPlayable=1;
 					class Inventory
@@ -38394,7 +38394,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_BzkaG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_BzkaG""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bazooka Gunner@Bazooka Team";
 					isPlayable=1;
 					class Inventory
@@ -38766,7 +38766,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_BzkaG""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_BzkaG""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bazooka Gunner@Bazooka Team";
 					isPlayable=1;
 					class Inventory
@@ -39138,7 +39138,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_BzkaAB""] call FNC_GearScript;" \n "[this, ""GREEN""] call FNC_SetTeamColor;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_BzkaAB""] call Olsen_FW_FNC_GearScript;" \n "[this, ""GREEN""] call Olsen_FW_FNC_SetTeamColor;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bazooka Ammo Bearer@Bazooka Team";
 					isPlayable=1;
 					class Inventory
@@ -39551,7 +39551,7 @@ class items
 				flags=7;
 				class Attributes
 				{
-					init="[this,""USMC44May_VCom""] call FNC_GearScript;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_VCom""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Tank Commander@Tank";
 					isPlayable=1;
 					class Inventory
@@ -39924,7 +39924,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_VCrew""] call FNC_GearScript;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_VCrew""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
@@ -40145,7 +40145,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_VCrew""] call FNC_GearScript;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_VCrew""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
@@ -40366,7 +40366,7 @@ class items
 				flags=5;
 				class Attributes
 				{
-					init="[this,""USMC44May_VCrew""] call FNC_GearScript;" \n "this call FNC_removeMap;";
+					init="[this,""USMC44May_VCrew""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory

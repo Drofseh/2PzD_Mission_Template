@@ -1,6 +1,6 @@
 
-// [side player,bool] call FNC_SupportFire_AmmoCheck;
-FNC_SupportFire_AmmoCheck = {
+// [side player,bool] call Olsen_FW_FNC_SupportFire_AmmoCheck;
+Olsen_FW_FNC_SupportFire_AmmoCheck = {
     params ["_supportFire_side","_supportFire_ammoCheckPlayer","_supportFire_ammoCountHE","_supportFire_ammoCountSmoke","_supportFire_ammoCountFlare"];
     // systemChat "ammo check started";
     // systemChat str supportFire_side;

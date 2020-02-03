@@ -1,5 +1,5 @@
 
-FNC_SupportFire_RemoveAmmo = {
+Olsen_FW_FNC_SupportFire_RemoveAmmo = {
     params ["_supportFire_side","_supportFire_type","_supportFire_number","_supportFire_ammoCount"];
 
     // systemChat ("_supportFire_side - " + str _supportFire_side);

@@ -1,5 +1,5 @@
 #define random(MIN, MAX) \
-([MIN, MAX] call FNC_RandomRange)
+([MIN, MAX] call Olsen_FW_FNC_RandomRange)
 
 _temp = "";
 
@@ -28,6 +28,6 @@ if (!local _unit) exitWith {};
 _unit setVariable ["BIS_enableRandomization", false];
 _unit setVariable ["FW_Loadout", _type, true];
 
-FNC_AddItem = {([_unit, _type] + _this) call FNC_AddItemOrg;};
-FNC_AddItemRandom = {([_unit, _type] + [_this]) call FNC_AddItemRandomOrg;};
-FNC_AddItemRandomPercent = {([_unit, _type] + [_this]) call FNC_AddItemRandomOrgPercent;};
+Olsen_FW_FNC_AddItem = {([_unit, _type] + _this) call Olsen_FW_FNC_AddItemOrg;};
+Olsen_FW_FNC_AddItemRandom = {([_unit, _type] + [_this]) call Olsen_FW_FNC_AddItemRandomOrg;};
+Olsen_FW_FNC_AddItemRandomPercent = {([_unit, _type] + [_this]) call Olsen_FW_FNC_AddItemRandomOrgPercent;};

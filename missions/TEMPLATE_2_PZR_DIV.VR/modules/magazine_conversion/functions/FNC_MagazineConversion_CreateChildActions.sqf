@@ -3,7 +3,7 @@
 // It runs every time the interaction menu is opened, checks the magazines the player has, creates conversion OLD MAG points for them and conversion NEW MAG child action for all magzines that can be converted into.
 // It sets a variable in namespace for each combination of magazines which is checked to prevent against in order to prevent duplicate actions from being created.
 
-FNC_MagazineConversion_CreateChildActions = {
+Olsen_FW_FNC_MagazineConversion_CreateChildActions = {
 
     // get all the player's magazines and then find the unique ones.
     magazine_conversion_playerMagazines = magazines player arrayIntersect magazines player;
@@ -100,7 +100,7 @@ FNC_MagazineConversion_CreateChildActions = {
                         private _statementNewMagazine = {
                             _OldMag = _this select 2 select 0;
                             _NewMag = _this select 2 select 1;
-                            [_OldMag,_NewMag] call FNC_MagazineConversion_ConvertMag;
+                            [_OldMag,_NewMag] call Olsen_FW_FNC_MagazineConversion_ConvertMag;
                         };
                         private _parametersNewMagazine = [_OldMag,_NewMag];
                         private _actionNewMagazine = [_NewMag,_actionNameNewMag,_pictureNewMagazine,_statementNewMagazine,_conditionNewMagazine,{},_parametersNewMagazine] call ace_interact_menu_fnc_createAction;

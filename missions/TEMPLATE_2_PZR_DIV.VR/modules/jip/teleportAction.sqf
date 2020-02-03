@@ -4,9 +4,9 @@ _conditionJIP_Teleport = {
 
 _statementJIP_Teleport = {
     private _target = leader player;
-    private _alive = _target call FNC_Alive;
-    private _inVehicle = _target call FNC_InVehicle;
-    private _freeSpace = (vehicle _target) call FNC_HasEmptyPositions;
+    private _alive = _target call Olsen_FW_FNC_Alive;
+    private _inVehicle = _target call Olsen_FW_FNC_InVehicle;
+    private _freeSpace = (vehicle _target) call Olsen_FW_FNC_HasEmptyPositions;
 
     if (!(_alive) || {_inVehicle && {!(_freeSpace)}}) then {
         private _skip = -1;
@@ -15,9 +15,9 @@ _statementJIP_Teleport = {
         _target = objNull;
 
         {
-            _alive = _x call FNC_Alive;
+            _alive = _x call Olsen_FW_FNC_Alive;
 
-            if (_alive && {(_x distance2D player) > FW_JIPDISTANCE && {!(_x call FNC_InVehicle) || {vehicle _x call FNC_HasEmptyPositions}}}) then {
+            if (_alive && {(_x distance2D player) > FW_JIPDISTANCE && {!(_x call Olsen_FW_FNC_InVehicle) || {vehicle _x call Olsen_FW_FNC_HasEmptyPositions}}}) then {
                 _found = true;
             } else {
                 _skip = _skip + 1;

@@ -1,8 +1,8 @@
 /*
-["ACE_MRE_SteakVegetables"] call FNC_StaminaBoost_Eat_Food
+["ACE_MRE_SteakVegetables"] call Olsen_FW_FNC_StaminaBoost_Eat_Food
 */
 
-FNC_StaminaBoost_Eat_Food = {
+Olsen_FW_FNC_StaminaBoost_Eat_Food = {
     params ["_foodItem"];
     //private _foodItem = _this select 0;
 
@@ -18,7 +18,7 @@ FNC_StaminaBoost_Eat_Food = {
             stamina_boost_staminaBoostTime = stamina_boost_staminaFoodBoostTime;
             stamina_boost_staminaBoost = stamina_boost_staminaFoodBoost;
 
-            [stamina_boost_staminaFoodCool] call FNC_StaminaBoost_RaiseStamina;
+            [stamina_boost_staminaFoodCool] call Olsen_FW_FNC_StaminaBoost_RaiseStamina;
 
             if (_food == "ACE_Banana") then {
                 [

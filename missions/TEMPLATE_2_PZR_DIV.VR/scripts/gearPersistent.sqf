@@ -5,7 +5,7 @@
 // to call this on a unit use
 // nul = [this] execVM "scripts\gearPersistent.sqf";
 
-sleep 1;
+sleep (random 1);
 if (local (_this select 0)) then {
     _playa = _this select 0;
     _playaID = getPlayerUID _playa;
@@ -16,7 +16,7 @@ if (local (_this select 0)) then {
         // you must change these to be appropriate for your mission
         default {
             //this is just an example, I recommend using the basic rifleman loadout for the players side.
-            [_playa,"WHR45_Rif_LR"] call FNC_GearScript;
+            [_playa,"WHR45_Rif_LR"] call Olsen_FW_FNC_GearScript;
             _nul = [_playa] execVM "scripts\removeMap.sqf";
         };
         // cases from the log file go here
@@ -32,9 +32,9 @@ if (local (_this select 0)) then {
         // as a side effect it also means that players that join late will also lose their loadout.
         // I consider this fair and hopefully it will motivate players to join on time.
     if (didJIP) then {
-        if (persistantJipTime >= (15 * 60)) then {
+        if (CBA_missionTime >= (15 * 60)) then {
             //this is just an example, I recommend using the basic rifleman loadout for the players side.
-            [_playa,"WHR45_Rif_LR"] call FNC_GearScript;
+            [_playa,"WHR45_Rif"] call Olsen_FW_FNC_GearScript;
             _nul = [_playa] execVM "scripts\removeMap.sqf";
         };
     };

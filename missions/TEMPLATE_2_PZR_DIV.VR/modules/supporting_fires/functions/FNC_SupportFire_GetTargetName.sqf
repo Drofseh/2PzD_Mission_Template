@@ -1,5 +1,5 @@
 
-FNC_SupportFire_GetTargetName = {
+Olsen_FW_FNC_SupportFire_GetTargetName = {
     params ["_supportFire_target"];
     // systemChat ("_supportFire_target - " + str _supportFire_target);
     _supportFire_targetName = "";

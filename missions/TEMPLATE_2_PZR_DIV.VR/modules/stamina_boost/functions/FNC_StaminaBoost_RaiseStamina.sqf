@@ -1,8 +1,8 @@
 /*
-[cooldown] call FNC_StaminaBoost_RaiseStamina;
+[cooldown] call Olsen_FW_FNC_StaminaBoost_RaiseStamina;
 */
 
-FNC_StaminaBoost_RaiseStamina = {
+Olsen_FW_FNC_StaminaBoost_RaiseStamina = {
     params ["_cooldown"];
     [
         {
@@ -11,7 +11,7 @@ FNC_StaminaBoost_RaiseStamina = {
                 player setStamina (60 min ((getStamina player) + stamina_boost_staminaBoost));
                 stamina_boost_staminaBoostTime = stamina_boost_staminaBoostTime - 1;
                 player allowSprint true;
-                [] call FNC_StaminaBoost_RaiseStamina;
+                [] call Olsen_FW_FNC_StaminaBoost_RaiseStamina;
                 
             } else {
                 [

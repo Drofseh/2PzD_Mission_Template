@@ -1,10 +1,10 @@
-FNC_SetLanguages = {
+Olsen_FW_FNC_SetLanguages = {
     params ["_unit", "_languages"];
 
     _unit setVariable ["FW_Languages", _languages, false];
 };
 
-FNC_SetRadio = {
+Olsen_FW_FNC_SetRadio = {
 
     params [
         ["_unit", objNull, [objNull]],
@@ -21,7 +21,7 @@ FNC_SetRadio = {
 
 };
 
-FNC_SetScramble = {
+Olsen_FW_FNC_SetScramble = {
     params ["_unit", "_side"];
 
     _unit setVariable ["FW_CustomScramble", _side, false];
