@@ -57,7 +57,7 @@
                 [UK_Mag_LeeEn,1], \
                 [UK_Weap_LeeEnNo4_1], \
                 [UK_Mag_LeeEn,5,"vest"] \
-            ],[30]
+            ],[30] \
         ] call Olsen_FW_FNC_AddItemRandomPercent;
 
 #define UK43Jan_SMG \

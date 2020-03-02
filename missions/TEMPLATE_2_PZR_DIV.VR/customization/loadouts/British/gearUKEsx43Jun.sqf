@@ -149,7 +149,7 @@
         UK_Default_Equipment;
 
         //Primary Weapon
-        UK43Jan_LeeEn;
+        UK43Jun_LeeEn;
 
         //Extra
         UK_Medic_Equipment;
@@ -168,7 +168,7 @@
         UK_Default_Equipment;
 
         //Primary Weapon
-        UK43Jan_LeeEn;
+        UK43Jun_LeeEn;
 
         //Extra
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
@@ -293,7 +293,7 @@
         [GEN_BinoR] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon
-        UK43Jan_LeeEn;
+        UK43Jun_LeeEn;
 
         //Extra
         [GEN_ace_sparebarrel,1,"backpack"] call Olsen_FW_FNC_AddItem;
@@ -313,7 +313,7 @@
         UK_Default_Equipment;
 
         //Primary Weapon
-        UK43Jan_LeeEn;
+        UK43Jun_LeeEn;
 
         //Extra
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
@@ -332,7 +332,7 @@
         UK_Default_Equipment;
 
         //Primary Weapon
-        UK43Jan_LeeEn;
+        UK43Jun_LeeEn;
 
         //Extra
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
@@ -354,7 +354,7 @@
         UK_Leader_Equipment;
 
         //Primary Weapon
-        UK43Jan_LeeEn;
+        UK43Jun_LeeEn;
 
         //Extra
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
@@ -406,7 +406,7 @@
         UK_Default_Equipment;
 
         //Primary Weapon
-        UK43Jan_LeeEn;
+        UK43Jun_LeeEn;
 
         //Extra
     };
@@ -426,7 +426,7 @@
         UK_Leader_Equipment;
 
         //Primary Weapon
-        UK43Jan_LeeEn;
+        UK43Jun_LeeEn;
 
         //Extra
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
@@ -486,7 +486,7 @@
         UK_Default_Equipment;
 
         //Primary Weapon
-        UK43Jan_LeeEn;
+        UK43Jun_LeeEn;
 
         //Extra
         [Rus_Mag_Mort_HE,5,"backpack"] call Olsen_FW_FNC_AddItem;
@@ -507,7 +507,7 @@
         UK_Leader_Equipment;
 
         //Primary Weapon
-        UK43Jan_LeeEn;
+        UK43Jun_LeeEn;
 
         //Extra
         [UK_Mag_Boys,5,"backpack"] call Olsen_FW_FNC_AddItem;
@@ -547,7 +547,7 @@
         UK_Default_Equipment;
 
         //Primary Weapon
-        UK43Jan_LeeEn;
+        UK43Jun_LeeEn;
 
         //Extra
         [UK_Mag_Boys,5,"backpack"] call Olsen_FW_FNC_AddItem;
@@ -569,7 +569,7 @@
         UK_Leader_Equipment;
 
         //Primary Weapon
-        UK43Jan_LeeEn;
+        UK43Jun_LeeEn;
 
         //Extra
         [UK_Mag_Piat_HEAT,3,"backpack"] call Olsen_FW_FNC_AddItem;
@@ -608,7 +608,7 @@
         UK_Default_Equipment;
 
         //Primary Weapon
-        UK43Jan_LeeEn;
+        UK43Jun_LeeEn;
 
         //Extra
         [UK_Mag_Piat_HEAT,3,"backpack"] call Olsen_FW_FNC_AddItem;

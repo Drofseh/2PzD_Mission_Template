@@ -19,6 +19,8 @@ onLoadMission = "PUT_YOUR_LOADING_TEXT_HERE";
 overviewPicture = "Logo.jpg";
 
 //Text displayed on the mission selection screen that describes the mission.
+//This should not be the same as the mission name.
+//"2PzD attempts to capture Paris."
 overviewText = "MY_COOL_MISSION_DESCRIPTION";
 
 class Header {

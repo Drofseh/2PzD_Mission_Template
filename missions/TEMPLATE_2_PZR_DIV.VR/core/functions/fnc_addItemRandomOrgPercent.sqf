@@ -1,5 +1,5 @@
  /*
- * Author: Jords & Drofseh
+ * Author: Jords & Wilhelm Haas (Drofseh)
  *
  * Add random item to unit based on relative weighting.
  *
