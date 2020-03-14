@@ -6,9 +6,9 @@ _supportingFireActions = call {
     _conditionFires        = {call acre_api_fnc_getCurrentRadio != ""};
 
     _conditionTargets      = {
-            (side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsHE_AmmoCountWEST > 0 || supportFire_shellsHE_AmmoCountWEST > 0 || supportFire_shellsFlare_AmmoCountWEST > 0}
-        || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_shellsHE_AmmoCountEAST > 0 || supportFire_shellsHE_AmmoCountEAST > 0 || supportFire_shellsFlare_AmmoCountEAST > 0}}
-        || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_shellsHE_AmmoCountGUER > 0 || supportFire_shellsHE_AmmoCountGUER > 0 || supportFire_shellsFlare_AmmoCountGUER > 0}}
+            (side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsHE_AmmoCountWEST > 0 || supportFire_shellsSmoke_AmmoCountWEST > 0 || supportFire_shellsFlare_AmmoCountWEST > 0}
+        || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_shellsHE_AmmoCountEAST > 0 || supportFire_shellsSmoke_AmmoCountEAST > 0 || supportFire_shellsFlare_AmmoCountEAST > 0}}
+        || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_shellsHE_AmmoCountGUER > 0 || supportFire_shellsSmoke_AmmoCountGUER > 0 || supportFire_shellsFlare_AmmoCountGUER > 0}}
     };
 
     _conditionVisual      = {
