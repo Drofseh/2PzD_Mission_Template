@@ -56,6 +56,9 @@ Olsen_FW_FNC_SupportFire_GetTargetLocation = {
 
         // gets new target location
         switch (true) do {
+            case (_supportFire_target == "TargetGrid") : {
+                _supportFire_targetLoc = supportFire_targetGrid;
+            };
             case (_supportFire_target == "TargetVisual") : {
                 _supportFire_targetLoc = screenToWorld [0.5, 0.5];
             };

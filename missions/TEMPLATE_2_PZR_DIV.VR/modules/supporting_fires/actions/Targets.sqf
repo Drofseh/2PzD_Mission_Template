@@ -56,6 +56,10 @@
         [player, 1, ["ACE_SelfActions","Supporting Fires","Select Target"], _actionTarget06] call ace_interact_menu_fnc_addActionToObject;
     };
 
+    _statementGrid = {createDialog "Supporting_Fires_Dialog";};
+    _actionGrid = ["Grid","Grid","Haas_WWII_Rebalance\UI\icon_supporting_fires_target_grid.paa",_statementGrid,{true}] call ace_interact_menu_fnc_createAction; //TODO change to grid paa
+    [player, 1, ["ACE_SelfActions","Supporting Fires","Select Target"], _actionGrid] call ace_interact_menu_fnc_addActionToObject;
+
     _statementVisualLoc = {
         _supportFire_terrainPosition = screenToWorld [0.5,0.5];
         _supportFire_cancelled = false;

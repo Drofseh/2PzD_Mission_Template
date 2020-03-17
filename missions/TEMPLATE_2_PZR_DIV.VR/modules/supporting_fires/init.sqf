@@ -38,6 +38,15 @@
         <br/>\
         <br/>Rounds fired at a Visual Location target will take longer to arrive, as the supporting unit needs time to calculate the fire mission.\
         <br/>\
+        <br/><font color='#70db70' size='14'>4. Grid Target</font>\
+        <br/>The Grid Target is similar to the Visual Location Target in that it's entirely up to you to select the target.\
+        <br/>Selecting the Grid Target will open a user interface that allows you input a target grid.\
+        <br/>I recommend having your map open when you open the Grid Target UI or else you won't be able to see the map grid numbers.\
+        <br/>\
+        <br/>The Grid Target UI has several tooltips that will give you instructions on how to use it.\
+        <br/>One you have entered your grid coordinates click Apply and then Accept to set that grid as your target.\
+        <br/>Clicking the cancel button will close the UI without applying the grid coordinates.\
+        <br/>\
         <br/><font color='#70db70' size='14'>5. Repeat Last Target</font>\
         <br/>This calls a new fire mission on the exact same target as the previous fire mission.\
         <br/>\
