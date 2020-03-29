@@ -170,7 +170,9 @@
 
 //Backpack
 #define Rus_BP                                  "B_LIB_SOV_RA_Rucksack"
-#define Rus_BP_r                                ["B_LIB_SOV_RA_Rucksack"],["B_LIB_SOV_RA_Rucksack"],["B_LIB_SOV_RA_Rucksack"],["B_LIB_SOV_RA_MGAmmoBag_Big_Empty"],["B_LIB_SOV_RA_GasBag"]
+
+#define Rus_BP_r                                ["B_LIB_SOV_RA_Rucksack"],["B_LIB_SOV_RA_Rucksack_Gas_Kit"],["B_LIB_SOV_RA_Rucksack2"],["B_LIB_SOV_RA_Rucksack2_Gas_Kit"],["B_LIB_SOV_RA_Rucksack2_Shinel"],["B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel"],["B_LIB_SOV_RA_MGAmmoBag_Big_Empty"],["B_LIB_SOV_RA_GasBag"]
+
 #define Rus_BP_MG                               "B_LIB_SOV_RA_MGAmmoBag_Big_Empty"
 #define Rus_BP_Med                              "B_LIB_SOV_RA_MedicalBag_Big_Empty"
 #define Rus_BP_GB                               "B_LIB_SOV_RA_GasBag"
@@ -289,17 +291,60 @@
 //Vests
     //Holster, Knife, Canteen
 #define NKVD_Vest_HKC           "V_LIB_SOV_RAZV_MGBelt"
-    //Officer's Holster, Knife, Bino, Mapcase
+
+    //Officer's Holster, Bino, Mapcase
 #define NKVD_Vest_O_Pistol      "V_LIB_SOV_RA_TankOfficerSet"
+
     //Officer's Holster, Knife, Bino, Mapcase, PPSH Stick Mags
 #define NKVD_Vest_O_PPSH        "V_LIB_SOV_RAZV_OfficerVest"
-    //PPSH Drum Mag, Knife, Pouch
-#define NKVD_Vest_PPSH          "V_LIB_SOV_RAZV_PPShBelt"
+
+    //PPSH Drum Mag, Knife, Pouch, Canteen
+#define NKVD_Vest_PPSH_D        "V_LIB_SOV_RAZV_PPShBelt"
+
+    //PPSH Stick Mag, Knife, Pouch, Canteen
+#define NKVD_Vest_PPSH_S        "V_LIB_SOV_RAZV_PPShBelt_Mag"
+
     //Mosin Pouches
 #define NKVD_Vest_Mosin         "V_LIB_SOV_RA_SniperVest"
+
     //SVT Pouches, Knife, Canteen
 #define NKVD_Vest_SVT           "V_LIB_SOV_RAZV_SVTBelt"
 
 //Headgear
 #define NKVD_Hat_O              "H_LIB_NKVD_OfficerCap"
 #define NKVD_Hat                "H_LIB_NKVD_PrivateCap"
+
+//=== EQUIPMENT ===
+
+#define NKVD_Default_Equipment \
+    [ \
+        [[GEN_ace_ration_Beef]],[1], \
+        [[GEN_ace_ration_TSoup]],[1], \
+        [[GEN_ace_ration_CSoup]],[1], \
+        [[GEN_ace_ration_Steak]],[1], \
+        [[GEN_ace_ration_Dumpling]],[1] \
+    ] call Olsen_FW_FNC_AddItemRandomPercent; \
+    [GEN_Map] call Olsen_FW_FNC_AddItem; \
+    [GEN_Compass] call Olsen_FW_FNC_AddItem; \
+    [GEN_Watch] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_hammer,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandageField,4,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_TQ,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_flashlightEU,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_cabletie,10,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_canteen_F,1,"uniform"] call Olsen_FW_FNC_AddItem;
+
+#define NKVD_Leader_Equipment \
+    [GEN_BinoR] call Olsen_FW_FNC_AddItem; \
+    [GEN_ace_maptools,1,"uniform"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Whistle,1,"uniform"] call Olsen_FW_FNC_AddItem;
+
+#define NKVD_Medic_Equipment \
+    [GEN_BandageField,5,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandageElastic,10,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_BandagePacking,15,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Morp,5,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Epi,2,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_TQ,2,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_SurgKit,1,"backpack"] call Olsen_FW_FNC_AddItem; \
+    [GEN_Saline500,3,"backpack"] call Olsen_FW_FNC_AddItem;
