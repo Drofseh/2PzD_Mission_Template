@@ -13,10 +13,10 @@
  * Public: No
  */
 
-private _team = _this select 0;
-private _index = _this select 1;
-private _return = 0;
-private _found = false;
+params ["_team","_index","_return","_found"];
+
+_return = 0;
+_found = false;
 
 {
     if ((_x select 0) == _team) exitWith {

@@ -13,7 +13,7 @@ if (isServer && {FW_JIPDENYTIME > -1}) then {
     ] call CBA_fnc_waitUntilAndExecute;
 };
 
-if (hasInterface && {str side player != "LOGIC"}) then {
+if (hasInterface && {str playerSide != "LOGIC"}) then {
 
     if (FW_JIPTYPE == "DENY" && {missionNamespace getVariable ["FW_JIPDenied", false]}) exitWith {
         [{

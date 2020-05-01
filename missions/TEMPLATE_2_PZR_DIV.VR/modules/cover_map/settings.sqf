@@ -3,7 +3,6 @@
 //marker for AO. This module won't force AO boundaries, for that use AO module.
 _marker = "AO";
 
-
 //this allows each side to use a seperate marker for its AO, so each side can see different parts of the map.
 _useSideSpecificAO = False;
 

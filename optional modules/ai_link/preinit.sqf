@@ -98,13 +98,15 @@
         if (isNil "_hasLR" || isNil "_hasSR" || _eval) then {
             {
                 {
-                    if (_x isKindOf ["ACRE_SEM70", configFile >> "CfgWeapons"]) then {_hasLR = true};
-                    if (_x isKindOf ["ACRE_PRC117F", configFile >> "CfgWeapons"]) then {_hasLR = true};
-                    if (_x isKindOf ["ACRE_PRC152", configFile >> "CfgWeapons"]) then {_hasLR = true};
-                    if (_x isKindOf ["ACRE_PRC148", configFile >> "CfgWeapons"]) then {_hasLR = true};
-
-                    if (_x isKindOf ["ACRE_SEM52SL", configFile >> "CfgWeapons"]) then {_hasSR = true};
-                    if (_x isKindOf ["ACRE_PRC343", configFile >> "CfgWeapons"]) then {_hasSR = true};
+                    switch (true) do {
+                        case (_x isKindOf ["ACRE_PRC343", configFile >> "CfgWeapons"]) : {_hasSR = true};
+                        case (_x isKindOf ["ACRE_SEM52SL", configFile >> "CfgWeapons"]) : {_hasSR = true};
+                        case (_x isKindOf ["ACRE_PRC77", configFile >> "CfgWeapons"]) : {_hasLR = true};
+                        case (_x isKindOf ["ACRE_PRC117F", configFile >> "CfgWeapons"]) : {_hasLR = true};
+                        case (_x isKindOf ["ACRE_PRC148", configFile >> "CfgWeapons"]) : {_hasLR = true};
+                        case (_x isKindOf ["ACRE_PRC152", configFile >> "CfgWeapons"]) : {_hasLR = true};
+                        case (_x isKindOf ["ACRE_SEM70", configFile >> "CfgWeapons"]) : {_hasLR = true};
+                    };
                 } forEach items _x;
 
                 if (isNil "_hasLR") then {

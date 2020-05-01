@@ -53,10 +53,10 @@ if (FW_RespawnTickets > 0) then {
 // systemChat "ACE Spec Set";
 
 //[allPlayers, [player]] call ace_spectator_fnc_updateUnits;
-//[units side player, [player]] call ace_spectator_fnc_updateUnits;
+//[units playerSide, [player]] call ace_spectator_fnc_updateUnits;
 //[allUnits, [player]] call ace_spectator_fnc_updateUnits;
 
-switch (side player) do { // Sets respawn tickets and sides visible in spectator, based on player side.
+switch (playerSide) do { // Sets respawn tickets and sides visible in spectator, based on player side.
     case west: {
         //[[west], [east,independent,civilian]] call ace_spectator_fnc_updateSides;
         FW_SpectatorSides call ace_spectator_fnc_updateSides;

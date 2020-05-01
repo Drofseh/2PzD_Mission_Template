@@ -66,3 +66,6 @@ if (magazine_conversion_speedMultiplier < 0.1) then {
 
 #include "actions.sqf"
 #include "functions.sqf"
+
+[] call Olsen_FW_FNC_MagazineConversion_CreateChildActions;
+

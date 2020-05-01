@@ -21,6 +21,7 @@ if (hasInterface) then {
         };
     };
 };
+
 /*
 //To be readded in the remove action can be made to work
 //====== Add main interaction point.
@@ -36,7 +37,7 @@ _actionSquadVicMain = ["Squad Vehicle","Squad Vehicle","",_statementSquadVicMain
 ["Air", 0, ["ACE_MainActions"], _actionSquadVicMain,true] call ace_interact_menu_fnc_addActionToClass;
 ["Ship", 0, ["ACE_MainActions"], _actionSquadVicMain,true] call ace_interact_menu_fnc_addActionToClass;
 
-//add mainaction to vehicle menu when player inside of vic
+//add main action to vehicle menu when player inside of vic
 ["LandVehicle", 1, ["ACE_SelfActions"], _actionSquadVicMain,true] call ace_interact_menu_fnc_addActionToClass;
 ["Air", 1, ["ACE_SelfActions"], _actionSquadVicMain,true] call ace_interact_menu_fnc_addActionToClass;
 ["Ship", 1, ["ACE_SelfActions"], _actionSquadVicMain,true] call ace_interact_menu_fnc_addActionToClass;

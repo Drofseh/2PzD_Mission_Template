@@ -28,7 +28,7 @@ if (FW_RespawnTickets > 0) then {
 
     player setVariable ["FW_Dead", false, true]; //Tells the framework the player is alive
 
-    private _respawnName = toLower(format ["fw_%1_respawn", side player]);
+    private _respawnName = toLower(format ["fw_%1_respawn", playerSide]);
     private _respawnPoint = missionNamespace getVariable [_respawnName, objNull];
     private _loadout = (player getVariable ["FW_Loadout", ""]);
 
@@ -39,6 +39,10 @@ if (FW_RespawnTickets > 0) then {
     if (!isNull(_respawnPoint)) then {
         _respawnPosition = getPosATL _respawnPoint;
         player setPosATL ([[[_respawnPosition, 7]]] call BIS_fnc_randomPos); //yes this needs all three square brackets on each side.
+    };
+
+    if (player getVariable ["spawnInParachute_parachuteRespawn", false]) then {
+        [player, (player getVariable ["spawnInParachute_parachuteRespawnHeight", 300])] call Olsen_FW_FNC_DOPARACHUTE;
     };
 
     FW_RespawnTickets = FW_RespawnTickets - 1;
@@ -52,7 +56,11 @@ if (FW_RespawnTickets > 0) then {
     cutText [format ['%1 %2', FW_RespawnTickets, _text], 'PLAIN DOWN'];
 
     if (player getVariable ["FW_mapRemoved", true]) then {
-        player call Olsen_FW_FNC_Remove_Map;
+        [
+            {player call Olsen_FW_FNC_Remove_Map;},
+            [],
+            5
+        ] call CBA_fnc_waitAndExecute;
     };
 
 } else {

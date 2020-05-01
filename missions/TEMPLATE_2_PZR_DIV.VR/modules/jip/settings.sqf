@@ -7,7 +7,7 @@
 // Set this to -1 if not using the "DENY" JIPTYPE.
 FW_JIPDENYTIME = -1;
 
-switch (side player) do {
+switch (playerSide) do {
 
     case west: {
         //JIPTYPE

@@ -1,9 +1,9 @@
 //Modules are added by including the root.sqf which tells the framework where specific sections of the module should be loaded.
 
-//Example:
-//#include "start_text\root.sqf"
-
-//Default modules, enable/disable them by adding/removing // from the front.
+//===== Default modules
+//Enable or disable them by adding or removing // from the front.
+//Modules may need to be configued.
+//Check their settings.sqf file.
 
 #include "marker_control\root.sqf"
 #include "acre_setup\root.sqf"
@@ -23,6 +23,7 @@
 //#include "supporting_fires\root.sqf"
 #include "vehicle_displays\root.sqf"
 
+//===== Optional Modules
 //Additional optional modules are provided in the Optional Modules folder.
 //If you with to use one of these modules copy it from the Optional Modules folder into your mission/modules folder
 //Then enabled it by uncommenting it in this file.
@@ -39,7 +40,6 @@
 //#include "ao_limit_soft\root.sqf"
 //#include "capture_zone\root.sqf"
 //#include "cover_map_multiple\root.sqf"
-//#include "covert\root.sqf"
 //#include "extract\root.sqf"
 //#include "familiar_weapons\root.sqf"
 //#include "hostage\root.sqf"

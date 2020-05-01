@@ -6,7 +6,7 @@ _statementJIP_Transport = {
     private _targets = [];
 
     {
-        if (side leader _x == side player) then {
+        if ((leader _x) call Olsen_FW_FNC_getOriginalSide == playerSide) then {
             _targets pushBack _x;
         };
     } forEach allGroups;

@@ -123,7 +123,11 @@ Olsen_FW_FNC_CheckSideInVeh = {
 
     _units = [];
 
-    {if (side _x == _side) then {_units set [count _units, _x]}} forEach playableUnits;
+    {
+        if ((_x call Olsen_FW_FNC_getOriginalSide) == _side) then {
+            _units set [count _units, _x];
+        };
+    } forEach playableUnits;
 
     _result = [_veh, _units] call Olsen_FW_FNC_CheckArrayInVeh;
 

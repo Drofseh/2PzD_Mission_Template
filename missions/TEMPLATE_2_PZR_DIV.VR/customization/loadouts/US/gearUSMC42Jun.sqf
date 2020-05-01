@@ -92,8 +92,7 @@
             ],[1] \
         ] call Olsen_FW_FNC_AddItemRandomPercent;
 
-// For medic
-#define USMC42Jun_Weapon_Rifle_Medic \
+#define USMC42Jun_Weapon_Rifle_Light \
         [ \
             [/*M1903A1*/ \
                 [US_Mag_M1903,1], \
@@ -112,7 +111,44 @@
             ],[10] \
         ] call Olsen_FW_FNC_AddItemRandomPercent;
 
-// For riflemen
+#define USMC42Jun_Weapon_Rifle_Light_No_Vest \
+        [ \
+            [/*M1903A1*/ \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A1], \
+                [US_Mag_M1903,20,"vest"] \
+            ],[76], \
+            [/*M1903A3*/ \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A3], \
+                [US_Mag_M1903,20,"vest"] \
+            ],[14], \
+            [/*M1 Carbine*/ \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[10] \
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
+
+#define USMC42Jun_Weapon_Rifle_No_Vest \
+        [ \
+            [/*M1903A1*/ \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A1], \
+                [US_Mag_M1903,20,"vest"] \
+            ],[76], \
+            [/*M1903A3*/ \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A3], \
+                [US_Mag_M1903,20,"vest"] \
+            ],[14], \
+            [/*M1 Carbine*/ \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[10] \
+        ] call Olsen_FW_FNC_AddItemRandomPercent;
+
 #define USMC42Jun_Weapon_Rifle \
         [ \
             [/*M1903A1*/ \
@@ -414,7 +450,7 @@
         USMC_Default_Equipment;
 
         //Primary Weapon
-        USMC42Jun_Weapon_Rifle_Medic;
+        USMC42Jun_Weapon_Rifle_Light;
 
         //Extra
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;

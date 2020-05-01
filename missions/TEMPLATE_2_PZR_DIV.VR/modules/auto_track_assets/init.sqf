@@ -47,13 +47,13 @@ if (isServer) then {
 
             _vehicle = _x;
 
-            if (!isPlayer _vehicle && side _vehicle != civilian) then {
+            if (!isPlayer _vehicle && {(_vehicle call Olsen_FW_FNC_getOriginalSide) != civilian}) then {
 
                 if (_vehicle getVariable ["FW_AssetName", ""] == "") then {
 
                     {
 
-                        if (_x select 1 == side _vehicle) exitWith {
+                        if (_x select 1 == (_vehicle call Olsen_FW_FNC_getOriginalSide)) exitWith {
 
                             _vehCfg = (configFile >> "CfgVehicles" >> (typeOf _vehicle));
 

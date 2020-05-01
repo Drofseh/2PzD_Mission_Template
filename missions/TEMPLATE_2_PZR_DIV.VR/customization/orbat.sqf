@@ -17,8 +17,12 @@ _hiddenGroups = [];
 
 {
     // Add group to ORBAT if side matches, group isn't already listed, and group has players
-    if ((side _x == side group player) && {!(_x in _groups)} && {({_x in playableUnits} count units _x) > 0}) then {
-    // if ((side _x == side group player) && !(_x in _groups)) then { // this line includes AI
+    if (
+        ((_x call Olsen_FW_FNC_getOriginalSide) == ((group player) call Olsen_FW_FNC_getOriginalSide))
+        && {!(_x in _groups)}
+        && {({_x in playableUnits} count units _x) > 0}
+    ) then {
+    // if ((_x call Olsen_FW_FNC_getOriginalSide) == ((group player) call Olsen_FW_FNC_getOriginalSide) && !(_x in _groups)) then { // this line includes AI
         _groups = _groups + [_x];
     };
 } forEach allGroups;
@@ -37,7 +41,7 @@ _orbatText = format ["%1<br/><font size='18'>== ORBAT ==</font><br/>",_orbatText
     // Highlight the player's group with a different color (based on the player's side)
     _color = "#FFFFFF";
     if (_x == group player) then {
-        _color = switch (side player) do {
+        _color = switch (playerSide) do {
              case west : {"#0080FF"};
              case east : {"#B40404"};
              case independent : {"#298A08"};

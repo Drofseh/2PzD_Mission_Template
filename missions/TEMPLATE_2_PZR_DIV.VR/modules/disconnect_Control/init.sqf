@@ -16,7 +16,7 @@ Olsen_FW_FNC_EventDisconnect_BodyCleanup = {
 
         #include "settings.sqf"
 
-        if (CBA_missionTime < disconnect_control_time * 60 && (side _unit) in disconnect_control_sides) then {
+        if (CBA_missionTime < disconnect_control_time * 60 && {(_unit call Olsen_FW_FNC_getOriginalSide) in disconnect_control_sides}) then {
 
             deleteVehicle _unit;
 

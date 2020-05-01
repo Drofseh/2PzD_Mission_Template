@@ -49,24 +49,18 @@
 // For Company Commander, Company Executive Officer, Platoon Commander, Squad Leader
 #define USMC42Apr_Weapon_Leader \
         [ \
+            [/*M1928 Thompson*/ \
+                [USMC_Vest_M1T], \
+                [US_Mag_M1T_20,1], \
+                [US_Weap_M1928], \
+                [US_Mag_M1T_20,5,"vest"] \
+            ],[9], \
             [/*M1928A1 Thompson*/ \
                 [USMC_Vest_M1T], \
                 [US_Mag_M1T_20,1], \
                 [US_Weap_M1928A1], \
                 [US_Mag_M1T_20,5,"vest"] \
             ],[46], \
-            [/*M1 Carbine*/ \
-                [USMC_Vest_M1C], \
-                [US_Mag_M1C,1], \
-                [US_Weap_M1C], \
-                [US_Mag_M1C,4,"vest"] \
-            ],[20], \
-            [/*M50 Reising*/ \
-                [USMC_Vest_M1T], \
-                [US_Mag_M50_20,1], \
-                [US_Weap_M50], \
-                [US_Mag_M50_20,5,"vest"] \
-            ],[15], \
             [/*M1 Thompson*/ \
                 [USMC_Vest_M1T], \
                 [US_Mag_M1T_20,1], \
@@ -74,22 +68,28 @@
                 [US_Mag_M1T_20,4,"vest"], \
                 [US_Mag_M1T_30,1,"vest"] \
             ],[9], \
-            [/*M1928 Thompson*/ \
+            [/*M50 Reising*/ \
                 [USMC_Vest_M1T], \
-                [US_Mag_M1T_20,1], \
-                [US_Weap_M1928], \
-                [US_Mag_M1T_20,5,"vest"] \
-            ],[9], \
+                [US_Mag_M50_20,1], \
+                [US_Weap_M50], \
+                [US_Mag_M50_20,5,"vest"] \
+            ],[15], \
             [/*M55 Reising*/ \
                 [USMC_Vest_M1T], \
                 [US_Mag_M50_20,1], \
                 [US_Weap_M55], \
                 [US_Mag_M50_20,5,"vest"] \
-            ],[1] \
+            ],[1], \
+            [/*M1 Carbine*/ \
+                [USMC_Vest_M1C], \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[20] \
         ] call Olsen_FW_FNC_AddItemRandomPercent;
 
-// For riflemen
-#define USMC42Apr_Weapon_Rifle \
+#define USMC42Apr_Weapon_Rifle_Light \
+    if (vest _unit == "") then { \
         [ \
             [/*M1903A1*/ \
                 [USMC_Vest_M1G], \
@@ -109,10 +109,8 @@
                 [US_Weap_M1C], \
                 [US_Mag_M1C,4,"vest"] \
             ],[10] \
-        ] call Olsen_FW_FNC_AddItemRandomPercent;
-
-// For light riflemen
-#define USMC42Apr_Weapon_Rifle_Light \
+        ] call Olsen_FW_FNC_AddItemRandomPercent; \
+    } else { \
         [ \
             [/*M1903A1*/ \
                 [US_Mag_M1903,1], \
@@ -129,7 +127,62 @@
                 [US_Weap_M1C], \
                 [US_Mag_M1C,4,"vest"] \
             ],[10] \
-        ] call Olsen_FW_FNC_AddItemRandomPercent;
+        ] call Olsen_FW_FNC_AddItemRandomPercent; \
+    };
+
+#define USMC42Apr_Weapon_AR \
+        [US_Mag_BAR_Mixed_Ball,1] call Olsen_FW_FNC_AddItem; \
+        [US_Weap_BAR] call Olsen_FW_FNC_AddItem; \
+        [US_Acc_BAR_Bipod] call Olsen_FW_FNC_AddItem; \
+        [US_Mag_BAR_Mixed_Ball,6,"vest"] call Olsen_FW_FNC_AddItem; \
+        [US_Mag_BAR_Mixed_Ball,9,"backpack"] call Olsen_FW_FNC_AddItem;
+
+#define USMC42Apr_Weapon_Rifle \
+    if (vest _unit == "") then { \
+        [ \
+            [/*M1903A1*/ \
+                [USMC_Vest_M1G], \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A1], \
+                [US_Mag_M1903,20,"vest"] \
+            ],[76], \
+            [/*M1903A3*/ \
+                [USMC_Vest_M1G], \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A3], \
+                [US_Mag_M1903,20,"vest"] \
+            ],[14], \
+            [/*M1 Carbine*/ \
+                [USMC_Vest_M1C], \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[10] \
+        ] call Olsen_FW_FNC_AddItemRandomPercent; \
+    } else { \
+        [ \
+            [/*M1903A1*/ \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A1], \
+                [US_Mag_M1903,20,"vest"] \
+            ],[76], \
+            [/*M1903A3*/ \
+                [US_Mag_M1903,1], \
+                [US_Weap_M1903A3], \
+                [US_Mag_M1903,20,"vest"] \
+            ],[14], \
+            [/*M1 Carbine*/ \
+                [US_Mag_M1C,1], \
+                [US_Weap_M1C], \
+                [US_Mag_M1C,4,"vest"] \
+            ],[10] \
+        ] call Olsen_FW_FNC_AddItemRandomPercent; \
+    };
+
+#define USMC42Apr_Weapon_Secondary \
+        [US_Mag_M1911,1] call Olsen_FW_FNC_AddItem; \
+        [US_Weap_M1911] call Olsen_FW_FNC_AddItem; \
+        [US_Mag_M1911,3,"uniform"] call Olsen_FW_FNC_AddItem;
 
 // For Tank Commander
 #define USMC42Apr_Weapon_VCom \
@@ -173,7 +226,6 @@
             ],[5] \
         ] call Olsen_FW_FNC_AddItemRandomPercent;
 
-// For Tank Crew
 #define USMC42Apr_Weapon_VCrew \
         [ \
             [/*M1911 Only*/ \
@@ -258,9 +310,7 @@
         USMC42Apr_Weapon_Leader;
 
         //Secondary Weapon
-        [US_Mag_M1911,1] call Olsen_FW_FNC_AddItem;
-        [US_Weap_M1911] call Olsen_FW_FNC_AddItem;
-        [US_Mag_M1911,3,"uniform"] call Olsen_FW_FNC_AddItem;
+        USMC42Apr_Weapon_Secondary;
 
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
@@ -282,9 +332,7 @@
         USMC42Apr_Weapon_Leader;
 
         //Secondary Weapon
-        [US_Mag_M1911,1] call Olsen_FW_FNC_AddItem;
-        [US_Weap_M1911] call Olsen_FW_FNC_AddItem;
-        [US_Mag_M1911,3,"uniform"] call Olsen_FW_FNC_AddItem;
+        USMC42Apr_Weapon_Secondary;
 
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
@@ -306,9 +354,7 @@
         USMC42Apr_Weapon_Rifle;
 
         //Secondary Weapon
-        [US_Mag_M1911,1] call Olsen_FW_FNC_AddItem;
-        [US_Weap_M1911] call Olsen_FW_FNC_AddItem;
-        [US_Mag_M1911,3,"uniform"] call Olsen_FW_FNC_AddItem;
+        USMC42Apr_Weapon_Secondary;
 
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
@@ -350,9 +396,7 @@
         USMC42Apr_Weapon_Leader;
 
         //Secondary Weapon
-        [US_Mag_M1911,1] call Olsen_FW_FNC_AddItem;
-        [US_Weap_M1911] call Olsen_FW_FNC_AddItem;
-        [US_Mag_M1911,3,"uniform"] call Olsen_FW_FNC_AddItem;
+        USMC42Apr_Weapon_Secondary;
 
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
@@ -374,9 +418,7 @@
         USMC42Apr_Weapon_Rifle;
 
         //Secondary Weapon
-        [US_Mag_M1911,1] call Olsen_FW_FNC_AddItem;
-        [US_Weap_M1911] call Olsen_FW_FNC_AddItem;
-        [US_Mag_M1911,3,"uniform"] call Olsen_FW_FNC_AddItem;
+        USMC42Apr_Weapon_Secondary;
 
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
@@ -495,11 +537,7 @@
         USMC_Default_Equipment;
 
         //Primary Weapon
-        [US_Mag_BAR_Mixed_Ball,1] call Olsen_FW_FNC_AddItem;
-        [US_Weap_BAR] call Olsen_FW_FNC_AddItem;
-        [US_Acc_BAR_Bipod] call Olsen_FW_FNC_AddItem;
-        [US_Mag_BAR_Mixed_Ball,6,"vest"] call Olsen_FW_FNC_AddItem;
-        [US_Mag_BAR_Mixed_Ball,9,"backpack"] call Olsen_FW_FNC_AddItem;
+        USMC42Apr_Weapon_AR;
 
         //Extra
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
@@ -609,9 +647,7 @@
         USMC_Default_Equipment;
 
         //Secondary Weapon
-        [US_Mag_M1911,1] call Olsen_FW_FNC_AddItem;
-        [US_Weap_M1911] call Olsen_FW_FNC_AddItem;
-        [US_Mag_M1911,2,"uniform"] call Olsen_FW_FNC_AddItem;
+        USMC42Apr_Weapon_Secondary;
 
         //Primary Weapon
         [US_Mag_M1919_250_Mixed_Ball,1] call Olsen_FW_FNC_AddItem;
@@ -700,9 +736,7 @@
         [US_Weap_MortB] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
-        [US_Mag_M1911,1] call Olsen_FW_FNC_AddItem;
-        [US_Weap_M1911] call Olsen_FW_FNC_AddItem;
-        [US_Mag_M1911,3,"uniform"] call Olsen_FW_FNC_AddItem;
+        USMC42Apr_Weapon_Secondary;
 
         //Extra
         [US_Mag_Mort_HE,8] call Olsen_FW_FNC_AddItem;
@@ -724,9 +758,7 @@
         [US_Weap_MortT] call Olsen_FW_FNC_AddItem;
 
         //Secondary Weapon
-        [US_Mag_M1911,1] call Olsen_FW_FNC_AddItem;
-        [US_Weap_M1911] call Olsen_FW_FNC_AddItem;
-        [US_Mag_M1911,3,"uniform"] call Olsen_FW_FNC_AddItem;
+        USMC42Apr_Weapon_Secondary;
 
         //Extra
         [US_Mag_Mort_HE,8] call Olsen_FW_FNC_AddItem;
@@ -774,9 +806,7 @@
         US_Leader_Equipment;
 
         //Secondary Weapon
-        [US_Mag_M1911,1] call Olsen_FW_FNC_AddItem;
-        [US_Weap_M1911] call Olsen_FW_FNC_AddItem;
-        [US_Mag_M1911,3,"uniform"] call Olsen_FW_FNC_AddItem;
+        USMC42Apr_Weapon_Secondary;
     };
 
     //Tank Commander
@@ -794,9 +824,7 @@
         USMC42Apr_Weapon_VCom;
 
         //Secondary Weapon
-        [US_Mag_M1911,1] call Olsen_FW_FNC_AddItem;
-        [US_Weap_M1911] call Olsen_FW_FNC_AddItem;
-        [US_Mag_M1911,3,"uniform"] call Olsen_FW_FNC_AddItem;
+        USMC42Apr_Weapon_Secondary;
     };
 
     //Tank Crew

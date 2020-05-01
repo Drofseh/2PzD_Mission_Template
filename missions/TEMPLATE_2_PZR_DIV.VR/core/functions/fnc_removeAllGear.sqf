@@ -12,7 +12,9 @@
  * Public: No
  */
 
-switch (side player) do {
+params ["_unit"];
+
+switch (_unit call Olsen_FW_FNC_getOriginalSide) do {
     case WEST : {
         FW_Whitelist_Face = [
             "None",
@@ -51,12 +53,16 @@ switch (side player) do {
     };
 };
 
-private _unit = _this;
-
 removeHeadgear _unit;
-if (!isPlayer _unit || {!((goggles _unit) in FW_Whitelist_Face)} || {!isNil "FW_force_remove_facewear" && {FW_force_remove_facewear}}) then {
+
+if (
+    !isPlayer _unit
+    || {!((goggles _unit) in FW_Whitelist_Face)}
+    || {!isNil "FW_force_remove_facewear" && {FW_force_remove_facewear}}
+) then {
     removeGoggles _unit;
 };
+
 removeVest _unit;
 removeBackpack _unit;
 removeUniform _unit;

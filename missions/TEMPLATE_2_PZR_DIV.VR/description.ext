@@ -77,6 +77,17 @@ class Params {
 
 #undef description_params
 
+#define description_extra_classes
+
+    #include "core\description.hpp" //DO NOT REMOVE
+    #include "modules\modules.sqf" //DO NOT REMOVE
+
+/*
+class MissionSQM {
+    #include "mission.sqm"
+};
+*/
+
 //This adds mARMAcp server performance reporting for http://marma.io/
 class mARMADebug {
     // Returns the world name every 60 seconds
@@ -135,3 +146,4 @@ class mARMADebug {
         interval = 1; // How often the metric is read
     };
 };
+#undef description_extra_classes

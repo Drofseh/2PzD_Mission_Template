@@ -76,7 +76,7 @@ if (isServer) then {
         [{
             {
                 // hide/reveal icons in zeus mode
-                if !(side _x in zeusFog_visibleSides) then {
+                if !((_x call Olsen_FW_FNC_getOriginalSide) in zeusFog_visibleSides) then {
                     private _target = _x;
                     // systemChat ("server Loop: " + str _target);
                     
@@ -107,7 +107,7 @@ if (hasInterface) then {
             // systemChat "zeus loop running";
             [{
                 { // check knowledge and hide/unhide loop
-                    if !(side _x in zeusFog_visibleSides) then { // not friendly
+                    if !((_x call Olsen_FW_FNC_getOriginalSide) in zeusFog_visibleSides) then { // not friendly
                         private _target = _x;
                         // systemChat ("zeus loop: " + str _target);
 

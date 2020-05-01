@@ -280,7 +280,7 @@ Olsen_FW_FNC_AtkStart = {
 Olsen_FW_FNC_AtkVehicleStart = {
     ATKcachedAttacks pushBack (_this select 0);
     _handle = _this spawn {
-        private["_paths","_num","_units","_side","_minSpawn", "_maxSpawn","_maxAmmount","_delay","_spawnDelay","_shouldClean","_unitsSpawned","_found","_unitsSpawned"];
+        private ["_paths","_num","_units","_side","_minSpawn", "_maxSpawn","_maxAmmount","_delay","_spawnDelay","_shouldClean","_unitsSpawned","_found","_unitsSpawned"];
         _paths = [];
         _units = [];
         _side = _this select 3;

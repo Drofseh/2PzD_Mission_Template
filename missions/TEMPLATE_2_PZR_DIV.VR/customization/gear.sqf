@@ -222,6 +222,7 @@ switch (_type) do {
     //#include "loadouts\Russian\gearNKVD40Jul.sqf"
     //#include "loadouts\Russian\gearNKVD41Nov.sqf"
     //#include "loadouts\Russian\gearNKVD42May.sqf"
+    //#include "loadouts\Russian\gearNKVD43Jul.sqf"
     //#include "loadouts\Russian\gearNKVD44Oct.sqf"
 
         //=== United States ===

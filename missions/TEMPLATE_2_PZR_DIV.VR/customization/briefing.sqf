@@ -185,7 +185,7 @@ ENDTAB;
 
 // ======================== Side Based Briefings ========================
 
-switch (side player) do { // Checks what team the player is on
+switch (playerSide) do { // Checks what team the player is on
 
 case west : {
 // ===== West =====
@@ -561,7 +561,7 @@ NEWTAB("III. C. Дружественные Силы (Friendly Forces):")
 <br/>*/
 ENDTAB;
 
-NEWTAB("IV. Сигнальная (Signals):")
+NEWTAB("IV. Информация (Signals):")
 <br/><font color='#FF8C00' size='16'>A. Call Signs:</font>
 // <br/>
 // <br/>HQ - Company HQ

@@ -50,7 +50,7 @@ while {_run} do {
 
         if (alive _unit && {_unit inArea (_markerCount select 0)}) then {
             {
-                if (side _unit == _x select 0) then {
+                if ((_unit call Olsen_FW_FNC_getOriginalSide) == _x select 0) then {
                     _x set [1,(_x select 1) + 1] ;
                 }
             } forEach (_markercount select 1);
@@ -63,17 +63,15 @@ while {_run} do {
         if (_x select 1 > _currentOwner select 1) then {
             _currentOwner = [str (_x select 0),_x select 1,_x select 2];
         } else {
-            if ((_x select 1) == (_currentOwner select 1) && (_x select 1) != 0) then {
+            if ((_x select 1) == (_currentOwner select 1) && {(_x select 1) != 0}) then {
                 _currentOwner = ["CONTESTED",_x select 1,9999];
             };
         }
     } forEach (_markerCount select 1);
 
-    if (((_currentOwner select 0) != (_oldOwner select 0)) || (_currentOwner select 0 == "CONTESTED")) then {
-        switch(_currentOwner select 0) do {
-            case "WEST":
-            {
-
+    if (((_currentOwner select 0) != (_oldOwner select 0)) || {_currentOwner select 0 == "CONTESTED"}) then {
+        switch (_currentOwner select 0) do {
+            case "WEST" : {
                     _mes = _messages select 0;
                     //this is for ContestedZone so the timer doesn't reset
                     //can probaply be done better
@@ -85,8 +83,7 @@ while {_run} do {
                     [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 0]] call CBA_fnc_globalExecute;
 
             };
-            case "EAST":
-            {
+            case "EAST" : {
                     _mes = _messages select 1;
                     //this is for ContestedZone so the timer doesn't reset
                     //can probaply be done better
@@ -98,8 +95,7 @@ while {_run} do {
                     [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 1]] call CBA_fnc_globalExecute;
 
             };
-            case "GUER":
-            {
+            case "GUER" : {
                     _mes = _messages select 2;
                     //this is for ContestedZone so the timer doesn't reset
                     //can probaply be done better
@@ -112,8 +108,7 @@ while {_run} do {
 
 
             };
-            case "RESISTANCE":
-            {
+            case "RESISTANCE" : {
                     _mes = _messages select 2;
                     //this is for ContestedZone so the timer doesn't reset
                     //can probaply be done better
@@ -125,8 +120,7 @@ while {_run} do {
                     [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 2]] call CBA_fnc_globalExecute;
 
             };
-            case "CIVILIAN":
-            {
+            case "CIVILIAN" : {
                     _mes = _messages select 3;
                     //this is for ContestedZone so the timer doesn't reset
                     //can probaply be done better
@@ -138,8 +132,7 @@ while {_run} do {
                     [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 3]] call CBA_fnc_globalExecute;
 
             };
-            case "UNCONTESTED":
-            {
+            case "UNCONTESTED" : {
                     _mes = _messages select 5;
                     [-1, {[[_this], true] call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
                     [-1, {(_this select 0) setMarkerColor (_this select 1)}, [_marker,_colors select 5]] call CBA_fnc_globalExecute;
@@ -147,8 +140,7 @@ while {_run} do {
                     _timer = CBA_missionTime;
                     _contester = "NONE";
             };
-            case "CONTESTED":
-            {
+            case "CONTESTED" : {
                     if ((_currentOwner select 0) != (_oldOwner select 0)) then {
                         _mes = _messages select 4;
                         [-1, {[[_this], true] call CBA_fnc_notify;},_mes] call CBA_fnc_globalExecute;
@@ -165,8 +157,7 @@ while {_run} do {
             if ((CBA_missionTime - _timer) >= _currentOwner select 2) then {
                 _temp = true;
 
-                if (_temp) exitWith
-                {
+                if (_temp) exitWith{
                     CZMARKERCOLLECTION set [_countforwins,[_currentOwner select 0,_marker,true]];
                     _run = false;
                 };
@@ -176,6 +167,7 @@ while {_run} do {
         };
         _countforwins = _countforwins + 1;
     } forEach CZMARKERCOLLECTION;
+
     _oldOwner = _currentOwner;
     _end = _start;
     sleep(1);

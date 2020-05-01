@@ -14,6 +14,7 @@ PREP(eventRespawned);
 PREP(eventSpawned);
 PREP(forceTerrainGrid);
 PREP(getDamagedAssets);
+PREP(getOriginalSide);
 PREP(getTeamVariable);
 PREP(hasEmptyPositions);
 PREP(hasExtracted);
@@ -70,6 +71,7 @@ if (hasInterface) then {
     FW_RespawnTickets = 0; //Initialize respawn tickets to 0
 
     player setVariable ["FW_Dead", false, true]; //Tells the framework the player is alive
+    player setVariable ["FW_OriginalSide", playerSide, true]; //Tells the framework the original side the player belongs to
 
     //Makes the player go into spectator mode when dead or respawn if he has respawn tickets
     FW_KilledEh = player addEventHandler ["Killed", {_this call Olsen_FW_FNC_SpectateCheck;}];
@@ -84,6 +86,7 @@ if (hasInterface) then {
     private _dateYear = _date select 0;
     private _dateMonth = _date select 1;
     private _dateDay = _date select 2;
+
     if (
         _dateYear < 1939
         || {_dateYear == 1939 && _dateMonth < 9}

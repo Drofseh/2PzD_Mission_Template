@@ -2,7 +2,7 @@
 
 Olsen_FW_FNC_DOPARACHUTE = {
 
-    private ["_target", "_elev", "_rand", "_stear", "_class"];
+    private ["_target", "_elev", "_rand", "_stear", "_respawn", "_class"];
 
     if (!isDedicated) then {
 
@@ -10,6 +10,7 @@ Olsen_FW_FNC_DOPARACHUTE = {
         _elev = _this select 1;
         _rand = 50;
         _stear = false;
+        _respawn = true;
         _class = "NonSteerable_Parachute_F";
         _doPara = false;
 
@@ -33,7 +34,7 @@ Olsen_FW_FNC_DOPARACHUTE = {
 
         if (typeName _target == "SIDE") then {
 
-            if (side player isEqualTo _target) then {
+            if (playerSide isEqualTo _target) then {
 
                 _doPara = true;
 
@@ -86,6 +87,13 @@ Olsen_FW_FNC_DOPARACHUTE = {
             },
             [_openingHeight, _class]
         ] call CBA_fnc_waitUntilAndExecute;
+
+        if (_respawn) then {
+
+            player setVariable ["spawnInParachute_parachuteRespawn", true];
+            player setVariable ["spawnInParachute_parachuteRespawnHeight", _openingHeight];
+
+        };
     };
 };
 

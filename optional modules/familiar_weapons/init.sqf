@@ -22,22 +22,22 @@ if (familiarWeapons_recoilPenalty < 1) then {
 
 familiarWeapons_familiarWeapons = [];
 
-if (side player == WEST) then {
+if (playerSide == WEST) then {
     {
         familiarWeapons_familiarWeapons pushBackUnique (toLower _x);
     } forEach familiarWeapons_weaponWhiteList_west;
 } else {
-    if (side player == EAST) then {
+    if (playerSide == EAST) then {
         {
             familiarWeapons_familiarWeapons pushBackUnique (toLower _x);
         } forEach familiarWeapons_weaponWhiteList_east;
     } else {
-        if (side player == independent) then {
+        if (playerSide == independent) then {
             {
                 familiarWeapons_familiarWeapons pushBackUnique (toLower _x);
             } forEach familiarWeapons_weaponWhiteList_ind;
         } else {
-            if (side player == civilian) then {
+            if (playerSide == civilian) then {
                 {
                     familiarWeapons_familiarWeapons pushBackUnique (toLower _x);
                 } forEach familiarWeapons_weaponWhiteList_civ;

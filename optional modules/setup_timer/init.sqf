@@ -51,7 +51,7 @@ if (hasInterface && !_aborted) then {
             };
 
             {
-                if (((_x select 0) == (side player)) && {(vehicle player) inArea (_x select 2)}) then {
+                if (((_x select 0) == (playerSide)) && {(vehicle player) inArea (_x select 2)}) then {
 
                     _marker = [(_x select 1), (_x select 2)];
 

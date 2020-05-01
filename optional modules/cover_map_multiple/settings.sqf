@@ -29,30 +29,30 @@ _AOMarkers = [
     ["AO_1",true,0.1,"Alternate Map",2]
 ];
 
-// additional possibilities for side based maps by checking side player
+// additional possibilities for side based maps by checking playerSide
 /*
-if (side player isEqualTo west) then {
+if (playerSide isEqualTo west) then {
     _AOMarkers = [
         ["AO",true,0.3,"Normal",1],
         ["AO_1",true,0.1,"Alternate Blufor",2]
     ];
 };
 
-if (side player isEqualTo independent) then {
+if (playerSide isEqualTo independent) then {
     _AOMarkers = [
         ["AO",true,0.3,"Normal",1],
         ["AO_2",true,0.1,"Alternate Indfor",2]
     ];
 };
 
-if (side player isEqualTo east) then {
+if (playerSide isEqualTo east) then {
     _AOMarkers = [
         ["AO",true,0.3,"Normal",1],
         ["AO_2",true,0.1,"Alternate Opfor",2]
     ];
 };
 
-if (side player isEqualTo civilian) then {
+if (playerSide isEqualTo civilian) then {
     _AOMarkers = [
         ["AO",true,0.3,"Normal",1],
         ["AO_2",true,0.1,"Alternate Civ",2]

@@ -24,7 +24,12 @@ params [
 private _count = 0;
 
 {
-    if ((side _x == _side) && (!(_x getVariable ["FW_DontTrack", false]) || !_noUntracked) && ((_x distance _logic) < _radius) && (_x call Olsen_FW_FNC_Alive)) then {
+    if (
+        (_x call Olsen_FW_FNC_getOriginalSide) == _side
+        && {_x call Olsen_FW_FNC_Alive}
+        && {!_noUntracked || {!(_x getVariable ["FW_DontTrack", false])}}
+        && {(_x distance _logic) < _radius}
+    ) then {
 
         _count = _count + 1;
 

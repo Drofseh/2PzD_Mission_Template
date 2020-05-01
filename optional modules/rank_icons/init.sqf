@@ -10,7 +10,7 @@ if (hasInterface) then {
 
         params ["_rolePrep01","_rolePrep02","_rolePrep03","_role","_rank"];
 
-        switch (side player) do {
+        switch (playerSide) do {
             case east : {
                 _rolePrep01 = roleDescription player;
 

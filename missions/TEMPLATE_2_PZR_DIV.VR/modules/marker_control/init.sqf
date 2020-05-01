@@ -19,7 +19,7 @@ if (hasInterface) then {
     #include "settings.sqf"
 
     {
-        if ((_x select 0) != (side player)) then {
+        if ((_x select 0) != (playerSide)) then {
             (_x select 1) setMarkerAlphaLocal 0;
         };
     } forEach _markers;

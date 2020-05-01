@@ -27,7 +27,7 @@ if (hasInterface) then {
             _vehicle = (vehicle player);
 
             {
-                if ((_x select 0) == (side player) || (_x select 0) == ANY) then {
+                if ((_x select 0) == playerSide || (_x select 0) == ANY) then {
                     _markers set [count _markers, (_x select 1)];
 
                     if (_vehicle inArea (_x select 1)) then {

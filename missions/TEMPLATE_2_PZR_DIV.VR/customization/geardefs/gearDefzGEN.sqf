@@ -135,6 +135,20 @@
 #define GEN_Watch               "ItemWatch"
 #define GEN_Whistle             "fow_i_whistle"
 
+//Triple Misc
+#define GEN_Money_notes         "Money"
+#define GEN_Money_pile          "Money_bunch"
+#define GEN_Money_roll          "Money_roll"
+#define GEN_Money_stack         "Money_stack"
+#define GEN_Money_stack_large   "Money_stack_quest"
+#define GEN_File                "DocumentsSecret"
+#define GEN_Files               "Files"
+#define GEN_Files_TopSecret1    "FilesSecret"
+#define GEN_Files_TopSecret2    "FileTopSecret"
+#define GEN_Journal             "Files_diary"
+#define GEN_NetworkStructure    "FileNetworkStructure"
+#define GEN_ResearchNotes       "Files_researchNotes"
+
 //Radio
 #define GEN_Radio_HH            "ACRE_PRC343"
 #define GEN_Radio_BP            "ACRE_PRC77"

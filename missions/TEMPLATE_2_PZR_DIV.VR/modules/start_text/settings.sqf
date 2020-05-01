@@ -17,7 +17,7 @@ Characters with diacritics such as ö will render a blank space instead of the ch
 "Operation Sturmmöwe will display as "Operation Sturmm we"
 */
 
-switch (side player) do { //Checks what team the player is on
+switch (playerSide) do { //Checks what team the player is on
     // If none of the cases below match the player's side then the player will receive the default message
     // Uncomment and use this if you want every single player on the server to receive the same message regardless of the side they are on
     // If you want a different message per side, uncomment and use the side based cases below

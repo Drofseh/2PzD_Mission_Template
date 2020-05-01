@@ -8,7 +8,7 @@
 if (hasInterface) then {
 
     if (_useSideSpecificAO) then {
-        switch (side player) do {
+        switch (playerSide) do {
             case west: {
                 _marker = _markerWest;
             };

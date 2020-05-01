@@ -106,6 +106,31 @@ Olsen_FW_FNC_MagazineConversion_CreateChildActions = {
                         private _actionNewMagazine = [_NewMag,_actionNameNewMag,_pictureNewMagazine,_statementNewMagazine,_conditionNewMagazine,{},_parametersNewMagazine] call ace_interact_menu_fnc_createAction;
 
                         [player, 1, ["ACE_SelfActions","Magazine Conversion", _OldMag], _actionNewMagazine] call ace_interact_menu_fnc_addActionToObject;
+
+                        [
+                            "#Magazine", // item
+                            ["CONTAINER", "MAGAZINE"], // slots
+                            [
+                                (format ["Convert into %2", _actionNameNewMag]), // display name
+                                (format ["%1 %2", _actionNameOldMag, _actionNameNewMag]) // tool tip
+                            ],
+                            [], // colour
+                            _pictureNewMagazine, // icon
+                            [
+                                {true}, //conditionEnable
+                                {true} // conditionShow
+                            ],
+                            { // statement
+                                (findDisplay 602) closeDisplay 1;
+                                [] call Olsen_FW_FNC_MagazineConversion_CreateChildActions;
+
+                                _OldMag = (_this select 4) select 0;
+                                _NewMag = (_this select 4) select 1;
+                                [_OldMag,_NewMag] call Olsen_FW_FNC_MagazineConversion_ConvertMag;
+                            },
+                            false,
+                            _parametersNewMagazine // params
+                        ] call CBA_fnc_addItemContextMenuOption;
                     };
 
                     // set that the NEW MAG interaction point has been created for this magazine so it doesn't create them again

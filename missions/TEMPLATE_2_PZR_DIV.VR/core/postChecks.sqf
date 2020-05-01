@@ -23,7 +23,7 @@ if (hasInterface) then {
 
     if (FW_RespawnTickets > 0) then {
 
-        _respawnName = toLower(format ["fw_%1_respawn", side player]);
+        _respawnName = toLower(format ["fw_%1_respawn", playerSide]);
         _respawnPoint = missionNamespace getVariable [_respawnName, objNull];
 
         if (isNull(_respawnPoint)) then {

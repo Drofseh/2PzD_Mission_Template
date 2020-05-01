@@ -42,7 +42,7 @@ if (hasInterface) then { //This scope is for the players
     //[[1,2], [0]] call ace_spectator_fnc_updateCameraModes; //Set ACE Spectator camera modes. Should only be enabled for TvT. See https://ace3mod.com/wiki/framework/spectator-framework.html#44-addremove-available-camera-modes
     //[[-2], [-1,0,1,2,3,4,5,6,7]] call ace_spectator_fnc_updateVisionModes; //Set ACE Spectator camera vision mods. Should only be enabled for TvT. See https://ace3mod.com/wiki/framework/spectator-framework.html#45-addremove-available-vision-modes
     
-    switch (side player) do { // Sets respawn tickets and sides visible in spectator, based on player side.
+    switch (playerSide) do { // Sets respawn tickets and sides visible in spectator, based on player side.
         case west: {
             FW_RespawnTickets = 0; //If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_west_respawn
             FW_SpectatorSides = [[west], [east,independent,civilian]]; //[[allowed sides],[disallowed sides]] move a side to the other array to change it's visibility.  Example: [[west,independent], [east,civilian]]

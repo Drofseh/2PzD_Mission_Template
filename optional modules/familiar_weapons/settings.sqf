@@ -1,4 +1,4 @@
-// This module hives a penalty when using unfamiliar weapons which goes away with enough use.
+// This module gives a penalty when using unfamiliar weapons which goes away with enough use.
 
 // ====== General Settings
 
