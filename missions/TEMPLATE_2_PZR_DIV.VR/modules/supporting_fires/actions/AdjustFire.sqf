@@ -1,9 +1,9 @@
 
     // ===== Add Adjust Fire from Last Target
     _conditionAdjust       = {
-            (side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {"TargetLast" == supportFire_targetType}
-        || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {"TargetLast" == supportFire_targetType}}
-        || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {"TargetLast" == supportFire_targetType}}
+            ((playerSide) isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {"TargetLast" == supportFire_targetType}
+        || {((playerSide) isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {"TargetLast" == supportFire_targetType}}
+        || {((playerSide) isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {"TargetLast" == supportFire_targetType}}
     };
     _statementAdjust = {
         if (supportFire_adjustmentCoords isEqualTo [0,0]) then {

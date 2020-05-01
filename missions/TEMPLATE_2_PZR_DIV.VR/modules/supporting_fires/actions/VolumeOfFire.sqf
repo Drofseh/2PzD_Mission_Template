@@ -8,9 +8,9 @@
 
         // 1 Round, HE
         _conditionVolumeHE1     = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountWEST > 0})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountEAST > 0}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountGUER > 0}}
+               ((playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountWEST > 0})
+            || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountEAST > 0}}
+            || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountGUER > 0}}
         };
         _statementVolumeHE1 = {
             [["1 round HE selected."], true] call CBA_fnc_notify;
@@ -21,9 +21,9 @@
 
         // 5 Rounds, HE
         _conditionVolumeHE5     = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountWEST > 4})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountEAST > 4}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountGUER > 4}}
+               ((playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountWEST > 4})
+            || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountEAST > 4}}
+            || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountGUER > 4}}
         };
         _statementVolumeHE5 = {
             [["5 rounds HE selected."], true] call CBA_fnc_notify;
@@ -34,9 +34,9 @@
 
         // 10 Rounds, HE
         _conditionVolumeHE10    = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountWEST > 9})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountEAST > 9}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountGUER > 9}}
+               ((playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountWEST > 9})
+            || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountEAST > 9}}
+            || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountGUER > 9}}
         };
         _statementVolumeHE10 = {
             [["10 rounds HE selected."], true] call CBA_fnc_notify;
@@ -47,9 +47,9 @@
 
         // 15 Rounds, HE
         _conditionVolumeHE15    = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountWEST > 14})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountEAST > 14}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountGUER > 14}}
+               ((playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountWEST > 14})
+            || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountEAST > 14}}
+            || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountGUER > 14}}
         };
         _statementVolumeHE15 = {
             [["15 rounds HE selected."], true] call CBA_fnc_notify;
@@ -60,9 +60,9 @@
 
         // 20 Rounds, HE
         _conditionVolumeHE20    = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountWEST > 19})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountEAST > 19}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountGUER > 19}}
+               ((playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountWEST > 19})
+            || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountEAST > 19}}
+            || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountGUER > 19}}
         };
         _statementVolumeHE20 = {
             [["20 rounds HE selected."], true] call CBA_fnc_notify;
@@ -73,9 +73,9 @@
 
         // 25 Rounds, HE
         _conditionVolumeHE25    = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountWEST > 24})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountEAST > 24}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountGUER > 24}}
+               ((playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountWEST > 24})
+            || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountEAST > 24}}
+            || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "HE"} && {supportFire_shellsHE_AmmoCountGUER > 24}}
         };
         _statementVolumeHE25 = {
             [["25 rounds HE selected."], true] call CBA_fnc_notify;
@@ -86,9 +86,9 @@
 
         // Target 01, 1 Round, Smoke
         _conditionVolumeSmoke1  = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountWEST > 0})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountEAST > 0}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountGUER > 0}}
+               ((playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountWEST > 0})
+            || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountEAST > 0}}
+            || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountGUER > 0}}
         };
         _statementVolumeSmoke1 = {
             [["1 round smoke selected."], true] call CBA_fnc_notify;
@@ -99,9 +99,9 @@
 
         // Target 01, 5 Rounds, Smoke
         _conditionVolumeSmoke5  = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountWEST > 4})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountEAST > 4}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountGUER > 4}}
+               ((playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountWEST > 4})
+            || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountEAST > 4}}
+            || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountGUER > 4}}
         };
         _statementVolumeSmoke5 = {
             [["5 rounds smoke selected."], true] call CBA_fnc_notify;
@@ -112,9 +112,9 @@
 
         // Target 01, 10 Rounds, Smoke
         _conditionVolumeSmoke10 = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountWEST > 9})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountEAST > 9}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountGUER > 9}}
+               ((playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountWEST > 9})
+            || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountEAST > 9}}
+            || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "Smoke"} && {supportFire_shellsSmoke_AmmoCountGUER > 9}}
         };
         _statementVolumeSmoke10 = {
             [["10 rounds smoke selected."], true] call CBA_fnc_notify;
@@ -125,9 +125,9 @@
 
         // Target 01, 1 Round, Flare
         _conditionVolumeFlare1  = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "Flare"} && {supportFire_shellsFlare_AmmoCountWEST > 0})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "Flare"} && {supportFire_shellsFlare_AmmoCountEAST > 0}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "Flare"} && {supportFire_shellsFlare_AmmoCountGUER > 0}}
+               ((playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "Flare"} && {supportFire_shellsFlare_AmmoCountWEST > 0})
+            || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "Flare"} && {supportFire_shellsFlare_AmmoCountEAST > 0}}
+            || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "Flare"} && {supportFire_shellsFlare_AmmoCountGUER > 0}}
         };
         _statementVolumeFlare1 = {
             [["1 round flare selected."], true] call CBA_fnc_notify;
@@ -138,9 +138,9 @@
 
         // Target 01, 5 Rounds, Flare
         _conditionVolumeFlare5  = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "Flare"} && {supportFire_shellsFlare_AmmoCountWEST > 4})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "Flare"} && {supportFire_shellsFlare_AmmoCountEAST > 4}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "Flare"} && {supportFire_shellsFlare_AmmoCountGUER > 4}}
+               ((playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType == "Flare"} && {supportFire_shellsFlare_AmmoCountWEST > 4})
+            || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType == "Flare"} && {supportFire_shellsFlare_AmmoCountEAST > 4}}
+            || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType == "Flare"} && {supportFire_shellsFlare_AmmoCountGUER > 4}}
         };
         _statementVolumeFlare5 = {
             [["5 rounds flare selected."], true] call CBA_fnc_notify;

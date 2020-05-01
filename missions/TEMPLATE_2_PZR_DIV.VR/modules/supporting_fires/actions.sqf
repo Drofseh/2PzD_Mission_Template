@@ -6,38 +6,38 @@ _supportingFireActions = call {
     _conditionFires        = {call acre_api_fnc_getCurrentRadio != ""};
 
     _conditionTargets      = {
-            (side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsHE_AmmoCountWEST > 0 || supportFire_shellsSmoke_AmmoCountWEST > 0 || supportFire_shellsFlare_AmmoCountWEST > 0}
-        || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_shellsHE_AmmoCountEAST > 0 || supportFire_shellsSmoke_AmmoCountEAST > 0 || supportFire_shellsFlare_AmmoCountEAST > 0}}
-        || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_shellsHE_AmmoCountGUER > 0 || supportFire_shellsSmoke_AmmoCountGUER > 0 || supportFire_shellsFlare_AmmoCountGUER > 0}}
+            (playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsHE_AmmoCountWEST > 0 || supportFire_shellsSmoke_AmmoCountWEST > 0 || supportFire_shellsFlare_AmmoCountWEST > 0}
+        || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_shellsHE_AmmoCountEAST > 0 || supportFire_shellsSmoke_AmmoCountEAST > 0 || supportFire_shellsFlare_AmmoCountEAST > 0}}
+        || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_shellsHE_AmmoCountGUER > 0 || supportFire_shellsSmoke_AmmoCountGUER > 0 || supportFire_shellsFlare_AmmoCountGUER > 0}}
     };
 
     _conditionVisual      = {
-            (!visibleMap) && {side player isEqualTo WEST}       && {supportFire_fireMissionAvailableWEST}
-        || {(!visibleMap) && {side player isEqualTo EAST}       && {supportFire_fireMissionAvailableEAST}}
-        || {(!visibleMap) && {side player isEqualTo RESISTANCE} && {supportFire_fireMissionAvailableGUER}}
+            (!visibleMap) && {playerSide isEqualTo WEST}       && {supportFire_fireMissionAvailableWEST}
+        || {(!visibleMap) && {playerSide isEqualTo EAST}       && {supportFire_fireMissionAvailableEAST}}
+        || {(!visibleMap) && {playerSide isEqualTo RESISTANCE} && {supportFire_fireMissionAvailableGUER}}
     };
 
     _conditionRepeat       = {
-            (side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_previousTarget == supportFire_targetType}
-        || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_previousTarget == supportFire_targetType}}
-        || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_previousTarget == supportFire_targetType}}
+            (playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_previousTarget == supportFire_targetType}
+        || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_previousTarget == supportFire_targetType}}
+        || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_previousTarget == supportFire_targetType}}
     };
 
     _conditionCheck        = {
-            (side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST}
-        || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST}}
-        || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER}}
+            (playerSide isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST}
+        || {(playerSide isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST}}
+        || {(playerSide isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER}}
     };
 
     _conditionFiring       = {
-            (side player isEqualTo WEST)       && {!supportFire_fireMissionAvailableWEST}
-        || {(side player isEqualTo EAST)       && {!supportFire_fireMissionAvailableEAST}}
-        || {(side player isEqualTo RESISTANCE) && {!supportFire_fireMissionAvailableGUER}}
+            (playerSide isEqualTo WEST)       && {!supportFire_fireMissionAvailableWEST}
+        || {(playerSide isEqualTo EAST)       && {!supportFire_fireMissionAvailableEAST}}
+        || {(playerSide isEqualTo RESISTANCE) && {!supportFire_fireMissionAvailableGUER}}
     };
 
     // ===== Add supporting fires interaction
     _statementFires = {
-        if (side player isEqualTo civilian) then {
+        if (playerSide isEqualTo civilian) then {
             [["Return possession of this radio to the appropriate military authorities."], true] call CBA_fnc_notify;
         } else {
             [["Select a target, type of ammunition, and number of rounds, then call the fire mission."], true] call CBA_fnc_notify;
@@ -47,7 +47,7 @@ _supportingFireActions = call {
     [player, 1, ["ACE_SelfActions"], _actionFires] call ace_interact_menu_fnc_addActionToObject;
 
     // ===== Add action to check remaining ammunition
-    _statementRounds = {[(side player),true] call Olsen_FW_FNC_SupportFire_AmmoCheck; };
+    _statementRounds = {[(playerSide),true] call Olsen_FW_FNC_SupportFire_AmmoCheck; };
     _actionRounds = ["Check Ammo Supply","Check Ammo Supply","Haas_WWII_Rebalance\UI\icon_supporting_fires_ammo.paa",_statementRounds,_conditionCheck] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires"], _actionRounds] call ace_interact_menu_fnc_addActionToObject;
 
@@ -77,7 +77,7 @@ _supportingFireActions = call {
 
     // ===== Add Fire Mission
     _statementFireMission = {
-        [(side player), supportFire_ammoType, supportFire_volumeOfFire, supportFire_targetType, supportFire_adjustmentCoords] call Olsen_FW_FNC_SupportFire_FireMission;
+        [(playerSide), supportFire_ammoType, supportFire_volumeOfFire, supportFire_targetType, supportFire_adjustmentCoords] call Olsen_FW_FNC_SupportFire_FireMission;
     };
     _actionFireMission = ["Confirm!","Confirm!","Haas_WWII_Rebalance\UI\icon_supporting_fires.paa",_statementFireMission,{true}] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions","Supporting Fires","Call for Fire"], _actionFireMission] call ace_interact_menu_fnc_addActionToObject;

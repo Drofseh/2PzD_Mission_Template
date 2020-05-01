@@ -30,13 +30,12 @@ Olsen_FW_FNC_SupportFire_SetTargetGrid = {
         [format ["East:  %1 - North: %2", _supportFire_TargetGrid_gridX, _supportFire_TargetGrid_gridY]]
     ] call CBA_fnc_notify;
 
-    supportFire_gridTargetName = format ["Grid %1 %2", _supportFire_TargetGrid_gridX, _supportFire_TargetGrid_gridY];
-
     _supportFire_TargetGrid_gridX = (parseNumber _supportFire_TargetGrid_gridX) * 100 + 50;
     _supportFire_TargetGrid_gridY = (parseNumber _supportFire_TargetGrid_gridY) * 100 + 50;
 
     supportFire_targetGrid = [_supportFire_TargetGrid_gridX,_supportFire_TargetGrid_gridY,0];
     supportFire_targetType = "TargetGrid";
+    supportFire_gridTargetName = format ["Grid %1 %2", _supportFire_TargetGrid_gridX, _supportFire_TargetGrid_gridY];
 
     //hint format ["TarX: %1 - Y: %2", _supportFire_TargetGrid_gridX, _supportFire_TargetGrid_gridY];
     //systemChat format ["X: %1 - Y: %2", _supportFire_TargetGrid_gridX, _supportFire_TargetGrid_gridY];

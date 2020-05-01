@@ -1,9 +1,9 @@
 
 // [side, type, number, target, [adjustmentX,Y]]
-// [(side player), "HE", 5, "Target01", [0,0]] call Olsen_FW_FNC_SupportFire_FireMission;
+// [(playerSide), "HE", 5, "Target01", [0,0]] call Olsen_FW_FNC_SupportFire_FireMission;
 Olsen_FW_FNC_SupportFire_FireMission = {
     params [
-        ["_supportFire_side", side player],
+        ["_supportFire_side", playerSide],
         ["_supportFire_type", "Smoke"],
         ["_supportFire_number", 1],
         ["_supportFire_target", "TargetVisual"],
@@ -68,7 +68,7 @@ Olsen_FW_FNC_SupportFire_FireMission = {
     if (_supportFire_ammoLeft < 0) exitWith {
         // systemChat "Fire mission canceled";
         [[(format ["Negative, not enough %1 rounds available.", _supportFire_type])], true] call CBA_fnc_notify;
-        [(side player),false] call Olsen_FW_FNC_SupportFire_AmmoCheck;
+        [(playerSide),false] call Olsen_FW_FNC_SupportFire_AmmoCheck;
     };
 
     // make fire missions unavailable for that side

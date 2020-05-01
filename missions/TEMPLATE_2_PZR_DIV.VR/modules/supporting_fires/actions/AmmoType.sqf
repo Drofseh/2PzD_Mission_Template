@@ -8,9 +8,9 @@
 
         // HE
         _conditionAmmoType_HE     = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsHE_AmmoCountWEST > 0})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_shellsHE_AmmoCountEAST > 0}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_shellsHE_AmmoCountGUER > 0}}
+               (((playerSide) isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsHE_AmmoCountWEST > 0})
+            || {((playerSide) isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_shellsHE_AmmoCountEAST > 0}}
+            || {((playerSide) isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_shellsHE_AmmoCountGUER > 0}}
         };
         _statementAmmoType_HE = {
             [["HE ammunition selected."],["Select the number of rounds to fire."], true] call CBA_fnc_notify;
@@ -21,9 +21,9 @@
 
         // Smoke
         _conditionAmmoType_Smoke  = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsSmoke_AmmoCountWEST > 0})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_shellsSmoke_AmmoCountEAST > 0}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_shellsSmoke_AmmoCountGUER > 0}}
+               (((playerSide) isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsSmoke_AmmoCountWEST > 0})
+            || {((playerSide) isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_shellsSmoke_AmmoCountEAST > 0}}
+            || {((playerSide) isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_shellsSmoke_AmmoCountGUER > 0}}
         };
         _statementAmmoType_Smoke = {
             [["Smoke ammunition selected."],["Select the number of rounds to fire."], true] call CBA_fnc_notify;
@@ -34,9 +34,9 @@
 
         // Flare
         _conditionAmmoType_Flare  = {
-               ((side player isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsFlare_AmmoCountWEST > 0})
-            || {(side player isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_shellsFlare_AmmoCountEAST > 0}}
-            || {(side player isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_shellsFlare_AmmoCountGUER > 0}}
+               (((playerSide) isEqualTo WEST)       && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsFlare_AmmoCountWEST > 0})
+            || {((playerSide) isEqualTo EAST)       && {supportFire_fireMissionAvailableEAST} && {supportFire_shellsFlare_AmmoCountEAST > 0}}
+            || {((playerSide) isEqualTo RESISTANCE) && {supportFire_fireMissionAvailableGUER} && {supportFire_shellsFlare_AmmoCountGUER > 0}}
         };
         _statementAmmoType_Flare = {
             [["Flare ammunition selected."],["Select the number of rounds to fire."], true] call CBA_fnc_notify;

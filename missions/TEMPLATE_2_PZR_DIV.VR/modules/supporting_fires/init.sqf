@@ -167,7 +167,7 @@ supportFire_volumeOfFire = 1;
 supportFire_adjustmentCoords = [0,0];
 supportFire_adjustmentDirection = "no adjustment";
 
-if (side player == WEST) then {
+if (playerSide == WEST) then {
     supportFire_target01 = supportFire_target01WEST;
     supportFire_target02 = supportFire_target02WEST;
     supportFire_target03 = supportFire_target03WEST;
@@ -201,7 +201,7 @@ if (side player == WEST) then {
     };
 };
 
-if (side player == EAST) then {
+if (playerSide == EAST) then {
     supportFire_target01 = supportFire_target01EAST;
     supportFire_target02 = supportFire_target02EAST;
     supportFire_target03 = supportFire_target03EAST;
@@ -235,7 +235,7 @@ if (side player == EAST) then {
     };
 };
 
-if (side player == independent) then {
+if (playerSide == independent) then {
     supportFire_target01 = supportFire_target01GUER;
     supportFire_target02 = supportFire_target02GUER;
     supportFire_target03 = supportFire_target03GUER;
