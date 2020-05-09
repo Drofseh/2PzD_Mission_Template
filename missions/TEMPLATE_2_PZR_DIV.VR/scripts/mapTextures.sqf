@@ -6,9 +6,7 @@
 
         waitUntil {!isNull (findDisplay _display)};
 
-        if (!isNull (findDisplay _display)) then {
-            ctrlActivate ((findDisplay _display) displayCtrl 1201);
-            ctrlActivate ((findDisplay _display) displayCtrl 107);
-        };
+        ctrlActivate ((findDisplay _display) displayCtrl 1201);
+        ctrlActivate ((findDisplay _display) displayCtrl 107);
     };
 } forEach [12,37,52,53,129];
