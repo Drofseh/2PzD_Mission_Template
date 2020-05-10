@@ -21,7 +21,7 @@ if (hasInterface) then {
     [] spawn {
         waitUntil { !isNull acre_player };
 
-        private _side = side player;
+        private _side = playerSide;
         private _customSide = (player getVariable ["FW_CustomScramble", nil]);
 
         /*
