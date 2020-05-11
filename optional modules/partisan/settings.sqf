@@ -6,7 +6,7 @@
 //==== Partisan Side
 // Pick one or more of west, east, or resistance.
 // Do not choose civilian.
-// More than one can be chosen.
+// Up to two can be chosen.
 // This must be an array, even if there is only one side chosen (it has to have [] around the sides).
 // Having more than one side in the array allows you to have multiple partisan groups for either coop or TvT.
 // Make sure that these sides are set to be hostile to the Enemy Side in the editor.
@@ -60,10 +60,17 @@ Partisan_enemyHeadgear = [];
 // List of classnames for black list and enemy vehicles.
 // The classnames must be strings (wrapped in double quotes "")
 // Works similarly to the the gear restrictions.
+// Whitelisted vehicles are always allowed.
 // To be in a enemy vehicle the player must be wearing an enemy outfit.
 // Blacklisted vehicles are always forbidden, even in an enemy outfit.
 
-// For example: Partisan_enemyVehicle = ["fow_v_sdkfz_251_camo_ger_heer"];
+/* For example:
+Partisan_whitelistVehicle = ["fow_v_truppenfahrrad_ger_heer","LIB_GazM1","LIB_GazM1_dirty"];
+Partisan_blacklistVehicle = ["LIB_GazM1_FFI","LIB_GazM1_FFI_camo","LIB_GazM1_FFI_sand","LIB_GazM1_FFI_camo_sand"];
+Partisan_enemyVehicle = ["fow_v_sdkfz_251_camo_ger_heer"];
+*/
+
+Partisan_whitelistVehicle = [];
 
 Partisan_blacklistVehicle = [];
 

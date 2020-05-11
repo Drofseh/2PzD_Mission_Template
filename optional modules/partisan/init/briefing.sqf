@@ -41,15 +41,23 @@ player createDiarySubject ["Partisan", "Partisan"];
 
 player createDiaryRecord ["Partisan",["Gear Lists", format ["
     <br/><font color='#70db70' size='16'>Forbidden Gear:</font>
+    <br/>These vehicles are allowed at any time.
+    <br/>%1
+    <br/>
+    <br/><font color='#70db70' size='16'>Forbidden Gear:</font>
+    <br/>These items will make the enemy shoot on sight.
     <br/>%1
     <br/>
     <br/><font color='#70db70' size='16'>Forbidden Vehicles:</font>
+    <br/>These vehicles will make the enemy shoot on sight.
     <br/>%2
     <br/>
     <br/><font color='#70db70' size='16'>Enemy Gear:</font>
+    <br/>These items are used by the enemy.
     <br/>%3
     <br/>
     <br/><font color='#70db70' size='16'>Enemy Vehicles:</font>
+    <br/>These vehicles are used by the enemy.
     <br/>%4
 ", _blacklistGear, _blacklistVehicles, _enemyGear, _enemyVehicles]]];
 
@@ -125,9 +133,8 @@ player createDiaryRecord ["Partisan",["How It Works","
     <br/>Once it gets low enough the enemy will stop being hostile to you.
     <br/>
     <br/><font color='#FF8C00' size='16'>Notoriety</font>
-    <br/>Each time the enemy become hostile to you it increases your notoriety a small amount.
-    <br/>This in turn effects how quickly the enemy will become hostile in the future.
-    <br/>The more notorious you are the more likely the enemy is to recognize you as a partisan and become hostile.
+    <br/>Each time the enemy become hostile to you or you kill and enemy it increases your notoriety a small amount.
+    <br/>The more notorious you are the more likely the enemy is to recognize you as a partisan and become hostile in the future.
     <br/>If you are killed your notoriety resets to 0.
 "]];
 

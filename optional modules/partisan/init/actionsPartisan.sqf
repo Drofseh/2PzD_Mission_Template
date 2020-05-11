@@ -7,23 +7,6 @@ _statementPartisanMain = {
 _actionPartisanMain = ["Partisan","Partisan","",_statementPartisanMain,_conditionPartisanMain] call ace_interact_menu_fnc_createAction;
 ["Man", 0, ["ACE_SelfActions"], _actionPartisanMain] call ace_interact_menu_fnc_addActionToObject;
 
-//===== Add pistol permit action
-_conditionIdCard = {true};
-_statementIdCard = {
-    if ("Wallet_ID" in (vestitems player + uniformitems player + backpackitems player)) then {
-        _selfMessage = format ["You have shown your ID card to %1.", name _target];
-        _outMessage = format ["%1 shows you a valid ID card.", name player];
-        [[_selfMessage], true] call cba_fnc_notify;
-        [
-            [_outMessage], true
-        ] remoteExec ["cba_fnc_notify", _target];
-    } else {
-        "You don't have any ID with you." call cba_fnc_notify;
-    };
-};
-_actionIdCard = ["Show ID Card","Show ID Card","",_statementIdCard,_conditionIdCard] call ace_interact_menu_fnc_createAction;
-["Man", 0, ["ACE_MainActions"], _actionIdCard, true] call ace_interact_menu_fnc_addActionToClass;
-
 //===== Create main Partisan self interaction node
 _conditionPartisanMain = {true};
 _statementPartisanMain = {

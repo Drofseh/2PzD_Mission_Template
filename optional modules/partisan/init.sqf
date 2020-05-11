@@ -1,17 +1,18 @@
 ["Partisan", "Allows players on a side to blend in with enemy AI as long as they don't do anything suspicious or hostile.", "Wilhelm Haas (Drofseh)"] call Olsen_FW_FNC_RegisterModule;
 
 #include "settings.sqf"
+#include "init\FNC_Partisan_Main.sqf"
+#include "init\FNC_Partisan_ZeusPunishLimiter.sqf"
 
 if !((typeName Partisan_sidePartisan) isEqualTo "ARRAY") then {
     Partisan_sidePartisan = [Partisan_sidePartisan];
 };
+
 {
     if !((typeName _x) isEqualTo "STRING") then {
-        
         Partisan_blacklistVehicle = set [index, str _x];
     };
 } forEach Partisan_blacklistVehicle;
-
 
 ["CAManBase", "Killed", {
     params ["_unit", "_killer", "_lastDamageSource","_unitSide","_killerSide","_clientID"];
@@ -47,7 +48,6 @@ if (hasInterface) then {
     if (playerSide in Partisan_sidePartisan) then {
 
         #include "init\actionsPartisan.sqf"
-        #include "init\FNC_Partisan_Main.sqf"
 
         player setVariable ["Partisan Safety Rating", 0];
         player setVariable ["Partisan Notoriety", 0, true];
@@ -84,5 +84,59 @@ if (hasInterface) then {
 
     if (!(playerSide in Partisan_sidePartisan)) then {
         #include "init\actionsEnemy.sqf"
+    };
+
+    if (!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}) then {
+        call Olsen_FW_FNC_Partisan_ZeusPunishLimiter;
+    };
+
+    //===== Add ID Card action
+    _conditionIdCard = {true};
+    _statementIdCard = {
+        if ("Wallet_ID" in (vestitems player + uniformitems player + backpackitems player)) then {
+            _selfMessage = format ["You have shown your ID card to %1.", name _target];
+            _outMessage = format ["%1 shows you a valid ID card.", name player];
+            [[_selfMessage], true] call cba_fnc_notify;
+            [
+                [_outMessage], true
+            ] remoteExec ["cba_fnc_notify", _target];
+        } else {
+            "You don't have any ID with you." call cba_fnc_notify;
+        };
+    };
+    _actionIdCard = ["Show ID Card","Show ID Card","",_statementIdCard,_conditionIdCard] call ace_interact_menu_fnc_createAction;
+    ["Man", 0, ["ACE_MainActions"], _actionIdCard, true] call ace_interact_menu_fnc_addActionToClass;
+
+    //===== Add Secret Partisan Sign action
+    _conditionHandSign = {true};
+    _statementHandSign = {
+        _selfMessage = "";
+        _outMessage = "";
+
+        if (playerSide in Partisan_sidePartisan) then {
+            _selfMessage = format ["You have shown %1 the secret hand sign your group uses.", name _target];
+        } else {
+            _selfMessage = "You make a hand sign but you don't think it's correct";
+        };
+
+        if ((_target getVariable ["FW_OriginalSide", side _target]) isEqualTo playerSide)) then {
+            _outMessage = format ["%1 makes the correct hand sign.", name player];
+        } else {
+            _outMessage = format ["%1 makes a hand sign but it doesn't look right.", name player];
+        };
+
+        [[_selfMessage], true] call cba_fnc_notify;
+
+        [
+            [_outMessage], true
+        ] remoteExec ["cba_fnc_notify", _target];
+    };
+    _actionHandSign = ["Show Secret Hand Sign","Show Secret Hand Sign","",_statementHandSign,_conditionHandSign] call ace_interact_menu_fnc_createAction;
+    ["Man", 0, ["ACE_MainActions"], _actionHandSign, true] call ace_interact_menu_fnc_addActionToClass;
+
+    if (!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}) then {
+        [{
+            call Olsen_FW_FNC_Partisan_ZeusPunishLimiter;
+        },[],1] call CBA_fnc_waitAndExecute;
     };
 };

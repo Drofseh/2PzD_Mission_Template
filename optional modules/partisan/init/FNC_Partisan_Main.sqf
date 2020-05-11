@@ -1,18 +1,27 @@
 
 Olsen_FW_FNC_Partisan_Main = {
+
+    {
+        call Olsen_FW_FNC_Partisan_Main;
+    }, [], 1] call CBA_fnc_waitAndExecute;
+
+    if (player getVariable ["ace_captives_isSurrendering", false] || {player getVariable ["ace_captives_isHandcuffed", false]}) exitWith {
+        player setCaptive true;
+    };
+
+    //systemChat format ["Hostility: %1", rating player];
+    //systemChat format ["Speed: %1", speed player];
+
     private _currentRating = player getVariable ["Partisan Safety Rating", 0];
     private _currentNotoriety = player getVariable ["Partisan Notoriety", 0];
     private _punish = false;
 
+    // prevent rating from going too low or high
     if (_currentRating > 0) then {
         player setVariable ["Partisan Safety Rating", 0];
     };
-
-    if (_currentRating > -4) then {
-        if !(captive player) then {
-            [["You think you're not suspicious anymore."], true] call CBA_fnc_notify;
-            player setCaptive true;
-        };
+    if (_currentRating < -120) then {
+        player setVariable ["Partisan Safety Rating", -120];
     };
 
     // reduce rating if player has wrong gear, moves too fast, or is too closer to an enemy.
@@ -30,7 +39,9 @@ Olsen_FW_FNC_Partisan_Main = {
         private _badGuyBackpack = false;
         private _badGuyOutfit = false;
 
+        private _vehicleIsPlayer = _vehicle isEqualTo player;
         private _typeOfVehicle = typeOf _vehicle;
+
         private _nearestMen = player nearObjects ["Man", (2 + (_currentNotoriety / 10))];
 
         if (_uniform isEqualTo "") then {
@@ -101,13 +112,21 @@ Olsen_FW_FNC_Partisan_Main = {
                 _punish = True;
             };
 
-            if ((_typeOfVehicle) in Partisan_enemyVehicle) then {
+            if (!_vehicleIsPlayer && {_typeOfVehicle in Partisan_enemyVehicle || {_typeOfVehicle in Partisan_whitelistVehicle}}) then {
                 _punish = true;
             };
         } else {
             if !(weaponLowered player) then {
                 _punish = True;
             };
+
+            if (!_vehicleIsPlayer && {!(_typeOfVehicle in Partisan_whitelistVehicle)}) then {
+                _punish = true;
+            };
+        };
+
+        if (!_vehicleIsPlayer && {_typeOfVehicle in Partisan_blacklistVehicle}) then {
+            _punish = true;
         };
 
         {
@@ -124,23 +143,14 @@ Olsen_FW_FNC_Partisan_Main = {
         player setVariable ["Partisan Safety Rating", _currentRating + 1];
     };
 
-    // Set player to hostile if rating too low.
-    if (_currentRating <= -4) then {
-        if (captive player) then {
-            player setVariable ["Partisan Notoriety", _currentNotoriety + 1];
-            player setCaptive false;
-            [["You've acted in a suspicious manner."], true] call CBA_fnc_notify;
-        };
+    // Abuse setCaptive to change player side depending on rating
+    if (_currentRating > -4 && {!(captive player)}) then {
+        [["You think you're not suspicious anymore."], true] call CBA_fnc_notify;
+        player setCaptive true;
     };
-
-    // prevent rating from going too low
-    if (_currentRating < -120) then {
-        player setVariable ["Partisan Safety Rating", -120];
+    if (_currentRating <= -4 && {captive player}) then {
+        player setVariable ["Partisan Notoriety", _currentNotoriety + 1];
+        player setCaptive false;
+        [["You've acted in a suspicious manner."], true] call CBA_fnc_notify;
     };
-
-    //systemChat format ["Hostility: %1", rating player];
-    //systemChat format ["Speed: %1", speed player];
-    {
-        call Olsen_FW_FNC_Partisan_Main;
-    }, [], 1] call CBA_fnc_waitAndExecute;
 };
