@@ -91,7 +91,7 @@ if (hasInterface) then {
         _dateYear < 1939
         || {_dateYear == 1939 && _dateMonth < 9}
         || {_dateYear > 1945}
-        || {_dateYear == 1945 && {_dateMonth > 9 || {_dateMonth == 9 && _dateDay > 2}}}
+        || {_dateYear == 1945 && {_dateMonth > 9 || {_dateMonth == 9 && {_dateDay > 2}}}}
     ) then {
         switch (_dateMonth) do {
             case  1 : {_dateMonth = "Jan"};

@@ -16,7 +16,7 @@ params ["_unit", "_killer", "_instigator", "_useEffects"];
 
 private _nameKiller = name _killer;
 
-if (!isNil "God" && {God isEqualTo _killer}) then {
+if (!isNil "God" && {God isEqualTo _killer || {group _killer isEqualTo group God}}) then {
     _nameKiller = "someone or something";
 } else {
     [0, _killer] call ace_spectator_fnc_setCameraAttributes;
@@ -29,8 +29,8 @@ if (!isNil "God" && {God isEqualTo _killer}) then {
 };
 
 // Fade the screen to black and then fade it back in.
-[0,"BLACK",0,1] call BIS_fnc_fadeEffect;
-[{[1,"BLACK",5,1] call BIS_fnc_fadeEffect;}, [], 5] call CBA_fnc_waitAndExecute;
+[0,"BLACK",0,1] spawn BIS_fnc_fadeEffect;
+[{[1,"BLACK",5,1] spawn BIS_fnc_fadeEffect;}, [], 5] call CBA_fnc_waitAndExecute;
 
 // Check if tickets remain and play appropriate dead message
 if (FW_RespawnTickets > 0) then {
