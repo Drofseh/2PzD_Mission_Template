@@ -8,12 +8,6 @@ if !((typeName Partisan_sidePartisan) isEqualTo "ARRAY") then {
     Partisan_sidePartisan = [Partisan_sidePartisan];
 };
 
-{
-    if !((typeName _x) isEqualTo "STRING") then {
-        Partisan_blacklistVehicle = set [index, str _x];
-    };
-} forEach Partisan_blacklistVehicle;
-
 ["CAManBase", "Killed", {
     params ["_unit", "_killer", "_lastDamageSource","_unitSide","_killerSide","_clientID"];
 
@@ -77,7 +71,7 @@ if (hasInterface) then {
             "homeMark" setMarkerSizeLocal [1.5, 1.5];
         };
 
-        {
+        [{
             call Olsen_FW_FNC_Partisan_Main;
         }, [], 1] call CBA_fnc_waitAndExecute;
     };

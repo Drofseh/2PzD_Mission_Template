@@ -1,7 +1,7 @@
 
 Olsen_FW_FNC_Partisan_Main = {
 
-    {
+    [{
         call Olsen_FW_FNC_Partisan_Main;
     }, [], 1] call CBA_fnc_waitAndExecute;
 
@@ -105,7 +105,7 @@ Olsen_FW_FNC_Partisan_Main = {
                         _punish = True;
                     };
                 };
-            } forEach Partisan_blacklistLocationCAManBases
+            } forEach Partisan_blacklistLocations;
 
             // reduce rating if player moving too quickly
             if (speed _vehicle > Partisan_speedLimit || {speed player > 8 && {_vehicle isEqualTo player}}) then {
