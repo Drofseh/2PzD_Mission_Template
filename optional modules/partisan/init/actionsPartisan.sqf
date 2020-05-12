@@ -1,12 +1,4 @@
 
-//===== Create main Partisan interaction node
-_conditionPartisanMain = {true};
-_statementPartisanMain = {
-    [["Use the menu options to check if the enemy are hostile to you and your notoriety level."], true] call CBA_fnc_notify;
-};
-_actionPartisanMain = ["Partisan","Partisan","",_statementPartisanMain,_conditionPartisanMain] call ace_interact_menu_fnc_createAction;
-["Man", 0, ["ACE_SelfActions"], _actionPartisanMain] call ace_interact_menu_fnc_addActionToObject;
-
 //===== Create main Partisan self interaction node
 _conditionPartisanMain = {true};
 _statementPartisanMain = {
@@ -20,7 +12,11 @@ _statementPartisanHostility = {
     private _currentRating = player getVariable ["Partisan Safety Rating", 0];
     private _isHostile = !(captive player);
 
-    [["Use the menu options to check if the enemy are hostile to you and your notoriety level."], true] call CBA_fnc_notify;
+    if (_currentRating > -4) then {
+        [["You think you should be fine."], true] call CBA_fnc_notify;
+    } else {
+        [["You think you should be careful."], true] call CBA_fnc_notify;
+    };
 };
 _actionPartisanHostility = ["Check Hostility","Check Hostility","",_statementPartisanHostility,_conditionPartisanMain] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions","Partisan"], _actionPartisanHostility] call ace_interact_menu_fnc_addActionToObject;

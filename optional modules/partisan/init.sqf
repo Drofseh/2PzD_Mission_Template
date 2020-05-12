@@ -54,13 +54,13 @@ if (hasInterface) then {
         player addEventHandler ["Fired", {
             private _currentRating = player getVariable ["Partisan Safety Rating", 0];
             private _currentNotoriety = player getVariable ["Partisan Notoriety", 0];
-            player setVariable ["Partisan Safety Rating", _currentRating - (10 * _currentNotoriety)];
+            player setVariable ["Partisan Safety Rating", _currentRating - (10 + (_currentNotoriety / 10))];
         }];
 
         ["ace_throwableThrown",{
                 private _currentRating = player getVariable ["Partisan Safety Rating", 0];
                 private _currentNotoriety = player getVariable ["Partisan Notoriety", 0];
-                player setVariable ["Partisan Safety Rating", _currentRating - (10 * _currentNotoriety)];
+                player setVariable ["Partisan Safety Rating", _currentRating - (10  + (_currentNotoriety / 10))];
         }] call CBA_fnc_addEventHandler;
 
         if (Partisan_startAtHome) then {
@@ -113,7 +113,7 @@ if (hasInterface) then {
             _selfMessage = "You make a hand sign but you don't think it's correct";
         };
 
-        if ((_target getVariable ["FW_OriginalSide", side _target]) isEqualTo playerSide)) then {
+        if ((_target getVariable ["FW_OriginalSide", side _target]) isEqualTo playerSide) then {
             _outMessage = format ["%1 makes the correct hand sign.", name player];
         } else {
             _outMessage = format ["%1 makes a hand sign but it doesn't look right.", name player];
