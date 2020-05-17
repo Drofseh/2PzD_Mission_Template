@@ -16,7 +16,6 @@ Olsen_FW_FNC_Partisan_Main = {
     if (_currentlySurrendering) then {
         player setCaptive true;
     } else {
-
         private _currentlyCaptive = captive player;
         private _punish = false;
 
@@ -40,9 +39,12 @@ Olsen_FW_FNC_Partisan_Main = {
 
             private _nearestMen = player nearObjects ["Man", (2 + (_currentNotoriety / 10))];
 
+            //If they are naked that's suspicious, so just skip the other checks
             if (_uniform isEqualTo "") then {
                 _punish = true;
             } else {
+            
+                //go through their clothing items and search for enemy or blacklisted items
                 if (_uniform in Partisan_enemyUniform) then {
                     _badGuyUniform = true;
                     _punish = true;
@@ -77,6 +79,7 @@ Olsen_FW_FNC_Partisan_Main = {
                 };
             };
 
+            //check if their outfit matches an enemy outfit
             if (_badGuyUniform
                 && {_badGuyHeadgear}
                 && {_badGuyVest || {_vest isEqualTo ""}}
@@ -86,7 +89,8 @@ Olsen_FW_FNC_Partisan_Main = {
                 _punish = false;
             };
 
-            if !(_badGuyOutfit) then {
+            //if they aren't in an enemy outfit then check weapons, stance, location, speed, and vehicle
+            if (!_badGuyOutfit) then {
                 if (
                     (currentWeapon player != "")
                     || {primaryWeapon player != ""}
@@ -116,10 +120,10 @@ Olsen_FW_FNC_Partisan_Main = {
                     _punish = true;
                 };
 
-                if (!_vehicleIsPlayer && {_typeOfVehicle in Partisan_enemyVehicle || {!(_typeOfVehicle in Partisan_whitelistVehicle)}}) then {
+                if (!_vehicleIsPlayer && {!(_typeOfVehicle in Partisan_whitelistVehicle)}) then {
                     _punish = true;
                 };
-            } else {
+            } else { //if they are dressed like an enemy then only check weapon position and blacklisted vehicles.
                 if !(weaponLowered player) then {
                     _punish = true;
                 };
@@ -127,10 +131,6 @@ Olsen_FW_FNC_Partisan_Main = {
                 if (!_vehicleIsPlayer && {_typeOfVehicle in Partisan_blacklistVehicle}) then {
                     _punish = true;
                 };
-            };
-
-            if (!_vehicleIsPlayer && {_typeOfVehicle in Partisan_blacklistVehicle}) then {
-                _punish = true;
             };
 
             {
@@ -163,13 +163,13 @@ Olsen_FW_FNC_Partisan_Main = {
 
         // Abuse setCaptive to change player side depending on rating
         if (!_currentlyCaptive 
-            && {_currentRating > -4 && !_badGuyOutfit || {_currentRating > -10 && _badGuyOutfit}
+            && {_currentRating > -4 && {!_badGuyOutfit} || {_currentRating > -8 && {_badGuyOutfit}}
         ) then {
             [["You think you're not suspicious anymore."], true] call CBA_fnc_notify;
             player setCaptive true;
         };
         if (_currentlyCaptive 
-            && {_currentRating <= -4 && !_badGuyOutfit || {_currentRating <= -10 && _badGuyOutfit}
+            && {_currentRating <= -4 && {!_badGuyOutfit} || {_currentRating <= -8 && {_badGuyOutfit}}
         ) then {
             player setCaptive false;
             [["You've acted in a suspicious manner."], true] call CBA_fnc_notify;

@@ -29,13 +29,13 @@ private _enemyGear = "";
     };
 } forEach Partisan_enemyUniform + Partisan_enemyVest + Partisan_enemyBackpack + Partisan_enemyHeadgear;
 
-private _enemyVehicles = "";
+private _whitelistVehicles = "";
 {
     private _text = getText (configFile >> "CfgVehicles" >> _x >> "displayName");
     if  !(_text isEqualTo "") then {
-        _enemyVehicles = format ["%1<br/>%2",_enemyVehicles,_text];
+        _whitelistVehicles = format ["%1<br/>%2",_whitelistVehicles,_text];
     };
-} forEach Partisan_enemyVehicle;
+} forEach Partisan_whitelistVehicle;
 
 player createDiarySubject ["Partisan", "Partisan"];
 
@@ -56,10 +56,10 @@ player createDiaryRecord ["Partisan",["Gear Lists", format ["
     <br/>These items are used by the enemy.
     <br/>%3
     <br/>
-    <br/><font color='#70db70' size='16'>Enemy Vehicles:</font>
-    <br/>These vehicles are used by the enemy.
+    <br/><font color='#70db70' size='16'>Allowed Vehicles:</font>
+    <br/>These vehicles are always allowed.
     <br/>%4
-", _blacklistGear, _blacklistVehicles, _enemyGear, _enemyVehicles]]];
+", _blacklistGear, _blacklistVehicles, _enemyGear, _whitelistVehicles]]];
 
 player createDiaryRecord ["Partisan",["Avoiding Trouble","
     <br/><font color='#FF8C00' size='16'>Things That Will Get You In Trouble As A Civilian Or Partisan:</font>
@@ -82,6 +82,9 @@ player createDiaryRecord ["Partisan",["Avoiding Trouble","
     <br/>
     <br/><font color='#70db70' size='14'>Moving faster than a walk.</font>
     <br/>    Any movement at a sprint, run, or combat pace will alert the enemy.
+    <br/>
+    <br/><font color='#70db70' size='14'>Driving a prohibited vehicle.</font>
+    <br/>    Any vehicle not in the Allowed Vehicles list is forbidden to you.
     <br/>
     <br/><font color='#70db70' size='14'>Driving faster than the speed limit.</font>
     <br/>    If you have a vehicle, including a bicycle, going faster than the speed limit will alert the enemy.
@@ -120,6 +123,9 @@ player createDiaryRecord ["Partisan",["Avoiding Trouble","
     <br/>
     <br/><font color='#70db70' size='14'>Running quickly.</font>
     <br/>    Moving at combat pace with weapon lowered will be fine, but running or sprinting will alert the enemy.
+    <br/>
+    <br/><font color='#70db70' size='14'>Driving a prohibited vehicle.</font>
+    <br/>    In you're wearing an enemy uniform you can drive any vehicle that is not on the Forbidden Vehicles list.
 "]];
 
 player createDiaryRecord ["Partisan",["How It Works","
