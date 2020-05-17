@@ -44,8 +44,8 @@ if (hasInterface) then {
         #include "init\actionsPartisan.sqf"
 
         Partisan_AimCoefHandler = [{
-            if ((getCustomAimCoef player) < 1.5) then {
-                player setCustomAimCoef 1.5;
+            if ((getCustomAimCoef player) < Partisan_aimPenalty) then {
+                player setCustomAimCoef Partisan_aimPenalty;
             };
         }, 0, []] call CBA_fnc_addPerFrameHandler;
 

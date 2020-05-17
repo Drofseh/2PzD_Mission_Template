@@ -34,6 +34,11 @@ Partisan_speedLimit = 40; // 40 was the German speed limit during WW2.
 // This is the closest players are allowed to come to an enemy before the enemy starts to consider them hostile.
 Partisan_safeDistance = 2; // 2 meters for Corona safety.
 
+//==== Partisan Aim Penalty
+// This is a coeficient for weapon sway of partisan players.
+// 1 means the same as normal. 2 means twice as much sway.
+Partisan_aimPenalty = 2;
+
 //==== Gear Restrictions
 // These lists should contain strings of allowed gear classnames.
 // Items in the enemy lists are those by the enemy faction to identify each other.
@@ -57,24 +62,20 @@ Partisan_enemyBackpack = [];
 Partisan_enemyHeadgear = [];
 
 //==== Vehicle Restrictions
-// List of classnames for black list and enemy vehicles.
+// List of classnames for white list and black list vehicles.
 // The classnames must be strings (wrapped in double quotes "")
 // Works similarly to the the gear restrictions.
-// Whitelisted vehicles are always allowed.
-// To be in a enemy vehicle the player must be wearing an enemy outfit.
+// Whitelisted vehicles are allowed for everybody.
 // Blacklisted vehicles are always forbidden, even in an enemy outfit.
 
 /* For example:
 Partisan_whitelistVehicle = ["fow_v_truppenfahrrad_ger_heer","LIB_GazM1","LIB_GazM1_dirty"];
 Partisan_blacklistVehicle = ["LIB_GazM1_FFI","LIB_GazM1_FFI_camo","LIB_GazM1_FFI_sand","LIB_GazM1_FFI_camo_sand"];
-Partisan_enemyVehicle = ["fow_v_sdkfz_251_camo_ger_heer"];
 */
 
 Partisan_whitelistVehicle = [];
 
 Partisan_blacklistVehicle = [];
-
-Partisan_enemyVehicle = [];
 
 //==== Locations Restrictions
 // This allows you to set certain locations to be forbidden to the players unless they are wearing an enemy outfit.
