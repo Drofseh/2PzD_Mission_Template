@@ -2,8 +2,8 @@
 //=== Weapons ===
 
 //Primary
-#define Civ_Weap_Shotgun        "sgun_HunterShotgun_01_base_F"
-#define Civ_Weap_Sawnoff        "sgun_HunterShotgun_01_sawedoff_base_F"
+#define Civ_Weap_Shotgun        "sgun_HunterShotgun_01_F"
+#define Civ_Weap_Sawnoff        "sgun_HunterShotgun_01_sawedoff_F"
 
 //Secondary
 //Launcher
