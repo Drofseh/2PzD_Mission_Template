@@ -43,6 +43,12 @@ if (hasInterface) then {
 
         #include "init\actionsPartisan.sqf"
 
+        Partisan_AimCoefHandler = [{
+            if ((getCustomAimCoef player) < 1.5) then {
+                player setCustomAimCoef 1.5;
+            };
+        }, 0, []] call CBA_fnc_addPerFrameHandler;
+
         player setVariable ["Partisan Safety Rating", 0];
         player setVariable ["Partisan Notoriety", 0, true];
 
@@ -99,6 +105,19 @@ if (hasInterface) then {
         };
     };
     _actionIdCard = ["Show ID Card","Show ID Card","",_statementIdCard,_conditionIdCard] call ace_interact_menu_fnc_createAction;
+    ["Man", 0, ["ACE_MainActions"], _actionIdCard, true] call ace_interact_menu_fnc_addActionToClass;
+
+    //===== Check ID Card action
+    _conditionIdCard = {!alive _target};
+    _statementIdCard = {
+        if ("Wallet_ID" in (vestitems _target + uniformitems _target + backpackitems _target)) then {
+            _selfMessage = format ["The name on their ID is %1.", name _target];
+            [[_selfMessage], true] call cba_fnc_notify;
+        } else {
+            "They don't have any ID." call cba_fnc_notify;
+        };
+    };
+    _actionIdCard = ["Check ID Card","Check ID Card","",_statementIdCard,_conditionIdCard] call ace_interact_menu_fnc_createAction;
     ["Man", 0, ["ACE_MainActions"], _actionIdCard, true] call ace_interact_menu_fnc_addActionToClass;
 
     //===== Add Secret Partisan Sign action

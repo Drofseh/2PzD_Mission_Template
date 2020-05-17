@@ -77,7 +77,11 @@ Olsen_FW_FNC_Partisan_Main = {
                 };
             };
 
-            if (_badGuyUniform && {_badGuyHeadgear} && {_badGuyVest || {_vest isEqualTo ""}} && {_badGuyBackpack || {_backpack isEqualTo ""}}) then {
+            if (_badGuyUniform
+                && {_badGuyHeadgear}
+                && {_badGuyVest || {_vest isEqualTo ""}}
+                && {_badGuyBackpack || {_backpack isEqualTo ""}}
+            ) then {
                 _badGuyOutfit = true;
                 _punish = false;
             };
@@ -88,6 +92,10 @@ Olsen_FW_FNC_Partisan_Main = {
                     || {primaryWeapon player != ""}
                     || {secondaryWeapon player != ""}
                 ) then {
+                    _punish = true;
+                };
+
+                if (stance player != "STAND") then { then {
                     _punish = true;
                 };
 
@@ -108,7 +116,7 @@ Olsen_FW_FNC_Partisan_Main = {
                     _punish = true;
                 };
 
-                if (!_vehicleIsPlayer && {_typeOfVehicle in Partisan_enemyVehicle || {_typeOfVehicle in Partisan_whitelistVehicle}}) then {
+                if (!_vehicleIsPlayer && {_typeOfVehicle in Partisan_enemyVehicle || {!(_typeOfVehicle in Partisan_whitelistVehicle)}}) then {
                     _punish = true;
                 };
             } else {
@@ -116,7 +124,7 @@ Olsen_FW_FNC_Partisan_Main = {
                     _punish = true;
                 };
 
-                if (!_vehicleIsPlayer && {!(_typeOfVehicle in Partisan_whitelistVehicle)}) then {
+                if (!_vehicleIsPlayer && {_typeOfVehicle in Partisan_blacklistVehicle}) then {
                     _punish = true;
                 };
             };
@@ -134,7 +142,11 @@ Olsen_FW_FNC_Partisan_Main = {
 
         // reduce rating if forbidden weapon or attire, or in blacklisted area.
         if (_punish) then {
-            player setVariable ["Partisan Safety Rating", _currentRating - (2 + (_currentNotoriety / 10))];
+            if (_badGuyOutfit) then {
+                player setVariable ["Partisan Safety Rating", _currentRating - (1 + (_currentNotoriety / 10))];
+            } else {
+                player setVariable ["Partisan Safety Rating", _currentRating - (2 + (_currentNotoriety / 10))];
+            };
         } else {
             if (_currentRating < 0) then {
                 player setVariable ["Partisan Safety Rating", _currentRating + 1];
@@ -150,11 +162,15 @@ Olsen_FW_FNC_Partisan_Main = {
         };
 
         // Abuse setCaptive to change player side depending on rating
-        if (_currentRating > -4 && {!_currentlyCaptive}) then {
+        if (!_currentlyCaptive 
+            && {_currentRating > -4 && !_badGuyOutfit || {_currentRating > -10 && _badGuyOutfit}
+        ) then {
             [["You think you're not suspicious anymore."], true] call CBA_fnc_notify;
             player setCaptive true;
         };
-        if (_currentRating <= -4 && {_currentlyCaptive}) then {
+        if (_currentlyCaptive 
+            && {_currentRating <= -4 && !_badGuyOutfit || {_currentRating <= -10 && _badGuyOutfit}
+        ) then {
             player setCaptive false;
             [["You've acted in a suspicious manner."], true] call CBA_fnc_notify;
         };

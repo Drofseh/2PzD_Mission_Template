@@ -18,7 +18,7 @@ _statementPartisanHostility = {
         [["You think you should be careful."], true] call CBA_fnc_notify;
     };
 };
-_actionPartisanHostility = ["Check Hostility","Check Hostility","",_statementPartisanHostility,_conditionPartisanMain] call ace_interact_menu_fnc_createAction;
+_actionPartisanHostility = ["Check Suspicion","Check Suspicion","",_statementPartisanHostility,_conditionPartisanMain] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions","Partisan"], _actionPartisanHostility] call ace_interact_menu_fnc_addActionToObject;
 
 

@@ -77,6 +77,9 @@ player createDiaryRecord ["Partisan",["Avoiding Trouble","
     <br/><font color='#70db70' size='14'>Firing a weapon or throwing anything.</font>
     <br/>    If you shoot or thow something it will alert the enemy.
     <br/>
+    <br/><font color='#70db70' size='14'>Skulking about.</font>
+    <br/>    Anyone seen crouching or lying down will alert the enemy.
+    <br/>
     <br/><font color='#70db70' size='14'>Moving faster than a walk.</font>
     <br/>    Any movement at a sprint, run, or combat pace will alert the enemy.
     <br/>
@@ -114,6 +117,9 @@ player createDiaryRecord ["Partisan",["Avoiding Trouble","
     <br/>
     <br/><font color='#70db70' size='14'>Getting too close.</font>
     <br/>    If you come within the safe distance limit it will alert the enemy.
+    <br/>
+    <br/><font color='#70db70' size='14'>Running quickly.</font>
+    <br/>    Moving at combat pace with weapon lowered will be fine, but running or sprinting will alert the enemy.
 "]];
 
 player createDiaryRecord ["Partisan",["How It Works","
