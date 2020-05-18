@@ -81,6 +81,10 @@
 #define GEN_ace_cabletie        "ACE_CableTie"
 #define GEN_ace_maptools        "ACE_MapTools"
 #define GEN_ace_rangetable      "ACE_RangeTable_82mm"
+#define GEN_ace_paint_black     "ACE_SpraypaintBlack"
+#define GEN_ace_paint_blue      "ACE_SpraypaintBlue"
+#define GEN_ace_paint_green     "ACE_SpraypaintGreen"
+#define GEN_ace_paint_red       "ACE_SpraypaintRed"
 #define GEN_ace_ration_Lamb     "ACE_MRE_LambCurry"
 #define GEN_ace_ration_Beef     "ACE_MRE_BeefStew"
 #define GEN_ace_ration_TSoup    "ACE_MRE_CreamTomatoSoup"
@@ -148,6 +152,7 @@
 #define GEN_Journal             "Files_diary"
 #define GEN_NetworkStructure    "FileNetworkStructure"
 #define GEN_ResearchNotes       "Files_researchNotes"
+#define GEN_Wallet              "Wallet_ID"
 
 //Radio
 #define GEN_Radio_HH            "ACRE_PRC343"
