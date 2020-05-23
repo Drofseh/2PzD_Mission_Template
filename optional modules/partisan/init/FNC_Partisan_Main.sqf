@@ -5,8 +5,8 @@ Olsen_FW_FNC_Partisan_Main = {
     private _currentNotoriety = player getVariable ["Partisan Notoriety", 0];
     private _currentlySurrendering = false;
 
-    systemChat format ["Partisan Safety Rating: %1", _currentRating];
-    systemChat format ["Partisan Notoriety: %1", _currentNotoriety];
+    //systemChat format ["Partisan Safety Rating: %1", _currentRating];
+    //systemChat format ["Partisan Notoriety: %1", _currentNotoriety];
 
     if (player getVariable ["ace_captives_isSurrendering", false] || {player getVariable ["ace_captives_isHandcuffed", false]}) then {
         _currentlySurrendering = true;
