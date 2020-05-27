@@ -1,8 +1,8 @@
 //Chat commands to allow the admin to manipulate the mission even when dead/spectating.
 
 ["endMission", {
-    private _msg = "Mission ended by admin";
-    _msg call Olsen_FW_FNC_EndMission;
+    params [["_message", "Mission ended by admin."]];
+    _message call Olsen_FW_FNC_EndMission;
 }, "admin"] call CBA_fnc_registerChatCommand;
 
 ["respawnWave", {
