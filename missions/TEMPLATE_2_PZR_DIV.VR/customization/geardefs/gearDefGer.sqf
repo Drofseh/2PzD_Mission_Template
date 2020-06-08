@@ -214,9 +214,17 @@
 #define Ger_Gren_HE_SCK                 "fow_e_m24K"
 #define Ger_Gren_Smoke_W                "fow_e_nb39b"
 
+//Mines
+#define Ger_Mine_AP_Schutzenmine42      "LIB_shumine_42_MINE_mag"
+#define Ger_Mine_AP_SMine_1Wire         "LIB_SMI_35_MINE_mag"
+#define Ger_Mine_AP_SMine_2Wire         "LIB_SMI_35_1_MINE_mag"
+#define Ger_Mine_AP_Stake_Mine          "LIB_STMI_MINE_mag"
+#define Ger_Mine_AT_Tellermine42        "LIB_TMI_42_MINE_mag"
+
 //=== Clothes ===
 
 //Uniform
+#define Ger_Uni_Oberst                  "U_LIB_GER_Oberst"
 #define Ger_Uni_CC                      "U_LIB_GER_Hauptmann"
 #define Ger_Uni_C2                      "U_LIB_GER_Oberleutnant"
 #define Ger_Uni_PC                      "U_LIB_GER_Leutnant"
@@ -353,6 +361,7 @@
                                         //change back to B_LIB_GER_MedicBackpack_Big_Empty if it gets a new model
 
 //Headgear
+#define Ger_Hat_S_Officer               "H_LIB_GER_OfficerCap"
 #define Ger_Hat_Officer                 "fow_h_ger_officer_cap"
 #define Ger_Hat_Wedge                   "fow_h_ger_m38_feldmutze"
 #define Ger_Hat                         "fow_h_ger_feldmutze"

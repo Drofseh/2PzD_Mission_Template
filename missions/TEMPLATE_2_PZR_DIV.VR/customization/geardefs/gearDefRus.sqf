@@ -127,6 +127,11 @@
 #define Rus_Gren_Frag_P                         "LIB_f1"
 #define Rus_Gren_AT                             "LIB_rpg6"
 
+//Mines
+#define Rus_Mine_AP_Box                         "LIB_PMD6_MINE_mag"
+#define Rus_Mine_AP_Stake                       "LIB_pomzec_MINE_mag"
+#define Rus_Mine_AT                             "LIB_TM44_MINE_mag"
+
 //=== Clothes ===
 
 //Uniform

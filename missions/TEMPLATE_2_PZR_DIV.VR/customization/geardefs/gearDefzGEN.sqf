@@ -124,13 +124,20 @@
 #define GEN_Saline250           "ACE_salineIV_250"
 #define GEN_PAK                 "ACE_personalAidKit"
 
+//Demo & Mines
+#define GEN_DemoLarge           "SatchelCharge_Remote_Mag"  //Can only be used with GEN_ace_firing_device
+#define GEN_DemoSmall           "DemoCharge_Remote_Mag"     //Can only be used with GEN_ace_firing_device
+
+#define GEN_Demo_Detonator      "ACE_LIB_LadungPM"
+#define GEN_Demo_TNT_4lb        "LIB_US_TNT_4pound_mag"     //Can only be used with GEN_Demo_Detonator
+#define GEN_Demo_TNT_2lb        "LIB_Ladung_Big_MINE_mag"   //Can only be used with GEN_Demo_Detonator
+#define GEN_Demo_TNT_0_5lb      "LIB_Ladung_Small_MINE_mag" //Can only be used with GEN_Demo_Detonator
+
 //Double Misc
 #define GEN_BinoG               "LIB_Binocular_GER"
 #define GEN_BinoR               "LIB_Binocular_SU"
 #define GEN_BinoUS              "LIB_Binocular_US"
 #define GEN_Compass             "ItemCompass"
-#define GEN_DemoLarge           "SatchelCharge_Remote_Mag"
-#define GEN_DemoSmall           "DemoCharge_Remote_Mag"
 #define GEN_Headset             "LIB_GER_Headset"
 #define GEN_Map                 "ItemMap"
 #define GEN_Minedetector        "MineDetector"

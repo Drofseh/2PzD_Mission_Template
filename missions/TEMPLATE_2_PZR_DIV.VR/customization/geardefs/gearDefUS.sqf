@@ -150,6 +150,10 @@ Letting them keep the large backpack would allow them to put other items in the 
 //Grenades
 #define US_Gren_Frag                        "fow_e_mk2"
 
+//Mines
+#define US_Mine_AP_Wire                     "LIB_US_M3_MINE_mag"
+#define US_Mine_AT_M4A1                     "LIB_US_M1A1_ATMINE_mag"
+
 //Radio
 
 //===== US Army Equipment Definitions =====
