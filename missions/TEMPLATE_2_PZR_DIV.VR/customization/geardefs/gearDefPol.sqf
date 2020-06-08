@@ -3,6 +3,7 @@
 //=== Weapons ===
 
 //Primary
+#define Pol_Weap_wz91_98_23         "w39_wz91_98_23"
 #define Pol_Weap_wz28               "w39_wz28"
 #define Pol_Weap_wz29               "w39_wz29"
 #define Pol_Weap_wz35               "w39_urwz35"

@@ -579,7 +579,6 @@
     //Grenadier
     case "WHR44Jan_Gren" : {
         [Ger_Uni_Rif_L] call Olsen_FW_FNC_AddItem;
-        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;

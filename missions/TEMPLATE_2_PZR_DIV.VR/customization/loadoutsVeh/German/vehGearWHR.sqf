@@ -484,7 +484,7 @@
         [GEN_Pain, 20] call Olsen_FW_FNC_AddItemVehicle;
         [GEN_Morp, 10] call Olsen_FW_FNC_AddItemVehicle;
         [GEN_Saline500, 15] call Olsen_FW_FNC_AddItemVehicle;
-		[GEN_Saline1000, 5] call Olsen_FW_FNC_AddItemVehicle;
+        [GEN_Saline1000, 5] call Olsen_FW_FNC_AddItemVehicle;
         [GEN_TQ, 20] call Olsen_FW_FNC_AddItemVehicle;
         [GEN_Epi, 20] call Olsen_FW_FNC_AddItemVehicle;
         [Ger_Mag_G43, 5] call Olsen_FW_FNC_AddItemVehicle;
