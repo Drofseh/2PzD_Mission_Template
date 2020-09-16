@@ -108,10 +108,10 @@ if (
     <br/>
     <br/>This can be done even from spectator.
     <br/>Any text following the command will be the end screen message.
-    <br/>The html linebreak tag [br/] can be used to make it multiline.
-    <br/>Remember to wrap it in angled brackets, square brackets are used for the example to avoid creating a linebreak in the briefing.
+    <br/>The html linebreak tag &lt;br/&gt; can be used to make it multiline.
+    <br/>
     <br/>For example:
-    <br/>#endMission The enemy has been routed and we are victorious.[br/]Major Victory
+    <br/>#endMission The enemy has been routed and we are victorious.&lt;br/&gt;Major Victory
     <br/>
     <br/><font color='#70db70' size='14'>Helper Checks:</font>// Server vars
     <br/>These are anything the mission maker wants to be able to check in game.

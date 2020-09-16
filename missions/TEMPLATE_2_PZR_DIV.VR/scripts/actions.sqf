@@ -1,3 +1,4 @@
+
 // Add action to check remaining ammunition in vehicle
 call {
     Olsen_FW_FNC_checkVehicleAmmo = {

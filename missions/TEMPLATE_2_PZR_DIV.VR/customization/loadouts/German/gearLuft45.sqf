@@ -94,7 +94,7 @@
         [Luft_Vest_Pilot] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
         [Luft_Helmet_Pilot] call Olsen_FW_FNC_AddItem;
-        [G_LIB_Watch1] call Olsen_FW_FNC_AddItem;
+        [GEN_Face_WatchBrown] call Olsen_FW_FNC_AddItem;
 
         //Assigned Items
         Ger_Default_Equipment;
@@ -104,8 +104,8 @@
         Luft45_Weapon_Officer_Secondary;
 
         //Extra
-        [GEN_Gren_Smoke_W,2] call Olsen_FW_FNC_AddItem;
-        [GEN_Gren_Smoke_B,2] call Olsen_FW_FNC_AddItem;
-        [GEN_Gren_Smoke_P,2] call Olsen_FW_FNC_AddItem;
-        [GEN_Gren_Smoke_O,2] call Olsen_FW_FNC_AddItem;
+        [GEN_Gren_Smoke_W,2,"vest"] call Olsen_FW_FNC_AddItem;
+        [GEN_Gren_Smoke_B,2,"vest"] call Olsen_FW_FNC_AddItem;
+        [GEN_Gren_Smoke_P,2,"vest"] call Olsen_FW_FNC_AddItem;
+        [GEN_Gren_Smoke_O,2,"vest"] call Olsen_FW_FNC_AddItem;
     };
