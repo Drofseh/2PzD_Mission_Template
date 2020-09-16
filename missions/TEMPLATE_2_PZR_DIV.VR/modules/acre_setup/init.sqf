@@ -24,29 +24,37 @@ if (hasInterface) then {
         private _side = playerSide;
         private _customSide = (player getVariable ["FW_CustomScramble", nil]);
 
-        /*
         if (!isNil "FW_Acre_Volume_Value") then {
-            if ((abs FW_Acre_Volume_Value) > 2) then {
+            if (player isEqualTo leader player) then {
+                FW_Acre_Volume_Value = FW_Acre_Volume_Value + 2;
+            };
+
+            private _v = 0.1;
+
+            FW_Acre_Volume_Value = (round FW_Acre_Volume_Value);
+
+            if (FW_Acre_Volume_Value > 4) then {
+              FW_Acre_Volume_Value = 4;
+            };
+            if (FW_Acre_Volume_Value < 0) then {
               FW_Acre_Volume_Value = 0;
             };
-            private _v = 0.7;
+
             switch (FW_Acre_Volume_Value) do {
-                case -2: {_v = 0.1;};
-                case -1: {_v = 0.2;};
-                case 0: {_v = 0.4;};
-                case 1: {_v = 0.7;};
-                case 2: {_v = 1.0;};
-                default {_v = 0.4;};
+                case 0: {_v = 0.1;};
+                case 1: {_v = 0.4;};
+                case 2: {_v = 0.7;};
+                case 3: {_v = 1;};
+                case 4: {_v = 1.3;};
             };
+
             [_v] call acre_api_fnc_setSelectableVoiceCurve;
-            acre_sys_gui_VolumeControl_Level = FW_Acre_Volume_Value;
+            acre_sys_gui_volumeLevel = FW_Acre_Volume_Value;
 
             [{
-                acre_sys_gui_VolumeControl_Level = FW_Acre_Volume_Value;
+                acre_sys_gui_volumeLevel = FW_Acre_Volume_Value;
             }, [], 1] call CBA_fnc_waitAndExecute;
         };
-        */
-
 
         if (!isNil "_customSide") then {
             _side = _customSide;
@@ -115,5 +123,31 @@ if (hasInterface) then {
                 [_radioID, _spatial] call acre_api_fnc_setRadioSpatial;
             };
         } foreach _channels;
+
+        if (count FW_DebugMessages > 0) then {
+
+            _missionLanguages = [];
+
+            {
+                _language = _x select 0;
+
+                {
+                    _currentLanguage = _x select 0;
+                    if (_language == _currentLanguage) then {
+                        _missionLanguages pushBack (_x select 1);
+                    };
+                } foreach FW_all_languages;
+            } foreach FW_languages_babel;
+
+            (format [
+                    "Current Acre Languages: West - %1, East - %2, Indep - %3, Civ - %4",
+                    _missionLanguages select 0,
+                    _missionLanguages select 1,
+                    _missionLanguages select 2,
+                    _missionLanguages select 3
+                ]
+            ) call Olsen_FW_FNC_DebugMessage;
+            "Set languages in the Acre Setup module"  call Olsen_FW_FNC_DebugMessage;
+        };
     };
 };

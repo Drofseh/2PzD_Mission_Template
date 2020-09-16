@@ -81,20 +81,23 @@ FW_all_languages = [
 ];
 
 
+/////////////////
 //  Direct Speach Starting Volume
+/////////////////
 /*
-  This setting appears to be non-functinal after an ACRE2 update and is disabled until it can be fixed.
+  ACRE2 has a built in direct speech slider allowing you to determine how far your voice in direct speech should travel.
+  The system has five states and by default starts in the middle state.
+  Using any value other than 0 to 4 will pick the closest allowed value.
+  Group leaders will start 2 levels higher than everyone else, to a max of 4.
 
-  ACRE2 has a built in direct speech slider allowing you to determine how far your voice in direct speech should travel. The system has five states and by default starts in the middle state. The below table contains an approximated table with empirical testing by Bullhorn.
-
-  Volume state  |  Loud (m)  |  Quiet (m)  |  Barely audible (m)
-  -2            |  1         |  2          |  13
-  -1            |  3         |  15         |  55
-   0            |  8         |  30         |  100
-  +1            |  12        |  45         |  145
-  +2            |  15        |  55         |  195
+  Volume state  |  ACRE Level
+  0             |  0%   / Whisper / Clear
+  1             |  25%  / Quiet   / Yellow
+  2             |  50%  / Normal  / Light Orange
+  3             |  75%  / Loud    / Dark Orange
+  4             |  100% / Yelling / Red
 */
-//FW_Acre_Volume_Value = -2;
+FW_Acre_Volume_Value = 0;
 
 
 /////////////////

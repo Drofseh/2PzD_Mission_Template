@@ -4,11 +4,11 @@ _conditionJIP_Teleport = {
 
 _statementJIP_Teleport = {
     private _target = leader player;
-    private _alive = _target call Olsen_FW_FNC_Alive;
-    private _inVehicle = _target call Olsen_FW_FNC_InVehicle;
-    private _freeSpace = (vehicle _target) call Olsen_FW_FNC_HasEmptyPositions;
 
-    if (!(_alive) || {_inVehicle && {!(_freeSpace)}}) then {
+    if (
+        !(_target call Olsen_FW_FNC_Alive)
+        || {_target call Olsen_FW_FNC_InVehicle && {!((vehicle _target) call Olsen_FW_FNC_HasEmptyPositions)}}
+    ) then {
         private _skip = -1;
         private _count = -1;
         private _found = false;
@@ -17,7 +17,11 @@ _statementJIP_Teleport = {
         {
             _alive = _x call Olsen_FW_FNC_Alive;
 
-            if (_alive && {(_x distance2D player) > FW_JIPDISTANCE && {!(_x call Olsen_FW_FNC_InVehicle) || {vehicle _x call Olsen_FW_FNC_HasEmptyPositions}}}) then {
+            if (
+                _alive
+                && {(_x distance2D player) > FW_JIPDISTANCE}
+                && {!(_x call Olsen_FW_FNC_InVehicle) || {vehicle _x call Olsen_FW_FNC_HasEmptyPositions}}
+                ) then {
                 _found = true;
             } else {
                 _skip = _skip + 1;
@@ -35,7 +39,7 @@ _statementJIP_Teleport = {
 
     if (!isNull(_target)) then {
 
-        if (_inVehicle) then {
+        if (_target call Olsen_FW_FNC_InVehicle) then {
             player moveInAny (vehicle _target);
         } else {
             player setPos (getPos _target);
@@ -45,7 +49,7 @@ _statementJIP_Teleport = {
     } else {
         if (_count < 0) exitWith {
             [player, 1, ["ACE_SelfActions","JIP_Teleport"]] call ace_interact_menu_fnc_removeActionFromObject;
-            "No one left in your squad" call CBA_fnc_notify;
+            "No one alive in your squad" call CBA_fnc_notify;
         };
 
         if (_skip > -1) exitWith {

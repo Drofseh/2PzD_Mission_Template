@@ -30,11 +30,10 @@ if (hasInterface && {str playerSide != "LOGIC"}) then {
 
     private _target = leader player;
 
-    if (player == _target || {!(_target call Olsen_FW_FNC_Alive)}) then {
+    if (player == _target || {objNull == _target} || {!(_target call Olsen_FW_FNC_Alive)}) then {
 
         {
-            if (_target call Olsen_FW_FNC_Alive) then {
-                if ((_target distance2D player) > FW_JIPDISTANCE);
+            if (_target call Olsen_FW_FNC_Alive && {(_target distance2D player) > FW_JIPDISTANCE}) exitWith {
                 _target = _x;
             };
         } forEach ((units group player) - [player]);
@@ -51,10 +50,11 @@ if (hasInterface && {str playerSide != "LOGIC"}) then {
                 #include "teleportAction.sqf"
 
                 [{
-                    [
-                        ["You've joined a mission that is already in progress."],
-                        ["Use Ace Self Interation to teleport to your squad."]
-                    ] call CBA_fnc_notify;
+                    "JIP Teleport" hintC [
+                        (format ["Hello %1", name player]),
+                        "You've joined a mission that is already in progress.",
+                        (parseText "Use <t color='#dd0000'>ACE Self Interation -> Teleport to Squad</t> to teleport to your squad.")
+                    ];
                 }, [], 1] call CBA_fnc_waitAndExecute;
 
                 [{
@@ -69,10 +69,11 @@ if (hasInterface && {str playerSide != "LOGIC"}) then {
                 #include "transportAction.sqf"
 
                 [{
-                    [
-                        ["You've joined a mission that is already in progress."],
-                        ["Use Ace Self Interation to request transportation."]
-                    ] call CBA_fnc_notify;
+                    "JIP Transportation" hintC [
+                        (format ["Hello %1", name player]),
+                        "You've joined a mission that is already in progress.",
+                        (parseText "Use <t color='#dd0000'>ACE Self Interation -> Request Transportation</t> to request transportation.")
+                    ];
                 }, [], 1] call CBA_fnc_waitAndExecute;
 
                 [{
