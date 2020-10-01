@@ -20,9 +20,9 @@ if (!isNil "God" && {God isEqualTo _killer || {group _killer isEqualTo group God
     _nameKiller = "someone or something";
 } else {
     [0, _killer] call ace_spectator_fnc_setCameraAttributes;
-    if (_nameKiller == "Error: No vehicle") then {
+    if (_nameKiller == "Error: No vehicle" || {_nameKiller == "Error: No unit"}) then {
         _nameKiller = name (player getVariable ["ace_medical_lastDamageSource", _killer]);
-        if (_nameKiller == "Error: No vehicle") then {
+        if (_nameKiller == "Error: No vehicle" || {_nameKiller == "Error: No unit"}) then {
             _nameKiller = "someone or something";
         };
     };
