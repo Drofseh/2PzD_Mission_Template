@@ -26,7 +26,7 @@
 #define Ger_Weap_M1895                  "CSA38_M1895"
 #define Ger_Weap_M1895_GL               "csa38_gvz23"
 #define Ger_Weap_M1895k                 "CSA38_M1895k"
-#define Ger_Weap_StG44                  "fow_w_stg44"
+#define Ger_Weap_StG44                  "LIB_MP44"
 
 #define Ger_Weap_MG30                   "CSA38_MG30"
 #define Ger_Weap_MG34                   "LIB_MG34"
