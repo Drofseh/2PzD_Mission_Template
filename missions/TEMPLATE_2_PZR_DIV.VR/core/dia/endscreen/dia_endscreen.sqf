@@ -87,9 +87,13 @@ if (_timeLimit == 0) then {
 _endTitleText = format ["%1<br/>%2", _scenario, _timeLimitText];
 endTitleText_EndScreen = _endTitleText;
 
-if (!isNil "aCount_textBLU" && !isNil "aCount_textRED" && !isNil "aCount_textRES") then {
+if (!isNil "aCount_textBLU") then {
     _bottomTextLeft = format ["%1",aCount_textBLU];
+};
+if (!isNil "aCount_textRED") then {
     _bottomTextMiddle = format ["%1",aCount_textRED];
+};
+if (!isNil "aCount_textRES") then {
     _bottomTextRight = format ["%1",aCount_textRES];
 };
 

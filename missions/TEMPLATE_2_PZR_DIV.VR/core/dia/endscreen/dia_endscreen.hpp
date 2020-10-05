@@ -14,10 +14,10 @@ class DIA_ENDSCREEN {
     class BACKGROUND: RscBackground
     {
         idc = 3000;
-        x = -1;
-        y = -1;
-        w = 4;
-        h = 4;
+        x = safeZoneXAbs;
+        y = safeZoneY;
+        w = safeZoneWAbs;
+        h = safeZoneH;
     };
     class TEXT_TITLE: RscStructuredText
     {
