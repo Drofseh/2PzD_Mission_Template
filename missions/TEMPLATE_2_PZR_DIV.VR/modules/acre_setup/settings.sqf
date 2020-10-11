@@ -28,7 +28,7 @@ FW_languages_babel = [
 ];
 
 // all available languages are defined here
-// you can add your own if something one you want is missing
+// you can add your own if one you want is missing
 // ["ISO 639-1 country code", "Name of language"]
 FW_all_languages = [
     ["sq",  "Albanian"],

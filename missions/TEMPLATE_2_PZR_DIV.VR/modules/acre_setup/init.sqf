@@ -124,30 +124,73 @@ if (hasInterface) then {
             };
         } foreach _channels;
 
-        if (count FW_DebugMessages > 0) then {
 
-            _missionLanguages = [];
+        _missionLanguages = [];
+
+        {
+            _language = _x select 0;
 
             {
-                _language = _x select 0;
+                _currentLanguage = _x select 0;
+                if (_language == _currentLanguage) then {
+                    _missionLanguages pushBack (_x select 1);
+                };
+            } foreach FW_all_languages;
+        } foreach FW_languages_babel;
 
-                {
-                    _currentLanguage = _x select 0;
-                    if (_language == _currentLanguage) then {
-                        _missionLanguages pushBack (_x select 1);
-                    };
-                } foreach FW_all_languages;
-            } foreach FW_languages_babel;
-
-            (format [
-                    "Current Acre Languages: West - %1, East - %2, Indep - %3, Civ - %4",
-                    _missionLanguages select 0,
-                    _missionLanguages select 1,
-                    _missionLanguages select 2,
-                    _missionLanguages select 3
-                ]
-            ) call Olsen_FW_FNC_DebugMessage;
-            "Set languages in the Acre Setup module"  call Olsen_FW_FNC_DebugMessage;
-        };
+        (format [
+                "Current Acre Languages: West - %1, East - %2, Indep - %3, Civ - %4",
+                _missionLanguages select 0,
+                _missionLanguages select 1,
+                _missionLanguages select 2,
+                _missionLanguages select 3
+            ]
+        ) call Olsen_FW_FNC_DebugMessage;
+        "Set languages in the Acre Setup module" call Olsen_FW_FNC_DebugMessage;
     };
+
+    //ACRE God Mode Communication Groups
+
+    // Group 1 (Admins)
+    [
+        {
+            _admins = getArray (missionConfigFile >> "enableDebugConsole");
+            _zeuses = [];
+
+            if (!isNil "God") then {
+                {
+                    if (group _x isEqualTo group God) then {
+                        _zeuses pushBackUnique  _x;
+                    };
+                } forEach allPlayers;
+            };
+
+            _admins + _zeuses
+        },
+        0
+    ] call acre_api_fnc_godModeModifyGroup;
+    ["Admins + Zeuses", 0] call acre_api_fnc_godModeNameGroup;
+
+    // Group 2 (Zeuses)
+    [
+        {
+            _zeuses = [];
+
+            if (!isNil "God") then {
+                {
+                    if (group _x isEqualTo group God) then {
+                        _zeuses pushBackUnique  _x;
+                    };
+                } forEach allPlayers;
+            };
+
+            _zeuses
+        },
+        1
+    ] call acre_api_fnc_godModeModifyGroup;
+    ["Zeuses", 1] call acre_api_fnc_godModeNameGroup;
+
+    // Group 3 (All Players)
+    [{allPlayers}, 2] call acre_api_fnc_godModeModifyGroup;
+    ["All Players", 2] call acre_api_fnc_godModeNameGroup;
 };

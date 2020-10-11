@@ -21,6 +21,7 @@
 #include "start_on_team_color\root.sqf"
 //#include "start_text\root.sqf"
 //#include "supporting_fires\root.sqf"
+//#include "terrain_object_removal\root.sqf"
 #include "vehicle_displays\root.sqf"
 
 //===== Optional Modules
