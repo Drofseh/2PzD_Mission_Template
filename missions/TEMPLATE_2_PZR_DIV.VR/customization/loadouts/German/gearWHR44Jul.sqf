@@ -580,7 +580,7 @@
         Ger_Default_Equipment;
 
         //Primary Weapon
-        WHR44Jan_Weapon_Grenadier;
+        WHR44Jul_Weapon_Grenadier;
     };
 
     //Hilfs-Krankenträger
