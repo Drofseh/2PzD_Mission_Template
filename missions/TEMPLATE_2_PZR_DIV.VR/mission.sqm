@@ -927,7 +927,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="2 Panzer Division Mission Template v2.30.0";
+		briefingName="2 Panzer Division Mission Template v2.31.0";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0;
