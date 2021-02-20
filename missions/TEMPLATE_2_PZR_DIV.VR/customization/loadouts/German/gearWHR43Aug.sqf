@@ -285,7 +285,7 @@
     //Funker
     case "WHR43Aug_RTO" : {
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
-        [Ger_Vest_K98] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Radio] call Olsen_FW_FNC_AddItem;
         [Ger_Hat] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -301,7 +301,7 @@
     //Melder
     case "WHR43Aug_Mess" : {
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
-        [Ger_Vest_K98] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -376,7 +376,7 @@
     //Stellvertretender Gruppenführer
     case "WHR43Aug_S2" : {
         [Ger_Uni_S2_r] call Olsen_FW_FNC_AddItemRandom;
-        [Ger_Vest_K98] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -515,7 +515,7 @@
     //Hilfs-Krankenträger
     case "WHR43Aug_MedS" : {
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
-        [Ger_Vest_K98] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Med] call Olsen_FW_FNC_AddItem;
         [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -542,7 +542,7 @@
     //Gewehrschütze
     case "WHR43Aug_Rif" : {
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
-        [Ger_Vest_K98] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -620,7 +620,7 @@
     //Mortar Munitionsträger
     case "WHR43Aug_MortA" : {
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
-        [Ger_Vest_K98] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
         [Ger_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -776,7 +776,7 @@
         [Ger_Uni_VCom] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
-        [Ger_Hat_VCom] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Hat_VCom_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_Tank_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
@@ -795,7 +795,7 @@
         [Ger_Uni_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
-        [Ger_Hat_VCrew] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Hat_VCrew_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_Tank_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items

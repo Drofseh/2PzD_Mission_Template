@@ -110,7 +110,7 @@ Olsen_FW_FNC_setAISkill =
                 };
             } forEach allUnits;
         } else {
-            if (_value < 0.2 || _value > 1) then {
+            if (_value < 0.2 || {_value > 1}) then {
                 _temp = format ["AI skill module:<br></br>Warning AI-Skill-Value ""%1"", in file ""modules\aiskill\settings.sqf"" , is wrong.", _value];
                 _temp call Olsen_FW_FNC_DebugMessage;
             };

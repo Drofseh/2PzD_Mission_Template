@@ -41,7 +41,7 @@ if (hasInterface) then { //This scope is for the players
 
     //[[1,2], [0]] call ace_spectator_fnc_updateCameraModes; //Set ACE Spectator camera modes. Should only be enabled for TvT. See https://ace3mod.com/wiki/framework/spectator-framework.html#44-addremove-available-camera-modes
     //[[-2], [-1,0,1,2,3,4,5,6,7]] call ace_spectator_fnc_updateVisionModes; //Set ACE Spectator camera vision mods. Should only be enabled for TvT. See https://ace3mod.com/wiki/framework/spectator-framework.html#45-addremove-available-vision-modes
-    
+
     switch (playerSide) do { // Sets respawn tickets and sides visible in spectator, based on player side.
         case west: {
             FW_RespawnTickets = 0; //If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_west_respawn
@@ -59,5 +59,30 @@ if (hasInterface) then { //This scope is for the players
             FW_RespawnTickets = 0; //If respawn is enabled you must create empty game logics, for respawn points, following the name format fw_side_respawn. Example: fw_civilian_respawn
             FW_SpectatorSides = [[civilian], [west,east,independent]];
         };
+        case sideLogic: {
+            FW_RespawnTickets = 0;
+            FW_SpectatorSides = [[west,east,independent,civilian], []];
+            [[0,1,2], []] call ace_spectator_fnc_updateCameraModes;
+            [[-2,-1,0,1,2,3,4,5,6,7], []] call ace_spectator_fnc_updateVisionModes;
+        };
+    };
+
+    Olsen_FW_FNC_Disable_AI = {
+        {
+            _x disableAI "ALL";
+        } forEach (allUnits - playableUnits);
+
+        [
+            {
+                [] call Olsen_FW_FNC_Disable_AI;
+            },
+            [],
+            60
+        ] call CBA_fnc_waitAndExecute;
+    };
+
+    if !(!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}) then {
+        [] call Olsen_FW_FNC_Disable_AI;
+        disableRemoteSensors true;
     };
 };

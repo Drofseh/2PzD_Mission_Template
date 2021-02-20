@@ -3,12 +3,10 @@
 #include "settings.sqf"
 
 if (isServer) then {
-    missionNamespace setVariable ["FW_ND_Active", true];
-    publicVariable "FW_ND_Active";
+    missionNamespace setVariable ["FW_ND_Active", true, true];
 
     [{CBA_missionTime > ANTI_ND_TIME}, {
-        missionNamespace setVariable ["FW_ND_Active", false];
-        publicVariable "FW_ND_Active";
+        missionNamespace setVariable ["FW_ND_Active", false, true];
     }, []] call CBA_fnc_waitUntilAndExecute;
 };
 
@@ -20,7 +18,7 @@ if (hasInterface) then {
             params ["_unit", "_weapon", "_muzle", "_mode", "_ammo", "_magazine", "_projectile","_distance","_msg1","_msg2"];
             _distance = FW_SpawnPos distance2D player;
 
-            if (_distance < ANTI_ND_DIST || missionNamespace getVariable ["FW_ND_Active", false]) then {
+            if (_distance < ANTI_ND_DIST || {missionNamespace getVariable ["FW_ND_Active", false]}) then {
                 deleteVehicle _projectile;
 
                 _msg1 = "";
@@ -50,7 +48,7 @@ if (hasInterface) then {
 
             _distance = FW_SpawnPos distance2D player;
 
-            if (_distance < ANTI_ND_DIST || missionNamespace getVariable ["FW_ND_Active", false]) then {
+            if (_distance < ANTI_ND_DIST || {missionNamespace getVariable ["FW_ND_Active", false]}) then {
                 deleteVehicle _activeThrowable;
 
                 _msg1 = "";

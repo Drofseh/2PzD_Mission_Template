@@ -56,28 +56,28 @@ Olsen_FW_FNC_SupportFire_GetTargetLocation = {
 
         // gets new target location
         switch (true) do {
-            case (_supportFire_target == "TargetGrid") : {
+            case (_supportFire_target isEqualTo "TargetGrid") : {
                 _supportFire_targetLoc = supportFire_targetGrid;
             };
-            case (_supportFire_target == "TargetVisual") : {
+            case (_supportFire_target isEqualTo "TargetVisual") : {
                 _supportFire_targetLoc = screenToWorld [0.5, 0.5];
             };
-            case (_supportFire_target == "Target01") : {
+            case (_supportFire_target isEqualTo "Target01") : {
                 _supportFire_targetLoc = getMarkerPos supportFire_target01;
             };
-            case (_supportFire_target == "Target02") : {
+            case (_supportFire_target isEqualTo "Target02") : {
                 _supportFire_targetLoc = getMarkerPos supportFire_target02;
             };
-            case (_supportFire_target == "Target03") : {
+            case (_supportFire_target isEqualTo "Target03") : {
                 _supportFire_targetLoc = getMarkerPos supportFire_target03;
             };
-            case (_supportFire_target == "Target04") : {
+            case (_supportFire_target isEqualTo "Target04") : {
                 _supportFire_targetLoc = getMarkerPos supportFire_target04;
             };
-            case (_supportFire_target == "Target05") : {
+            case (_supportFire_target isEqualTo "Target05") : {
                 _supportFire_targetLoc = getMarkerPos supportFire_target05;
             };
-            case (_supportFire_target == "Target06") : {
+            case (_supportFire_target isEqualTo "Target06") : {
                 _supportFire_targetLoc = getMarkerPos supportFire_target06;
             };
         };

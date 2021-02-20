@@ -279,7 +279,7 @@
     //Rifleman
     case "SNLF43_Rif" : {
         [IJA_Uni_M] call Olsen_FW_FNC_AddItem;
-        [IJA_Vest_Rif] call Olsen_FW_FNC_AddItemRandom;
+        [IJA_Vest_Rif] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
         [//Hat
             [ [IJA_Helm_M] ],[95],
@@ -333,7 +333,7 @@
             [ [IJA_Uni_M] ],[75],
             [ [IJA_Uni_Short] ],[25]
         ] call Olsen_FW_FNC_AddItemRandomPercent;
-        [IJA_Vest_Rif] call Olsen_FW_FNC_AddItemRandom;
+        [IJA_Vest_Rif] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
         [//Hat
             [ [IJA_Helm_M] ],[95],
@@ -361,7 +361,7 @@
             [ [IJA_Uni_M] ],[75],
             [ [IJA_Uni_Short] ],[25]
         ] call Olsen_FW_FNC_AddItemRandomPercent;
-        [IJA_Vest_Rif] call Olsen_FW_FNC_AddItemRandom;
+        [IJA_Vest_Rif] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
         [//Hat
             [ [IJA_Helm_M] ],[95],

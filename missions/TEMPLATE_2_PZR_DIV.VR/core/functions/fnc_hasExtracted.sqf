@@ -30,7 +30,7 @@ _count = {
     (_x call Olsen_FW_FNC_getOriginalSide) == _side && {_x inArea _marker};
 } count allUnits;
 
-if (_count >= _ratio * ([_team, 4] call Olsen_FW_FNC_getTeamVariable)) then {
+if (_count >= _ratio * (1 max ([_team, 4] call Olsen_FW_FNC_getTeamVariable))) then {
     _result = true;
 };
 

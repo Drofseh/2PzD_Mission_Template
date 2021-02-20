@@ -22,7 +22,7 @@
 
     //Random Civs, like either Civ_R1 or Civ_R2
     case "Civ_Ran" : {
-        [Civ_Uni_ran] call Olsen_FW_FNC_addItemRandom;
+        [Civ_Uni_r] call Olsen_FW_FNC_addItemRandom;
         [Civ_BP_r] call Olsen_FW_FNC_addItemRandom;
         [Civ_Hat_r] call Olsen_FW_FNC_addItemRandom;
         [Civ_Face_r] call Olsen_FW_FNC_addItemRandom;
@@ -74,10 +74,9 @@
 
     //Orthodox Priest
     case "Civ_Priest" : {
-        [Civ_Uni_Priest_O] call Olsen_FW_FNC_addItemRandom;
+        [Civ_Uni_Priest_O] call Olsen_FW_FNC_addItem;
         [Civ_Face_r] call Olsen_FW_FNC_addItemRandom;
 
         //Assigned Items
         Civ_Default_Equipment;
     };
-    

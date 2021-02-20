@@ -4,8 +4,6 @@
 #include "Diwako_Variables.sqf"
 //#include "Dropcan.sqf"
 #include "explosiveSize.sqf"
-//#include "gearLog.sqf"
-//#include "gearPersistent.sqf"
 #include "handleLargeMagazines.sqf"
 #include "IFA3_variables.sqf"
 #include "mapMarkerPrevention.sqf"

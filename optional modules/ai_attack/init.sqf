@@ -241,7 +241,7 @@ Olsen_FW_FNC_AtkStart = {
             } forEach allGroups;
 
             _ammountToSpawn = floor(random (_maxSpawn -_minSpawn)) + _minSpawn;
-            
+
             for "_i" from 0 to _ammountToSpawn do {
 
                 //select a Path
@@ -253,7 +253,7 @@ Olsen_FW_FNC_AtkStart = {
                         [_newGroup,_grpPos,_x] call Olsen_FW_FNC_AtkSpawnCustomUnit;
                         sleep 0.25;
                 } forEach _units;
-                
+
                 {
                     _wp = _newGroup addWaypoint [(_x select 5), 0];
                     _wp setWaypointType (_x select 0);
@@ -273,7 +273,7 @@ Olsen_FW_FNC_AtkStart = {
             sleep(_spawnDelay);
         };
     };
-    
+
     ATKcachedAttacks pushBack _handle;
 };
 
@@ -390,7 +390,7 @@ Olsen_FW_FNC_AtkVehicleStart = {
                     _new moveInCommander _veh;
                     _new assignAsCommander _veh;
                 };
-                
+
                 for "_i" from 3 to ((count _crew ) - 1) do {
                     _new = [_newGroup,_grpPos, _crew select _i] call Olsen_FW_FNC_AtkSpawnCustomUnit;
                   _new moveInCargo _veh;

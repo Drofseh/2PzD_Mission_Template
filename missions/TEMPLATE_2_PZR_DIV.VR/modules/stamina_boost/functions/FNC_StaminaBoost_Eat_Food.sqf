@@ -20,7 +20,7 @@ Olsen_FW_FNC_StaminaBoost_Eat_Food = {
 
             [stamina_boost_staminaFoodCool] call Olsen_FW_FNC_StaminaBoost_RaiseStamina;
 
-            if (_food == "ACE_Banana") then {
+            if (_food isEqualTo "ACE_Banana") then {
                 [
                     ["You ate a banana."],
                     ["Delicious!"],
@@ -30,7 +30,7 @@ Olsen_FW_FNC_StaminaBoost_Eat_Food = {
 
                 _foodNamePrep1 = ((getText (configFile >> "CfgWeapons" >> _food >> "displayName")) splitString " ");
 
-                if ((_foodNamePrep1 select 0) == "MRE") then {
+                if ((_foodNamePrep1 select 0) isEqualTo "MRE") then {
                     _foodNamePrep1 deleteAt 0;
                 };
 

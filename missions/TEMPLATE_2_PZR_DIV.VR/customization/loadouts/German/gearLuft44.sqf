@@ -109,4 +109,3 @@
         [GEN_Gren_Smoke_P,2,"vest"] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_O,2,"vest"] call Olsen_FW_FNC_AddItem;
     };
-    

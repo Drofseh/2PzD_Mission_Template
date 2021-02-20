@@ -2,7 +2,13 @@ Olsen_FW_FNC_DebugMessage = {};
 
 if (hasInterface) then {
 
-    if (FW_DebugMessagesEnabled) then {
+    if (!isNil "FW_DebugMessagesEnabled" && {FW_DebugMessagesEnabled}) then {
+
+        if (!is3DENPreview) exitWith {
+            hint "Framework debug messages are only available in 3DEN Preview";
+            systemChat "Framework debug messages are only available in 3DEN Preview";
+        };
+
         100 cutRsc ["DIA_DEBUG", "PLAIN"];
 
         private ["_someText", "_text"];

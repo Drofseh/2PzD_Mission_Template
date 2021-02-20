@@ -22,11 +22,11 @@ if (!isNil "aCount_addEH") then {
     ["aCount_event_addEH", _unit] call CBA_fnc_serverEvent;
 };
 
-if (_unit getVariable ["FW_AssetName", ""] == "") then {
+if (_unit getVariable ["FW_AssetName", ""] isEqualTo "") then {
     {
         if (_side == _x select 1) exitWith {
 
-          _vehCfg = (configFile >> "CfgVehicles" >> (typeOf _unit));
+          _vehCfg = configOf _unit;
 
           if (isText(_vehCfg >> "displayName")) then {
             [_unit, getText(_vehCfg >> "displayName"), _x select 0] call Olsen_FW_FNC_TrackAsset;

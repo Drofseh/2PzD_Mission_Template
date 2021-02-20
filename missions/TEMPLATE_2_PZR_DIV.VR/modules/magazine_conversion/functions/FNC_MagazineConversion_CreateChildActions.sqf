@@ -42,7 +42,7 @@ Olsen_FW_FNC_MagazineConversion_CreateChildActions = {
                 private _ammoClass = toUpper (getText (configFile >> "CfgMagazines" >> _OldMag >> "ammo"));
 
                 // This is a workaround for some IFA3 ammo that uses a special ammo with no 'cartridge' model entry but should otherwise interchange.
-                if (_ammoClass == "") then {
+                if (_ammoClass isEqualTo "") then {
                     _ammoClass = "No_Ammo_Class";
                 } else {
                     _ammoClass = _ammoClass splitString "_";

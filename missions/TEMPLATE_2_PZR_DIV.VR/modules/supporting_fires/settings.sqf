@@ -43,6 +43,14 @@
     supportFire_target05GUER = "";
     supportFire_target06GUER = "";
 
+    // Zeus
+    supportFire_target01ZEUS = "";
+    supportFire_target02ZEUS = "";
+    supportFire_target03ZEUS = "";
+    supportFire_target04ZEUS = "";
+    supportFire_target05ZEUS = "";
+    supportFire_target06ZEUS = "";
+
 //TARGET NAMES
     // These are now automatically taken from the marker text set in the editor.
     // So make sure you name your markers appropriately.
@@ -55,6 +63,7 @@
     supportFire_batterySizeWEST = 5;
     supportFire_batterySizeEAST = 5;
     supportFire_batterySizeGUER = 5;
+    supportFire_batterySizeZEUS = 5;
 
 // AMMUNITION TYPE
     // There are three types of ammunition available, High Explosive, Smoke, and Flare.
@@ -86,6 +95,11 @@
     supportFire_shellsSmoke_TypeGUER = "Smoke_82mm_AMOS_White";
     supportFire_shellsFlare_TypeGUER = "LIB_40mm_White";
 
+    // ZEUS
+    supportFire_shellsHE_TypeZEUS = "Sh_82mm_AMOS";
+    supportFire_shellsSmoke_TypeZEUS = "Smoke_82mm_AMOS_White";
+    supportFire_shellsFlare_TypeZEUS = "LIB_40mm_White";
+
 // AMMUNITION AMOUNT
     // This allows you to set the amount of ammunition available to each side.
     // Note that HE and Smoke rounds are always fired in volleys of 5.
@@ -106,8 +120,14 @@
     supportFire_shellsSmoke_AmmoCountGUER = 0;
     supportFire_shellsFlare_AmmoCountGUER = 0;
 
+    // ZEUS
+    supportFire_shellsHE_AmmoCountZEUS = 0;
+    supportFire_shellsSmoke_AmmoCountZEUS = 0;
+    supportFire_shellsFlare_AmmoCountZEUS = 0;
+
 // FIRE MISSION ACCURACY
     // Sets, per side, how close to the target the fire mission impact area be in metres, using RNG.
+    // Accuracy will always be perfect for Zeus
     // Higher number means less accurate.
     // 0 means the fire mission will always be centered directly on target.
     // 100 means the fire mission could be centered up to 100m away.
@@ -131,3 +151,4 @@
     supportFire_shellDispersionWEST = 100;
     supportFire_shellDispersionEAST = 100;
     supportFire_shellDispersionGUER = 100;
+    supportFire_shellDispersionZEUS = 100;

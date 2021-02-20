@@ -89,7 +89,7 @@
         ] call Olsen_FW_FNC_AddItemRandomPercent;
 
 #define USMC42Apr_Weapon_Rifle_Light \
-    if (vest _unit == "") then { \
+    if (vest _unit isEqualTo "") then { \
         [ \
             [/*M1903A1*/ \
                 [USMC_Vest_M1G], \
@@ -138,7 +138,7 @@
         [US_Mag_BAR_Mixed_Ball,9,"backpack"] call Olsen_FW_FNC_AddItem;
 
 #define USMC42Apr_Weapon_Rifle \
-    if (vest _unit == "") then { \
+    if (vest _unit isEqualTo "") then { \
         [ \
             [/*M1903A1*/ \
                 [USMC_Vest_M1G], \

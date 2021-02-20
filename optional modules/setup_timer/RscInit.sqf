@@ -10,20 +10,20 @@ Olsen_FW_FNC_SetupTimerInit = {
         _ctrlTitleBG = _display displayCtrl 1002;
         _ctrlTime = _display displayCtrl 1003;
 
-        _endTime = serverTime + (missionNamespace getVariable ["FW_ST_TimeLeft", 0]);
+        _endTime = CBA_missionTime + (missionNamespace getVariable ["FW_ST_TimeLeft", 0]);
         _nextBeep = _endTime - 10;
 
         _break = false;
 
         while {true} do {
 
-            if (serverTime >= _nextBeep) then {
+            if (CBA_missionTime >= _nextBeep) then {
                 _nextBeep = _nextBeep + 1;
                 playSound "Beep_Target";
             };
 
             private "_timeLeft";
-            _timeLeft = _endTime - serverTime;
+            _timeLeft = _endTime - CBA_missionTime;
 
             _colorSet = ["IGUI","TEXT_RGB"];
             if (_timeLeft <= 30) then {

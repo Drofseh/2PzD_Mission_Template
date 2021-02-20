@@ -107,7 +107,7 @@ _actionEat = ["Eat Food","Eat Food","Haas_WWII_Rebalance\UI\icon_stamina_boost_e
 
 // Add actions to combine two half full canteens
 _conditionCombine = {
-    {_x == "ACE_Canteen_Half"} count (items player) > 1;
+    {_x isEqualTo "ACE_Canteen_Half"} count (items player) > 1;
 };
 
 _statementCombine = {

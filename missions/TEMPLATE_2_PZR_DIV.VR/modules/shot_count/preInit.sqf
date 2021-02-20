@@ -32,7 +32,7 @@ if (isServer) then {
             _cfgMag = (configFile >> "CfgMagazines" >> _className);
             _ret =  getText(_cfgMag >> "displayName");
 
-            if (_ret == "") then {
+            if (_ret isEqualTo "") then {
                 _ret = (str _className);
                 diag_log text (format ["displayName entry is blank for %1",_ret]);
             };
@@ -237,7 +237,7 @@ if (hasInterface) then {
             } else {
                 aCount_textRES = "";
             };
-            
+
             aCount_textFinal = format ["%1<br/><br/>%2<br/><br/>%3",aCount_textBLU,aCount_textRED,aCount_textRES];
         };
     };

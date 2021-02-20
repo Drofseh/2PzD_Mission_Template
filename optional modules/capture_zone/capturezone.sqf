@@ -69,7 +69,7 @@ while {_run} do {
         }
     } forEach (_markerCount select 1);
 
-    if (((_currentOwner select 0) != (_oldOwner select 0)) || {_currentOwner select 0 == "CONTESTED"}) then {
+    if (((_currentOwner select 0) != (_oldOwner select 0)) || {_currentOwner select 0 isEqualTo "CONTESTED"}) then {
         switch (_currentOwner select 0) do {
             case "WEST" : {
                     _mes = _messages select 0;

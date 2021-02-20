@@ -1,5 +1,10 @@
 //========================Canadian Equipment Definitions========================
 
+//=== Weapons ===
+
+//Primary
+#define CDN_Weap_StenMkII       "fow_w_sten_mk2"
+
 //=== Clothes ===
 
 //Uniform

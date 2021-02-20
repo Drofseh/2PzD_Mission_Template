@@ -77,7 +77,7 @@ Olsen_FW_FNC_Extract = {
 
             switch (typeName _waitFor) do {
                 case "SIDE": {if ([_veh, _waitFor] call Olsen_FW_FNC_CheckSideInVeh) then {_continue = false}};
-                case "OBJECT": {if (_waitFor in _veh || !(_waitFor call Olsen_FW_FNC_Alive)) then {_continue = false}};
+                case "OBJECT": {if (_waitFor in _veh || {!(_waitFor call Olsen_FW_FNC_Alive)}) then {_continue = false}};
                 case "ARRAY": {if ([_veh, _waitFor] call Olsen_FW_FNC_CheckArrayInVeh) then {_continue = false}};
                 case "STRING": {if (_veh call compile _waitFor) then {_continue = false}};
             };

@@ -42,7 +42,7 @@ switch (playerSide) do {
         FW_SPAWNDISTANCE = 200;
     };
 
-        case civilian: {
+    case civilian: {
         FW_JIPTYPE = "TELEPORT";
 
         FW_JIPDISTANCE = 50;

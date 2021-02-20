@@ -95,7 +95,7 @@
             };
         };
 
-        if (isNil "_hasLR" || isNil "_hasSR" || _eval) then {
+        if (_eval || {isNil "_hasLR"} || {isNil "_hasSR"}) then {
             {
                 {
                     switch (true) do {

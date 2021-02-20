@@ -1,9 +1,8 @@
 
 // [side, type, number, target, [adjustmentX,Y]]
-// [(playerSide), "HE", 5, "Target01", [0,0]] call Olsen_FW_FNC_SupportFire_FireMission;
+// ["HE", 5, "Target01", [0,0]] call Olsen_FW_FNC_SupportFire_FireMission;
 Olsen_FW_FNC_SupportFire_FireMission = {
     params [
-        ["_supportFire_side", playerSide],
         ["_supportFire_type", "Smoke"],
         ["_supportFire_number", 1],
         ["_supportFire_target", "TargetVisual"],
@@ -22,7 +21,6 @@ Olsen_FW_FNC_SupportFire_FireMission = {
     ];
 
     // systemChat "Mission start";
-    // systemChat ("_supportFire_side - " + str _supportFire_side);
     // systemChat ("_supportFire_type - " + str _supportFire_type);
     // systemChat ("_supportFire_number - " + str _supportFire_number);
     // systemChat ("_supportFire_target - " + str _supportFire_target);
@@ -53,7 +51,7 @@ Olsen_FW_FNC_SupportFire_FireMission = {
         // systemChat "Fire mission canceled";
     };
 
-    if (_supportFire_target == "TargetLast" && {supportFire_firstRepeat}) then {
+    if (_supportFire_target isEqualTo "TargetLast" && {supportFire_firstRepeat}) then {
         _supportFire_adjustDir = format [" %1", supportFire_adjustmentDirection];
         supportFire_firstRepeat = False;
     } else {
@@ -61,28 +59,35 @@ Olsen_FW_FNC_SupportFire_FireMission = {
         _supportFire_adjustDir = "";
     };
 
-    _supportFire_ammoLeft = [_supportFire_side, _supportFire_type, _supportFire_number] call Olsen_FW_FNC_SupportFire_RemoveAmmo;
-    // systemChat ("_supportFire_ammoLeft - " + str _supportFire_ammoLeft);
+    if (!supportFire_isZEUS) then {
+        _supportFire_ammoLeft = [_supportFire_type, _supportFire_number] call Olsen_FW_FNC_SupportFire_RemoveAmmo;
+        // systemChat ("_supportFire_ammoLeft - " + str _supportFire_ammoLeft);
 
-    // cancel if not enough ammo
-    if (_supportFire_ammoLeft < 0) exitWith {
-        // systemChat "Fire mission canceled";
-        [[(format ["Negative, not enough %1 rounds available.", _supportFire_type])], true] call CBA_fnc_notify;
-        [(playerSide),false] call Olsen_FW_FNC_SupportFire_AmmoCheck;
+        // cancel if not enough ammo
+        if (_supportFire_ammoLeft < 0) exitWith {
+            // systemChat "Fire mission canceled";
+            [[(format ["Negative, not enough %1 rounds available.", _supportFire_type])], true] call CBA_fnc_notify;
+            [] call Olsen_FW_FNC_SupportFire_AmmoCheck;
+        };
     };
 
     // make fire missions unavailable for that side
-    if (_supportFire_side isEqualTo WEST) then {
+    if (supportFire_isZEUS) then {
+        supportFire_fireMissionAvailableZEUS = False;
+        publicVariable "supportFire_fireMissionAvailableZEUS";
+        // systemChat "Fire missions disabled";
+    };
+    if (supportFire_isWEST) then {
         supportFire_fireMissionAvailableWEST = False;
         publicVariable "supportFire_fireMissionAvailableWEST";
         // systemChat "Fire missions disabled";
     };
-    if (_supportFire_side isEqualTo EAST) then {
+    if (supportFire_isEAST) then {
         supportFire_fireMissionAvailableEAST = False;
         publicVariable "supportFire_fireMissionAvailableEAST";
         // systemChat "Fire missions disabled";
     };
-    if (_supportFire_side isEqualTo RESISTANCE) then {
+    if (supportFire_isGUER) then {
         supportFire_fireMissionAvailableGUER = False;
         publicVariable "supportFire_fireMissionAvailableGUER";
         // systemChat "Fire missions disabled";
@@ -122,30 +127,11 @@ Olsen_FW_FNC_SupportFire_FireMission = {
     [
         {
             params [
-                "_supportFire_side",
                 "_supportFire_type",
-                "_supportFire_number",
                 "_supportFire_ammoLeft",
                 "_supportFire_targetName",
                 "_supportFire_grammar"
             ];
-
-            // make fire missions available again for the players side
-            if (_supportFire_side isEqualTo WEST) then {
-                supportFire_fireMissionAvailableWEST = True;
-                publicVariable "supportFire_fireMissionAvailableWEST";
-                // systemChat "Fire missions enabled";
-            };
-            if (_supportFire_side isEqualTo EAST) then {
-                supportFire_fireMissionAvailableEAST = True;
-                publicVariable "supportFire_fireMissionAvailableEAST";
-                // systemChat "Fire missions enabled";
-            };
-            if (_supportFire_side isEqualTo RESISTANCE) then {
-                supportFire_fireMissionAvailableGUER = True;
-                publicVariable "supportFire_fireMissionAvailableGUER";
-                // systemChat "Fire missions enabled";
-            };
 
             [
                 [(format ["Rounds complete on %1.", _supportFire_targetName])],
@@ -153,8 +139,30 @@ Olsen_FW_FNC_SupportFire_FireMission = {
                 true
             ] call CBA_fnc_notify;
             // systemChat "Rounds complete";
+
+            // make fire missions available again for the players side
+            if (supportFire_isZEUS) exitWith {
+                supportFire_fireMissionAvailableZEUS = True;
+                publicVariable "supportFire_fireMissionAvailableZEUS";
+                // systemChat "Fire missions disabled";
+            };
+            if (supportFire_isWEST) exitWith {
+                supportFire_fireMissionAvailableWEST = True;
+                publicVariable "supportFire_fireMissionAvailableWEST";
+                // systemChat "Fire missions enabled";
+            };
+            if (supportFire_isEAST) exitWith {
+                supportFire_fireMissionAvailableEAST = True;
+                publicVariable "supportFire_fireMissionAvailableEAST";
+                // systemChat "Fire missions enabled";
+            };
+            if (supportFire_isGUER) exitWith {
+                supportFire_fireMissionAvailableGUER = True;
+                publicVariable "supportFire_fireMissionAvailableGUER";
+                // systemChat "Fire missions enabled";
+            };
         },
-        [_supportFire_side,_supportFire_type,_supportFire_number,_supportFire_ammoLeft,_supportFire_targetName,_supportFire_grammar],
+        [_supportFire_type,_supportFire_ammoLeft,_supportFire_targetName,_supportFire_grammar],
         _supportFire_completionDelay
     ] call CBA_fnc_waitAndExecute;
 };

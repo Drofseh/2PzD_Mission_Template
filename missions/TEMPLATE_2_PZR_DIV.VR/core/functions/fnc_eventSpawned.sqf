@@ -22,8 +22,8 @@ if (_unit getVariable ["FW_Tracked", false]) then {
         _x params ["", "_side", "_type", "_total", "_current"];
 
         if (
-            _unit getVariable "FW_Side" == _side
-            && {_type == "ai" || {isPlayer _unit}}
+            (toLower (_unit getVariable "FW_Side")) isEqualTo (toLower _side)
+            && {isPlayer _unit || {(toLower _type) isEqualTo "ai"}}
         ) exitWith {
             _x set [3, _total + 1];
 

@@ -3,7 +3,7 @@
 #define ANY sideLogic
 
 #define ADDAOMARKER(SIDE, NAME) \
-if !(markerType NAME == "") then { \
+if !(markerType NAME isEqualTo "") then { \
     _markers set [count _markers, [SIDE, NAME]]; \
 } else { \
     _temp = format ["AO limit module:<br></br>Warning marker ""%1"", in file ""modules\ao limit\settings.sqf"" does not exist.", NAME]; \
@@ -28,7 +28,7 @@ if (hasInterface) then {
             _pos = getPosATL _vehicle;
 
             {
-                if ((_x select 0) == playerSide || (_x select 0) == ANY) then {
+                if ((_x select 0) == playerSide || {(_x select 0) == ANY}) then {
                     _markers set [count _markers, (_x select 1)];
 
                     if (_vehicle inArea (_x select 1)) then {

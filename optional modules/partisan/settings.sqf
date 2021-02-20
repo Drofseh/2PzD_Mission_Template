@@ -37,6 +37,7 @@ Partisan_safeDistance = 2; // 2 meters for Corona safety.
 //==== Partisan Aim Penalty
 // This is a coeficient for weapon sway of partisan players.
 // 1 means the same as normal. 2 means twice as much sway.
+// If the Familiar Weapons module is being used it will take priority over this
 Partisan_aimPenalty = 2;
 
 //==== Gear Restrictions

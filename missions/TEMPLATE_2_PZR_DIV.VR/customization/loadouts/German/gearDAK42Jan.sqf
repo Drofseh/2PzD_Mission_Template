@@ -327,7 +327,7 @@
     //Stellvertretender Gruppenführer
     case "DAK42Jan_S2" : {
         [DAK_Uni_S2_r] call Olsen_FW_FNC_AddItemRandom;
-        [DAK_Vest_K98] call Olsen_FW_FNC_AddItemRandom;
+        [DAK_Vest_K98] call Olsen_FW_FNC_addItem;
         [DAK_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [DAK_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -517,7 +517,7 @@
     //Mortar Granatwerferschützen
     case "DAK42Jan_MortG" : {
         [DAK_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
-        [DAK_Vest_VCrew] call Olsen_FW_FNC_AddItemRandom;
+        [DAK_Vest_VCrew] call Olsen_FW_FNC_addItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
         [DAK_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -539,7 +539,7 @@
     //Mortar Munitionsträger
     case "DAK42Jan_MortA" : {
         [DAK_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
-        [DAK_Vest_K98] call Olsen_FW_FNC_AddItemRandom;
+        [DAK_Vest_K98] call Olsen_FW_FNC_addItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
         [DAK_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;

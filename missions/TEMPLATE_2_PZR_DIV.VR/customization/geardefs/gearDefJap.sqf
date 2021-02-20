@@ -101,10 +101,10 @@
 
 #define IJA_Default_Equipment \
     [ \
-        [[GEN_ace_ration_Lamb]],[1], \
-        [[GEN_ace_ration_Beef]],[1], \
-        [[GEN_ace_ration_CSoup]],[1], \
-        [[GEN_ace_ration_Dumpling]],[1] \
+        [[GEN_ace_ration_Lamb,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Beef,1,"uniform"]],[1], \
+        [[GEN_ace_ration_CSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Dumpling,1,"uniform"]],[1] \
     ] call Olsen_FW_FNC_AddItemRandomPercent; \
     [GEN_Map] call Olsen_FW_FNC_AddItem; \
     [GEN_Compass] call Olsen_FW_FNC_AddItem; \

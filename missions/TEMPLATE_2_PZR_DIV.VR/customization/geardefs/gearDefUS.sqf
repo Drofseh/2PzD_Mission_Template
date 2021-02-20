@@ -52,7 +52,7 @@ Letting them keep the large backpack would allow them to put other items in the 
 //Attachments
 #define US_Acc_M1_Bayo                      "LIB_ACC_M1_Bayo"
 #define US_Acc_M1G_GL                       "LIB_ACC_GL_M7"
-#define US_Weap_BAR_Bipod                   "LIB_M1918A2_BAR_Bipod"
+#define US_Acc_BAR_Bipod                    "LIB_M1918A2_BAR_Bipod"
 
 //Ammo
 #define US_Mag_M1903                        "LIB_5Rnd_762x63"
@@ -135,10 +135,10 @@ Letting them keep the large backpack would allow them to put other items in the 
 #define US_Mag_M37_Buck00                   "fow_5Rnd_12G_Pellets"
 #define US_Mag_M37_Buck4                    "fow_5Rnd_12G_Pellets_No4_Buck_2PzD"
 #define US_Mag_M37_Slug                     "fow_5Rnd_12G_Slug"
-            
+
 #define US_Mag_M1911                        "LIB_7Rnd_45ACP"
 #define US_Mag_M1911_Tracer                 "LIB_7Rnd_45ACP_t"
-            
+
 #define US_Mag_RGrn_AT                      "LIB_1Rnd_G_M9A1"
 #define US_Mag_RGrn_HE                      "LIB_1Rnd_G_Mk2"
 #define US_Mag_Bazoo                        "LIB_1Rnd_60mm_M6"
@@ -338,14 +338,14 @@ Letting them keep the large backpack would allow them to put other items in the 
 
 #define US_Default_Equipment \
     [ \
-        [[GEN_ace_ration_Lamb]],[1], \
-        [[GEN_ace_ration_Beef]],[1], \
-        [[GEN_ace_ration_TSoup]],[1], \
-        [[GEN_ace_ration_CSoup]],[1], \
-        [[GEN_ace_ration_Tikka]],[1], \
-        [[GEN_ace_ration_Steak]],[1], \
-        [[GEN_ace_ration_Pasta]],[1], \
-        [[GEN_ace_ration_Dumpling]],[1] \
+        [[GEN_ace_ration_Lamb,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Beef,1,"uniform"]],[1], \
+        [[GEN_ace_ration_TSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_CSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Tikka,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Steak,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Pasta,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Dumpling,1,"uniform"]],[1] \
     ] call Olsen_FW_FNC_AddItemRandomPercent; \
     [GEN_Map] call Olsen_FW_FNC_AddItem; \
     [GEN_Compass] call Olsen_FW_FNC_AddItem; \
@@ -587,14 +587,14 @@ Letting them keep the large backpack would allow them to put other items in the 
 
 #define USMC_Default_Equipment \
     [ \
-        [[GEN_ace_ration_Lamb]],[1], \
-        [[GEN_ace_ration_Beef]],[1], \
-        [[GEN_ace_ration_TSoup]],[1], \
-        [[GEN_ace_ration_CSoup]],[1], \
-        [[GEN_ace_ration_Tikka]],[1], \
-        [[GEN_ace_ration_Steak]],[1], \
-        [[GEN_ace_ration_Pasta]],[1], \
-        [[GEN_ace_ration_Dumpling]],[1] \
+        [[GEN_ace_ration_Lamb,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Beef,1,"uniform"]],[1], \
+        [[GEN_ace_ration_TSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_CSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Tikka,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Steak,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Pasta,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Dumpling,1,"uniform"]],[1] \
     ] call Olsen_FW_FNC_AddItemRandomPercent; \
     [GEN_Map] call Olsen_FW_FNC_AddItem; \
     [GEN_Compass] call Olsen_FW_FNC_AddItem; \
@@ -635,14 +635,14 @@ Letting them keep the large backpack would allow them to put other items in the 
 
 #define USAF_Default_Equipment \
     [ \
-        [[GEN_ace_ration_Lamb]],[1], \
-        [[GEN_ace_ration_Beef]],[1], \
-        [[GEN_ace_ration_TSoup]],[1], \
-        [[GEN_ace_ration_CSoup]],[1], \
-        [[GEN_ace_ration_Tikka]],[1], \
-        [[GEN_ace_ration_Steak]],[1], \
-        [[GEN_ace_ration_Pasta]],[1], \
-        [[GEN_ace_ration_Dumpling]],[1] \
+        [[GEN_ace_ration_Lamb,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Beef,1,"uniform"]],[1], \
+        [[GEN_ace_ration_TSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_CSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Tikka,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Steak,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Pasta,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Dumpling,1,"uniform"]],[1] \
     ] call Olsen_FW_FNC_AddItemRandomPercent; \
     [GEN_Map] call Olsen_FW_FNC_AddItem; \
     [GEN_Compass] call Olsen_FW_FNC_AddItem; \

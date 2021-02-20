@@ -26,8 +26,8 @@ if (_unit getVariable ["FW_Tracked", false]) then {
         if (
             !(_unit getVariable ["FW_HasDied", false])
             && {!(_unit getVariable ["FW_Dead", false])}
-            && {_unit getVariable "FW_Side" == _side}
-            && {_type == "ai" || {isPlayer _unit}}
+            && {(toLower (_unit getVariable "FW_Side")) isEqualTo (toLower _side)}
+            && {isPlayer _unit || {(toLower _type) isEqualTo "ai"}}
         ) exitWith {
 
             _unit setVariable ["FW_HasDied", true];

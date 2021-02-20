@@ -1,25 +1,29 @@
 
-// [side player,bool] call Olsen_FW_FNC_SupportFire_AmmoCheck;
+// [] call Olsen_FW_FNC_SupportFire_AmmoCheck;
 Olsen_FW_FNC_SupportFire_AmmoCheck = {
-    params ["_supportFire_side","_supportFire_ammoCheckPlayer","_supportFire_ammoCountHE","_supportFire_ammoCountSmoke","_supportFire_ammoCountFlare"];
+    private ["_supportFire_ammoCountHE","_supportFire_ammoCountSmoke","_supportFire_ammoCountFlare"];
     // systemChat "ammo check started";
     // systemChat str supportFire_side;
 
-    if (_supportFire_side isEqualTo WEST) then {
+    if (supportFire_isZEUS) exitWith {
+        [["As Zeus you have unlimited rounds for all types."], true] call CBA_fnc_notify;
+    };
+
+    if (supportFire_isWEST) then {
         // systemChat "west ammo counted";
         _supportFire_ammoCountHE = supportFire_shellsHE_AmmoCountWEST;
         _supportFire_ammoCountSmoke = supportFire_shellsSmoke_AmmoCountWEST;
         _supportFire_ammoCountFlare = supportFire_shellsFlare_AmmoCountWEST;
     };
 
-    if (_supportFire_side isEqualTo EAST) then {
+    if (supportFire_isEAST) then {
         // systemChat "east ammo counted";
         _supportFire_ammoCountHE = supportFire_shellsHE_AmmoCountEAST;
         _supportFire_ammoCountSmoke = supportFire_shellsSmoke_AmmoCountEAST;
         _supportFire_ammoCountFlare = supportFire_shellsFlare_AmmoCountEAST;
     };
 
-    if (_supportFire_side isEqualTo RESISTANCE) then {
+    if (supportFire_isGUER) then {
         // systemChat "resistance ammo counted";
         _supportFire_ammoCountHE = supportFire_shellsHE_AmmoCountGUER;
         _supportFire_ammoCountSmoke = supportFire_shellsSmoke_AmmoCountGUER;
@@ -31,9 +35,7 @@ Olsen_FW_FNC_SupportFire_AmmoCheck = {
     // systemChat (str _supportFire_ammoCountFlare);
     // systemChat "ammo count passed";
 
-    if (_supportFire_ammoCheckPlayer) then {
-        [["Roger, checking ammunition."], true] call CBA_fnc_notify;
-    };
+    [["Roger, checking ammunition."], true] call CBA_fnc_notify;
 
     [
         {

@@ -15,6 +15,7 @@ if (isServer) then {
 
     // set points requirement for all Zeus actions to 0
     private _curatorCoef = ["place","edit","delete","destroy","group","synchronize"];
+
     {
         zeusCommander setCuratorCoef [_x,0];
     } forEach _curatorCoef;
@@ -33,7 +34,7 @@ if (isServer) then {
 
             private _editingArea = zeusFog_editingAreas select _i;
 
-            if (typeName _editingArea == "ARRAY") then {
+            if (typeName _editingArea isEqualTo "ARRAY") then {
                 private _position = _editingArea select 0;
                 private _size = _editingArea select 1;
                 zeusCommander addCuratorEditingArea [_i,_position,_size];
@@ -55,19 +56,21 @@ if (isServer) then {
 
             private _editingArea = zeusFog_cameraAreas select _i;
 
-            if (typeName _editingArea == "ARRAY") then {
+            if (typeName _editingArea isEqualTo "ARRAY") then {
                 private _position = _editingArea select 0;
                 private _size = _editingArea select 1;
                 zeusCommander addCuratorCameraArea [_i,_position,_size];
             };
         };
     };
+
     if (zeusFog_cameraHeight != -1) then {
         if (zeusFog_cameraHeight < 50) then {
             zeusFog_cameraHeight = 50;
         };
         zeusCommander setCuratorCameraAreaCeiling zeusFog_cameraHeight;
     };
+
     [zeusCommander,zeusFog_visionModes] call BIS_fnc_setCuratorVisionModes;
 
     // hide/unhide things in Zeus UI
@@ -79,7 +82,7 @@ if (isServer) then {
                 if !((_x call Olsen_FW_FNC_getOriginalSide) in zeusFog_visibleSides) then {
                     private _target = _x;
                     // systemChat ("server Loop: " + str _target);
-                    
+
                     if (_target getVariable ["Zeus_Fog_hidden", true]) then {
                         zeusCommander removeCuratorEditableObjects [[_target],false];
                         // // systemChat ((str _target) + " icon hidden sl");

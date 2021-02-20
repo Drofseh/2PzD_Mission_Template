@@ -2,49 +2,47 @@
 Olsen_FW_FNC_HandleLargeMagazine = {
     params ["_unit"];
     private _stance = stance _unit;
-    private _magazine = primaryWeaponMagazine _unit;
+    private _magazine = currentMagazine _unit;
 
-    if (_stance == "PRONE" || {_stance == "UNDEFINED" } || {isWeaponRested _unit} || {isWeaponDeployed _unit} || {primaryWeaponMagazine _unit select 0 == "LIB_M2_Flamethrower_Mag"}) exitWith {
-        _unit setCustomAimCoef (_unit getVariable ["cache_CustomAimCoef", 1]);
+    if (_stance isEqualTo "PRONE" || {_stance isEqualTo "UNDEFINED" } || {isWeaponRested _unit} || {isWeaponDeployed _unit} || {_magazine isEqualTo "LIB_M2_Flamethrower_Mag"}) exitWith {
+        [_unit, "ACE_setCustomAimCoef", "Olsen_FW_HandleLargeMagazine", {1}] call ace_common_fnc_arithmeticSetSource;
+        _unit setCustomAimCoef ([_unit, "ACE_setCustomAimCoef", "max"] call ace_common_fnc_arithmeticGetResult);
     };
 
-    private _ammoCount = _unit ammo primaryWeapon _unit;
-    private _cachedCustomAimCoef = _unit getVariable ["cache_CustomAimCoef", 1];
+    private _ammoCount = _unit ammo currentWeapon _unit;
 
     if (_ammoCount > 50) then {
-        if (_cachedCustomAimCoef != 1) then {
-            _unit setVariable ["cache_CustomAimCoef", (getCustomAimCoef _unit)];
-        };
-        _unit setCustomAimCoef (linearConversion [50,250,_ammoCount,1,10]);
+        [_unit, "ACE_setCustomAimCoef", "Olsen_FW_HandleLargeMagazine", {linearConversion [50,250,_ammoCount,1,10]}] call ace_common_fnc_arithmeticSetSource;
+        _unit setCustomAimCoef ([_unit, "ACE_setCustomAimCoef", "max"] call ace_common_fnc_arithmeticGetResult);
     } else {
-        _unit setVariable ["cache_CustomAimCoef", _cachedCustomAimCoef];
-        _unit setCustomAimCoef _cachedCustomAimCoef;
+        [_unit, "ACE_setCustomAimCoef", "Olsen_FW_HandleLargeMagazine", {1}] call ace_common_fnc_arithmeticSetSource;
+        _unit setCustomAimCoef ([_unit, "ACE_setCustomAimCoef", "max"] call ace_common_fnc_arithmeticGetResult);
     };
 
     true
 };
 
 player addEventHandler ["Reloaded", {
-    params ["_unit", "_weapon", "_muzzle", "_newMagazine", "_oldMagazine"];
+    params ["_unit"];
     _unit call Olsen_FW_FNC_HandleLargeMagazine;
 }];
 
 player addEventHandler ["AnimDone", {
-    params ["_unit", "_ammoCountnim"];
+    params ["_unit"];
     _unit call Olsen_FW_FNC_HandleLargeMagazine;
 }];
 
 player addEventHandler ["Fired", {
-    params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+    params ["_unit"];
     _unit call Olsen_FW_FNC_HandleLargeMagazine;
 }];
 
 player addEventHandler ["WeaponRested", {
-    params ["_unit", "_isRested"];
+    params ["_unit"];
     _unit call Olsen_FW_FNC_HandleLargeMagazine;
 }];
 
 player addEventHandler ["WeaponDeployed", {
-    params ["_unit", "_isDeployed"];
+    params ["_unit"];
     _unit call Olsen_FW_FNC_HandleLargeMagazine;
 }];

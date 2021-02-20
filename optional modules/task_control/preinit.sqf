@@ -65,7 +65,7 @@ Olsen_FW_FNC_TASKCOMPLETED = {
     _state = [_title] call Olsen_FW_FNC_GETTASKSTATE;
     _completed = false;
 
-    if (_state == "Succeeded") then {
+    if (toLower _state isEqualTo "succeeded") then {
         _completed = true;
     };
 

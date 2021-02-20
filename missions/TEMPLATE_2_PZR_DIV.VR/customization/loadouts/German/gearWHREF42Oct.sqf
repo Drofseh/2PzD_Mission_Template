@@ -162,9 +162,10 @@
         { \
             _weapon = primaryWeapon _x; \
             if ( \
-                _weapon == Ger_Weap_MG34 || \
-                _weapon == Rus_Weap_DP || \
-                _weapon == Ger_Weap_MG42 \
+                _weapon == Ger_Weap_MG34 \
+                || {_weapon == Ger_Weap_MG42} \
+                || {_weapon == Rus_Weap_DP} \
+                || {_weapon == Ger_Weap_MG30} \
             ) then { \
                 _weaponsArray pushBack _weapon; \
             }; \
@@ -807,7 +808,7 @@
         [Ger_Uni_VCom] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
-        [Ger_Hat_VCom] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Hat_VCom_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_Tank_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
@@ -826,7 +827,7 @@
         [Ger_Uni_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
-        [Ger_Hat_VCrew] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Hat_VCrew_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_Tank_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items

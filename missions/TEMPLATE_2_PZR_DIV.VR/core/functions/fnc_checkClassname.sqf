@@ -22,16 +22,15 @@ if (_class isEqualTo "") exitWith {};
 
 _result = (
        isClass (configfile >> "CfgWeapons" >> _class)
-    || isClass (configFile >> "CfgMagazines" >> _class)
-    || isClass (configFile >> "CfgGlasses" >> _class)
-    || isClass (configFile >> "CfgVehicles" >> _class)
+    || {isClass (configFile >> "CfgMagazines" >> _class)}
+    || {isClass (configFile >> "CfgGlasses" >> _class)}
+    || {isClass (configFile >> "CfgVehicles" >> _class)}
 );
 
 if (!_result) then {
-    if (!isMultiplayer) then {
-        format ["Invalid classname given! - %1", _class] call Olsen_FW_FNC_DebugMessage;
-        diag_log text format ["Invalid classname given! - %1", _class];
-    };
+    format ["Invalid classname given! - %1", _class] call Olsen_FW_FNC_DebugMessage;
+    diag_log text format ["Invalid classname given! - %1", _class];
+
     [_class, {
         params ["_class","_msg"];
         _msg = format ["Framework has detected an invalid classname - '%1'! Mission will continue but some parts of gear will be missing.", str _class];

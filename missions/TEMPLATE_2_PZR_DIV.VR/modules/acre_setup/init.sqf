@@ -1,6 +1,6 @@
 ["ACRE setup", "Module for all ACRE settings.", "BlackHawk"] call Olsen_FW_FNC_RegisterModule;
 
-FW_Presets = ["default2", "default3", "default4", "default"];
+FW_Presets = ["defaultWest", "defaultEast", "defaultIndep", "default"];
 
 #include "settings.sqf"
 
@@ -29,7 +29,7 @@ if (hasInterface) then {
                 FW_Acre_Volume_Value = FW_Acre_Volume_Value + 2;
             };
 
-            private _v = 0.1;
+            private _volume = 0.1;
 
             FW_Acre_Volume_Value = (round FW_Acre_Volume_Value);
 
@@ -41,15 +41,14 @@ if (hasInterface) then {
             };
 
             switch (FW_Acre_Volume_Value) do {
-                case 0: {_v = 0.1;};
-                case 1: {_v = 0.4;};
-                case 2: {_v = 0.7;};
-                case 3: {_v = 1;};
-                case 4: {_v = 1.3;};
+                case 0: {_volume = 0.1;};
+                case 1: {_volume = 0.4;};
+                case 2: {_volume = 0.7;};
+                case 3: {_volume = 1;};
+                case 4: {_volume = 1.3;};
             };
 
-            [_v] call acre_api_fnc_setSelectableVoiceCurve;
-            acre_sys_gui_volumeLevel = FW_Acre_Volume_Value;
+            [_volume] call acre_api_fnc_setSelectableVoiceCurve;
 
             [{
                 acre_sys_gui_volumeLevel = FW_Acre_Volume_Value;
@@ -70,9 +69,6 @@ if (hasInterface) then {
             };
             case independent: {
                 _side_i = 2;
-            };
-            default {
-                _side_i = 3;
             };
         };
 

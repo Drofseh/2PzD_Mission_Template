@@ -44,7 +44,7 @@
 
         _terpSets = ["STAND","STAND_IA","SIT_LOW","KNEEL","LEAN","WATCH","WATCH1","WATCH2"];
         if (alive _this) then {
-            if ((_this getVariable ["ambientAnimMonitor_animset",""]) in _terpSets && (behaviour _this == "COMBAT" || behaviour _this == "AWARE")) then {
+            if ((_this getVariable ["ambientAnimMonitor_animset",""]) in _terpSets && {behaviour _this isEqualTo "COMBAT" || {behaviour _this isEqualTo "AWARE"}}) then {
                 [_this,"AmovPercMstpSrasWrflDnon"] remoteExec ['playMoveNow'];
 
             } else {

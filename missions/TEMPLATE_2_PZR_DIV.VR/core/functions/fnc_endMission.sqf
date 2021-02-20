@@ -16,12 +16,9 @@
 private _scenario = _this;
 
 if (CBA_missionTime > 0) then {
-    logLoopTime = 1;
-    logEnd = 1;
-    publicVariable "logLoopTime";
-    publicVariable "logEnd";
 
     FW_MissionEnded = true;
+    publicVariable "FW_MissionEnded";
 
     //[] call ocap_fnc_exportData; // call AAR
 

@@ -40,6 +40,7 @@ if (isServer) then {
 
     FW_Teams = []; //DO NOT REMOVE
     FW_MissionEnded = false; //Mission has not ended
+    publicVariable "FW_MissionEnded";
 
     FW_EventPlayerSpawnedHandle = ["FW_PlayerSpawned", {_this call Olsen_FW_FNC_EventPlayerSpawned;}] call CBA_fnc_addEventHandler;
     FW_EventRespawnedHandle = addMissionEventHandler ["EntityRespawned", {_this call Olsen_FW_FNC_EventRespawned;}];

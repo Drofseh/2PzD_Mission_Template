@@ -45,7 +45,7 @@ if ((_unit distance _pos) <= (_radius * 1.5)) then {
         _pos_x = _temp;
     };
 
-    if ((markerShape _marker) == "ELLIPSE") then {
+    if ((markerShape _marker) isEqualTo "ELLIPSE") then {
         if (_xSize == _ySize) then {
             if ((_unit distance _pos) <= _radius) then {
                 _result = true;

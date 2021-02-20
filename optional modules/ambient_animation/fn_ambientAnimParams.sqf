@@ -6,7 +6,7 @@
     Feeds params of given animset to ambientAnimMonitor.
 */
 
-if (_this == "") exitWith {[]};
+if (_this isEqualTo "") exitWith {[]};
 
 private["_azimutFix","_attachSnap","_attachOffset","_noBackpack","_noWeapon","_randomGear","_canInterpolate","_anims"];
 

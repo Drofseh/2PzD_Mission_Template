@@ -30,8 +30,8 @@
 
 #define Ger_Weap_MG30                   "CSA38_MG30"
 #define Ger_Weap_MG34                   "LIB_MG34"
-#define Ger_Weap_MG34_PT                "LIB_MG34_PT"
-#define Ger_Weap_MG42                   "LIB_MG42"
+// #define Ger_Weap_MG34_PT                "LIB_MG34_PT" // Removed by IFA
+#define Ger_Weap_MG42                   "LIB_MG42"i
 #define Ger_Weap_S31M                   "CSA38_31m"
 
 #define Ger_Weap_MP18                   "CSA38_Mp18"
@@ -68,6 +68,7 @@
 //Attachments
 #define Ger_Acc_K98_GL                  "LIB_ACC_GW_SB_Empty"
 #define Ger_Acc_K98_Bayo                "LIB_ACC_K98_Bayo"
+#define Ger_Acc_FG42_Scope              "lib_optic_zf4"
 
 //Ammo
 #define Ger_Mag_K98                     "LIB_5Rnd_792x57"
@@ -156,6 +157,7 @@
 #define Ger_Mag_MG30_SmK                "csa38_7_92_30xMauserMG_SmK_NoTrace_2PzD"
 #define Ger_Mag_MG30_Tracer             "csa38_7_92_30xMauserMG_TraceOnly_2PzD"
 
+/* // Removed by IFA
 #define Ger_Mag_MG34_PT_Mixed_SmE       "LIB_75Rnd_792x57"
 #define Ger_Mag_MG34_PT_SmE             "LIB_75Rnd_792x57_NoTrace_2PzD"
 #define Ger_Mag_MG34_PT_Mixed_sS        "LIB_75Rnd_792x57_sS_2PzD"
@@ -163,6 +165,7 @@
 #define Ger_Mag_MG34_PT_Mixed_SmK       "LIB_75Rnd_792x57_SmK_2PzD"
 #define Ger_Mag_MG34_PT_SmK             "LIB_75Rnd_792x57_SmK_NoTrance_2PzD"
 #define Ger_Mag_MG34_PT_Tracer          "LIB_75Rnd_792x57_TraceOnly_2PzD"
+*/
 
 #define Ger_Mag_S31M_Mixed_Ball         "csa38_8x56_25xMannlicherMG"
 #define Ger_Mag_S31M_Ball               "csa38_8x56_25xMannlicherMG_sS_NoTrace_2PzD"
@@ -302,6 +305,7 @@
 #define Ger_Vest_SL                     "V_LIB_GER_VestUnterofficer"
 #define Ger_Vest_K98IFA                 "V_LIB_GER_VestKar98"
 #define Ger_Vest_G43IFA                 "V_LIB_GER_VestG43"
+#define Ger_Vest_MP40IFA                "V_LIB_GER_VestMP40"
 #define Ger_Vest_StG44IFA               "V_LIB_GER_VestSTG"
 #define Ger_Vest_MP40NCO                "fow_v_heer_mp40_nco"
 #define Ger_Vest_K98                    "fow_v_heer_k98"
@@ -354,8 +358,7 @@
                                         //This is small drums round the neck
 #define Ger_BP_Pzr                      "B_LIB_GER_Panzer_Empty"
 #define Ger_BP_Radio                    "B_LIB_GER_Radio"
-//#define Ger_BP_Radio                  "fow_b_torn_radio"
-                                        //Use this radio backpack when switching to ACRE
+
 #define Ger_BP_VCrew                    "B_LIB_GER_SapperBackpack_empty"
 #define Ger_BP_Med                      "fow_b_tornister_medic"
                                         //change back to B_LIB_GER_MedicBackpack_Big_Empty if it gets a new model
@@ -372,8 +375,8 @@
 #define Ger_Helmet_c                    "fow_h_ger_m40_heer_camo"
 #define Ger_Helmet_l                    "fow_h_ger_m42_heer_01"
 
-#define Ger_Hat_VCom                    ["H_LIB_GER_TankOfficerCap"],["H_LIB_GER_TankOfficerCap2"]
-#define Ger_Hat_VCrew                   ["fow_h_ger_feldmutze_panzer"],["fow_h_ger_m38_feldmutze_panzer"],["fow_h_ger_headset"]
+#define Ger_Hat_VCom_r                  ["H_LIB_GER_TankOfficerCap"],["H_LIB_GER_TankOfficerCap2"]
+#define Ger_Hat_VCrew_r                 ["fow_h_ger_feldmutze_panzer"],["fow_h_ger_m38_feldmutze_panzer"],["fow_h_ger_headset"]
 
     //Winter Headgear
 #define Ger_HatW_Officer                "H_LIB_GER_Fieldcap"
@@ -397,11 +400,11 @@
 
 #define Ger_Default_Equipment \
     [ \
-        [[GEN_ace_ration_Beef]],[1], \
-        [[GEN_ace_ration_TSoup]],[1], \
-        [[GEN_ace_ration_CSoup]],[1], \
-        [[GEN_ace_ration_Steak]],[1], \
-        [[GEN_ace_ration_Pasta]],[1] \
+        [[GEN_ace_ration_Beef,1,"uniform"]],[1], \
+        [[GEN_ace_ration_TSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_CSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Steak,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Pasta,1,"uniform"]],[1] \
     ] call Olsen_FW_FNC_AddItemRandomPercent; \
     [GEN_Map] call Olsen_FW_FNC_AddItem; \
     [GEN_Compass] call Olsen_FW_FNC_AddItem; \
@@ -493,6 +496,7 @@
 //Headgear
 #define Luft_Helmet                     "fow_h_ger_m40_luftwaffe_01"
 #define Luft_Helmet_n                   "fow_h_ger_m40_luftwaffe_02"
+#define Luft_Helmet_r                   ["fow_h_ger_m40_luftwaffe_01"],["fow_h_ger_m40_luftwaffe_02"]
 #define Luft_Helmet_Pilot               "H_LIB_GER_LW_PilotHelmet"
 
 //=== EQUIPMENT ===
@@ -561,6 +565,7 @@
 //=== Clothes ===
 
 //Uniform
+#define SS_Uni_Camo                     "U_LIB_ST_Soldier_Camo2"
 #define SS_Uni_Rif                      "fow_u_ger_m43_ss_01_private"
 #define SS_Uni_Rif_R                    ["fow_u_ger_m43_ss_01_private"],["fow_u_ger_m43_peadot_01_private"],["fow_u_ger_m43_peadot_02_private"],["fow_u_ger_m43_peadot_03_private"],["fow_u_ger_m43_peadot_01_private"],["fow_u_ger_m43_smock_02_private"]
 #define SS_Uni_PD                       "fow_u_ger_m43_peadot_01_private"
@@ -574,5 +579,7 @@
 //Headgear
 #define SS_Hat_O                        "fow_h_ger_officer_cap_ss"
 #define SS_Hat                          "fow_h_ger_feldmutze_ss"
+#define SS_Hat_2                        "H_LIB_GER_Fieldcap2"
 #define SS_Helmet1                      "fow_h_ger_m40_ss_01"
 #define SS_Helmet2                      "fow_h_ger_m40_ss_02"
+#define SS_Helmet_r                     ["H_LIB_ST_Helmet2"],["Headgear_csa38_M35SS"]

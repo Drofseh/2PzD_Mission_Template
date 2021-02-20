@@ -12,14 +12,14 @@ if (hasInterface) then {
                 _data = modParams [_mod, ["name", "picture","logo","logoOver","logoSmall"]];
                 if !(_data isEqualTo []) then {
                     _data0 = _data select 0;
-                    
+
                     for "_i" from 1 to 4 do {
                         _data1 = _data select _i splitString "\";
                         if ((_data1 find "!workshop") > -1) then {
                             _modlist pushBackUnique _data0;
                         };
                     };
-                    
+
                 };
             } forEach _classes;
 

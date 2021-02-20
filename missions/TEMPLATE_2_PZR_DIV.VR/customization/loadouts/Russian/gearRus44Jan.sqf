@@ -207,7 +207,7 @@
 
     //Company Commander
     case "R44Jan_CC" : {
-        [Rus_Uni_CC] call Olsen_FW_FNC_AddItemRandom;
+        [Rus_Uni_CC] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Rus_Hat_PC] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -267,7 +267,7 @@
 
     //Platoon Commander
     case "R44Jan_PC" : {
-        [Rus_Uni_PC] call Olsen_FW_FNC_AddItemRandom;
+        [Rus_Uni_PC] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Rus_Hat_PC] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -445,7 +445,7 @@
     //Machine Gunner
     case "R44Jan_MG" : {
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
-        [Rus_Vest_MG] call Olsen_FW_FNC_AddItemRandom;
+        [Rus_Vest_MG_r] call Olsen_FW_FNC_AddItemRandom;
         [Rus_BP_MG] call Olsen_FW_FNC_AddItem;
         [Rus_Helmet] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;

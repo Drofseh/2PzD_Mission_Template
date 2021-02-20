@@ -5,16 +5,16 @@
 
 /*
     //--- For All Vehicles:
-    
+
     Class: This is the className of the logged vehicle.
     It should match the className of the vehicle you are applying to loadout too.
-    
+
     Position: This is the place on the map that the vehicle finished the mission at.
     If you want the vehicle to start in the same place it finished add the code to the vehicles case.
-    
+
     Orientation: This is the direction the vehicle was facing.
     If you want the vehicle to start facing the same direction add the code to the vehicle case.
-    
+
     Items Class & Count: These are the type and number of items that are in the vehicles inventory.
     This includes uniforms and vests, as well as pretty much everything that isn't a magazine, weapon, or backpack.
         addItemCargo - Each item needs to be added separately with its own amount. This can be used for items, weapons, or magazines, but is not recommended for magazines.
@@ -53,7 +53,7 @@
 
     Turret Indexes: This is a list of all the turret indexes.
     It is just used as a reference for the next data points.
-    
+
     Default Turret Mags: These are the magazines that the vehicle normally has for its weapons.
     They are listed for each turret, with the turret index at the start of its magazines.
     These should be removed before adding new magazines.
@@ -68,13 +68,13 @@
             _vic addMagazineTurret ["LIB_40x_BR350B_AP",[0],100];    // adds a LIB_40x_BR350B_AP magazine to turret 0, magazine will have 40 rounds in it, not 100, because 40 is the maximum the magazine can hold
 
     //--- For Rearm Vehicles
-    
+
     Rearm Ammo: This is how much ACE ammo resupply the vehicle has left.
         ace_rearm_fnc_setSupplyCount - This sets the amount of resupply ammunition that a rearm truck has. It is an abstract.
             [_vic, 1000] call ace_rearm_fnc_setSupplyCount; // sets the available ammo to 1000 units
 
     //--- For Refuel Vehicles
-    
+
     Refuel Fuel: This is how much ACE refuel supply the vehicle has left.
         ace_refuel_fnc_setFuel - This sets the amount of fuel of an ACE compatible refueling truck has to refuel with.
             [_vic, 42] call ace_refuel_fnc_setFuel;

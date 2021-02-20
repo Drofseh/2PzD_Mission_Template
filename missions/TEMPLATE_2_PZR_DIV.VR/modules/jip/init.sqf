@@ -15,7 +15,7 @@ if (isServer && {FW_JIPDENYTIME > -1}) then {
 
 if (hasInterface && {str playerSide != "LOGIC"}) then {
 
-    if (FW_JIPTYPE == "DENY" && {missionNamespace getVariable ["FW_JIPDenied", false]}) exitWith {
+    if (toUpper FW_JIPTYPE isEqualTo "DENY" && {missionNamespace getVariable ["FW_JIPDenied", false]}) exitWith {
         [{
             player call Olsen_FW_FNC_UntrackUnit;
             setPlayerRespawnTime 10e10;

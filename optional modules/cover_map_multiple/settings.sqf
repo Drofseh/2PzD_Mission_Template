@@ -1,7 +1,7 @@
 // ===== MUST NOT BE USED AT THE SAME TIME AS THE Cover_Map MODULE
 
-//This module covers the area on the map outside of the AO Marker. The first AO marker in the array is the initial AO shown to all players. 
-//Specific units can be given the ability to switch AOs with 
+//This module covers the area on the map outside of the AO Marker. The first AO marker in the array is the initial AO shown to all players.
+//Specific units can be given the ability to switch AOs with
 /*
 this setvariable ["HasAltMaps",true];
 */

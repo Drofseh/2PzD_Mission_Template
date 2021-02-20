@@ -39,7 +39,7 @@ magazine_conversion_nameSpace = true call CBA_fnc_createNamespace;
     _ammoClass = toUpper (getText (configFile >> "CfgMagazines" >> _x >> "ammo"));
 
     // group any magazines with no ammo into a single var.
-    if (_ammoClass == "") then {
+    if (_ammoClass isEqualTo "") then {
         _ammoClass = "No_Ammo_Class";
     } else {
 

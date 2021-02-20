@@ -43,11 +43,14 @@ if (hasInterface) then {
 
         #include "init\actionsPartisan.sqf"
 
-        Partisan_AimCoefHandler = [{
-            if ((getCustomAimCoef player) < Partisan_aimPenalty) then {
-                player setCustomAimCoef Partisan_aimPenalty;
-            };
-        }, 0, []] call CBA_fnc_addPerFrameHandler;
+        if (isNil "familiarWeapons_swayPenalty") then {
+            Partisan_AimCoefHandler = [{
+                if ((getCustomAimCoef player) < Partisan_aimPenalty) then {
+                    [player, "ACE_setCustomAimCoef", "Partisan_aimPenalty", {Partisan_aimPenalty}] call ace_common_fnc_arithmeticSetSource;
+                    player setCustomAimCoef ([player, "ACE_setCustomAimCoef", "max"] call ace_common_fnc_arithmeticGetResult);
+                };
+            }, 0, []] call CBA_fnc_addPerFrameHandler;
+        };
 
         player setVariable ["Partisan Safety Rating", 0];
         player setVariable ["Partisan Notoriety", 0, true];

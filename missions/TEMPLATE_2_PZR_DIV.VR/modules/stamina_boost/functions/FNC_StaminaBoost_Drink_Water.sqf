@@ -32,11 +32,11 @@ Olsen_FW_FNC_StaminaBoost_Drink_Water = {
 
             [stamina_boost_staminaFoodCool] call Olsen_FW_FNC_StaminaBoost_RaiseStamina;
 
-            if (_oldItem == "ACE_Canteen") then {
+            if (_oldItem isEqualTo "ACE_Canteen") then {
                 _drinkName = "full canteen.";
                 _drinkLeft = "It's now half full.";
             } else {
-                if (_oldItem == "ACE_Canteen_Half") then {
+                if (_oldItem isEqualTo "ACE_Canteen_Half") then {
                     _drinkName = "half full canteen.";
                     _drinkLeft = "It's now empty.";
                 };

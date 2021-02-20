@@ -14,4 +14,4 @@
 
 private _vehicle = _this;
 
-(_vehicle emptyPositions "Cargo" != 0 || _vehicle emptyPositions "Gunner" != 0 || _vehicle emptyPositions "Commander" != 0 || _vehicle emptyPositions "Driver" != 0)
+(_vehicle emptyPositions "Cargo" != 0 || {_vehicle emptyPositions "Gunner" != 0} || {_vehicle emptyPositions "Commander" != 0} || {_vehicle emptyPositions "Driver" != 0})

@@ -38,7 +38,7 @@ if (hasInterface) then {
     private _syo = _sy;
 
 
-    if ((_a > 0 && _a <= 90) || (_a >180 && _a <=270)) then {
+    if (_a > 0 && {_a <= 90} || {_a >180 && {_a <=270}}) then {
         private _temp = _sx;
         _sx = _sy;
         _sy = _temp;
@@ -57,7 +57,7 @@ if (hasInterface) then {
         private _s = _sx;
         private _w = 2*S+_sy;
         private _bw = _sy + BS;
-        if !((_a > 0 && _a <= 90) || (_a >180 && _a <=270)) then {
+        if !(_a > 0 && {_a <= 90} || {_a >180 && {_a <=270}}) then {
             _s = _sy;
             _w = _sx + 2*BS;
             _bw = _sx + BS;

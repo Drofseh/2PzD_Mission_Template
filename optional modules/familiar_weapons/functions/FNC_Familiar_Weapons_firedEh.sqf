@@ -1,37 +1,51 @@
 
-Olsen_FW_FNC_Foreign_Weapons_firedEh = {
-    params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
-
+Olsen_FW_FNC_Familiar_Weapons_firedEh = {
+    params ["_unit", "_weapon", "", "_mode", "", "", "_projectile"];
     _weapon = toLower _weapon;
 
-    if ((_weapon isEqualTo (toLower (primaryWeapon player)))   ||
+    if ((toLower [_weapon] call BIS_fnc_baseWeapon) in familiarWeapons_familiarWeaponsShooting) exitWith {
+        [_unit, "ACE_setUnitRecoilCoefficient", "Olsen_FW_Familiar_Weapons", {1}] call ace_common_fnc_arithmeticSetSource;
+        _unit setUnitRecoilCoefficient ([_unit, "ACE_setUnitRecoilCoefficient", "max"] call ace_common_fnc_arithmeticGetResult);
+    };
+
+    if (
+        (_weapon isEqualTo (toLower (primaryWeapon player)))   ||
         {_weapon isEqualTo (toLower (secondaryWeapon player))} ||
         {_weapon isEqualTo (toLower (handgunWeapon player))}
     ) then {
-        if (_weapon in familiarWeapons_familiarWeapons || {(toLower [_weapon] call BIS_fnc_baseWeapon) in familiarWeapons_familiarWeapons}) exitWith {};
-
-        private _dispersion = getNumber (configFile >> "CfgWeapons" >> _weapon >> "dispersion");
+        private _weaponLearningVarName = format ["familiarWeapons_shooting %1", getText (configFile >> "CfgWeapons" >> _weapon >> "displayName")];
+        private _weaponLearning = familiarWeapons_nameSpace getVariable [_weaponLearningVarName, 0];
+        private _dispersion = getNumber (configFile >> "CfgWeapons" >> _weapon >> _mode >> "dispersion");
+        private _dispersionPenalty = linearConversion [0,100,_weaponLearning,familiarWeapons_accuracyPenalty,1];
         private _dispersionX = (familiarWeapons_pseudoRandomList select ((_unit ammo _weapon) mod (count familiarWeapons_pseudoRandomList))) select 0;
         private _dispersionY = (familiarWeapons_pseudoRandomList select ((_unit ammo _weapon) mod (count familiarWeapons_pseudoRandomList))) select 1;
 
-        [_projectile, ((_dispersionX * _dispersion) * familiarWeapons_accuracyPenalty), ((_dispersionY * _dispersion) * familiarWeapons_accuracyPenalty)] call ace_common_fnc_changeProjectileDirection;
+        [
+            _projectile,
+            ((_dispersionX * _dispersion) * _dispersionPenalty),
+            ((_dispersionY * _dispersion) * _dispersionPenalty)
+        ] call ace_common_fnc_changeProjectileDirection;
 
-        private _modeType = getText (configFile >> "CfgWeapons" >> "_weapon" >> "_mode" >> "textureType");
-        private _weaponLearning = familiarWeapons_nameSpace getVariable [(format ["familiarWeapons%1",_nameWeapon]), 0];
+        private _modeType = toLower (getText (configFile >> "CfgWeapons" >> _weapon >> _mode >> "textureType"));
 
-        switch (_condition) do {
+        switch (_modeType) do {
             case "semi" : {_weaponLearning = _weaponLearning + 2};
-            case "fullAuto" : {_weaponLearning = _weaponLearning + 0.25};
-            case "fastAuto" : {_weaponLearning = _weaponLearning + 0.25};
+            case "fullauto" : {_weaponLearning = _weaponLearning + 0.25};
+            case "fastauto" : {_weaponLearning = _weaponLearning + 0.25};
             case "burst" : {_weaponLearning = _weaponLearning + 0.25};
             default {_weaponLearning = _weaponLearning + 2};
         };
 
-        familiarWeapons_nameSpace setVariable [(format ["familiarWeapons%1",_nameWeapon]), _weaponLearning];
+        familiarWeapons_nameSpace setVariable [_weaponLearningVarName, _weaponLearning];
 
-        if (_weaponLearning >= 100) then {
-            (format ["You've used the %1 enough to become familiar with it.", _nameWeapon]) call CBA_fnc_notify;
-            familiarWeapons_familiarWeapons pushBackUnique (toLower _weapon);
+        if (_weaponLearning >= 100) exitWith {
+            familiarWeapons_familiarWeaponsShooting pushBackUnique (toLower [_weapon] call BIS_fnc_baseWeapon);
+            
+            [_unit, "ACE_setUnitRecoilCoefficient", "Olsen_FW_Familiar_Weapons", {1}] call ace_common_fnc_arithmeticSetSource;
+            _unit setUnitRecoilCoefficient ([_unit, "ACE_setUnitRecoilCoefficient", "max"] call ace_common_fnc_arithmeticGetResult);
         };
+
+        [_unit, "ACE_setUnitRecoilCoefficient", "Olsen_FW_Familiar_Weapons", {linearConversion [0,100,_weaponLearning,familiarWeapons_recoilPenalty,1]}] call ace_common_fnc_arithmeticSetSource;
+        _unit setUnitRecoilCoefficient ([_unit, "ACE_setUnitRecoilCoefficient", "max"] call ace_common_fnc_arithmeticGetResult);
     };
 };

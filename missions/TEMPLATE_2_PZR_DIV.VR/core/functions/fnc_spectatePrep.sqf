@@ -38,11 +38,7 @@ if (FW_RespawnTickets > 0) then {
 
     if (!isNull(_respawnPoint)) then {
         _respawnPosition = getPosATL _respawnPoint;
-        player setPosATL ([[[_respawnPosition, 7]]] call BIS_fnc_randomPos); //yes this needs all three square brackets on each side.
-    };
-
-    if (player getVariable ["spawnInParachute_parachuteRespawn", false]) then {
-        [player, (player getVariable ["spawnInParachute_parachuteRespawnHeight", 300])] call Olsen_FW_FNC_DOPARACHUTE;
+        player setPosATL ([[[_respawnPosition, 100]]] call BIS_fnc_randomPos); //yes this needs all three square brackets on each side.
     };
 
     FW_RespawnTickets = FW_RespawnTickets - 1;

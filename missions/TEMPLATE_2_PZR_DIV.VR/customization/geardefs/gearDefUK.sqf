@@ -9,13 +9,13 @@
 #define UK_Weap_LeeEnNo4T           "LIB_LeeEnfield_No4_Scoped"
 #define UK_Weap_LeeEnNo5            "fow_w_leeenfield_no5mk1_junglecarbine"
 #define UK_Weap_StenMkI             "LIB_Sten_Mk5"
-#define UK_Weap_StenMkII            "fow_w_sten_mk2"
+#define UK_Weap_StenMkII            "LIB_Sten_Mk2"
 #define UK_Weap_StenMkIIS           "LEN_StenMk2S"
-#define UK_Weap_StenMkIII           "fow_w_sten_mk2"
+#define UK_Weap_StenMkIII           "LIB_Sten_Mk2"
 #define UK_Weap_StenMkV             "LIB_Sten_Mk5"
-#define UK_Weap_StenMkVI            "fow_w_sten_mk5"
+#define UK_Weap_StenMkVI            "LEN_StenMk2S"
 #define UK_Weap_BrenMkI             "CSA38_BRENMKI"
-#define UK_Weap_BrenMkII            "fow_w_bren"
+#define UK_Weap_BrenMkII            "LIB_Bren_Mk2"
 #define UK_Weap_Boys                "w39_urwz35"
 #define UK_Weap_DeLisle             "LIB_DELISLE"
 
@@ -206,14 +206,14 @@
 
 #define UK_Default_Equipment \
     [ \
-        [[GEN_ace_ration_Lamb]],[1], \
-        [[GEN_ace_ration_Beef]],[1], \
-        [[GEN_ace_ration_TSoup]],[1], \
-        [[GEN_ace_ration_CSoup]],[1], \
-        [[GEN_ace_ration_Tikka]],[1], \
-        [[GEN_ace_ration_Steak]],[1], \
-        [[GEN_ace_ration_Pasta]],[1], \
-        [[GEN_ace_ration_Dumpling]],[1] \
+        [[GEN_ace_ration_Lamb,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Beef,1,"uniform"]],[1], \
+        [[GEN_ace_ration_TSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_CSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Tikka,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Steak,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Pasta,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Dumpling,1,"uniform"]],[1] \
     ] call Olsen_FW_FNC_AddItemRandomPercent; \
     [GEN_Map] call Olsen_FW_FNC_AddItem; \
     [GEN_Compass] call Olsen_FW_FNC_AddItem; \

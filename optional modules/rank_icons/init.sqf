@@ -6,7 +6,7 @@ if (hasInterface) then {
 
     private _customIcon = player getVariable ["diwako_dui_radar_customIcon", ""];
 
-    if (_customIcon == "") then {
+    if (_customIcon isEqualTo "") then {
 
         params ["_rolePrep01","_rolePrep02","_rolePrep03","_role","_rank"];
 

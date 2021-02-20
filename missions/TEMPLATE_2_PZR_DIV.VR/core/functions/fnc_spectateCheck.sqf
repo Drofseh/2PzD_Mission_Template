@@ -34,7 +34,7 @@ if (!isNil "God" && {God isEqualTo _killer || {group _killer isEqualTo group God
 
 // Check if tickets remain and play appropriate dead message
 if (FW_RespawnTickets > 0) then {
-    [(format ["<t color='#ff0000' size = '1.25'><br/>You are dead.<br/><br/>You were killed by %1.<br/><br/>Respawning", _nameKiller]), 0, 0.2, 5, 0.5, 0, 1000] spawn BIS_fnc_dynamicText;
+    [(format ["<t color='#ff0000' size = '1.25'>You are dead.<br/><br/>You were killed by %1.<br/><br/>Respawning", _nameKiller]), 0, 0.2, 5, 0.5, 0, 1000] spawn BIS_fnc_dynamicText;
 } else {
     setPlayerRespawnTime 10e10;
     //systemChat str playerRespawnTime;

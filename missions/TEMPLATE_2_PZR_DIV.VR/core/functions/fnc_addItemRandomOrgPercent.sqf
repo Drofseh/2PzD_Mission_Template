@@ -14,16 +14,17 @@
  * Public: No
  */
 
-params ["_unit", "_loadoutType", "_items", "_randomPick", "_valuesArray", "_weightsArray", "_badLoadout"];
-_itemCount = count _items;
+params ["_unit", "_loadoutType", "_items"];
+
+private _itemCount = count _items;
 
 if (_itemCount % 2 != 0 ) exitWith { // If array has to few or too many elements
     (format ["AddItemRandomPercent: Warning Random Percentage Array wrong size for unit %1 , in loadout %2", _unit, _loadoutType]) call Olsen_FW_FNC_DebugMessage;
 };
 
-_valuesArray = [];
-_weightsArray = [];
-_badLoadout = false;
+private _valuesArray = [];
+private _weightsArray = [];
+private _badLoadout = false;
 
 for "_i" from 1 to _itemCount step 2 do {
 
@@ -50,5 +51,5 @@ if (_badLoadout) exitWith {
     (format ["AddItemRandomPercent: Warning Random Percentage Array is not valid for unit %1 , in loadout %2", _unit, _loadoutType]) call Olsen_FW_FNC_DebugMessage;
 };
 
-_randomPick = _valuesArray selectRandomWeighted _weightsArray;
+private _randomPick = _valuesArray selectRandomWeighted _weightsArray;
 { ([_unit, _loadoutType] + _x) call Olsen_FW_FNC_AddItemOrg; } forEach _randomPick;

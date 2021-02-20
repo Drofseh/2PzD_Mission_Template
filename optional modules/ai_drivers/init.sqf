@@ -78,7 +78,7 @@ aidrivers_createUnit = {
                 _unit enableAI "PATH";
                 FW_AidriverLastTimeIn = CBA_missionTime;
             };
-            if (CBA_missionTime > 120 + FW_AidriverLastTimeIn || !alive _target || !alive _caller || !alive _unit || (vehicle _unit) != _target || (driver _target) != _unit) then {
+            if (CBA_missionTime > 120 + FW_AidriverLastTimeIn || {!alive _target} || {!alive _caller} || {!alive _unit} || {(vehicle _unit) != _target} || {(driver _target) != _unit}) then {
                 [_target, _caller] call aidrivers_removeUnit;
             };
         }, 1, _this] call CBA_fnc_addPerFrameHandler;
@@ -99,8 +99,8 @@ Olsen_FW_FNC_toggleDriverCam = {
 
         FW_pipNvEnabled = false;
 
-        _veh = vehicle player;
-        _mempoint = getText ( configfile >> "CfgVehicles" >> (typeOf _veh) >> "memoryPointDriverOptics" );
+        private _veh = vehicle player;
+        private _mempoint = getText (configOf _veh >> "memoryPointDriverOptics");
         FW_driverCam attachTo [_veh,[0,0,0], _mempoint];
 
         with uiNamespace do {
@@ -135,7 +135,7 @@ Olsen_FW_FNC_enableAIDriver = {
         [_target, _player] call aidrivers_toggle;
     },
     {
-        vehicle _player == _target && ((assignedVehicleRole _player) select 0) == "Turret" && FW_AiDriverVehicle in [objNull, vehicle _player]
+        vehicle _player == _target && (toUpper (assignedVehicleRole _player) select 0) isEqualTo "TURRET" && FW_AiDriverVehicle in [objNull, vehicle _player]
     }] call ace_interact_menu_fnc_createAction;
 
     //unflip action
@@ -144,7 +144,7 @@ Olsen_FW_FNC_enableAIDriver = {
         _target setPos [getpos _target select 0, getpos _target select 1, (getpos _target select 2) + 2];
     },
     {
-        vehicle _player == _target && ((assignedVehicleRole _player) select 0) == "Turret" && (vectorUp _target) select 2 < 0
+        vehicle _player == _target && (toUpper (assignedVehicleRole _player) select 0) isEqualTo "TURRET" && (vectorUp _target) select 2 < 0
     }] call ace_interact_menu_fnc_createAction;
 
     //PIP action
@@ -152,7 +152,7 @@ Olsen_FW_FNC_enableAIDriver = {
         (isNil "FW_driverCam" || {isNull FW_driverCam}) call Olsen_FW_FNC_toggleDriverCam;
     },
     {
-        vehicle _player == _target && ((assignedVehicleRole _player) select 0) == "Turret" && !isNull (_target getVariable ["aidrivers_driver", objNull])
+        vehicle _player == _target && (toUpper (assignedVehicleRole _player) select 0) isEqualTo "TURRET" && !isNull (_target getVariable ["aidrivers_driver", objNull])
     }] call ace_interact_menu_fnc_createAction;
 
     //toggle NV for PIP
@@ -165,7 +165,7 @@ Olsen_FW_FNC_enableAIDriver = {
     },
     {
         vehicle _player == _target &&
-        ((assignedVehicleRole _player) select 0) == "Turret" &&
+        (toUpper (assignedVehicleRole _player) select 0) isEqualTo "TURRET" &&
         (!isNil "FW_driverCam" && {!isNull FW_driverCam})
     }] call ace_interact_menu_fnc_createAction;
 

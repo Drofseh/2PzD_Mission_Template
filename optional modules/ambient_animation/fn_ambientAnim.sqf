@@ -108,7 +108,7 @@ private["_attachOffset","_attachObj","_attachSpecsAuto","_attachSpecs","_attachS
     _canInterpolate = _params select 7;
 
     if (count _anims == 0) exitWith {};
-    if (_gear == "RANDOM") then {_gear = _randomGear call BIS_fnc_selectRandom};
+    if (toUpper _gear isEqualTo "RANDOM") then {_gear = _randomGear call BIS_fnc_selectRandom};
 
     [_unit,_gear,_noWeapon,_noBackpack,_weapon] spawn {
         private["_unit","_gear","_noWeapon","_noBackpack","_weapon"];
@@ -170,7 +170,7 @@ private["_attachOffset","_attachObj","_attachSpecsAuto","_attachSpecs","_attachS
 
             _storedWeapon = _unit getVariable ["ambientAnimMonitor_weapon",""];
 
-            if (primaryWeapon _unit == "" && _storedWeapon != "") then {
+        if (primaryWeapon _unit isEqualTo "" && {_storedWeapon != ""}) then {
                 _unit addWeapon _storedWeapon;
                 _unit selectWeapon _storedWeapon;
             };
@@ -185,7 +185,7 @@ private["_attachOffset","_attachObj","_attachSpecsAuto","_attachSpecs","_attachS
     {
         _xSet = _x getVariable ["ambientAnimMonitor_animset",""];
 
-        if (_xSet != _animset || _xSet == "") then {
+        if (_xSet != _animset || {_xSet isEqualTo ""}) then {
             _linked set [_forEachIndex,objNull];
         } else {
             _xLinked = _x getVariable ["ambientAnimMonitor_linked",[]];

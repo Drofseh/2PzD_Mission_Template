@@ -50,7 +50,7 @@ Olsen_FW_FNC_DisplayAOLimitWarning = {
                 _break = true;
             };
 
-            if (_break || !_shouldDisplay) exitWith {
+            if (_break || {!_shouldDisplay}) exitWith {
                 _display closeDisplay 1;
             };
 

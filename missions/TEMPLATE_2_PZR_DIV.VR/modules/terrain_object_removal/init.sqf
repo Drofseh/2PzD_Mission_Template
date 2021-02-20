@@ -38,7 +38,7 @@ _maxMarkerWidthAO = (_markerSizeAO select 0) max (_markerSizeAO select 1);
         sleep 0.0001;
     } forEach (nearestTerrainObjects [
         _centre, // use [worldSize/2, worldSize/2] for whole map
-        [],
+        ["BUILDING","HOUSE","CHURCH","CHAPEL","CROSS","BUNKER","FORTRESS","FOUNTAIN","VIEW-TOWER","LIGHTHOUSE","QUAY","FUELSTATION","HOSPITAL","FENCE","WALL","HIDE","BUSSTOP","ROAD","TRANSMITTER","STACK","RUIN","TOURISM","WATERTOWER","TRACK","MAIN ROAD","POWER LINES","RAILWAY","POWERSOLAR","POWERWAVE","POWERWIND","SHIPWRECK"],
         _radius, //use worldSize for whole map
         false,
         true

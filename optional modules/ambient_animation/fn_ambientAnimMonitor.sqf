@@ -10,7 +10,7 @@ Function by TinfoilHate. Works in concert with ambientAnim and waypoints, so you
     _wait = _this param [3,false,[true]];
 
     if (!local _unit) exitWith {};
-    if (behaviour _unit == "COMBAT") exitWith {};
+    if (behaviour _unit isEqualTo "COMBAT") exitWith {};
 
     _unit setVariable ["ambientAnimMonitor_exit",false,false];
     _unit setVariable ["ambientAnimMonitor_wait",_wait,false];
@@ -19,11 +19,18 @@ Function by TinfoilHate. Works in concert with ambientAnim and waypoints, so you
 
     _anim call Olsen_FW_FNC_ambientAnim;
 
-    if (typeName _cond == "SCALAR") then {
+    if (typeName _cond isEqualTo "SCALAR") then {
         [{_this setVariable ["ambientAnimMonitor_exit",true,false];}, _unit, _cond] call CBA_fnc_waitAndExecute;
-        [{!alive (_this select 0) || behaviour (_this select 0) == "COMBAT" || damage (_this select 0) > (_this select 1) || (_this select 0) call BIS_fnc_enemyDetected}, {(_this select 0) setVariable ["ambientAnimMonitor_exit",true,false]}, [_unit,_hurt]] call CBA_fnc_waitUntilAndExecute;
+        [
+            {!alive (_this select 0) || {behaviour (_this select 0) isEqualTo "COMBAT"} || {damage (_this select 0) > (_this select 1)} || {(_this select 0) call BIS_fnc_enemyDetected}},
+            {(_this select 0) setVariable ["ambientAnimMonitor_exit",true,false]},
+            [_unit,_hurt]
+        ] call CBA_fnc_waitUntilAndExecute;
     } else {
-        [{!alive (_this select 0) || behaviour (_this select 0) == "COMBAT" || damage (_this select 0) > (_this select 1) || (_this select 0) call BIS_fnc_enemyDetected || (_this select 2)}, {(_this select 0) setVariable ["ambientAnimMonitor_exit",true,false]; }, [_unit,_hurt,_cond]] call CBA_fnc_waitUntilAndExecute;
+        [
+            {!alive (_this select 0) || {behaviour (_this select 0) isEqualTo "COMBAT"} || {damage (_this select 0) > (_this select 1)} || {(_this select 0) call BIS_fnc_enemyDetected} || {(_this select 2)}},
+            {(_this select 0) setVariable ["ambientAnimMonitor_exit",true,false]},
+            [_unit,_hurt,_cond]] call CBA_fnc_waitUntilAndExecute;
     };
 
     [{_this getVariable ["ambientAnimMonitor_exit",false]}, {

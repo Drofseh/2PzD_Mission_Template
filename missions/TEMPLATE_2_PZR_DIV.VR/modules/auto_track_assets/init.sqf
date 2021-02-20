@@ -4,14 +4,11 @@ if (isServer) then {
 
     Olsen_FW_FNC_TrackAssetArea = {
 
-        private ["_marker", "_team", "_vehicle", "_vehCfg"];
-
-        _marker = _this select 0;
-        _team = _this select 1;
+        params ["_marker", "_team"];
 
         {
 
-            _vehicle = _x;
+            private _vehicle = _x;
 
             if (_vehicle inArea _marker) then {
 
@@ -19,7 +16,7 @@ if (isServer) then {
 
                     if ((_x select 0) == _team) exitWith {
 
-                        _vehCfg = (configFile >> "CfgVehicles" >> (typeOf _vehicle));
+                        private _vehCfg = configOf _vehicle;
 
                         if (isText(_vehCfg >> "displayName")) then {
 
@@ -39,23 +36,21 @@ if (isServer) then {
 
     [] spawn {
 
-        private ["_vehicle", "_vehCfg"];
-
         sleep(1);
 
         {
 
-            _vehicle = _x;
+            private _vehicle = _x;
 
             if (!isPlayer _vehicle && {(_vehicle call Olsen_FW_FNC_getOriginalSide) != civilian}) then {
 
-                if (_vehicle getVariable ["FW_AssetName", ""] == "") then {
+                if (_vehicle getVariable ["FW_AssetName", ""] isEqualTo "") then {
 
                     {
 
                         if (_x select 1 == (_vehicle call Olsen_FW_FNC_getOriginalSide)) exitWith {
 
-                            _vehCfg = (configFile >> "CfgVehicles" >> (typeOf _vehicle));
+                            private _vehCfg = configOf _vehicle;
 
                             if (isText(_vehCfg >> "displayName")) then {
 

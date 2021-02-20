@@ -13,10 +13,13 @@
  * Public: No
  */
 
-params ["_team","_index","_return","_found"];
+params [
+    ["_team", "", [""]],
+    ["_index", 0, [0]]
+];
 
-_return = 0;
-_found = false;
+private _return = 0;
+private _found = false;
 
 {
     if ((_x select 0) == _team) exitWith {

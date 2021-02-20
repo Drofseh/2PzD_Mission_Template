@@ -168,7 +168,7 @@
 #define Rus_Vest_PPSH_S2                        "V_LIB_SOV_RAZV_PPShBelt_Mag"
 #define Rus_Vest_Mosin                          "V_LIB_SOV_RA_MosinBelt"
 #define Rus_Vest_SVT                            "V_LIB_SOV_RA_SVTBelt"
-#define Rus_Vest_MG                             ["V_LIB_SOV_RA_MGBelt"],["V_LIB_SOV_RAZV_MGBelt"]
+#define Rus_Vest_MG_r                           ["V_LIB_SOV_RA_MGBelt"],["V_LIB_SOV_RAZV_MGBelt"]
 #define Rus_Vest_HGun                           "V_LIB_SOV_RA_MGBelt"
 
 #define Rus_Vest_VCrew                          "V_LIB_GER_TankPrivateBelt"
@@ -201,11 +201,11 @@
 
 #define Rus_Default_Equipment \
     [ \
-        [[GEN_ace_ration_Beef]],[1], \
-        [[GEN_ace_ration_TSoup]],[1], \
-        [[GEN_ace_ration_CSoup]],[1], \
-        [[GEN_ace_ration_Steak]],[1], \
-        [[GEN_ace_ration_Dumpling]],[1] \
+        [[GEN_ace_ration_Beef,1,"uniform"]],[1], \
+        [[GEN_ace_ration_TSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_CSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Steak,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Dumpling,1,"uniform"]],[1] \
     ] call Olsen_FW_FNC_AddItemRandomPercent; \
     [GEN_Map] call Olsen_FW_FNC_AddItem; \
     [GEN_Compass] call Olsen_FW_FNC_AddItem; \
@@ -240,11 +240,11 @@
 
 #define VDV_Default_Equipment \
     [ \
-        [[GEN_ace_ration_Beef]],[1], \
-        [[GEN_ace_ration_TSoup]],[1], \
-        [[GEN_ace_ration_CSoup]],[1], \
-        [[GEN_ace_ration_Steak]],[1], \
-        [[GEN_ace_ration_Dumpling]],[1] \
+        [[GEN_ace_ration_Beef,1,"uniform"]],[1], \
+        [[GEN_ace_ration_TSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_CSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Steak,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Dumpling,1,"uniform"]],[1] \
     ] call Olsen_FW_FNC_AddItemRandomPercent; \
     [GEN_Map] call Olsen_FW_FNC_AddItem; \
     [GEN_Compass] call Olsen_FW_FNC_AddItem; \
@@ -323,11 +323,11 @@
 
 #define NKVD_Default_Equipment \
     [ \
-        [[GEN_ace_ration_Beef]],[1], \
-        [[GEN_ace_ration_TSoup]],[1], \
-        [[GEN_ace_ration_CSoup]],[1], \
-        [[GEN_ace_ration_Steak]],[1], \
-        [[GEN_ace_ration_Dumpling]],[1] \
+        [[GEN_ace_ration_Beef,1,"uniform"]],[1], \
+        [[GEN_ace_ration_TSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_CSoup,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Steak,1,"uniform"]],[1], \
+        [[GEN_ace_ration_Dumpling,1,"uniform"]],[1] \
     ] call Olsen_FW_FNC_AddItemRandomPercent; \
     [GEN_Map] call Olsen_FW_FNC_AddItem; \
     [GEN_Compass] call Olsen_FW_FNC_AddItem; \

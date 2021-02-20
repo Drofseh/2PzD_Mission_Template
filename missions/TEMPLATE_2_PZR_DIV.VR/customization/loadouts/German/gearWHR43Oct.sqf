@@ -897,7 +897,7 @@
         [Ger_Uni_VCom] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
-        [Ger_Hat_VCom] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Hat_VCom_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_Tank_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items
@@ -916,7 +916,7 @@
         [Ger_Uni_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
-        [Ger_Hat_VCrew] call Olsen_FW_FNC_AddItemRandom;
+        [Ger_Hat_VCrew_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_Tank_r] call Olsen_FW_FNC_AddItemRandom;
 
         //Assigned Items

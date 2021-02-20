@@ -55,17 +55,17 @@ Make sure to put the images in a new annex tab instead of cluttering the normal 
 // Displays the Admin Tab, which provides some techinical controls for respawn, mission ending, and similar.
 // It appears for the Admin, the Zeus, Brauer, Falk, Haas, Madsen, Sauer, Schuttler
 
-_adminState = call BIS_fnc_admin;
-_uid = getPlayerUID player;
+private _adminState = call BIS_fnc_admin;
+private _uid = getPlayerUID player;
 if (
     (_adminState != 0) ||
-    (!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}) ||
-    (_uid == "76561198006804011") || // Brauer
-    (_uid == "76561197989925440") || // Falk
-    (_uid == "76561197970317496") || // Haas
-    (_uid == "76561197983143701") || // Madsen
-    (_uid == "76561197985738940") || // Sauer
-    (_uid == "76561198096113294")    // Schuttler
+    {!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}} ||
+    {_uid isEqualTo "76561198006804011"} || // Brauer
+    {_uid isEqualTo "76561197989925440"} || // Falk
+    {_uid isEqualTo "76561197970317496"} || // Haas
+    {_uid isEqualTo "76561197983143701"} || // Madsen
+    {_uid isEqualTo "76561197985738940"} || // Sauer
+    {_uid isEqualTo "76561198096113294"}    // Schuttler
 ) then {
     // This tab has clickable commands to allow the admin or zeus to end the mission.
     // More may be added by makin an entry here and adding a corresponding entry in the settings.sqf
@@ -311,7 +311,7 @@ NEWTAB("III. B. Feindliche Kräfte (Enemy Forces):")
 // Example:
 // Known Locations:
 // Approaching by vehicle from the east.
-// 
+//
 // Possible locatoins:
 // Infantry on foot may be approaching from other directions.
 <br/>
@@ -798,21 +798,6 @@ case civilian : {
 };// End of civilian case
 
 }; // End of switch
-
-if (!isNil "loggingEnabled" && {loggingEnabled == 1}) then {
-    // Persistance system information should go in this tab.
-    NEWTAB("Persistence System")
-    <br/><font color='#70db70'>To ensure accurate logging of data follow these steps:</font>
-    <br/>
-    <br/><font color='#FF8C00'>When putting a weapon in a vehicle or container:</font>
-    <br/>Remove the magazine and all attachments and put them in separately.
-    <br/>Any attachments or magazines left in or on a weapons will be lost.
-    <br/>
-    <br/><font color='#FF8C00'>When putting a uniform, vest, or backpack in a vehicle or container:</font>
-    <br/>Remove all items from inside the uniform/vest/backpack and put them in separately.
-    <br/>Any items left inside a uniform/vest/backpack will be lost.
-    ENDTAB;
-};
 
 DISPLAYBRIEFING();
 

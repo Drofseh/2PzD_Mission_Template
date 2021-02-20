@@ -291,7 +291,7 @@
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
         ] call Olsen_FW_FNC_AddItemRandomPercent;
-        [IJA_Vest_Rif] call Olsen_FW_FNC_AddItemRandom;
+        [IJA_Vest_Rif] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
         [//Hat
             [ [IJA_Helm] ],[32],
@@ -349,7 +349,7 @@
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
         ] call Olsen_FW_FNC_AddItemRandomPercent;
-        [IJA_Vest_Rif] call Olsen_FW_FNC_AddItemRandom;
+        [IJA_Vest_Rif] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
         [//Hat
             [ [IJA_Helm] ],[32],
@@ -379,7 +379,7 @@
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
         ] call Olsen_FW_FNC_AddItemRandomPercent;
-        [IJA_Vest_Rif] call Olsen_FW_FNC_AddItemRandom;
+        [IJA_Vest_Rif] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
         [//Hat
             [ [IJA_Helm] ],[32],
