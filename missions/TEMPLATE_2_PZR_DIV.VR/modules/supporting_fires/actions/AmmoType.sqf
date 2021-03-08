@@ -11,7 +11,7 @@
 
         // HE
         _conditionAmmoType_HE = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsHE_AmmoCountWEST > 0})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsHE_AmmoCountWEST > 0}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_shellsHE_AmmoCountEAST > 0}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_shellsHE_AmmoCountGUER > 0}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS}}
@@ -28,7 +28,7 @@
 
         // Smoke
         _conditionAmmoType_Smoke = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsSmoke_AmmoCountWEST > 0})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsSmoke_AmmoCountWEST > 0}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_shellsSmoke_AmmoCountEAST > 0}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_shellsSmoke_AmmoCountGUER > 0}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS}}
@@ -45,7 +45,7 @@
 
         // Flare
         _conditionAmmoType_Flare = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsFlare_AmmoCountWEST > 0})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_shellsFlare_AmmoCountWEST > 0}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_shellsFlare_AmmoCountEAST > 0}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_shellsFlare_AmmoCountGUER > 0}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS}}

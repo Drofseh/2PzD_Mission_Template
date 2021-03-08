@@ -80,9 +80,7 @@ _supportingFireActions = call {
     #include "actions\Targets.sqf"
 
     // ===== Add Adjust Fire from Last Target
-    if (!supportFire_isZEUS) then {
-        #include "actions\AdjustFire.sqf"
-    };
+    #include "actions\AdjustFire.sqf"
 
     // ===== Add Ammo Type
     #include "actions\AmmoType.sqf"

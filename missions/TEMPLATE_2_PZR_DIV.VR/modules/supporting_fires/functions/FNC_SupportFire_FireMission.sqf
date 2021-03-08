@@ -59,7 +59,9 @@ Olsen_FW_FNC_SupportFire_FireMission = {
         _supportFire_adjustDir = "";
     };
 
-    if (!supportFire_isZEUS) then {
+    if (supportFire_isZEUS) then {
+        _supportFire_ammoLeft = 99;
+    } else {
         _supportFire_ammoLeft = [_supportFire_type, _supportFire_number] call Olsen_FW_FNC_SupportFire_RemoveAmmo;
         // systemChat ("_supportFire_ammoLeft - " + str _supportFire_ammoLeft);
 
@@ -132,12 +134,19 @@ Olsen_FW_FNC_SupportFire_FireMission = {
                 "_supportFire_targetName",
                 "_supportFire_grammar"
             ];
-
-            [
-                [(format ["Rounds complete on %1.", _supportFire_targetName])],
-                [(format ["%1 %2 %3 remaining.", _supportFire_ammoLeft, _supportFire_grammar, _supportFire_type])],
-                true
-            ] call CBA_fnc_notify;
+            
+            if (supportFire_isZEUS) exitWith {
+                [
+                    [(format ["Rounds complete on %1.", _supportFire_targetName])],
+                    true
+                ] call CBA_fnc_notify;
+            } else {
+                [
+                    [(format ["Rounds complete on %1.", _supportFire_targetName])],
+                    [(format ["%1 %2 %3 remaining.", _supportFire_ammoLeft, _supportFire_grammar, _supportFire_type])],
+                    true
+                ] call CBA_fnc_notify;
+            }:
             // systemChat "Rounds complete";
 
             // make fire missions available again for the players side

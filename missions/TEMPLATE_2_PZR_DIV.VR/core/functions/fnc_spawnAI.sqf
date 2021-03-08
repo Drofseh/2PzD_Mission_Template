@@ -16,4 +16,5 @@
 private _unit = (_this select 0) createUnit [(_this select 1),(_this select 2), [], 0, "NONE"];
 if (!isNil "aCount_addEH") then { ["aCount_event_addEH", _unit] call CBA_fnc_serverEvent};
 _unit call Olsen_FW_FNC_trackUnit;
+
 _unit

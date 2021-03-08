@@ -92,9 +92,9 @@ class MissionSQM {
 class mARMADebug {
     // Returns the world name every 60 seconds
     class WorldName {
-        name = "World Name";
-        code = "WorldName";
-        interval = 60;
+        name = "World Name"; // Name of the metric
+        code = "WorldName"; // Code to run which returns a number or string
+        interval = 60; // How often the metric is read
     };
 
     // Returns the mission name every 60 seconds
@@ -107,7 +107,7 @@ class mARMADebug {
     // Will report living players every 60 seconds
     class Players_Live {
         name = "Players - Living";
-        code = "{isPlayer _x} count playableUnits";
+        code = "{alive _x} count playableUnits";
         interval = 60;
     };
 
@@ -134,16 +134,16 @@ class mARMADebug {
 
     // Will report the average FPS every second, based on the average of the last 16 frames
     class ServerFPS_Avg {
-        name = "FPS - Average of Last 16 Frames"; // Name of the metric
-        code = "diag_fps"; // Code to run which returns a number or string
-        interval = 1; // How often the metric is read
+        name = "FPS - Average of Last 16 Frames";
+        code = "diag_fps";
+        interval = 1;
     };
 
     // Will report the lowest FPS every second, based on the slowest of the last 16 frames
     class ServerFPS_Min {
-        name = "FPS - Lowest of Last 16 Frames"; // Name of the metric
-        code = "diag_fpsMin"; // Code to run which returns a number or string
-        interval = 1; // How often the metric is read
+        name = "FPS - Lowest of Last 16 Frames";
+        code = "diag_fpsMin";
+        interval = 1;
     };
 };
 #undef description_extra_classes

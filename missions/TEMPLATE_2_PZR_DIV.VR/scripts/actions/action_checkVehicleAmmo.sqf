@@ -61,12 +61,16 @@ call {
                             if (_magName isEqualTo "") exitWith {};
 
                             private _magCapacity = getNumber (configFile >> "CfgMagazines" >> _magClass >> "count");
-                            private _currentOutput = [(format ["%1 (%2/%3) x ", _magName, _magCurrentRoundCount, _magCapacity])]; //remove capacity and just show current ammo count?
+                            private _outputString = "%1 (%2/%3) x ";
+                            if (_magCapacity < 2) then {
+                                _outputString = "%1 x ";
+                            }
+                            private _currentOutput = [(format [_outputString, _magName, _magCurrentRoundCount, _magCapacity])]; //remove capacity and just show current ammo count?
                             private _existingIndex = _magListTurret find _currentOutput;
                             // diag_log "_currentOutput";
                             // diag_log _currentOutput;
 
-                            if (_existingIndex >= 0) then {
+                            if (_existingIndex > -1) then {
                                 private _previousNumber = (_magListTurret select (_existingIndex + 1) select 0);
                                 _magListTurret set [_existingIndex + 1, [(_previousNumber + 1)]];
                             } else {
@@ -131,7 +135,11 @@ call {
                         private _magName = getText (configFile >> "CfgMagazines" >> _magClass >> "DisplayName");
                         private _magCapacity = getNumber (configFile >> "CfgMagazines" >> _magClass >> "count");
                         private _magCurrentRoundCount = _vehicle ammoOnPylon _pylon;
-                        private _currentOutput = [(format ["%1 (%2/%3) x ", _magName, _magCurrentRoundCount, _magCapacity])];
+                        private _outputString = "%1 (%2/%3) x ";
+                        if (_magCapacity < 2) then {
+                            _outputString = "%1 x ";
+                        }
+                        private _currentOutput = [(format [_outputString, _magName, _magCurrentRoundCount, _magCapacity])];
                         private _existingIndex = _magListTurret find _currentOutput;
                         // diag_log "_pylonMagazines";
                         // diag_log _pylonMagazines;
@@ -150,7 +158,7 @@ call {
                         // diag_log "_currentOutput";
                         // diag_log _currentOutput;
 
-                        if (_existingIndex >= 0) then {
+                        if (_existingIndex > -1) then {
                             private _previousNumber = (_magListTurret select (_existingIndex + 1) select 0);
                             _magListTurret set [_existingIndex + 1, [(_previousNumber + 1)]];
                         } else {

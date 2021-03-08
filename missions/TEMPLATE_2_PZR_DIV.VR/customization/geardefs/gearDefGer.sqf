@@ -31,7 +31,7 @@
 #define Ger_Weap_MG30                   "CSA38_MG30"
 #define Ger_Weap_MG34                   "LIB_MG34"
 // #define Ger_Weap_MG34_PT                "LIB_MG34_PT" // Removed by IFA
-#define Ger_Weap_MG42                   "LIB_MG42"i
+#define Ger_Weap_MG42                   "LIB_MG42"
 #define Ger_Weap_S31M                   "CSA38_31m"
 
 #define Ger_Weap_MP18                   "CSA38_Mp18"

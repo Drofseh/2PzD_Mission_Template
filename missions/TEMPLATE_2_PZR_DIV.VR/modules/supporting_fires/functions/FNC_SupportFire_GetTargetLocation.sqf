@@ -25,12 +25,14 @@ Olsen_FW_FNC_SupportFire_GetTargetLocation = {
 
         _supportFire_targetLoc = supportFire_previousTargetLoc;
 
-        if (supportFire_repeatFireBonus < 1) then {supportFire_repeatFireBonus = 1};
-        supportFire_repeatFireBonus = supportFire_repeatFireBonus + 0.2;
-        if (supportFire_repeatFireBonus >= 3) then {supportFire_repeatFireBonus = 3};
+        if !(supportFire_isZEUS) then {
+            if (supportFire_repeatFireBonus < 1) then {supportFire_repeatFireBonus = 1};
+            supportFire_repeatFireBonus = supportFire_repeatFireBonus + 0.2;
+            if (supportFire_repeatFireBonus >= 3) then {supportFire_repeatFireBonus = 3};
 
-        supportFire_shellDispersion = supportFire_originalShellDispersion / supportFire_repeatFireBonus;
-        supportFire_shellAccuracy = supportFire_originalShellAccuracy / supportFire_repeatFireBonus;
+            supportFire_shellDispersion = supportFire_originalShellDispersion / supportFire_repeatFireBonus;
+            supportFire_shellAccuracy = supportFire_originalShellAccuracy / supportFire_repeatFireBonus;
+        };
         _supportFire_accuracy = supportFire_shellAccuracy;
 
         // systemChat ("supportFire_shellDispersion - " + str supportFire_shellDispersion);

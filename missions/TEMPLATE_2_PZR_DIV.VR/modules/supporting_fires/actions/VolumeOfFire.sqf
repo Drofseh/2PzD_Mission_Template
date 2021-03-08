@@ -11,7 +11,7 @@
 
         // 1 Round, HE
         _conditionVolumeHE1 = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountWEST > 0})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountWEST > 0}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountEAST > 0}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountGUER > 0}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS} && {supportFire_ammoType isEqualTo "HE"}}
@@ -28,7 +28,7 @@
 
         // 5 Rounds, HE
         _conditionVolumeHE5 = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountWEST > 4})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountWEST > 4}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountEAST > 4}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountGUER > 4}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS} && {supportFire_ammoType isEqualTo "HE"}}
@@ -45,7 +45,7 @@
 
         // 10 Rounds, HE
         _conditionVolumeHE10 = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountWEST > 9})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountWEST > 9}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountEAST > 9}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountGUER > 9}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS} && {supportFire_ammoType isEqualTo "HE"}}
@@ -62,7 +62,7 @@
 
         // 15 Rounds, HE
         _conditionVolumeHE15 = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountWEST > 14})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountWEST > 14}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountEAST > 14}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountGUER > 14}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS} && {supportFire_ammoType isEqualTo "HE"}}
@@ -79,7 +79,7 @@
 
         // 20 Rounds, HE
         _conditionVolumeHE20 = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountWEST > 19})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountWEST > 19}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountEAST > 19}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountGUER > 19}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS} && {supportFire_ammoType isEqualTo "HE"}}
@@ -96,7 +96,7 @@
 
         // 25 Rounds, HE
         _conditionVolumeHE25 = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountWEST > 24})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountWEST > 24}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountEAST > 24}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType isEqualTo "HE"} && {supportFire_shellsHE_AmmoCountGUER > 24}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS} && {supportFire_ammoType isEqualTo "HE"}}
@@ -113,7 +113,7 @@
 
         // Target 01, 1 Round, Smoke
         _conditionVolumeSmoke1 = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "Smoke"} && {supportFire_shellsSmoke_AmmoCountWEST > 0})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "Smoke"} && {supportFire_shellsSmoke_AmmoCountWEST > 0}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType isEqualTo "Smoke"} && {supportFire_shellsSmoke_AmmoCountEAST > 0}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType isEqualTo "Smoke"} && {supportFire_shellsSmoke_AmmoCountGUER > 0}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS} && {supportFire_ammoType isEqualTo "Smoke"}}
@@ -130,7 +130,7 @@
 
         // Target 01, 5 Rounds, Smoke
         _conditionVolumeSmoke5 = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "Smoke"} && {supportFire_shellsSmoke_AmmoCountWEST > 4})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "Smoke"} && {supportFire_shellsSmoke_AmmoCountWEST > 4}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType isEqualTo "Smoke"} && {supportFire_shellsSmoke_AmmoCountEAST > 4}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType isEqualTo "Smoke"} && {supportFire_shellsSmoke_AmmoCountGUER > 4}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS} && {supportFire_ammoType isEqualTo "Smoke"}}
@@ -147,7 +147,7 @@
 
         // Target 01, 10 Rounds, Smoke
         _conditionVolumeSmoke10 = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "Smoke"} && {supportFire_shellsSmoke_AmmoCountWEST > 9})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "Smoke"} && {supportFire_shellsSmoke_AmmoCountWEST > 9}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType isEqualTo "Smoke"} && {supportFire_shellsSmoke_AmmoCountEAST > 9}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType isEqualTo "Smoke"} && {supportFire_shellsSmoke_AmmoCountGUER > 9}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS} && {supportFire_ammoType isEqualTo "Smoke"}}
@@ -164,7 +164,7 @@
 
         // Target 01, 1 Round, Flare
         _conditionVolumeFlare1 = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "Flare"} && {supportFire_shellsFlare_AmmoCountWEST > 0})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "Flare"} && {supportFire_shellsFlare_AmmoCountWEST > 0}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType isEqualTo "Flare"} && {supportFire_shellsFlare_AmmoCountEAST > 0}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType isEqualTo "Flare"} && {supportFire_shellsFlare_AmmoCountGUER > 0}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS} && {supportFire_ammoType isEqualTo "Flare"}}
@@ -181,7 +181,7 @@
 
         // Target 01, 5 Rounds, Flare
         _conditionVolumeFlare5 = {
-               (supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "Flare"} && {supportFire_shellsFlare_AmmoCountWEST > 4})
+                supportFire_isWEST && {supportFire_fireMissionAvailableWEST} && {supportFire_ammoType isEqualTo "Flare"} && {supportFire_shellsFlare_AmmoCountWEST > 4}
             || {supportFire_isEAST && {supportFire_fireMissionAvailableEAST} && {supportFire_ammoType isEqualTo "Flare"} && {supportFire_shellsFlare_AmmoCountEAST > 4}}
             || {supportFire_isGUER && {supportFire_fireMissionAvailableGUER} && {supportFire_ammoType isEqualTo "Flare"} && {supportFire_shellsFlare_AmmoCountGUER > 4}}
             || {supportFire_isZEUS && {supportFire_fireMissionAvailableZEUS} && {supportFire_ammoType isEqualTo "Flare"}}

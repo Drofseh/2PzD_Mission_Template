@@ -120,10 +120,8 @@
     supportFire_shellsSmoke_AmmoCountGUER = 0;
     supportFire_shellsFlare_AmmoCountGUER = 0;
 
-    // ZEUS
-    supportFire_shellsHE_AmmoCountZEUS = 0;
-    supportFire_shellsSmoke_AmmoCountZEUS = 0;
-    supportFire_shellsFlare_AmmoCountZEUS = 0;
+    // Zeus
+    // Zeus has unlimited ammo
 
 // FIRE MISSION ACCURACY
     // Sets, per side, how close to the target the fire mission impact area be in metres, using RNG.
@@ -137,6 +135,7 @@
     supportFire_shellAccuracyWEST = 100;
     supportFire_shellAccuracyEAST = 100;
     supportFire_shellAccuracyGUER = 100;
+    // Zeus has perfect accuracy
 
 // FIRE MISSION DISPERSION
     // Sets, per side, the maximum distance (in metres) a shell can land from the centre of the impact area, using RNG.

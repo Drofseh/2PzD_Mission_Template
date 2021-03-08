@@ -10,4 +10,3 @@
 #include "mapTextures.sqf"
 #include "modWarning.sqf"
 #include "sawnOff.sqf"
-//#include "vehGearPersistent.sqf"

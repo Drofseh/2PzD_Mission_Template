@@ -157,7 +157,7 @@ supportFire_volumeOfFire = 1;
 supportFire_adjustmentCoords = [0,0];
 supportFire_adjustmentDirection = "no adjustment";
 
-if (!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}) exitWith {
+if (!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}) then {
     supportFire_isZEUS = true;
     supportFire_target01 = supportFire_target01ZEUS;
     supportFire_target02 = supportFire_target02ZEUS;
@@ -178,119 +178,120 @@ if (!isNil "God" && {God isEqualTo player || {group player isEqualTo group God}}
     supportFire_shellsFlare_Type = supportFire_shellsFlare_TypeZEUS;
 
     supportFire_shellDispersion = supportFire_shellDispersionZEUS;
-    supportFire_shellAccuracy = supportFire_shellAccuracyZEUS;
+    supportFire_shellAccuracy = 0;
 
     supportFire_originalShellDispersion = supportFire_shellDispersionZEUS;
-    supportFire_originalShellAccuracy = supportFire_shellAccuracyZEUS;
+    supportFire_originalShellAccuracy = 0;
 
-    supportFire_batterySize = supportFire_batterySizeZEUS;
+    supportFire_batterySize = 0;
 
     #include "actions.sqf"
 
     def_fireMissionBriefingMessage;
-};
+} else {
 
-if (playerSide == WEST) exitWith {
-    supportFire_isWEST = true;
-    if (supportFire_shellsHE_AmmoCountWEST >= 1 || {supportFire_shellsSmoke_AmmoCountWEST >= 1} || {supportFire_shellsFlare_AmmoCountWEST >= 1}) then {
-        supportFire_target01 = supportFire_target01WEST;
-        supportFire_target02 = supportFire_target02WEST;
-        supportFire_target03 = supportFire_target03WEST;
-        supportFire_target04 = supportFire_target04WEST;
-        supportFire_target05 = supportFire_target05WEST;
-        supportFire_target06 = supportFire_target06WEST;
+    if (playerSide == WEST) exitWith {
+        supportFire_isWEST = true;
+        if (supportFire_shellsHE_AmmoCountWEST >= 1 || {supportFire_shellsSmoke_AmmoCountWEST >= 1} || {supportFire_shellsFlare_AmmoCountWEST >= 1}) then {
+            supportFire_target01 = supportFire_target01WEST;
+            supportFire_target02 = supportFire_target02WEST;
+            supportFire_target03 = supportFire_target03WEST;
+            supportFire_target04 = supportFire_target04WEST;
+            supportFire_target05 = supportFire_target05WEST;
+            supportFire_target06 = supportFire_target06WEST;
 
-        supportFire_target01_Name = markerText supportFire_target01WEST;
-        supportFire_target02_Name = markerText supportFire_target02WEST;
-        supportFire_target03_Name = markerText supportFire_target03WEST;
-        supportFire_target04_Name = markerText supportFire_target04WEST;
-        supportFire_target05_Name = markerText supportFire_target05WEST;
-        supportFire_target06_Name = markerText supportFire_target06WEST;
+            supportFire_target01_Name = markerText supportFire_target01WEST;
+            supportFire_target02_Name = markerText supportFire_target02WEST;
+            supportFire_target03_Name = markerText supportFire_target03WEST;
+            supportFire_target04_Name = markerText supportFire_target04WEST;
+            supportFire_target05_Name = markerText supportFire_target05WEST;
+            supportFire_target06_Name = markerText supportFire_target06WEST;
 
-        supportFire_shellsHE_Type = supportFire_shellsHE_TypeWEST;
-        supportFire_shellsSmoke_Type = supportFire_shellsSmoke_TypeWEST;
-        supportFire_shellsFlare_Type = supportFire_shellsFlare_TypeWEST;
+            supportFire_shellsHE_Type = supportFire_shellsHE_TypeWEST;
+            supportFire_shellsSmoke_Type = supportFire_shellsSmoke_TypeWEST;
+            supportFire_shellsFlare_Type = supportFire_shellsFlare_TypeWEST;
 
-        supportFire_shellDispersion = supportFire_shellDispersionWEST;
-        supportFire_shellAccuracy = supportFire_shellAccuracyWEST;
+            supportFire_shellDispersion = supportFire_shellDispersionWEST;
+            supportFire_shellAccuracy = supportFire_shellAccuracyWEST;
 
-        supportFire_originalShellDispersion = supportFire_shellDispersionWEST;
-        supportFire_originalShellAccuracy = supportFire_shellAccuracyWEST;
+            supportFire_originalShellDispersion = supportFire_shellDispersionWEST;
+            supportFire_originalShellAccuracy = supportFire_shellAccuracyWEST;
 
-        supportFire_batterySize = supportFire_batterySizeWEST;
+            supportFire_batterySize = supportFire_batterySizeWEST;
 
-        #include "actions.sqf"
+            #include "actions.sqf"
 
-        def_fireMissionBriefingMessage;
+            def_fireMissionBriefingMessage;
+        };
     };
-};
 
-if (playerSide == EAST) exitWith {
-    supportFire_isEAST = true;
-    if (supportFire_shellsHE_AmmoCountEAST >= 1 || {supportFire_shellsSmoke_AmmoCountEAST >= 1} || {supportFire_shellsFlare_AmmoCountEAST >= 1}) then {
-        supportFire_target01 = supportFire_target01EAST;
-        supportFire_target02 = supportFire_target02EAST;
-        supportFire_target03 = supportFire_target03EAST;
-        supportFire_target04 = supportFire_target04EAST;
-        supportFire_target05 = supportFire_target05EAST;
-        supportFire_target06 = supportFire_target06EAST;
+    if (playerSide == EAST) exitWith {
+        supportFire_isEAST = true;
+        if (supportFire_shellsHE_AmmoCountEAST >= 1 || {supportFire_shellsSmoke_AmmoCountEAST >= 1} || {supportFire_shellsFlare_AmmoCountEAST >= 1}) then {
+            supportFire_target01 = supportFire_target01EAST;
+            supportFire_target02 = supportFire_target02EAST;
+            supportFire_target03 = supportFire_target03EAST;
+            supportFire_target04 = supportFire_target04EAST;
+            supportFire_target05 = supportFire_target05EAST;
+            supportFire_target06 = supportFire_target06EAST;
 
-        supportFire_target01_Name = markerText supportFire_target01EAST;
-        supportFire_target02_Name = markerText supportFire_target02EAST;
-        supportFire_target03_Name = markerText supportFire_target03EAST;
-        supportFire_target04_Name = markerText supportFire_target04EAST;
-        supportFire_target05_Name = markerText supportFire_target05EAST;
-        supportFire_target06_Name = markerText supportFire_target06EAST;
+            supportFire_target01_Name = markerText supportFire_target01EAST;
+            supportFire_target02_Name = markerText supportFire_target02EAST;
+            supportFire_target03_Name = markerText supportFire_target03EAST;
+            supportFire_target04_Name = markerText supportFire_target04EAST;
+            supportFire_target05_Name = markerText supportFire_target05EAST;
+            supportFire_target06_Name = markerText supportFire_target06EAST;
 
-        supportFire_shellsHE_Type = supportFire_shellsHE_TypeEAST;
-        supportFire_shellsSmoke_Type = supportFire_shellsSmoke_TypeEAST;
-        supportFire_shellsFlare_Type = supportFire_shellsFlare_TypeEAST;
+            supportFire_shellsHE_Type = supportFire_shellsHE_TypeEAST;
+            supportFire_shellsSmoke_Type = supportFire_shellsSmoke_TypeEAST;
+            supportFire_shellsFlare_Type = supportFire_shellsFlare_TypeEAST;
 
-        supportFire_shellDispersion = supportFire_shellDispersionEAST;
-        supportFire_shellAccuracy = supportFire_shellAccuracyEAST;
+            supportFire_shellDispersion = supportFire_shellDispersionEAST;
+            supportFire_shellAccuracy = supportFire_shellAccuracyEAST;
 
-        supportFire_originalShellDispersion = supportFire_shellDispersionEAST;
-        supportFire_originalShellAccuracy = supportFire_shellAccuracyEAST;
+            supportFire_originalShellDispersion = supportFire_shellDispersionEAST;
+            supportFire_originalShellAccuracy = supportFire_shellAccuracyEAST;
 
-        supportFire_batterySize = supportFire_batterySizeEAST;
+            supportFire_batterySize = supportFire_batterySizeEAST;
 
-        #include "actions.sqf"
+            #include "actions.sqf"
 
-        def_fireMissionBriefingMessage;
+            def_fireMissionBriefingMessage;
+        };
     };
-};
 
-if (playerSide == RESISTANCE) exitWith {
-    supportFire_isGUER = true;
-    if (supportFire_shellsHE_AmmoCountGUER >= 1 || {supportFire_shellsSmoke_AmmoCountGUER >= 1} || {supportFire_shellsFlare_AmmoCountGUER >= 1}) then {
-        supportFire_target01 = supportFire_target01GUER;
-        supportFire_target02 = supportFire_target02GUER;
-        supportFire_target03 = supportFire_target03GUER;
-        supportFire_target04 = supportFire_target04GUER;
-        supportFire_target05 = supportFire_target05GUER;
-        supportFire_target06 = supportFire_target06GUER;
+    if (playerSide == RESISTANCE) exitWith {
+        supportFire_isGUER = true;
+        if (supportFire_shellsHE_AmmoCountGUER >= 1 || {supportFire_shellsSmoke_AmmoCountGUER >= 1} || {supportFire_shellsFlare_AmmoCountGUER >= 1}) then {
+            supportFire_target01 = supportFire_target01GUER;
+            supportFire_target02 = supportFire_target02GUER;
+            supportFire_target03 = supportFire_target03GUER;
+            supportFire_target04 = supportFire_target04GUER;
+            supportFire_target05 = supportFire_target05GUER;
+            supportFire_target06 = supportFire_target06GUER;
 
-        supportFire_target01_Name = markerText supportFire_target01GUER;
-        supportFire_target02_Name = markerText supportFire_target02GUER;
-        supportFire_target03_Name = markerText supportFire_target03GUER;
-        supportFire_target04_Name = markerText supportFire_target04GUER;
-        supportFire_target05_Name = markerText supportFire_target05GUER;
-        supportFire_target06_Name = markerText supportFire_target06GUER;
+            supportFire_target01_Name = markerText supportFire_target01GUER;
+            supportFire_target02_Name = markerText supportFire_target02GUER;
+            supportFire_target03_Name = markerText supportFire_target03GUER;
+            supportFire_target04_Name = markerText supportFire_target04GUER;
+            supportFire_target05_Name = markerText supportFire_target05GUER;
+            supportFire_target06_Name = markerText supportFire_target06GUER;
 
-        supportFire_shellsHE_Type = supportFire_shellsHE_TypeGUER;
-        supportFire_shellsSmoke_Type = supportFire_shellsSmoke_TypeGUER;
-        supportFire_shellsFlare_Type = supportFire_shellsFlare_TypeGUER;
+            supportFire_shellsHE_Type = supportFire_shellsHE_TypeGUER;
+            supportFire_shellsSmoke_Type = supportFire_shellsSmoke_TypeGUER;
+            supportFire_shellsFlare_Type = supportFire_shellsFlare_TypeGUER;
 
-        supportFire_shellDispersion = supportFire_shellDispersionGUER;
-        supportFire_shellAccuracy = supportFire_shellAccuracyGUER;
+            supportFire_shellDispersion = supportFire_shellDispersionGUER;
+            supportFire_shellAccuracy = supportFire_shellAccuracyGUER;
 
-        supportFire_originalShellDispersion = supportFire_shellDispersionGUER;
-        supportFire_originalShellAccuracy = supportFire_shellAccuracyGUER;
+            supportFire_originalShellDispersion = supportFire_shellDispersionGUER;
+            supportFire_originalShellAccuracy = supportFire_shellAccuracyGUER;
 
-        supportFire_batterySize = supportFire_batterySizeGUER;
+            supportFire_batterySize = supportFire_batterySizeGUER;
 
-        #include "actions.sqf"
+            #include "actions.sqf"
 
-        def_fireMissionBriefingMessage;
+            def_fireMissionBriefingMessage;
+        };
     };
 };
