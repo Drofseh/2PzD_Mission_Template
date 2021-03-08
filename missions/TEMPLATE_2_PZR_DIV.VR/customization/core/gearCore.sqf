@@ -15,7 +15,7 @@ if !(_loadoutName isEqualType "") exitWith {
 };
 
 private _loadout = _type select 1;
-if !(_type isEqualType {}) exitWith {
+if !(_loadout isEqualType {}) exitWith {
     //error message about how _type isn't a valid loadout
 };
 
