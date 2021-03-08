@@ -7,41 +7,41 @@
 /*Loadouts
 
     Platoon
-[this,"CdnBC44Jan_Lt"] call Olsen_FW_FNC_GearScript;        Lieutenant
-[this,"CdnBC44Jan_Sgt"] call Olsen_FW_FNC_GearScript;       Sergeant
-[this,"CdnBC44Jan_Med"] call Olsen_FW_FNC_GearScript;       Medic
-[this,"CdnBC44Jan_Sig"] call Olsen_FW_FNC_GearScript;       Signaller
-[this,"CdnBC44Jan_LMortG"] call Olsen_FW_FNC_GearScript;    Light Mortar Gunner
-[this,"CdnBC44Jan_LMortA"] call Olsen_FW_FNC_GearScript;    Light Mortar Assistant
-[this,"CdnBC44Jan_Cpl"] call Olsen_FW_FNC_GearScript;       Corporal
-[this,"CdnBC44Jan_LCpl"] call Olsen_FW_FNC_GearScript;      Lance Corporal
-[this,"CdnBC44Jan_AR"] call Olsen_FW_FNC_GearScript;        Bren Gunner
-[this,"CdnBC44Jan_AAR"] call Olsen_FW_FNC_GearScript;       Bren Gun Assistant
-[this,"CdnBC44Jan_AAB"] call Olsen_FW_FNC_GearScript;       Bren Gun Ammo Bearer
-[this,"CdnBC44Jan_Rif"] call Olsen_FW_FNC_GearScript;       Rifleman
+[this, CdnBC44Jan_Lt] call Olsen_FW_FNC_GearScript;         Lieutenant
+[this, CdnBC44Jan_Sgt] call Olsen_FW_FNC_GearScript;        Sergeant
+[this, CdnBC44Jan_Med] call Olsen_FW_FNC_GearScript;        Medic
+[this, CdnBC44Jan_Sig] call Olsen_FW_FNC_GearScript;        Signaller
+[this, CdnBC44Jan_LMortG] call Olsen_FW_FNC_GearScript;     Light Mortar Gunner
+[this, CdnBC44Jan_LMortA] call Olsen_FW_FNC_GearScript;     Light Mortar Assistant
+[this, CdnBC44Jan_Cpl] call Olsen_FW_FNC_GearScript;        Corporal
+[this, CdnBC44Jan_LCpl] call Olsen_FW_FNC_GearScript;       Lance Corporal
+[this, CdnBC44Jan_AR] call Olsen_FW_FNC_GearScript;         Bren Gunner
+[this, CdnBC44Jan_AAR] call Olsen_FW_FNC_GearScript;        Bren Gun Assistant
+[this, CdnBC44Jan_AAB] call Olsen_FW_FNC_GearScript;        Bren Gun Ammo Bearer
+[this, CdnBC44Jan_Rif] call Olsen_FW_FNC_GearScript;        Rifleman
 
     Weapons Teams
-[this,"CdnBC44Jan_MGTL"] call Olsen_FW_FNC_GearScript;      Machine Gun Team Leader
-[this,"CdnBC44Jan_MG"] call Olsen_FW_FNC_GearScript;        Machine Gunner
-[this,"CdnBC44Jan_MGA"] call Olsen_FW_FNC_GearScript;       Machine Gun Assistant
-[this,"CdnBC44Jan_MGAB"] call Olsen_FW_FNC_GearScript;      Machine Gun Ammo Bearer
+[this, CdnBC44Jan_MGTL] call Olsen_FW_FNC_GearScript;       Machine Gun Team Leader
+[this, CdnBC44Jan_MG] call Olsen_FW_FNC_GearScript;         Machine Gunner
+[this, CdnBC44Jan_MGA] call Olsen_FW_FNC_GearScript;        Machine Gun Assistant
+[this, CdnBC44Jan_MGAB] call Olsen_FW_FNC_GearScript;       Machine Gun Ammo Bearer
 
-[this,"CdnBC44Jan_MortTL"] call Olsen_FW_FNC_GearScript;    Mortar Team Leader
-[this,"CdnBC44Jan_MortG"] call Olsen_FW_FNC_GearScript;     Mortar Gunner
-[this,"CdnBC44Jan_MortA"] call Olsen_FW_FNC_GearScript;     Mortar Assistant
-[this,"CdnBC44Jan_MortAB"] call Olsen_FW_FNC_GearScript;    Mortar Ammo Bearer
+[this, CdnBC44Jan_MortTL] call Olsen_FW_FNC_GearScript;     Mortar Team Leader
+[this, CdnBC44Jan_MortG] call Olsen_FW_FNC_GearScript;      Mortar Gunner
+[this, CdnBC44Jan_MortA] call Olsen_FW_FNC_GearScript;      Mortar Assistant
+[this, CdnBC44Jan_MortAB] call Olsen_FW_FNC_GearScript;     Mortar Ammo Bearer
 
-[this,"CdnBC44Jan_ATRTL"] call Olsen_FW_FNC_GearScript;     Boys Rifle Team Leader
-[this,"CdnBC44Jan_ATRG"] call Olsen_FW_FNC_GearScript;      Boys Rifle Gunner
-[this,"CdnBC44Jan_ATRAB"] call Olsen_FW_FNC_GearScript;     Boys Rifle Ammo Bearer
+[this, CdnBC44Jan_ATRTL] call Olsen_FW_FNC_GearScript;      Boys Rifle Team Leader
+[this, CdnBC44Jan_ATRG] call Olsen_FW_FNC_GearScript;       Boys Rifle Gunner
+[this, CdnBC44Jan_ATRAB] call Olsen_FW_FNC_GearScript;      Boys Rifle Ammo Bearer
 
-[this,"CdnBC44Jan_ATTL"] call Olsen_FW_FNC_GearScript;      PIAT Team Leader
-[this,"CdnBC44Jan_ATG"] call Olsen_FW_FNC_GearScript;       PIAT Gunner
-[this,"CdnBC44Jan_ATAB"] call Olsen_FW_FNC_GearScript;      PIAT Ammo Bearer
+[this, CdnBC44Jan_ATTL] call Olsen_FW_FNC_GearScript;       PIAT Team Leader
+[this, CdnBC44Jan_ATG] call Olsen_FW_FNC_GearScript;        PIAT Gunner
+[this, CdnBC44Jan_ATAB] call Olsen_FW_FNC_GearScript;       PIAT Ammo Bearer
 
     Vehicle Crew
-[this,"CdnBC44Jan_VCom"] call Olsen_FW_FNC_GearScript;      Tank Commander
-[this,"CdnBC44Jan_VCrew"] call Olsen_FW_FNC_GearScript;     Tank Crew
+[this, CdnBC44Jan_VCom] call Olsen_FW_FNC_GearScript;       Tank Commander
+[this, CdnBC44Jan_VCrew] call Olsen_FW_FNC_GearScript;      Tank Crew
 */
 
 //======================== Definitions ========================
@@ -101,7 +101,9 @@
 //Platoon
 
     //Lieutenant
-    case "CdnBC44Jan_Lt" : {
+    CdnBC44Jan_Lt = ["CdnBC44Jan_Lt", {
+        params ["_unit"];
+
         [CDN_UniBCR_Lt] call Olsen_FW_FNC_AddItem;
         [UK_VestK_O] call Olsen_FW_FNC_AddItem;
         [UK_Helm_r] call Olsen_FW_FNC_AddItemRandom;
@@ -117,10 +119,12 @@
         //Extra
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
         [UK_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Sergeant
-    case "CdnBC44Jan_Sgt" : {
+    CdnBC44Jan_Sgt = ["CdnBC44Jan_Sgt", {
+        params ["_unit"];
+
         [CDN_UniBCR_Sgt] call Olsen_FW_FNC_AddItem;
         [UK_VestK_Sten] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -139,10 +143,12 @@
         [UK_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [UK_Gren_WP,1] call Olsen_FW_FNC_AddItem;
         [US_Mag_Mort_HE,5,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Medic
-    case "CdnBC44Jan_Med" : {
+    CdnBC44Jan_Med = ["CdnBC44Jan_Med", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_LeeEn] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -158,10 +164,12 @@
         //Extra
         UK_Medic_Equipment;
         [UK_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Signaller
-    case "CdnBC44Jan_Sig" : {
+    CdnBC44Jan_Sig = ["CdnBC44Jan_Sig", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_LeeEn] call Olsen_FW_FNC_AddItem;
         [UK_BPK_Radio] call Olsen_FW_FNC_AddItem;
@@ -177,10 +185,12 @@
         //Extra
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
         [UK_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Light Mortar Gunner
-    case "CdnBC44Jan_LMortG" : {
+    CdnBC44Jan_LMortG = ["CdnBC44Jan_LMortG", {
+        params ["_unit"];
+
         [CDN_UniBCR_LCpl] call Olsen_FW_FNC_AddItem;
         [UK_VestK_O] call Olsen_FW_FNC_AddItem;
         [UK_BPG_L] call Olsen_FW_FNC_AddItem;
@@ -197,10 +207,12 @@
         //Extra
         [US_Weap_MortB] call Olsen_FW_FNC_AddItem;
         [US_Mag_Mort_HE,8,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Light Mortar Assistant
-    case "CdnBC44Jan_LMortA" : {
+    CdnBC44Jan_LMortA = ["CdnBC44Jan_LMortA", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_O] call Olsen_FW_FNC_AddItem;
         [UK_BPG_L] call Olsen_FW_FNC_AddItem;
@@ -217,12 +229,14 @@
         //Extra
         [US_Weap_MortT] call Olsen_FW_FNC_AddItem;
         [US_Mag_Mort_HE,8,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Squad
 
     //Corporal
-    case "CdnBC44Jan_Cpl" : {
+    CdnBC44Jan_Cpl = ["CdnBC44Jan_Cpl", {
+        params ["_unit"];
+
         [CDN_UniBCR_Cpl] call Olsen_FW_FNC_AddItem;
         [UK_VestK_Sten] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -241,10 +255,12 @@
         [UK_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [UK_Gren_WP,1] call Olsen_FW_FNC_AddItem;
         [UK_Mag_Bren_30_Mixed_Ball,2,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Lance Corporal
-    case "CdnBC44Jan_LCpl" : {
+    CdnBC44Jan_LCpl = ["CdnBC44Jan_LCpl", {
+        params ["_unit"];
+
         [CDN_UniBCR_LCpl] call Olsen_FW_FNC_AddItem;
         [UK_VestK_Sten] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -262,10 +278,12 @@
         [UK_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [UK_Gren_WP,1] call Olsen_FW_FNC_AddItem;
         [UK_Mag_Bren_30_Mixed_Ball,2,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Bren Gunner
-    case "CdnBC44Jan_AR" : {
+    CdnBC44Jan_AR = ["CdnBC44Jan_AR", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_Bren] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -282,10 +300,12 @@
 
         //Secondary Weapon
         CdnBC44Jan_Webley;
-    };
+    }];
 
     //Bren Gun Assistant
-    case "CdnBC44Jan_AAR" : {
+    CdnBC44Jan_AAR = ["CdnBC44Jan_AAR", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_Bren] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -303,10 +323,12 @@
         [GEN_ace_sparebarrel,1,"backpack"] call Olsen_FW_FNC_AddItem;
         [UK_Mag_Bren_30_Mixed_Ball,4,"backpack"] call Olsen_FW_FNC_AddItem;
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Bren Gun Ammo Bearer
-    case "CdnBC44Jan_AAB" : {
+    CdnBC44Jan_AAB = ["CdnBC44Jan_AAB", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_Bren] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -322,10 +344,12 @@
         //Extra
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
         [UK_Mag_Bren_30_Mixed_Ball,10,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Rifleman
-    case "CdnBC44Jan_Rif" : {
+    CdnBC44Jan_Rif = ["CdnBC44Jan_Rif", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_LeeEn] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -341,12 +365,14 @@
         //Extra
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
         [UK_Mag_Bren_30_Mixed_Ball,2,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Machine Gun Team
 
     //Machine Gun Team Leader
-    case "CdnBC44Jan_MGTL" : {
+    CdnBC44Jan_MGTL = ["CdnBC44Jan_MGTL", {
+        params ["_unit"];
+
         [CDN_UniBCR_LCpl] call Olsen_FW_FNC_AddItem;
         [UK_VestK_LeeEn] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -363,10 +389,12 @@
         //Extra
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
         [UK_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Machine Gunner
-    case "CdnBC44Jan_MG" : {
+    CdnBC44Jan_MG = ["CdnBC44Jan_MG", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestG_Bren] call Olsen_FW_FNC_AddItem;
         [UK_Weap_HMG_G] call Olsen_FW_FNC_AddItem;
@@ -378,10 +406,12 @@
 
         //Secondary Weapon
         CdnBC44Jan_Webley;
-    };
+    }];
 
     //Machine Gun Assistant
-    case "CdnBC44Jan_MGA" : {
+    CdnBC44Jan_MGA = ["CdnBC44Jan_MGA", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestG_Bren] call Olsen_FW_FNC_AddItem;
         [UK_Weap_HMG_T] call Olsen_FW_FNC_AddItem;
@@ -396,10 +426,12 @@
         CdnBC44Jan_Webley;
 
         //Extra
-    };
+    }];
 
     //Machine Gun Ammo Bearer
-    case "CdnBC44Jan_MGAB" : {
+    CdnBC44Jan_MGAB = ["CdnBC44Jan_MGAB", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_LeeEn] call Olsen_FW_FNC_AddItem;
         [UK_BPG_L] call Olsen_FW_FNC_AddItem;
@@ -413,12 +445,14 @@
         CdnBC44Jan_LeeEn;
 
         //Extra
-    };
+    }];
 
 //Mortar Team
 
     //Mortar Team Leader
-    case "CdnBC44Jan_MortTL" : {
+    CdnBC44Jan_MortTL = ["CdnBC44Jan_MortTL", {
+        params ["_unit"];
+
         [CDN_UniBCR_Cpl] call Olsen_FW_FNC_AddItem;
         [UK_VestK_LeeEn] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -436,10 +470,12 @@
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
         [UK_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Rus_Mag_Mort_HE,5,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Mortar Gunner
-    case "CdnBC44Jan_MortG" : {
+    CdnBC44Jan_MortG = ["CdnBC44Jan_MortG", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_O] call Olsen_FW_FNC_AddItem;
         [UK_BPG_L] call Olsen_FW_FNC_AddItem;
@@ -456,10 +492,12 @@
         //Extra
         [Rus_Mag_Mort_HE,3,"backpack"] call Olsen_FW_FNC_AddItem;
         GEN_Mortar_Equipment;
-    };
+    }];
 
     //Mortar Assistant
-    case "CdnBC44Jan_MortA" : {
+    CdnBC44Jan_MortA = ["CdnBC44Jan_MortA", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_O] call Olsen_FW_FNC_AddItem;
         [UK_BPG_L] call Olsen_FW_FNC_AddItem;
@@ -476,10 +514,12 @@
         //Extra
         [Rus_Mag_Mort_HE,3,"backpack"] call Olsen_FW_FNC_AddItem;
         GEN_Mortar_Equipment;
-    };
+    }];
 
     //Mortar Ammo Bearer
-    case "CdnBC44Jan_MortAB" : {
+    CdnBC44Jan_MortAB = ["CdnBC44Jan_MortAB", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_LeeEn] call Olsen_FW_FNC_AddItem;
         [UK_BPG_L] call Olsen_FW_FNC_AddItem;
@@ -494,12 +534,14 @@
 
         //Extra
         [Rus_Mag_Mort_HE,5,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Boys Rifle Team
 
     //Boys Rifle Team Leader
-    case "CdnBC44Jan_ATRTL" : {
+    CdnBC44Jan_ATRTL = ["CdnBC44Jan_ATRTL", {
+        params ["_unit"];
+
         [CDN_UniBCR_Cpl] call Olsen_FW_FNC_AddItem;
         [UK_VestK_LeeEn] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -517,10 +559,12 @@
         [UK_Mag_Boys,5,"backpack"] call Olsen_FW_FNC_AddItem;
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
         [UK_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Boys Rifle Gunner
-    case "CdnBC44Jan_ATRG" : {
+    CdnBC44Jan_ATRG = ["CdnBC44Jan_ATRG", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_O] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -537,10 +581,12 @@
         [UK_Mag_Boys,1] call Olsen_FW_FNC_AddItem;
         [UK_Weap_Boys] call Olsen_FW_FNC_AddItem;
         [UK_Mag_Boys,5] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Boys Rifle Ammo Bearer
-    case "CdnBC44Jan_ATRAB" : {
+    CdnBC44Jan_ATRAB = ["CdnBC44Jan_ATRAB", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_Bren] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -556,12 +602,14 @@
         //Extra
         [UK_Mag_Boys,5,"backpack"] call Olsen_FW_FNC_AddItem;
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //PIAT Team
 
     //PIAT Team Leader
-    case "CdnBC44Jan_ATTL" : {
+    CdnBC44Jan_ATTL = ["CdnBC44Jan_ATTL", {
+        params ["_unit"];
+
         [CDN_UniBCR_Cpl] call Olsen_FW_FNC_AddItem;
         [UK_VestK_LeeEn] call Olsen_FW_FNC_AddItem;
         [UK_BP_P] call Olsen_FW_FNC_AddItem;
@@ -579,10 +627,12 @@
         [UK_Mag_Piat_HEAT,3,"backpack"] call Olsen_FW_FNC_AddItem;
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
         [UK_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //PIAT Gunner
-    case "CdnBC44Jan_ATG" : {
+    CdnBC44Jan_ATG = ["CdnBC44Jan_ATG", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_O] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -598,10 +648,12 @@
         //Primary Weapon
         [UK_Weap_Piat] call Olsen_FW_FNC_AddItem;
         [UK_Mag_Piat_HEAT,3] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //PIAT Ammo Bearer
-    case "CdnBC44Jan_ATAB" : {
+    CdnBC44Jan_ATAB = ["CdnBC44Jan_ATAB", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_LeeEn] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -617,12 +669,14 @@
         //Extra
         [UK_Mag_Piat_HEAT,3,"backpack"] call Olsen_FW_FNC_AddItem;
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Vehicle Crew
 
     //Tank Commander
-    case "CdnBC44Jan_VCom" : {
+    CdnBC44Jan_VCom = ["CdnBC44Jan_VCom", {
+        params ["_unit"];
+
         [CDN_UniBCR_Sgt] call Olsen_FW_FNC_AddItem;
         [UK_VestK_Sten] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -643,10 +697,12 @@
         [UK_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
         [UK_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [UK_Gren_WP,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Tank Crew
-    case "CdnBC44Jan_VCrew" : {
+    CdnBC44Jan_VCrew = ["CdnBC44Jan_VCrew", {
+        params ["_unit"];
+
         [CDN_UniBCR_Pte] call Olsen_FW_FNC_AddItem;
         [UK_VestK_Sten] call Olsen_FW_FNC_AddItem;
         [UK_BPK] call Olsen_FW_FNC_AddItem;
@@ -664,4 +720,4 @@
 
         //Extra
         [GEN_Toolkit] call Olsen_FW_FNC_AddItem;
-    };
+    }];

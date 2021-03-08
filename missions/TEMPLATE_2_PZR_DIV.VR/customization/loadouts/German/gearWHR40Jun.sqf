@@ -7,43 +7,43 @@
 /*Loadouts
 
     //Kompanietrupp
-[this,"WHR40Jun_CC"] call Olsen_FW_FNC_GearScript;       Kompanieführer
-[this,"WHR40Jun_C2"] call Olsen_FW_FNC_GearScript;       Kompanietruppführer
+[this, WHR40Jun_CC] call Olsen_FW_FNC_GearScript;        Kompanieführer
+[this, WHR40Jun_C2] call Olsen_FW_FNC_GearScript;        Kompanietruppführer
 
     //Zugtrupp
-[this,"WHR40Jun_PC"] call Olsen_FW_FNC_GearScript;       Zugführer
-[this,"WHR40Jun_P2"] call Olsen_FW_FNC_GearScript;       Zugtruppführer
-[this,"WHR40Jun_RTO"] call Olsen_FW_FNC_GearScript;      Funker
-[this,"WHR40Jun_Mess"] call Olsen_FW_FNC_GearScript;     Melder
-[this,"WHR40Jun_MedP"] call Olsen_FW_FNC_GearScript;     Krankenträger
+[this, WHR40Jun_PC] call Olsen_FW_FNC_GearScript;        Zugführer
+[this, WHR40Jun_P2] call Olsen_FW_FNC_GearScript;        Zugtruppführer
+[this, WHR40Jun_RTO] call Olsen_FW_FNC_GearScript;       Funker
+[this, WHR40Jun_Mess] call Olsen_FW_FNC_GearScript;      Melder
+[this, WHR40Jun_MedP] call Olsen_FW_FNC_GearScript;      Krankenträger
 
     //Gruppe
-[this,"WHR40Jun_SL"] call Olsen_FW_FNC_GearScript;       Gruppenführer
-[this,"WHR40Jun_S2"] call Olsen_FW_FNC_GearScript;       Stellvertretender Gruppenführer
-[this,"WHR40Jun_S3"] call Olsen_FW_FNC_GearScript;       Gefreiter
-[this,"WHR40Jun_MG"] call Olsen_FW_FNC_GearScript;       MG-Richtschütze
-[this,"WHR40Jun_MGA"] call Olsen_FW_FNC_GearScript;      MG-Hilfsschütze
-[this,"WHR40Jun_MGAB"] call Olsen_FW_FNC_GearScript;     MG-Munitionsträger
-[this,"WHR40Jun_Gren"] call Olsen_FW_FNC_GearScript;     Grenadier
-[this,"WHR40Jun_MedS"] call Olsen_FW_FNC_GearScript;     Hilfs-Krankenträger
-[this,"WHR40Jun_Rif"] call Olsen_FW_FNC_GearScript;      Gewehrschütze
+[this, WHR40Jun_SL] call Olsen_FW_FNC_GearScript;        Gruppenführer
+[this, WHR40Jun_S2] call Olsen_FW_FNC_GearScript;        Stellvertretender Gruppenführer
+[this, WHR40Jun_S3] call Olsen_FW_FNC_GearScript;        Gefreiter
+[this, WHR40Jun_MG] call Olsen_FW_FNC_GearScript;        MG-Richtschütze
+[this, WHR40Jun_MGA] call Olsen_FW_FNC_GearScript;       MG-Hilfsschütze
+[this, WHR40Jun_MGAB] call Olsen_FW_FNC_GearScript;      MG-Munitionsträger
+[this, WHR40Jun_Gren] call Olsen_FW_FNC_GearScript;      Grenadier
+[this, WHR40Jun_MedS] call Olsen_FW_FNC_GearScript;      Hilfs-Krankenträger
+[this, WHR40Jun_Rif] call Olsen_FW_FNC_GearScript;       Gewehrschütze
 
     //Weapon Truppen
-[this,"WHR40Jun_MortSL"] call Olsen_FW_FNC_GearScript;   Mortar Truppführer
-[this,"WHR40Jun_MortG"] call Olsen_FW_FNC_GearScript;    Mortar Granatwerferschützen
-[this,"WHR40Jun_MortA"] call Olsen_FW_FNC_GearScript;    Mortar Munitionsträger
+[this, WHR40Jun_MortSL] call Olsen_FW_FNC_GearScript;    Mortar Truppführer
+[this, WHR40Jun_MortG] call Olsen_FW_FNC_GearScript;     Mortar Granatwerferschützen
+[this, WHR40Jun_MortA] call Olsen_FW_FNC_GearScript;     Mortar Munitionsträger
 
-[this,"WHR40Jun_HMGSL"] call Olsen_FW_FNC_GearScript;    HMG Truppführer
-[this,"WHR40Jun_HMGG"] call Olsen_FW_FNC_GearScript;     HMG Richtschütze
-[this,"WHR40Jun_HMGA"] call Olsen_FW_FNC_GearScript;     HMG Munitionsträger
+[this, WHR40Jun_HMGSL] call Olsen_FW_FNC_GearScript;     HMG Truppführer
+[this, WHR40Jun_HMGG] call Olsen_FW_FNC_GearScript;      HMG Richtschütze
+[this, WHR40Jun_HMGA] call Olsen_FW_FNC_GearScript;      HMG Munitionsträger
 
-[this,"WHR40Jun_ATRSL"] call Olsen_FW_FNC_GearScript;    Panzerbüchse Truppführer
-[this,"WHR40Jun_ATRG"] call Olsen_FW_FNC_GearScript;     Panzerbüchse Richtschütze
-[this,"WHR40Jun_ATRA"] call Olsen_FW_FNC_GearScript;     Panzerbüchse Munitionsträger
+[this, WHR40Jun_ATRSL] call Olsen_FW_FNC_GearScript;     Panzerbüchse Truppführer
+[this, WHR40Jun_ATRG] call Olsen_FW_FNC_GearScript;      Panzerbüchse Richtschütze
+[this, WHR40Jun_ATRA] call Olsen_FW_FNC_GearScript;      Panzerbüchse Munitionsträger
 
     //Tank Crew
-[this,"WHR40Jun_VCom"] call Olsen_FW_FNC_GearScript;     Besatzungsführer
-[this,"WHR40Jun_VCrew"] call Olsen_FW_FNC_GearScript;    Besatzung
+[this, WHR40Jun_VCom] call Olsen_FW_FNC_GearScript;      Besatzungsführer
+[this, WHR40Jun_VCrew] call Olsen_FW_FNC_GearScript;     Besatzung
 */
 
 //======================== Definitions ========================
@@ -279,7 +279,9 @@
 //Company HQ
 
     //Kompanieführer
-    case "WHR40Jun_CC" : {
+    WHR40Jun_CC = ["WHR40Jun_CC", {
+        params ["_unit"];
+
         [Ger_Uni_CC] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Radio] call Olsen_FW_FNC_AddItem;
         [Ger_Hat_Officer] call Olsen_FW_FNC_AddItem;
@@ -294,10 +296,12 @@
 
         //Secondary Weapon
         WHR40Jun_Weapon_Officer_Secondary;
-    };
+    }];
 
     //Kompanietruppführer
-    case "WHR40Jun_C2" : {
+    WHR40Jun_C2 = ["WHR40Jun_C2", {
+        params ["_unit"];
+
         [Ger_Uni_SL] call Olsen_FW_FNC_AddItem;
         [Ger_Hat] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -311,12 +315,14 @@
 
         //Secondary Weapon
         WHR40Jun_Weapon_Enlisted_Secondary;
-    };
+    }];
 
 //Platoon HQ
 
     //Zugführer
-    case "WHR40Jun_PC" : {
+    WHR40Jun_PC = ["WHR40Jun_PC", {
+        params ["_unit"];
+
         [Ger_Uni_PC] call Olsen_FW_FNC_AddItem;
         [Ger_Hat_Officer] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -330,10 +336,12 @@
 
         //Secondary Weapon
         WHR40Jun_Weapon_Officer_Secondary;
-    };
+    }];
 
     //Zugtruppführer
-    case "WHR40Jun_P2" : {
+    WHR40Jun_P2 = ["WHR40Jun_P2", {
+        params ["_unit"];
+
         [Ger_Uni_SL] call Olsen_FW_FNC_AddItem;
         [Ger_BP_AF] call Olsen_FW_FNC_AddItem;
         [Ger_Hat] call Olsen_FW_FNC_AddItem;
@@ -350,10 +358,12 @@
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Funker
-    case "WHR40Jun_RTO" : {
+    WHR40Jun_RTO = ["WHR40Jun_RTO", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Radio] call Olsen_FW_FNC_AddItem;
@@ -366,10 +376,12 @@
 
         //Primary Weapon
         WHR40Jun_Weapon_Rifleman;
-    };
+    }];
 
     //Melder
-    case "WHR40Jun_Mess" : {
+    WHR40Jun_Mess = ["WHR40Jun_Mess", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -385,10 +397,12 @@
         //Extra
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Krankenträger
-    case "WHR40Jun_MedP" : {
+    WHR40Jun_MedP = ["WHR40Jun_MedP", {
+        params ["_unit"];
+
         [Ger_Uni_Med] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_Med] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Med] call Olsen_FW_FNC_AddItem;
@@ -404,12 +418,14 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         Ger_MedicP_Equipment;
-    };
+    }];
 
 //Squad
 
     //Gruppenführer
-    case "WHR40Jun_SL" : {
+    WHR40Jun_SL = ["WHR40Jun_SL", {
+        params ["_unit"];
+
         [Ger_Uni_SL] call Olsen_FW_FNC_AddItem;
         [Ger_BP_AF] call Olsen_FW_FNC_AddItem;
         [Ger_Helmet] call Olsen_FW_FNC_AddItem;
@@ -426,10 +442,12 @@
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_MG_50_Mixed_sS,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Stellvertretender Gruppenführer
-    case "WHR40Jun_S2" : {
+    WHR40Jun_S2 = ["WHR40Jun_S2", {
+        params ["_unit"];
+
         [Ger_Uni_S2_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -447,10 +465,12 @@
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_MG_50_Mixed_sS,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Gefreiter
-    case "WHR40Jun_S3" : {
+    WHR40Jun_S3 = ["WHR40Jun_S3", {
+        params ["_unit"];
+
         [Ger_Uni_S3_E] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
         [Ger_Helmet] call Olsen_FW_FNC_AddItem;
@@ -466,10 +486,12 @@
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_MG_50_Mixed_sS,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //MG-Richtschütze
-    case "WHR40Jun_MG" : {
+    WHR40Jun_MG = ["WHR40Jun_MG", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_D] call Olsen_FW_FNC_AddItem;
@@ -490,10 +512,12 @@
 
         //Extra
         [Ger_Mag_MG_50_Mixed_sS,3] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //MG-Hilfsschütze
-    case "WHR40Jun_MGA" : {
+    WHR40Jun_MGA = ["WHR40Jun_MGA", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_MGA] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_D] call Olsen_FW_FNC_AddItem;
@@ -510,10 +534,12 @@
 
         //Extra
         [Ger_Mag_MG_50_Mixed_sS,3] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //MG-Munitionsträger
-    case "WHR40Jun_MGAB" : {
+    WHR40Jun_MGAB = ["WHR40Jun_MGAB", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_D] call Olsen_FW_FNC_AddItem;
@@ -529,10 +555,12 @@
 
         //Extra
         [Ger_Mag_MG_50_Mixed_sS,5] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Grenadier
-    case "WHR40Jun_Gren" : {
+    WHR40Jun_Gren = ["WHR40Jun_Gren", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -549,10 +577,12 @@
         [Ger_Acc_K98_GL,1,"vest"] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_RGrn_HE,4] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_RGrn_ATS,4] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Hilfs-Krankenträger
-    case "WHR40Jun_MedS" : {
+    WHR40Jun_MedS = ["WHR40Jun_MedS", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Med] call Olsen_FW_FNC_AddItem;
@@ -569,10 +599,12 @@
         //Extra
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Gewehrschütze
-    case "WHR40Jun_Rif" : {
+    WHR40Jun_Rif = ["WHR40Jun_Rif", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -589,13 +621,15 @@
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_MG_50_Mixed_sS,1,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Weapon Truppen
 
     //Mortar Team
     //Mortar Truppführer
-    case "WHR40Jun_MortSL" : {
+    WHR40Jun_MortSL = ["WHR40Jun_MortSL", {
+        params ["_unit"];
+
         [Ger_Uni_S3_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_HGun] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -615,10 +649,12 @@
         //Extra
         [Ger_Mag_Mort_HE,4] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Mortar Granatwerferschützen
-    case "WHR40Jun_MortG" : {
+    WHR40Jun_MortG = ["WHR40Jun_MortG", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_HGun] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -637,10 +673,12 @@
 
         //Extra
         [Ger_Mag_Mort_HE,4] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Mortar Munitionsträger
-    case "WHR40Jun_MortA" : {
+    WHR40Jun_MortA = ["WHR40Jun_MortA", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -656,11 +694,13 @@
 
         //Extra
         [Ger_Mag_Mort_HE,4] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //HMG Team
     //HMG Truppführer
-    case "WHR40Jun_HMGSL" : {
+    WHR40Jun_HMGSL = ["WHR40Jun_HMGSL", {
+        params ["_unit"];
+
         [Ger_Uni_S3_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_MGA] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_B] call Olsen_FW_FNC_AddItem;
@@ -681,10 +721,12 @@
 
         //Extra
         [Ger_Mag_MG_250_Mixed_sS,2] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //HMG Richtschütze
-    case "WHR40Jun_HMGG" : {
+    WHR40Jun_HMGG = ["WHR40Jun_HMGG", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_B] call Olsen_FW_FNC_AddItem;
@@ -707,10 +749,12 @@
 
         //Extra
         [Ger_Mag_MG_250_Mixed_sS,2] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //HMG Munitionsträger
-    case "WHR40Jun_HMGA" : {
+    WHR40Jun_HMGA = ["WHR40Jun_HMGA", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_B] call Olsen_FW_FNC_AddItem;
@@ -727,11 +771,13 @@
         //Extra
         [Ger_Mag_MG_250_Mixed_sS,2] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_MG_150_Mixed_sS,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Panzerbüchse Team
     //Panzerbüchse Truppführer
-    case "WHR40Jun_ATRSL" : {
+    WHR40Jun_ATRSL = ["WHR40Jun_ATRSL", {
+        params ["_unit"];
+
         [Ger_Uni_S3_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -749,10 +795,12 @@
         [Ger_Mag_PzB39,20,"backpack"] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Panzerbüchse Richtschütze
-    case "WHR40Jun_ATRG" : {
+    WHR40Jun_ATRG = ["WHR40Jun_ATRG", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -770,10 +818,12 @@
         [Ger_Mag_PzB39,1] call Olsen_FW_FNC_AddItem;
         [Ger_Weap_PzB39] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_PzB39,20] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Panzerbüchse Munitionsträger
-    case "WHR40Jun_ATRAB" : {
+    WHR40Jun_ATRAB = ["WHR40Jun_ATRAB", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -789,12 +839,14 @@
         //Extra
         [Ger_Mag_PzB39,20,"backpack"] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Tank Crew
 
     //Besatzungsführer
-    case "WHR40Jun_VCom" : {
+    WHR40Jun_VCom = ["WHR40Jun_VCom", {
+        params ["_unit"];
+
         [Ger_Uni_VCom] call Olsen_FW_FNC_AddItem;
         [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_Hat_VCom_r] call Olsen_FW_FNC_AddItemRandom;
@@ -809,10 +861,12 @@
 
         //Secondary Weapon
         WHR40Jun_Weapon_Officer_Secondary;
-    };
+    }];
 
     //Besatzung
-    case "WHR40Jun_VCrew" : {
+    WHR40Jun_VCrew = ["WHR40Jun_VCrew", {
+        params ["_unit"];
+
         [Ger_Uni_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
@@ -827,4 +881,4 @@
 
         //Extra
         [GEN_Toolkit] call Olsen_FW_FNC_AddItem;
-    };
+    }];

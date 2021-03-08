@@ -7,9 +7,9 @@
 /*Loadouts
 
     //Tank Crew
-[this,"USAF39_Pil"] call Olsen_FW_FNC_GearScript;        Pilot
-[this,"USAF39_GPil"] call Olsen_FW_FNC_GearScript;       Glider Pilot
-[this,"USAF39_ACrew"] call Olsen_FW_FNC_GearScript;      Air Crew
+[this, USAF39_Pil] call Olsen_FW_FNC_GearScript;         Pilot
+[this, USAF39_GPil] call Olsen_FW_FNC_GearScript;        Glider Pilot
+[this, USAF39_ACrew] call Olsen_FW_FNC_GearScript;       Air Crew
 */
 
 //======================== Loadouts ========================
@@ -17,7 +17,9 @@
 //Tank Crew
 
     //Pilot
-    case "USAF39_Pil" : {
+    USAF39_Pil = ["USAF39_Pil", {
+        params ["_unit"];
+
         [USAF_UniG] call Olsen_FW_FNC_AddItem;
         [US_Vest_Pistol] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -32,10 +34,12 @@
         [US_Mag_M1911,1] call Olsen_FW_FNC_AddItem;
         [US_Weap_M1911] call Olsen_FW_FNC_AddItem;
         [US_Mag_M1911,3,"uniform"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Glider Pilot
-    case "USAF39_GPil" : {
+    USAF39_GPil = ["USAF39_GPil", {
+        params ["_unit"];
+
         [USAF_UniG] call Olsen_FW_FNC_AddItem;
         [US_Vest_Pistol] call Olsen_FW_FNC_AddItem;
         [USAF_Helm] call Olsen_FW_FNC_AddItem;
@@ -49,10 +53,12 @@
         [US_Mag_M1911,1] call Olsen_FW_FNC_AddItem;
         [US_Weap_M1911] call Olsen_FW_FNC_AddItem;
         [US_Mag_M1911,3,"uniform"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Air Crew
-    case "USAF39_ACrew" : {
+    USAF39_ACrew = ["USAF39_ACrew", {
+        params ["_unit"];
+
         [USAF_UniG] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
         [USAF_Helm] call Olsen_FW_FNC_AddItem;
@@ -60,4 +66,4 @@
 
         //Assigned Items
         USAF_Default_Equipment;
-    };
+    }];

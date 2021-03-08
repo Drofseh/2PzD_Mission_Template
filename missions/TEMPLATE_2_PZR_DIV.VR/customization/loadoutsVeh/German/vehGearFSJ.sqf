@@ -9,23 +9,23 @@
     /*
     call compile preprocessFileLineNumbers "scripts\DropCan.sqf";
 
-[DC_CHQ, "FSJ_DC_CHQ"] call Olsen_FW_FNC_VehicleGearScript;          Cannister for Kompanietrupp
-[DC_Z1HQ, "FSJ_DC_Z1HQ"] call Olsen_FW_FNC_VehicleGearScript;            Cannister for 1 Zugtruppen
-[DC_Z2HQ, "FSJ_DC_Z2HQ"] call Olsen_FW_FNC_VehicleGearScript;            Cannister for 2 Zugtruppen
-[DC_Z1G1W, "FSJ_DC_Z1G1W"] call Olsen_FW_FNC_VehicleGearScript;          Cannister for 1 Zug 1 Gruppen Weapons
-[DC_Z1G2W, "FSJ_DC_Z1G2W"] call Olsen_FW_FNC_VehicleGearScript;          Cannister for 1 Zug 2 Gruppen Weapons
-[DC_Z1G3W, "FSJ_DC_Z1G3W"] call Olsen_FW_FNC_VehicleGearScript;          Cannister for 1 Zug 3 Gruppen Weapons
-[DC_Z2G1W, "FSJ_DC_Z2G1W"] call Olsen_FW_FNC_VehicleGearScript;          Cannister for 2 Zug 1 Gruppen Weapons
-[DC_Z2G2W, "FSJ_DC_Z2G2W"] call Olsen_FW_FNC_VehicleGearScript;          Cannister for 2 Zug 2 Gruppen Weapons
-[DC_Z2G3W, "FSJ_DC_Z2G3W"] call Olsen_FW_FNC_VehicleGearScript;          Cannister for 2 Zug 3 Gruppen Weapons
+[DC_CHQ, FSJ_DC_CHQ] call Olsen_FW_FNC_VehicleGearScript;          Cannister for Kompanietrupp
+[DC_Z1HQ, FSJ_DC_Z1HQ] call Olsen_FW_FNC_VehicleGearScript;            Cannister for 1 Zugtruppen
+[DC_Z2HQ, FSJ_DC_Z2HQ] call Olsen_FW_FNC_VehicleGearScript;            Cannister for 2 Zugtruppen
+[DC_Z1G1W, FSJ_DC_Z1G1W] call Olsen_FW_FNC_VehicleGearScript;          Cannister for 1 Zug 1 Gruppen Weapons
+[DC_Z1G2W, FSJ_DC_Z1G2W] call Olsen_FW_FNC_VehicleGearScript;          Cannister for 1 Zug 2 Gruppen Weapons
+[DC_Z1G3W, FSJ_DC_Z1G3W] call Olsen_FW_FNC_VehicleGearScript;          Cannister for 1 Zug 3 Gruppen Weapons
+[DC_Z2G1W, FSJ_DC_Z2G1W] call Olsen_FW_FNC_VehicleGearScript;          Cannister for 2 Zug 1 Gruppen Weapons
+[DC_Z2G2W, FSJ_DC_Z2G2W] call Olsen_FW_FNC_VehicleGearScript;          Cannister for 2 Zug 2 Gruppen Weapons
+[DC_Z2G3W, FSJ_DC_Z2G3W] call Olsen_FW_FNC_VehicleGearScript;          Cannister for 2 Zug 3 Gruppen Weapons
     */
 
 //======================== Loadouts ========================
 
 //Start HQs
 
-case "FSJ_DC_CHQ": {
-    _vehicle call Olsen_FW_FNC_RemoveAllVehicleGear;
+FSJ_DC_CHQ = ["FSJ_DC_CHQ", {
+    params ["_vehicle"];
 
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units CHQ;
@@ -83,9 +83,11 @@ case "FSJ_DC_CHQ": {
     [GEN_Gren_Smoke_Y, 2] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_Bandage, 10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_TQ, 5] call Olsen_FW_FNC_AddItemVehicle;
-}; //end of case FSJ_DC_CHQ
+}]; //end of case FSJ_DC_CHQ
 
-case "FSJ_DC_Z1HQ": {
+FSJ_DC_Z1HQ = ["FSJ_DC_Z1HQ", {
+    params ["_vehicle"];
+
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1HQ;
 
@@ -148,9 +150,11 @@ case "FSJ_DC_Z1HQ": {
     [GEN_Morp,10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_Epi,8] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_Saline500,15] call Olsen_FW_FNC_AddItemVehicle;
-}; //end of case FSJ_DC_Z1HQ
+}]; //end of case FSJ_DC_Z1HQ
 
-case "FSJ_DC_Z2HQ": {
+FSJ_DC_Z2HQ = ["FSJ_DC_Z2HQ", {
+    params ["_vehicle"];
+
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z2HQ;
 
@@ -213,11 +217,13 @@ case "FSJ_DC_Z2HQ": {
     [GEN_Morp,10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_Epi,8] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_Saline500,15] call Olsen_FW_FNC_AddItemVehicle;
-}; //end of case FSJ_DC_Z2HQ
+}]; //end of case FSJ_DC_Z2HQ
 //End HQs
 
 //Start 1 Zug Gruppen
-case "FSJ_DC_Z1G1W": {
+FSJ_DC_Z1G1W = ["FSJ_DC_Z1G1W", {
+    params ["_vehicle"];
+
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1G1;
 
@@ -281,9 +287,11 @@ case "FSJ_DC_Z1G1W": {
     [GEN_Bandage, 10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_BandageP, 10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_TQ, 10] call Olsen_FW_FNC_AddItemVehicle;
-}; //end of case FSJ_DC_Z1G1W
+}]; //end of case FSJ_DC_Z1G1W
 
-case "FSJ_DC_Z1G2W": {
+FSJ_DC_Z1G2W = ["FSJ_DC_Z1G2W", {
+    params ["_vehicle"];
+
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1G2;
 
@@ -347,9 +355,11 @@ case "FSJ_DC_Z1G2W": {
     [GEN_Bandage, 10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_BandageP, 10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_TQ, 10] call Olsen_FW_FNC_AddItemVehicle;
-}; //end of case FSJ_DC_Z1G2W
+}]; //end of case FSJ_DC_Z1G2W
 
-case "FSJ_DC_Z1G3W": {
+FSJ_DC_Z1G3W = ["FSJ_DC_Z1G3W", {
+    params ["_vehicle"];
+
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1G3;
 
@@ -413,11 +423,13 @@ case "FSJ_DC_Z1G3W": {
     [GEN_Bandage, 10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_BandageP, 10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_TQ, 10] call Olsen_FW_FNC_AddItemVehicle;
-}; //end of case FSJ_DC_Z1G3W
+}]; //end of case FSJ_DC_Z1G3W
 //End 1 Zug Gruppen
 
 //Start 2 Zug Gruppen
-case "FSJ_DC_Z2G1W": {
+FSJ_DC_Z2G1W = ["FSJ_DC_Z2G1W", {
+    params ["_vehicle"];
+
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1G1;
 
@@ -481,9 +493,11 @@ case "FSJ_DC_Z2G1W": {
     [GEN_Bandage, 10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_BandageP, 10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_TQ, 10] call Olsen_FW_FNC_AddItemVehicle;
-}; //end of case FSJ_DC_Z2G1W
+}]; //end of case FSJ_DC_Z2G1W
 
-case "FSJ_DC_Z2G2W": {
+FSJ_DC_Z2G2W = ["FSJ_DC_Z2G2W", {
+    params ["_vehicle"];
+
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1G2;
 
@@ -547,9 +561,11 @@ case "FSJ_DC_Z2G2W": {
     [GEN_Bandage, 10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_BandageP, 10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_TQ, 10] call Olsen_FW_FNC_AddItemVehicle;
-}; //end of case FSJ_DC_Z2G2W
+}]; //end of case FSJ_DC_Z2G2W
 
-case "FSJ_DC_Z2G3W": {
+FSJ_DC_Z2G3W = ["FSJ_DC_Z2G3W", {
+    params ["_vehicle"];
+
     //add weapons and/or ammo to vehicle based on ammo of units in group
     _squad = units Z1G3;
 
@@ -613,5 +629,5 @@ case "FSJ_DC_Z2G3W": {
     [GEN_Bandage, 10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_BandageP, 10] call Olsen_FW_FNC_AddItemVehicle;
     [GEN_TQ, 10] call Olsen_FW_FNC_AddItemVehicle;
-}; //end of case FSJ_DC_Z2G3W
+}]; //end of case FSJ_DC_Z2G3W
 //End 2 Zug

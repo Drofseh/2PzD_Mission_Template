@@ -6,7 +6,7 @@
 
 /*Loadouts
 
-[this,"Luft41_Pilot"] call Olsen_FW_FNC_GearScript;     Pilot
+[this, Luft41_Pilot] call Olsen_FW_FNC_GearScript;      Pilot
 */
 
 //======================== Definitions ========================
@@ -89,7 +89,9 @@
 //======================== Loadouts ========================
 
     //Pilot
-    case "Luft41_Pilot" : {
+    Luft41_Pilot = ["Luft41_Pilot", {
+        params ["_unit"];
+
         [Luft_Uni_Pilot] call Olsen_FW_FNC_AddItem;
         [Luft_Vest_Pilot] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -108,4 +110,4 @@
         [GEN_Gren_Smoke_B,2,"vest"] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_P,2,"vest"] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_O,2,"vest"] call Olsen_FW_FNC_AddItem;
-    };
+    }];

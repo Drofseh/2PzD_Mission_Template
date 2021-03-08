@@ -7,41 +7,41 @@
 /* Loadouts
 
     //Company HQ
-[this,"R43Jan_CC"] call Olsen_FW_FNC_GearScript;         Company Commander
-[this,"R43Jan_CSgt"] call Olsen_FW_FNC_GearScript;       Company Sergeant
-[this,"R43Jan_RTO"] call Olsen_FW_FNC_GearScript;        Radio Operator
+[this, R43Jan_CC] call Olsen_FW_FNC_GearScript;          Company Commander
+[this, R43Jan_CSgt] call Olsen_FW_FNC_GearScript;        Company Sergeant
+[this, R43Jan_RTO] call Olsen_FW_FNC_GearScript;         Radio Operator
 
     //Platoon HQ
-[this,"R43Jan_PC"] call Olsen_FW_FNC_GearScript;         Platoon Commander
-[this,"R43Jan_PSgt"] call Olsen_FW_FNC_GearScript;       Platoon Sergeant
-[this,"R43Jan_Mess"] call Olsen_FW_FNC_GearScript;       Messenger
-[this,"R43Jan_Med"] call Olsen_FW_FNC_GearScript;        Medic
+[this, R43Jan_PC] call Olsen_FW_FNC_GearScript;          Platoon Commander
+[this, R43Jan_PSgt] call Olsen_FW_FNC_GearScript;        Platoon Sergeant
+[this, R43Jan_Mess] call Olsen_FW_FNC_GearScript;        Messenger
+[this, R43Jan_Med] call Olsen_FW_FNC_GearScript;         Medic
 
     //Squad
-[this,"R43Jan_SL"] call Olsen_FW_FNC_GearScript;         Squad Leader
-[this,"R43Jan_TL"] call Olsen_FW_FNC_GearScript;         Team Leader
-[this,"R43Jan_SMG"] call Olsen_FW_FNC_GearScript;        Submachine Gunner
-[this,"R43Jan_Gren"] call Olsen_FW_FNC_GearScript;       Grenadier
-[this,"R43Jan_Rif"] call Olsen_FW_FNC_GearScript;        Rifleman
-[this,"R43Jan_MG"] call Olsen_FW_FNC_GearScript;         Machine Gunner
-[this,"R43Jan_MGA"] call Olsen_FW_FNC_GearScript;        MG Assistant
+[this, R43Jan_SL] call Olsen_FW_FNC_GearScript;          Squad Leader
+[this, R43Jan_TL] call Olsen_FW_FNC_GearScript;          Team Leader
+[this, R43Jan_SMG] call Olsen_FW_FNC_GearScript;         Submachine Gunner
+[this, R43Jan_Gren] call Olsen_FW_FNC_GearScript;        Grenadier
+[this, R43Jan_Rif] call Olsen_FW_FNC_GearScript;         Rifleman
+[this, R43Jan_MG] call Olsen_FW_FNC_GearScript;          Machine Gunner
+[this, R43Jan_MGA] call Olsen_FW_FNC_GearScript;         MG Assistant
 
     //Heavy Weapons Teams
-[this,"R43Jan_MortTL"] call Olsen_FW_FNC_GearScript;     Mortar Team Leader
-[this,"R43Jan_MortG"] call Olsen_FW_FNC_GearScript;      Mortar Gunner
-[this,"R43Jan_MortA"] call Olsen_FW_FNC_GearScript;      Mortar Ammo Bearer
+[this, R43Jan_MortTL] call Olsen_FW_FNC_GearScript;      Mortar Team Leader
+[this, R43Jan_MortG] call Olsen_FW_FNC_GearScript;       Mortar Gunner
+[this, R43Jan_MortA] call Olsen_FW_FNC_GearScript;       Mortar Ammo Bearer
 
-[this,"R43Jan_HMGTL"] call Olsen_FW_FNC_GearScript;      HMG Team Leader
-[this,"R43Jan_HMGG"] call Olsen_FW_FNC_GearScript;       HMG Gunner
-[this,"R43Jan_HMGA"] call Olsen_FW_FNC_GearScript;       HMG Ammo Bearer
+[this, R43Jan_HMGTL] call Olsen_FW_FNC_GearScript;       HMG Team Leader
+[this, R43Jan_HMGG] call Olsen_FW_FNC_GearScript;        HMG Gunner
+[this, R43Jan_HMGA] call Olsen_FW_FNC_GearScript;        HMG Ammo Bearer
 
-[this,"R43Jan_ATRTL"] call Olsen_FW_FNC_GearScript;      AT Rifle Team Leader
-[this,"R43Jan_ATRG"] call Olsen_FW_FNC_GearScript;       AT Rifle Gunner
-[this,"R43Jan_ATRA"] call Olsen_FW_FNC_GearScript;       AT Rifle Ammo Bearer
+[this, R43Jan_ATRTL] call Olsen_FW_FNC_GearScript;       AT Rifle Team Leader
+[this, R43Jan_ATRG] call Olsen_FW_FNC_GearScript;        AT Rifle Gunner
+[this, R43Jan_ATRA] call Olsen_FW_FNC_GearScript;        AT Rifle Ammo Bearer
 
     //Vehicle Crew
-[this,"R43Jan_VCom"] call Olsen_FW_FNC_GearScript;       Tank Commander
-[this,"R43Jan_VCrew"] call Olsen_FW_FNC_GearScript;      Tank Crew
+[this, R43Jan_VCom] call Olsen_FW_FNC_GearScript;        Tank Commander
+[this, R43Jan_VCrew] call Olsen_FW_FNC_GearScript;       Tank Crew
 */
 
 //======================== Definitions ========================
@@ -189,7 +189,9 @@
 //Company HQ
 
     //Company Commander
-    case "R43Jan_CC" : {
+    R43Jan_CC = ["R43Jan_CC", {
+        params ["_unit"];
+
         [Rus_Uni_CC] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Rus_Hat_PC] call Olsen_FW_FNC_AddItem;
@@ -204,10 +206,12 @@
 
         //Secondary Weapon
         R43Jan_Weapon_Secondary;
-    };
+    }];
 
     //Company Sergeant
-    case "R43Jan_CSgt" : {
+    R43Jan_CSgt = ["R43Jan_CSgt", {
+        params ["_unit"];
+
         [Rus_Uni_CSgt] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_PPSH_O_r] call Olsen_FW_FNC_AddItemRandom;
         [Rus_BP] call Olsen_FW_FNC_AddItem;
@@ -228,10 +232,12 @@
         [Rus_Gren_Frag_S,1] call Olsen_FW_FNC_AddItem;
         [Rus_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Radio Operator
-    case "R43Jan_RTO" : {
+    R43Jan_RTO = ["R43Jan_RTO", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon & Vest
@@ -244,12 +250,14 @@
         //Assigned Items
         Rus_Default_Equipment;
         [GEN_Headset] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Platoon HQ
 
     //Platoon Commander
-    case "R43Jan_PC" : {
+    R43Jan_PC = ["R43Jan_PC", {
+        params ["_unit"];
+
         [Rus_Uni_PC] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Rus_Hat_PC] call Olsen_FW_FNC_AddItem;
@@ -264,10 +272,12 @@
 
         //Secondary Weapon
         R43Jan_Weapon_Secondary;
-    };
+    }];
 
     //Platoon Sergeant
-    case "R43Jan_PSgt" : {
+    R43Jan_PSgt = ["R43Jan_PSgt", {
+        params ["_unit"];
+
         [Rus_Uni_SL] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_PPSH_O_r] call Olsen_FW_FNC_AddItemRandom;
         [Rus_BP] call Olsen_FW_FNC_AddItem;
@@ -288,10 +298,12 @@
         [Rus_Gren_Frag_S,1] call Olsen_FW_FNC_AddItem;
         [Rus_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Medic
-    case "R43Jan_Med" : {
+    R43Jan_Med = ["R43Jan_Med", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon & Vest
@@ -306,10 +318,12 @@
 
         //Extra
         Rus_Medic_Equipment;
-    };
+    }];
 
     //Messenger
-    case "R43Jan_Mess" : {
+    R43Jan_Mess = ["R43Jan_Mess", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
 
         //Assigned Items
@@ -323,12 +337,14 @@
 
         //Extra
         [Rus_Gren_Frag_S,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Squad
 
     //Squad Leader
-    case "R43Jan_SL" : {
+    R43Jan_SL = ["R43Jan_SL", {
+        params ["_unit"];
+
         [Rus_Uni_SL] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_PPSH_O_r] call Olsen_FW_FNC_AddItemRandom;
         [Rus_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -344,10 +360,12 @@
         //Extra
         [Rus_Gren_Frag_S,1] call Olsen_FW_FNC_AddItem;
         [Rus_Mag_DP_Mixed_Ball_Red,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Team Leader
-    case "R43Jan_TL" : {
+    R43Jan_TL = ["R43Jan_TL", {
+        params ["_unit"];
+
         [Rus_Uni_TL] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon
@@ -363,10 +381,12 @@
         //Extra
         [Rus_Gren_Frag_S,1] call Olsen_FW_FNC_AddItem;
         [Rus_Mag_DP_Mixed_Ball_Red,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Submachine Gunner
-    case "R43Jan_SMG" : {
+    R43Jan_SMG = ["R43Jan_SMG", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon
@@ -382,10 +402,12 @@
         //Extra
         [Rus_Gren_Frag_S,1] call Olsen_FW_FNC_AddItem;
         [Rus_Mag_DP_Mixed_Ball_Red,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Grenadier
-    case "R43Jan_Gren" : {
+    R43Jan_Gren = ["R43Jan_Gren", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_Mosin] call Olsen_FW_FNC_AddItem;
         [Rus_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -403,10 +425,12 @@
 
         //Extra
         [Rus_Mag_RGrn_HE,8] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Rifleman
-    case "R43Jan_Rif" : {
+    R43Jan_Rif = ["R43Jan_Rif", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon & Vest
@@ -423,10 +447,12 @@
         [Rus_Gren_Frag_S,1] call Olsen_FW_FNC_AddItem;
         [Rus_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Rus_Mag_DP_Mixed_Ball_Red,1,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Machine Gunner
-    case "R43Jan_MG" : {
+    R43Jan_MG = ["R43Jan_MG", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_MG_r] call Olsen_FW_FNC_AddItemRandom;
         [Rus_BP_MG] call Olsen_FW_FNC_AddItem;
@@ -441,10 +467,12 @@
         [Rus_Weap_DP] call Olsen_FW_FNC_AddItem;
         [Rus_Mag_DP_Mixed_Ball_Red,3,"vest"] call Olsen_FW_FNC_AddItem;
         [Rus_Mag_DP_Mixed_Ball_Red,6,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //MG Assistant
-    case "R43Jan_MGA" : {
+    R43Jan_MGA = ["R43Jan_MGA", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon & Vest
@@ -460,12 +488,14 @@
 
         //Extra
         [Rus_Mag_DP_Mixed_Ball_Red,6,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Heavy Weapons Teams
 
     //Mortar Team Leader
-    case "R43Jan_MortTL" : {
+    R43Jan_MortTL = ["R43Jan_MortTL", {
+        params ["_unit"];
+
         [Rus_Uni_TL] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_HGun] call Olsen_FW_FNC_AddItem;
         [Rus_BP_GB] call Olsen_FW_FNC_AddItem;
@@ -484,10 +514,12 @@
 
         //Extra
         [Rus_Mag_Mort_HE,3] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Mortar Gunner
-    case "R43Jan_MortG" : {
+    R43Jan_MortG = ["R43Jan_MortG", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_HGun] call Olsen_FW_FNC_AddItem;
         [Rus_BP_GB] call Olsen_FW_FNC_AddItem;
@@ -506,10 +538,12 @@
 
         //Extra
         [Rus_Mag_Mort_HE,3] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Mortar Ammo Bearer
-    case "R43Jan_MortA" : {
+    R43Jan_MortA = ["R43Jan_MortA", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon & Vest
@@ -525,10 +559,12 @@
 
         //Extra
         [Rus_Mag_Mort_HE,4] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //HMG Team Leader
-    case "R43Jan_HMGTL" : {
+    R43Jan_HMGTL = ["R43Jan_HMGTL", {
+        params ["_unit"];
+
         [Rus_Uni_TL] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_HGun] call Olsen_FW_FNC_AddItem;
         [Rus_Weap_HMG_T] call Olsen_FW_FNC_AddItem;
@@ -545,10 +581,12 @@
         //Launcher
 
         //Extra
-    };
+    }];
 
     //HMG Gunner
-    case "R43Jan_HMGG" : {
+    R43Jan_HMGG = ["R43Jan_HMGG", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_HGun] call Olsen_FW_FNC_AddItem;
         [Rus_Weap_HMG_B] call Olsen_FW_FNC_AddItem;
@@ -565,10 +603,12 @@
         //Launcher
 
         //Extra
-    };
+    }];
 
     //HMG Ammo Bearer
-    case "R43Jan_HMGA" : {
+    R43Jan_HMGA = ["R43Jan_HMGA", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon & Vest
@@ -583,10 +623,12 @@
         Rus_Leader_Equipment;
 
         //Extra
-    };
+    }];
 
     //Anti-Tank Rifle Team Leader
-    case "R43Jan_ATRTL" : {
+    R43Jan_ATRTL = ["R43Jan_ATRTL", {
+        params ["_unit"];
+
         [Rus_Uni_TL] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon
@@ -603,10 +645,12 @@
         //Extra
         [Rus_Mag_PTRD,20,"backpack"] call Olsen_FW_FNC_AddItem;
         [Rus_Gren_Frag_S,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Anti-Tank Rifle Gunner
-    case "R43Jan_ATRG" : {
+    R43Jan_ATRG = ["R43Jan_ATRG", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_HGun] call Olsen_FW_FNC_AddItem;
         [Rus_BP_GB] call Olsen_FW_FNC_AddItem;
@@ -624,10 +668,12 @@
         [Rus_Mag_PTRD,1] call Olsen_FW_FNC_AddItem;
         [Rus_Weap_PTRD] call Olsen_FW_FNC_AddItem;
         [Rus_Mag_PTRD,20] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Anti-Tank Rifle Ammo Bearer
-    case "R43Jan_ATRA" : {
+    R43Jan_ATRA = ["R43Jan_ATRA", {
+        params ["_unit"];
+
         [Rus_Uni_Rif] call Olsen_FW_FNC_AddItem;
 
         //Primary Weapon & Vest
@@ -643,12 +689,14 @@
 
         //Extra
         [Rus_Mag_PTRD,20,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Vehicle Crew
 
     //Tank Commander
-    case "R43Jan_VCom" : {
+    R43Jan_VCom = ["R43Jan_VCom", {
+        params ["_unit"];
+
         [Rus_Uni_VCrew] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Rus_Hat_VCrew] call Olsen_FW_FNC_AddItem;
@@ -663,10 +711,12 @@
 
         //Secondary Weapon
         R43Jan_Weapon_Secondary;
-    };
+    }];
 
     //Tank Crew
-    case "R43Jan_VCrew" : {
+    R43Jan_VCrew = ["R43Jan_VCrew", {
+        params ["_unit"];
+
         [Rus_Uni_VCrew] call Olsen_FW_FNC_AddItem;
         [Rus_Vest_VCrew] call Olsen_FW_FNC_AddItem;
         [Rus_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -681,4 +731,4 @@
 
         //Extra
         [Rus_Toolkit] call Olsen_FW_FNC_AddItem;
-    };
+    }];

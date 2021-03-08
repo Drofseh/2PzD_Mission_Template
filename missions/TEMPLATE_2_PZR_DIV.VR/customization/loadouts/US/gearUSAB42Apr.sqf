@@ -7,36 +7,36 @@
 /*Loadouts
 
     //Company HQ
-[this,"USAB42Apr_CC"] call Olsen_FW_FNC_GearScript;          Company Commander
-[this,"USAB42Apr_C2"] call Olsen_FW_FNC_GearScript;          Company Executive Officer
-[this,"USAB42Apr_CSGT"] call Olsen_FW_FNC_GearScript;        Company First Sergeant
-[this,"USAB42Apr_CRTO"] call Olsen_FW_FNC_GearScript;        Company Radio Operator
+[this, USAB42Apr_CC] call Olsen_FW_FNC_GearScript;           Company Commander
+[this, USAB42Apr_C2] call Olsen_FW_FNC_GearScript;           Company Executive Officer
+[this, USAB42Apr_CSGT] call Olsen_FW_FNC_GearScript;         Company First Sergeant
+[this, USAB42Apr_CRTO] call Olsen_FW_FNC_GearScript;         Company Radio Operator
 
     //Platoon HQ
-[this,"USAB42Apr_PC"] call Olsen_FW_FNC_GearScript;          Platoon Commander
-[this,"USAB42Apr_PSGT"] call Olsen_FW_FNC_GearScript;        Platoon Sergeant/Platoon Guide
-[this,"USAB42Apr_Mess"] call Olsen_FW_FNC_GearScript;        Messenger
-[this,"USAB42Apr_Med"] call Olsen_FW_FNC_GearScript;         Medic
+[this, USAB42Apr_PC] call Olsen_FW_FNC_GearScript;           Platoon Commander
+[this, USAB42Apr_PSGT] call Olsen_FW_FNC_GearScript;         Platoon Sergeant/Platoon Guide
+[this, USAB42Apr_Mess] call Olsen_FW_FNC_GearScript;         Messenger
+[this, USAB42Apr_Med] call Olsen_FW_FNC_GearScript;          Medic
 
     //Squad
-[this,"USAB42Apr_SL"] call Olsen_FW_FNC_GearScript;          Squad Leader
-[this,"USAB42Apr_S2"] call Olsen_FW_FNC_GearScript;          Assistant Squad Leader
-[this,"USAB42Apr_Scout"] call Olsen_FW_FNC_GearScript;       Scout
-[this,"USAB42Apr_MG"] call Olsen_FW_FNC_GearScript;          Machine Gunner
-[this,"USAB42Apr_MGA"] call Olsen_FW_FNC_GearScript;         Assistant Machine Gunner
-[this,"USAB42Apr_MGAB"] call Olsen_FW_FNC_GearScript;        Machine Gun Ammo Bearer
-[this,"USAB42Apr_AR"] call Olsen_FW_FNC_GearScript;          Automatic Rifleman
-[this,"USAB42Apr_AAR"] call Olsen_FW_FNC_GearScript;         Assistant Automatic Rifleman
-[this,"USAB42Apr_ARB"] call Olsen_FW_FNC_GearScript;         Ammo Bearer
-[this,"USAB42Apr_Rif"] call Olsen_FW_FNC_GearScript;         Rifleman
+[this, USAB42Apr_SL] call Olsen_FW_FNC_GearScript;           Squad Leader
+[this, USAB42Apr_S2] call Olsen_FW_FNC_GearScript;           Assistant Squad Leader
+[this, USAB42Apr_Scout] call Olsen_FW_FNC_GearScript;        Scout
+[this, USAB42Apr_MG] call Olsen_FW_FNC_GearScript;           Machine Gunner
+[this, USAB42Apr_MGA] call Olsen_FW_FNC_GearScript;          Assistant Machine Gunner
+[this, USAB42Apr_MGAB] call Olsen_FW_FNC_GearScript;         Machine Gun Ammo Bearer
+[this, USAB42Apr_AR] call Olsen_FW_FNC_GearScript;           Automatic Rifleman
+[this, USAB42Apr_AAR] call Olsen_FW_FNC_GearScript;          Assistant Automatic Rifleman
+[this, USAB42Apr_ARB] call Olsen_FW_FNC_GearScript;          Ammo Bearer
+[this, USAB42Apr_Rif] call Olsen_FW_FNC_GearScript;          Rifleman
 
     //Weapons Teams
-[this,"USAB42Apr_MGTL"] call Olsen_FW_FNC_GearScript;        Machine Gun Team Leader
+[this, USAB42Apr_MGTL] call Olsen_FW_FNC_GearScript;         Machine Gun Team Leader
 
-[this,"USAB42Apr_MortTL"] call Olsen_FW_FNC_GearScript;      Mortar Team Leader
-[this,"USAB42Apr_MortG"] call Olsen_FW_FNC_GearScript;       Mortar Gunner
-[this,"USAB42Apr_MortA"] call Olsen_FW_FNC_GearScript;       Mortar Assistant
-[this,"USAB42Apr_MortAB"] call Olsen_FW_FNC_GearScript;      Mortar Ammo Bearer
+[this, USAB42Apr_MortTL] call Olsen_FW_FNC_GearScript;       Mortar Team Leader
+[this, USAB42Apr_MortG] call Olsen_FW_FNC_GearScript;        Mortar Gunner
+[this, USAB42Apr_MortA] call Olsen_FW_FNC_GearScript;        Mortar Assistant
+[this, USAB42Apr_MortAB] call Olsen_FW_FNC_GearScript;       Mortar Ammo Bearer
 */
 
 //======================== Definitions ========================
@@ -152,7 +152,9 @@
 //Company HQ
 
     //Company Commander
-    case "USAB42Apr_CC" : {
+    USAB42Apr_CC = ["USAB42Apr_CC", {
+        params ["_unit"];
+
         [USAB_UniK_CPT] call Olsen_FW_FNC_AddItem;
         [USAB_Helm_CPT_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -172,10 +174,12 @@
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Company Executive Officer
-    case "USAB42Apr_C2" : {
+    USAB42Apr_C2 = ["USAB42Apr_C2", {
+        params ["_unit"];
+
         [USAB_UniK_LT] call Olsen_FW_FNC_AddItem;
         [USAB_Helm_LT_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -195,10 +199,12 @@
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Company First Sergeant
-    case "USAB42Apr_CSGT" : {
+    USAB42Apr_CSGT = ["USAB42Apr_CSGT", {
+        params ["_unit"];
+
         [USAB_UniK_SGT] call Olsen_FW_FNC_AddItem;
         [USAB_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [USAB_Helm_NCO_r] call Olsen_FW_FNC_AddItemRandom;
@@ -219,10 +225,12 @@
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Company Radio Operator
-    case "USAB42Apr_CRTO" : {
+    USAB42Apr_CRTO = ["USAB42Apr_CRTO", {
+        params ["_unit"];
+
         [USAB_UniK_CPL] call Olsen_FW_FNC_AddItem;
         [USAB_BP_Radio] call Olsen_FW_FNC_AddItem;
         [USAB_Helm_r] call Olsen_FW_FNC_AddItemRandom;
@@ -237,12 +245,14 @@
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Platoon HQ
 
     //Platoon Commander
-    case "USAB42Apr_PC" : {
+    USAB42Apr_PC = ["USAB42Apr_PC", {
+        params ["_unit"];
+
         [USAB_UniK_LT] call Olsen_FW_FNC_AddItem;
         [USAB_Helm_2LT_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -262,10 +272,12 @@
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Platoon Sergeant
-    case "USAB42Apr_PSGT" : {
+    USAB42Apr_PSGT = ["USAB42Apr_PSGT", {
+        params ["_unit"];
+
         [USAB_UniK_SGT] call Olsen_FW_FNC_AddItem;
         [USAB_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [USAB_Helm_NCO_r] call Olsen_FW_FNC_AddItemRandom;
@@ -286,10 +298,12 @@
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Messenger
-    case "USAB42Apr_Mess" : {
+    USAB42Apr_Mess = ["USAB42Apr_Mess", {
+        params ["_unit"];
+
         [USAB_UniK_PFC] call Olsen_FW_FNC_AddItem;
         [USAB_Helm_r] call Olsen_FW_FNC_AddItemRandom;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -303,10 +317,12 @@
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Medic
-    case "USAB42Apr_Med" : {
+    USAB42Apr_Med = ["USAB42Apr_Med", {
+        params ["_unit"];
+
         [USAB_UniK_Med] call Olsen_FW_FNC_AddItem;
         [USAB_Vest_Med] call Olsen_FW_FNC_AddItem;
         [USAB_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -322,12 +338,14 @@
         //Extra
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         US_Medic_Equipment;
-    };
+    }];
 
 //Squad
 
     //Squad Leader
-    case "USAB42Apr_SL" : {
+    USAB42Apr_SL = ["USAB42Apr_SL", {
+        params ["_unit"];
+
         [USAB_UniK_SGT] call Olsen_FW_FNC_AddItem;
         [USAB_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [USAB_Helm_NCO_r] call Olsen_FW_FNC_AddItemRandom;
@@ -343,10 +361,12 @@
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Assistant Squad Leader
-    case "USAB42Apr_S2" : {
+    USAB42Apr_S2 = ["USAB42Apr_S2", {
+        params ["_unit"];
+
         [USAB_UniK_CPL] call Olsen_FW_FNC_AddItem;
         [USAB_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [USAB_Helm_NCO_r] call Olsen_FW_FNC_AddItemRandom;
@@ -361,10 +381,12 @@
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Scout
-    case "USAB42Apr_Scout" : {
+    USAB42Apr_Scout = ["USAB42Apr_Scout", {
+        params ["_unit"];
+
         [USAB_UniK_PFC] call Olsen_FW_FNC_AddItem;
         [USAB_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [USAB_Helm_r] call Olsen_FW_FNC_AddItemRandom;
@@ -379,10 +401,12 @@
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Machine Gunner
-    case "USAB42Apr_MG" : {
+    USAB42Apr_MG = ["USAB42Apr_MG", {
+        params ["_unit"];
+
         [USAB_UniK_PFC] call Olsen_FW_FNC_AddItem;
         [USAB_Vest_MGA] call Olsen_FW_FNC_AddItem;
         [USAB_BP_MG] call Olsen_FW_FNC_AddItem;
@@ -401,10 +425,12 @@
         [US_Mag_M1919_250_Mixed_Ball,1] call Olsen_FW_FNC_AddItem;
         [US_Weap_M1919A4] call Olsen_FW_FNC_AddItem;
         [US_Mag_M1919_250_Mixed_Ball,3] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Assistant Machine Gunner
-    case "USAB42Apr_MGA" : {
+    USAB42Apr_MGA = ["USAB42Apr_MGA", {
+        params ["_unit"];
+
         [USAB_UniK_PFC] call Olsen_FW_FNC_AddItem;
         [USAB_Vest_M1G] call Olsen_FW_FNC_AddItem;
         [USAB_BP_MG] call Olsen_FW_FNC_AddItem;
@@ -421,10 +447,12 @@
 
         //Extra
         [US_Mag_M1919_250_Mixed_Ball,2] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Machine Gun Ammo Bearer
-    case "USAB42Apr_MGAB" : {
+    USAB42Apr_MGAB = ["USAB42Apr_MGAB", {
+        params ["_unit"];
+
         [
             [
                 [USAB_UniK_PFC]
@@ -446,10 +474,12 @@
 
         //Extra
         [US_Mag_M1919_250_Mixed_Ball,4] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Automatic Rifleman
-    case "USAB42Apr_AR" : {
+    USAB42Apr_AR = ["USAB42Apr_AR", {
+        params ["_unit"];
+
         [USAB_UniK_CPL] call Olsen_FW_FNC_AddItem;
         [USAB_Vest_BAR] call Olsen_FW_FNC_AddItem;
         [USAB_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -468,10 +498,12 @@
 
         //Extra
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Automatic Rifle Assistant
-    case "USAB42Apr_AAR" : {
+    USAB42Apr_AAR = ["USAB42Apr_AAR", {
+        params ["_unit"];
+
         [USAB_UniK_PFC] call Olsen_FW_FNC_AddItem;
         [USAB_Vest_M1G] call Olsen_FW_FNC_AddItem;
         [USAB_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -488,10 +520,12 @@
         //Extra
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [US_Mag_BAR_Mixed_Ball,10] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Automatic Rifle Ammo Bearer
-    case "USAB42Apr_ARB" : {
+    USAB42Apr_ARB = ["USAB42Apr_ARB", {
+        params ["_unit"];
+
         [
             [
                 [USAB_UniK_PFC]
@@ -514,10 +548,12 @@
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [US_Mag_BAR_Mixed_Ball,15] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Rifleman
-    case "USAB42Apr_Rif" : {
+    USAB42Apr_Rif = ["USAB42Apr_Rif", {
+        params ["_unit"];
+
         [
             [
                 [USAB_UniK_PFC]
@@ -540,12 +576,14 @@
         //Extra
         [GEN_Gren_Frag_P,2] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Machine Gun Team
 
     //Machine Gun Team Leader
-    case "USAB42Apr_MGTL" : {
+    USAB42Apr_MGTL = ["USAB42Apr_MGTL", {
+        params ["_unit"];
+
         [USAB_UniK_CPL] call Olsen_FW_FNC_AddItem;
         [USAB_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [USAB_Helm_r] call Olsen_FW_FNC_AddItemRandom;
@@ -561,12 +599,14 @@
         //Extra
         [GEN_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Mortar Team
 
     //Mortar Team Leader
-    case "USAB42Apr_MortTL" : {
+    USAB42Apr_MortTL = ["USAB42Apr_MortTL", {
+        params ["_unit"];
+
         [USAB_UniK_CPL] call Olsen_FW_FNC_AddItem;
         [USAB_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [USAB_Helm_r] call Olsen_FW_FNC_AddItemRandom;
@@ -584,10 +624,12 @@
         [GEN_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [US_Mag_Mort_HE,4] call Olsen_FW_FNC_AddItem;
         [GEN_ace_rangetable,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Mortar Gunner
-    case "USAB42Apr_MortG" : {
+    USAB42Apr_MortG = ["USAB42Apr_MortG", {
+        params ["_unit"];
+
         [USAB_UniK_PFC] call Olsen_FW_FNC_AddItem;
         [USAB_Vest_Mort] call Olsen_FW_FNC_AddItem;
         [USAB_BP_MG] call Olsen_FW_FNC_AddItem;
@@ -607,10 +649,12 @@
         [US_Mag_Mort_HE,8] call Olsen_FW_FNC_AddItem;
         [GEN_ace_rangetable,1] call Olsen_FW_FNC_AddItem;
         [GEN_ace_maptools,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Mortar Assistant
-    case "USAB42Apr_MortA" : {
+    USAB42Apr_MortA = ["USAB42Apr_MortA", {
+        params ["_unit"];
+
         [USAB_UniK_PFC] call Olsen_FW_FNC_AddItem;
         [USAB_Vest_Mort] call Olsen_FW_FNC_AddItem;
         [USAB_BP_MG] call Olsen_FW_FNC_AddItem;
@@ -630,10 +674,12 @@
         [US_Mag_Mort_HE,8] call Olsen_FW_FNC_AddItem;
         [GEN_ace_rangetable,1] call Olsen_FW_FNC_AddItem;
         [GEN_ace_maptools,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Mortar Ammo Bearer
-    case "USAB42Apr_MortAB" : {
+    USAB42Apr_MortAB = ["USAB42Apr_MortAB", {
+        params ["_unit"];
+
         [
             [
                 [USAB_UniK_PFC]
@@ -655,4 +701,4 @@
 
         //Extra
         [US_Mag_Mort_HE,9] call Olsen_FW_FNC_AddItem;
-    };
+    }];

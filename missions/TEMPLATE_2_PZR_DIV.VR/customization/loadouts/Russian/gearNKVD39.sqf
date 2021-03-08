@@ -7,17 +7,17 @@
 /*Loadouts
 
     Platoon HQ
-[this,"NKVD39_LT"] call Olsen_FW_FNC_GearScript;        Leutenant
-[this,"NKVD39_Star"] call Olsen_FW_FNC_GearScript;      Starshina
-[this,"NKVD39_RTO"] call Olsen_FW_FNC_GearScript;       Radio Operator
-[this,"NKVD39_Med"] call Olsen_FW_FNC_GearScript;       Medic
+[this, NKVD39_LT] call Olsen_FW_FNC_GearScript;         Leutenant
+[this, NKVD39_Star] call Olsen_FW_FNC_GearScript;       Starshina
+[this, NKVD39_RTO] call Olsen_FW_FNC_GearScript;        Radio Operator
+[this, NKVD39_Med] call Olsen_FW_FNC_GearScript;        Medic
 
     Squad
-[this,"NKVD39_Sgt"] call Olsen_FW_FNC_GearScript;       Sergeant
-[this,"NKVD39_Efr"] call Olsen_FW_FNC_GearScript;       Efreitor
-[this,"NKVD39_MG"] call Olsen_FW_FNC_GearScript;        Machine Gunner
-[this,"NKVD39_MGA"] call Olsen_FW_FNC_GearScript;       Machine Gun Assistant
-[this,"NKVD39_Stre"] call Olsen_FW_FNC_GearScript;      Strelok
+[this, NKVD39_Sgt] call Olsen_FW_FNC_GearScript;        Sergeant
+[this, NKVD39_Efr] call Olsen_FW_FNC_GearScript;        Efreitor
+[this, NKVD39_MG] call Olsen_FW_FNC_GearScript;         Machine Gunner
+[this, NKVD39_MGA] call Olsen_FW_FNC_GearScript;        Machine Gun Assistant
+[this, NKVD39_Stre] call Olsen_FW_FNC_GearScript;       Strelok
 */
 
 //======================== Definitions ========================
@@ -79,7 +79,9 @@
 //Platoon
 
     //Leutenant
-    case "NKVD39_LT" : {
+    NKVD39_LT = ["NKVD39_LT", {
+        params ["_unit"];
+
         [NKVD_Uni_LT] call Olsen_FW_FNC_AddItem;
         [NKVD_Vest_O_Pistol] call Olsen_FW_FNC_AddItem;
         [NKVD_Hat_O] call Olsen_FW_FNC_AddItem;
@@ -91,10 +93,12 @@
 
         //Secondary Weapon
         NKVD39_Weapon_Secondary;
-    };
+    }];
 
     //Starshina
-    case "NKVD39_Star" : {
+    NKVD39_Star = ["NKVD39_Star", {
+        params ["_unit"];
+
         [NKVD_Uni_Star] call Olsen_FW_FNC_AddItem;
         [NKVD_Vest_Mosin] call Olsen_FW_FNC_AddItem;
         [NKVD_Hat] call Olsen_FW_FNC_AddItem;
@@ -109,10 +113,12 @@
 
         //Secondary Weapon
         NKVD39_Weapon_Secondary;
-    };
+    }];
 
     //Radio Operator
-    case "NKVD39_RTO" : {
+    NKVD39_RTO = ["NKVD39_RTO", {
+        params ["_unit"];
+
         [NKVD_Uni_Stre] call Olsen_FW_FNC_AddItem;
         [NKVD_Vest_Mosin] call Olsen_FW_FNC_AddItem;
         [Rus_BP_Radio] call Olsen_FW_FNC_AddItem;
@@ -124,10 +130,12 @@
 
         //Primary Weapon
         NKVD39_Weapon_Rifleman;
-    };
+    }];
 
     //Medic
-    case "NKVD39_Med" : {
+    NKVD39_Med = ["NKVD39_Med", {
+        params ["_unit"];
+
         [NKVD_Uni_Stre] call Olsen_FW_FNC_AddItem;
         [NKVD_Vest_Mosin] call Olsen_FW_FNC_AddItem;
         [Rus_BP_Med] call Olsen_FW_FNC_AddItem;
@@ -142,10 +150,12 @@
 
         //Extra
         NKVD_Medic_Equipment;
-    };
+    }];
 
     //Sergeant
-    case "NKVD39_Sgt" : {
+    NKVD39_Sgt = ["NKVD39_Sgt", {
+        params ["_unit"];
+
         [NKVD_Uni_Sgt] call Olsen_FW_FNC_AddItem;
         [NKVD_Vest_Mosin] call Olsen_FW_FNC_AddItem;
         [NKVD_Hat] call Olsen_FW_FNC_AddItem;
@@ -157,10 +167,12 @@
 
         //Primary Weapon
         NKVD39_Weapon_Starshina;
-    };
+    }];
 
     //Efreitor
-    case "NKVD39_Efr" : {
+    NKVD39_Efr = ["NKVD39_Efr", {
+        params ["_unit"];
+
         [NKVD_Uni_Efr] call Olsen_FW_FNC_AddItem;
         [NKVD_Vest_Mosin] call Olsen_FW_FNC_AddItem;
         [NKVD_Hat] call Olsen_FW_FNC_AddItem;
@@ -171,10 +183,12 @@
 
         //Primary Weapon
         NKVD39_Weapon_Starshina;
-    };
+    }];
 
     //Machine Gunner
-    case "NKVD39_MG" : {
+    NKVD39_MG = ["NKVD39_MG", {
+        params ["_unit"];
+
         [NKVD_Uni_Efr] call Olsen_FW_FNC_AddItem;
         [NKVD_Vest_HKC] call Olsen_FW_FNC_AddItem;
         [Rus_BP_MG] call Olsen_FW_FNC_AddItem;
@@ -189,10 +203,12 @@
 
         //Secondary Weapon
         NKVD39_Weapon_Secondary;
-    };
+    }];
 
     //Machine Gun Assistant
-    case "NKVD39_MGA" : {
+    NKVD39_MGA = ["NKVD39_MGA", {
+        params ["_unit"];
+
         [NKVD_Uni_Stre] call Olsen_FW_FNC_AddItem;
         [NKVD_Vest_Mosin] call Olsen_FW_FNC_AddItem;
         [Rus_BP_MG] call Olsen_FW_FNC_AddItem;
@@ -208,10 +224,12 @@
 
         //Extra
         [Rus_Mag_DP_Mixed_Ball_Red,6] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Strelok
-    case "NKVD39_Stre" : {
+    NKVD39_Stre = ["NKVD39_Stre", {
+        params ["_unit"];
+
         [NKVD_Uni_Stre] call Olsen_FW_FNC_AddItem;
         [NKVD_Vest_Mosin] call Olsen_FW_FNC_AddItem;
         [NKVD_Hat] call Olsen_FW_FNC_AddItem;
@@ -222,4 +240,4 @@
 
         //Primary Weapon
         NKVD39_Weapon_Rifleman;
-    };
+    }];

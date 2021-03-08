@@ -7,24 +7,24 @@
 /*Loadouts
 
     //Kompanietrupp
-[this,"FSJ44Jul_CC"] call Olsen_FW_FNC_GearScript;     Kompanieführer
-[this,"FSJ44Jul_C2"] call Olsen_FW_FNC_GearScript;     Kompanietruppführer
+[this, FSJ44Jul_CC] call Olsen_FW_FNC_GearScript;      Kompanieführer
+[this, FSJ44Jul_C2] call Olsen_FW_FNC_GearScript;      Kompanietruppführer
 
     //Zugtrupp
-[this,"FSJ44Jul_PC"] call Olsen_FW_FNC_GearScript;     Zugführer
-[this,"FSJ44Jul_P2"] call Olsen_FW_FNC_GearScript;     Zugtruppführer
-[this,"FSJ44Jul_RTO"] call Olsen_FW_FNC_GearScript;    Funker
-[this,"FSJ44Jul_Mess"] call Olsen_FW_FNC_GearScript;   Melder
-[this,"FSJ44Jul_Med"] call Olsen_FW_FNC_GearScript;    Krankenträger
+[this, FSJ44Jul_PC] call Olsen_FW_FNC_GearScript;      Zugführer
+[this, FSJ44Jul_P2] call Olsen_FW_FNC_GearScript;      Zugtruppführer
+[this, FSJ44Jul_RTO] call Olsen_FW_FNC_GearScript;     Funker
+[this, FSJ44Jul_Mess] call Olsen_FW_FNC_GearScript;    Melder
+[this, FSJ44Jul_Med] call Olsen_FW_FNC_GearScript;     Krankenträger
 
     //Gruppe
-[this,"FSJ44Jul_SL"] call Olsen_FW_FNC_GearScript;     Gruppenführer
-[this,"FSJ44Jul_S2"] call Olsen_FW_FNC_GearScript;     Stellvertretender Gruppenführer
-[this,"FSJ44Jul_MG"] call Olsen_FW_FNC_GearScript;     MG-Richtschütze
-[this,"FSJ44Jul_MGA"] call Olsen_FW_FNC_GearScript;    MG-Hilfsschütze
-[this,"FSJ44Jul_Gren"] call Olsen_FW_FNC_GearScript;   Grenadier
-[this,"FSJ44Jul_Mark"] call Olsen_FW_FNC_GearScript;   Scharfschütze
-[this,"FSJ44Jul_Rif"] call Olsen_FW_FNC_GearScript;    Gewehrschütze
+[this, FSJ44Jul_SL] call Olsen_FW_FNC_GearScript;      Gruppenführer
+[this, FSJ44Jul_S2] call Olsen_FW_FNC_GearScript;      Stellvertretender Gruppenführer
+[this, FSJ44Jul_MG] call Olsen_FW_FNC_GearScript;      MG-Richtschütze
+[this, FSJ44Jul_MGA] call Olsen_FW_FNC_GearScript;     MG-Hilfsschütze
+[this, FSJ44Jul_Gren] call Olsen_FW_FNC_GearScript;    Grenadier
+[this, FSJ44Jul_Mark] call Olsen_FW_FNC_GearScript;    Scharfschütze
+[this, FSJ44Jul_Rif] call Olsen_FW_FNC_GearScript;     Gewehrschütze
 */
 
 //======================== Definitions ========================
@@ -238,7 +238,9 @@
 //Company HQ
 
     //Kompanieführer
-    case "FSJ44Jul_CC" : {
+    FSJ44Jul_CC = ["FSJ44Jul_CC", {
+        params ["_unit"];
+
         [FSJ_UniC_NI] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Radio] call Olsen_FW_FNC_AddItem;
@@ -257,10 +259,12 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Kompanietruppführer
-    case "FSJ44Jul_C2" : {
+    FSJ44Jul_C2 = ["FSJ44Jul_C2", {
+        params ["_unit"];
+
         [FSJ_UniC_NI] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -288,12 +292,14 @@
                 [Ger_Gren_Frag_SF,1]
             ],[34]
         ] call Olsen_FW_FNC_AddItemRandomPercent;
-    };
+    }];
 
 //Platoon HQ
 
     //Zugführer
-    case "FSJ44Jul_PC" : {
+    FSJ44Jul_PC = ["FSJ44Jul_PC", {
+        params ["_unit"];
+
         [FSJ_UniC_NI] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -312,10 +318,12 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Zugtruppführer
-    case "FSJ44Jul_P2" : {
+    FSJ44Jul_P2 = ["FSJ44Jul_P2", {
+        params ["_unit"];
+
         [FSJ_UniC_SL] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -343,10 +351,12 @@
                 [Ger_Gren_Frag_SF,1]
             ],[34]
         ] call Olsen_FW_FNC_AddItemRandomPercent;
-    };
+    }];
 
     //Funker
-    case "FSJ44Jul_RTO" : {
+    FSJ44Jul_RTO = ["FSJ44Jul_RTO", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Radio] call Olsen_FW_FNC_AddItem;
         [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
@@ -369,10 +379,12 @@
                 [Ger_Gren_Frag_SF,1]
             ],[34]
         ] call Olsen_FW_FNC_AddItemRandomPercent;
-    };
+    }];
 
     //Melder
-    case "FSJ44Jul_Mess" : {
+    FSJ44Jul_Mess = ["FSJ44Jul_Mess", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
@@ -395,10 +407,12 @@
                 [Ger_Gren_Frag_SF,1]
             ],[34]
         ] call Olsen_FW_FNC_AddItemRandomPercent;
-    };
+    }];
 
     //Krankenträger
-    case "FSJ44Jul_Med" : {
+    FSJ44Jul_Med = ["FSJ44Jul_Med", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Med] call Olsen_FW_FNC_AddItem;
         [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
@@ -413,12 +427,14 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         Ger_MedicP_Equipment;
-    };
+    }];
 
 //Squad
 
     //Gruppenführer
-    case "FSJ44Jul_SL" : {
+    FSJ44Jul_SL = ["FSJ44Jul_SL", {
+        params ["_unit"];
+
         [FSJ_UniC_SL] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
@@ -435,10 +451,12 @@
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_MG_50_Mixed_SmE,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Stellvertretender Gruppenführer
-    case "FSJ44Jul_S2" : {
+    FSJ44Jul_S2 = ["FSJ44Jul_S2", {
+        params ["_unit"];
+
         [FSJ_UniC_S2] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
@@ -454,10 +472,12 @@
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_MG_50_Mixed_SmE,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //MG-Richtschütze
-    case "FSJ44Jul_MG" : {
+    FSJ44Jul_MG = ["FSJ44Jul_MG", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_r] call Olsen_FW_FNC_AddItemRandom;
@@ -480,10 +500,12 @@
         //Extra
         [Ger_Mag_MG_50_Mixed_SmE,3] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //MG-Hilfsschütze
-    case "FSJ44Jul_MGA" : {
+    FSJ44Jul_MGA = ["FSJ44Jul_MGA", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_D] call Olsen_FW_FNC_AddItem;
         _unit removeItemFromBackpack "fow_50Rnd_792x57";
@@ -501,10 +523,12 @@
         [GEN_ace_sparebarrel] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_MG_50_Mixed_SmE,5] call Olsen_FW_FNC_AddItem;
         [Ger_mg_neck] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Scharfschütze
-    case "FSJ44Jul_Mark" : {
+    FSJ44Jul_Mark = ["FSJ44Jul_Mark", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -531,10 +555,12 @@
         ] call Olsen_FW_FNC_AddItemRandomPercent;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_MG_50_Mixed_SmE,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Grenadier
-    case "FSJ44Jul_Gren" : {
+    FSJ44Jul_Gren = ["FSJ44Jul_Gren", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -549,10 +575,12 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Gewehrschütze
-    case "FSJ44Jul_Rif" : {
+    FSJ44Jul_Rif = ["FSJ44Jul_Rif", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
         [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
@@ -579,4 +607,4 @@
         ] call Olsen_FW_FNC_AddItemRandomPercent;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_MG_50_Mixed_SmE,1,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];

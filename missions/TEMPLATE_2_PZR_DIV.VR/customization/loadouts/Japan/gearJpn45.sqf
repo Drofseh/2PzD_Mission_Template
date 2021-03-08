@@ -7,19 +7,19 @@
 /*Loadouts
 
     //Platoon
-[this,"IJA45_PC"] call Olsen_FW_FNC_GearScript;          Platoon Commander
-[this,"IJA45_Med"] call Olsen_FW_FNC_GearScript;         Medic
-[this,"IJA45_Mark"] call Olsen_FW_FNC_GearScript;        Marksman
-[this,"IJA45_SL"] call Olsen_FW_FNC_GearScript;          Squad Leader
-[this,"IJA45_TL"] call Olsen_FW_FNC_GearScript;          Team Leader
-[this,"IJA45_MG"] call Olsen_FW_FNC_GearScript;          Machine Gunner
-[this,"IJA45_MGA"] call Olsen_FW_FNC_GearScript;         Machine Gun Assistant
-[this,"IJA45_MGAB"] call Olsen_FW_FNC_GearScript;        Machine Gun Ammo Bearer
-[this,"IJA45_Gren"] call Olsen_FW_FNC_GearScript;        Grenadier
-[this,"IJA45_Rif"] call Olsen_FW_FNC_GearScript;         Rifleman
-[this,"IJA45_KMortG"] call Olsen_FW_FNC_GearScript;      Type 89 Gunner
-[this,"IJA45_KMortA"] call Olsen_FW_FNC_GearScript;      Type 89 Assistant
-[this,"IJA45_KMortAB"] call Olsen_FW_FNC_GearScript;     Type 89 Ammo Bearer
+[this, IJA45_PC] call Olsen_FW_FNC_GearScript;           Platoon Commander
+[this, IJA45_Med] call Olsen_FW_FNC_GearScript;          Medic
+[this, IJA45_Mark] call Olsen_FW_FNC_GearScript;         Marksman
+[this, IJA45_SL] call Olsen_FW_FNC_GearScript;           Squad Leader
+[this, IJA45_TL] call Olsen_FW_FNC_GearScript;           Team Leader
+[this, IJA45_MG] call Olsen_FW_FNC_GearScript;           Machine Gunner
+[this, IJA45_MGA] call Olsen_FW_FNC_GearScript;          Machine Gun Assistant
+[this, IJA45_MGAB] call Olsen_FW_FNC_GearScript;         Machine Gun Ammo Bearer
+[this, IJA45_Gren] call Olsen_FW_FNC_GearScript;         Grenadier
+[this, IJA45_Rif] call Olsen_FW_FNC_GearScript;          Rifleman
+[this, IJA45_KMortG] call Olsen_FW_FNC_GearScript;       Type 89 Gunner
+[this, IJA45_KMortA] call Olsen_FW_FNC_GearScript;       Type 89 Assistant
+[this, IJA45_KMortAB] call Olsen_FW_FNC_GearScript;      Type 89 Ammo Bearer
 */
 
 //======================== Loadouts ========================
@@ -27,7 +27,9 @@
 //Platoon
 
     //Platoon Commander
-    case "IJA45_PC" : {
+    IJA45_PC = ["IJA45_PC", {
+        params ["_unit"];
+
         [IJA_Uni_Khaki] call Olsen_FW_FNC_AddItem;
         [IJA_Vest_O] call Olsen_FW_FNC_AddItem;
         [//Hat
@@ -66,10 +68,12 @@
 
         //Extra
         [IJA_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Medic
-    case "IJA45_Med" : {
+    IJA45_Med = ["IJA45_Med", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -90,10 +94,12 @@
 
         //Extra
         IJA_Medic_Equipment;
-    };
+    }];
 
     //Marksman
-    case "IJA45_Mark" : {
+    IJA45_Mark = ["IJA45_Mark", {
+        params ["_unit"];
+
         [IJA_Uni_F] call Olsen_FW_FNC_AddItem;
         [IJA_Vest_Rif] call Olsen_FW_FNC_AddItem;
         [IJA_Helm_F] call Olsen_FW_FNC_AddItem;
@@ -110,12 +116,14 @@
 
         //Extra
         [IJA_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Squad
 
     //Squad Leader
-    case "IJA45_SL" : {
+    IJA45_SL = ["IJA45_SL", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -158,10 +166,12 @@
 
         //Extra
         [IJA_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Team Leader
-    case "IJA45_TL" : {
+    IJA45_TL = ["IJA45_TL", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -193,10 +203,12 @@
         //Extra
         [IJA_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
         [IJA_Mag_Type99_M_Mixed_Ball,4,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Machine Gunner
-    case "IJA45_MG" : {
+    IJA45_MG = ["IJA45_MG", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -226,10 +238,12 @@
 
         //Extra
         [IJA_Mag_Type99_M_Mixed_Ball,4,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Machine Gun Assistant
-    case "IJA45_MGA" : {
+    IJA45_MGA = ["IJA45_MGA", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -257,10 +271,12 @@
         [GEN_BinoG] call Olsen_FW_FNC_AddItem;
         [GEN_ace_sparebarrel] call Olsen_FW_FNC_AddItem;
         [IJA_Mag_Type99_M_Mixed_Ball,4,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Machine Gun Ammo Bearer
-    case "IJA45_MGAB" : {
+    IJA45_MGAB = ["IJA45_MGAB", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -286,10 +302,12 @@
 
         //Extra
         [IJA_Mag_Type99_M_Mixed_Ball,10,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Grenadier
-    case "IJA45_Gren" : {
+    IJA45_Gren = ["IJA45_Gren", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -315,10 +333,12 @@
 
         //Extra
         [IJA_Mag_RGrn,6] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Rifleman
-    case "IJA45_Rif" : {
+    IJA45_Rif = ["IJA45_Rif", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -345,10 +365,12 @@
         //Extra
         [IJA_Gren_Frag,2] call Olsen_FW_FNC_AddItem;
         [IJA_Mag_Type99_M_Mixed_Ball,1,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Type 89 Gunner
-    case "IJA45_KMortG" : {
+    IJA45_KMortG = ["IJA45_KMortG", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -373,10 +395,12 @@
 
         //Extra
         [IJA_Mag_RGrn,10] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Type 89 Assistant
-    case "IJA45_KMortA" : {
+    IJA45_KMortA = ["IJA45_KMortA", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -403,10 +427,12 @@
         //Extra
         GEN_Mortar_Equipment;
         [IJA_Gren_Frag,2] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Type 89 Ammo Bearer
-    case "IJA45_KMortAB" : {
+    IJA45_KMortAB = ["IJA45_KMortAB", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -432,4 +458,4 @@
 
         //Extra
         [IJA_Gren_Frag,2] call Olsen_FW_FNC_AddItem;
-    };
+    }];

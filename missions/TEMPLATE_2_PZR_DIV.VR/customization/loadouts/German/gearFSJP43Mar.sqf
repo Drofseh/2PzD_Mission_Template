@@ -7,24 +7,24 @@
 /*Loadouts
 
     //Kompanietrupp
-[this,"FSJP43Mar_CC"] call Olsen_FW_FNC_GearScript;     Kompanieführer
-[this,"FSJP43Mar_C2"] call Olsen_FW_FNC_GearScript;     Kompanietruppführer
+[this, FSJP43Mar_CC] call Olsen_FW_FNC_GearScript;      Kompanieführer
+[this, FSJP43Mar_C2] call Olsen_FW_FNC_GearScript;      Kompanietruppführer
 
     //Zugtrupp
-[this,"FSJP43Mar_PC"] call Olsen_FW_FNC_GearScript;     Zugführer
-[this,"FSJP43Mar_P2"] call Olsen_FW_FNC_GearScript;     Zugtruppführer
-[this,"FSJP43Mar_RTO"] call Olsen_FW_FNC_GearScript;    Funker
-[this,"FSJP43Mar_Mess"] call Olsen_FW_FNC_GearScript;   Melder
-[this,"FSJP43Mar_Med"] call Olsen_FW_FNC_GearScript;    Krankenträger
+[this, FSJP43Mar_PC] call Olsen_FW_FNC_GearScript;      Zugführer
+[this, FSJP43Mar_P2] call Olsen_FW_FNC_GearScript;      Zugtruppführer
+[this, FSJP43Mar_RTO] call Olsen_FW_FNC_GearScript;     Funker
+[this, FSJP43Mar_Mess] call Olsen_FW_FNC_GearScript;    Melder
+[this, FSJP43Mar_Med] call Olsen_FW_FNC_GearScript;     Krankenträger
 
     //Gruppe
-[this,"FSJP43Mar_SL"] call Olsen_FW_FNC_GearScript;     Gruppenführer
-[this,"FSJP43Mar_S2"] call Olsen_FW_FNC_GearScript;     Stellvertretender Gruppenführer
-[this,"FSJP43Mar_MG"] call Olsen_FW_FNC_GearScript;     MG-Richtschütze
-[this,"FSJP43Mar_MGA"] call Olsen_FW_FNC_GearScript;    MG-Hilfsschütze
-[this,"FSJP43Mar_Gren"] call Olsen_FW_FNC_GearScript;   Grenadier
-[this,"FSJP43Mar_Mark"] call Olsen_FW_FNC_GearScript;   Scharfschütze
-[this,"FSJP43Mar_Rif"] call Olsen_FW_FNC_GearScript;    Gewehrschütze
+[this, FSJP43Mar_SL] call Olsen_FW_FNC_GearScript;      Gruppenführer
+[this, FSJP43Mar_S2] call Olsen_FW_FNC_GearScript;      Stellvertretender Gruppenführer
+[this, FSJP43Mar_MG] call Olsen_FW_FNC_GearScript;      MG-Richtschütze
+[this, FSJP43Mar_MGA] call Olsen_FW_FNC_GearScript;     MG-Hilfsschütze
+[this, FSJP43Mar_Gren] call Olsen_FW_FNC_GearScript;    Grenadier
+[this, FSJP43Mar_Mark] call Olsen_FW_FNC_GearScript;    Scharfschütze
+[this, FSJP43Mar_Rif] call Olsen_FW_FNC_GearScript;     Gewehrschütze
 */
 
 //======================== Definitions ========================
@@ -109,7 +109,9 @@
 //Company HQ
 
     //Kompanieführer
-    case "FSJP43Mar_CC" : {
+    FSJP43Mar_CC = ["FSJP43Mar_CC", {
+        params ["_unit"];
+
         [FSJ_UniC_NI] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -125,10 +127,12 @@
 
         //Secondary Weapon
         FSJP43Mar_Weapon_Officer_Secondary;
-    };
+    }];
 
     //Kompanietruppführer
-    case "FSJP43Mar_C2" : {
+    FSJP43Mar_C2 = ["FSJP43Mar_C2", {
+        params ["_unit"];
+
         [FSJ_UniC_NI] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -148,12 +152,14 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Platoon HQ
 
     //Zugführer
-    case "FSJP43Mar_PC" : {
+    FSJP43Mar_PC = ["FSJP43Mar_PC", {
+        params ["_unit"];
+
         [FSJ_UniC_NI] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -169,10 +175,12 @@
 
         //Secondary Weapon
         FSJP43Mar_Weapon_Officer_Secondary;
-    };
+    }];
 
     //Zugtruppführer
-    case "FSJP43Mar_P2" : {
+    FSJP43Mar_P2 = ["FSJP43Mar_P2", {
+        params ["_unit"];
+
         [FSJ_UniC_SL] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -192,10 +200,12 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Funker
-    case "FSJP43Mar_RTO" : {
+    FSJP43Mar_RTO = ["FSJP43Mar_RTO", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -214,10 +224,12 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Melder
-    case "FSJP43Mar_Mess" : {
+    FSJP43Mar_Mess = ["FSJP43Mar_Mess", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -236,10 +248,12 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Krankenträger
-    case "FSJP43Mar_Med" : {
+    FSJP43Mar_Med = ["FSJP43Mar_Med", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -258,12 +272,14 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         FSJ_Medic_Equipment;
-    };
+    }];
 
 //Squad
 
     //Gruppenführer
-    case "FSJP43Mar_SL" : {
+    FSJP43Mar_SL = ["FSJP43Mar_SL", {
+        params ["_unit"];
+
         [FSJ_UniC_SL] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -283,10 +299,12 @@
         //Extra
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Stellvertretender Gruppenführer
-    case "FSJP43Mar_S2" : {
+    FSJP43Mar_S2 = ["FSJP43Mar_S2", {
+        params ["_unit"];
+
         [FSJ_UniC_S2] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_MP40] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -305,10 +323,12 @@
         //Extra
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //MG-Richtschütze
-    case "FSJP43Mar_MG" : {
+    FSJP43Mar_MG = ["FSJP43Mar_MG", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -327,10 +347,12 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //MG-Hilfsschütze
-    case "FSJP43Mar_MGA" : {
+    FSJP43Mar_MGA = ["FSJP43Mar_MGA", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_MGA] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -350,10 +372,12 @@
         //Extra
         [GEN_ace_sparebarrel] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Scharfschütze
-    case "FSJP43Mar_Mark" : {
+    FSJP43Mar_Mark = ["FSJP43Mar_Mark", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -372,10 +396,12 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Grenadier
-    case "FSJP43Mar_Gren" : {
+    FSJP43Mar_Gren = ["FSJP43Mar_Gren", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -396,10 +422,12 @@
         [Ger_Mag_RGrn_ATS,2] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_RGrn_ATL,2] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Gewehrschütze
-    case "FSJP43Mar_Rif" : {
+    FSJP43Mar_Rif = ["FSJP43Mar_Rif", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -418,4 +446,4 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];

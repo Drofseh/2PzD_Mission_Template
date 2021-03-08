@@ -7,17 +7,17 @@
 /*Loadouts
 
     Platoon HQ
-[this,"NKVD42May_LT"] call Olsen_FW_FNC_GearScript;        Leutenant
-[this,"NKVD42May_Star"] call Olsen_FW_FNC_GearScript;      Starshina
-[this,"NKVD42May_RTO"] call Olsen_FW_FNC_GearScript;       Radio Operator
-[this,"NKVD42May_Med"] call Olsen_FW_FNC_GearScript;       Medic
+[this, NKVD42May_LT] call Olsen_FW_FNC_GearScript;         Leutenant
+[this, NKVD42May_Star] call Olsen_FW_FNC_GearScript;       Starshina
+[this, NKVD42May_RTO] call Olsen_FW_FNC_GearScript;        Radio Operator
+[this, NKVD42May_Med] call Olsen_FW_FNC_GearScript;        Medic
 
     Squad
-[this,"NKVD42May_Sgt"] call Olsen_FW_FNC_GearScript;       Sergeant
-[this,"NKVD42May_Efr"] call Olsen_FW_FNC_GearScript;       Efreitor
-[this,"NKVD42May_MG"] call Olsen_FW_FNC_GearScript;        Machine Gunner
-[this,"NKVD42May_MGA"] call Olsen_FW_FNC_GearScript;       Machine Gun Assistant
-[this,"NKVD42May_Stre"] call Olsen_FW_FNC_GearScript;      Strelok
+[this, NKVD42May_Sgt] call Olsen_FW_FNC_GearScript;        Sergeant
+[this, NKVD42May_Efr] call Olsen_FW_FNC_GearScript;        Efreitor
+[this, NKVD42May_MG] call Olsen_FW_FNC_GearScript;         Machine Gunner
+[this, NKVD42May_MGA] call Olsen_FW_FNC_GearScript;        Machine Gun Assistant
+[this, NKVD42May_Stre] call Olsen_FW_FNC_GearScript;       Strelok
 */
 
 //======================== Definitions ========================
@@ -228,7 +228,9 @@
 //Platoon
 
     //Leutenant
-    case "NKVD42May_LT" : {
+    NKVD42May_LT = ["NKVD42May_LT", {
+        params ["_unit"];
+
         [NKVD_Uni_LT] call Olsen_FW_FNC_AddItem;
         [NKVD_Hat_O] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -242,10 +244,12 @@
 
         //Secondary Weapon
         NKVD42May_Weapon_Secondary;
-    };
+    }];
 
     //Starshina
-    case "NKVD42May_Star" : {
+    NKVD42May_Star = ["NKVD42May_Star", {
+        params ["_unit"];
+
         [NKVD_Uni_Star] call Olsen_FW_FNC_AddItem;
         [NKVD_Hat] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -259,10 +263,12 @@
 
         //Secondary Weapon
         NKVD42May_Weapon_Secondary;
-    };
+    }];
 
     //Radio Operator
-    case "NKVD42May_RTO" : {
+    NKVD42May_RTO = ["NKVD42May_RTO", {
+        params ["_unit"];
+
         [NKVD_Uni_Stre] call Olsen_FW_FNC_AddItem;
         [Rus_BP_Radio] call Olsen_FW_FNC_AddItem;
         [NKVD_Hat] call Olsen_FW_FNC_AddItem;
@@ -273,10 +279,12 @@
 
         //Primary Weapon
         NKVD42May_Weapon_Rifleman_Light;
-    };
+    }];
 
     //Medic
-    case "NKVD42May_Med" : {
+    NKVD42May_Med = ["NKVD42May_Med", {
+        params ["_unit"];
+
         [NKVD_Uni_Stre] call Olsen_FW_FNC_AddItem;
         [Rus_BP_Med] call Olsen_FW_FNC_AddItem;
         [NKVD_Hat] call Olsen_FW_FNC_AddItem;
@@ -290,10 +298,12 @@
 
         //Extra
         NKVD_Medic_Equipment;
-    };
+    }];
 
     //Sergeant
-    case "NKVD42May_Sgt" : {
+    NKVD42May_Sgt = ["NKVD42May_Sgt", {
+        params ["_unit"];
+
         [NKVD_Uni_Sgt] call Olsen_FW_FNC_AddItem;
         [NKVD_Hat] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -304,10 +314,12 @@
 
         //Primary Weapon
         NKVD42May_Weapon_Sergeant;
-    };
+    }];
 
     //Efreitor
-    case "NKVD42May_Efr" : {
+    NKVD42May_Efr = ["NKVD42May_Efr", {
+        params ["_unit"];
+
         [NKVD_Uni_Efr] call Olsen_FW_FNC_AddItem;
         [NKVD_Hat] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -317,10 +329,12 @@
 
         //Primary Weapon
         NKVD42May_Weapon_Efreitor;
-    };
+    }];
 
     //Machine Gunner
-    case "NKVD42May_MG" : {
+    NKVD42May_MG = ["NKVD42May_MG", {
+        params ["_unit"];
+
         [NKVD_Uni_Efr] call Olsen_FW_FNC_AddItem;
         [NKVD_Vest_HKC] call Olsen_FW_FNC_AddItem;
         [Rus_BP_MG] call Olsen_FW_FNC_AddItem;
@@ -335,10 +349,12 @@
 
         //Secondary Weapon
         NKVD42May_Weapon_Secondary;
-    };
+    }];
 
     //Machine Gun Assistant
-    case "NKVD42May_MGA" : {
+    NKVD42May_MGA = ["NKVD42May_MGA", {
+        params ["_unit"];
+
         [NKVD_Uni_Stre] call Olsen_FW_FNC_AddItem;
         [Rus_BP_MG] call Olsen_FW_FNC_AddItem;
         [NKVD_Hat] call Olsen_FW_FNC_AddItem;
@@ -353,10 +369,12 @@
 
         //Extra
         [Rus_Mag_DP_Mixed_Ball_Red,6] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Strelok
-    case "NKVD42May_Stre" : {
+    NKVD42May_Stre = ["NKVD42May_Stre", {
+        params ["_unit"];
+
         [NKVD_Uni_Stre] call Olsen_FW_FNC_AddItem;
         [NKVD_Hat] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -366,4 +384,4 @@
 
         //Primary Weapon
         NKVD42May_Weapon_Rifleman;
-    };
+    }];

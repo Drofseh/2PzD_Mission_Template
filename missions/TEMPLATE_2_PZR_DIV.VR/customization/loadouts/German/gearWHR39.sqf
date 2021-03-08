@@ -7,43 +7,43 @@
 /*Loadouts
 
     //Kompanietrupp
-[this,"WHR39_CC"] call Olsen_FW_FNC_GearScript;          Kompanieführer
-[this,"WHR39_C2"] call Olsen_FW_FNC_GearScript;          Kompanietruppführer
+[this, WHR39_CC] call Olsen_FW_FNC_GearScript;           Kompanieführer
+[this, WHR39_C2] call Olsen_FW_FNC_GearScript;           Kompanietruppführer
 
     //Zugtrupp
-[this,"WHR39_PC"] call Olsen_FW_FNC_GearScript;          Zugführer
-[this,"WHR39_P2"] call Olsen_FW_FNC_GearScript;          Zugtruppführer
-[this,"WHR39_RTO"] call Olsen_FW_FNC_GearScript;         Funker
-[this,"WHR39_Mess"] call Olsen_FW_FNC_GearScript;        Melder
-[this,"WHR39_MedP"] call Olsen_FW_FNC_GearScript;        Krankenträger
+[this, WHR39_PC] call Olsen_FW_FNC_GearScript;           Zugführer
+[this, WHR39_P2] call Olsen_FW_FNC_GearScript;           Zugtruppführer
+[this, WHR39_RTO] call Olsen_FW_FNC_GearScript;          Funker
+[this, WHR39_Mess] call Olsen_FW_FNC_GearScript;         Melder
+[this, WHR39_MedP] call Olsen_FW_FNC_GearScript;         Krankenträger
 
     //Gruppe
-[this,"WHR39_SL"] call Olsen_FW_FNC_GearScript;          Gruppenführer
-[this,"WHR39_S2"] call Olsen_FW_FNC_GearScript;          Stellvertretender Gruppenführer
-[this,"WHR39_S3"] call Olsen_FW_FNC_GearScript;          Gefreiter
-[this,"WHR39_MG"] call Olsen_FW_FNC_GearScript;          MG-Richtschütze
-[this,"WHR39_MGA"] call Olsen_FW_FNC_GearScript;         MG-Hilfsschütze
-[this,"WHR39_MGAB"] call Olsen_FW_FNC_GearScript;        MG-Munitionsträger
-[this,"WHR39_Gren"] call Olsen_FW_FNC_GearScript;        Grenadier
-[this,"WHR39_MedS"] call Olsen_FW_FNC_GearScript;        Hilfs-Krankenträger
-[this,"WHR39_Rif"] call Olsen_FW_FNC_GearScript;         Gewehrschütze
+[this, WHR39_SL] call Olsen_FW_FNC_GearScript;           Gruppenführer
+[this, WHR39_S2] call Olsen_FW_FNC_GearScript;           Stellvertretender Gruppenführer
+[this, WHR39_S3] call Olsen_FW_FNC_GearScript;           Gefreiter
+[this, WHR39_MG] call Olsen_FW_FNC_GearScript;           MG-Richtschütze
+[this, WHR39_MGA] call Olsen_FW_FNC_GearScript;          MG-Hilfsschütze
+[this, WHR39_MGAB] call Olsen_FW_FNC_GearScript;         MG-Munitionsträger
+[this, WHR39_Gren] call Olsen_FW_FNC_GearScript;         Grenadier
+[this, WHR39_MedS] call Olsen_FW_FNC_GearScript;         Hilfs-Krankenträger
+[this, WHR39_Rif] call Olsen_FW_FNC_GearScript;          Gewehrschütze
 
     //Weapon Truppen
-[this,"WHR39_MortSL"] call Olsen_FW_FNC_GearScript;      Mortar Truppführer
-[this,"WHR39_MortG"] call Olsen_FW_FNC_GearScript;       Mortar Granatwerferschützen
-[this,"WHR39_MortA"] call Olsen_FW_FNC_GearScript;       Mortar Munitionsträger
+[this, WHR39_MortSL] call Olsen_FW_FNC_GearScript;       Mortar Truppführer
+[this, WHR39_MortG] call Olsen_FW_FNC_GearScript;        Mortar Granatwerferschützen
+[this, WHR39_MortA] call Olsen_FW_FNC_GearScript;        Mortar Munitionsträger
 
-[this,"WHR39_HMGSL"] call Olsen_FW_FNC_GearScript;       HMG Truppführer
-[this,"WHR39_HMGG"] call Olsen_FW_FNC_GearScript;        HMG Richtschütze
-[this,"WHR39_HMGA"] call Olsen_FW_FNC_GearScript;        HMG Munitionsträger
+[this, WHR39_HMGSL] call Olsen_FW_FNC_GearScript;        HMG Truppführer
+[this, WHR39_HMGG] call Olsen_FW_FNC_GearScript;         HMG Richtschütze
+[this, WHR39_HMGA] call Olsen_FW_FNC_GearScript;         HMG Munitionsträger
 
-[this,"WHR39_ATRSL"] call Olsen_FW_FNC_GearScript;       Panzerbüchse Truppführer
-[this,"WHR39_ATRG"] call Olsen_FW_FNC_GearScript;        Panzerbüchse Richtschütze
-[this,"WHR39_ATRA"] call Olsen_FW_FNC_GearScript;        Panzerbüchse Munitionsträger
+[this, WHR39_ATRSL] call Olsen_FW_FNC_GearScript;        Panzerbüchse Truppführer
+[this, WHR39_ATRG] call Olsen_FW_FNC_GearScript;         Panzerbüchse Richtschütze
+[this, WHR39_ATRA] call Olsen_FW_FNC_GearScript;         Panzerbüchse Munitionsträger
 
     //Tank Crew
-[this,"WHR39_VCom"] call Olsen_FW_FNC_GearScript;        Besatzungsführer
-[this,"WHR39_VCrew"] call Olsen_FW_FNC_GearScript;       Besatzung
+[this, WHR39_VCom] call Olsen_FW_FNC_GearScript;         Besatzungsführer
+[this, WHR39_VCrew] call Olsen_FW_FNC_GearScript;        Besatzung
 */
 
 //======================== Definitions ========================
@@ -382,7 +382,9 @@
 //Company HQ
 
     //Kompanieführer
-    case "WHR39_CC" : {
+    WHR39_CC = ["WHR39_CC", {
+        params ["_unit"];
+
         [Ger_Uni_CC] call Olsen_FW_FNC_AddItem;
         [Ger_Hat_Officer] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -396,10 +398,12 @@
 
         //Secondary Weapon
         WHR39_Weapon_Officer_Secondary;
-    };
+    }];
 
     //Kompanietruppführer
-    case "WHR39_C2" : {
+    WHR39_C2 = ["WHR39_C2", {
+        params ["_unit"];
+
         [Ger_Uni_SL] call Olsen_FW_FNC_AddItem;
         [Ger_Hat] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -413,12 +417,14 @@
 
         //Secondary Weapon
         WHR39_Weapon_Enlisted_Secondary;
-    };
+    }];
 
 //Platoon HQ
 
     //Zugführer
-    case "WHR39_PC" : {
+    WHR39_PC = ["WHR39_PC", {
+        params ["_unit"];
+
         [Ger_Uni_PC] call Olsen_FW_FNC_AddItem;
         [Ger_Hat_Officer] call Olsen_FW_FNC_AddItem;
         [GEN_Face_r] call Olsen_FW_FNC_AddItemRandom;
@@ -432,10 +438,12 @@
 
         //Secondary Weapon
         WHR39_Weapon_Officer_Secondary;
-    };
+    }];
 
     //Zugtruppführer
-    case "WHR39_P2" : {
+    WHR39_P2 = ["WHR39_P2", {
+        params ["_unit"];
+
         [Ger_Uni_SL] call Olsen_FW_FNC_AddItem;
 
         [Ger_BP_AF] call Olsen_FW_FNC_AddItem;
@@ -453,10 +461,12 @@
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Funker
-    case "WHR39_RTO" : {
+    WHR39_RTO = ["WHR39_RTO", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Radio] call Olsen_FW_FNC_AddItem;
@@ -469,10 +479,12 @@
 
         //Primary Weapon
         WHR39_Weapon_Rifleman;
-    };
+    }];
 
     //Melder
-    case "WHR39_Mess" : {
+    WHR39_Mess = ["WHR39_Mess", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -488,10 +500,12 @@
         //Extra
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Krankenträger
-    case "WHR39_MedP" : {
+    WHR39_MedP = ["WHR39_MedP", {
+        params ["_unit"];
+
         [Ger_Uni_Med] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_Med] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Med] call Olsen_FW_FNC_AddItem;
@@ -507,12 +521,14 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         Ger_MedicP_Equipment;
-    };
+    }];
 
 //Squad
 
     //Gruppenführer
-    case "WHR39_SL" : {
+    WHR39_SL = ["WHR39_SL", {
+        params ["_unit"];
+
         [Ger_Uni_SL] call Olsen_FW_FNC_AddItem;
         [Ger_BP_AF] call Olsen_FW_FNC_AddItem;
         [Ger_Helmet] call Olsen_FW_FNC_AddItem;
@@ -529,10 +545,12 @@
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         WHR39_Weapon_MG_Ammo(1);
-    };
+    }];
 
     //Stellvertretender Gruppenführer
-    case "WHR39_S2" : {
+    WHR39_S2 = ["WHR39_S2", {
+        params ["_unit"];
+
         [Ger_Uni_S2_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -550,10 +568,12 @@
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         WHR39_Weapon_MG_Ammo(1);
-    };
+    }];
 
     //Gefreiter
-    case "WHR39_S3" : {
+    WHR39_S3 = ["WHR39_S3", {
+        params ["_unit"];
+
         [Ger_Uni_S3_E] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
         [Ger_Helmet] call Olsen_FW_FNC_AddItem;
@@ -569,10 +589,12 @@
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         WHR39_Weapon_MG_Ammo(1);
-    };
+    }];
 
     //MG-Richtschütze
-    case "WHR39_MG" : {
+    WHR39_MG = ["WHR39_MG", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_D] call Olsen_FW_FNC_AddItem;
@@ -590,10 +612,12 @@
         WHR39_Weapon_MG;
 
         //Extra
-    };
+    }];
 
     //MG-Hilfsschütze
-    case "WHR39_MGA" : {
+    WHR39_MGA = ["WHR39_MGA", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_MGA] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_D] call Olsen_FW_FNC_AddItem;
@@ -610,10 +634,12 @@
 
         //Extra
         WHR39_Weapon_MG_Ammo(3);
-    };
+    }];
 
     //MG-Munitionsträger
-    case "WHR39_MGAB" : {
+    WHR39_MGAB = ["WHR39_MGAB", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_D] call Olsen_FW_FNC_AddItem;
@@ -629,10 +655,12 @@
 
         //Extra
         WHR39_Weapon_MG_Ammo(5);
-    };
+    }];
 
     //Grenadier
-    case "WHR39_Gren" : {
+    WHR39_Gren = ["WHR39_Gren", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Gren] call Olsen_FW_FNC_AddItem;
@@ -647,10 +675,12 @@
 
         //Extra
         [Ger_Gren_HE_SC,8,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Hilfs-Krankenträger
-    case "WHR39_MedS" : {
+    WHR39_MedS = ["WHR39_MedS", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Med] call Olsen_FW_FNC_AddItem;
@@ -667,10 +697,12 @@
         //Extra
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Gewehrschütze
-    case "WHR39_Rif" : {
+    WHR39_Rif = ["WHR39_Rif", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -687,13 +719,15 @@
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_HE_SC,1] call Olsen_FW_FNC_AddItem;
         WHR39_Weapon_MG_Ammo(1);
-    };
+    }];
 
 //Weapon Truppen
 
     //Mortar Team
     //Mortar Truppführer
-    case "WHR39_MortSL" : {
+    WHR39_MortSL = ["WHR39_MortSL", {
+        params ["_unit"];
+
         [Ger_Uni_S3_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_HGun] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -712,10 +746,12 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_Mort_HE,4,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Mortar Granatwerferschützen
-    case "WHR39_MortG" : {
+    WHR39_MortG = ["WHR39_MortG", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_HGun] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -733,10 +769,12 @@
 
         //Extra
         [Ger_Mag_Mort_HE,4,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Mortar Munitionsträger
-    case "WHR39_MortA" : {
+    WHR39_MortA = ["WHR39_MortA", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -752,11 +790,13 @@
 
         //Extra
         [Ger_Mag_Mort_HE,4,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //HMG Team
     //HMG Truppführer
-    case "WHR39_HMGSL" : {
+    WHR39_HMGSL = ["WHR39_HMGSL", {
+        params ["_unit"];
+
         [Ger_Uni_S3_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_MGA] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_B] call Olsen_FW_FNC_AddItem;
@@ -777,10 +817,12 @@
 
         //Extra
         [Ger_Mag_MG_250_Mixed_sS,2,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //HMG Richtschütze
-    case "WHR39_HMGG" : {
+    WHR39_HMGG = ["WHR39_HMGG", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_B] call Olsen_FW_FNC_AddItem;
@@ -801,10 +843,12 @@
         [Ger_Mag_MG_250_Mixed_sS,4,"backpack"] call Olsen_FW_FNC_AddItem;
 
         //Extra
-    };
+    }];
 
     //HMG Munitionsträger
-    case "WHR39_HMGA" : {
+    WHR39_HMGA = ["WHR39_HMGA", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_B] call Olsen_FW_FNC_AddItem;
@@ -820,11 +864,13 @@
 
         //Extra
         [Ger_Mag_MG_250_Mixed_sS,3,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Panzerbüchse Team
     //Panzerbüchse Truppführer
-    case "WHR39_ATRSL" : {
+    WHR39_ATRSL = ["WHR39_ATRSL", {
+        params ["_unit"];
+
         [Ger_Uni_S3_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -842,10 +888,12 @@
         [Ger_Mag_PzB39,20,"backpack"] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Panzerbüchse Richtschütze
-    case "WHR39_ATRG" : {
+    WHR39_ATRG = ["WHR39_ATRG", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -863,10 +911,12 @@
         [Ger_Mag_PzB39,1] call Olsen_FW_FNC_AddItem;
         [Ger_Weap_PzB39] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_PzB39,20,"vest"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Panzerbüchse Munitionsträger
-    case "WHR39_ATRAB" : {
+    WHR39_ATRAB = ["WHR39_ATRAB", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_E] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -882,12 +932,14 @@
         //Extra
         [Ger_Mag_PzB39,20,"backpack"] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Tank Crew
 
     //Besatzungsführer
-    case "WHR39_VCom" : {
+    WHR39_VCom = ["WHR39_VCom", {
+        params ["_unit"];
+
         [Ger_Uni_VCom] call Olsen_FW_FNC_AddItem;
         [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_Hat_VCom_r] call Olsen_FW_FNC_AddItemRandom;
@@ -902,10 +954,12 @@
 
         //Secondary Weapon
         WHR39_Weapon_Officer_Secondary;
-    };
+    }];
 
     //Besatzung
-    case "WHR39_VCrew" : {
+    WHR39_VCrew = ["WHR39_VCrew", {
+        params ["_unit"];
+
         [Ger_Uni_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
@@ -920,4 +974,4 @@
 
         //Extra
         [GEN_Toolkit] call Olsen_FW_FNC_AddItem;
-    };
+    }];

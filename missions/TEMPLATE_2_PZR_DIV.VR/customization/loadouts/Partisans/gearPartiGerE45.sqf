@@ -7,11 +7,11 @@
 //Loadouts
 /*
     //Unit
-[this,"PGerE45_PC"] call Olsen_FW_FNC_GearScript;       Platoon level or higher leader.
-[this,"PGerE45_SL"] call Olsen_FW_FNC_GearScript;       Squad level leader
-[this,"PGerE45_MG"] call Olsen_FW_FNC_GearScript;       Machine Gunner
-[this,"PGerE45_MGA"] call Olsen_FW_FNC_GearScript;      Machine Gun Assistant
-[this,"PGerE45_Parti"] call Olsen_FW_FNC_GearScript;    Random Partisan
+[this, PGerE45_PC] call Olsen_FW_FNC_GearScript;        Platoon level or higher leader.
+[this, PGerE45_SL] call Olsen_FW_FNC_GearScript;        Squad level leader
+[this, PGerE45_MG] call Olsen_FW_FNC_GearScript;        Machine Gunner
+[this, PGerE45_MGA] call Olsen_FW_FNC_GearScript;       Machine Gun Assistant
+[this, PGerE45_Parti] call Olsen_FW_FNC_GearScript;     Random Partisan
 */
 
 //======================== Loadouts ========================
@@ -19,7 +19,9 @@
 //Unit
 
     //Platoon level or higher leader
-    case "PGerE45_PC" : {
+    PGerE45_PC = ["PGerE45_PC", {
+        params ["_unit"];
+
         [Parti_Uni_r] call Olsen_FW_FNC_addItemRandom;
         [Parti_Vest_r] call Olsen_FW_FNC_addItemRandom;
         [Civ_BP] call Olsen_FW_FNC_addItem;
@@ -59,10 +61,12 @@
 
         //Extra
         [GEN_Gren_Smoke_W,2] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Squad or team level leader
-    case "PGerE45_SL" : {
+    PGerE45_SL = ["PGerE45_SL", {
+        params ["_unit"];
+
         [Parti_Uni_r] call Olsen_FW_FNC_addItemRandom;
         [Parti_Vest_r] call Olsen_FW_FNC_addItemRandom;
         [Civ_BP] call Olsen_FW_FNC_addItem;
@@ -112,10 +116,12 @@
 
         //Extra
         [GEN_Gren_Smoke_W,2] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Machine Gunner
-    case "PGerE45_MG" : {
+    PGerE45_MG = ["PGerE45_MG", {
+        params ["_unit"];
+
         [Parti_Uni_r] call Olsen_FW_FNC_addItemRandom;
         [Parti_Vest_r] call Olsen_FW_FNC_addItemRandom;
         [Civ_BP_MG_r] call Olsen_FW_FNC_addItemRandom;
@@ -166,10 +172,12 @@
 
         //Extra
         [Ger_Mag_MG_50_Mixed_SmE,6] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Machine Gun Assistant
-    case "PGerE45_MGA" : {
+    PGerE45_MGA = ["PGerE45_MGA", {
+        params ["_unit"];
+
         [Parti_Uni_r] call Olsen_FW_FNC_addItemRandom;
         [Parti_Vest_r] call Olsen_FW_FNC_addItemRandom;
         [Civ_BP_MG_r] call Olsen_FW_FNC_addItemRandom;
@@ -265,7 +273,7 @@
                         [Rus_Mag_M1895,1]
                     ],[4]
                 ] call Olsen_FW_FNC_AddItemRandomPercent;
-            };
+            }];
             case (_unit hasWeapon Rus_Weap_PPSH_S): {
                 [
                     [//Nothing
@@ -420,7 +428,9 @@
     };
 
     //Partisan
-    case "PGerE45_Parti" : {
+    PGerE45_Parti = ["PGerE45_Parti", {
+        params ["_unit"];
+
         [Parti_Uni_r] call Olsen_FW_FNC_addItemRandom;
         [Parti_Vest_r] call Olsen_FW_FNC_addItemRandom;
         [Civ_BP_r] call Olsen_FW_FNC_addItemRandom;
@@ -514,7 +524,7 @@
                         [Rus_Mag_M1895,1]
                     ],[4]
                 ] call Olsen_FW_FNC_AddItemRandomPercent;
-            };
+            }];
             case (_unit hasWeapon Rus_Weap_PPSH_S): {
                 [
                     [//Nothing

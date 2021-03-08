@@ -7,24 +7,24 @@
 /*Loadouts
 
     //Kompanietrupp
-[this,"FSJP44Jan_CC"] call Olsen_FW_FNC_GearScript;     Kompanieführer
-[this,"FSJP44Jan_C2"] call Olsen_FW_FNC_GearScript;     Kompanietruppführer
+[this, FSJP44Jan_CC] call Olsen_FW_FNC_GearScript;      Kompanieführer
+[this, FSJP44Jan_C2] call Olsen_FW_FNC_GearScript;      Kompanietruppführer
 
     //Zugtrupp
-[this,"FSJP44Jan_PC"] call Olsen_FW_FNC_GearScript;     Zugführer
-[this,"FSJP44Jan_P2"] call Olsen_FW_FNC_GearScript;     Zugtruppführer
-[this,"FSJP44Jan_RTO"] call Olsen_FW_FNC_GearScript;    Funker
-[this,"FSJP44Jan_Mess"] call Olsen_FW_FNC_GearScript;   Melder
-[this,"FSJP44Jan_Med"] call Olsen_FW_FNC_GearScript;    Krankenträger
+[this, FSJP44Jan_PC] call Olsen_FW_FNC_GearScript;      Zugführer
+[this, FSJP44Jan_P2] call Olsen_FW_FNC_GearScript;      Zugtruppführer
+[this, FSJP44Jan_RTO] call Olsen_FW_FNC_GearScript;     Funker
+[this, FSJP44Jan_Mess] call Olsen_FW_FNC_GearScript;    Melder
+[this, FSJP44Jan_Med] call Olsen_FW_FNC_GearScript;     Krankenträger
 
     //Gruppe
-[this,"FSJP44Jan_SL"] call Olsen_FW_FNC_GearScript;     Gruppenführer
-[this,"FSJP44Jan_S2"] call Olsen_FW_FNC_GearScript;     Stellvertretender Gruppenführer
-[this,"FSJP44Jan_MG"] call Olsen_FW_FNC_GearScript;     MG-Richtschütze
-[this,"FSJP44Jan_MGA"] call Olsen_FW_FNC_GearScript;    MG-Hilfsschütze
-[this,"FSJP44Jan_Gren"] call Olsen_FW_FNC_GearScript;   Grenadier
-[this,"FSJP44Jan_Mark"] call Olsen_FW_FNC_GearScript;   Scharfschütze
-[this,"FSJP44Jan_Rif"] call Olsen_FW_FNC_GearScript;    Gewehrschütze
+[this, FSJP44Jan_SL] call Olsen_FW_FNC_GearScript;      Gruppenführer
+[this, FSJP44Jan_S2] call Olsen_FW_FNC_GearScript;      Stellvertretender Gruppenführer
+[this, FSJP44Jan_MG] call Olsen_FW_FNC_GearScript;      MG-Richtschütze
+[this, FSJP44Jan_MGA] call Olsen_FW_FNC_GearScript;     MG-Hilfsschütze
+[this, FSJP44Jan_Gren] call Olsen_FW_FNC_GearScript;    Grenadier
+[this, FSJP44Jan_Mark] call Olsen_FW_FNC_GearScript;    Scharfschütze
+[this, FSJP44Jan_Rif] call Olsen_FW_FNC_GearScript;     Gewehrschütze
 */
 
 //======================== Definitions ========================
@@ -207,7 +207,9 @@
 //Company HQ
 
     //Kompanieführer
-    case "FSJP44Jan_CC" : {
+    FSJP44Jan_CC = ["FSJP44Jan_CC", {
+        params ["_unit"];
+
         [FSJ_UniC_NI] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -223,10 +225,12 @@
 
         //Secondary Weapon
         FSJP44Jan_Weapon_Officer_Secondary;
-    };
+    }];
 
     //Kompanietruppführer
-    case "FSJP44Jan_C2" : {
+    FSJP44Jan_C2 = ["FSJP44Jan_C2", {
+        params ["_unit"];
+
         [FSJ_UniC_NI] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -246,12 +250,14 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Platoon HQ
 
     //Zugführer
-    case "FSJP44Jan_PC" : {
+    FSJP44Jan_PC = ["FSJP44Jan_PC", {
+        params ["_unit"];
+
         [FSJ_UniC_NI] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -267,10 +273,12 @@
 
         //Secondary Weapon
         FSJP44Jan_Weapon_Officer_Secondary;
-    };
+    }];
 
     //Zugtruppführer
-    case "FSJP44Jan_P2" : {
+    FSJP44Jan_P2 = ["FSJP44Jan_P2", {
+        params ["_unit"];
+
         [FSJ_UniC_SL] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_PC] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -290,10 +298,12 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Funker
-    case "FSJP44Jan_RTO" : {
+    FSJP44Jan_RTO = ["FSJP44Jan_RTO", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
         [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
@@ -311,10 +321,12 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Melder
-    case "FSJP44Jan_Mess" : {
+    FSJP44Jan_Mess = ["FSJP44Jan_Mess", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
         [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
@@ -332,10 +344,12 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Krankenträger
-    case "FSJP44Jan_Med" : {
+    FSJP44Jan_Med = ["FSJP44Jan_Med", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
         [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
@@ -353,12 +367,14 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         FSJ_Medic_Equipment;
-    };
+    }];
 
 //Squad
 
     //Gruppenführer
-    case "FSJP44Jan_SL" : {
+    FSJP44Jan_SL = ["FSJP44Jan_SL", {
+        params ["_unit"];
+
         [FSJ_UniC_SL] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
         [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
@@ -377,10 +393,12 @@
         //Extra
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Stellvertretender Gruppenführer
-    case "FSJP44Jan_S2" : {
+    FSJP44Jan_S2 = ["FSJP44Jan_S2", {
+        params ["_unit"];
+
         [FSJ_UniC_S2] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
         [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
@@ -398,10 +416,12 @@
         //Extra
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //MG-Richtschütze
-    case "FSJP44Jan_MG" : {
+    FSJP44Jan_MG = ["FSJP44Jan_MG", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -420,10 +440,12 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //MG-Hilfsschütze
-    case "FSJP44Jan_MGA" : {
+    FSJP44Jan_MGA = ["FSJP44Jan_MGA", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_MGA] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -443,10 +465,12 @@
         //Extra
         [GEN_ace_sparebarrel] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Scharfschütze
-    case "FSJP44Jan_Mark" : {
+    FSJP44Jan_Mark = ["FSJP44Jan_Mark", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -465,10 +489,12 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Grenadier
-    case "FSJP44Jan_Gren" : {
+    FSJP44Jan_Gren = ["FSJP44Jan_Gren", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [FSJ_Vest_Band] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
@@ -486,10 +512,12 @@
 
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Gewehrschütze
-    case "FSJP44Jan_Rif" : {
+    FSJP44Jan_Rif = ["FSJP44Jan_Rif", {
+        params ["_unit"];
+
         [FSJ_UniC_Rif] call Olsen_FW_FNC_AddItem;
         [GEN_BP_Para] call Olsen_FW_FNC_AddItem;
         [FSJ_Helmet_r] call Olsen_FW_FNC_AddItemRandom;
@@ -507,4 +535,4 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];

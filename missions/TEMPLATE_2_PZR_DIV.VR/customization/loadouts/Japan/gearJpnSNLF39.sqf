@@ -7,19 +7,19 @@
 /*Loadouts
 
     //Platoon
-[this,"SNLF39_PC"] call Olsen_FW_FNC_GearScript;         Platoon Commander
-[this,"SNLF39_Med"] call Olsen_FW_FNC_GearScript;        Medic
-[this,"SNLF39_Mark"] call Olsen_FW_FNC_GearScript;       Marksman
-[this,"SNLF39_SL"] call Olsen_FW_FNC_GearScript;         Squad Leader
-[this,"SNLF39_TL"] call Olsen_FW_FNC_GearScript;         Team Leader
-[this,"SNLF39_MG"] call Olsen_FW_FNC_GearScript;         Machine Gunner
-[this,"SNLF39_MGA"] call Olsen_FW_FNC_GearScript;        Machine Gun Assistant
-[this,"SNLF39_MGAB"] call Olsen_FW_FNC_GearScript;       Machine Gun Ammo Bearer
-[this,"SNLF39_Gren"] call Olsen_FW_FNC_GearScript;       Grenadier
-[this,"SNLF39_Rif"] call Olsen_FW_FNC_GearScript;        Rifleman
-[this,"SNLF39_KMortG"] call Olsen_FW_FNC_GearScript;     Type 89 Gunner
-[this,"SNLF39_KMortA"] call Olsen_FW_FNC_GearScript;     Type 89 Assistant
-[this,"SNLF39_KMortAB"] call Olsen_FW_FNC_GearScript;    Type 89 Ammo Bearer
+[this, SNLF39_PC] call Olsen_FW_FNC_GearScript;          Platoon Commander
+[this, SNLF39_Med] call Olsen_FW_FNC_GearScript;         Medic
+[this, SNLF39_Mark] call Olsen_FW_FNC_GearScript;        Marksman
+[this, SNLF39_SL] call Olsen_FW_FNC_GearScript;          Squad Leader
+[this, SNLF39_TL] call Olsen_FW_FNC_GearScript;          Team Leader
+[this, SNLF39_MG] call Olsen_FW_FNC_GearScript;          Machine Gunner
+[this, SNLF39_MGA] call Olsen_FW_FNC_GearScript;         Machine Gun Assistant
+[this, SNLF39_MGAB] call Olsen_FW_FNC_GearScript;        Machine Gun Ammo Bearer
+[this, SNLF39_Gren] call Olsen_FW_FNC_GearScript;        Grenadier
+[this, SNLF39_Rif] call Olsen_FW_FNC_GearScript;         Rifleman
+[this, SNLF39_KMortG] call Olsen_FW_FNC_GearScript;      Type 89 Gunner
+[this, SNLF39_KMortA] call Olsen_FW_FNC_GearScript;      Type 89 Assistant
+[this, SNLF39_KMortAB] call Olsen_FW_FNC_GearScript;     Type 89 Ammo Bearer
 */
 
 //======================== Loadouts ========================
@@ -27,7 +27,9 @@
 //Platoon
 
     //Platoon Commander
-    case "SNLF39_PC" : {
+    SNLF39_PC = ["SNLF39_PC", {
+        params ["_unit"];
+
         [IJA_Uni_M] call Olsen_FW_FNC_AddItem;
         [IJA_Vest_O] call Olsen_FW_FNC_AddItem;
         [//Hat
@@ -47,10 +49,12 @@
 
         //Extra
         [IJA_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Medic
-    case "SNLF39_Med" : {
+    SNLF39_Med = ["SNLF39_Med", {
+        params ["_unit"];
+
         [IJA_Uni_M] call Olsen_FW_FNC_AddItem;
         [IJA_Vest_Med] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
@@ -68,10 +72,12 @@
 
         //Extra
         IJA_Medic_Equipment;
-    };
+    }];
 
     //Marksman
-    case "SNLF39_Mark" : {
+    SNLF39_Mark = ["SNLF39_Mark", {
+        params ["_unit"];
+
         [IJA_Uni_M] call Olsen_FW_FNC_AddItem;
         [IJA_Vest_Rif] call Olsen_FW_FNC_AddItem;
         [//Hat
@@ -91,12 +97,14 @@
 
         //Extra
         [IJA_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Squad
 
     //Squad Leader
-    case "SNLF39_SL" : {
+    SNLF39_SL = ["SNLF39_SL", {
+        params ["_unit"];
+
         [IJA_Uni_M] call Olsen_FW_FNC_AddItem;
         [IJA_Vest_NCO] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
@@ -123,10 +131,12 @@
 
         //Extra
         [IJA_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Team Leader
-    case "SNLF39_TL" : {
+    SNLF39_TL = ["SNLF39_TL", {
+        params ["_unit"];
+
         [IJA_Uni_M] call Olsen_FW_FNC_AddItem;
         [IJA_Vest_MG] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
@@ -153,10 +163,12 @@
         //Extra
         [IJA_Gren_Frag,1] call Olsen_FW_FNC_AddItem;
         [IJA_Mag_Type96,4,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Machine Gunner
-    case "SNLF39_MG" : {
+    SNLF39_MG = ["SNLF39_MG", {
+        params ["_unit"];
+
         [IJA_Uni_M] call Olsen_FW_FNC_AddItem;
         [IJA_Vest_MG] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
@@ -181,10 +193,12 @@
 
         //Extra
         [IJA_Mag_Type96,4,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Machine Gun Assistant
-    case "SNLF39_MGA" : {
+    SNLF39_MGA = ["SNLF39_MGA", {
+        params ["_unit"];
+
         [IJA_Uni_M] call Olsen_FW_FNC_AddItem;
         [IJA_Vest_Rif] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
@@ -207,10 +221,12 @@
         [GEN_BinoG] call Olsen_FW_FNC_AddItem;
         [GEN_ace_sparebarrel] call Olsen_FW_FNC_AddItem;
         [IJA_Mag_Type96,4,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Machine Gun Ammo Bearer
-    case "SNLF39_MGAB" : {
+    SNLF39_MGAB = ["SNLF39_MGAB", {
+        params ["_unit"];
+
         [IJA_Uni_M] call Olsen_FW_FNC_AddItem;
         [IJA_Vest_Rif] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
@@ -231,10 +247,12 @@
 
         //Extra
         [IJA_Mag_Type96,10,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Grenadier
-    case "SNLF39_Gren" : {
+    SNLF39_Gren = ["SNLF39_Gren", {
+        params ["_unit"];
+
         [IJA_Uni_M] call Olsen_FW_FNC_AddItem;
         [IJA_Vest_Gren] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
@@ -255,10 +273,12 @@
 
         //Extra
         [IJA_Mag_RGrn,6] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Rifleman
-    case "SNLF39_Rif" : {
+    SNLF39_Rif = ["SNLF39_Rif", {
+        params ["_unit"];
+
         [IJA_Uni_M] call Olsen_FW_FNC_AddItem;
         [IJA_Vest_Rif] call Olsen_FW_FNC_AddItem;
         [IJA_BP] call Olsen_FW_FNC_AddItem;
@@ -280,10 +300,12 @@
         //Extra
         [IJA_Gren_Frag,2] call Olsen_FW_FNC_AddItem;
         [IJA_Mag_Type96,1,"backpack"] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Type 89 Gunner
-    case "SNLF39_KMortG" : {
+    SNLF39_KMortG = ["SNLF39_KMortG", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni_M] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -306,10 +328,12 @@
 
         //Extra
         [IJA_Mag_RGrn,10] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Type 89 Assistant
-    case "SNLF39_KMortA" : {
+    SNLF39_KMortA = ["SNLF39_KMortA", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni_M] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -334,10 +358,12 @@
         //Extra
         GEN_Mortar_Equipment;
         [IJA_Gren_Frag,2] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Type 89 Ammo Bearer
-    case "SNLF39_KMortAB" : {
+    SNLF39_KMortAB = ["SNLF39_KMortAB", {
+        params ["_unit"];
+
         [//Uni
             [ [IJA_Uni_M] ],[75],
             [ [IJA_Uni_Short] ],[25]
@@ -361,4 +387,4 @@
 
         //Extra
         [IJA_Gren_Frag,2] call Olsen_FW_FNC_AddItem;
-    };
+    }];

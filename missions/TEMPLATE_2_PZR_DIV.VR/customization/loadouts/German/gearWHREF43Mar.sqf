@@ -7,43 +7,43 @@
 /*Loadouts
 
     //Kompanietrupp
-[this,"WHREF43Mar_CC"] call Olsen_FW_FNC_GearScript;     Kompanieführer
-[this,"WHREF43Mar_C2"] call Olsen_FW_FNC_GearScript;     Kompanietruppführer
+[this, WHREF43Mar_CC] call Olsen_FW_FNC_GearScript;      Kompanieführer
+[this, WHREF43Mar_C2] call Olsen_FW_FNC_GearScript;      Kompanietruppführer
 
     //Zugtrupp
-[this,"WHREF43Mar_PC"] call Olsen_FW_FNC_GearScript;     Zugführer
-[this,"WHREF43Mar_P2"] call Olsen_FW_FNC_GearScript;     Zugtruppführer
-[this,"WHREF43Mar_RTO"] call Olsen_FW_FNC_GearScript;    Funker
-[this,"WHREF43Mar_Mess"] call Olsen_FW_FNC_GearScript;   Melder
-[this,"WHREF43Mar_MedP"] call Olsen_FW_FNC_GearScript;   Krankenträger
+[this, WHREF43Mar_PC] call Olsen_FW_FNC_GearScript;      Zugführer
+[this, WHREF43Mar_P2] call Olsen_FW_FNC_GearScript;      Zugtruppführer
+[this, WHREF43Mar_RTO] call Olsen_FW_FNC_GearScript;     Funker
+[this, WHREF43Mar_Mess] call Olsen_FW_FNC_GearScript;    Melder
+[this, WHREF43Mar_MedP] call Olsen_FW_FNC_GearScript;    Krankenträger
 
     //Gruppe
-[this,"WHREF43Mar_SL"] call Olsen_FW_FNC_GearScript;     Gruppenführer
-[this,"WHREF43Mar_S2"] call Olsen_FW_FNC_GearScript;     Stellvertretender Gruppenführer
-[this,"WHREF43Mar_S3"] call Olsen_FW_FNC_GearScript;     Gefreiter
-[this,"WHREF43Mar_MG"] call Olsen_FW_FNC_GearScript;     MG-Richtschütze
-[this,"WHREF43Mar_MGA"] call Olsen_FW_FNC_GearScript;    MG-Hilfsschütze
-[this,"WHREF43Mar_MGAB"] call Olsen_FW_FNC_GearScript;   MG-Munitionsträger
-[this,"WHREF43Mar_Gren"] call Olsen_FW_FNC_GearScript;   Grenadier
-[this,"WHREF43Mar_MedS"] call Olsen_FW_FNC_GearScript;   Hilfs-Krankenträger
-[this,"WHREF43Mar_Rif"] call Olsen_FW_FNC_GearScript;    Gewehrschütze
+[this, WHREF43Mar_SL] call Olsen_FW_FNC_GearScript;      Gruppenführer
+[this, WHREF43Mar_S2] call Olsen_FW_FNC_GearScript;      Stellvertretender Gruppenführer
+[this, WHREF43Mar_S3] call Olsen_FW_FNC_GearScript;      Gefreiter
+[this, WHREF43Mar_MG] call Olsen_FW_FNC_GearScript;      MG-Richtschütze
+[this, WHREF43Mar_MGA] call Olsen_FW_FNC_GearScript;     MG-Hilfsschütze
+[this, WHREF43Mar_MGAB] call Olsen_FW_FNC_GearScript;    MG-Munitionsträger
+[this, WHREF43Mar_Gren] call Olsen_FW_FNC_GearScript;    Grenadier
+[this, WHREF43Mar_MedS] call Olsen_FW_FNC_GearScript;    Hilfs-Krankenträger
+[this, WHREF43Mar_Rif] call Olsen_FW_FNC_GearScript;     Gewehrschütze
 
     //Weapon Truppen
-[this,"WHREF43Mar_MortSL"] call Olsen_FW_FNC_GearScript; Mortar Truppführer
-[this,"WHREF43Mar_MortG"] call Olsen_FW_FNC_GearScript;  Mortar Granatwerferschützen
-[this,"WHREF43Mar_MortA"] call Olsen_FW_FNC_GearScript;  Mortar Munitionsträger
+[this, WHREF43Mar_MortSL] call Olsen_FW_FNC_GearScript;  Mortar Truppführer
+[this, WHREF43Mar_MortG] call Olsen_FW_FNC_GearScript;   Mortar Granatwerferschützen
+[this, WHREF43Mar_MortA] call Olsen_FW_FNC_GearScript;   Mortar Munitionsträger
 
-[this,"WHREF43Mar_HMGSL"] call Olsen_FW_FNC_GearScript;  HMG Truppführer
-[this,"WHREF43Mar_HMGG"] call Olsen_FW_FNC_GearScript;   HMG Richtschütze
-[this,"WHREF43Mar_HMGA"] call Olsen_FW_FNC_GearScript;   HMG Munitionsträger
+[this, WHREF43Mar_HMGSL] call Olsen_FW_FNC_GearScript;   HMG Truppführer
+[this, WHREF43Mar_HMGG] call Olsen_FW_FNC_GearScript;    HMG Richtschütze
+[this, WHREF43Mar_HMGA] call Olsen_FW_FNC_GearScript;    HMG Munitionsträger
 
-[this,"WHREF43Mar_ATRSL"] call Olsen_FW_FNC_GearScript;  Panzerbüchse Truppführer
-[this,"WHREF43Mar_ATRG"] call Olsen_FW_FNC_GearScript;   Panzerbüchse Richtschütze
-[this,"WHREF43Mar_ATRA"] call Olsen_FW_FNC_GearScript;   Panzerbüchse Munitionsträger
+[this, WHREF43Mar_ATRSL] call Olsen_FW_FNC_GearScript;   Panzerbüchse Truppführer
+[this, WHREF43Mar_ATRG] call Olsen_FW_FNC_GearScript;    Panzerbüchse Richtschütze
+[this, WHREF43Mar_ATRA] call Olsen_FW_FNC_GearScript;    Panzerbüchse Munitionsträger
 
     //Tank Crew
-[this,"WHREF43Mar_VCom"] call Olsen_FW_FNC_GearScript;   Besatzungsführer
-[this,"WHREF43Mar_VCrew"] call Olsen_FW_FNC_GearScript;  Besatzung
+[this, WHREF43Mar_VCom] call Olsen_FW_FNC_GearScript;    Besatzungsführer
+[this, WHREF43Mar_VCrew] call Olsen_FW_FNC_GearScript;   Besatzung
 */
 
 //======================== Definitions ========================
@@ -280,7 +280,9 @@
 //Company HQ
 
     //Kompanieführer
-    case "WHREF43Mar_CC" : {
+    WHREF43Mar_CC = ["WHREF43Mar_CC", {
+        params ["_unit"];
+
         [Ger_Uni_CC] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Radio] call Olsen_FW_FNC_AddItem;
@@ -296,10 +298,12 @@
 
         //Secondary Weapon
         WHREF43Mar_Weapon_Officer_Secondary;
-    };
+    }];
 
     //Kompanietruppführer
-    case "WHREF43Mar_C2" : {
+    WHREF43Mar_C2 = ["WHREF43Mar_C2", {
+        params ["_unit"];
+
         [Ger_Uni_SL] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Ger_Hat] call Olsen_FW_FNC_AddItem;
@@ -314,12 +318,14 @@
 
         //Secondary Weapon
         WHREF43Mar_Weapon_Enlisted_Secondary;
-    };
+    }];
 
 //Platoon HQ
 
     //Zugführer
-    case "WHREF43Mar_PC" : {
+    WHREF43Mar_PC = ["WHREF43Mar_PC", {
+        params ["_unit"];
+
         [Ger_Uni_PC] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Ger_Hat_Officer] call Olsen_FW_FNC_AddItem;
@@ -334,10 +340,12 @@
 
         //Secondary Weapon
         WHREF43Mar_Weapon_Officer_Secondary;
-    };
+    }];
 
     //Zugtruppführer
-    case "WHREF43Mar_P2" : {
+    WHREF43Mar_P2 = ["WHREF43Mar_P2", {
+        params ["_unit"];
+
         [Ger_Uni_SL] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_SL] call Olsen_FW_FNC_AddItem;
         [Ger_BP_AF] call Olsen_FW_FNC_AddItem;
@@ -362,10 +370,12 @@
         ] call Olsen_FW_FNC_AddItemRandomPercent;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Funker
-    case "WHREF43Mar_RTO" : {
+    WHREF43Mar_RTO = ["WHREF43Mar_RTO", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Radio] call Olsen_FW_FNC_AddItem;
@@ -378,10 +388,12 @@
 
         //Primary Weapon
         WHREF43Mar_Weapon_Rifleman;
-    };
+    }];
 
     //Melder
-    case "WHREF43Mar_Mess" : {
+    WHREF43Mar_Mess = ["WHREF43Mar_Mess", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -404,10 +416,12 @@
             ],[34]
         ] call Olsen_FW_FNC_AddItemRandomPercent;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Krankenträger
-    case "WHREF43Mar_MedP" : {
+    WHREF43Mar_MedP = ["WHREF43Mar_MedP", {
+        params ["_unit"];
+
         [Ger_Uni_Med] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_Med] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Med] call Olsen_FW_FNC_AddItem;
@@ -423,12 +437,14 @@
         //Extra
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         Ger_MedicP_Equipment;
-    };
+    }];
 
 //Squad
 
     //Gruppenführer
-    case "WHREF43Mar_SL" : {
+    WHREF43Mar_SL = ["WHREF43Mar_SL", {
+        params ["_unit"];
+
         [Ger_Uni_SL] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_SL] call Olsen_FW_FNC_AddItem;
         [Ger_BP_AF] call Olsen_FW_FNC_AddItem;
@@ -453,10 +469,12 @@
         ] call Olsen_FW_FNC_AddItemRandomPercent;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         WHREF43Mar_Weapon_MG_Ammo(1);
-    };
+    }];
 
     //Stellvertretender Gruppenführer
-    case "WHREF43Mar_S2" : {
+    WHREF43Mar_S2 = ["WHREF43Mar_S2", {
+        params ["_unit"];
+
         [Ger_Uni_S2_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -481,10 +499,12 @@
         ] call Olsen_FW_FNC_AddItemRandomPercent;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         WHREF43Mar_Weapon_MG_Ammo(1);
-    };
+    }];
 
     //Gefreiter
-    case "WHREF43Mar_S3" : {
+    WHREF43Mar_S3 = ["WHREF43Mar_S3", {
+        params ["_unit"];
+
         [Ger_Uni_S3_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_MP40] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -508,10 +528,12 @@
         ] call Olsen_FW_FNC_AddItemRandomPercent;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
         WHREF43Mar_Weapon_MG_Ammo(1);
-    };
+    }];
 
     //MG-Richtschütze
-    case "WHREF43Mar_MG" : {
+    WHREF43Mar_MG = ["WHREF43Mar_MG", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_D] call Olsen_FW_FNC_AddItem;
@@ -527,10 +549,12 @@
 
         //Primary Weapon
         WHREF43Mar_Weapon_MG;
-    };
+    }];
 
     //MG-Hilfsschütze
-    case "WHREF43Mar_MGA" : {
+    WHREF43Mar_MGA = ["WHREF43Mar_MGA", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_MGA] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_D] call Olsen_FW_FNC_AddItem;
@@ -547,10 +571,12 @@
 
         //Extra
         WHREF43Mar_Weapon_MG_Ammo(3);
-    };
+    }];
 
     //MG-Munitionsträger
-    case "WHREF43Mar_MGAB" : {
+    WHREF43Mar_MGAB = ["WHREF43Mar_MGAB", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_D] call Olsen_FW_FNC_AddItem;
@@ -566,10 +592,12 @@
 
         //Extra
         WHREF43Mar_Weapon_MG_Ammo(5);
-    };
+    }];
 
     //Grenadier
-    case "WHREF43Mar_Gren" : {
+    WHREF43Mar_Gren = ["WHREF43Mar_Gren", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -588,10 +616,12 @@
         [Ger_Mag_RGrn_HE,4] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_RGrn_ATS,2] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_RGrn_ATL,2] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Hilfs-Krankenträger
-    case "WHREF43Mar_MedS" : {
+    WHREF43Mar_MedS = ["WHREF43Mar_MedS", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_Med] call Olsen_FW_FNC_AddItem;
@@ -615,10 +645,12 @@
             ],[34]
         ] call Olsen_FW_FNC_AddItemRandomPercent;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Gewehrschütze
-    case "WHREF43Mar_Rif" : {
+    WHREF43Mar_Rif = ["WHREF43Mar_Rif", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_r] call Olsen_FW_FNC_AddItemRandom;
@@ -642,13 +674,15 @@
         ] call Olsen_FW_FNC_AddItemRandomPercent;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         WHREF43Mar_Weapon_MG_Ammo(2);
-    };
+    }];
 
 //Weapon Truppen
 
     //Mortar Team
     //Mortar Truppführer
-    case "WHREF43Mar_MortSL" : {
+    WHREF43Mar_MortSL = ["WHREF43Mar_MortSL", {
+        params ["_unit"];
+
         [Ger_Uni_S3_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_HGun] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -668,10 +702,12 @@
         //Extra
         [Ger_Mag_Mort_HE,4] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Mortar Granatwerferschützen
-    case "WHREF43Mar_MortG" : {
+    WHREF43Mar_MortG = ["WHREF43Mar_MortG", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_HGun] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -690,10 +726,12 @@
 
         //Extra
         [Ger_Mag_Mort_HE,4] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Mortar Munitionsträger
-    case "WHREF43Mar_MortA" : {
+    WHREF43Mar_MortA = ["WHREF43Mar_MortA", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -709,11 +747,13 @@
 
         //Extra
         [Ger_Mag_Mort_HE,4] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //HMG Team
     //HMG Truppführer
-    case "WHREF43Mar_HMGSL" : {
+    WHREF43Mar_HMGSL = ["WHREF43Mar_HMGSL", {
+        params ["_unit"];
+
         [Ger_Uni_S3_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_MGA] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_B] call Olsen_FW_FNC_AddItem;
@@ -734,10 +774,12 @@
 
         //Extra
         [Ger_Mag_MG_250_Mixed_SmE,2] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //HMG Richtschütze
-    case "WHREF43Mar_HMGG" : {
+    WHREF43Mar_HMGG = ["WHREF43Mar_HMGG", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_B] call Olsen_FW_FNC_AddItem;
@@ -760,10 +802,12 @@
 
         //Extra
         [Ger_Mag_MG_250_Mixed_SmE,2] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //HMG Munitionsträger
-    case "WHREF43Mar_HMGA" : {
+    WHREF43Mar_HMGA = ["WHREF43Mar_HMGA", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_MG_B] call Olsen_FW_FNC_AddItem;
@@ -780,11 +824,13 @@
         //Extra
         [Ger_Mag_MG_250_Mixed_SmE,2] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_MG_150_Mixed_SmE,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Panzerbüchse Team
     //Panzerbüchse Truppführer
-    case "WHREF43Mar_ATRSL" : {
+    WHREF43Mar_ATRSL = ["WHREF43Mar_ATRSL", {
+        params ["_unit"];
+
         [Ger_Uni_S3_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -802,10 +848,12 @@
         [Ger_Mag_PzB39,20,"backpack"] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Smoke_W,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Panzerbüchse Richtschütze
-    case "WHREF43Mar_ATRG" : {
+    WHREF43Mar_ATRG = ["WHREF43Mar_ATRG", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_MG] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -823,10 +871,12 @@
         [Ger_Mag_PzB39,1] call Olsen_FW_FNC_AddItem;
         [Ger_Weap_PzB39] call Olsen_FW_FNC_AddItem;
         [Ger_Mag_PzB39,20] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
     //Panzerbüchse Munitionsträger
-    case "WHREF43Mar_ATRAB" : {
+    WHREF43Mar_ATRAB = ["WHREF43Mar_ATRAB", {
+        params ["_unit"];
+
         [Ger_Uni_Rif_r] call Olsen_FW_FNC_AddItemRandom;
         [Ger_Vest_K98] call Olsen_FW_FNC_AddItem;
         [Ger_BP_T34] call Olsen_FW_FNC_AddItem;
@@ -842,12 +892,14 @@
         //Extra
         [Ger_Mag_PzB39,20,"backpack"] call Olsen_FW_FNC_AddItem;
         [Ger_Gren_Frag_P,1] call Olsen_FW_FNC_AddItem;
-    };
+    }];
 
 //Tank Crew
 
     //Besatzungsführer
-    case "WHREF43Mar_VCom" : {
+    WHREF43Mar_VCom = ["WHREF43Mar_VCom", {
+        params ["_unit"];
+
         [Ger_Uni_VCom] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_PC] call Olsen_FW_FNC_AddItem;
         [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
@@ -863,10 +915,12 @@
 
         //Secondary Weapon
         WHREF43Mar_Weapon_Officer_Secondary;
-    };
+    }];
 
     //Besatzung
-    case "WHREF43Mar_VCrew" : {
+    WHREF43Mar_VCrew = ["WHREF43Mar_VCrew", {
+        params ["_unit"];
+
         [Ger_Uni_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_Vest_VCrew] call Olsen_FW_FNC_AddItem;
         [Ger_BP_VCrew] call Olsen_FW_FNC_AddItem;
@@ -881,4 +935,4 @@
 
         //Extra
         [GEN_Toolkit] call Olsen_FW_FNC_AddItem;
-    };
+    }];
