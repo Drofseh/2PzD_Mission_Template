@@ -1,33 +1,35 @@
 #define random(MIN, MAX) \
 ([MIN, MAX] call Olsen_FW_FNC_RandomRange)
 
-_temp = "";
-
-#define SET_GROUP(groupName) _temp = #groupName + package;\
-call compile format ['%1 = {
-
-#define END_GROUP };', _temp]
-
-#define ADD_GROUP(groupName) call call compile format ["%1", #groupName + package]
-
-private ["_unit", "_type", "_groupId"];
-
-_unit = _this select 0;
-_type = _this select 1;
-
-if (count _this > 2) then {
-
-    _groupId = _this select 2;
-
-    (group _unit) setGroupId [_groupId];
-
-};
+params ["_unit", "_type"];
 
 if (!local _unit) exitWith {};
+
+if (!(_type isEqualType []) || {count _type < 2}) exitWith {
+    //error message about how _type isn't a valid array
+};
+
+private _loadoutName = _type select 0;
+if !(_loadoutName isEqualType "") exitWith {
+    //error message about how _loadoutName isn't a valid string
+};
+
+private _loadout = _type select 1;
+if !(_type isEqualType {}) exitWith {
+    //error message about how _type isn't a valid loadout
+};
+
+Olsen_FW_MissionLoadouts pushBackUnique _loadoutName;
 
 _unit setVariable ["BIS_enableRandomization", false];
 _unit setVariable ["FW_Loadout", _type, true];
 
-Olsen_FW_FNC_AddItem = {([_unit, _type] + _this) call Olsen_FW_FNC_AddItemOrg;};
-Olsen_FW_FNC_AddItemRandom = {([_unit, _type] + [_this]) call Olsen_FW_FNC_AddItemRandomOrg;};
-Olsen_FW_FNC_AddItemRandomPercent = {([_unit, _type] + [_this]) call Olsen_FW_FNC_AddItemRandomOrgPercent;};
+#include "..\gearSettings.sqf" //DO NOT REMOVE
+
+_unit call Olsen_FW_FNC_RemoveAllGear;
+
+Olsen_FW_FNC_AddItem = {([_unit, _loadoutName] + _this) call Olsen_FW_FNC_AddItemOrg;};
+Olsen_FW_FNC_AddItemRandom = {([_unit, _loadoutName] + [_this]) call Olsen_FW_FNC_AddItemRandomOrg;};
+Olsen_FW_FNC_AddItemRandomPercent = {([_unit, _loadoutName] + [_this]) call Olsen_FW_FNC_AddItemRandomOrgPercent;};
+
+_unit call _loadout;
