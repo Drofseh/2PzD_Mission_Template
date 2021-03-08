@@ -82,7 +82,7 @@
 
     //=== Canadian ===
     //British Columbia Regiment
-#include "loadouts\Canadian\gearCdnBC39.sqf"
+//#include "loadouts\Canadian\gearCdnBC39.sqf"
 //#include "loadouts\Canadian\gearCdnBC40Sep.sqf"
 //#include "loadouts\Canadian\gearCdnBC41Jan.sqf"
 //#include "loadouts\Canadian\gearCdnBC41Jun.sqf"
@@ -145,7 +145,7 @@
 //#include "loadouts\German\gearFSJP45.sqf"
 
     //Wehrmacht
-#include "loadouts\German\gearWHR39.sqf"
+//#include "loadouts\German\gearWHR39.sqf"
 //#include "loadouts\German\gearWHR40Jun.sqf"
 //#include "loadouts\German\gearWHR40Mar.sqf"
 //#include "loadouts\German\gearWHR41.sqf"
