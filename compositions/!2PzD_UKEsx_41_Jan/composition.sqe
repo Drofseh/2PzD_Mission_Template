@@ -22,7 +22,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Lt""] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""Company HQ""]} foreach units group this;";
+					init="[this, UKEsx41Jan_Lt] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""Company HQ""]} foreach units group this;";
 					description="Company Commander@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -395,7 +395,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Sgt""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_Sgt] call Olsen_FW_FNC_GearScript;";
 					description="Company Sergeant Major@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -730,7 +730,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_LCpl""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_LCpl] call Olsen_FW_FNC_GearScript;";
 					description="Section Leader@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -1065,7 +1065,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Sig""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_Sig] call Olsen_FW_FNC_GearScript;";
 					description="Signaller@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -1400,7 +1400,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;";
 					description="Runner@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -1735,7 +1735,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_LMortG""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_LMortG] call Olsen_FW_FNC_GearScript;";
 					description="2"" Mortar Gunner@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -2108,7 +2108,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_LMortA""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_LMortA] call Olsen_FW_FNC_GearScript;";
 					description="2"" Mortar Assistant@Company | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -2498,7 +2498,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Lt""] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""1 Platoon HQ""]} foreach units group this;";
+					init="[this, UKEsx41Jan_Lt] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""1 Platoon HQ""]} foreach units group this;";
 					description="Platoon Commander@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -2871,7 +2871,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Sgt""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_Sgt] call Olsen_FW_FNC_GearScript;";
 					description="Platoon Sergeant@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -3206,7 +3206,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Sig""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_Sig] call Olsen_FW_FNC_GearScript;";
 					description="Signaller@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -3541,7 +3541,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;";
 					description="Runner@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -3876,7 +3876,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Med""] call Olsen_FW_FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this, UKEsx41Jan_Med] call Olsen_FW_FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Medic@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -4211,7 +4211,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_LMortG""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_LMortG] call Olsen_FW_FNC_GearScript;";
 					description="2"" Mortar Gunner@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -4584,7 +4584,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_LMortA""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_LMortA] call Olsen_FW_FNC_GearScript;";
 					description="2"" Mortar Assistant@1 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -4974,7 +4974,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Cpl""] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""1 Platoon | 1 Section""]} foreach units group this;";
+					init="[this, UKEsx41Jan_Cpl] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""1 Platoon | 1 Section""]} foreach units group this;";
 					description="Section Leader@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -5309,7 +5309,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -5511,7 +5511,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -5714,7 +5714,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -5916,7 +5916,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -6118,7 +6118,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_LCpl""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_LCpl] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gun Team Leader@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -6453,7 +6453,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_AR""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_AR] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bren Gunner@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -6807,7 +6807,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_AAR""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_AAR] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bren Gun Assistant@1 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -7178,7 +7178,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Cpl""] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""1 Platoon | 2 Section""]} foreach units group this;";
+					init="[this, UKEsx41Jan_Cpl] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""1 Platoon | 2 Section""]} foreach units group this;";
 					description="Section Leader@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -7513,7 +7513,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -7715,7 +7715,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -7918,7 +7918,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -8120,7 +8120,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -8322,7 +8322,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_LCpl""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_LCpl] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gun Team Leader@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -8657,7 +8657,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_AR""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_AR] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bren Gunner@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -9011,7 +9011,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_AAR""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_AAR] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bren Gun Assistant@1 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -9382,7 +9382,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Cpl""] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""1 Platoon | 3 Section""]} foreach units group this;";
+					init="[this, UKEsx41Jan_Cpl] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""1 Platoon | 3 Section""]} foreach units group this;";
 					description="Section Leader@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -9717,7 +9717,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -9919,7 +9919,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -10122,7 +10122,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -10324,7 +10324,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -10526,7 +10526,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_LCpl""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_LCpl] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gun Team Leader@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -10861,7 +10861,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_AR""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_AR] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bren Gunner@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -11215,7 +11215,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_AAR""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_AAR] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bren Gun Assistant@1 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -11586,7 +11586,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Lt""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_Lt] call Olsen_FW_FNC_GearScript;";
 					description="Platoon Commander@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -11959,7 +11959,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Sgt""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_Sgt] call Olsen_FW_FNC_GearScript;";
 					description="Platoon Sergeant@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -12294,7 +12294,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Sig""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_Sig] call Olsen_FW_FNC_GearScript;";
 					description="Signaller@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -12629,7 +12629,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;";
 					description="Runner@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -12964,7 +12964,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Med""] call Olsen_FW_FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
+					init="[this, UKEsx41Jan_Med] call Olsen_FW_FNC_GearScript;" \n "this setVariable [""Ace_medical_medicClass"", 1];";
 					description="Medic@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -13300,7 +13300,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_LMortG""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_LMortG] call Olsen_FW_FNC_GearScript;";
 					description="2"" Mortar Gunner@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -13673,7 +13673,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_LMortA""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_LMortA] call Olsen_FW_FNC_GearScript;";
 					description="2"" Mortar Assistant@2 Platoon | HQ Section";
 					isPlayable=1;
 					class Inventory
@@ -14063,7 +14063,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Cpl""] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""2 Platoon | 1 Section""]} foreach units group this;";
+					init="[this, UKEsx41Jan_Cpl] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""2 Platoon | 1 Section""]} foreach units group this;";
 					description="Section Leader@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -14398,7 +14398,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -14600,7 +14600,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -14803,7 +14803,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -15005,7 +15005,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -15207,7 +15207,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_LCpl""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_LCpl] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gun Team Leader@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -15542,7 +15542,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_AR""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_AR] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bren Gunner@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -15896,7 +15896,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_AAR""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_AAR] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bren Gun Assistant@2 Platoon | 1 Section";
 					isPlayable=1;
 					class Inventory
@@ -16267,7 +16267,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Cpl""] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""2 Platoon | 2 Section""]} foreach units group this;";
+					init="[this, UKEsx41Jan_Cpl] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""2 Platoon | 2 Section""]} foreach units group this;";
 					description="Section Leader@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -16602,7 +16602,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -16804,7 +16804,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -17007,7 +17007,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -17209,7 +17209,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -17411,7 +17411,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_LCpl""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_LCpl] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gun Team Leader@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -17746,7 +17746,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_AR""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_AR] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bren Gunner@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -18100,7 +18100,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_AAR""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_AAR] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bren Gun Assistant@2 Platoon | 2 Section";
 					isPlayable=1;
 					class Inventory
@@ -18471,7 +18471,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Cpl""] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""2 Platoon | 3 Section""]} foreach units group this;";
+					init="[this, UKEsx41Jan_Cpl] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""2 Platoon | 3 Section""]} foreach units group this;";
 					description="Section Leader@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -18806,7 +18806,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -19008,7 +19008,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -19211,7 +19211,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -19413,7 +19413,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_Rif""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_Rif] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Rifleman@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -19615,7 +19615,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_LCpl""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_LCpl] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Gun Team Leader@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -19950,7 +19950,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_AR""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_AR] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bren Gunner@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -20304,7 +20304,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_AAR""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_AAR] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Bren Gun Assistant@2 Platoon | 3 Section";
 					isPlayable=1;
 					class Inventory
@@ -20675,7 +20675,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_MortTL""] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""Mortar Team""]} foreach units group this;";
+					init="[this, UKEsx41Jan_MortTL] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""Mortar Team""]} foreach units group this;";
 					description="Team Leader@Mortar Team";
 					isPlayable=1;
 					class Inventory
@@ -21048,7 +21048,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_MortG""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_MortG] call Olsen_FW_FNC_GearScript;";
 					description="3"" Mortar Gunner@Mortar Team";
 					isPlayable=1;
 					class Inventory
@@ -21421,7 +21421,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_MortA""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_MortA] call Olsen_FW_FNC_GearScript;";
 					description="3"" Mortar Assistant@Mortar Team";
 					isPlayable=1;
 					class Inventory
@@ -21794,7 +21794,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_MortAB""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_MortAB] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="3"" Mortar Ammo Bearer@Mortar Team";
 					isPlayable=1;
 					class Inventory
@@ -22207,7 +22207,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_MGTL""] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""Machine Gun Team""]} foreach units group this;";
+					init="[this, UKEsx41Jan_MGTL] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""Machine Gun Team""]} foreach units group this;";
 					description="Team Leader@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
@@ -22580,7 +22580,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_MG""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_MG] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Machine Gunner@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
@@ -22953,7 +22953,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_MGA""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_MGA] call Olsen_FW_FNC_GearScript;";
 					description="Assistant Machine Gunner@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
@@ -23326,7 +23326,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_MGAB""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_MGAB] call Olsen_FW_FNC_GearScript;";
 					description="Ammo Bearer@Machine Gun Team";
 					isPlayable=1;
 					class Inventory
@@ -23739,7 +23739,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_ATRTL""] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""Boys Rifle Team""]} foreach units group this;";
+					init="[this, UKEsx41Jan_ATRTL] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""Boys Rifle Team""]} foreach units group this;";
 					description="Team Leader@Boys Rifle Team";
 					isPlayable=1;
 					class Inventory
@@ -24112,7 +24112,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_ATRG""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_ATRG] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Boys Gunner@Boys Rifle Team";
 					isPlayable=1;
 					class Inventory
@@ -24485,7 +24485,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_ATRG""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_ATRG] call Olsen_FW_FNC_GearScript;";
 					description="Boys Gunner@Boys Rifle Team";
 					isPlayable=1;
 					class Inventory
@@ -24858,7 +24858,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_ATRAB""] call Olsen_FW_FNC_GearScript;";
+					init="[this, UKEsx41Jan_ATRAB] call Olsen_FW_FNC_GearScript;";
 					description="Ammo Bearer@Boys Rifle Team";
 					isPlayable=1;
 					class Inventory
@@ -25271,7 +25271,7 @@ class items
 				flags=6;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_VCom""] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""Tank Crew""]} foreach units group this;";
+					init="[this, UKEsx41Jan_VCom] call Olsen_FW_FNC_GearScript;" \n "{ group _x setGroupId [""Tank Crew""]} foreach units group this;";
 					description="Tank Commander@Tank";
 					isPlayable=1;
 					class Inventory
@@ -25644,7 +25644,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_VCrew""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_VCrew] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
@@ -25865,7 +25865,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_VCrew""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_VCrew] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
@@ -26219,7 +26219,7 @@ class items
 				flags=4;
 				class Attributes
 				{
-					init="[this,""UKEsx41Jan_VCrew""] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
+					init="[this, UKEsx41Jan_VCrew] call Olsen_FW_FNC_GearScript;" \n "this call Olsen_FW_FNC_removeMap;";
 					description="Tank Crew@Tank";
 					isPlayable=1;
 					class Inventory
